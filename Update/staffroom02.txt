@@ -1,0 +1,609 @@
+void main()
+{
+
+	//Unhandled: *Staff_room2
+
+	//csp -1
+	//print 7
+	//Unhandled: mov %ZERO_MUGIC,0
+
+	PlaySE( 0, "wav/taitoru", 70, 64 );
+	//;;se1 134
+	DrawScene( "white", 3000 );
+	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
+
+	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
+	//Unhandled: rmode ON
+
+	DrawScene( "img/dsc000103", 400 );
+	PlayBGM( 0, "bgm0/4", 70, 0 );
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLine(NULL, "「どぅおりゃーーー、歯を食いしばるにゃりーーー！！！！」",
+		   NULL, "\"Dohaaaaah! Grit your teeth, nyaaaaa!!!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/furu", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/furu", 70, 64 );
+	Wait( 200 );
+	DisableWindow();
+	PlaySE( 0, "wav/daidageki", 70, 64 );
+	DrawScene( "effect/f_a", 0 );
+	ShakeScreen( 0, 12, 30, 2, 50, );
+	Wait( 40 );
+	DrawScene( "img/dsc000103", 200 );
+
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+
+
+
+	OutputLine(NULL, "「おぐぅおぉおおぉ、ナイスパンチっす八咫桜さん。",
+		   NULL, "\"Ogghohoooh! Nice punch, Yatazakura-san.", Line_WaitForInput);
+	OutputLine(NULL, "シナリオ遅れてごめんね、テヘ☆",
+		   NULL, " Sorry I was late with the scenario! Teehee☆", Line_WaitForInput);
+
+	PlaySE( 0, "wav/furu", 70, 64 );
+	Wait( 150 );
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "　ぐぼぶぎゃッ！！」",
+		   NULL, " Gbbbaggh!!\"", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( FALSE, 0 );
+
+	PlaySE( 0, "wav/dageki", 70, 64 );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+
+	OutputLine(NULL, "「ひぐらしの制作は毎回、命を削り過ぎにゃりん。",
+		   NULL, "\"Developing Higurashi always shaves too many years off my life, nyan!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+
+	OutputLine(NULL, "私ゃいつかひぐらしに殺されると思ってますにゃりよ。」",
+		   NULL, " I'm sure Higurashi is going to kill me one day, nya!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「いや～でも、かなり真面目にやってたつもりなんですよ？！",
+		   NULL, "\"Well~ still, I feel like I'm put a good amount of work into it, you know?!", Line_WaitForInput);
+	OutputLine(NULL, "　なぜか八咫桜さんが来る時がいつも偶然、休憩時間中で！",
+		   NULL, " But for some reason I always just happen to be on my break when you come over!", Line_WaitForInput);
+
+	//;se1 129
+	PlaySE( 0, "wav/boyon", 70, 64 );
+
+	OutputLine(NULL, "　あのリングオブレッドも、",
+		   NULL, " When I was playing Ring of Red,", Line_ContinueAfterTyping);
+
+	Wait( 300 );
+	PlaySE( 0, "wav/boyon", 70, 64 );
+
+	OutputLine(NULL, "あのサイレントヒルも、",
+		   NULL, " and when I was playing Silent Hill,", Line_ContinueAfterTyping);
+
+	Wait( 300 );
+	PlaySE( 0, "wav/boyon", 70, 64 );
+
+	OutputLine(NULL, "あのサイレンも、",
+		   NULL, " and when I was playing Siren,", Line_ContinueAfterTyping);
+
+	Wait( 300 );
+	PlaySE( 0, "wav/finish", 70, 64 );
+
+	OutputLine(NULL, "あのＲＯもぜーんぶ休憩中！！",
+		   NULL, " and when I was playing RO, those were all breaks!!", Line_WaitForInput);
+
+	Wait( 300 );
+	PlaySE( 0, "wav/daidageki", 70, 64 );
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "　あぷろぐぶぎゃッ！！」",
+		   NULL, " Apurogbbgah!!\"", Line_ContinueAfterTyping);
+	DisableWindow();
+
+	DrawScene( "effect/f_b", 0 );
+
+	ShakeScreen( 2, 12,  30 , 2, 50, );
+	Wait( 40 );
+	DrawScene( "img/dsc00038", 200 );
+
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+
+
+	PlayBGM( 0, "bgm0/cafe", 70, 0 );
+
+	OutputLine(NULL, "「実にやかましいにゃりん。",
+		   NULL, "\"That's truly annoying, nya!", Line_WaitForInput);
+	OutputLine(NULL, "さて、しかし。",
+		   NULL, " Now then, still.", Line_WaitForInput);
+
+	PlaySE( 0, "wav/kira", 70, 64 );
+
+	OutputLine(NULL, "今回の冬コミは…壁ですにゃあ。」",
+		   NULL, " This upcoming Winterket... will be a hurdle, nya.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「いやはや…、信じられないことです…。",
+		   NULL, "\"Man... I still can't believe it...", Line_WaitForInput);
+	OutputLine(NULL, "これも応援して下さる皆さんのお陰です…。",
+		   NULL, " This is all thanks to everyone who's supported us...", Line_WaitForInput);
+
+	PlaySE( 0, "wav/boyon", 70, 64 );
+
+	OutputLine(NULL, "でもお隣がＷ鍋製作所さんですよ？！",
+		   NULL, " But we're going to be right next to W-Nabe Seisakujo!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/hikaru", 70, 64 );
+
+	OutputLine(NULL, "　あーこれってひょっとして緩衝帯ってヤツ？！",
+		   NULL, " Ahh, we're going to be their buffer zone, aren't we?!", Line_WaitForInput);
+	OutputLine(NULL, "　あーきっとそうだ！！",
+		   NULL, " Ahh, I bet that's exactly it!!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/daidageki", 70, 64 );
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "　わーーん、準備会のいじめだーーー！」",
+		   NULL, " Waaaah, the preparation committee is bullying uuuuuus!\"", Line_ContinueAfterTyping);
+
+	ShakeScreen( 0, 12, 30, 2, 50, );
+	Wait( 40 );
+
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	DisableWindow();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "「何年か前のコミケで西館壁ってやったことあるけど、",
+		   NULL, "\"A few years back they put us on the wall of West Hall......", Line_ContinueAfterTyping);
+	Wait( 1000 );
+	OutputLine(NULL, "……あれは泣けたにゃりんね。」",
+		   NULL, " but that left me crying, nya.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そうそう、気分的には何？",
+		   NULL, "\"Uh-huh, emotionally, it's like what?", Line_WaitForInput);
+	OutputLine(NULL, "　ほら、レイストームの宇宙面のボスがさ、両肩から波動砲撃ってきてさ、その狭間で弾避けするじゃん？",
+		   NULL, " It's like you know, when you're fighting the boss of Ray Storm's space stage and he fires giant beam cannons from both shoulders, so all you squeeze between the beams and dodge his fire.", Line_WaitForInput);
+	OutputLine(NULL, "　んで、どんどん両方の波動砲が太くなってきて、避ける幅が細くなって辛くなるという。",
+		   NULL, " But then both of the beams get even wider, and it gets even harder to dodge in those narrow confines.", Line_WaitForInput);
+
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+
+	OutputLine(NULL, "東方風に言うとあれよ、ボス魔理沙のルナティックスペル？",
+		   NULL, " To put it in Touhou terms, it's like boss Marisa's lunatic spell?", Line_WaitForInput);
+	OutputLine(NULL, "　ほらあの、マスタースパークをダブルで撃ってくるヤツ！",
+		   NULL, " You know, that moment she fires off double Master Sparks!", Line_WaitForInput);
+	OutputLine(NULL, "　あ、でもあれは隙間なかったよね。",
+		   NULL, " Oh, but there's no gap with that one.", Line_WaitForInput);
+	OutputLine(NULL, "例えとしてはこっちの方が的確だったりして☆",
+		   NULL, " That might be the more accurate example, then☆", Line_WaitForInput);
+
+	PlaySE( 0, "wav/boyon", 70, 64 );
+
+	OutputLine(NULL, "　もういっそのこと、うちらを弾幕で飲み込んでー！！！」",
+		   NULL, " I wish the bullet curtains would've just hit us too!!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「何とも壮絶な例えにゃりん。",
+		   NULL, "\"That's a crazy example, nya.", Line_WaitForInput);
+	OutputLine(NULL, "まースタッフルームだからたわ言は大目に見るにゃり。」",
+		   NULL, " Well, I guess we'll overlook some jokes since this is the staffroom, nya.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「えっへっへ！",
+		   NULL, "\"Ehehe!", Line_WaitForInput);
+	OutputLine(NULL, "　しかもここは隠しスタッフルームですからねー！！",
+		   NULL, " Plus this is a hidden staffroom, too!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/kira", 70, 64 );
+
+	OutputLine(NULL, "　もう内輪ネタばりばり！！",
+		   NULL, " Inside jokes galore!!", Line_WaitForInput);
+	OutputLine(NULL, "　誰の追従も許しません！！",
+		   NULL, " No catering here!!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/finish", 70, 64 );
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "　ついてこれるもんならついてこーい！",
+		   NULL, " If you can follow them, then follow on!", Line_ContinueAfterTyping);
+
+	ShakeScreen( 2, 15,  30 , 2, 50, );
+	Wait( 40 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+
+	PlaySE( 0, "wav/koruku", 70, 64 );
+
+	OutputLine(NULL, "　んじゃあ恒例のＲＯ内輪話、行ってみよーー！！！",
+		   NULL, " So with that, it's time for our customary RO discussion----!!!", Line_WaitForInput);
+	OutputLine(NULL, "　まずは時火さんの話が欠かせませんねー",
+		   NULL, " First off, we cannot forget about Tokika-san!", Line_WaitForInput);
+
+
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/finish", 70, 64 );
+
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "　超ッ廃ネ申伝説！！！」",
+		   NULL, " That Legend of the Overfiend!!!\"", Line_ContinueAfterTyping);
+
+	ShakeScreen( 2, 15,  30 , 2, 50, );
+	Wait( 40 );
+
+
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「何だかすごいらしいにゃりね。",
+		   NULL, "\"It's pretty amazing, apparently, nya.", Line_WaitForInput);
+	OutputLine(NULL, "ぜひ一度見たいにゃり。」",
+		   NULL, " I'd love to see it at least once.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawScene( "black", 400 );
+	DrawScene( "img/dsc000102", 400 );
+
+	OutputLine(NULL, "「ぶっちゃけ、ＲＯでは２アカ２ＰＣって人、少なくないと思うんですよ。",
+		   NULL, "\"To be frank, I think there are a lot of people playing RO with two accounts and two PCs.", Line_WaitForInput);
+	OutputLine(NULL, "片方で放置露店してね、もう片方で狩りかお喋り。",
+		   NULL, " One for standing street vendors, the other for farming and chatting.", Line_WaitForInput);
+
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+
+	OutputLine(NULL, "ここまでなら割と普通。",
+		   NULL, " That's still pretty normal.", Line_WaitForInput);
+	OutputLine(NULL, "ですがね、ですがですよ？！？！",
+		   NULL, " However! However, you hear?!?!", Line_WaitForInput);
+
+
+
+	PlaySE( 0, "wav/furu", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/furu", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/furu", 70, 64 );
+
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "　２アカ２ＰＣ１ＰＳってどうですよー？！",
+		   NULL, " How about two accounts, two PCs, and one PS?!", Line_ContinueAfterTyping);
+	DisableWindow();
+
+	PlaySE( 0, "wav/finish", 70, 64 );
+	DrawScene( "effect/f_a", 0 );
+	ShakeScreen( 2, 12,  30 , 2, 50, );
+	Wait( 40 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	DisableWindow();
+
+	DrawScene( "img/dsc000102", 400 );
+
+	OutputLine(NULL, "　ＰＳはプレステ。",
+		   NULL, " PS being Playstation.", Line_WaitForInput);
+	OutputLine(NULL, "つまりですね、露店と狩りとプレステのゲームを同時にってこと。」",
+		   NULL, " What that means is one street vendor, one farming, and also playing a Playstation game at the same time.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「どこの触手凌辱モノの主人公にゃりか。",
+		   NULL, "\"Sounds like some tentacle rape protagonist, nya.", Line_WaitForInput);
+	OutputLine(NULL, "物理的に理解できんにゃり。」",
+		   NULL, " I don't understand how that's physically possible, nya.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「つーかですね、これはマジで目を疑います！",
+		   NULL, "\"I mean, I seriously couldn't believe my eyes!", Line_WaitForInput);
+	OutputLine(NULL, "　メインアカはアサのコボマップ大人狩り。",
+		   NULL, " With his main account he was farming the kobold map as an assassin.", Line_WaitForInput);
+	OutputLine(NULL, "だから多少の放置は平気なんですよ。",
+		   NULL, " So it was okay if he didn't mind it for a few moments.", Line_WaitForInput);
+	OutputLine(NULL, "囲まれても全部回避するから。",
+		   NULL, " Even when he got surrounded, he evaded everything.", Line_WaitForInput);
+	OutputLine(NULL, "んでサブアカはエルの買取屋。",
+		   NULL, " Then on his subaccount he ran a shop selling Elunium.", Line_WaitForInput);
+	OutputLine(NULL, "これがもー手慣れてる！",
+		   NULL, " And he was totally practiced with it too!", Line_WaitForInput);
+	OutputLine(NULL, "　ギルメンとＰＴ組んで支援プリで城行ってる時も、平気でエル屋やってんです！！",
+		   NULL, " Even when he was partying with his guild running a support Priest, he was still running his Elu shop just fine!!", Line_WaitForInput);
+	OutputLine(NULL, "　よく死者が出ないもんですよ、しかもＰＴにはそれがバレてないくさい。",
+		   NULL, " I was surprised that no one died, not to mention that no one in the party noticed.", Line_WaitForInput);
+	OutputLine(NULL, "でもですね、メインで遊んでるのはプレステのＳＬＧなんですよ。",
+		   NULL, " But then while he was playing on his main account, he was also playing a strategy game on the Playstation.", Line_WaitForInput);
+	OutputLine(NULL, "んで、敵のターンとかロード時間にアサを動かして遊んでる。」",
+		   NULL, " So while his enemies took their turn or the game was loading, he'd move his assassin around and play RO.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「時火さん、ペノメナ説提唱にゃり。」",
+		   NULL, "\"I propose that Tokika-san's a Penomena.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawSceneWithMask( "img/dsc00039", "effect/right", 0, 0, 300 );
+
+	OutputLine(NULL, "「んで、八咫桜さんはどうですか？",
+		   NULL, "\"So, how about you, Yatazakura-san?", Line_WaitForInput);
+
+	PlaySE( 0, "wav/hikaru", 70, 64 );
+
+	OutputLine(NULL, "　メッセを見る限りじゃ最近はＶＩＴ剣士休業で青ハブハンターらしいじゃないですか。",
+		   NULL, " From your messages I take it you're giving your VIT swordsman a break and going blue herb farming right?", Line_WaitForInput);
+
+	PlaySE( 0, "wav/kira", 70, 64 );
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "在庫は数千枚ですって？！",
+		   NULL, " How many thousands do you have in your inventory again?!", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+
+	PlaySE( 0, "wav/boyon", 70, 64 );
+
+	OutputLine(NULL, "　しかも青ハブ狩り専門のキャラまでいるとか！」",
+		   NULL, " I heard you even made a character specialized in farming blue herbs?!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「ハブを狩るにはマジが一番速いにゃりん。",
+		   NULL, "\"The magicians are the fastest at farming herbs, nya.", Line_WaitForInput);
+	OutputLine(NULL, "ファイヤーボルトでドドドド。",
+		   NULL, " One firebolt and ba-ba-ba-bam!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/kira", 70, 64 );
+
+	OutputLine(NULL, "青ハブの生える場所を何箇所もチェックして管理。",
+		   NULL, " I keep track of several places where the blue herbs grow.", Line_WaitForInput);
+
+	PlaySE( 0, "wav/hikaru", 70, 64 );
+
+	OutputLine(NULL, "むしったら、次に生えてくる時間を時計でチェック。",
+		   NULL, " Once I pick them, I wait out their respawn time and then check again.", Line_WaitForInput);
+
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+
+	OutputLine(NULL, "時間毎に巡回して管理。",
+		   NULL, " So I just go around from point to point managing them.", Line_WaitForInput);
+	OutputLine(NULL, "そのクールかつ知的な管理はマジにこそ相応しいのにゃりん！」",
+		   NULL, " That cool, intelligent management of the herbs is perfect for my magician, nya!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……青ハブを狩るためだけに生まれてファイヤーボルトを習得したマジなんて、どこのアンソロ読んでも見たことないッス…。",
+		   NULL, "\"......In all the anthologies I've read, I've never heard of a magician who was born solely to learn firebolt and farm blue herbs...", Line_WaitForInput);
+	OutputLine(NULL, "漢見せてもらったッス、押忍！！」",
+		   NULL, " You've proven yourself a man, yeah!!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawScene( "img/dsc000103", 400 );
+
+	OutputLine(NULL, "「そう言えばＢＴさんは最近、殴りプリらしいにゃりね。",
+		   NULL, "\"Speaking of which, I heard BT-san's playing a Battle Priest lately, nya.", Line_WaitForInput);
+	OutputLine(NULL, "ダンサにケミに殴りプリ？",
+		   NULL, " A Dancer, Alchemist, and Battle Priest?", Line_WaitForInput);
+	OutputLine(NULL, "　……なかなか立ってるにゃり！！",
+		   NULL, " ...He's sure standing out, nya!!", Line_WaitForInput);
+	OutputLine(NULL, "　しかも全部８０オーバーらしいにゃりん。",
+		   NULL, " Plus they're all over 80, apparently, nya.", Line_WaitForInput);
+	OutputLine(NULL, "ＢＴさんは努力家さんだから、レベルの上がりも安定してるにゃりよ。」",
+		   NULL, " BT-san's a hard worker, so they're levelling steadily, nya.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「エカテリーナさんは前回のスタッフルームの後、残影を覚えたらしいですよ。",
+		   NULL, "\"Apparently Ecatarina-san learned Snap after our previous staff room.", Line_WaitForInput);
+	OutputLine(NULL, "残影指弾で窓手うまうま～うにゃん！＞ｄ（＝ｗ＝　と、快適なＲＯライフっぽいです。",
+		   NULL, " She said, 'Snap, Throw Spirit Sphere, plenty of Sting's farmed, unya! >d(=w=' She's living the good RO life.", Line_WaitForInput);
+	OutputLine(NULL, "自分がいないＧｖＧに限って砦を取っているのが悲しいとか。",
+		   NULL, " She said the only sad thing is that they only win the fortress when she's not there for the GvG.", Line_WaitForInput);
+	OutputLine(NULL, "へいへい羨ましいねぇ！」",
+		   NULL, " Yeah, yeah, I'm so jealous!\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "wav/boyon", 70, 64 );
+
+	OutputLine(NULL, "「竜騎士さんはどんな具合にゃりんね？",
+		   NULL, "\"How are you doing, Ryukishi-san, nya?", Line_WaitForInput);
+	OutputLine(NULL, "　そろそろ転職はできましたかにゃ？」",
+		   NULL, " Shouldn't you be able to job change by now, nya?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「いやぁ…ＶＩＴは辛い…。",
+		   NULL, "\"Well... My VIT makes it painful...", Line_WaitForInput);
+	OutputLine(NULL, "レイドなきゃ生まれてきてごめんなさいって感じです。",
+		   NULL, " If it weren't for raids, it'd feel like, 'Sorry I was ever born.'", Line_WaitForInput);
+	OutputLine(NULL, "メマーをちょいと撃ちゃ赤字確定。",
+		   NULL, " Fire off a little Mammonite, and I'm in the red.", Line_WaitForInput);
+	OutputLine(NULL, "カートレレヴォまで遠すぎる…。",
+		   NULL, " Cart Revolution's way too far off...", Line_WaitForInput);
+
+	PlaySE( 0, "wav/dageki", 70, 64 );
+
+	OutputLine(NULL, "もう海底洞窟は飽きたー！！",
+		   NULL, " I'm sick of Underwater Cave!!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/daidageki", 70, 64 );
+
+	OutputLine(NULL, "　入口にヒドラ密集で入ると同時に死んだことがー！",
+		   NULL, " How many times have I died at the horde of hydras packed at the entrance!", Line_WaitForInput);
+	OutputLine(NULL, "　船賃返せー！",
+		   NULL, " Give me back my ship fare!", Line_WaitForInput);
+	OutputLine(NULL, "　もうやだよママン、えっくひっく、くけけけけけけけけけけけ！」",
+		   NULL, " I can't take it anymore, Maman! Sniff, sniff, kukekekekekekekekekekekekekekeke!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…竜騎士さんは相変わらずのダメダメ挫折ライフにゃりね。",
+		   NULL, "\"...Sounds like you're still living the frustrating failure life, nya.", Line_WaitForInput);
+	OutputLine(NULL, "以上、ＲＯスタッフルームでしたにゃりん！」",
+		   NULL, " So that concludes our RO staff room, nya!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「なぁんて、面白おかしい話をしても、実際はまだ修羅場中なんですよね☆",
+		   NULL, "\"Just kidding! Even though we're sharing some funny, interesting stories, we're actually in the middle of hell, still☆", Line_WaitForInput);
+	OutputLine(NULL, "　あーあと立ち絵が全然足りないー！」",
+		   NULL, " Ahhah, there are still not enough sprites!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「こんな無駄テキスト書いてる暇があったりキリキリ絵をかくにゃりー！！！」",
+		   NULL, "\"If you have time to write this useless text, then go draw the artwork, nya!!!\"", Line_ContinueAfterTyping);
+
+
+	PlaySE( 0, "wav/furu", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/dageki", 70, 64 );
+	ShakeScreen( 2, 6,  30 , 2, 50, );
+	Wait( 40 );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+
+	OutputLine(NULL, "「らじゃ、キリキリ描くでありまッス！！！",
+		   NULL, "\"Roger! I'll draw it right away!!!", Line_WaitForInput);
+	OutputLine(NULL, "　えーでも、今回の立ち絵って男ばっか！！",
+		   NULL, " Oh, but this time there's nothing but sprites for men!!", Line_WaitForInput);
+	OutputLine(NULL, "　圭一に葛西に悟史ー？！",
+		   NULL, " Like Keiichi, Kasai, and Satoshi?!", Line_WaitForInput);
+	OutputLine(NULL, "　ねーねーこいつらはかまいたちみたいにシルエットにしない？！",
+		   NULL, " Hey, hey, can we just make them silhouettes like wind devils?!", Line_WaitForInput);
+
+
+	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,640,480
+
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 300 );
+	DisableWindow();
+	PlaySE( 0, "wav/dageki", 70, 64 );
+
+	DrawSceneWithMask( "effect/f_a", "effect/1", 0, 0, 10 );
+	PlaySE( 0, "wav/dageki", 70, 64 );
+	DrawSceneWithMask( "effect/f_b", "effect/1", 0, 0, 10 );
+	PlaySE( 0, "wav/daidageki", 70, 64 );
+	DrawScene( "effect/f_a", 0 );
+	ShakeScreen( 2, 9,  30 , 2, 50, );
+	Wait( 40 );
+	PlaySE( 0, "wav/finish", 70, 64 );
+	DrawScene( "effect/f_b", 0 );
+
+	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "　ごぶりょごふがッ！！」",
+		   NULL, " Gobryofgh!!\"", Line_ContinueAfterTyping);
+
+
+	ShakeScreen( 2, 18,  30 , 2, 50, );
+	Wait( 40 );
+
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "black", 200 );
+	DrawScene( "img/dsc00038", 400 );
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLine(NULL, "「この度は『ひぐらしのなく頃に』目明し編をお楽しみくださいまして、誠にありがとうございますにゃり。」",
+		   NULL, "\"We're truly grateful that you've enjoyed this recent release of Higurashi When They Cry, Meakashi-hen, nya.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「お陰様で『ひぐらしのなく頃に』も、いよいよ後半戦の『解』に突入となりました。",
+		   NULL, "\"Thanks to you, the story of Higurashi When They Cry is finally entering the latter 'Answer' arcs.", Line_WaitForInput);
+	OutputLine(NULL, "次回シナリオ『罪滅し編』は、平成１７年夏コミ予定です。」",
+		   NULL, " Our next chapter, 'Tsumihoroboshi-hen', is planned for release at Summerket 2005.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ますますに頑張ってまいりますにゃりん。",
+		   NULL, "\"We're going to be working even harder, nya.", Line_WaitForInput);
+	OutputLine(NULL, "どうか今後ともご指導ご鞭撻をよろしくお願いしますにゃり。」",
+		   NULL, " So please, we hope you continue to give us advice and encouragement, nya.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「より一層、楽しんでもらえるシナリオになるよう、努力します。",
+		   NULL, "\"I'll be working hard to make the scenario even more enjoyable for you.", Line_WaitForInput);
+	OutputLine(NULL, "誤字脱字が多くてすみません。",
+		   NULL, " I'm sorry there were so many typos.", Line_WaitForInput);
+
+	PlaySE( 0, "wav/boyon", 70, 64 );
+
+	OutputLine(NULL, "同じ誤字でもなぜ翡翠さんだと萌えに？！",
+		   NULL, " But why is Hisui-san so moe when she makes the same typos?!", Line_WaitForInput);
+	OutputLine(NULL, "　誤字脱字の多くてすみません。",
+		   NULL, " I'm sorry for most of the typos.", Line_WaitForInput);
+
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+
+	OutputLine(NULL, "…萌え！！",
+		   NULL, " ...Moe!!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/hikaru", 70, 64 );
+
+	OutputLine(NULL, "　竜騎士たんはぁは、",
+		   NULL, " Ryukishi-tan, hahh, hahh!", Line_ContinueAfterTyping);
+	Wait( 600 );
+	DisableWindow();
+	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,640,480
+	PlaySE( 0, "wav/dageki", 70, 64 );
+	DrawSceneWithMask( "effect/f_a", "effect/1", 0, 0, 10 );
+	PlaySE( 0, "wav/dageki", 70, 64 );
+	DrawSceneWithMask( "effect/f_b", "effect/1", 0, 0, 10 );
+	PlaySE( 0, "wav/daidageki", 70, 64 );
+	DrawScene( "effect/f_a", 0 );
+	ShakeScreen( 2, 12,  30 , 2, 50, );
+	Wait( 40 );
+	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
+
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLine(NULL, "ぐりょぷごびゃッ！！」",
+		   NULL, " Gryppagh!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「どうか今後とも、よろしくお願い申し上げます…、ぺこり。」",
+		   NULL, "\"We hope you'll continue supporting us in the future as well. ...Bow.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　　　　　　　　　　　　　竜騎士07／八咫桜",
+		   NULL, "　　　　　　　　　　　　　Ryukishi 07/Yatazakura", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+
+
+	DrawScene( "black", 3000 );
+	//csp -1
+	//print 7
+	//Unhandled: mov %ZERO_MUGIC,0
+	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
+	//Unhandled: rmode ON
+	SetSpeedOfMessage( FALSE, 0 );
+	FadeOutBGM( 1, 0, TRUE );
+
+
+
+	DrawScene( "black", 1000 );
+	//Unhandled subroutine: omake_e
+
+
+	//Unhandled: goto *Omake_mode
+}

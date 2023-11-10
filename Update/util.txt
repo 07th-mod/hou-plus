@@ -1,0 +1,176 @@
+void RainOn()
+{
+	//rain is set to layer 60. Layers above 32 are automatically automatically persistent between scene transitions.
+	if(GetLayerPriority(60) == -1) //will return -1 if the rain layer is not active
+		DrawSpriteWithFiltering(60, "effect/rain", "effect/down", 0, 0, 0, FALSE, FALSE, 0, 0, 60, 1300, TRUE);
+}
+
+void RainOff()
+{
+	if(GetLayerPriority(60) > 0) //will return -1 if the rain layer is not active
+		FadeSprite(60, 600, TRUE);
+}
+
+void PlayIntro()
+{
+	DisableWindow();
+	ClearMessage();
+	SetValidityOfSkipping(FALSE);
+	if(GetGlobalFlag(GLanguage) == 0)
+		PlayVideo("video/higurashi_hou.mp4", 640, 480);
+	else
+		PlayVideo("video/higurashi_hou_sub.mp4", 640, 480);
+	SetValidityOfSkipping(TRUE);
+}
+
+void EyeCatch()
+{
+	//for some reason, it's the same as 2
+	CallSection("EyeCatch2");
+}
+
+void EyeCatch2()
+{
+	DisableWindow();
+	ClearMessage();
+	//SetValidityOfInput( FALSE );
+	DrawBustshotWithFiltering( 6, "effect/cinema", "effect/x", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 62, 1300, TRUE );
+	DrawBustshot( 7, "effect/title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 63, 3000, TRUE );
+	Wait( 2000 );
+	FadeOutBGM( 0, 3000, FALSE );
+	FadeOutBGM( 1, 3000, FALSE );
+	FadeOutBGM( 2, 3000, FALSE );
+	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 61, 3000, TRUE );
+	FadeBustshotWithFiltering( 7, "effect/x", 0, FALSE, 0, 0, 1300, TRUE );
+	EndLayerPersistence(5);
+	EndLayerPersistence(6);
+	DrawScene( "black", 3000 );
+	StopAllSound();
+	//SetValidityOfInput( TRUE );
+}
+
+void HanyuuDance()
+{
+	//lsp 1,":b;Bmp2\Tati\Hanyu\miko\han_3.png",-20,30
+
+	int x = -320-120;
+	int y = -240;
+
+	x = x - 20;
+	y = y + 30;
+	DrawSpriteFixedSize( 25, "sprites/hanyu/miko/han_3", NULL, x, y, 0, 0, 0, 640, 480, 0, FALSE, FALSE, 0, 0, 25, 400, TRUE );
+	
+	PlaySE( 0, "a1_16258", 50, 64 );
+
+	x = x + 390;
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 500, TRUE );
+
+	PlaySE( 1, "a1_17270", 50, 64 );
+	y = y + 40;
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 250, TRUE );
+	y = y - 40;
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 250, TRUE );
+
+
+	PlaySE( 1, "a1_17270", 50, 64 );
+	y = y + 40;
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 250, TRUE );
+	y = y - 40;
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 250, TRUE );
+
+	PlaySE( 1, "a1_17270", 50, 64 );
+	y = y + 40;
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 250, TRUE );
+	y = y - 40;
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 250, TRUE );
+
+	PlaySE( 0, "wav/boyon", 50, 64 );
+	x = x -150;
+	y = y + 90;
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 500, TRUE );
+
+
+	PlaySE( 0, "b5", 50, 64 );
+	x = x -150;
+	y = y - 90;
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 500, TRUE );
+
+	PlaySE( 0, "wav/boyon", 50, 64 );
+	x = x - 90;
+	y = y + 90;
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 500, TRUE );
+
+
+	PlaySE( 0, "b5", 50, 64 );
+	x = x - 90;
+	y = y - 90;
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 500, TRUE );
+
+
+	PlaySE( 0, "wav/boyon", 50, 64 );
+	x = x + 120;
+	y = y + 90;
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 500, TRUE );
+
+	PlaySE( 0, "b5", 50, 64 );
+	x = x + 120;
+	y = y - 90;
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 500, TRUE );
+
+	y = y + 40;
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 250, TRUE );
+
+	PlaySE( 0, "wav/down3", 50, 64 );
+	y = y - 40;
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 250, TRUE );
+	
+	y = y + 120;
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 250, TRUE );
+
+	PlaySE( 0, "wav/down3", 50, 64 );
+	Wait( 500 );
+
+	y = y - 100;
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 100, TRUE );
+
+	PlaySE( 0, "wav/finish", 50, 64 );
+	ShakeScreen( 4, 9, 20, 50, 1, );
+
+	PlaySE( 1, "horror", 50, 64 );
+
+	MoveSprite( 25, x, y, 0, 0, 120, 0, 0, 600, TRUE );
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 600, TRUE );
+	MoveSprite( 25, x, y, 0, 0, 120, 0, 0, 600, TRUE );
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 600, TRUE );
+
+	Wait( 500 );
+	PlaySE( 1, "a1_16258", 50, 64 );
+	x = x - 750;
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 1000, TRUE );
+	FadeBustshot(25, FALSE, 0, 0, 0, 0, 0, TRUE);
+}
+
+void RenaMove1()
+{
+	//lsp 890,":b;bmp2\TATI\rena\sifuku\re_kaiib1.png",710,0
+
+	DrawSpriteFixedSize( 25, "sprites/rena/sifuku/re_kaiib1", NULL, 390, -240, 0, 0, 0, 640, 480, 0, FALSE, FALSE, 0, 0, 25, 0, TRUE);
+	MoveSprite( 25, -160, -240, 0, 0, 0, 0, 0, 200, TRUE );
+
+	PlaySE( 0, "b1", 50, 64 );
+	MoveSprite( 25, -160, -240+63, 0, 0, 0, 0, 0, 200, TRUE );
+	MoveSprite( 25, -160, -240, 0, 0, 0, 0, 0, 200, TRUE );
+
+	PlaySE( 1, "b1", 50, 64 );
+	MoveSprite( 25, -160, -240+63, 0, 0, 0, 0, 0, 200, TRUE );
+	MoveSprite( 25, -160, -240, 0, 0, 0, 0, 0, 200, TRUE );
+
+	Wait( 1000 );
+}
+
+void RenaMove2()
+{
+	DrawSpriteFixedSize( 25, "sprites/rena/sifuku/re_kaiib1", NULL, -160, -240, 0, 0, 0, 640, 480, 0, FALSE, FALSE, 0, 0, 25, 400, TRUE);
+	Wait( 500 );
+	MoveSprite( 25, -160-351, -240, 0, 0, 0, 0, 0, 180, TRUE );
+}

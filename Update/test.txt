@@ -1,0 +1,870 @@
+void main()
+{
+	//CallScriptSection("&endroll", "HouStaffFinal");
+	//CallSection("MatiTest");
+}
+
+void MatiTest()
+{
+	
+	DrawScene( "black", 400 );
+	ChangeVolumeOfBGM( 0, 0, 1000 );
+	ChangeVolumeOfBGM( 1, 0, 1000 );
+	Wait( 1000 );
+	StopBGM( 0 );
+
+	PlayBGM( 1, "me/mati_kotu2", 30, 0 );
+
+	DrawBustshot( 1, "sprites/tomi/sifuku/tomitake6", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+	DrawScene( "bg/kuruma/kuruma2", 400 );
+	ChangeBustshot( 1, "sprites/tomi/sifuku/tomitake7", 200, TRUE );
+	//;【富竹】
+	OutputLine(NULL, "「そろそろ街が近付いてきたね。",
+		   NULL, "\"We're about to come up on the town.", Line_WaitForInput);
+	OutputLine(NULL, "……何があるかわからないから、用心してね。」",
+		   NULL, " ......I don't know what we'll find here, so be careful.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+}
+
+void ZoomTest()
+{
+	
+	//;■バトル演出を～～
+	PlayBGM( 0, "bgm1/attack", 70, 0 );
+	DrawScene( "bg/mori/hasi3", 400 );
+	PlaySE( 0, "wav/furu", 70, 64 );
+
+	EnlargeScreen(320, 0, 400, 10, FALSE, 500, TRUE);
+
+	DisableEffector(0, FALSE);
+	DrawScene( "bg/mori/hasi5", 0 );
+	PlaySE( 0, "wav/metal41", 70, 64 );
+	DrawSceneWithMask( "effect/f_b", "effect/1", 0, 0, 10 );
+	ShakeScreen( 2, 6,  100 , 1, 50, );
+	PlaySE( 0, "wav/metal43", 70, 64 );
+	DrawSceneWithMask( "effect/f_a", "effect/1", 0, 0, 10 );
+	ShakeScreen( 2, 6,  100 , 1, 50, );
+	DrawScene( "bg/mori/hasi2", 200 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 300 );
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+	Wait( 300 );
+	PlaySE( 0, "wav/dageki", 70, 64 );
+	ShakeScreen( 0, 6, 100, 1, 50, );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	DrawSceneWithMask( "bg/mori/hasi3", "effect/right", 1, 0, 300 );
+	PlaySE( 0, "wav/daidageki", 70, 64 );
+	DrawScene( "effect/f_a", 0 );
+	ShakeScreen( 2, 9,  100 , 2, 50, );
+	DrawScene( "effect/f_b", 0 );
+	ShakeScreen( 2, 9,  100 , 2, 50, );
+	DrawScene( "bg/mori/hasi5", 200 );
+	Wait( 500 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 700 );
+	PlaySE( 0, "wav/metal41", 70, 64 );
+	DrawSceneWithMask( "effect/f_a", "effect/1", 0, 0, 10 );
+	ShakeScreen( 2, 6,  100 , 2, 50, );
+	PlaySE( 0, "wav/metal41", 70, 64 );
+	DrawSceneWithMask( "effect/f_b", "effect/1", 0, 0, 10 );
+	ShakeScreen( 2, 6,  100 , 2, 50, );
+	PlaySE( 0, "wav/metal43", 70, 64 );
+	DrawSceneWithMask( "effect/f_c", "effect/1", 0, 0, 10 );
+	ShakeScreen( 2, 12,  100 , 3, 33, );
+	DrawScene( "bg/mori/hasi3", 200 );
+	PlaySE( 0, "wav/down3", 70, 64 );
+	ShakeScreen( 2, 9,  100 , 6, 16, );
+	Wait( 500 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 1000 );
+	DrawSceneWithMask( "bg/mori/hasi4", "effect/right", 0, 0, 300 );
+	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
+	SetSpeedOfMessage( FALSE, 0 );
+	
+}
+
+void OmoTest()
+{
+	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
+	OutputLine(NULL, "　しかし……、",
+		   NULL, "However......", Line_WaitForInput);
+	OutputLine(NULL, "その一瞬で充分……！",
+		   NULL, " That moment was plenty......!", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawScene( "bg/etc/omo1_1", 0 );
+	Wait( 100 );
+	ShakeScreen( 0, 3, 100, 2, 50, );
+
+	DrawScene( "bg/etc/omo1_2", 0 );
+	Wait( 100 );
+	ShakeScreen( 2, 3,  100 , 2, 50, );
+
+	DrawScene( "bg/etc/omo1_3", 0 );
+	Wait( 100 );
+	ShakeScreen( 0, 3, 100, 2, 50, );
+
+	DrawScene( "bg/etc/omo1_4", 0 );
+	Wait( 100 );
+	ShakeScreen( 0, 3, 100, 2, 50, );
+
+	DrawScene( "bg/etc/omo1_5", 0 );
+	ShakeScreen( 2, 3,  100 , 2, 50, );
+
+	Wait( 1000 );
+
+	PlaySE( 0, "wav/daidageki", 50, 64 );
+	DrawScene( "bg/etc/omo2_1", 0 );
+
+
+	DrawScene( "bg/etc/omo2_2", 400 );
+
+	ShakeScreen( 2, 24,  100 , 12, 8, );
+
+	Wait( 1000 );
+	DrawBustshot( 1, "sprites/takano/ta_ikari", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
+	DrawScene( "bg/keisatu/ke_ky4", 400 );
+}
+
+void MehagashiTest()
+{
+	DrawScene( "black", 400 );
+	DrawBustshot( 48, "sprites/keiiti/2021/kei_ikari2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
+	DrawScene( "bg/2021_add/pool2", 400 );
+	//;【入江】
+	Wait( 500 );
+	FadeFilm( 0, FALSE ); //end negative color
+	PlaySE( 0, "boyon", 70, 64 );
+	DrawBustshot( 49, "sprites/irie/hakui/iri_warai", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, TRUE );
+	ShakeScreen( 0, 6, 100, 2, 50, );
+	OutputLine(NULL, "「おやッ？！？！",
+		   NULL, "\"Oh?!?!", Line_WaitForInput);
+	OutputLine(NULL, "　その水着はまさに英国式メイド風水着！！",
+		   NULL, " That swimsuit is an English maid style swimsuit!!!", Line_WaitForInput);
+	OutputLine(NULL, "　なんと、プールサイドに貞淑なメイド魂を持つ美少女がいるとはッ！！」",
+		   NULL, " To think a beautiful woman with such a dignified maid's soul would be found here at the poolside!!!\"", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "a5_10317", 70, 64 );
+	ShakeScreen( 0, 6, 100, 2, 50, );
+	//;【亀田】
+	OutputLine(NULL, "「何だ、オッサン！",
+		   NULL, "\"What's that, old man?!", Line_WaitForInput);
+	OutputLine(NULL, "　いや、ソウルブラザー、イリー！！",
+		   NULL, " Oh, my Soul Brother, Iri!!!", Line_WaitForInput);
+	OutputLine(NULL, "　この子は俺が先に声を掛けたんだぜ、引っ込んでな！！」",
+		   NULL, " I was the first to speak to this girl, so please back off!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	//;【入江】
+	ChangeBustshot( 49, "sprites/kam/kam_2", 200, FALSE );
+	DrawBustshot( 50, "sprites/irie/hakui/iri_def2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
+	OutputLine(NULL, "「貴方如きに、奥ゆかしい英国文化を理解できているとは到底思えませんね！",
+		   NULL, "\"I find it hard to believe you're capable of understanding the reserved culture of such a land as Britain!", Line_WaitForInput);
+	OutputLine(NULL, "　彼女のような素晴らしい逸材には、格の負けぬご主人様が必要ですッ。",
+		   NULL, " A wonderful woman such as her needs a master of more fitting stature!", Line_WaitForInput);
+	OutputLine(NULL, "この私のような！！！」",
+		   NULL, " Like me!!!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	ChangeBustshotWithFiltering( 48, "sprites/kam/kam_1", "effect/right", 0, 300, FALSE );
+	FadeBustshotWithFiltering( 49, "effect/right", 0, FALSE, 0, 0, 300, TRUE );
+	//;【亀田】
+	OutputLine(NULL, "「お嬢さん、ちょっと待っていて下さいね。",
+		   NULL, "\"Young lady, please hold on a moment.", Line_WaitForInput);
+	OutputLine(NULL, "この唐突に現れたスケベ中年を、ぱぱっとやっつけますんで。",
+		   NULL, " I'll remove this perverted old man in a jiffy.", Line_WaitForInput);
+	DisableWindow();
+	ChangeBustshot( 48, "sprites/kam/kam_4", 200, TRUE );
+	OutputLine(NULL, "それが終わったら、背中にオイルを塗ってあげますからね」",
+		   NULL, " Once I'm done, I'll apply some sunscreen to your back.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	//;【入江】
+	ChangeBustshot( 50, "sprites/irie/hakui/iri_majime2", 200, TRUE );
+	OutputLine(NULL, "「笑止千万ッ！！",
+		   NULL, "\"Laughably absurd!!!", Line_WaitForInput);
+	OutputLine(NULL, "　我が理想のメイド嬢！",
+		   NULL, " You are my ideal maid!", Line_WaitForInput);
+	OutputLine(NULL, "　貴女を迎え、私が最高のメイドに調教してさしあげましょうッ！！」",
+		   NULL, " I'll welcome you into my home and train you to be the ultimate servant!!!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	ChangeBustshot( 48, "sprites/kam/kam_2", 200, TRUE );
+
+	PlaySE( 0, "a5_10315", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "a5_10315", 70, 64 );
+	FadeBustshot( 48, FALSE, 0, 0, 0, 0, 0, TRUE );
+	ShakeScreen( 2, 3,  100 , 1, 50, );
+	PlaySE( 1, "a5_10315", 70, 64 );
+	FadeBustshot( 50, FALSE, 0, 0, 0, 0, 0, TRUE );
+	ShakeScreen( 2, 3,  100 , 1, 50, );
+	DrawScene( "bg/2021_add/sora_d", 200 );
+	//print 1
+	DrawSpriteFixedSize( 49, "sprites/kam/kam_3", NULL, -460, -270, 0, 0, 0, 1280, 960, 0, FALSE, FALSE, 0, 0, 49, 0, TRUE);
+	//;csp2 1
+	ShakeScreen( 2, 6,  100 , 2, 50, );
+
+	OutputLine(NULL, "　どおりゃあああああ、食らえ弾丸速球！！",
+		   NULL, "Doryaaaaah! Take my bullet fastball!!!", Line_WaitForInput);
+	DisableWindow();
+	PlaySE( 2, "a5_10315", 70, 64 );
+	DrawScene( "white", 0 );
+	//print 80
+	DrawSpriteFixedSize( 48, "sprites/irie/hakui/iri_majime2", NULL, -830, -300, 0, 0, 0, 1280, 960, 0, FALSE, FALSE, 0, 0, 48, 0, FALSE);
+	DrawScene( "bg/2021_add/sora_d", 200 );
+
+	ShakeScreen( 0, 3, 100, 1, 50, );
+	OutputLine(NULL, "　フフ、甘いですね、残像です！",
+		   NULL, " Fufu, how naive. That was a mere afterimage!", Line_WaitForInput);
+	DisableWindow();
+	//csp2 4
+	PlaySE( 0, "a1_17270", 70, 64 );
+	EndLayerPersistence( 49 );
+	DrawScene( "white", 0 );
+	//print 80
+	ChangeBustshot( 48, "sprites/irie/hakui/iri_majime", 0, FALSE );
+	DrawSpriteFixedSize( 49, "sprites/kam/kam_2", NULL, -460, -270, 0, 0, 0, 1280, 960, 0, FALSE, FALSE, 0, 0, 49, 0, FALSE);
+	DrawScene( "bg/2021_add/sora_d", 200 );
+
+	PlaySE( 0, "a5_10315", 70, 64 );
+	//csp2 3
+	//print 1
+	ChangeBustshot( 48, "sprites/irie/hakui/iri_majime2", 0,  FALSE);
+	ShakeScreen( 0, 6, 100, 2, 50, );
+	Wait(100);
+
+	PlaySE( 0, "a5_10315", 70, 64 );
+	//csp2 4
+
+	//print 1
+	ChangeBustshot( 49, "sprites/kam/kam_4", 0,  TRUE);
+	ShakeScreen( 0, 6, 100, 2, 50, );
+	Wait(100);
+
+	//csp2 4
+	//csp2 3
+	PlaySE( 0, "bb", 70, 64 );
+	EndLayerPersistence( 48 );
+	EndLayerPersistence( 49 );
+	DrawScene( "white", 0 );
+	DrawScene( "bg/2021_add/sora_d", 400 );
+	PlaySE( 0, "a5_10315", 70, 64 );
+	OutputLine(NULL, "　見切ってるぜぇええ！！",
+		   NULL, " I've already seen right through you!!!", Line_WaitForInput);
+	PlaySE( 1, "a5_10315", 70, 64 );
+	ShakeScreen( 0, 6, 100, 2, 50, );
+	OutputLine(NULL, "　ほほう、やりますねぇ！！",
+		   NULL, " Hoho? Not bad!!!", Line_WaitForInput);
+
+	PlaySE( 0, "a5_04105", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 2, 50, );
+	PlaySE( 1, "a5_04107", 70, 64 );
+	ShakeScreen( 0, 6, 100, 2, 50, );
+	PlaySE( 2, "a5_04105", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 2, 50, );
+	PlaySE( 0, "a5_04105", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 2, 50, );
+	PlaySE( 1, "a5_04107", 70, 64 );
+	ShakeScreen( 0, 6, 100, 2, 50, );
+	PlaySE( 2, "a5_04105", 70, 64 );
+	PlaySE( 0, "bb", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 2, 50, );
+	OutputLine(NULL, "　ドカズガポカポカ……。",
+		   NULL, " Bash, bash, bam, bam...", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 51, "sprites/keiiti/2021/kei_komaru", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
+	DrawSceneWithMask( "bg/2021_add/pool2", "effect/up", 0, 0, 300 );
+
+	OutputLine(NULL, "　プールサイドのパラソル付きテーブルにて、ツインテールのウィッグを被った水着美少女は、",
+		   NULL, "The beautiful girl in a swimsuit and a twin-tail wig sat at a poolside table with a parasol", Line_WaitForInput);
+	OutputLine(NULL, "自分を巡って戦う、２人の雄々しき救世主をじっと見守っていた……。",
+		   NULL, " watching as her two brave saviors fought over her...", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	//;bg black,22
+	//;【圭一】
+	ChangeBustshot( 51, "sprites/keiiti/2021/kei_komaru", 200, TRUE );
+
+	Wait( 1000 );
+	ChangeBustshot( 51, "sprites/keiiti/2021/kei_nayamu", 200, TRUE );
+	Wait( 1000 );
+	ChangeBustshot( 51, "sprites/keiiti/2021/kei_majime", 200, TRUE );
+	Wait( 2000 );
+	ChangeBustshot( 51, "sprites/keiiti/2021/kei_warai", 200, TRUE );
+
+	OutputLine(NULL, "「……滅べ。",
+		   NULL, "\"...Die.", Line_WaitForInput);
+	OutputLine(NULL, "もういっそ、銀河ごと………」",
+		   NULL, " And take the whole galaxy with you...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+}
+
+void RenaMove3Test()
+{
+	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 40, "sprites/rena/re_kaiib1", "effect/left", 0, 150, 0, FALSE, 0, 0, 0, 0, 0, 40, 300, FALSE );
+	DrawSceneWithMask( "bg/gakkou/gk2", "effect/left", 0, 0, 300 );
+	//;【レナ】
+	OutputLine(NULL, "「はぅ～！！！",
+		   NULL, "\"Hau~!!!", Line_WaitForInput);
+	OutputLine(NULL, "　かぁいいよぅ！！",
+		   NULL, " So kyute!!", Line_WaitForInput);
+	OutputLine(NULL, "　お～持ち帰り～！！！」",
+		   NULL, " I'm taking you home~!!!\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+
+	MoveSprite( 40, 252, 0, 0, 0, 0, 0, 0, 500, TRUE );
+	Wait( 500 );
+
+	//;加速	
+	PlaySE( 0, "a1_16258", 50, 64 );
+	MoveSprite( 40, -480, 0, 0, 0, 0, 0, 0, 600, TRUE );
+	
+	EndLayerPersistence(40);
+	DrawSceneWithMask( "black", "effect/right", 0, 0, 300 );
+
+	//;■田村とウネのみをさらうレナ
+
+	DrawBustshotWithFiltering( 41, "sprites/tam/2/tam_9a", "effect/right", 0, -180, 0, FALSE, 0, 0, 0, 0, 0, 42, 300, FALSE );
+	DrawBustshotWithFiltering( 42, "sprites/une/3/une_9a", "effect/right", 0, -20, 0, FALSE, 0, 0, 0, 0, 0, 41, 300, FALSE );
+	DrawBustshotWithFiltering( 43, "sprites/hanyu/manu/han_1a", "effect/right", 0, 150, 0, FALSE, 0, 0, 0, 0, 0, 40, 300, FALSE );
+	DrawBustshotWithFiltering( 39, "sprites/rena/re_kaiib1", "effect/left", 0, 530, 0, FALSE, 0, 0, 0, 0, 0, 39, 0, FALSE );
+	DrawSceneWithMask( "bg/gakkou/gk3", "effect/right", 0, 0, 300 );
+
+	Wait( 300 );
+
+	
+	
+
+	MoveSprite( 39, 220, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+	PlaySE( 1, "wav/down3", 50, 64 );
+
+	MoveSprite( 42, -20, 90, 0, 0, 0, 0, 0, 100, TRUE );
+
+	Wait( 300 );
+
+	MoveSprite( 39, 120, 0, 0, 0, 0, 0, 0, 100, FALSE );
+	MoveSprite( 42, -160, 90, 0, 0, 0, 0, 0, 100, TRUE );
+
+	PlaySE( 1, "wav/down3", 20, 64 );
+
+	MoveSprite( 41, -180, 90, 0, 0, 0, 0, 0, 100, TRUE );
+
+	Wait( 300 );
+
+	PlaySE( 0, "a1_16258", 20, 64 );
+
+
+	MoveSprite( 39, -480, 170, 0, 0, 0, 0, 0, 300, FALSE );
+	MoveSprite( 41, -700, 260, 0, 0, 0, 0, 0, 300, FALSE );
+	MoveSprite( 42, -720, 260, 0, 0, 0, 0, 0, 300, TRUE );
+
+
+
+	Wait( 1000 );
+	//;*da
+	ChangeBustshot( 43, "sprites/hanyu/manu/han_11", 400, TRUE );
+	Wait( 500 );
+
+	//;【羽入】
+	OutputLine(NULL, "「………………………。",
+		   NULL, "\"...........................", Line_ContinueAfterTyping);
+	DisableWindow();
+
+	Wait( 2000 );
+	ChangeBustshot( 43, "sprites/hanyu/manu/han_6a", 200, TRUE );
+	OutputLine(NULL, "な、",
+		   NULL, " I,", Line_ContinueAfterTyping);
+	DisableWindow();
+
+	Wait( 500 );
+	ChangeBustshot( 43, "sprites/hanyu/manu/han_9a", 200, TRUE );
+	//;!s0/
+	OutputLine(NULL, "………納得できないのですーッ！！」",
+		   NULL, " .........I won't accept this!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	ShakeScreen( 4, 12, 20, 50, 1, );
+	//;!sd/
+
+	PlayBGM( 0, "bgm0/staff_roll_uta", 70, 0 );
+	DisableLoopingOfBGM( 0 );
+	ChangeVolumeOfBGM( 0, 70, 100 );
+
+	Wait( 1000 );
+	DisableWindow();
+	ClearMessage();
+
+
+	ChangeBustshot( 43, "sprites/hanyu/manu/han_4a", 200, TRUE );
+
+	PlaySE( 0, "a5_10317", 70, 64 );
+	FadeBustshotWithFiltering( 43, "effect/down", 0, FALSE, 0, 0, 300, TRUE );
+
+
+	DrawScene( "bg/etc/last", 400 );
+
+	Wait( 2000 );
+	ShakeScreen( 4, 12, 20, 50, 1, );
+
+
+	FadeBustshot( 41, FALSE, 0, 0, 0, 0, 400, FALSE );
+	FadeBustshot( 42, FALSE, 0, 0, 0, 0, 400, TRUE );
+
+	DrawScene( "black", 3000 );
+
+	CallScriptSection("&endroll", "HouStaffRoll");
+}
+
+void HanyuuMoveTest()
+{
+	DrawScene( "bg/efe/different_spiral_1b", 400 );
+
+	DrawSpriteFixedSize( 44, "sprites/hanyu/miko/han_10", NULL, -340, 240, 0, 0, 0, 640, 480, 0, FALSE, FALSE, 0, 0, 44, 0, TRUE);
+	MoveSprite( 44, -340, -240, 0, 0, 0, 0, 0, 600, TRUE );
+
+	ChangeVolumeOfBGM( 1, 0, 1000 );
+	Wait( 1000 );
+	StopBGM( 1 );
+
+	PlayBGM( 0, "bgm1/moon_bow_eq", 70, 0 );
+
+	//Unhandled: 				
+	FadeBustshot(44, FALSE, 0, 0, 0, 0, 0, FALSE);
+	DrawBustshot( 40, "sprites/hanyu/miko/han_10", -20, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 41, 0, TRUE );
+	ChangeBustshot( 40, "sprites/hanyu/miko/han_11", 400, TRUE );
+	Wait( 500 );
+
+	ChangeBustshot( 40, "sprites/hanyu/miko/han_9a", 200, TRUE );
+
+	//;【羽入】
+	OutputLine(NULL, "「僕は二人のようにはやられないのですよ、",
+		   NULL, "\"You won't take me down like you did those two.", Line_WaitForInput);
+	OutputLine(NULL, "あぅあぅ！！」",
+		   NULL, " Auau!!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	EndLayerPersistence(44);
+}
+
+void RenaMove1Test()
+{
+	DrawBustshot( 1, "sprites/takano/ta_ikari", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
+	DrawScene( "bg/keisatu/ke_ky4", 400 );
+	//;【鷹野】
+	OutputLine(NULL, "「は？",
+		   NULL, "\"Huh?", Line_WaitForInput);
+	OutputLine(NULL, "　何よこれ……？！",
+		   NULL, " What's this......?!", Line_WaitForInput);
+	OutputLine(NULL, "　ウ、ウサギの耳…？！」",
+		   NULL, " B-Bunny ears...?!\"", Line_Normal);
+	ClearMessage();
+
+	CallScriptSection("util", "RenaMove1");
+
+	//;【レナ】
+	OutputLine(NULL, "「はぅうううぅううぅうッ！！！」",
+		   NULL, "\"Hauuuuuuuuu!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+}
+
+void RenaMove2Test()
+{
+
+	Wait( 1000 );
+	DrawBustshot( 1, "sprites/takano/ta_ikari", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
+	DrawScene( "bg/keisatu/ke_ky4", 400 );
+
+	//Unhandled vsp 890,1
+	//;レナを表示
+
+	//;お持ち帰りの文字画像、出て消える
+	//;wait 500
+	CallScriptSection("util", "RenaMove2");
+	//;レナの高速横移動
+
+	//csp 890
+	//Unhandled print: print 0
+
+
+
+	DrawScene( "effect/f_a", 0 );
+	PlaySE( 0, "se_dageki_07", 80, 64 );
+	ShakeScreen( 4, 6, 20, 25, 2, );
+
+	DrawScene( "effect/f_b", 0 );
+	PlaySE( 1, "se_dageki_03", 80, 64 );
+	ShakeScreen( 4, 6, 20, 25, 2, );
+
+	DrawScene( "effect/f_c", 0 );
+	PlaySE( 0, "wav/tataku", 50, 64 );
+	ShakeScreen( 4, 6, 20, 25, 2, );
+
+	DrawScene( "effect/f_d", 0 );
+	PlaySE( 1, "wav/dageki", 50, 64 );
+	ShakeScreen( 4, 6, 20, 25, 2, );
+
+	DrawScene( "effect/f_a", 0 );
+	PlaySE( 0, "se_dageki_07", 80, 64 );
+	ShakeScreen( 0, 12, 100, 3, 33, );
+
+	DrawScene( "effect/f_c", 0 );
+	PlaySE( 1, "wav/tataku", 50, 64 );
+	ShakeScreen( 2, 12,  100 , 3, 33, );
+
+	DrawScene( "effect/f_b", 0 );
+	PlaySE( 1, "se_dageki_03", 80, 64 );
+	ShakeScreen( 0, 12, 100, 3, 33, );
+
+	DrawScene( "effect/f_d", 0 );
+	PlaySE( 1, "wav/dageki", 50, 64 );
+	ShakeScreen( 2, 12,  100 , 3, 33, );
+
+
+	//print 22
+	DrawSpriteFixedSize( 55, "sprites/rena/eye/re_eyexa2", NULL, -320, -140, 0, 0, 0, 533, 80, 0, FALSE, FALSE, 0, 55, 55, 400, FALSE);
+	DrawSpriteFixedSize( 56, "sprites/keiiti/eye/kei_eyexa1", NULL, -220, 60, 0, 0, 0, 533, 80, 0, FALSE, FALSE, 0, 55, 56, 400, TRUE);
+	//Unhandled: print 22
+	PlaySE( 0, "syunkan06", 50, 64 );
+	//Fadeout eyepic display
+	MoveSprite( 55, -20, -140, 0, 0, 255, 0, 0, 500, TRUE );
+	FadeBustshot( 55, FALSE, 0, 0, 0, 0, 0, TRUE );
+	//Fadeout eyepic display
+	MoveSprite( 56, 80, 60, 0, 0, 255, 0, 0, 500, TRUE );
+	FadeBustshot( 56, FALSE, 0, 0, 0, 0, 0, TRUE );
+
+
+	PlaySE( 0, "wav/tataku", 50, 64 );
+	DrawScene( "effect/f_a", 0 );
+	ShakeScreen( 0, 15, 100, 6, 16, );
+
+	Wait( 300 );
+	PlaySE( 1, "wav/dageki", 100, 64 );
+	DrawScene( "effect/f_d", 0 );
+	ShakeScreen( 2, 15,  100 , 6, 16, );
+
+
+	DrawScene( "white", 400 );
+	PlaySE( 0, "wav/tataku", 50, 64 );
+	PlaySE( 1, "wav/dageki", 50, 64 );
+	Wait( 1000 );
+	PlaySE( 0, "wav/finish", 50, 64 );
+	DrawBustshot( 1, "sprites/rena/sifuku/re_kaiib1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
+	DrawBustshot( 2, "sprites/keiiti/sifuku/kei_warai", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+	DrawScene( "bg/keisatu/ke_ky3", 0 );
+	ShakeScreen( 4, 15, 20, 75, 0, );
+	Wait( 500 );
+
+	OutputLine(NULL, "　レナの猛打が鷹野の顔面に集中し、そして圭一が鷹野の足をその逆方向に掬う。",
+		   NULL, "Rena's heavy blow was concentrated on Takano's face, and Keiichi swept her feet in the opposite direction.", Line_WaitForInput);
+}
+
+void HanyuuDanceTest()
+{
+	
+	DrawScene( "black", 400 );
+	DrawScene( "bg/sonota/fure2", 400 );
+
+	CallScriptSection("util", "HanyuuDance");
+
+	OutputLine(NULL, "　羽入は小躍りして喜ぶ。",
+		   NULL, "Hanyuu was dancing with joy.", Line_WaitForInput);
+	OutputLine(NULL, "田村とは、徹底的に不仲のようだ。",
+		   NULL, " She must be thoroughly at odds with Tamura.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……まぁ、あれだけ横柄な態度で上から目線で威張られたら、初対面の梨花であっても一泡吹かせてやりたくなるというものだ。",
+		   NULL, "......Well, with such an arrogant attitude and condescending posturing, even Rika wanted strike her after only meeting her once.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+}
+
+void EyeTest()
+{
+	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "bg/keisatu/ke6", "effect/left", 0, 0, 300 );
+	//;鷹野の目のカットイン、右から左へ
+	//;（lspで登場させたい画像を表示させ、eyepicで表示）
+	//Show eyepic display
+	DrawSpriteFixedSize( 55, "sprites/takano/eye/tak_eyex1", NULL, -320, -140, 0, 0, 0, 533, 80, 0, FALSE, FALSE, 0, 256, 55, 0, TRUE);
+	MoveSprite( 55, -170, -140, 0, 0, 55, 0, 0, 350, TRUE );
+	Wait( 200 );
+	//Fadeout eyepic display
+	MoveSprite( 55, -20, -140, 0, 0, 255, 0, 0, 500, TRUE );
+	FadeBustshot( 55, FALSE, 0, 0, 0, 0, 0, TRUE );
+
+
+	//;ブン！
+	//;se3v 5309,50
+	PlaySE( 0, "se_zangeki_07", 50, 64 );
+	Wait( 200 );
+	Wait( 50 );
+	PlaySE( 1, "a5_04105", 50, 64 );
+	Wait( 50 );
+	PlaySE( 2, "se_5605", 25, 64 );
+	ShakeScreen( 0, 9, 100, 4, 25, );
+
+
+	//;ブン！(二人目)
+	//;se3v 5309,50
+
+	PlaySE( 0, "se_zangeki_07", 50, 64 );
+	Wait( 200 );
+	PlaySE( 1, "a5_04107", 50, 64 );
+	Wait( 50 );
+	PlaySE( 2, "se_5606", 25, 64 );
+	ShakeScreen( 0, 9, 100, 4, 25, );
+
+
+	//;一人目叩きつけられる
+	DrawSceneWithMask( "black", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "bg/keisatu/ke_ky2", "effect/right", 0, 0, 300 );
+	PlaySE( 0, "se_5403", 50, 64 );
+	PlaySE( 1, "wav/tataku", 25, 64 );
+	PlaySE( 2, "wav/tatakiwaru", 50, 64 );
+	ShakeScreen( 4, 12, 20, 25, 2, );
+
+	//;二人目叩きつけられる
+	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "bg/keisatu/ke_ky3", "effect/left", 0, 0, 300 );
+	PlaySE( 1, "wav/tataku", 25, 64 );
+	PlaySE( 0, "se_5403", 50, 64 );
+	ShakeScreen( 4, 12, 20, 75, 0, );
+	Wait( 300 );
+
+	//;血ぼたで重症のイメージ
+	PlaySE( 1, "wav/thisikuki", 25, 64 );
+	DrawScene( "bg/efe/blood_2a", 0 );
+	DrawScene( "bg/keisatu/ke_ky3", 400 );
+	//;mcbg 22
+
+	PlaySE( 0, "wav/thisikuki", 25, 64 );
+	DrawScene( "bg/efe/blood_2c", 0 );
+	//;mcbg 22
+	DrawScene( "bg/keisatu/ke_ky3", 400 );
+	//;wait 500
+
+	OutputLine(NULL, "　鷹野の右腕がひとり、左腕がもうひとりの頭を掴み上げて、それぞれ逆の壁に投げつける。",
+		   NULL, "Takano grabbed one head each in both her right and left hands, slamming them against opposite walls.", Line_WaitForInput);
+}
+
+void ResetGame()
+{
+	SetGlobalFlag(TEIEND, 0);
+	SetGlobalFlag(HIGUEND, 0);
+	SetGlobalFlag(MEHEND, 0);
+}
+
+void VideoTest()
+{
+	DrawScene( "black", 0 );
+	CallScriptSection("util", "PlayIntro");
+	Wait(1000);
+}
+
+void shaketest()
+{
+	DrawScene( "bg/maebara/ma_g3", 0 );
+	OutputLineAll(NULL, "Show Message box!", Line_WaitForInput);
+	PlaySE( 0, "a1_07132", 50, 64 );
+	ShakeScreen( 0, 9, 100, 4, 25, );
+	PlaySE( 1, "a1_07132", 50, 64 );
+	ShakeScreen( 0, 9, 100, 4, 25, );
+	PlaySE( 0, "a1_07132", 50, 64 );
+	ShakeScreen( 0, 9, 100, 4, 25, );
+	PlaySE( 1, "a1_07132", 50, 64 );
+	ShakeScreen( 0, 9, 100, 4, 25, );
+	PlaySE( 0, "a1_07132", 50, 64 );
+	ShakeScreen( 0, 9, 100, 4, 25, );
+	OutputLine(NULL, "　そして、ダンダンダンダンダンダン！",
+		   NULL, "Then there was a bangbangbangbangbangbang!", Line_WaitForInput);
+	OutputLine(NULL, "と激しいノック！！",
+		   NULL, " knocking violently on our door!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「だ、",
+		   NULL, "\"Wh-", Line_ContinueAfterTyping);
+
+	Wait( 500 );
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "誰ですか！！」",
+		   NULL, " Who is it?!\"", Line_ContinueAfterTyping);
+
+	ShakeScreen( 4, 9, 25, 20, 2, );
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　親父が叫ぶ。",
+		   NULL, "My father shouted.", Line_WaitForInput);
+	OutputLine(NULL, "返事はすぐにあった。",
+		   NULL, " They answered immediately.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「こんばんは、竜宮です！",
+		   NULL, "\"Good evening, it's Ryuugu! /", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "a1_07132", 50, 64 );
+	ShakeScreen( 2, 9,  100 , 4, 25, );
+	Wait( 1000 );
+
+	OutputLine(NULL, "　開けてください！」",
+		   NULL, " Please let me in!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "a1_07132", 50, 64 );
+	Wait( 100 );
+	PlaySE( 1, "a1_07132", 50, 64 );
+	ShakeScreen( 4, 7, 25, 28, 1, );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+}
+
+void scrolltest()
+{
+	//god this is scuffed
+
+	DrawSceneWithMask( "bg/hina/bus_03", "effect/left", 0, 0, 300 );
+
+	ClearMessage();
+	DisableWindow();
+	//;（魅音・吉村・建設省の２人、互いをじろじろ見る。）@
+
+	DrawBustshot( 4, "sprites/yos/yos_d4", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, FALSE );
+	DrawBustshot( 5, "sprites/oka/oka_d3", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, FALSE );
+	DrawBustshot( 3, "sprites/hos/hos_d8", -20, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 400, TRUE );
+	Wait(500);
+
+	DrawBustshot( 6, "sprites/ara/ara_d3a", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
+	DrawBustshot( 7, "sprites/yos/yos_d2a", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+	DrawBustshot( 8, "sprites/mio/mio_d9a", -20, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawSceneWithScroll( "bg/hina/bus_02", 1, 400 );
+	Wait(500);
+
+	ChangeBustshot( 6, "sprites/ara/ara_d9a", 400, FALSE );
+	ChangeBustshot( 7, "sprites/yos/yos_d1a", 400, FALSE );
+	ChangeBustshot( 8, "sprites/mio/mio_d7a", 400, TRUE );
+	Wait(500);
+	
+	DrawBustshot( 4, "sprites/yos/yos_d4", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
+	DrawBustshot( 5, "sprites/oka/oka_d3", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+	DrawBustshot( 3, "sprites/hos/hos_d8", -20, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE );
+	DrawSceneWithScroll( "bg/hina/bus_02", 2, 400 );
+	Wait(500);
+
+	DrawBustshot( 6, "sprites/ara/ara_d3a", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
+	DrawBustshot( 7, "sprites/yos/yos_d2a", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+	DrawBustshot( 8, "sprites/mio/mio_d9a", -20, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawSceneWithScroll( "bg/hina/bus_02", 0, 400 );
+	Wait(500);
+
+	DrawBustshot( 4, "sprites/yos/yos_d4", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
+	DrawBustshot( 5, "sprites/oka/oka_d3", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+	DrawBustshot( 3, "sprites/hos/hos_d8", -20, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE );
+	DrawSceneWithScroll( "bg/hina/bus_02", 3, 400 );
+	Wait(500);
+
+	DrawScene("black", 3000);
+}
+
+void persistenttest()
+{
+	DrawSceneWithMask( "bg/hina/bus_03", "effect/left", 0, 0, 500 );
+
+	DrawBustshot( 5, "sprites/rik/rik_d6", -20, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );
+	MakeLayerPersistent(5);
+
+	OutputLine("梨花", "「だめ。」",
+		   "Rika", "\"No.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	
+	DrawScene( "white", 200 );
+	DrawScene( "black", 200 );
+	Wait(500);
+	EndLayerPersistence( 5 );
+	PlayBGM( 1, "me/ame2", 70, 0 );
+	DrawBustshot( 1, "sprites/mio/mio_d13a", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
+	DrawBustshot( 2, "sprites/rik/rik_d6", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+	DrawScene( "bg/hina/bus_02", 400 );
+
+	OutputLine(NULL, "　相変わらず魅音は握手を求めたまま固まっている。",
+		   NULL, "Mion remains frozen, looking for a handshake.", Line_WaitForInput);
+	DisableWindow();
+
+	ClearMessage();
+	DisableWindow();
+}
+
+void bustest()
+{
+	DrawSceneWithMask( "bg/hina/bus_03", "effect/left", 0, 0, 500 );
+	DrawBustshotWithFiltering( 1, "sprites/mio/mio_d1a", "effect/left", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
+
+	Wait(500);
+
+	DrawBustshot( 2, "sprites/rik/rik_d10", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 600, TRUE );
+
+	Wait(500);
+
+	DrawBustshot( 3, "sprites/rik/rik_d10", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 500, FALSE );
+	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 500, FALSE );
+	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 500, FALSE );
+	DrawBustshot( 4, "sprites/mio/mio_d7a", 200, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 6, 500, TRUE );
+
+	Wait(500);
+
+	DrawBustshot( 5, "sprites/rik/rik_d1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 600, FALSE );
+	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 600, TRUE );
+
+	Wait(500);
+
+	DrawBustshot( 6, "sprites/mio/mio_d10", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 600, FALSE );
+	FadeBustshot( 4, FALSE, 0, 0, 0, 0, 600, TRUE );
+
+	Wait(500);
+
+	ChangeBustshot( 6, "sprites/mio/mio_d7a", 500, TRUE );
+
+	Wait(500);
+
+	ShakeScreen( 1, 18, 30, 10, 0, );
+
+	OutputLine("魅音", "なんて言われた日にゃもー、休むしか！",
+		   " Mion", "Well, when that day came, I just had to skip!", Line_WaitForInput);
+	OutputLine(NULL, "ってカンジでー！」",
+		   NULL, " You know?!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	JumpSection("main");
+}
+
+void randomtest() 
+{
+	int rnd;
+	rnd = 6;
+	if((rnd < 4) || (rnd == 6))
+	{
+		Break();
+	}
+
+	Wait(10000);
+}

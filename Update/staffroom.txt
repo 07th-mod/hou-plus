@@ -1,0 +1,1925 @@
+void main()
+{
+	//Unhandled: *Staff_room10
+	DrawScene( "black", 3000 );
+
+	//;gosub *Ch_Oko_Se
+
+	//;gosub *Ch_Ri_Nekomimi
+
+	//;gosub *Ch_Oh_Yu
+
+	//;gosub *Ch_Ta_Ha
+
+
+	FadeOutBGM( 0, 0, TRUE );
+	FadeOutBGM( 1, 0, TRUE );
+	StopSE( 0 );
+	//csp -1
+	//print 7
+	//Unhandled: mov %ZERO_MUGIC,0
+
+	PlaySE( 0, "wav/taitoru", 70, 64 );
+	DrawScene( "white", 3000 );
+	DrawScene( "black", 1000 );
+	DrawScene( "img/dsc00038", 1000 );
+
+	//;gosub *msysRi
+	PlayBGM( 0, "bgm1/rika", 70, 0 );
+
+	PlaySE( 0, "boyon", 70, 64 );
+	//;ld c,oko_1,26
+	DrawBustshotWithFiltering( 1, "sprites/okonogi/oko_def", "effect/up", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
+
+	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
+	//Unhandled: rmode ON
+
+
+	SetSpeedOfMessage( FALSE, 0 );
+
+
+
+	//;■スタッフルーム（裏）
+
+
+
+	OutputLine(NULL, "「お疲れ様です、竜騎士07です。",
+		   NULL, "\"Good work, everyone. I'm Ryukishi07.", Line_WaitForInput);
+	DisableWindow();
+
+	PlaySE( 0, "boyon", 70, 64 );
+
+	//;ld c,oko_3,80
+	ChangeBustshot( 1, "sprites/okonogi/oko_warai", 200, TRUE );
+
+	OutputLine(NULL, "いやー、このところ、長編ばかりだったんで、たまには短編もいいもんですねー！」",
+		   NULL, " Well! We've had nothing but long chapters thus far, so it's nice to have short ones once in a while!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+
+	DrawBustshotWithFiltering( 2, "sprites/sonota/oisi10", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+
+	OutputLine(NULL, "「素直に、作業が楽でよかったと白状するにゃり。",
+		   NULL, "\"Just confess that it was easier to do the work, nyari.", Line_WaitForInput);
+	DisableWindow();
+
+	ChangeBustshot( 2, "sprites/sonota/oisi7", 200, TRUE );
+
+	OutputLine(NULL, "こんにちは、今回は有給を取らずに済みそうな八咫桜にゃりん。」",
+		   NULL, " Hello. I'm Yatazakura, and it looks like I won't be getting a paycheck this time.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawSceneWithMask( "img/dsc00039", "effect/right", 0, 0, 300 );
+	DrawBustshotWithFiltering( 1, "sprites/okonogi/oko_warai", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+
+	OutputLine(NULL, "「まぁ、それはさて置いて！",
+		   NULL, "\"Well, leaving that aside!", Line_WaitForInput);
+	OutputLine(NULL, "　『ひぐらし』もとりあえずのひと段落を終え、いよいよ我ら07th_Expansion.は次なる新作へまっしぐらなのであります！",
+		   NULL, " With Higurashi having come to a close for now, 07th_Expansion is finally speeding headlong towards its next work!", Line_WaitForInput);
+
+	PlaySE( 0, "boyon", 70, 64 );
+
+	OutputLine(NULL, "　いやぁ、次は何を作ろうかな～！",
+		   NULL, " I wonder what we should make next~!", Line_WaitForInput);
+	OutputLine(NULL, "　というわけで！",
+		   NULL, " That said!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+
+	OutputLine(NULL, "　次回作はどんなのにするか会議、緊急開催～！！」",
+		   NULL, " Time for an emergency conference on what our next work should be like~!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+
+	DrawBustshotWithFiltering( 2, "sprites/rika/nekomimi/ri_defa1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+
+	OutputLine(NULL, "「……みー？",
+		   NULL, "\"......Meep?", Line_WaitForInput);
+	OutputLine(NULL, "　『うみねこのなく頃に』で決定じゃなかったのですか？",
+		   NULL, " Didn't we decide on Umineko: When They Cry?", Line_WaitForInput);
+	DisableWindow();
+
+	ChangeBustshot( 2, "sprites/rika/nekomimi/ri_waraia1", 200, TRUE );
+
+	OutputLine(NULL, "　こんにちは、ＢＴなのです。",
+		   NULL, " Hello, I am BT.", Line_WaitForInput);
+	OutputLine(NULL, "にぱ～☆」",
+		   NULL, " Nipah~☆\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	ChangeBustshot( 1, "sprites/okonogi/oko_def", 200, TRUE );
+
+	OutputLine(NULL, "「うむ。",
+		   NULL, "\"Indeed.", Line_WaitForInput);
+	OutputLine(NULL, "『うみねこ』という仮タイトルを取り合えずつけて、一応の物語の方向性もつけては見たが、そんなことで果たして良いのであろうか。",
+		   NULL, " I've given it the temporary title of Umineko, and come up with a direction for the story, but is that really what we need?", Line_WaitForInput);
+
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/kira", 70, 64 );
+
+	OutputLine(NULL, "竜騎士07は、より楽しい次回作のため、さまざまなアイデアを次々お鍋に放り込み、",
+		   NULL, " Ryukishi07 will throw all kinds of ideas, one after another, into a pot, in order to make an even more enjoyable work.", Line_WaitForInput);
+	OutputLine(NULL, "ぐつぐつ煮込んで、",
+		   NULL, " He'll boil them and stew them together,", Line_WaitForInput);
+	OutputLine(NULL, "一晩寝かせたカレーはきっと美味であろうというわけなのです！」",
+		   NULL, " then leave them overnight, and curry the next day will have to be delicious!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/tatakiwaru", 70, 64 );
+	ShakeScreen( 2, 12,  100 , 8, 12, );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	DisableWindow();
+
+	ChangeBustshotWithFiltering( 2, "sprites/sonota/oisi9", "effect/left", 0, 300, TRUE );
+
+	OutputLine(NULL, "「カレーというより闇鍋という感じにゃり。",
+		   NULL, "\"That's more like yami-nabe than curry, nyari.", Line_WaitForInput);
+	OutputLine(NULL, "それに変に混ぜ物をしない方が美味ということもあるにゃりよ？」",
+		   NULL, " And sometimes it tastes better when you don't mix anything weird into it, nyari.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	ChangeBustshot( 1, "sprites/okonogi/oko_ikari", 200, TRUE );
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「えぇい、そんな守りの姿勢でどうするのだ！！",
+		   NULL, "\"Come on--staying on the defensive will get us nowhere!!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/dageki", 70, 64 );
+	ShakeScreen( 0, 12, 100, 3, 33, );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　面白いストーリーというものは、料理に通ず！",
+		   NULL, " All interesting stories lead to cooking!", Line_WaitForInput);
+	OutputLine(NULL, "　絶妙な仕込みとスパイスのハーモニー、そして想像もつかぬ隠し味！",
+		   NULL, " Exquisite preparation, a harmony of spices, a secret ingredient beyond imaginings!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/dageki", 70, 64 );
+	ShakeScreen( 2, 9,  100 , 2, 50, );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　それらが最高の高みにまで昇華された時、人々に感動を与える素晴らしい味わいとなる！",
+		   NULL, " Elevated to the highest heights, they become a wonderful flavor to move the hearts of men!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/daidageki", 70, 64 );
+	ShakeScreen( 0, 18, 100, 3, 33, );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　そのためにも、古今東西の面白ストーリーを研究しそのエッセンスを抽出！",
+		   NULL, " To do that, we'll research interesting stories from past and present, from east and west, and extract their essences!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/furu", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/furu", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/furu", 70, 64 );
+
+	OutputLine(NULL, "　それらを取り込み、誰も想像しなかった素晴らしい物語を描き出すのだー！！」",
+		   NULL, " By bringing them all in, we'll write a spectacular story nobody would have imagined!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/finish", 70, 64 );
+	ShakeScreen( 2, 21,  100 , 4, 25, );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	DisableWindow();
+
+	DrawBustshot( 3, "sprites/rika/nekomimi/ri_komarua1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
+	DrawSceneWithMask( "img/dsc00038", "effect/left", 0, 0, 300 );
+
+	OutputLine(NULL, "「……みー。",
+		   NULL, "\"......Meep.", Line_WaitForInput);
+	OutputLine(NULL, "迷走の予感もしますですが、考える方向は面白いと思いますのです。」",
+		   NULL, " I feel like this will lead us astray, but I think it's an interesting direction.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+
+	DrawBustshotWithFiltering( 4, "sprites/sonota/oisi10", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+
+	OutputLine(NULL, "「甘いにゃりよ…。",
+		   NULL, "\"How naive, nyari...", Line_WaitForInput);
+	OutputLine(NULL, "どうせオチは読めてるにゃり。",
+		   NULL, " I know how this will end, nyari.", Line_WaitForInput);
+	OutputLine(NULL, "散々アイデアを考えた挙句、",
+		   NULL, " We'll think of all sorts of ideas,", Line_ContinueAfterTyping);
+	Wait( 800 );
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "『それじゃ□姫だー！』とか",
+		   NULL, " and then other famous titles will fly out of us, like", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/tataku", 70, 64 );
+	ShakeScreen( 0, 12, 100, 5, 20, );
+
+	OutputLine(NULL, "『それはＦ○ｔｅだー！』とか、",
+		   NULL, " 'This is just __kihime!', or", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/lf164", 70, 64 );
+	ShakeScreen( 2, 12,  100 , 5, 20, );
+
+	OutputLine(NULL, "既存の有名タイトルが飛び出すオチに決まってるにゃりん。」",
+		   NULL, " 'That's F_te!' nyarin.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawBustshot( 5, "sprites/okonogi/oko_def2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
+	DrawSceneWithMask( "img/dsc00039", "effect/right", 0, 0, 300 );
+	ChangeBustshot( 5, "sprites/okonogi/oko_akuwarai", 200, TRUE );
+
+	OutputLine(NULL, "「むむむむむ、ならばこういうのはどうか！",
+		   NULL, "\"Hmmmmm, then what about this?!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+
+	OutputLine(NULL, "　面白そうなエッセンスを混ぜていくから、最終的には有名タイトルに行き着いてしまう！",
+		   NULL, " If we keep mixing interesting essences, we'll arrive at a famous title in the end!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 200 );
+	DisableWindow();
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	ChangeBustshot( 5, "sprites/okonogi/oko_warai", 200, TRUE );
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+
+	OutputLine(NULL, "　ならば逆転の発想で、有名タイトルをそのままお鍋に放り込んで、混ぜていく錬金術感覚！！」",
+		   NULL, " So instead, we'll do the opposite--throw those famous titles in themselves and mix them up all alchemy-like!!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawBustshot( 6, "sprites/sonota/oisi9", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+	DrawSceneWithMask( "img/dsc00038", "effect/left", 0, 0, 300 );
+
+	OutputLine(NULL, "「言ってることがさっぱりわからないにゃりんが、",
+		   NULL, "\"I have no idea what you're talking about, nyarin...", Line_WaitForInput);
+
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+
+	OutputLine(NULL, "…早い話が、今流行っている作品を複数パクって混ぜれば、何か新しい作品が生まれるかもしれないと言いたいにゃりんか？」",
+		   NULL, " But in short, you want to rip off a bunch of popular works, mix them up, and maybe come out with something new, nyarin?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+
+	DrawBustshotWithFiltering( 7, "sprites/rika/nekomimi/ri_komarua1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+
+	OutputLine(NULL, "「……カレーライスにフルーツポンチにイチゴのショートケーキ。",
+		   NULL, "\"......Curry rice, fruit punch, and strawberry shortcake.", Line_WaitForInput);
+	OutputLine(NULL, "個別に食べれば子供の大好物ですが、全部混ぜたら誰も食べませんのですよ…？」",
+		   NULL, " Children love each of them on their own, but if you mix them all up, nobody would eat it...\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	FadeBustshotWithFiltering( 6, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 8, "sprites/okonogi/oko_akuwarai", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+
+	OutputLine(NULL, "「そうだろうか？",
+		   NULL, "\"Are you sure?", Line_WaitForInput);
+	OutputLine(NULL, "　果たして本当にそうだろうか？！",
+		   NULL, " Are you perfectly certain of that?!", Line_WaitForInput);
+	DisableWindow();
+
+	//;gosub *G_sys
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+	DrawScene( "white", 400 );
+	DrawBustshot( 1, "sprites/okonogi/oko_warai", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+	DrawScene( "img/dsc00038", 200 );
+
+	OutputLine(NULL, "　それを実践してみようじゃないか、カレーにフルーツポンチ大いに結構！",
+		   NULL, " Why don't we try? Curry with fruit punch is totally fine with me!", Line_WaitForInput);
+	OutputLine(NULL, "　荒唐無稽な錬金術も、その過程で数々の化学的発見を生み出している！",
+		   NULL, " Wild alchemy results in numerous chemical discoveries!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/koruku", 70, 64 );
+	ShakeScreen( 0, 9, 100, 3, 33, );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+
+	PlaySE( 0, "wav/hikaru", 70, 64 );
+
+	OutputLine(NULL, "　そう、成果はなくとも過程に得るものはあるのかもしれないのだ！",
+		   NULL, " Even if we get nothing out of it, we might learn something from the process!", Line_WaitForInput);
+	OutputLine(NULL, "　それをいけしゃあしゃあと試すことこそ我が07thの使命！",
+		   NULL, " It is our mission as 07th to shamelessly test it all!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "bb", 70, 64 );
+	ShakeScreen( 2, 18,  100 , 8, 12, );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　そこに痺れる憧れるぅううぅッ！",
+		   NULL, " It's exciting! It's what we were meant for!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/dageki", 70, 64 );
+	ShakeScreen( 0, 9, 100, 3, 33, );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　こいつ、脇に水道があるので泥で唇を洗ってやがるッ！！」",
+		   NULL, " There's a water fountain next to you, so I'll wash out your mouth with mud!!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawBustshotWithFiltering( 2, "sprites/sonota/oisi6", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+
+	OutputLine(NULL, "「…カレーにショートケーキ混じってるの食ったら、唇を洗いたくもなるにゃりんよ。",
+		   NULL, "\"...If I ate curry mixed with shortcake, I'd want to wash out my mouth too, nyarin.", Line_WaitForInput);
+	OutputLine(NULL, "でもまぁ、言いたいことはわかったにゃりん。」",
+		   NULL, " But I figured out what you're trying to say, nyarin.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	FadeOutBGM( 0, 0, TRUE );
+	ChangeBustshot( 1, "sprites/okonogi/oko_def", 200, TRUE );
+	PlayBGM( 0, "bgm0/4", 70, 0 );
+
+	OutputLine(NULL, "「うむ、わかればよい！",
+		   NULL, "\"It's good that you understand!", Line_WaitForInput);
+	OutputLine(NULL, "　というわけで、最近流行った、",
+		   NULL, " With that, we'll go to a recently popular...", Line_ContinueAfterTyping);
+	Wait( 800 );
+	OutputLine(NULL, "…いやいや、流行などどうでもいい！",
+		   NULL, " No, wait, popularity doesn't matter!", Line_WaitForInput);
+	OutputLine(NULL, "　最近、各人がハマったタイトルを挙げ、それを鍋に放り込んで煮込んでみようではないか！！",
+		   NULL, " We'll all say what titles we're into recently, then throw them in the pot and boil them all up!!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/furu", 70, 64 );
+
+	OutputLine(NULL, "　では…まずはＢＴさん、行ってみるべし！！」",
+		   NULL, " All right... First must be you, BT-san!!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawSceneWithMask( "img/dsc00038", "effect/left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 1, "sprites/rika/nekomimi/ri_nikoa1", "effect/right", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+
+	OutputLine(NULL, "「……みー。",
+		   NULL, "\"......Meep.", Line_WaitForInput);
+	OutputLine(NULL, "何かひとつと言われるととても難しいものがあるのですが…。",
+		   NULL, " It's very difficult for me to pick out one of them, but...", Line_WaitForInput);
+	DisableWindow();
+
+	ChangeBustshot( 1, "sprites/rika/nekomimi/ri_waraia1", 200, TRUE );
+
+	OutputLine(NULL, "…では、ここは無難に■ーゼンメイデンを挙げてみますのです。」",
+		   NULL, " I'll go with the safe choice and suggest __zen Maiden.\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/hikaru", 70, 64 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+
+	DrawBustshotWithFiltering( 2, "sprites/sonota/oisi7", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+
+	OutputLine(NULL, "「ほほぅ、無難どころかなかなかの本命にゃりんよ！",
+		   NULL, "\"Oh ho! Safe choice? I think not! You get right to the point, nyarin!", Line_WaitForInput);
+	OutputLine(NULL, "　ツンデレヒロインてんこ盛りは時代のニーズにもぴったりにゃりん。」",
+		   NULL, " A heaping helping of tsundere heroines is just what this age needs right now, nyarin.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	FadeBustshotWithFiltering( 1, "effect/right", 0, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprites/okonogi/oko_warai", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+
+	OutputLine(NULL, "「いやいや、それだけではないぞ。",
+		   NULL, "\"No, no, that isn't all.", Line_WaitForInput);
+
+	PlaySE( 0, "wav/hikaru", 70, 64 );
+
+	OutputLine(NULL, "引き篭もり問題が囁かれる現代において、そのヒッキーを主人公にした斬新さ！",
+		   NULL, " Its originality--having a hikikomori protagonist in a modern world where the problem is only whispered about!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+
+	OutputLine(NULL, "　フィギュア萌えの時代に合った、フィギュア自体がヒロインという斬新さ！",
+		   NULL, " Its novelty--having a figure itself, in the age of figure moe, be the heroine!", Line_WaitForInput);
+	OutputLine(NULL, "　それでいて、苦労せずして恋人出現という、日本男児が憧れてやまない黄金の王道、",
+		   NULL, " And yet it still has the gold-paved high road Japanese boys can't help but yearn for--a lover appearing without them doing any work.", Line_ContinueAfterTyping);
+	Wait( 800 );
+	OutputLine(NULL, "通称エスパシ○形式もしっかり押さえている！",
+		   NULL, " It has the so-called esp__ formula firmly in place!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/daidageki", 70, 64 );
+	ShakeScreen( 2, 15,  100 , 6, 16, );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　確かに、これだけ時代を読みきったエッセンスが入っていれば、あれだけの大ヒットは頷ける…。",
+		   NULL, " With an essence so perfectly aligned with the times, I can see why that alone would make it a huge hit...", Line_WaitForInput);
+	OutputLine(NULL, "なるほど、我が07thの次回作を煮出す鍋に入れる第一の具に相応しい！！」",
+		   NULL, " Yes, it is suitable for the first ingredient in the melting pot of 07th's next work!!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	FadeBustshotWithFiltering( 2, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 4, "sprites/rika/nekomimi/ri_defa1", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+
+	OutputLine(NULL, "「……では、次は八咫桜さんが行ってみるのですよ。",
+		   NULL, "\"......Then next Yatazakura-san should take a turn.", Line_WaitForInput);
+	OutputLine(NULL, "……何が出てくるのか想像がついてイヤなのです☆」",
+		   NULL, " ...I have a bad feeling about what he'll say, though. ☆\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawSceneWithMask( "img/dsc00039", "effect/right", 0, 0, 300 );
+	DrawBustshot( 1, "sprites/sonota/oisi7", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
+
+	OutputLine(NULL, "「ふっふっふっふっふ！！",
+		   NULL, "\"Fu-fu-fu-fu-fu!!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+
+	OutputLine(NULL, "　王道を押さえるならばやはりジャ○プ系は外せないにゃり！",
+		   NULL, " If you want the high road, you can't leave Ju_p stories out of things, nyari!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/furu", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/furu", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/furu", 70, 64 );
+
+	OutputLine(NULL, "　ふおおおおぉおおぉ！",
+		   NULL, " Fuwoohhhhhh!", Line_WaitForInput);
+	SetSpeedOfMessage( TRUE, 128 );
+
+	PlaySE( 0, "wav/finish", 70, 64 );
+
+	OutputLine(NULL, "　ここで僕は、魁！■塾を挙げるにゃりん！！」",
+		   NULL, " I have to suggest Sakigake!! _____juku, nyarin!!\"", Line_ContinueAfterTyping);
+
+	ShakeScreen( 2, 18,  100 , 8, 12, );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	DisableWindow();
+
+	DrawScene( "bg/sion/si_h2", 0 );
+	PlaySE( 0, "wav/daidageki", 70, 64 );
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「ふぬおおおぉおおぉおぉぉ！！",
+		   NULL, "\"Fu-nuwohhhhhhhhh!!", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( FALSE, 0 );
+
+	ShakeScreen( 2, 15,  100 , 8, 12, );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　や、やはりそれが来るか…！！",
+		   NULL, " I...I knew it...!!", Line_WaitForInput);
+	OutputLine(NULL, "　ジ○ンプ系が築いた黄金時代は即ちバトル黄金時代でもある！",
+		   NULL, " The golden age constructed by J_mp is also the golden age of battles!", Line_WaitForInput);
+	OutputLine(NULL, "　我々日本男児には、遺伝子のレベルにまで刻み込まれていると断言できるバトルのカタルシス！！",
+		   NULL, " Any of us Japanese boys can attest to the fact that the catharsis of battle is engraved in our very genes!!", Line_WaitForInput);
+	OutputLine(NULL, "　毎話ごとに様々な強敵が立ち塞がり、それらを頼もしい仲間たちが次々に挑んで打ち破っていく！",
+		   NULL, " All those strong enemies standing in your way every episode, and you, alongside reliable friends, take down one foe after another!", Line_WaitForInput);
+	OutputLine(NULL, "　主人公が１人しかいない作品だと、バトルがマンネリ化しやすいという従来のバトル物の弱点を、",
+		   NULL, " Normally, battle stories are weak in that having a single protagonist leads to the battles turning into the same thing every time,", Line_WaitForInput);
+	OutputLine(NULL, "主人公たちの人数を増やすことでバリエーション化して克服！",
+		   NULL, " but by increasing the number of protagonists, they overcame that problem with variation!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　バトル毎に異なる対戦カードやバトルシチュエーションにより、あれだけの長期に渡りバトル物連載を成立させたその構成は、",
+		   NULL, "The composition of that battle serialization that lasted for such a long time through different cards and situations each battle...", Line_WaitForInput);
+	OutputLine(NULL, "なるほど…、集■社が百年かけて築き上げてきた、武闘会ジャンルの集大成とも言える！",
+		   NULL, " I see... You could call it the culmination of the fighting genre that Shu__sha has spent a hundred years constructing!", Line_WaitForInput);
+	OutputLine(NULL, "　このバトルの熱さのカタルシスは時代を超える！",
+		   NULL, " The passionate catharsis in its battles spans time and space!", Line_WaitForInput);
+	OutputLine(NULL, "　それはＦ■ｔｅという黄金作品によって２１世紀においても不変の魅力を持つことを証明しきっているのである！！」",
+		   NULL, " Thanks to the golden work called F_te, it has proven its unchanging attractiveness even in the 21st century!!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawBustshot( 1, "sprites/rika/nekomimi/ri_komarua1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+	DrawSceneWithMask( "img/dsc00038", "effect/up", 0, 0, 300 );
+
+	OutputLine(NULL, "「……なのですが、■ーゼンと■塾では、早くも塩素系洗剤と酸性洗剤という感じがしますのですよ。」",
+		   NULL, "\"......However, __zen and _____juku already feel like chlorinated cleaner and acidic cleaner.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+
+	DrawBustshotWithFiltering( 2, "sprites/sonota/oisi10", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「甘いにゃりん！",
+		   NULL, "\"How nyaive!", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　■塾のキャラクターは確かにマッチョな学ラン男ばかりで実に汗臭いにゃりんが、",
+		   NULL, " _____juku's characters might be macho, school uniformed men, and they might be pungent with sweat,", Line_WaitForInput);
+	OutputLine(NULL, "それはあくまでもジャ○プ系という世界観で、しかも北斗○拳が全盛期だった時代だったからこそにゃりん。",
+		   NULL, " but that's merely the outlook of Ju_p comics, and only because Hoku__ no Ken was in its prime at the time, nyarin.", Line_WaitForInput);
+	OutputLine(NULL, "つまり、ビジュアルではなく、連続バトルによるカタルシスと多彩なバトルシチュエーションというエッセンス自体は、■ーゼンと決して反発し合わないにゃりん！！」",
+		   NULL, " In other words, the essence itself is not in the visuals, but in the catharsis of strings of battles and the myriad of combat situations--and that would never be opposed to __zen, nyarin!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/dageki", 70, 64 );
+	ShakeScreen( 2, 9,  100 , 3, 33, );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	DisableWindow();
+
+	DrawBustshotWithFiltering( 3, "sprites/okonogi/oko_warai", "effect/left", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
+
+	OutputLine(NULL, "「ふぅむ、さすがは八咫桜くん、鋭い読みよ！",
+		   NULL, "\"Hmm, yes, a sharp reading as always from you, Yatazakura-kun!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+
+	OutputLine(NULL, "　その通り！",
+		   NULL, " You're correct!", Line_WaitForInput);
+	SetSpeedOfMessage( TRUE, 128 );
+
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+
+	OutputLine(NULL, "　つまり、■ーゼンの物語中にも登場するア■スゲームを、■塾的武闘会物に昇華すればいいのだ！！",
+		   NULL, " In other words, we must elevate the Al__e game that appears in __zen's story as well to _____juku's fighting tournament!!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/finish", 70, 64 );
+	ShakeScreen( 2, 24,  100 , 10, 10, );
+
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　つまり、塾長に当たるキャラクターはニートでヒッキー！",
+		   NULL, " In other words, the school's principal must be a NEET and a shut-in!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "boyon", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 3, 33, );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　そこへ押しかけ的に登場するツンデレヒロインたち！",
+		   NULL, " And then the tsundere heroines appear uninvited!", Line_WaitForInput);
+	OutputLine(NULL, "　彼女らとの賑やかな日々はオープニングでしかない！",
+		   NULL, " His action-packed days with those girls is only the opening!", Line_WaitForInput);
+	OutputLine(NULL, "　やがてそこにア■スゲームの開催が一方的に告げられるのだー！！」",
+		   NULL, " Eventually, he'll announce the a_s game out of nowhere!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/daidageki", 70, 64 );
+	ShakeScreen( 2, 15,  100 , 5, 20, );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	DisableWindow();
+
+	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,640,480
+	FadeOutBGM( 0, 0, TRUE );
+	PlaySE( 0, "wav/taitoru", 70, 64 );
+	DrawSceneWithMask( "white", "effect/up", 0, 0, 3000 );
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+	DrawSceneWithMask( "bg/mori/hasi2", "effect/up", 0, 0, 300 );
+	PlayBGM( 0, "bgm1/fearlessnessl_e", 70, 0 );
+	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　ズゴゴゴゴゴ！！",
+		   NULL, "Zugogogogo!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「な、何ぃいいぃい、あんなところに闘場がぁあぁ！！」",
+		   NULL, "\"Wh-Whaaaaaat? Why would there be a dueling ground there?!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawSceneWithMask( "bg/mori/hasi5", "effect/right", 0, 0, 300 );
+
+	OutputLine(NULL, "「さぁ！",
+		   NULL, "\"Now then!", Line_WaitForInput);
+	OutputLine(NULL, "　ここで■ーゼンメイデン第２ドールこと金○雀と戦う者はおらんのかッ！」",
+		   NULL, " Is there anyone who would take on __zen Maiden's second doll, Kana__a!?\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawSceneWithMask( "bg/mori/hasi2", "effect/left", 0, 0, 300 );
+
+	OutputLine(NULL, "「こ、ここは今度こそこの■苺の出番じゃー！」",
+		   NULL, "\"Th-That's where this ___ichigo should come in for real!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/dageki", 70, 64 );
+	ShakeScreen( 0, 6, 100, 1, 50, );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「何をぅ、今度はこの翠○石の出番じゃー！！」",
+		   NULL, "\"What? No, it's time for this Sui___seki to appear!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/dageki", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 1, 50, );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	DisableWindow();
+
+	DrawScene( "bg/mori/hasi4", 400 );
+
+	OutputLine(NULL, "「どけい、すでに貴様らの喧嘩殺法の通じる相手ではないわ！」",
+		   NULL, "\"Out of the way! This opponent is already far beyond your measly tactics!\"", Line_Normal);
+	ClearMessage();
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「「な、何ぃいいぃ、お前は■紅ぅううぅ？！？！」",
+		   NULL, "\"\"Wh-Whaaaaat? Are you ___kuuuuuuu?!?!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/daidageki", 70, 64 );
+	ShakeScreen( 0, 12, 100, 2, 50, );
+
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+
+	OutputLine(NULL, "「こ、こりゃ俺たちの出番は、完全になくなったな…。」",
+		   NULL, "\"B-But now we have no chance to appear whatsoever...\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	DrawScene( "black", 0 );
+	Wait( 300 );
+	PlaySE( 0, "wav/metal43", 70, 64 );
+	Wait( 500 );
+	DrawScene( "bg/mori/hasi3", 0 );
+	PlaySE( 0, "wav/down2", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 2, 50, );
+
+	OutputLine(NULL, "「ほぅ。",
+		   NULL, "\"Ho.", Line_WaitForInput);
+	OutputLine(NULL, "体術には自信があるようだな。",
+		   NULL, " You seem confident in your martial arts.", Line_WaitForInput);
+	OutputLine(NULL, "ならば受けてみるか、究極の決闘法、",
+		   NULL, " Then why not try this out? The ultimate way to duel,", Line_ContinueAfterTyping);
+	Wait( 800 );
+	OutputLine(NULL, "唖離須外江夢！！」",
+		   NULL, " the Arisugeimu!!\"", Line_ContinueAfterTyping);
+	DisableWindow();
+
+	PlaySE( 0, "wav/finish", 70, 64 );
+	DrawScene( "effect/f_c", 0 );
+	ShakeScreen( 2, 15,  100 , 3, 33, );
+	DrawScene( "bg/mori/hasi3", 200 );
+
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	DisableWindow();
+
+	DrawSceneWithMask( "bg/mori/hasi1", "effect/left", 0, 0, 300 );
+
+	OutputLine(NULL, "「何と、唖離須外江夢…？！」",
+		   NULL, "\"What? The Arisugeimu...?!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「し、知っているのか蒼○石？！」",
+		   NULL, "\"Y-You know what that is, Sou___seki?!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawScene( "black", 1000 );
+	DrawFilm( 2, 0xaa, 0x44, 0x44, 128, 0, 500, TRUE );
+	DrawSceneWithMask( "bg/sonota/file", "effect/maskc", 0, 0, 1300 );
+
+	OutputLine(NULL, "　唖離須外江夢（ア■スゲエム）。",
+		   NULL, "The Arisugeimu, or Al__e Game.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　古代中国においては、繰り返される戦乱により、武芸に秀でた者を一人でも多く見つけ出すことが急務とされていた。",
+		   NULL, "Due to constant conflict, Ancient China made it an urgent mission to find everyone skilled in military matters they could.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そのため、時の皇帝は唖離須外江夢と呼ばれる過酷な試練を課して、稀な才能を持つ武闘家の発掘に努めたという。",
+		   NULL, "To do that, the emperor at the time used a cruel trial called the Arisugeimu to try and gather every martial artist with unusual talents.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その余りの過酷さは、この試練に臨み生きて仕えることを許される者は百人に一人にも満たないと称されるほどであったという。",
+		   NULL, "Its incredible cruelty was said to only allow one in every hundred to live through the trial and serve.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　しかし、この試練の資格を与えられることは武闘家の誉れであり、",
+		   NULL, "But it was to the honor of these warriors to receive the right to undergo this trial,", Line_WaitForInput);
+	OutputLine(NULL, "唖離須外江夢への参加を申し伝える皇帝の使者を村をあげて歓迎したという。",
+		   NULL, " and it's said that when the messenger of the Emperor came to villages to request participation in the Arisugeimu, he was welcomed with open arms.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　なお、この使者は故事の伝統に則り、兎の面を被っていたと言われ、",
+		   NULL, "Also, this messenger, according to historical legend, wore a rabbit mask,", Line_WaitForInput);
+	OutputLine(NULL, "これにヒントを得たイギリスのルイス・キャロルが後に「不思議の国のアリス」を執筆することになるのだが、",
+		   NULL, " and in England, Lewis Carroll, having gotten the idea from it, later wrote Alice's Adventures in Wonderland,", Line_WaitForInput);
+	OutputLine(NULL, "それが唖離須外江夢に由来することを知る者はほとんどいない。",
+		   NULL, " but most people don't know it originated from the Arisugeimu.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	SetDrawingPointOfMessage( 4, 12 );
+
+	OutputLine(NULL, "民明書房刊「銀さまと乳酸菌」より",
+		   NULL, "From Minmei Publishing Company \"Gin-sama and the Lactic Acid Bacteria\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	FadeOutBGM( 0, 0, TRUE );
+	DrawScene( "black", 400 );
+	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,640,480
+	FadeFilm( 0, TRUE ); //end monocrome color
+
+	//;■バトル演出を～～
+	PlayBGM( 0, "bgm1/attack", 70, 0 );
+	DrawScene( "bg/mori/hasi3", 400 );
+	PlaySE( 0, "wav/furu", 70, 64 );
+	//; btndef "BMP\background\Mori\Hasi3.jpg"
+	//; mov %Staff_a,0
+	//; mov %Staff_b,0
+	//; mov %Staff_c,640
+	//; mov %Staff_d,480
+	//; mov %1,0
+	//; mov %2,0
+	//; mov %3,0
+	//; mov %4,0
+	//;
+	//; blt 0,0,640,480,%Staff_a,%Staff_b,%Staff_c,%Staff_d
+	//; bg Hasi5,0
+	//;
+	//; for %0 = 1 to 12
+	//; resettimer
+	//; add %1,8
+	//; add %3,5
+	//; add %2,8
+	//; add %4,6
+	//; add %Staff_a,%1
+	//; add %Staff_b,%3
+	//; sub %Staff_c,%2
+	//; sub %Staff_d,%4
+	//;
+	//; blt 0,0,640,480,%Staff_a,%Staff_b,%Staff_c,%Staff_d
+	//; waittimer 50
+	//;
+	//; next
+	//; ofscpy
+	//; btndef ""
+	//;  print 1
+	EnlargeScreen(600, 400, 64, 48, FALSE, 700, TRUE);
+
+	DisableEffector(0, FALSE);
+
+	PlaySE( 0, "wav/metal41", 70, 64 );
+	DrawSceneWithMask( "effect/f_b", "effect/1", 0, 0, 10 );
+	ShakeScreen( 2, 6,  100 , 1, 50, );
+	PlaySE( 0, "wav/metal43", 70, 64 );
+	DrawSceneWithMask( "effect/f_a", "effect/1", 0, 0, 10 );
+	ShakeScreen( 2, 6,  100 , 1, 50, );
+	DrawScene( "bg/mori/hasi2", 200 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 300 );
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+	Wait( 300 );
+	PlaySE( 0, "wav/dageki", 70, 64 );
+	ShakeScreen( 0, 6, 100, 1, 50, );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	DrawSceneWithMask( "bg/mori/hasi3", "effect/right", 1, 0, 300 );
+	PlaySE( 0, "wav/daidageki", 70, 64 );
+	DrawScene( "effect/f_a", 0 );
+	ShakeScreen( 2, 9,  100 , 2, 50, );
+	DrawScene( "effect/f_b", 0 );
+	ShakeScreen( 2, 9,  100 , 2, 50, );
+	DrawScene( "bg/mori/hasi5", 200 );
+	Wait( 500 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 700 );
+	PlaySE( 0, "wav/metal41", 70, 64 );
+	DrawSceneWithMask( "effect/f_a", "effect/1", 0, 0, 10 );
+	ShakeScreen( 2, 6,  100 , 2, 50, );
+	PlaySE( 0, "wav/metal41", 70, 64 );
+	DrawSceneWithMask( "effect/f_b", "effect/1", 0, 0, 10 );
+	ShakeScreen( 2, 6,  100 , 2, 50, );
+	PlaySE( 0, "wav/metal43", 70, 64 );
+	DrawSceneWithMask( "effect/f_c", "effect/1", 0, 0, 10 );
+	ShakeScreen( 2, 12,  100 , 3, 33, );
+	DrawScene( "bg/mori/hasi3", 200 );
+	PlaySE( 0, "wav/down3", 70, 64 );
+	ShakeScreen( 2, 9,  100 , 6, 16, );
+	Wait( 500 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 1000 );
+	DrawSceneWithMask( "bg/mori/hasi4", "effect/right", 0, 0, 300 );
+	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
+	SetSpeedOfMessage( FALSE, 0 );
+
+
+	OutputLine(NULL, "「そんなにバイオリンが弾きたけりゃ、地獄の閻魔にたっぷり聞かせてやるんだな。」",
+		   NULL, "\"If you want to play the violin that much, I'll let you play it for the Enma in hell.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,640,480
+	PlaySE( 0, "bb", 70, 64 );
+	ShakeScreen( 2, 21,  100 , 8, 12, );
+
+	DrawSceneWithMask( "black", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "bg/mori/hasi2", "effect/left", 0, 0, 300 );
+	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLine(NULL, "「や、やったぁあぁ、■紅の大逆転勝利じゃあぁあぁ！！」",
+		   NULL, "\"I... I did it! A stunning turnaround victory for __ku!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「どうじゃ見たか水銀■～！",
+		   NULL, "\"Did you see that, Suigin___~?!", Line_WaitForInput);
+	OutputLine(NULL, "　そろそろ観念して降参するのじゃー！」",
+		   NULL, " Take the hint already and surrender!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawSceneWithMask( "bg/mori/hasi5", "effect/right", 0, 0, 300 );
+
+	OutputLine(NULL, "「くっくっく、愚か者どもめ！",
+		   NULL, "\"Ku-ku-ku. What fools!", Line_WaitForInput);
+	OutputLine(NULL, "　これまでは格下の者ばかりぶつけておったが、次からこそ、このア■スゲーム、真の地獄となるのだッ！！",
+		   NULL, " I've only been using my low-rank minions. But this is where the Al__e Game truly becomes hell!!", Line_WaitForInput);
+	OutputLine(NULL, "　ふはははははははは！」",
+		   NULL, " Fuhahahahahaha!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawScene( "black", 1000 );
+	Wait( 1000 );
+	FadeOutBGM( 0, 0, TRUE );
+	SetSpeedOfMessage( TRUE, 128 );
+	DrawBustshot( 1, "sprites/okonogi/oko_akuwarai", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
+	DrawScene( "img/dsc00039", 0 );
+	PlaySE( 0, "wav/daidageki", 70, 64 );
+	PlayBGM( 0, "bgm1/rika", 70, 0 );
+
+	OutputLine(NULL, "「と、言う感じの物語になるのだー！！！」",
+		   NULL, "\"And that's what the story's going to be like!!!\"", Line_ContinueAfterTyping);
+
+	ShakeScreen( 0, 18, 100, 4, 25, );
+
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	DisableWindow();
+
+	DrawSceneWithMask( "img/dsc00038", "effect/left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 1, "sprites/rika/nekomimi/ri_komarua1", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+
+	OutputLine(NULL, "「……みー。",
+		   NULL, "\"......Meep.", Line_WaitForInput);
+	OutputLine(NULL, "斬新なのかトンデモナイのかさっぱりわからないのですよ。」",
+		   NULL, " I have no idea whether that's a novel idea or a horrendous one.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+
+	DrawBustshotWithFiltering( 2, "sprites/sonota/oisi6", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+
+	OutputLine(NULL, "「斬新なのにも関わらず、…すでにどこかのサークルが描いてそうな気がする内容にゃりん…。」",
+		   NULL, "\"It's novel, but nevertheless... I feel like some other circle has already written something like that...\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	FadeBustshotWithFiltering( 1, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprites/okonogi/oko_def2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+
+	OutputLine(NULL, "「む、むぅ…。",
+		   NULL, "\"M-Mmph...", Line_WaitForInput);
+	OutputLine(NULL, "確かに、すでにどこかのサークルが思いついてそうだなぁ…。",
+		   NULL, " Yes, I'm sure another circle has already thought of this...", Line_WaitForInput);
+	DisableWindow();
+
+	ChangeBustshot( 3, "sprites/okonogi/oko_ikari", 200, TRUE );
+
+	OutputLine(NULL, "だ、だがまだまだ！！",
+		   NULL, " B-But we're not done yet!!", Line_WaitForInput);
+	OutputLine(NULL, "　まだ２つを混ぜただけに過ぎん！",
+		   NULL, " We've still only mixed together two things!", Line_WaitForInput);
+	OutputLine(NULL, "　３つを混ぜてこそ何かトンデモナイ斬新な物が生まれるのだー！！！」",
+		   NULL, " With a third thing added to the pot, we'll have something horrendously novel!!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/dageki", 70, 64 );
+	ShakeScreen( 2, 9,  100 , 3, 33, );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+
+	FadeBustshotWithFiltering( 2, "effect/right", 0, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 4, "sprites/rika/nekomimi/ri_waraia1", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+
+	OutputLine(NULL, "「……みー。",
+		   NULL, "\"......Meep.", Line_WaitForInput);
+	OutputLine(NULL, "精霊ドライアードとかできそうなのです。",
+		   NULL, " A dryad spirit could probably do it.", Line_WaitForInput);
+
+	PlaySE( 0, "boyon", 70, 64 );
+
+	OutputLine(NULL, "今後ともよろしくなのです☆」",
+		   NULL, " We'll be looking forward to your help ☆\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	FadeBustshotWithFiltering( 3, "effect/left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 5, "sprites/sonota/oisi7", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+	PlayBGM( 0, "bgm0/4", 70, 0 );
+
+	OutputLine(NULL, "「さて、最後は竜騎士さんにゃりんよ。",
+		   NULL, "\"Last up is Ryukishi-san.", Line_WaitForInput);
+	OutputLine(NULL, "さてさて、どんな作品の名前を出すにゃりん？」",
+		   NULL, " What kind of work will you suggest to us, nyarin?\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawSceneWithMask( "img/dsc00039", "effect/left", 0, 0, 300 );
+	DrawBustshot( 1, "sprites/okonogi/oko_warai", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+
+	OutputLine(NULL, "「ふふふふふ、よくぞ聞いてくれました！！",
+		   NULL, "\"Heh heh heh heh heh. I'm glad you asked!!", Line_WaitForInput);
+	OutputLine(NULL, "　ここで竜騎士07が挙げるビッグタイトルは！！",
+		   NULL, " This is the big-hitting title Ryukishi07 will propose!!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/furu", 70, 64 );
+	Wait( 150 );
+	PlaySE( 0, "wav/furu", 70, 64 );
+	Wait( 150 );
+	PlaySE( 0, "wav/furu", 70, 64 );
+
+	OutputLine(NULL, "　くっくっく、そう、西館に出展する身として絶対に外すことはできない超ビッグタイトル！！",
+		   NULL, " Ku-ku-ku. Yes, a super huge title you couldn't possibly remove from the west hall!!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/daidageki", 70, 64 );
+	ShakeScreen( 2, 15,  100 , 4, 25, );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　現在のコミックマーケット西館を完全に支配する究極の王者、",
+		   NULL, " The ultimate king completely dominating Comiket's western hall right now...", Line_ContinueAfterTyping);
+	Wait( 800 );
+	OutputLine(NULL, "そのファン層はユーザー層のみならずクリエイティブな層にも広く深く浸透し、",
+		   NULL, " Not only does it have a fandom and a userbase, but a creative base spread far and deep...", Line_WaitForInput);
+	OutputLine(NULL, "特に音楽系サークルでは“それ”のアレンジＣＤを作らずんば音楽系にあらずと言わしめるほどと言われ、",
+		   NULL, " So famous that music circles aren't said to be music circles until they make an arrangement CD of it...", Line_WaitForInput);
+	OutputLine(NULL, "虎○穴の情報誌、虎○の音楽系ＣＤ売上トップ１０では、“その”ジャンルの作品がトップ１０全てを数年間に渡り独占し続けたという、",
+		   NULL, " The title that has filled the entire top 10 list of music CD sales at Torano___ for years with its own genre...", Line_ContinueAfterTyping);
+	Wait( 600 );
+	OutputLine(NULL, "あのッ！！」",
+		   NULL, " Yes!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/nageru", 70, 64 );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+
+	OutputLine(NULL, "「まま、まさか、あ、あ、あのッ？！？！」",
+		   NULL, "\"Y-Y-You d-d-don't mean...?!?!\"", Line_Normal);
+	ClearMessage();
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "『そうさ、あの同人界伝説のＳＴＧ最高峰、東■シリーズだぁあぁぁ！！』",
+		   NULL, "\"Yes, the greatest peak of shooting games, the legend among the doujin world, the Tou___ series!!\"", Line_ContinueAfterTyping);
+	DisableWindow();
+
+	PlaySE( 0, "wav/finish", 70, 64 );
+	DrawScene( "effect/f_c", 0 );
+	ShakeScreen( 2, 24,  100 , 6, 16, );
+
+
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	DisableWindow();
+
+	DrawBustshot( 1, "sprites/sonota/oisi7", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+	DrawSceneWithMask( "img/dsc00038", "effect/up", 0, 0, 300 );
+
+	OutputLine(NULL, "「…た、確かに、……それはすごいビッグタイトルが飛び出したにゃりんよ…！」",
+		   NULL, "\"...W-Well... You really did pull out the big guns, nyarin...!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+
+	//Unknown BGM track ID 112
+	DrawBustshotWithFiltering( 2, "sprites/rika/nekomimi/ri_komarua1", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+
+	OutputLine(NULL, "「……みー。",
+		   NULL, "\"...Mii.", Line_WaitForInput);
+	OutputLine(NULL, "でも、東■はシューティングゲームなのですよ？",
+		   NULL, " But the Tou___ series is a shooting game.", Line_WaitForInput);
+	OutputLine(NULL, "　ボクたちのサークルではシューティングゲームは作れないのです。」",
+		   NULL, " We can't make shooting games in our circle.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	FadeBustshotWithFiltering( 1, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprites/okonogi/oko_def", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+
+	OutputLine(NULL, "「もちろん、シューティングというゲーム性は抽出できないが、その魅力的な世界観のエッセンスは充ッ分に抽出可能！",
+		   NULL, "\"Of course, we can't extract the essence of the shooting game genre, but we can more than easily extract the essence of its captivating world!", Line_WaitForInput);
+	DisableWindow();
+
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+	ChangeBustshot( 3, "sprites/okonogi/oko_warai", 200, TRUE );
+
+	OutputLine(NULL, "　ふっふっふ、日本男児を今なお鼓舞して止まないジャ○プ系の王道、■塾に、",
+		   NULL, " Heh-heh-heh. We have the kind of J_mp still encouraging Japanese boys today, _____juku...", Line_WaitForInput);
+	OutputLine(NULL, "時代のニーズを全て押さえアニメ界を席巻した■ーゼンメイデン！",
+		   NULL, " added to __zen Maiden, which stormed the anime world by hitting every one of this generation's needs!", Line_WaitForInput);
+	OutputLine(NULL, "　そして同人界のキングオブキングス、東■シリーズ！",
+		   NULL, " And now we have the doujin world's king of kings, the Tou___ series!", Line_WaitForInput);
+	OutputLine(NULL, "　くっくっく、これら３つの超絶エッセンスを配合すればその結果はもはや必然！！",
+		   NULL, " Ku-ku-ku, by combining these three incredible essences, we are sure to get results!!", Line_WaitForInput);
+	OutputLine(NULL, "　２１世紀を支配する超々作品が生まれることはもはや運命なのだー！！」",
+		   NULL, " It is now our fate to give birth to the ultimate work that will dominate the twenty-first century!!\"", Line_ContinueAfterTyping);
+	DisableWindow();
+
+	PlaySE( 0, "wav/kaminari2", 70, 64 );
+	DrawScene( "white", 0 );
+	ShakeScreen( 2, 24,  100 , 3, 33, );
+	DrawScene( "black", 400 );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	DisableWindow();
+
+	DrawScene( "img/dsc00039", 400 );
+	DrawBustshotWithFiltering( 1, "sprites/sonota/oisi6", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+
+	OutputLine(NULL, "「り、理屈はわかるにゃりんが、どの辺のエッセンスを吸い出すにゃりんか。",
+		   NULL, "\"I-I understand your logic, nyarin, but what part of the essence do we suck out, nyarin?", Line_WaitForInput);
+	OutputLine(NULL, "さっきＢＴさんも言った通り、ウチのサークルではシューティングなんか作れないにゃりんよ。」",
+		   NULL, " Like BT-san said before, we can't make shooting games in our circle, nyarin.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+
+	DrawBustshotWithFiltering( 2, "sprites/rika/nekomimi/ri_waraia1", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+
+	OutputLine(NULL, "「……みー。",
+		   NULL, "\"......Meep.", Line_WaitForInput);
+	OutputLine(NULL, "東■の魅力で、シューティング以外ですか。",
+		   NULL, " Does Tou__'s appeal lie outside of the shooting genre?", Line_WaitForInput);
+	OutputLine(NULL, "…やはり、類を見ない不思議な感覚の世界観、なのでしょうか…？",
+		   NULL, " ...Would it be the unprecedented feeling of a mysterious world...?", Line_WaitForInput);
+	OutputLine(NULL, "　その辺りの評価もとても高いのですよ。」",
+		   NULL, " That's another part people love.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawBustshotWithFiltering( 3, "sprites/okonogi/oko_def", "effect/right", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
+	PlayBGM( 0, "bgm1/rika", 70, 0 );
+
+	OutputLine(NULL, "「うーむ！",
+		   NULL, "\"Indeed!", Line_WaitForInput);
+	OutputLine(NULL, "　何でもアリのファンタジー世界ではあるが、",
+		   NULL, " It is a fantasy world where anything goes,", Line_WaitForInput);
+	OutputLine(NULL, "既存のいわゆる和製ＲＰＧ的世界の延長とはまったく異なる独自のあの世界観は確かに異彩を放っている！",
+		   NULL, " Its unique setting, completely different from an extension of the so-called JRPG-style worlds that already exist, certainly stands out!", Line_WaitForInput);
+	DisableWindow();
+
+	//;gosub *G_sys
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+	DrawScene( "white", 0 );
+	DrawBustshot( 1, "sprites/okonogi/oko_warai", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
+	DrawScene( "img/dsc00039", 200 );
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "　何しろ、巫女に",
+		   NULL, " After all, it has shrine maidens,", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "boyon", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 3, 33, );
+
+
+	OutputLine(NULL, "メイドに",
+		   NULL, " maids,", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/koruku", 70, 64 );
+	ShakeScreen( 0, 6, 100, 3, 33, );
+
+	OutputLine(NULL, "ブレザー、",
+		   NULL, " blazers,", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/lf226", 70, 64 );
+	ShakeScreen( 0, 6, 100, 3, 33, );
+
+	OutputLine(NULL, "ゴスロリ、",
+		   NULL, " gothic lolitas,", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/tataku", 70, 64 );
+	ShakeScreen( 2, 9,  100 , 3, 33, );
+
+	OutputLine(NULL, "甘ロリ、",
+		   NULL, " sweet lolitas,", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/lf226", 70, 64 );
+	ShakeScreen( 0, 9, 100, 3, 33, );
+
+	OutputLine(NULL, "しかも和ロリまで押さえてる！！",
+		   NULL, " and even Japanese lolitas in it!!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "daidageki-kai2", 70, 64 );
+	ShakeScreen( 2, 15,  100 , 5, 20, );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　それらが全部一堂に会しても全然不自然じゃない世界観！！",
+		   NULL, " Even when they're all in one place, none it feels unnatural in that world!!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/hikaru", 70, 64 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　あぁ、Ｚ○Ｎさん、次なる新ボスにはぜひともスク水をぉおぉおぉ！！",
+		   NULL, " Ahh, Z_N, I beg of you, make the one of the next new bosses wear a school swimsuit!!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "bb", 70, 64 );
+	ShakeScreen( 2, 24,  100 , 8, 12, );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　普通ならありえないその衣装も、幻想郷でならありえる！！",
+		   NULL, " And those outfits, normally impossible, are possible in Gensokyo!!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "boyon", 70, 64 );
+	ShakeScreen( 0, 9, 100, 3, 33, );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　幻想郷でなら他のキャラに混じっても問題ないッ！！",
+		   NULL, " In Gensokyo, throwing in other characters is no problem at all!!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/tatakiwaru", 70, 64 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　あああぁ、ぜひ次の新ボスにはスク水をぉおぉぉおぉ！！」",
+		   NULL, " Ahhhh, please, make the next new boss have a school bathing suit!!\"", Line_ContinueAfterTyping);
+	DisableWindow();
+
+	PlaySE( 0, "wav/finish", 70, 64 );
+	DrawScene( "effect/f_a", 0 );
+	ShakeScreen( 2, 21,  100 , 7, 14, );
+	DrawScene( "black", 400 );
+
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	DisableWindow();
+
+	DrawBustshot( 1, "sprites/rika/nekomimi/ri_komarua1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+	DrawSceneWithMask( "img/dsc00038", "effect/up", 0, 0, 300 );
+
+	OutputLine(NULL, "「……みー。",
+		   NULL, "\"......Meep.", Line_WaitForInput);
+	OutputLine(NULL, "竜騎士がひどく偏った好みでプレイしてることがわかりますのです。",
+		   NULL, " I understand that Ryukishi plays it out of his extremely biased tastes.", Line_WaitForInput);
+	OutputLine(NULL, "そんな邪な心ではエキストラが未だ解けないのも納得なのです。」",
+		   NULL, " Now I know why he still hasn't unlocked the extra stages--not with that wicked heart.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+
+	DrawBustshotWithFiltering( 2, "sprites/sonota/oisi7", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+
+	OutputLine(NULL, "「りゅ、…竜騎士が言いたいことを要約すると、",
+		   NULL, "\"To... To sum up what Ryukishi wants to say...", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/kira", 70, 64 );
+
+	OutputLine(NULL, "つまりこういうことにゃりんな？",
+		   NULL, " It's like this, right, nyarin?", Line_WaitForInput);
+	OutputLine(NULL, "　自分好みの色々な服装が勢揃いで登場、",
+		   NULL, " We can have all kinds of outfits that suit our tastes all appear in one game,", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "boyon", 70, 64 );
+
+	OutputLine(NULL, "ワショーイ！！」",
+		   NULL, " yahoo!!\"", Line_ContinueAfterTyping);
+
+	ShakeScreen( 2, 6,  100 , 5, 20, );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+
+	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshotWithFiltering( 3, "sprites/okonogi/oko_warai", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「ワショ～～イ！！」",
+		   NULL, "\"Yahoo!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "boyon", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 5, 20, );
+
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	DisableWindow();
+
+	FadeBustshotWithFiltering( 2, "effect/right", 0, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 4, "sprites/rika/nekomimi/ri_komarua1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+
+	OutputLine(NULL, "「……みー。",
+		   NULL, "\"......Mii.", Line_WaitForInput);
+	OutputLine(NULL, "東■から見習うところはもっと他にあると思うのですが…。",
+		   NULL, " I would think there are other things we could learn from Tou___, but...", Line_WaitForInput);
+	DisableWindow();
+
+	ChangeBustshot( 4, "sprites/rika/nekomimi/ri_nikoa1", 200, TRUE );
+
+	OutputLine(NULL, "取り合えず、竜騎士が抽出したいところはソコ、ということなのです。」",
+		   NULL, " For now, Ryukishi is referring to that when he talks about what to extract.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	ChangeBustshot( 3, "sprites/okonogi/oko_akuwarai", 200, TRUE );
+
+	OutputLine(NULL, "「くっくくくくく、ふはーっはっはっはっは！！",
+		   NULL, "\"Ku-kukukuku, fuhah-hah-hah-hah!!", Line_WaitForInput);
+	OutputLine(NULL, "　神よ恐れよ、これら３つの要素を組み合わせた時、新世紀は我が足元に平伏すのだー！！",
+		   NULL, " The gods will bow before us, for when these three elements are combined, the new world that results will bend its knee!!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+
+	OutputLine(NULL, "　さぁ行くぞ三神合体ぃいぃいぃ！！」",
+		   NULL, " Now, go!! Triple god combination!!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,640,480
+	FadeOutBGM( 0, 0, TRUE );
+	PlaySE( 0, "wav/taitoru", 70, 64 );
+	DrawSceneWithMask( "white", "effect/maskc", 0, 0, 3000 );
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+	PlayBGM( 0, "bgm1/search and destroy(long)_ver3", 70, 0 );
+	DrawSceneWithMask( "bg/mori/hasi2", "effect/up", 0, 0, 300 );
+	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　ズゴゴゴゴゴ！！",
+		   NULL, "Zugogogogo!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「な、何ぃいいぃい、あんなところに闘場がぁあぁ！！」",
+		   NULL, "\"Wh-Whaaaaaat? Why would there be a dueling ground there?!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawSceneWithMask( "bg/mori/hasi5", "effect/right", 0, 0, 300 );
+
+	OutputLine(NULL, "「さぁ、来るがいい。",
+		   NULL, "\"Now come.", Line_WaitForInput);
+	OutputLine(NULL, "我こそは■ーゼンメイデン第１ドールが水銀■！！",
+		   NULL, " I am the one, the only Suigin___, the first doll of __zen Maiden!!", Line_WaitForInput);
+	OutputLine(NULL, "　悪いことは言わぬ、何人でも束になってかかってくるがいい！」",
+		   NULL, " I shall not complain--I don't care how many of you come at me at once!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "bg/mori/hasi1", "effect/left", 0, 0, 300 );
+
+	OutputLine(NULL, "「ど、どうする、誰が行く…！",
+		   NULL, "\"Wh-What do we do? Who will go...?", Line_WaitForInput);
+	OutputLine(NULL, "　あの闘場では、使える技も限られてしまうだろう。」",
+		   NULL, " In that dueling ground, we can't use all our skills, can we?\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawScene( "black", 400 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 300 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 300 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 200 );
+	DrawScene( "bg/mori/hasi5", 0 );
+	PlaySE( 0, "wav/down2", 70, 64 );
+	ShakeScreen( 2, 3,  100 , 1, 50, );
+
+	OutputLine(NULL, "「くっくっく、面白い。",
+		   NULL, "\"Ku ku ku, interesting.", Line_WaitForInput);
+	OutputLine(NULL, "■紅とやら、体術には自信があるようだが、貴様ではこの水銀■には勝てん！",
+		   NULL, " __ku, you seem confident in your martial arts, but you cannot prevail over me, Suigin___!", Line_WaitForInput);
+	OutputLine(NULL, "　このまま戦えば、呆気ない結末となるだろう。",
+		   NULL, " If we fought like this, it would only end with a boring conclusion.", Line_WaitForInput);
+	OutputLine(NULL, "それではせっかく戦う興がないというもの。",
+		   NULL, " And that won't awaken the fight within me.", Line_WaitForInput);
+	OutputLine(NULL, "なのでこの水銀■、ひとつ貴様にハンデを与えてやろう！」",
+		   NULL, " Therefore, I, Suigin___, will give you one handicap!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawSceneWithMask( "bg/mori/hasi2", "effect/left", 0, 0, 300 );
+
+	OutputLine(NULL, "「な、何をやってるんだ？",
+		   NULL, "\"Wh-What's she doing?", Line_WaitForInput);
+	OutputLine(NULL, "　水銀■のヤツめ、自分の周りに線を引いとるぞ。",
+		   NULL, " Suigin___ is drawing a line around her.", Line_WaitForInput);
+	OutputLine(NULL, "まるで土俵みたいだ。」",
+		   NULL, " It's like a sumo ring.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……………？！」",
+		   NULL, "\".........?!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawSceneWithMask( "bg/mori/hasi5", "effect/right", 0, 0, 300 );
+
+	OutputLine(NULL, "「くっくっく！",
+		   NULL, "\"Ku-ku-ku!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/hikaru", 70, 64 );
+
+	OutputLine(NULL, "　この水銀■、この円の中より一歩も出ずして貴様を倒してやろう。",
+		   NULL, " I, Suigin___, will defeat the likes of you without taking a step out of this circle.", Line_WaitForInput);
+	OutputLine(NULL, "もしこの円の中より一歩でも踏み出せば潔く負けを認め、スクール水着に着替えご奉仕罰ゲームの刑を受けてやろうではないか…！！」",
+		   NULL, " If you can force me even a step outside it, I will admit defeat, and serve you while wearing a school swimsuit...!!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawSceneWithMask( "bg/mori/hasi3", "effect/left", 0, 0, 300 );
+
+	OutputLine(NULL, "「ふ、",
+		   NULL, "\"Heh...", Line_ContinueAfterTyping);
+	Wait( 500 );
+	OutputLine(NULL, "……その条件、",
+		   NULL, " With that condition...", Line_ContinueAfterTyping);
+	Wait( 600 );
+
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+
+	OutputLine(NULL, "乗ったぜ。",
+		   NULL, " I accept.", Line_WaitForInput);
+	OutputLine(NULL, "ならば俺もこうしようじゃないか。」",
+		   NULL, " Why don't I do the same thing, then?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「な、何ぃ？！",
+		   NULL, "\"Wh-What?!", Line_WaitForInput);
+	OutputLine(NULL, "　■紅も自分の周りに円をー！！」",
+		   NULL, " __ku is drawing a line around herself, too!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「俺もこの円を出ずに戦う。",
+		   NULL, "\"I'll fight without leaving this circle as well.", Line_WaitForInput);
+	OutputLine(NULL, "この円から一歩でも出たら俺も負けを認め、ブルマー姿で首輪付きご奉仕をしてやるぜ。」",
+		   NULL, " If I take a step out, I'll admit defeat, and serve you in bloomers and a collar.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawSceneWithMask( "bg/mori/hasi1", "effect/right", 0, 0, 300 );
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「なな、なんだってぇええぇ！！",
+		   NULL, "\"Wh-Wh-Whaaaaaaat?!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/daidageki", 70, 64 );
+	ShakeScreen( 2, 15,  100 , 4, 25, );
+
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　■紅ぅううぅ！！」",
+		   NULL, " __kuuuuuu!!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawSceneWithMask( "bg/mori/hasi5", "effect/right", 0, 0, 300 );
+
+	OutputLine(NULL, "「くっくっく！",
+		   NULL, "\"Ku ku ku!", Line_WaitForInput);
+	OutputLine(NULL, "　この水銀■相手に思い上がりも甚だしい！",
+		   NULL, " You're quite presumptuous to think you can take on me, Suigin___!", Line_WaitForInput);
+	OutputLine(NULL, "　すぐに後悔することになるぞ、食らえ！！",
+		   NULL, " You'll regret that soon enough! Take this!!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+
+	OutputLine(NULL, "　蝋禅姪殿究極奥義ッ！！」",
+		   NULL, " Rou Zen Mei Den Ultimate Attack!!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	//;■バトル演出を～～
+
+	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,640,480
+	PlaySE( 0, "wav/kaminari2", 70, 64 );
+	DrawScene( "white", 0 );
+	ShakeScreen( 2, 18,  100 , 8, 12, );
+	DrawScene( "bg/mori/hasi5", 200 );
+	PlaySE( 0, "wav/dageki", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 1, 50, );
+	PlaySE( 0, "wav/dageki", 70, 64 );
+	ShakeScreen( 0, 6, 100, 1, 50, );
+	PlaySE( 0, "wav/metal43", 70, 64 );
+	DrawScene( "effect/f_b", 0 );
+	ShakeScreen( 2, 12,  100 , 3, 33, );
+	DrawScene( "bg/mori/hasi3", 200 );
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+
+
+
+	DrawScene( "bg/mori/hasi5", 400 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	//; btndef "BMP\background\Mori\Hasi5.jpg"
+	//;
+	//; mov %Staff_a,0
+	//; mov %Staff_b,0
+	//; mov %Staff_c,640
+	//; mov %Staff_d,480
+	//; mov %1,0
+	//; mov %2,0
+	//; mov %3,0
+	//; mov %4,0
+	//;
+	//; for %0 = 1 to 6
+	//; resettimer
+	//; add %1,4
+	//; add %3,0
+	//; add %2,8
+	//; add %4,12
+	//; add %Staff_a,%1
+	//; add %Staff_b,%3
+	//; sub %Staff_c,%2
+	//; sub %Staff_d,%4
+	//;
+	//; blt 0,0,640,480,%Staff_a,%Staff_b,%Staff_c,%Staff_d
+	//; waittimer 50
+	//;
+	//; next
+	//; for %0 = 1 to 6
+	//; resettimer
+	//; add %1,4
+	//; add %3,16
+	//; add %2,8
+	//; add %4,6
+	//; add %Staff_a,%1
+	//; add %Staff_b,%3
+	//; sub %Staff_c,%2
+	//; sub %Staff_d,%4
+	//;
+	//; blt 0,0,640,480,%Staff_a,%Staff_b,%Staff_c,%Staff_d
+	//; waittimer 50
+	//;
+	//; next
+	//; ofscpy
+
+	EnlargeScreen(320, 0, 400, 10, FALSE, 500, TRUE);
+
+	DisableEffector(0, FALSE);
+
+	PlaySE( 0, "wav/metal41", 70, 64 );
+	DrawScene( "effect/f_c", 0 );
+	ShakeScreen( 2, 9,  100 , 2, 50, );
+
+	//Unhandled: btndef ""
+
+	DrawScene( "bg/mori/hasi4", 200 );
+	PlaySE( 0, "wav/down3", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 1, 50, );
+	PlaySE( 0, "wav/down", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 1, 50, );
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+	Wait( 150 );
+
+	PlaySE( 0, "wav/metal41", 70, 64 );
+	DrawSceneWithMask( "effect/f_b", "effect/1", 0, 0, 10 );
+	ShakeScreen( 2, 6,  100 , 1, 50, );
+	PlaySE( 0, "wav/metal43", 70, 64 );
+	DrawSceneWithMask( "effect/f_a", "effect/1", 0, 0, 10 );
+	ShakeScreen( 2, 6,  100 , 1, 50, );
+	PlaySE( 0, "wav/metal41", 70, 64 );
+	DrawSceneWithMask( "effect/f_b", "effect/1", 0, 0, 10 );
+	ShakeScreen( 2, 6,  100 , 1, 50, );
+	PlaySE( 0, "wav/metal43", 70, 64 );
+	DrawSceneWithMask( "effect/f_a", "effect/1", 0, 0, 10 );
+	ShakeScreen( 2, 6,  100 , 1, 50, );
+	PlaySE( 0, "wav/metal41", 70, 64 );
+	DrawSceneWithMask( "effect/f_b", "effect/1", 0, 0, 10 );
+	ShakeScreen( 2, 6,  100 , 1, 50, );
+	PlaySE( 0, "wav/metal43", 70, 64 );
+	DrawSceneWithMask( "effect/f_a", "effect/1", 0, 0, 10 );
+	ShakeScreen( 2, 6,  100 , 1, 50, );
+	DrawScene( "bg/mori/hasi5", 0 );
+	PlaySE( 0, "wav/dageki", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 1, 50, );
+	PlaySE( 0, "wav/dageki", 70, 64 );
+	ShakeScreen( 0, 6, 100, 1, 50, );
+	PlaySE( 0, "wav/dageki", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 1, 50, );
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+	Wait( 150 );
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 500 );
+	PlaySE( 0, "wav/daidageki", 70, 64 );
+	//Unhandled: print 14,200
+	PlaySE( 0, "wav/down2", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 1, 50, );
+	DrawSceneWithMask( "bg/mori/hasi3", "effect/left", 0, 0, 300 );
+	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
+	SetSpeedOfMessage( FALSE, 0 );
+
+
+	OutputLine(NULL, "「円から出たな。",
+		   NULL, "\"You left the circle.", Line_WaitForInput);
+	OutputLine(NULL, "約束通り、今すぐこの場でスクール水着に着替えて俺たち全員にご奉仕罰ゲームをしてもらうぜ。」",
+		   NULL, " As promised, you'll change into a school swimsuit right now, right here, and serve all of us here.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「な、",
+		   NULL, "\"Wha...", Line_ContinueAfterTyping);
+	Wait( 300 );
+	OutputLine(NULL, "………なんですってぇ………、",
+		   NULL, " But it can't be......", Line_ContinueAfterTyping);
+	Wait( 800 );
+	OutputLine(NULL, "…く……。」",
+		   NULL, " Urgh...\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 0, TRUE );
+	Wait( 1000 );
+	PlayBGM( 0, "bgm1/rika", 70, 0 );
+	DrawSceneWithMask( "img/dsc00039", "effect/up", 0, 0, 300 );
+	DrawBustshotWithFiltering( 1, "sprites/sonota/oisi10", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+	PlaySE( 0, "boyon", 70, 64 );
+
+	OutputLine(NULL, "「……負けた後になって口調が水銀■に戻ってる辺りが実に狡猾にゃり。」",
+		   NULL, "\"...It's really funny how Suigin___'s voice goes back to normal after she loses, nyari.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+
+	PlaySE( 0, "boyon", 70, 64 );
+	DrawBustshotWithFiltering( 2, "sprites/okonogi/oko_warai", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+
+	OutputLine(NULL, "「くっくっく～～！",
+		   NULL, "\"Ku ku ku~~!", Line_WaitForInput);
+	OutputLine(NULL, "　スク水の銀さまに乳酸菌プレイ～、はぅはぅはぅ～、お～持ち帰りぃい～～！！！」",
+		   NULL, " Fun lactic acid bacteria times with Gin-sama in a school swimsuit~ Hau hau~ I'm bringing her home with me~~!!!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawBustshot( 3, "sprites/rika/nekomimi/ri_komarua1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+	DrawSceneWithMask( "img/dsc00038", "effect/right", 0, 0, 300 );
+
+	OutputLine(NULL, "「……こんなヤツにウチのサークルの次回作を預けていいのでしょうか。",
+		   NULL, "\"...Should we be leaving our circle's next work to someone like this?", Line_WaitForInput);
+	OutputLine(NULL, "とっても不安なのです。」",
+		   NULL, " I'm very concerned.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+
+	DrawBustshotWithFiltering( 4, "sprites/sonota/oisi9", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+
+	OutputLine(NULL, "「どうやら『うみねこ』のことは竜騎士抜きで僕たちで考えた方がよさそうにゃりん。」",
+		   NULL, "\"It looks like we should remove Ryukishi from the picture before thinking about Umineko, nyarin.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	ChangeBustshot( 3, "sprites/rika/nekomimi/ri_waraia1", 200, TRUE );
+
+	OutputLine(NULL, "「……なのですよ、にぱ～☆",
+		   NULL, "\"......You heard them, nipah~☆", Line_WaitForInput);
+	DisableWindow();
+
+	ChangeBustshot( 3, "sprites/rika/nekomimi/ri_nikoa1", 200, TRUE );
+
+	OutputLine(NULL, "　ボクたちでちゃんとした次回作を作りますので、どうかご安心なのです。」",
+		   NULL, " I'll make an actual game, so don't worry about anything.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+
+	ChangeBustshot( 4, "sprites/sonota/oisi7", 200, TRUE );
+
+	OutputLine(NULL, "「次回の、仮称『うみねこのなく頃に』もどうか乞うご期待にゃりん！",
+		   NULL, "\"Keep an eye out for what we're temporarily calling Umineko: When They Cry, nyarin!", Line_WaitForInput);
+	OutputLine(NULL, "　どうか今後ともよろしくお願いいたしますにゃ～！」",
+		   NULL, " We look forward to your continued support, nya~!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+
+	ChangeBustshot( 3, "sprites/rika/nekomimi/ri_waraia1", 200, TRUE );
+
+	OutputLine(NULL, "「お願いしますにぱ～☆」",
+		   NULL, "\"We look forward to it, nipah~☆\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	PlaySE( 0, "boyon", 70, 64 );
+	ChangeBustshot( 4, "sprites/sonota/oisi6", 200, TRUE );
+
+	OutputLine(NULL, "「…思うに、竜騎士が色々ごちゃ混ぜにしたからおかしくなったにゃりんよ。",
+		   NULL, "\"...In my view, everything went wrong after Ryukishi mixed all those things together.", Line_WaitForInput);
+	OutputLine(NULL, "少し修正する意味で、ｄａｉさんにも作品をひとつ混ぜてもらうにゃりん！」",
+		   NULL, " To correct it a little, we'll have dai-san add something to the mix, nyarin!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+
+	ChangeBustshot( 3, "sprites/rika/nekomimi/ri_defa1", 200, TRUE );
+
+	OutputLine(NULL, "「……みー！",
+		   NULL, "\"......Mii!", Line_WaitForInput);
+	OutputLine(NULL, "　ｄａｉさんが普通な作品を混ぜてくれれば、きっとこのおかしな闇鍋も少しはまともになるのです。」",
+		   NULL, " If dai-san adds in something normal, I'm sure our strange yaminabe will be a little better.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	ChangeBustshot( 4, "sprites/sonota/oisi7", 200, TRUE );
+
+	OutputLine(NULL, "「というわけでｄａｉさん召喚！！",
+		   NULL, "\"Then I'll summon dai-san!!", Line_WaitForInput);
+	DisableWindow();
+
+	//;gosub *G_sys
+	PlaySE( 0, "wav/taitoru", 70, 64 );
+	DrawScene( "white", 3000 );
+	DrawBustshot( 1, "sprites/takano/hakui/ta_def", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
+	DrawBustshot( 2, "sprites/sonota/oisi7", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+	DrawScene( "img/dsc00039", 400 );
+
+	OutputLine(NULL, "　ｄａｉさんご無沙汰にゃりんよ。」",
+		   NULL, " dai-san, it's been a long time, nyarin.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	ChangeBustshot( 1, "sprites/takano/hakui/ta_warai", 200, TRUE );
+
+	OutputLine(NULL, "「くすくす、どうもこんにちは、ｄａｉです。",
+		   NULL, "\"Heh-heh. Yes, hello. It's dai.", Line_WaitForInput);
+	OutputLine(NULL, "もう、いやねぇ、何かしら急に呼び出して。」",
+		   NULL, " But really, what have you called me here so suddenly for?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+
+	FadeBustshotWithFiltering( 2, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprites/rika/nekomimi/ri_nikoa1", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+
+
+	OutputLine(NULL, "「……みー。",
+		   NULL, "\"...Mii.", Line_WaitForInput);
+	OutputLine(NULL, "ｄａｉさんの心に残る漫画やアニメを一本、挙げてもらいたいのですよ。」",
+		   NULL, " We want you to suggest a manga or anime that left an impression on you.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	ChangeBustshot( 1, "sprites/takano/hakui/ta_def", 200, TRUE );
+
+	OutputLine(NULL, "「うーん、……そうねぇ。",
+		   NULL, "\"Hmm... I see.", Line_WaitForInput);
+	OutputLine(NULL, "………いっぱいあり過ぎて迷うんだけれど。",
+		   NULL, " ...There are so many to choose from.", Line_WaitForInput);
+	DisableWindow();
+
+	ChangeBustshot( 1, "sprites/takano/hakui/ta_warai", 200, TRUE );
+
+	OutputLine(NULL, "…ドラ■ンボールとかどう？」",
+		   NULL, " ...But what about Dra__nball?\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawBustshot( 4, "sprites/okonogi/oko_warai", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
+	DrawSceneWithMask( "img/dsc00038", "effect/right", 0, 0, 300 );
+
+	OutputLine(NULL, "「ふっふっふっふ！",
+		   NULL, "\"Fu fu fu fu!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+
+	OutputLine(NULL, "　ナイスな選択ですよｄａｉすわんんん！！",
+		   NULL, " Excellent choice, dai-swaaaan!!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/daidageki", 70, 64 );
+	ShakeScreen( 2, 15,  100 , 3, 33, );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　それでは■ーゼン＋■塾＋東■＋ドラ■ンボールで行ってみようぉおおおぉおぉ！！",
+		   NULL, " Let's go with __zen + _____juku + Tou___ + Dra__nball!", Line_WaitForInput);
+	DisableWindow();
+
+	PlaySE( 0, "wav/taitoru", 70, 64 );
+	DrawScene( "white", 3000 );
+	DrawScene( "bg/mori/hasi1", 400 );
+
+	OutputLine(NULL, "　あんなところに闘場がー？！",
+		   NULL, " There was a battleground there?!", Line_WaitForInput);
+	DisableWindow();
+
+	DrawSceneWithMask( "black", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "bg/mori/hasi5", "effect/right", 0, 0, 300 );
+
+	OutputLine(NULL, "　だが善戦虚しく水銀■は揉みくちゃに！",
+		   NULL, " Suigin___ put up a brave fight, but for nothing, and now she's being jostled around!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "boyon", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 3, 33, );
+	PlaySE( 0, "boyon", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 3, 33, );
+	PlaySE( 0, "boyon", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 3, 33, );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	DisableWindow();
+
+	DrawScene( "black", 400 );
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+
+	OutputLine(NULL, "　そこへ不敵に笑う女の姿が！",
+		   NULL, " And then, the image of a girl with a dauntless smile!", Line_WaitForInput);
+	OutputLine(NULL, "　何ぃ、貴様は薔薇水▲ぉおおぉ！！！",
+		   NULL, " What? Are you Bara-Sui____?!?", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/tatakiwaru", 70, 64 );
+	ShakeScreen( 0, 12, 100, 2, 50, );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+
+	PlaySE( 0, "wav/hikaru", 70, 64 );
+
+	OutputLine(NULL, "　くっくっく、わかっているだろうな、負けたら恥ずかしい罰ゲームを受けてもらうんだぜぇ、げへへへへ！！",
+		   NULL, " Ku ku ku. You understand, don't you? If you lose, you'll have to play an embarrassing punishment game, geheheheh!!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+	Wait( 200 );
+	PlaySE( 0, "wav/nageru", 70, 64 );
+
+	OutputLine(NULL, "　水銀■もてめぇも負けたらブルマだ、",
+		   NULL, " Suigin___, you too! If you lose, it's bloomers,", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/dageki", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 3, 33, );
+
+	OutputLine(NULL, "ブルマー",
+		   NULL, " bloomers,", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "boyon", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 3, 33, );
+
+	OutputLine(NULL, "ブルマー",
+		   NULL, " bloomers,", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "boyon", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 3, 33, );
+
+	OutputLine(NULL, "ブルマー、",
+		   NULL, " bloomers,", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "boyon", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 3, 33, );
+
+	OutputLine(NULL, "紺色に",
+		   NULL, " in dark blue,", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+	ShakeScreen( 0, 6, 100, 3, 33, );
+
+	OutputLine(NULL, "エンジ色に",
+		   NULL, " and deep red,", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/koruku", 70, 64 );
+	ShakeScreen( 2, 6,  100 , 3, 33, );
+
+	OutputLine(NULL, "白ライン入り～ハァハァ！！」",
+		   NULL, " with white lines~ haa haa!!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,640,480
+	PlaySE( 0, "wav/taitoru", 70, 64 );
+	DrawScene( "white", 3000 );
+	//;bg "bmp\Omake\DSC00039.JPG",0
+	//;ld c,oko_3,22
+	//;!w1000
+	DrawScene( "img/dsc00038", 400 );
+	DrawBustshotWithFiltering( 1, "sprites/takano/hakui/ta_komaru", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLine(NULL, "「…あ、あの、…ひょっとして最後のブルマってとこがドラ■ンボールなのかしら……？」",
+		   NULL, "\"...U-Umm... Was the bloomer bit at the end supposed to be a reference to Dra__nball...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+
+	DrawBustshotWithFiltering( 2, "sprites/rika/nekomimi/ri_komarua1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+
+	OutputLine(NULL, "「……何となく想像はしていましたが…、",
+		   NULL, "\"......I had a vague idea, but...", Line_ContinueAfterTyping);
+	Wait( 1000 );
+	OutputLine(NULL, "…相変わらずの低俗ぶりなのですよ、にぱ～☆」",
+		   NULL, " It's all vulgar as usual, nipah~☆\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+
+	ChangeBustshot( 1, "sprites/takano/hakui/ta_tukare", 200, TRUE );
+
+	OutputLine(NULL, "「さ、先行きが不安になってくるわね…。",
+		   NULL, "\"I...I'm starting to worry about our future...", Line_WaitForInput);
+	OutputLine(NULL, "本当にこのサークル、大丈夫なのかしら…。",
+		   NULL, " Is our circle really going to be all right...?", Line_WaitForInput);
+	OutputLine(NULL, "今後のお付き合いを考えさせてもらった方がよさそうね…。」",
+		   NULL, " You might want to give us some time to consider whether or not we should stay together from now on...\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawBustshot( 3, "sprites/sonota/oisi7", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
+
+	OutputLine(NULL, "「……どうか今後も当サークルを、見捨てずによろしくお願いしますにゃりん！」",
+		   NULL, "\"...Please continue supporting our circle in the future, and don't abandon us, nyarin!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+
+	ChangeBustshot( 2, "sprites/rika/nekomimi/ri_waraia1", 200, FALSE );
+	ChangeBustshot( 1, "sprites/takano/hakui/ta_warai", 200, TRUE );
+
+	OutputLine(NULL, "「にぱ～☆」",
+		   NULL, "\"Nipah~☆\"", Line_Normal);
+	ClearMessage();
+
+
+
+
+
+	//Unhandled: mov %CAMP_MUGIC,0
+	CallScriptSection( "util", "EyeCatch" );
+
+	//;gosub *Omake_E
+
+
+	//Unhandled: goto *Omake_mode
+}

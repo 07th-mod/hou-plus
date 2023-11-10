@@ -1,0 +1,410 @@
+void main()
+{
+
+	//Unhandled: *Staff_room11                               
+	//;スタッフルーム綿流し編
+
+
+	//Unhandled subroutine: omake_s
+
+	//csp -1
+	DrawScene( "black", 1000 );
+	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
+	SetSpeedOfMessage( FALSE, 0 );
+
+	DrawScene( "bg/mati/jansou", 1000 );
+	PlayBGM( 0, "bgm0/2", 70, 0 );
+
+	//;■スタッフルーム
+
+	OutputLine(NULL, "「この度は『ひぐらしのなく頃に～綿流し編～』をプレイして下さり、誠にありがとうございました～☆",
+		   NULL, "\"We'd truly like to thank you for playing through Higurashi When They Cry Watanagashi-hen~☆", Line_WaitForInput);
+	OutputLine(NULL, "　製作の竜騎士07です。」",
+		   NULL, " This is the creator, Ryukishi07.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「主犯の八咫桜です。」",
+		   NULL, "\"This is the main culprit, Yatazakura.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…いや～…、よく同人誌のあとがきなんかにありますけど、これをタイプしてる今現在、ぜ～んぜん、終わってないんですよね☆",
+		   NULL, "\"...Man~ ...You often see afterwords in doujinshi, but we're not done at a~ll while I'm tryping this out☆", Line_WaitForInput);
+	OutputLine(NULL, "　作業。」",
+		   NULL, " There's still work left.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そうだね…。",
+		   NULL, "\"Yeah...", Line_WaitForInput);
+	OutputLine(NULL, "クリスマスソングも終わっちゃったし……。」",
+		   NULL, " The Christmas songs have stopped too......\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「ジングルベ～ル、ジングルベ～ル、ジャケットの差し替え～☆",
+		   NULL, "\"Jingle be~lls, jingle be~lls, swapping covers out~☆", Line_WaitForInput);
+	OutputLine(NULL, "　間違えたアドレスでジャケット作っちゃった～♪",
+		   NULL, " We made covers with the wrong addre~ss♪", Line_WaitForInput);
+	OutputLine(NULL, "　冬コミまであと３０時間～♪",
+		   NULL, " Only thirty hours left until Winterket~♪", Line_WaitForInput);
+	OutputLine(NULL, "　ジャケットを１５０部差し替えて～マスターアップさせて～、１５０枚焼いて～……、誰かウソだと言ってぇえぇぇぇえぇぇぇッ！！」",
+		   NULL, " Swapping out 150 covers~ finalizing the master copy~ burning off 150 discs~...... Someone tell me this isn't reaaaaaaaaaaaaaal!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/daidageki", 70, 64 );
+	ShakeScreen( 2, 12,  30 , 2, 50, );
+	Wait( 40 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「マスターアップまで、あとこの文章だけ…？",
+		   NULL, "\"Is this the last text left before we hit master up...?", Line_WaitForInput);
+	OutputLine(NULL, "　けど、明日の仕事まであと４時間ー…！！」",
+		   NULL, " I've only got four hours until I go to work tomorrow...!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ぬぉおぉお…、お疲れさまです～…。おいらは今日で仕事納めだったけど～、山ほどたくさん仕事が越年しちゃった～☆」",
+		   NULL, "\"Nnhooooh...! Thank you for all your work~... My workplace is done for the year starting today~ Though now we're ringing in the new year with a mountain of work ourselves~☆\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そろそろ平衡感覚がなくなってきた……。」",
+		   NULL, "\"I'm starting to lose my sense of balance......\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……ぅぐぅ…。",
+		   NULL, "\"......Uguu...", Line_WaitForInput);
+	OutputLine(NULL, "栄養剤の飲みすぎでフラフラなのですよ☆",
+		   NULL, " I'm dizzy from drinking too many energy drinks☆", Line_WaitForInput);
+	OutputLine(NULL, "　ちなみに“☆”は“ほし（ｈｏｓｉ）”とタイプして変換してるのですが、たまに打ち間違えて“Ｈ死（ｈｓｉ）”と変換してしまうことがありますにゃ～☆」",
+		   NULL, " By the way, I'm typing 'hoshi' to produce the ☆, but sometimes I accidentally type 'hshi' (Death by H), and it still converts to ☆ nya~☆\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「Ｈ死ッ？！",
+		   NULL, "\"Death by H?!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/finish", 70, 64 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　し、知っているのか雷電？！」",
+		   NULL, " Y-You knew of that, Raiden?!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……知らないし、可能なら身をもって体験したいと願う今日この頃です。」",
+		   NULL, "\"......I don't know, but if it's possible, I'd love to experience it this very day.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「………さっきから話が逸れまくりですね。」",
+		   NULL, "\".........The discussion has gotten sidetracked for a while.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「では…そろそろ真面目に行きましょう。」",
+		   NULL, "\"Well... then we should start getting serious.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「こほん…。」",
+		   NULL, "\"Ahem...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　皆さん、こんばんは。",
+		   NULL, "Good evening, everyone.", Line_WaitForInput);
+	OutputLine(NULL, "竜騎士07です。",
+		   NULL, " This is Ryukishi07.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　平成１４年夏コミよりスタートした連載サウンドノベル『ひぐらしのなく頃に』ですが、ようやくここに第２話をお届けすることができました。",
+		   NULL, "We're finally able to deliver the second chapter of the serialized sound novel, Higurashi When They Cry, that we started in Summerket 2002.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　秋に発表する予定でしたが、本職等に忙殺され、遅れに遅れた発表となってしまったことをお詫びいたします。",
+		   NULL, "We were planning to announce this in the fall, but since our day jobs were working us to the bone, the announcement kept meeting delay after delay and we're very sorry.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ですが、その分、やりたかったことを思い切り詰め込んだつもりです。",
+		   NULL, "However, I believe we've packed everything we wanted to do into this to make up for it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　お楽しみいただければ幸いです☆",
+		   NULL, "We hope you all will enjoy it too☆", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「さて、竜騎士07さん。",
+		   NULL, "\"Now, Ryukishi07-san.", Line_WaitForInput);
+	OutputLine(NULL, "次回のシナリオはいつ頃ですかね？」",
+		   NULL, " When will the next script be done?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…う～ん…、春レヴォ…、いや！",
+		   NULL, "\"...Hmm... Spring Revo... No!", Line_WaitForInput);
+	OutputLine(NULL, "　遅くとも夏コミまでには！！」",
+		   NULL, " By next Summerket at the latest!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……半年後の今日にも、同じような修羅場にいる晶ちゃんビジョンがぁ～！！」",
+		   NULL, "\"......I'm having a Shou-chan Vision of ourselves in this exact same hell six months from now!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…が、がお。",
+		   NULL, "\"...G-Gao.", Line_WaitForInput);
+	OutputLine(NULL, "…がんばりますです……。」",
+		   NULL, " ...I'll do my best......\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……おりょ？",
+		   NULL, "\"......Oh?", Line_WaitForInput);
+	OutputLine(NULL, "　何だか今、不思議なビジョンが見えたような。」",
+		   NULL, " I just had a strange vision of my own.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「？？",
+		   NULL, "\"??", Line_WaitForInput);
+	OutputLine(NULL, "　何か見えました？」",
+		   NULL, " What did you see?\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawScene( "img/stuff_only", 1000 );
+	PlayBGM( 0, "bgm0/1", 70, 0 );
+
+	OutputLine(NULL, "「えぇ。",
+		   NULL, "\"Well,", Line_WaitForInput);
+	OutputLine(NULL, "こんな画像です。」",
+		   NULL, " this image.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……………あッ！！",
+		   NULL, "\"...............Ah!!", Line_WaitForInput);
+	OutputLine(NULL, "　わ、忘れてた～！！",
+		   NULL, " I-I forgot~!!", Line_WaitForInput);
+	OutputLine(NULL, "　むっふふふふふ！　この件はですねぇ、まだまだ内緒なんですよ？",
+		   NULL, " Mufufufufufu! We'll be keeping this one secret for now.", Line_WaitForInput);
+	OutputLine(NULL, "　んっふっふっふ！！」",
+		   NULL, " Mfufufu!!\"", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「こりゃ一体何です…？",
+		   NULL, "\"What on earth is this...?", Line_WaitForInput);
+	OutputLine(NULL, "　まさかひょっとして……フィギュア？！",
+		   NULL, " Is this some...... a figure?!", Line_WaitForInput);
+	OutputLine(NULL, "　ガレージキット？！",
+		   NULL, " A garage kit?!", Line_WaitForInput);
+	OutputLine(NULL, "　玄人っぽく言うとガレキってヤツっすかぁあぁあッ？！",
+		   NULL, " Or as the experts say, is this a garakiiii?!", Line_WaitForInput);
+	OutputLine(NULL, "　そう言えば…レナに似てる！",
+		   NULL, " Now that you mention it... it looks like Rena!", Line_WaitForInput);
+	OutputLine(NULL, "　タイトル前にぼよん！って出てくるレナに似てる！！",
+		   NULL, " It looks like the Rena bouncing in front of the title!!", Line_WaitForInput);
+	OutputLine(NULL, "　間違いないよ！",
+		   NULL, " I'm certain of it!", Line_WaitForInput);
+	OutputLine(NULL, "　だって槍だって持ってるじゃーん？！」",
+		   NULL, " She's even wielding a lance?!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…なんと、…私共自身でも驚いているのですが…。",
+		   NULL, "...Wow... We were both surprised...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　テストプレイヤーのreshizou22さんがなんと…",
+		   NULL, "But apparently our test player, reshizou22-san...", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/finish", 70, 64 );
+
+	OutputLine(NULL, "レナのフィギュア化に挑戦されているとのことなのです…！！",
+		   NULL, " is trying his hand at making a figure of Rena...!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「へ～…！！",
+		   NULL, "\"Wow~...!!", Line_WaitForInput);
+	OutputLine(NULL, "　それって…すごいじゃないですか！！",
+		   NULL, " This... is incredible, isn't it?!!", Line_WaitForInput);
+	OutputLine(NULL, "　それって、完成したら売るんですか…？！？！」",
+		   NULL, " You could sell this once it's finished, couldn't you...?!?!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「えーと…まだ詳しいことは決まってないんですけどね。",
+		   NULL, "\"Uhh... the details haven't been settled yet though.", Line_WaitForInput);
+	OutputLine(NULL, "平成１５年２月のワンフェスを目指して製作中なのだそうです…！",
+		   NULL, " Apparently he's aiming to produce it by February 2003's WonFes...!", Line_WaitForInput);
+	OutputLine(NULL, "　本当に本当に…楽しみです！！",
+		   NULL, " I'm really, really... looking forward to it!!", Line_WaitForInput);
+	OutputLine(NULL, "　reshizou22さん、感謝いたします！！！」",
+		   NULL, " We're so grateful, reshizou22-san!!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……どうやら、ボヨン！と出てくるオープニングのレナを再現しているようです…。",
+		   NULL, "\"......Apparently he's trying to recreate the way she pops up in the opening...", Line_WaitForInput);
+	OutputLine(NULL, "うにゃ～、楽しみにゃ～～！！！",
+		   NULL, " Unya~ I can't wait, nya~~!!!", Line_WaitForInput);
+	OutputLine(NULL, "　お持ち帰り～！！」",
+		   NULL, " I want to take her home~!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「追って、進捗情報が入りましたらまたお知らせいたしますね☆",
+		   NULL, "\"If we get further news of his progress, we'll let you know☆", Line_WaitForInput);
+	OutputLine(NULL, "　……いやぁ、どんな仕上りになるのか……今から本当に楽しみです！」",
+		   NULL, " ......Man, I wonder how it'll look when he's done...... I really can't wait to see it!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawScene( "bg/mati/jansou", 1000 );
+
+
+	OutputLine(NULL, "「それを言ったら、",
+		   NULL, "\"Speaking of that,", Line_WaitForInput);
+	OutputLine(NULL, "今回も最高にイカすミニゲームを作ってくださったＢＴさんも、本当にありがとうございます～！！！",
+		   NULL, " I'm really grateful to BT-san too for making that really awesome minigame this time around~!!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　前回の「れなぱん」も良かったですが、今回の「ＳＦＢ」はいろいろと隠しモードがあって、本当に凝ったつくりになっていますよね！」",
+		   NULL, "The 'Rena Punch' from last time was good too, but this round's 'SFB' has so many hidden modes, and he really went all out making it!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「特に、Ｋフラの後半戦のオラオラモードは必見です！",
+		   NULL, "\"K-Fla's Oraora Mode in the latter half of the fight is a special must-see!", Line_WaitForInput);
+	OutputLine(NULL, "　皆さん、ぜひプレイしてみて下さいね☆」",
+		   NULL, " I hope you'll all try playing it☆\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……最初、Ｋフラを見た時、Ｈなゲームかと思いました☆",
+		   NULL, "\"......When I first I saw K-Fla, I thought it was an H-game☆", Line_WaitForInput);
+	OutputLine(NULL, "　テヘ☆」",
+		   NULL, " Teehee☆\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「Ｈ死ッ！！！",
+		   NULL, "\"Death by H!!!", Line_WaitForInput);
+	OutputLine(NULL, "　Ｈ死に違いないッ！！！」",
+		   NULL, " Death by H for sure!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……ほーぉ。",
+		   NULL, "\"......Hooh.", Line_WaitForInput);
+	OutputLine(NULL, "マスターアップに量産もまだなのに、もう死ぬ覚悟とはのぅ。」",
+		   NULL, " We still haven't started printing from the master copy yet, and you're already prepared to die?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…はぁ、…もう死にたいでちゅ。",
+		   NULL, "\"...Hahh... I want to die already.", Line_WaitForInput);
+	OutputLine(NULL, "楽になりたいでちゅ☆",
+		   NULL, " I want it all to be over☆", Line_WaitForInput);
+	OutputLine(NULL, "　だ・か・ら♪",
+		   NULL, " So with that♪", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/kyupirn", 70, 64 );
+
+	OutputLine(NULL, "　Ｈ死～～！！！」",
+		   NULL, " death by H~~!!!\"", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "bgm0/3", 70, 0 );
+
+	OutputLine(NULL, "「竜騎士07さんはどんなＨ死が希望ですか？」",
+		   NULL, "\"What kind of death by H would you prefer, Ryukishi07-san?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「は、はぅ？！",
+		   NULL, "\"H-Hau?!", Line_WaitForInput);
+	OutputLine(NULL, "　…い、言ったらかなうんすか？！？！",
+		   NULL, " ...W-Will it happen if I say it?!?!", Line_WaitForInput);
+
+	PlaySE( 0, "wav/finish", 70, 64 );
+
+	OutputLine(NULL, "　絶対に？！」",
+		   NULL, " For certain?!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「まー、試しに言ってミソ～☆」",
+		   NULL, "\"Well, try saying it to find out, miso~☆\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そりゃーもぅ！！",
+		   NULL, "\"Well, of course!!", Line_WaitForInput);
+	OutputLine(NULL, "　ランドセルにビームサーベルをさした巨乳×学生を×ってはぁはぁ！！",
+		   NULL, " By ****ing a big breasted ***** schooler with a beam saber holstered in her red backpack, hahh hahh!!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/boyon", 70, 64 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　たっぷり××××で楽しんだあとはさらに×××ってもう１回プレ～イ！！",
+		   NULL, " Then after I've enjoyed lots of *** with her, we'll go even further and **** and then go one more round of play!!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/daidageki", 70, 64 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　さらにおいらのことを××××××と呼ばせて…はぁはぁ☆",
+		   NULL, " On top of that, I'd have her call me ********... Hahh, hahh☆", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "wav/kira", 70, 64 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　はぁはぁＨ死」",
+		   NULL, " Hahh, hahh, death by H.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "（以下、２７ページほど削除）",
+		   NULL, "(The following 27 pages have been deleted.)", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+	DrawScene( "bg/mati/jansou", 1000 );
+
+	OutputLine(NULL, "「竜騎士07さんがえいえんの世界に旅立たれたので、私、八咫桜が代わります。",
+		   NULL, "\"Ryukishi-san has set off on a journey to the eternal world, so I, Yatazakura, will be taking his place.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　前回の「鬼隠し編」をプレイして、感想を送って下さいましたテストプレイヤーの皆さん、本当にありがとうございました！",
+		   NULL, "We're truly grateful to all of you test players who played through the previous Onikakushi chapter and sent us your impressions!", Line_WaitForInput);
+	OutputLine(NULL, "　この度の作品でも、お気づきの点やご感想等、お聞かせくだされば幸いです。」",
+		   NULL, " We hope that you'll let us hear what you thought, and what you noticed in this title as well.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　次回作も張り切って製作していきたいと思います。",
+		   NULL, "We plan to work hard creating our next title.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　重ねまして、この度はプレイしてくださり、誠にありがとうございました☆",
+		   NULL, "So once again, we thank you all very much for playing this game☆", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　また、この時間になってもまだマスターアップしない「修羅」を見捨てず、献身的に手伝ってくれる弟たちに感謝を……。",
+		   NULL, "I'm also grateful to my little brothers for dedicatedly helping me instead of abandoning me to this hell where we still haven't finished up the master copy even at this hour......", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして手に取ってくださったあなたにも☆",
+		   NULL, "As well as to all of you who picked up this title☆", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　　　　　　　　　　平成１４年１２月２８日",
+		   NULL, "　　　　　　　　　　December 28th, 2002", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　　　　　　　　　　　　　　午前３時２５分",
+		   NULL, "　　　　　　　　　　　　　　 3:25 AM", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　　　　　　　　　　　　　　　　　竜騎士07",
+		   NULL, "　　　　　　　　　　　　　　　　　Ryukishi07", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+
+
+
+
+
+
+
+
+	DrawScene( "black", 1000 );
+	//Unhandled subroutine: omake_e
+
+
+	//Unhandled: goto *Omake_mode
+}

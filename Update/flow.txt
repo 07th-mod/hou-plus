@@ -1,0 +1,708 @@
+﻿
+void main()
+{
+	if(IsUnityEditor() == 0) {
+		SetValidityOfSaving( FALSE );
+		CallSection("BrandLogo");
+	} else {
+		CallScript( "test" );
+	}
+	JumpSection("Title");
+}
+
+//the 4 chapter scripts are up here so that changing any of the other utility functions doesn't break saves (since it works on line number)
+void Outbreak()
+{
+	CallScript( "outbreak01_1" );
+
+	if(GetGlobalFlag(HIGUEND) <= 10)
+	{
+		SetGlobalFlag(HIGUEND, 11);
+		CallSection("ShowUnlock1");
+	}
+	//GetAchievement("O1_CLEAR");
+
+	JumpSection("ReturnToTitle");
+}
+
+void Kamikashimashi()
+{
+	CallScript( "outbreak02_1" );
+
+	SetGlobalFlag(HIGUEND, 21);
+	if(GetGlobalFlag(MEHEND) <= 10)
+	{
+		SetGlobalFlag(MEHEND, 11);
+		if(GetGlobalFlag(TEIEND) > 10)
+			CallSection("ShowUnlock2");
+	}
+	//GetAchievement("O2_CLEAR");
+
+	JumpSection("ReturnToTitle");
+}
+
+void Busstop()
+{
+	SetWindowBackground("cinema_window_name");
+	SetWindowMargins(60, 530, 50, 30);
+	SetNameFormat("<line-height=50><size=36><margin-right=654><align=center>{0}<margin-right=30>\n</align></size></line-height>");
+	SetJpNameFormat("<line-height=60><size=36><margin-right=654><align=center>{0}<margin-right=30>\n</align></size></line-height>");
+	SetNameHistoryFormat("{0}: ");
+	SetFontSize(32);
+	SetJpFontSize(36);
+	SetLineSpacing(1);
+	SetJpLineSpacing(5);
+
+	SetWindowFadeTime(0); //instant
+	SetWindowFadeOutTime(0); //instant
+
+	CallScript( "busstop01" );
+
+	if(GetGlobalFlag(TEIEND) < 10)
+	{
+		SetGlobalFlag(TEIEND, 11);
+		if(GetGlobalFlag(MEHEND) > 10)
+			CallSection("ShowUnlock2");
+	}
+	//GetAchievement("BUS_CLEAR");
+
+	JumpSection("ReturnToTitle");
+}
+
+void Mehagashi()
+{
+	CallScript( "mehagashi" );
+
+	//GetAchievement("ME_CLEAR");
+
+	JumpSection("ReturnToTitle");
+}
+
+void BrandLogo()
+{
+	DrawScene("black", 0);
+
+	if(GetGlobalFlag(GFlag_FirstPlay) == 0)
+	{
+		LanguagePrompt();
+		Wait(500);
+	}
+
+	SetGlobalFlag(GFlag_FirstPlay, 1);
+
+	DrawScene( "title/07thlogo", 1000 );
+	Wait( 2000 );
+	DrawSceneWithMask( "title/mangagamer", "effect/logomask", 0, 0, 1000 );
+
+	Wait( 2000 );
+
+	DrawSceneWithMask( "black", "effect/logomask", 0, 0, 1000 );
+}
+
+void Title()
+{
+	SetValidityOfSaving( FALSE );
+	SetGlobalFlag(TitleState, 0);
+
+	DrawScene("black", 100);
+
+	//SetGlobalFlag(TEIEND, 0);
+	//SetGlobalFlag(HIGUEND, 0);
+	//SetGlobalFlag(MEHEND, 0);
+
+	//flag states
+	//all zero = just started
+	//TEIEND = 11 -> Busstop Complete
+	//HIGUEND = 11 -> Outbreak Complete
+	//HIGUEND = 21, MEHEND = 11 -> Kamikashimashi Complete
+	//MEHEND = 21 -> Read 2022 After Party and saw final credits
+	//Don't ask why R07 decided to do the flags this way
+
+	//Unlocking Kamikashimashi requires TEIEND > 10 and HIGUEND > 10
+	//Unlocking Mehagashi requires HIGUEND > 20 and MEHEND > 10
+
+	//Title modes
+	//No chapters complete - Higurashi sound, temple bg
+	//Busstop, Outbreak, Kamikashimashi complete - Second title bg, bgm maturi_01_Ver2
+	//All complete, 2022 after party - Second title bg, random bgm, sword on screen
+
+	int titleMode;
+	titleMode = 0;
+	
+	if((GetGlobalFlag(TEIEND) > 10) && (GetGlobalFlag(HIGUEND) > 20) && (GetGlobalFlag(MEHEND) > 10))
+		titleMode = 1;
+
+	if(GetGlobalFlag(MEHEND) >= 20)
+		titleMode = 2;
+
+	if(titleMode == 0)
+	{
+		DrawScene("title/title", 500);
+		Wait(500):
+		PlayBGM( 2, "bgm0/higurashi", 128, 0 );
+	}
+
+	if(titleMode == 1)
+	{
+		DrawScene("title/title3", 500);
+		Wait(500):
+
+		PlayBGM( 2, "bgm1/maturi_01_Ver2", 128, 0 );
+	}
+
+	if(titleMode == 2)
+	{
+		DrawSprite(5, "title/ken", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 5, 0, FALSE);
+		DrawScene("title/title3", 500);
+		Wait(500):
+
+		int rnd;
+		rnd = GetRandomNumber(10);
+
+		if(rnd > 6)
+			PlayBGM( 2, "bgm2/you_sotugyo_inst", 128, 0 );
+		if((rnd < 4) || (rnd == 6)) //compiler sucks on order of operations so remember brackets for multi-variable comparisons
+			PlayBGM( 2, "bgm2/thanks_mb", 128, 0 );
+		if((rnd == 4) || (rnd == 5))
+			PlayBGM( 2, "bgm2/hutarihitori_mb", 128, 0 );
+	}
+	
+	DrawSpriteFixedSize( 10, "title/logo", NULL, -320, -240, 0, 0, 0, 320, 120, 0, FALSE, FALSE, 0, 0, 25, 3000, TRUE );
+	DrawSpriteWithFilteringFixedSize( 9, "title/akairo", "effect/down", 0, -320, -240, 128, 480, FALSE, FALSE, 0, 0, 20, 3000, TRUE );
+
+	LoadTitleScreen();
+
+	Wait(2000);
+
+	SetLocalFlag( LOCALWORK_NO_RESULT, 0 );
+	SetLocalFlag(s_jump, 0);
+
+	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
+
+	JumpSection("TitleLoop"); //don't forget jumping resets all scope. You can no longer return from a jump. No idea why I made it that way.
+}
+
+void TitleLoop()
+{
+	TitleScreen();
+
+	if(GetLocalFlag( LOCALWORK_NO_RESULT ) > 0) //so we don't drop into this from the Omake screen
+		CallSection("ChapterPreview"); 
+
+	JumpSection("Title");
+}
+
+void OmakeLoop()
+{
+	PlayBGM( 2, "bgm0/z2_hig2", 100, 0 );
+
+	ShowExtras();
+
+	if(GetLocalFlag( LOCALWORK_NO_RESULT ) > 0)
+		JumpSection("OmakeLoop");
+
+	FadeOutBGM( 2, 1000, TRUE );
+	JumpSection("Title");
+}
+
+void OmakeSubSection()
+{
+	//state 1 for unlock all screen, 2 for secret staff room, 3 for music room
+	int state = GetLocalFlag(OmakeState);
+
+	if(state != 3)
+		PlayBGM( 2, "bgm0/z2_hig2", 100, 0 );
+	else
+		PlayBGM( 2, "bgm0/2", 100, 0 );
+
+	if(state == 3)
+		DrawScene("omake/music", 400); //music room background
+	if(state == 2)
+		DrawScene("omake/tyuit", 400); //secret staff room background
+	if(state == 1)
+		DrawSceneWithMask("omake/lock_bg", "effect/4", 0, 0, 1000); //unlock all background
+	if(state == 0)
+		DrawScene("black", 400);
+
+	OmakeScreenSection();
+	
+	JumpSection("OmakeLoop");
+}
+
+void UnlockAll()
+{
+	//well technically we don't mark hou+ content as completed here
+
+	FadeOutBGM( 2, 1000, TRUE );
+
+	if(GetGlobalFlag(HIGUEND) < 11)
+	{
+		CallSection("ShowUnlock1"); //show the unlock screen if they haven't yet cleared Outbreak
+	}
+
+	if(GetGlobalFlag(HIGUEND) < 21)
+		SetGlobalFlag(HIGUEND, 21);
+
+	if((GetGlobalFlag(TEIEND) < 11) || (GetGlobalFlag(MEHEND) < 11))
+	{
+		SetGlobalFlag(TEIEND, 11);
+		SetGlobalFlag(MEHEND, 11);
+
+		CallSection("ShowUnlock2");
+	}
+
+	Wait(2000);
+	JumpSection("Title");
+}
+
+void TitleClick()
+{
+	if(GetGlobalFlag(MEHEND) < 11) //can't trigger until completing Kamikashimashi
+		JumpSection("TitleLoop");
+
+	//hidden easter egg, click logo a bunch on the title screen after clearing the game
+
+	int state;
+	state = GetGlobalFlag(TitleState) + 1;
+	SetGlobalFlag(TitleState, state);
+	
+	if(state == 7)
+		CallSection("RikaAnim1");
+	if(state == 8)
+		CallSection("RikaAnim2");
+
+	if(state == 14)
+		CallSection("HanyuuAnim1");
+	if(state == 15)
+		CallSection("HanyuuAnim2");
+	
+	JumpSection("TitleLoop");
+}
+
+void ChapterPreview()
+{
+	PlayBGM( 2, "bgm1/it moves", 128, 0 );
+	DrawSceneWithMask( "black", "effect/mask2", 0, 0, 1000 );
+
+	Wait(1000);
+
+	DrawScene("chapter/back", 1000);
+
+	ShowChapterPreview(); //the fragment screen and their unlock conditions are in the c# script ChapterPreviewManager.cs
+
+	if(GetLocalFlag( LOCALWORK_NO_RESULT ) > 0)
+	{
+		PlaySE( 1, "se137", 128, 64 );
+
+		if(GetLocalFlag( LOCALWORK_NO_RESULT ) == 1)
+			JumpSection("EnterOutbreak");
+		if(GetLocalFlag( LOCALWORK_NO_RESULT ) == 2)
+			JumpSection("EnterKamikashimashi");
+		if(GetLocalFlag( LOCALWORK_NO_RESULT ) == 3)
+			JumpSection("EnterBusstop");
+		if(GetLocalFlag( LOCALWORK_NO_RESULT ) == 4)
+			JumpSection("EnterMehagashi");
+	}
+
+	FadeOutBGM( 2, 1000, FALSE );
+
+	DrawScene("black", 1000);
+	
+	CallSection("Title");
+}
+
+void EnterOutbreak()
+{
+	//fragment movement animation
+	DrawSpriteFixedSize( 10, "chapter/left2", NULL, -264, -108, 0, 0, 0, 180, 270, 0, FALSE, FALSE, 0, 0, 12, 0, TRUE );
+	DrawSpriteFixedSize( 11, "chapter/left2", NULL, -264, -108, 0, 0, 0, 180, 270, 0, FALSE, FALSE, 0, 0, 12, 0, FALSE );
+	DrawScene("black", 1200);
+	Wait(500);
+	MoveSprite( 11, -78, -140, 0, 0, 0, 0, 0, 1500, TRUE );
+	Wait(300);
+	PlaySE( 1, "telepo", 100, 64 );
+	FadeOutBGM( 2, 2000, FALSE );
+	DrawSceneWithMask( "white", "effect/maskc", 0, 0, 2000 );
+	Wait(500);
+	DrawScene( "black", 1000 );
+	CallSection("ResetScene");
+
+	JumpSection("Outbreak");
+}
+
+void EnterKamikashimashi()
+{
+	//fragment movement animation
+	DrawSpriteFixedSize( 10, "chapter/right2", NULL, 141, -132, 0, 0, 0, 150, 215, 0, FALSE, FALSE, 0, 0, 12, 0, TRUE );
+	DrawSpriteFixedSize( 11, "chapter/right2", NULL, 141, -132, 0, 0, 0, 150, 215, 0, FALSE, FALSE, 0, 0, 12, 0, FALSE );
+
+	DrawScene("black", 1200);
+	Wait(500);
+	MoveSprite( 11, -78, -106, 0, 0, 0, 0, 0, 1500, TRUE );
+	Wait(300);
+	PlaySE( 1, "telepo", 100, 64 );
+	FadeOutBGM( 2, 2000, FALSE );
+	DrawSceneWithMask( "white", "effect/maskc", 0, 0, 2000 );
+	Wait(500);
+	DrawScene( "black", 1000 );
+	CallSection("ResetScene");
+
+	JumpSection("Kamikashimashi");
+}
+
+void EnterBusstop()
+{
+	//fragment movement animation
+	DrawSpriteFixedSize( 10, "chapter/center2", NULL, -94, -223, 0, 0, 0, 140, 160, 0, FALSE, FALSE, 0, 0, 12, 0, TRUE );
+	DrawSpriteFixedSize( 11, "chapter/center2", NULL, -94, -223, 0, 0, 0, 140, 160, 0, FALSE, FALSE, 0, 0, 12, 0, FALSE );
+
+	DrawScene("black", 1200);
+	Wait(500);
+	MoveSprite( 11, -72, -72, 0, 0, 0, 0, 0, 1500, TRUE );
+	Wait(300);
+	PlaySE( 1, "telepo", 100, 64 );
+	FadeOutBGM( 2, 2000, FALSE );
+	DrawSceneWithMask( "white", "effect/maskc", 0, 0, 2000 );
+	Wait(500);
+	DrawScene( "black", 1000 );
+	CallSection("ResetScene");
+
+	JumpSection("Busstop");
+}
+
+void EnterMehagashi()
+{
+	//fragment movement animation
+	DrawSpriteFixedSize( 10, "chapter/center_low2", NULL, -42, -38, 0, 0, 0, 160, 160, 0, FALSE, FALSE, 0, 0, 12, 0, TRUE );
+	DrawSpriteFixedSize( 11, "chapter/center_low2", NULL, -42, -38, 0, 0, 0, 160, 160, 0, FALSE, FALSE, 0, 0, 12, 0, FALSE );
+
+	DrawScene("black", 1200);
+	Wait(500);
+	MoveSprite( 11, -73, -82, 0, 0, 0, 0, 0, 1500, TRUE );
+	Wait(300);
+	PlaySE( 1, "telepo", 100, 64 );
+	FadeOutBGM( 2, 2000, FALSE );
+	DrawSceneWithMask( "white", "effect/maskc", 0, 0, 2000 );
+	Wait(500);
+	DrawScene( "black", 1000 );
+	CallSection("ResetScene");
+
+	JumpSection("Mehagashi");
+}
+
+void ShowUnlock1()
+{
+	//completed outbreak
+	SetValidityOfInput( FALSE );
+	PlaySE( 0, "se051", 80, 64 );
+	DrawScene("chapter/tuika_1", 400); //unlock kamikashimashi
+	SetValidityOfInput( TRUE );
+	Wait(10000);
+	SetValidityOfInput( FALSE );
+	DrawScene("black", 400);
+	SetValidityOfInput( TRUE );
+}
+
+void ShowUnlock2()
+{
+	//completed bus stop and kamikashimashi
+	SetValidityOfInput( FALSE );
+	PlaySE( 0, "se051", 80, 64 );
+	DrawScene("chapter/tuika_2", 400); //unlocked 2022 after party omake
+	SetValidityOfInput( TRUE );
+	Wait(10000);
+	SetValidityOfInput( FALSE );
+	DrawScene("black", 400);
+	SetValidityOfInput( TRUE );
+
+	SetValidityOfInput( FALSE );
+	PlaySE( 0, "se051", 80, 64 );
+	DrawScene("chapter/tuika_3", 400); //unlocked music room
+	SetValidityOfInput( TRUE );
+	Wait(10000);
+	SetValidityOfInput( FALSE );
+	DrawScene("black", 400);
+	SetValidityOfInput( TRUE );
+
+	SetValidityOfInput( FALSE );
+	PlaySE( 0, "se051", 80, 64 );
+	DrawScene("chapter/tuika_4", 400); //unlocked mehagashi
+	SetValidityOfInput( TRUE );
+	Wait(10000);
+	SetValidityOfInput( FALSE );
+	DrawScene("black", 400);
+	SetValidityOfInput( TRUE );
+}
+
+void ResetScene()
+{
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, FALSE );
+	FadeOutBGM( 3, 1000, TRUE );
+
+	StopAllSound();
+
+	SetLocalFlag(NewTipsStart , 0);
+	SetLocalFlag(NewTipsCount , 0);
+	SetLocalFlag(TipsCount , 0);
+
+	SetValidityOfSaving( TRUE );
+	SetValidityOfInput( TRUE );
+
+	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
+
+	SetWindowBackground("windo_filter");
+	SetWindowMargins(60, 30, 50, 30);
+	SetNameFormat("");
+	SetJpNameFormat("");
+	SetNameHistoryFormat("");
+	SetFontSize(42);
+	SetJpFontSize(42);
+	SetLineSpacing(1);
+	SetJpLineSpacing(1);
+	SetWindowFadeTime(200); // 0.2s
+	SetWindowFadeOutTime(500); // 0.5s
+	SetNameColor(255,255,255);
+
+	DrawScene( "black", 0 );
+}
+
+void ReturnToTitle()
+{
+	CallSection("ResetScene");
+
+	if(GetGlobalFlag( MEHEND ) > 20)
+	{
+		SetGlobalFlag( GFlag_GameClear, TRUE );
+	}
+
+	SetLocalFlag(NewTipsStart , 0);
+	SetLocalFlag(NewTipsCount , 0);
+	SetLocalFlag(TipsCount , 0);
+
+	JumpSection("Title");
+}
+
+var RikaAnim1()
+{
+	SetValidityOfInput(FALSE);
+	
+	DrawSpriteFixedSize( 12, "title/rik_3", NULL, -20, 190, 0, 0, 0, 349, 480, 0, FALSE, FALSE, 0, 0, 12, 0, TRUE );
+	MoveSprite( 12, -98, 70, 0, 0, 0, 0, 0, 300, TRUE );
+	Wait(800);
+	MoveSprite( 12, -27, -123, 0, 0, 0, 0, 0, 500, TRUE );
+	Wait(500);
+	MoveSprite( 12, -58, -240, 0, 0, 0, 0, 0, 800, TRUE );
+	Wait(500);
+	ChangeBustshot(12, "title/rik_2", 500, TRUE);
+
+	SetValidityOfInput(TRUE);
+}
+
+void RikaAnim2()
+{
+	SetValidityOfInput(FALSE);	
+
+	//DrawSpriteFixedSize( 12, "title/rik_2", NULL, -58, -240, 0, 0, 0, 349, 480, 0, FALSE, FALSE, 0, 0, 12, 0, TRUE );
+	DrawSpriteFixedSize( 13, "title/ren_k", NULL, 188, 92, 0, 0, 0, 401, 480, 0, FALSE, FALSE, 0, 0, 13, 0, TRUE );
+	MoveSprite( 13, 122, -42, 0, 0, 0, 0, 0, 2200, TRUE );
+	Wait(400);
+	MoveSprite( 13, 188, 92, 0, 0, 0, 0, 0, 2200, TRUE );
+	Wait(500);
+	ChangeBustshot(12, "title/rik_3f", 500, TRUE);
+	Wait(400);
+	FadeBustshot(13, FALSE, 0, 0, 0, 0, 0, FALSE);
+	ChangeBustshot(12, "title/rik_2", 500, TRUE);
+	Wait(1500);
+
+	DrawSpriteFixedSize( 11, "title/ren_k", NULL, 300, -240, 0, 0, 0, 401, 480, 0, FALSE, FALSE, 0, 0, 11, 0, TRUE );
+	MoveSprite( 11, 165, -240, 0, 0, 0, 0, 0, 1500, TRUE );
+	Wait(500);
+	MoveSprite( 11, -16, -240, 0, 0, 0, 0, 0, 1500, TRUE );
+
+	MoveSprite( 11, -723, -240, 0, 0, 0, 0, 0, 1500, FALSE );
+	MoveSprite( 12, -746, -240, 0, 0, 0, 0, 0, 1500, TRUE );
+
+	FadeBustshot(11, FALSE, 0, 0, 0, 0, 0, FALSE);
+	FadeBustshot(12, FALSE, 0, 0, 0, 0, 0, TRUE);
+
+	SetValidityOfInput(TRUE);
+}
+
+void HanyuuAnim1()
+{
+	SetValidityOfInput(FALSE);	
+
+	DrawSpriteFixedSize( 12, "title/han_11", NULL, 10, 238, 0, 0, 0, 470, 480, 0, FALSE, FALSE, 0, 0, 12, 0, TRUE );
+	MoveSprite( 12, -94, 60, 0, 0, 0, 0, 0, 400, TRUE );
+	ShakeScreen( 1, 6, 30, 12, 0, );
+	MoveSprite( 12, -34, -138, 0, 0, 0, 0, 0, 400, TRUE );
+	ShakeScreen( 1, 6, 30, 12, 0, );
+	MoveSprite( 12, -71, -240, 0, 0, 0, 0, 0, 400, TRUE );
+	ShakeScreen( 1, 6, 30, 12, 0, );
+
+	SetValidityOfInput(TRUE);
+}
+
+void HanyuuAnim2()
+{
+	SetValidityOfInput(FALSE);	
+
+	DrawSpriteFixedSize( 12, "title/han_11", NULL, -71, -240, 0, 0, 0, 470, 480, 0, FALSE, FALSE, 0, 0, 12, 0, TRUE );
+	MoveSprite( 12, -126, -37, 0, 0, 0, 0, 0, 400, TRUE );
+	ShakeScreen( 1, 6, 30, 12, 0, );
+	MoveSprite( 12, -69, 163, 0, 0, 0, 0, 0, 400, TRUE );
+	ShakeScreen( 1, 6, 30, 12, 0, );
+	MoveSprite( 12, -100, 253, 0, 0, 0, 0, 0, 400, TRUE );
+	ShakeScreen( 1, 6, 30, 12, 0, );
+	Wait(500);
+	MoveSprite( 12, -71, -86, 0, 0, 0, 0, 0, 150, TRUE );
+	ShakeScreen( 1, 6, 30, 12, 0, );
+	MoveSprite( 12, -629, -86, 0, 0, 256, 0, 0, 1000, FALSE ); //fade out
+	Update(); //execute stored actions
+	Wait(600);
+	if(GetGlobalFlag(MEHEND) >= 20)
+		FadeBustshot(5, FALSE, 0, 0, 0, 0, 400, TRUE); //fade out the sword
+	else
+		Wait(400);
+	
+	FadeBustshot(12, FALSE, 0, 0, 0, 0, 0, TRUE);
+
+	SetValidityOfInput(TRUE);
+}
+
+void MusicRoomMovie()
+{
+	DrawScene("black", 400);
+	CallScriptSection("util", "PlayIntro");
+	JumpSection("OmakeSubSection");
+}
+
+void StaffRoom1()
+{
+	//02 - Watanagashi
+	CallSection("ResetScene");
+	CallScript("staffroom11");
+	SetGlobalFlag(ReadStaffRoom1, 1);
+	CallSection("AchievementCheck");
+	CallSection("ResetScene");
+	JumpSection("OmakeSubSection");
+}
+
+void StaffRoom2()
+{
+	//03 - Tatarigoroshi
+	CallSection("ResetScene");
+	CallScript("staffroom12");
+	SetGlobalFlag(ReadStaffRoom2, 1);
+	CallSection("AchievementCheck");
+	CallSection("ResetScene");
+	JumpSection("OmakeSubSection");
+}
+
+void StaffRoom3()
+{
+	//04 - Himatsubushi
+	CallSection("ResetScene");
+	CallScript("staffroom13");
+	SetGlobalFlag(ReadStaffRoom3, 1);
+	CallSection("AchievementCheck");
+	CallSection("ResetScene");
+	JumpSection("OmakeSubSection");
+}
+
+void StaffRoom4()
+{
+	//Saikoroshi
+	CallSection("ResetScene");
+	CallScript("staffroom");
+	SetGlobalFlag(ReadStaffRoom4, 1);
+	CallSection("AchievementCheck");
+	CallSection("ResetScene");
+	JumpSection("OmakeSubSection");
+}
+
+void StaffRoom5()
+{
+	//05 - Meakashi
+	CallSection("ResetScene");
+	CallScript("staffroom02");
+	SetGlobalFlag(ReadStaffRoom5, 1);
+	CallSection("AchievementCheck");
+	CallSection("ResetScene");
+	JumpSection("OmakeSubSection");
+}
+
+void StaffRoom6()
+{
+	//06 - Tsumihoroboshi
+	CallSection("ResetScene");
+	CallScript("staffroom03");
+	SetGlobalFlag(ReadStaffRoom6, 1);
+	CallSection("AchievementCheck");
+	CallSection("ResetScene");
+	JumpSection("OmakeSubSection");
+}
+
+void StaffRoom7()
+{
+	//07 - Minagoroshi
+	CallSection("ResetScene");
+	CallScript("staffroom06");
+	SetGlobalFlag(ReadStaffRoom7, 1);
+	CallSection("AchievementCheck");
+	CallSection("ResetScene");
+	JumpSection("OmakeSubSection");
+}
+
+void StaffRoom8()
+{
+	//08 - Matsuribayashi
+	CallSection("ResetScene");
+	CallScript("staffroom08");
+	SetGlobalFlag(ReadStaffRoom8, 1);
+	CallSection("AchievementCheck");
+	CallSection("ResetScene");
+	JumpSection("OmakeSubSection");
+}
+
+void StaffRoom9()
+{
+	//Kamikashimashi
+	CallSection("ResetScene");
+	CallScript("staffroom14");
+	SetGlobalFlag(ReadStaffRoom9, 1);
+	CallSection("AchievementCheck");
+	CallSection("ResetScene");
+	JumpSection("OmakeSubSection");
+}
+
+void StaffRoom15()
+{
+	//2022 After Party
+	CallSection("ResetScene");
+	CallScript("staffroom15");
+	SetGlobalFlag(MEHEND, 21); //should in theory be impossible to hit this without MEH being 11
+	CallSection("AchievementCheck");
+	CallSection("ResetScene");
+
+	JumpSection("ReturnToTitle");
+}
+
+void AchievementCheck()
+{
+	if(GetGlobalFlag(MEHEND) < 21)
+		Return();
+
+	if(GetGlobalFlag(ReadStaffRoom1) 
+	 + GetGlobalFlag(ReadStaffRoom2) 
+	 + GetGlobalFlag(ReadStaffRoom3) 
+	 + GetGlobalFlag(ReadStaffRoom4) 
+	 + GetGlobalFlag(ReadStaffRoom5) 
+	 + GetGlobalFlag(ReadStaffRoom6) 
+	 + GetGlobalFlag(ReadStaffRoom7) 
+	 + GetGlobalFlag(ReadStaffRoom8) 
+	 + GetGlobalFlag(ReadStaffRoom9) >= 9)
+	 	GetAchievement("HOU_CLEAR");
+}

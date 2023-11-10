@@ -1,0 +1,169 @@
+//So many credits!
+
+void BusStopEndRoll()
+{
+	string img1 = "credits/tei_cast1";
+	string img2 = "credits/tei_cast2";
+	int h1 = 3000;
+	int h2 = 2590;
+	int time = 100000;
+	int noSkipTime = 10000;
+	
+	SetValidityOfInput(FALSE);
+	SetValidityOfSkipping(FALSE);
+
+	Wait(2000);
+
+	DrawSprite( 5, img1, NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 32, 0, FALSE );
+	DrawSprite( 6, img2, NULL, -320, h1-240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 32, 0, TRUE );
+	MoveSprite( 5, -320, 0-h1-h2+240, 0, 0, 0, 0, 0, time, FALSE );
+	MoveSprite( 6, -320, 0-h2+240, 0, 0, 0, 0, 0, time, FALSE );
+	Update(); //start the queued move without waiting for it
+
+	Wait(noSkipTime);
+	SetValidityOfInput(TRUE);
+	Wait(time - noSkipTime);
+
+	FadeSprite(5, 0, FALSE );
+	FadeSprite(6, 0, FALSE );
+	DrawSprite( 7, img2, NULL, -320, 0-h2+240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 32, 0, FALSE );
+	DrawScene("black", 0);
+
+	FadeOutBGM( 0, 6000, FALSE );
+	FadeSprite( 7, 6000, TRUE );
+	DrawScene( "black" , 100 );
+
+	SetValidityOfSkipping(TRUE);
+}
+
+void HouCastRoll()
+{
+	string img1 = "credits/hou_cast1";
+	string img2 = "credits/hou_cast2";
+	int h1 = 3000;
+	int h2 = 2098;
+	int time = 80000;
+	int noSkipTime = 10000;
+	
+	SetValidityOfInput(FALSE);
+	SetValidityOfSkipping(FALSE);
+
+	Wait(2000);
+
+	DrawSprite( 5, img1, NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 32, 0, FALSE );
+	DrawSprite( 6, img2, NULL, -320, h1-240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 32, 0, TRUE );
+	MoveSprite( 5, -320, 0-h1-h2+240, 0, 0, 0, 0, 0, time, FALSE );
+	MoveSprite( 6, -320, 0-h2+240, 0, 0, 0, 0, 0, time, FALSE );
+	Update(); //start the queued move without waiting for it
+
+	Wait(noSkipTime);
+	SetValidityOfInput(TRUE);
+	Wait(time - noSkipTime);
+
+	FadeSprite(5, 0, FALSE );
+	FadeSprite(6, 0, FALSE );
+	DrawSprite( 7, img2, NULL, -320, 0-h2+240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 32, 0, FALSE );
+	DrawScene("black", 0);
+
+	FadeOutBGM( 0, 4000, FALSE );
+	FadeSprite( 7, 4000, TRUE );
+	DrawScene( "black" , 100 );
+
+	SetValidityOfSkipping(TRUE);
+}
+
+
+void HouStaffRoll()
+{
+	string img1 = "credits/hou_staff1";
+	string img2 = "credits/hou_staff2";
+	int h1 = 4000;
+	int h2 = 3288;
+	int time = 240000;
+	int noSkipTime = 10000;
+
+	SetValidityOfInput(FALSE);
+	SetValidityOfSkipping(FALSE);
+
+	Wait(2000);
+
+	DrawSprite( 5, img1, NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 32, 0, FALSE );
+	DrawSprite( 6, img2, NULL, -320, h1-240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 32, 0, TRUE );
+	MoveSprite( 5, -320, 0-h1-h2+240, 0, 0, 0, 0, 0, time, FALSE );
+	MoveSprite( 6, -320, 0-h2+240, 0, 0, 0, 0, 0, time, FALSE );
+	Update(); //start the queued move without waiting for it
+
+	Wait(noSkipTime);
+	SetValidityOfInput(TRUE);
+	Wait(time - noSkipTime);
+
+	FadeSprite(5, 0, FALSE );
+	FadeSprite(6, 0, FALSE );
+	DrawSprite( 7, img2, NULL, -320, 0-h2+240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 8, 0, FALSE );
+	DrawScene("black", 0);
+
+	FadeOutBGM( 0, 6000, FALSE );
+	FadeSprite( 7, 6000, TRUE );
+	DrawScene( "black" , 100 );
+
+	SetValidityOfSkipping(TRUE);
+}
+
+void HouStaffFinal()
+{
+	StopAllSound();
+	PlayBGM( 0, "bgm2/you_sotugyo_inst", 100, 0 );
+	DisableLoopingOfBGM( 0 );
+
+	string img1 = "credits/hou_staff_2a";
+	string img2 = "credits/hou_staff_2b";
+	string img3 = "credits/hou_staff_2c";
+	int h1 = 3000;
+	int h2 = 3000;
+	int h3 = 3132;
+	int time = 240000;
+	int noSkipTime = 10000;
+
+	if(GetGlobalFlag(GLanguage) == 0)
+	{
+		img1 = "credits/hou_staff_2a_jp";
+		img2 = "credits/hou_staff_2b_jp";
+		img3 = "credits/hou_staff_2c_jp";
+		h3 = 2086;
+	}
+
+	SetValidityOfInput(FALSE);
+	SetValidityOfSkipping(FALSE);
+
+	DrawSprite( 5, img1, NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 32, 0, FALSE );
+	DrawSprite( 6, img2, NULL, -320, h1-240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 32, 0, TRUE );
+	DrawSprite( 7, img3, NULL, -320, h1+h2-240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 32, 0, TRUE );
+	MoveSprite( 5, -320, 0-h1-h2-h3+240, 0, 0, 0, 0, 0, time, FALSE );
+	MoveSprite( 6, -320, 0-h2-h3+240, 0, 0, 0, 0, 0, time, FALSE );
+	MoveSprite( 7, -320, 0-h3+240, 0, 0, 0, 0, 0, time, FALSE );
+	Update(); //start the queued move without waiting for it
+
+	Wait(noSkipTime);
+	SetValidityOfInput(TRUE);
+	Wait(time - noSkipTime);
+
+	FadeSprite(5, 0, FALSE );
+	FadeSprite(6, 0, FALSE );
+	FadeSprite(7, 0, FALSE );
+	DrawSprite( 8, img3, NULL, -320, 0-h3+240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 8, 0, FALSE );
+	DrawScene("black", 0);
+
+	SetValidityOfInput(FALSE);
+	Wait(2000);
+	DrawScene("bg\2021_add\s_roll_last_1", 1000);
+
+	Wait(2000);
+	DrawScene("bg\2021_add\s_roll_last_2", 1000);
+	Wait(4000);
+
+	FadeOutBGM( 0, 4000, FALSE );
+	DrawScene( "black" , 4000 );
+
+	SetValidityOfInput(TRUE);
+	SetValidityOfSkipping(TRUE);
+}
