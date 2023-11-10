@@ -1,0 +1,97 @@
+name: Generate Compiled Scripts Pull Request
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  dll_build:
+    name: Build DLL
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+        with:
+          repository: 07th-mod/higurashi-assembly
+          ref: hou-plus-mod
+
+      # Note: This uses the mono bundled with Ubuntu to build the project
+      - name: Compile project
+        run: msbuild /p:Configuration=Release
+
+      - name: Save Git Hash
+        run: >-
+          git show --pretty="format:Commit: %H %d%nDate: %cs%n%n%B" --no-patch > ./bin/Release/Assembly-CSharp.version.txt
+
+      - name: Upload DLL as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: higurashi-dll
+          path: |
+            ./bin/Release/Assembly-CSharp.dll
+            ./bin/Release/Assembly-CSharp.version.txt
+          if-no-files-found: error
+
+  windows_build:
+    name: Windows Build
+    needs: dll_build
+    runs-on: windows-latest
+    permissions:
+      contents: write
+    strategy:
+      matrix:
+        python-version: [3.8]
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+
+      # Download Windows artifacts
+      - name: Download DLL
+        uses: actions/download-artifact@v3
+        with:
+          name: higurashi-dll
+
+      # Setup python (Windows VM is Python 3.7 by default, we need at least Python 3.8)
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Run Release Script
+        id: run_release
+        env:
+          HIGURASHI_BASE_EXTRACT_KEY: ${{ secrets.HIGURASHI_BASE_EXTRACT_KEY }}
+        run: |
+          curl -OJ https://raw.githubusercontent.com/07th-mod/higurashi_release/master/deploy_higurashi/deploy_higurashi.py
+          python deploy_higurashi.py ${{ github.event.repository.name }}
+          rm deploy_higurashi.py
+
+      # Publish a release
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/') # only publish tagged commits
+        with:
+          files: |
+            output/*.zip
+          draft: true
+          name: ${{ steps.run_release.outputs.release_name }} # This output is set in the 'deploy_higurashi.py' script above
+          body: |
+            ## Install/Update Instructions
+
+            We **HIGHLY** recommend using [our installer](https://github.com/07th-mod/python-patcher/releases/latest) to install the mod automatically, instead of the files on this page.
+
+            ----
+
+            **DO NOT USE THE FILES BELOW UNLESS YOU REALLY WANT TO INSTALL MANUALLY, AND HAVE READ THE MANUAL INSTALL INSTRUCTIONS**
+
+            **THIS PAGE ONLY CONTAINS ONE PART OF THE PATCH. YOU NEED OTHER FILES FOR THE MOD TO WORK**
+
+            If you really want to install manually, follow the [manual install instructions](https://07th-mod.com/wiki/Higurashi/Manual-Installation/).
+
+            ----
+
+            # Changelog
+
+            - [PUT CHANGELOG ITEMS HERE]
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
