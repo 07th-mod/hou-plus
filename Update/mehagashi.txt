@@ -374,7 +374,7 @@ void main()
 	PlaySE(4, "ps3/meha/rika9015", 128, 64);
 	OutputLine(NULL, "「勝馬投票券は、勝馬が確定するまで、お捨てにならないようにお願い致します。",
 		   NULL, "\"Please don't throw away your betting slips until the winning horse has been decided.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/meha/rika9016", 128, 64);
 	OutputLine(NULL, "にぱ～♪」",
 		   NULL, " Nipah~♪\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -436,7 +436,7 @@ void main()
 	PlaySE(4, "ps3/meha/rika9017", 128, 64);
 	OutputLine(NULL, "「よくわかりませんですが、ここで暴れたら魅音が怒られるということはわかりましたです。",
 		   NULL, "\"I don't quite understand, but I do get that Mion will get mad if we go wild here.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/meha/rika9018", 128, 64);
 	OutputLine(NULL, "にぱ～♪」",
 		   NULL, " Nipah~♪\"", Line_Normal);
 	ClearMessage();
@@ -466,7 +466,7 @@ void main()
 	DisableWindow();
 	//;【レナ】
 	DrawBustshotWithFiltering( 2, "sprites/rena/sifuku/re_waraia1", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/meha/rena9002", 128, 64);
 	OutputLine(NULL, "「え？",
 		   NULL, "\"Huh?", Line_WaitForInput);
 	PlaySE(4, "ps3/meha/rena9003", 128, 64);
@@ -619,7 +619,7 @@ void main()
 	PlaySE(4, "ps3/meha/rika9027", 128, 64);
 	OutputLine(NULL, "女の子４人分だけなのですよ。",
 		   NULL, " There's only four, and for women.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/meha/rika9028", 128, 64);
 	OutputLine(NULL, "にぱ～♪」",
 		   NULL, " Nipah~♪\"", Line_Normal);
 	ClearMessage();
@@ -1582,7 +1582,7 @@ void main()
 	PlaySE(4, "ps3/meha/rika9033", 128, 64);
 	OutputLine(NULL, "「ならボクの、ちっとも年齢相応に育ってくれない、蕾のようなお胸も寄せてみますのですよ。",
 		   NULL, "\"Then I'll try pressing my budding and underdeveloped breasts together.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/meha/rika9034", 128, 64);
 	OutputLine(NULL, "にぱ～♪」",
 		   NULL, " Nipah~♪\"", Line_Normal);
 	ClearMessage();
@@ -2276,7 +2276,7 @@ void main()
 	DisableWindow();
 	//;【圭一】
 	ChangeBustshot( 2, "sprites/keiiti/2021/main/kei_ikari2", 200, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/meha/keiichi9100", 128, 64);
 	OutputLine(NULL, "「よし！",
 		   NULL, "\"Alright!", Line_WaitForInput);
 	PlaySE(4, "ps3/meha/keiichi9101", 128, 64);
@@ -2533,7 +2533,7 @@ void main()
 	DisableWindow();
 	//;【詩音】
 	ChangeBustshot( 1, "sprites/sion/2021/si_defa1", 200, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/meha/shion9020", 128, 64);
 	OutputLine(NULL, "「はい。",
 		   NULL, "\"Yes.", Line_WaitForInput);
 	PlaySE(4, "ps3/meha/shion9021", 128, 64);
@@ -2570,7 +2570,7 @@ void main()
 	DisableWindow();
 	//;【入江】
 	DrawBustshotWithFiltering( 2, "sprites/irie/hakui/iri_def2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/meha/irie9010", 128, 64);
 	OutputLine(NULL, "「はい。",
 		   NULL, "\"Yes.", Line_WaitForInput);
 	PlaySE(4, "ps3/meha/irie9011", 128, 64);
@@ -3510,7 +3510,7 @@ void main()
 
 	//;【魅音】
 	ChangeBustshot( 4, "sprites/mion/2021/me_yowakia1", 200, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/meha/mion9062", 128, 64);
 	OutputLine(NULL, "「え？",
 		   NULL, "\"Huh?", Line_WaitForInput);
 	PlaySE(4, "ps3/meha/mion9063", 128, 64);
@@ -3661,7 +3661,7 @@ void main()
 	DisableWindow();
 	//;【圭一】
 	DrawBustshot( 2, "sprites/keiiti/2021/main/kei_warai", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/meha/keiichi9147", 128, 64);
 	OutputLine(NULL, "「当り前だろ！",
 		   NULL, "\"Of course I won't!", Line_WaitForInput);
 	DisableWindow();
@@ -3676,7 +3676,7 @@ void main()
 	DrawBustshot( 3, "sprites/mion/2021/me_odorokia1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 0, TRUE );
 	ShakeScreen( 0, 6, 100, 2, 50, );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/meha/mion9075", 128, 64);
 	OutputLine(NULL, "「え？",
 		   NULL, "\"Huh?", Line_WaitForInput);
 	PlaySE(4, "ps3/meha/mion9076", 128, 64);
@@ -3899,7 +3899,7 @@ void main()
 	//;エンジェルモート服（詩音立ち絵だけど、魅音として扱うイメージ）
 	ChangeBustshot( 2, "sprites/sion/2021/si_akuwaraia1", 200, FALSE );
 	ChangeBustshot( 1, "sprites/sion/resutoran/si_tohohoa1", 200, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/meha/mion9084", 128, 64);
 	OutputLine(NULL, "「え？！",
 		   NULL, "\"Huh?!", Line_WaitForInput);
 	PlaySE(4, "ps3/meha/mion9085", 128, 64);
@@ -3963,7 +3963,7 @@ void main()
 	//;cl l,0
 	DrawBustshot( 1, "sprites/sion/2021/si_winka1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
 	DrawScene( "bg/2021_add/pool1", 400 );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/meha/shion9067", 128, 64);
 	OutputLine(NULL, "「はい。",
 		   NULL, "\"Here.", Line_WaitForInput);
 	PlaySE(4, "ps3/meha/shion9068", 128, 64);
@@ -3974,7 +3974,7 @@ void main()
 	DisableWindow();
 	//;【圭一】
 	DrawBustshotWithFiltering( 2, "sprites/keiiti/2021/main/kei_def1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/meha/keiichi9157", 128, 64);
 	OutputLine(NULL, "「よし！",
 		   NULL, "\"Alright!", Line_WaitForInput);
 	PlaySE(4, "ps3/meha/keiichi9158", 128, 64);
@@ -4456,7 +4456,7 @@ void main()
 	PlaySE(4, "ps3/meha/rika9039", 128, 64);
 	OutputLine(NULL, "　とっても快適で、まるで女王様になった気分なのですよ～。",
 		   NULL, " I feel very comfortable. It's like I've become a queen~", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/meha/rika9038", 128, 64);
 	OutputLine(NULL, "にぱ～♪」",
 		   NULL, " Nipah~♪\"", Line_Normal);
 	ClearMessage();
@@ -4771,7 +4771,7 @@ void main()
 	PlaySE(4, "ps3/meha/rika9047", 128, 64);
 	OutputLine(NULL, "「沙都子の寝相も欠伸も、クセも好みも、ボクは何でもお見通しなのですよ。",
 		   NULL, "\"I know everything about you, down to how you sleep, how you yawn, your habits, and your tastes.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/meha/rika9046", 128, 64);
 	OutputLine(NULL, "にぱ～♪」",
 		   NULL, " Nipah~♪\"", Line_Normal);
 	ClearMessage();
@@ -5427,7 +5427,7 @@ void main()
 	DrawBustshot( 1, "sprites/rena/2021/re_defa1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 2, "sprites/keiiti/2021/main/kei_komaru", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawScene( "bg/2021_add/pool1", 400 );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/meha/keiichi9202", 128, 64);
 	OutputLine(NULL, "「え？！",
 		   NULL, "\"Huh?!", Line_WaitForInput);
 	PlaySE(4, "ps3/meha/keiichi9203", 128, 64);
@@ -6613,7 +6613,7 @@ void main()
 	//;kam_4　→チュー（テレ顔
 
 	ShakeScreen( 2, 6,  100 , 2, 50, );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/meha/kameda9002", 128, 64);
 	OutputLine(NULL, "「県立大島、野球部エース！！",
 		   NULL, "\"I'm the ace of Ooshima High's baseball team!!!", Line_WaitForInput);
 	PlaySE(4, "ps3/meha/kameda9003", 128, 64);
