@@ -60,26 +60,16 @@ void main()
 	DrawScene( "black", 400 );
 	DrawScene( "bg/maebara/ma_s1", 400 );
 
-	OutputLine(NULL, "「こちらは陸上自衛隊です！",
-		   NULL, "\"This is the Japan Ground Self-Defense Force!", Line_WaitForInput);
-	OutputLine(NULL, "　本日０４００より雛見沢地区以下、県知事が定めた地域は防疫隔離されました。",
-		   NULL, " As of 04:00 today, we have quarantined the Hinamizawa region, and other surrounding regions as designated by the prefectural governor.", Line_WaitForInput);
+	OutputLine(NULL, "「こちらは陸上自衛隊です！　本日０４００より雛見沢地区以下、県知事が定めた地域は防疫隔離されました。",
+		   NULL, "\"This is the Japan Ground Self-Defense Force! As of 04:00 today, we have quarantined the Hinamizawa region, and other surrounding regions as designated by the prefectural governor.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "　住民の皆さんはご自宅へ待機をお願いいたします。",
-		   NULL, "We ask that all the residents of these areas please remain indoors and await further instructions.", Line_WaitForInput);
-	OutputLine(NULL, "防災無線やテレビ、ラジオ等での情報収集に努めてください。」",
-		   NULL, " Please use your televisions, radios, and the disaster management radio system to stay informed.\"", Line_Normal);
+	OutputLine(NULL, "　住民の皆さんはご自宅へ待機をお願いいたします。防災無線やテレビ、ラジオ等での情報収集に努めてください。」",
+		   NULL, "We ask that all the residents of these areas please remain indoors and await further instructions. Please use your televisions, radios, and the disaster management radio system to stay informed.\"", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "「防疫上の安全が確認されるまで、当地区からの離脱はできません！",
-		   NULL, "\"You will not be permitted to leave this district until we can confirm it is medically safe to do so.", Line_WaitForInput);
-	OutputLine(NULL, "繰り返します、当地区からの離脱はできません！",
-		   NULL, " We repeat, you will not be permitted to leave this district!", Line_WaitForInput);
-	OutputLine(NULL, "　これに従わない場合、国内法によって処罰されます！",
-		   NULL, " Any who do not comply will be dealt with according to national law!", Line_WaitForInput);
-	OutputLine(NULL, "　どうか皆さん、自宅に戻り冷静な対応をお願いいたします！」",
-		   NULL, " So everyone, we must ask that you please return to your homes and remain calm!\"", Line_Normal);
+	OutputLine(NULL, "「防疫上の安全が確認されるまで、当地区からの離脱はできません！繰り返します、当地区からの離脱はできません！　これに従わない場合、国内法によって処罰されます！　どうか皆さん、自宅に戻り冷静な対応をお願いいたします！」",
+		   NULL, "\"You will not be permitted to leave this district until we can confirm it is medically safe to do so. We repeat, you will not be permitted to leave this district! Any who do not comply will be dealt with according to national law! So everyone, we must ask that you please return to your homes and remain calm!\"", Line_Normal);
 	ClearMessage();
 
 	//;mevol 1,100
@@ -94,17 +84,13 @@ void main()
 	PlayBGM( 5, "me/a5_14446", 70, 0 );
 	DrawScene( "black", 400 );
 
-	OutputLine(NULL, "「……ィルスが検出されたとのことです。",
-		   NULL, "\"...have discovered the outbreak of a previously-unknown virus.", Line_WaitForInput);
-	OutputLine(NULL, "これはＷＨＯ、世界保健機構が指定するウィルスの中でも最も危険な分類に入るもので…、」",
-		   NULL, " This virus has been classified as one of the most hazardous of viruses by the World Health Organization.\"", Line_Normal);
+	OutputLine(NULL, "「……ィルスが検出されたとのことです。これはＷＨＯ、世界保健機構が指定するウィルスの中でも最も危険な分類に入るもので…、」",
+		   NULL, "\"...have discovered the outbreak of a previously-unknown virus. This virus has been classified as one of the most hazardous of viruses by the World Health Organization.\"", Line_Normal);
 	ClearMessage();
 
 
-	OutputLine(NULL, "「アメリカ政府よりワクチンの緊急援助の申し出があったことをすでに複数の政府筋が認めており、",
-		   NULL, "\"Several government sources have already confirmed an offer from the American government to provide emergency assistance in developing a vaccine.", Line_WaitForInput);
-	OutputLine(NULL, "政府は受け容れの対応に入ったものと思われます。」",
-		   NULL, " We believe our government has already begun preparations to accept their aid.\"", Line_WaitForInput);
+	OutputLine(NULL, "「アメリカ政府よりワクチンの緊急援助の申し出があったことをすでに複数の政府筋が認めており、政府は受け容れの対応に入ったものと思われます。」",
+		   NULL, "\"Several government sources have already confirmed an offer from the American government to provide emergency assistance in developing a vaccine. We believe our government has already begun preparations to accept their aid.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -118,29 +104,19 @@ void main()
 
 	DrawScene( "bg/sion/si_h5", 400 );
 
-	OutputLine(NULL, "「現在、雛見沢地区へは電話が殺到しており、ほとんどが不通となっています。",
-		   NULL, "\"At the present time, all phone lines to the Hinamizawa district are flooded, and reaching anyone within is nearly impossible.", Line_WaitForInput);
-	OutputLine(NULL, "県防災本部では、事態把握に支障が出かねないとして…、」",
-		   NULL, " The current congestion is making it difficult for the prefecture's disaster prevention center to ascertain the exact situation...\"", Line_WaitForInput);
+	OutputLine(NULL, "「現在、雛見沢地区へは電話が殺到しており、ほとんどが不通となっています。県防災本部では、事態把握に支障が出かねないとして…、」",
+		   NULL, "\"At the present time, all phone lines to the Hinamizawa district are flooded, and reaching anyone within is nearly impossible. The current congestion is making it difficult for the prefecture's disaster prevention center to ascertain the exact situation...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "「なお、水道水、井戸水の使用を厳禁します！",
-		   NULL, "\"Furthermore, a ban on tap water and well water has been put in place!", Line_WaitForInput);
-	OutputLine(NULL, "　飲料水は自衛隊給水車によるもの以外は使用しないでください！",
-		   NULL, " Please do not consume any water except that provided by the SDF's water trucks!", Line_WaitForInput);
-	OutputLine(NULL, "　また路上への違法な駐車は災害救援を妨げます。",
-		   NULL, " In addition, illegally parking on any roads will hinder the disaster relief efforts!", Line_WaitForInput);
-	OutputLine(NULL, "直ちに移動させてください！」",
-		   NULL, " Please relocate your vehicles at once!\"", Line_Normal);
+	OutputLine(NULL, "「なお、水道水、井戸水の使用を厳禁します！　飲料水は自衛隊給水車によるもの以外は使用しないでください！　また路上への違法な駐車は災害救援を妨げます。直ちに移動させてください！」",
+		   NULL, "\"Furthermore, a ban on tap water and well water has been put in place! Please do not consume any water except that provided by the SDF's water trucks! In addition, illegally parking on any roads will hinder the disaster relief efforts! Please relocate your vehicles at once!\"", Line_Normal);
 	ClearMessage();
 
 
-	OutputLine(NULL, "「社明党の海原代表は、自衛隊の災害派遣命令に対し適切な手順が省かれた問題を指摘し、",
-		   NULL, "\"Representative Unabara of the Democratic Socialist Party has criticized the avoidance of proper procedures in ordering the dispatch of SDF disaster relief,", Line_WaitForInput);
-	OutputLine(NULL, "これを軍国主義へ回帰するものとして激しく非難、アジアでの一層の孤立化を招くものとして…、」",
-		   NULL, " strongly voicing his opinion that this is a step backward toward militarism, which could lead to further isolation of our nation within the Asian political community...\"", Line_Normal);
+	OutputLine(NULL, "「社明党の海原代表は、自衛隊の災害派遣命令に対し適切な手順が省かれた問題を指摘し、これを軍国主義へ回帰するものとして激しく非難、アジアでの一層の孤立化を招くものとして…、」",
+		   NULL, "\"Representative Unabara of the Democratic Socialist Party has criticized the avoidance of proper procedures in ordering the dispatch of SDF disaster relief, strongly voicing his opinion that this is a step backward toward militarism, which could lead to further isolation of our nation within the Asian political community...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -149,16 +125,8 @@ void main()
 
 	PlayBGM( 2, "se/heri2", 85, 0 );
 
-	OutputLine(NULL, "「こちらは××県災害対策本部です！",
-		   NULL, "\"This is the XX Prefecture Disaster Prevention Center!", Line_WaitForInput);
-	OutputLine(NULL, "　本日１２時より、以下に定める場所にて一斉診察が行なわれます。",
-		   NULL, " At 12:00 today, we shall conduct simultaneous medical examinations in the following locations.", Line_WaitForInput);
-	OutputLine(NULL, "町会、自治会の指示に従って参集してください。",
-		   NULL, " Please follow the instructions of your town or neighborhood council as you assemble there.", Line_WaitForInput);
-	OutputLine(NULL, "特別な事情がない限り、必ず受診してください！",
-		   NULL, " Please make certain you get examined unless you have extenuating circumstances!", Line_WaitForInput);
-	OutputLine(NULL, "　体調に異常が認められる方は必ずその旨、」",
-		   NULL, " If you notice any symptoms of illness, you must...\"", Line_Normal);
+	OutputLine(NULL, "「こちらは××県災害対策本部です！　本日１２時より、以下に定める場所にて一斉診察が行なわれます。町会、自治会の指示に従って参集してください。特別な事情がない限り、必ず受診してください！　体調に異常が認められる方は必ずその旨、」",
+		   NULL, "\"This is the XX Prefecture Disaster Prevention Center! At 12:00 today, we shall conduct simultaneous medical examinations in the following locations. Please follow the instructions of your town or neighborhood council as you assemble there. Please make certain you get examined unless you have extenuating circumstances! If you notice any symptoms of illness, you must...\"", Line_Normal);
 	ClearMessage();
 
 
@@ -255,21 +223,15 @@ void main()
 	DrawBustshot( 1, "sprites/keiiti/sifuku/kei_majime2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 	ChangeBustshot( 1, "sprites/keiiti/sifuku/kei_ikari1", 200, TRUE );
 
-	OutputLine(NULL, "「………な、…なんだって…？",
-		   NULL, "\"......Wh... What...?", Line_WaitForInput);
-	OutputLine(NULL, "　何このニュース……。」",
-		   NULL, " What's going on...?\"", Line_WaitForInput);
+	OutputLine(NULL, "「………な、…なんだって…？　何このニュース……。」",
+		   NULL, "\"......Wh... What...? What's going on...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "「圭一！　大変よ！",
-		   NULL, "\"Keiichi! It's awful!", Line_WaitForInput);
-	OutputLine(NULL, "　あのね、雛見沢がね、悪いウィルスが見付かったとかで隔離されちゃったんですって！」",
-		   NULL, " Listen, they've discovered a horrible disease here in Hinamizawa, and they've quarantined the whole village!\"", Line_Normal);
+	OutputLine(NULL, "「圭一！　大変よ！　あのね、雛見沢がね、悪いウィルスが見付かったとかで隔離されちゃったんですって！」",
+		   NULL, "\"Keiichi! It's awful! Listen, they've discovered a horrible disease here in Hinamizawa, and they've quarantined the whole village!\"", Line_Normal);
 	ClearMessage();
-	OutputLine(NULL, "「困ったなぁ…、これ、いつ解除になるんだ？",
-		   NULL, "\"This is terrible... when do you think they're going to let us go?", Line_WaitForInput);
-	OutputLine(NULL, "　明日、大阪のイベントの打ち合わせに出なきゃならないってのになぁ…。」",
-		   NULL, " I need to head out for a meeting tomorrow for the event in Osaka...\"", Line_Normal);
+	OutputLine(NULL, "「困ったなぁ…、これ、いつ解除になるんだ？　明日、大阪のイベントの打ち合わせに出なきゃならないってのになぁ…。」",
+		   NULL, "\"This is terrible... when do you think they're going to let us go? I need to head out for a meeting tomorrow for the event in Osaka...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -277,45 +239,25 @@ void main()
 	DrawBustshot( 2, "sprites/keiiti/sifuku/kei_komaru", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, FALSE );
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, TRUE );
 
-	OutputLine(NULL, "「隔離って、",
-		   NULL, "\"Quarantined?", Line_WaitForInput);
-	OutputLine(NULL, "……んじゃあ、町へも出られないってこと？」",
-		   NULL, " ...Then we can't go into town either?\"", Line_WaitForInput);
+	OutputLine(NULL, "「隔離って、……んじゃあ、町へも出られないってこと？」",
+		   NULL, "\"Quarantined? ...Then we can't go into town either?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "「そうみたいね…。",
-		   NULL, "\"Looks like it...", Line_WaitForInput);
-	OutputLine(NULL, "食料の援助とかはあるそうだけど…、困ったわぁ！",
-		   NULL, " They said they'd provide food... but this is a real pain!", Line_WaitForInput);
-	OutputLine(NULL, "　今日、興宮で特売があるからって、冷蔵庫はそんなに在庫がないのよ。」",
-		   NULL, " We barely have anything in our refrigerator since today's when they have that special sale down in Okinomiya.\"", Line_Normal);
+	OutputLine(NULL, "「そうみたいね…。食料の援助とかはあるそうだけど…、困ったわぁ！　今日、興宮で特売があるからって、冷蔵庫はそんなに在庫がないのよ。」",
+		   NULL, "\"Looks like it... They said they'd provide food... but this is a real pain! We barely have anything in our refrigerator since today's when they have that special sale down in Okinomiya.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	DrawScene( "bg/maebara/ma_s1", 400 );
-	OutputLine(NULL, "「それより、この何とかってウィルスはどういうもんなんだ…！",
-		   NULL, "\"More importantly, what is this virus, anyway?!", Line_WaitForInput);
-	OutputLine(NULL, "　隔離ってくらいだから相当恐ろしいモンなんだろ？！",
-		   NULL, " It has to be pretty dangerous if they're quarantining the whole region, right?!", Line_WaitForInput);
-	OutputLine(NULL, "　そのウィルスはどうなってんだ！",
-		   NULL, " What's going on here?!", Line_WaitForInput);
-	OutputLine(NULL, "　ウチにも感染してるってのか？！」",
-		   NULL, " Are we infected too?!\"", Line_Normal);
+	OutputLine(NULL, "「それより、この何とかってウィルスはどういうもんなんだ…！　隔離ってくらいだから相当恐ろしいモンなんだろ？！　そのウィルスはどうなってんだ！　ウチにも感染してるってのか？！」",
+		   NULL, "\"More importantly, what is this virus, anyway?! It has to be pretty dangerous if they're quarantining the whole region, right?! What's going on here?! Are we infected too?!\"", Line_Normal);
 	ClearMessage();
 
 
-	OutputLine(NULL, "「………シ！",
-		   NULL, "\"......Shh!", Line_WaitForInput);
-	OutputLine(NULL, "　今テレビでその説明してるよ！！",
-		   NULL, " They're explaining it on the TV right now!!", Line_WaitForInput);
-	OutputLine(NULL, "　……発症すると、",
-		   NULL, " ......Once the initial signs appear,", Line_ContinueAfterTyping);
 	Wait( 500 );
-	OutputLine(NULL, "１週間ほどで以下の症状がって、",
-		   NULL, " the following symptoms develop over the following week...", Line_ContinueAfterTyping);
 	Wait( 300 );
-	OutputLine(NULL, "…………ぅ、」",
-		   NULL, " ...Hhh!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "「………シ！　今テレビでその説明してるよ！！　……発症すると、１週間ほどで以下の症状がって、…………ぅ、」",
+		   NULL, "\"......Shh! They're explaining it on the TV right now!! ......Once the initial signs appear, the following symptoms develop over the following week... ...Hhh!\"", Line_ContinueAfterTyping);
 	ShakeScreen( 4, 3, 20, 25, 2, );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
@@ -447,12 +389,8 @@ void main()
 
 
 
-	OutputLine(NULL, "「圭一！",
-		   NULL, "\"Keiichi!", Line_WaitForInput);
-	OutputLine(NULL, "　ちょっと来い！！",
-		   NULL, " Come here!!", Line_WaitForInput);
-	OutputLine(NULL, "　大至急だ！」",
-		   NULL, " Quickly!\"", Line_Normal);
+	OutputLine(NULL, "「圭一！　ちょっと来い！！　大至急だ！」",
+		   NULL, "\"Keiichi! Come here!! Quickly!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -482,26 +420,14 @@ void main()
 
 	DrawScene( "bg/maebara/ribing1", 400 );
 
-	OutputLine(NULL, "「圭一は２階を頼むぞ！",
-		   NULL, "\"Keiichi, you cover the second floor!", Line_WaitForInput);
-	OutputLine(NULL, "　窓をぴったり閉めてガムテープで目張りをするんだ！",
-		   NULL, " Shut the windows tight and seal them up with duct tape!", Line_WaitForInput);
-	OutputLine(NULL, "　クーラーも外気とつながってるかもしれんな！",
-		   NULL, " Our air conditioner might be connected to the air outside, too!", Line_WaitForInput);
-	OutputLine(NULL, "　クーラーは噴出孔を新聞紙で覆ってそれからガムテープでしっかりと止めるんだ！",
-		   NULL, " Cover the AC vents with newspaper, then seal them up with duct tape!", Line_WaitForInput);
-	OutputLine(NULL, "　父さんは１階をやるからな！",
-		   NULL, " I'll cover the first floor!", Line_WaitForInput);
-	OutputLine(NULL, "　母さんは台所を頼む！！」",
-		   NULL, " Your mom can cover the kitchen!!\"", Line_Normal);
+	OutputLine(NULL, "「圭一は２階を頼むぞ！　窓をぴったり閉めてガムテープで目張りをするんだ！　クーラーも外気とつながってるかもしれんな！　クーラーは噴出孔を新聞紙で覆ってそれからガムテープでしっかりと止めるんだ！　父さんは１階をやるからな！　母さんは台所を頼む！！」",
+		   NULL, "\"Keiichi, you cover the second floor! Shut the windows tight and seal them up with duct tape! Our air conditioner might be connected to the air outside, too! Cover the AC vents with newspaper, then seal them up with duct tape! I'll cover the first floor! Your mom can cover the kitchen!!\"", Line_Normal);
 	ClearMessage();
 
 
 
-	OutputLine(NULL, "「お父さん、今さらそんなことしても仕方ないでしょ。",
-		   NULL, "\"Dear, it's too late for any of that.", Line_WaitForInput);
-	OutputLine(NULL, "ガムテープなんかじゃ極小のウィルスを防ぐ効果なんて全然ないわよ…！」",
-		   NULL, " Duct tape won't do anything to keep microorganisms out...!\"", Line_WaitForInput);
+	OutputLine(NULL, "「お父さん、今さらそんなことしても仕方ないでしょ。ガムテープなんかじゃ極小のウィルスを防ぐ効果なんて全然ないわよ…！」",
+		   NULL, "\"Dear, it's too late for any of that. Duct tape won't do anything to keep microorganisms out...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -924,29 +850,21 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 2, "sprites/keiiti/sifuku/kei_warai", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
-	OutputLine(NULL, "「おぅレナ！！",
-		   NULL, "\"Oh, Rena!!", Line_WaitForInput);
-	OutputLine(NULL, "　よかったぜ、無事だったか！！」",
-		   NULL, " Thank goodness you're safe!!\"", Line_WaitForInput);
+	OutputLine(NULL, "「おぅレナ！！　よかったぜ、無事だったか！！」",
+		   NULL, "\"Oh, Rena!! Thank goodness you're safe!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/rena/sifuku/re_defa1", 200, TRUE );
-	OutputLine(NULL, "「う、うん！",
-		   NULL, "\"Y-Yeah!", Line_WaitForInput);
-	OutputLine(NULL, "　さっき魅ぃちゃんに会ったよ。",
-		   NULL, " I just ran into Mii-chan.", Line_WaitForInput);
-	OutputLine(NULL, "魅ぃちゃんも元気そうだった！」",
-		   NULL, " She was looking healthy too!\"", Line_Normal);
+	OutputLine(NULL, "「う、うん！　さっき魅ぃちゃんに会ったよ。魅ぃちゃんも元気そうだった！」",
+		   NULL, "\"Y-Yeah! I just ran into Mii-chan. She was looking healthy too!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	ChangeBustshot( 2, "sprites/keiiti/sifuku/kei_def1", 200, TRUE );
-	OutputLine(NULL, "「そうか！",
-		   NULL, "\"Really?!", Line_WaitForInput);
-	OutputLine(NULL, "　沙都子や梨花ちゃんは？！」",
-		   NULL, " What about Satoko and Rika-chan?!\"", Line_WaitForInput);
+	OutputLine(NULL, "「そうか！　沙都子や梨花ちゃんは？！」",
+		   NULL, "\"Really?! What about Satoko and Rika-chan?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
@@ -954,29 +872,21 @@ void main()
 	DrawBustshot( 3, "sprites/rena/sifuku/re_komarua2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, FALSE );
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, TRUE );
 
-	OutputLine(NULL, "「梨花ちゃんたちは町会区分が違うと思うから他の場所に集合してると思うよ…。",
-		   NULL, "\"They're in a different division, so I think they had to go somewhere else...", Line_WaitForInput);
-	OutputLine(NULL, "何度か電話してるんだけど繋がらないの…。」",
-		   NULL, " I've tried calling them a few times, but I can't get through...\"", Line_Normal);
+	OutputLine(NULL, "「梨花ちゃんたちは町会区分が違うと思うから他の場所に集合してると思うよ…。何度か電話してるんだけど繋がらないの…。」",
+		   NULL, "\"They're in a different division, so I think they had to go somewhere else... I've tried calling them a few times, but I can't get through...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	ChangeBustshot( 2, "sprites/keiiti/sifuku/kei_komaru", 200, TRUE );
 
-	OutputLine(NULL, "「俺も何度か電話してるが全然ダメだ…。",
-		   NULL, "\"I tried calling several times too, but I had no luck at all...", Line_WaitForInput);
-	OutputLine(NULL, "やっぱり電話が殺到してパンクしてるんだろうな…。」",
-		   NULL, " I guess the phone lines are just too congested to handle it...\"", Line_Normal);
+	OutputLine(NULL, "「俺も何度か電話してるが全然ダメだ…。やっぱり電話が殺到してパンクしてるんだろうな…。」",
+		   NULL, "\"I tried calling several times too, but I had no luck at all... I guess the phone lines are just too congested to handle it...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	ChangeBustshot( 3, "sprites/rena/sifuku/re_okorua1", 200, TRUE );
-	OutputLine(NULL, "「自衛隊の人の言うことを聞かないで暴走した車が、事故で電柱を倒しちゃって、",
-		   NULL, "\"I heard a rumor that there was someone in a car who wouldn't listen to the SDF's directions, so they had an accident and crashed into a telephone pole,", Line_WaitForInput);
-	OutputLine(NULL, "それで電話線を引き千切っちゃったって噂を聞いたの。",
-		   NULL, " cutting the lines out completely.", Line_WaitForInput);
-	OutputLine(NULL, "…でも別の人は、行政が関係者専用に設定を変えたので、一般市民は使用不能になってるとか言ってた。」",
-		   NULL, " ...But another person said the government had switched them over to authorized use only, so the average citizen can't use them right now.\"", Line_Normal);
+	OutputLine(NULL, "「自衛隊の人の言うことを聞かないで暴走した車が、事故で電柱を倒しちゃって、それで電話線を引き千切っちゃったって噂を聞いたの。…でも別の人は、行政が関係者専用に設定を変えたので、一般市民は使用不能になってるとか言ってた。」",
+		   NULL, "\"I heard a rumor that there was someone in a car who wouldn't listen to the SDF's directions, so they had an accident and crashed into a telephone pole, cutting the lines out completely. ...But another person said the government had switched them over to authorized use only, so the average citizen can't use them right now.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -1009,19 +919,15 @@ void main()
 	DrawScene( "bg/gakkou/gr1", 400 );
 
 	DrawBustshot( 1, "sprites/mion/sifuku/me_winka2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
-	OutputLine(NULL, "「圭ちゃん！！",
-		   NULL, "\"Kei-chan!!", Line_WaitForInput);
-	OutputLine(NULL, "　よかった、無事だったんだね！！」",
-		   NULL, " Great to see you're safe!!\"", Line_WaitForInput);
+	OutputLine(NULL, "「圭ちゃん！！　よかった、無事だったんだね！！」",
+		   NULL, "\"Kei-chan!! Great to see you're safe!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
 
 	DrawBustshot( 2, "sprites/keiiti/sifuku/kei_def1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
-	OutputLine(NULL, "「俺のセリフだぜ！！",
-		   NULL, "\"That's my line!!", Line_WaitForInput);
-	OutputLine(NULL, "　お前も無事でよかった！」",
-		   NULL, " I'm glad to see you safe too!\"", Line_Normal);
+	OutputLine(NULL, "「俺のセリフだぜ！！　お前も無事でよかった！」",
+		   NULL, "\"That's my line!! I'm glad to see you safe too!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -1058,39 +964,27 @@ void main()
 	DrawBustshot( 1, "sprites/keiiti/sifuku/kei_ikari1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawScene( "bg/gakkou/gr2", 400 );
 
-	OutputLine(NULL, "「魅音、ぶっちゃけた話、どうなってんだ！",
-		   NULL, "\"Mion, be blunt with us, what's going on?!", Line_WaitForInput);
-	OutputLine(NULL, "　そのウィルスってヤツは本当に村人全員に感染してんのか？」",
-		   NULL, " Has this virus really infected all of the villagers?\"", Line_Normal);
+	OutputLine(NULL, "「魅音、ぶっちゃけた話、どうなってんだ！　そのウィルスってヤツは本当に村人全員に感染してんのか？」",
+		   NULL, "\"Mion, be blunt with us, what's going on?! Has this virus really infected all of the villagers?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 
 	DrawBustshot( 2, "sprites/mion/sifuku/me_majimea1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
-	OutputLine(NULL, "「早朝にあった説明では、その可能性は極めて薄いってさ。",
-		   NULL, "\"According to this morning's explanation, the likelihood of that is pretty slim.", Line_WaitForInput);
-	OutputLine(NULL, "話では、感染者が出たのは高津戸の方らしいんだよ。",
-		   NULL, " From what they've said, the infected showed up over in Takatsudo.", Line_WaitForInput);
-	OutputLine(NULL, "あっちはほとんど人が住んでないからね。",
-		   NULL, " And hardly anyone lives over there!", Line_WaitForInput);
-	OutputLine(NULL, "素早く隔離封鎖がされたから、雛見沢地区には及んでないんじゃないかって言われてる。」",
-		   NULL, " Since the quarantine was set up so quick, they're saying they don't think it's reached the Hinamizawa area yet.\"", Line_Normal);
+	OutputLine(NULL, "「早朝にあった説明では、その可能性は極めて薄いってさ。話では、感染者が出たのは高津戸の方らしいんだよ。あっちはほとんど人が住んでないからね。素早く隔離封鎖がされたから、雛見沢地区には及んでないんじゃないかって言われてる。」",
+		   NULL, "\"According to this morning's explanation, the likelihood of that is pretty slim. From what they've said, the infected showed up over in Takatsudo. And hardly anyone lives over there! Since the quarantine was set up so quick, they're saying they don't think it's reached the Hinamizawa area yet.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	ChangeBustshot( 2, "sprites/mion/sifuku/me_akuwaraia1", 200, TRUE );
-	OutputLine(NULL, "「雛見沢地区の全員がシロであることが確認できたら、",
-		   NULL, "\"Once they can confirm everyone in Hinamizawa is clean,", Line_WaitForInput);
-	OutputLine(NULL, "段階的に隔離は解除になるんじゃないかって楽観論も出てるよ。」",
-		   NULL, " then they're hopeful that they can start lifting the quarantine in stages.\"", Line_Normal);
+	OutputLine(NULL, "「雛見沢地区の全員がシロであることが確認できたら、段階的に隔離は解除になるんじゃないかって楽観論も出てるよ。」",
+		   NULL, "\"Once they can confirm everyone in Hinamizawa is clean, then they're hopeful that they can start lifting the quarantine in stages.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	DrawBustshot( 3, "sprites/rena/sifuku/re_nandea1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
-	OutputLine(NULL, "「そ、そうならいいよね…。",
-		   NULL, "\"I-I hope that's true...", Line_WaitForInput);
-	OutputLine(NULL, "高津戸に住んでる人には悪いけど、雛見沢地区だけでも、早く隔離が終わるといいね…。」",
-		   NULL, " I feel bad for those living in Takatsudo, but it'll be nice if Hinamizawa's quarantine ends sooner...\"", Line_Normal);
+	OutputLine(NULL, "「そ、そうならいいよね…。高津戸に住んでる人には悪いけど、雛見沢地区だけでも、早く隔離が終わるといいね…。」",
+		   NULL, "\"I-I hope that's true... I feel bad for those living in Takatsudo, but it'll be nice if Hinamizawa's quarantine ends sooner...\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -1122,14 +1016,8 @@ void main()
 	PlayBGM( 0, "bgm0/getting_mad", 70, 0 );
 
 	//;mld l,mio_6,22
-	OutputLine(NULL, "「………でも、私はそう楽観的だとは思えないね。",
-		   NULL, "\".........But I don't think we can be that optimistic, actually.", Line_WaitForInput);
-	OutputLine(NULL, "おじさん、無線使えるんだけどさ。",
-		   NULL, " I'm able to use a radio myself, you know.", Line_WaitForInput);
-	OutputLine(NULL, "警察や自衛隊の回線にも入れるように改造してあるんだよ。",
-		   NULL, " I modified mine to pick up transmissions from the police and the SDF.", Line_WaitForInput);
-	OutputLine(NULL, "…そこで傍受してる限りは、そんな簡単な話じゃないみたい。」",
-		   NULL, " ...From what I'm hearing there, this isn't that simple.\"", Line_Normal);
+	OutputLine(NULL, "「………でも、私はそう楽観的だとは思えないね。おじさん、無線使えるんだけどさ。警察や自衛隊の回線にも入れるように改造してあるんだよ。…そこで傍受してる限りは、そんな簡単な話じゃないみたい。」",
+		   NULL, "\".........But I don't think we can be that optimistic, actually. I'm able to use a radio myself, you know. I modified mine to pick up transmissions from the police and the SDF. ...From what I'm hearing there, this isn't that simple.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -1137,17 +1025,13 @@ void main()
 
 
 
-	OutputLine(NULL, "「何しろ、雛見沢は山間部の寒村で陸の孤島。",
-		   NULL, "\"After all, Hinamizawa is a pretty isolated village, all by itself here in a mountain range.", Line_WaitForInput);
-	OutputLine(NULL, "どういう経路で海外からこの村へウィルスが伝播したのか経路がさっぱりなんだよ。」",
-		   NULL, " They don't have a clue how this virus managed to transmit itself here from overseas.\"", Line_Normal);
+	OutputLine(NULL, "「何しろ、雛見沢は山間部の寒村で陸の孤島。どういう経路で海外からこの村へウィルスが伝播したのか経路がさっぱりなんだよ。」",
+		   NULL, "\"After all, Hinamizawa is a pretty isolated village, all by itself here in a mountain range. They don't have a clue how this virus managed to transmit itself here from overseas.\"", Line_Normal);
 	ClearMessage();
 
 
-	OutputLine(NULL, "「…現在、行政が把握している発症者は海外渡航歴がないらしくてね。",
-		   NULL, "\"...So far, none of the infected people the government has discovered have any history of traveling out of the country.", Line_WaitForInput);
-	OutputLine(NULL, "他に潜在保菌者がいるんじゃないかって疑われてて、村人全員の海外渡航歴を調査中らしいよ。」",
-		   NULL, " So now they're investigating the travel history of everyone in the village, wondering if there might be another carrier.\"", Line_Normal);
+	OutputLine(NULL, "「…現在、行政が把握している発症者は海外渡航歴がないらしくてね。他に潜在保菌者がいるんじゃないかって疑われてて、村人全員の海外渡航歴を調査中らしいよ。」",
+		   NULL, "\"...So far, none of the infected people the government has discovered have any history of traveling out of the country. So now they're investigating the travel history of everyone in the village, wondering if there might be another carrier.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -1159,53 +1043,37 @@ void main()
 	DrawScene( "bg/gakkou/gr2", 400 );
 
 	ChangeBustshot( 3, "sprites/keiiti/sifuku/kei_komaru", 400, TRUE );
-	OutputLine(NULL, "「つまり、",
-		   NULL, "\"So you're saying", Line_WaitForInput);
-	OutputLine(NULL, "誰かが海外で感染してこの村へ持ち込んだ、ってわけか…。」",
-		   NULL, " that someone got infected while in a different country and brought this back to our village...?\"", Line_Normal);
+	OutputLine(NULL, "「つまり、誰かが海外で感染してこの村へ持ち込んだ、ってわけか…。」",
+		   NULL, "\"So you're saying that someone got infected while in a different country and brought this back to our village...?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 
 
 	ChangeBustshot( 2, "sprites/mion/sifuku/me_majimea2", 200, TRUE );
-	OutputLine(NULL, "「うん。",
-		   NULL, "\"Yeah.", Line_WaitForInput);
-	OutputLine(NULL, "何しろ潜伏期間に幅があるらしいからね。",
-		   NULL, " Apparently there's some leeway in its incubation period.", Line_WaitForInput);
-	OutputLine(NULL, "持ち込んだ本人が未だ潜伏期の可能性が否定できないらしいんだよ。",
-		   NULL, " They can't rule out the chance that whoever brought it here is still incubating the disease.", Line_WaitForInput);
-	OutputLine(NULL, "それに、その人物に海外渡航歴がある保証もない。",
-		   NULL, " Also, there's no guarantee that the person ever traveled abroad at all.", Line_WaitForInput);
-	OutputLine(NULL, "村の外で保菌者に接触して持ち込んだ可能性もあるからね。」",
-		   NULL, " There's still a chance they got infected when they came into contact with a carrier from outside the village...\"", Line_Normal);
+	OutputLine(NULL, "「うん。何しろ潜伏期間に幅があるらしいからね。持ち込んだ本人が未だ潜伏期の可能性が否定できないらしいんだよ。それに、その人物に海外渡航歴がある保証もない。村の外で保菌者に接触して持ち込んだ可能性もあるからね。」",
+		   NULL, "\"Yeah. Apparently there's some leeway in its incubation period. They can't rule out the chance that whoever brought it here is still incubating the disease. Also, there's no guarantee that the person ever traveled abroad at all. There's still a chance they got infected when they came into contact with a carrier from outside the village...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	ChangeBustshot( 2, "sprites/mion/sifuku/me_ikaria1", 200, TRUE );
-	OutputLine(NULL, "「……おじさんの睨んだところじゃ、隔離地区は雛見沢だけに収まらない。",
-		   NULL, "\"......By my guess, the quarantined zones won't be limited to just Hinamizawa.", Line_WaitForInput);
-	OutputLine(NULL, "下手をすれば県内、あるいは地方レベルにまでも及びかねないね…。」",
-		   NULL, " Worst case is, the quarantine could extend to the prefecture, or even to this whole part of the country...\"", Line_Normal);
+	OutputLine(NULL, "「……おじさんの睨んだところじゃ、隔離地区は雛見沢だけに収まらない。下手をすれば県内、あるいは地方レベルにまでも及びかねないね…。」",
+		   NULL, "\"......By my guess, the quarantined zones won't be limited to just Hinamizawa. Worst case is, the quarantine could extend to the prefecture, or even to this whole part of the country...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 
 	ChangeBustshot( 3, "sprites/keiiti/sifuku/kei_nayamu", 200, TRUE );
-	OutputLine(NULL, "「………………………",
-		   NULL, "\"...........................", Line_WaitForInput);
-	OutputLine(NULL, "何てこった……。」",
-		   NULL, " How can this be......?\"", Line_Normal);
+	OutputLine(NULL, "「………………………何てこった……。」",
+		   NULL, "\"........................... How can this be......?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, FALSE );
 	DrawBustshot( 40, "sprites/mion/sifuku/me_majimea2", -20, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 41, 200, TRUE );
 
-	OutputLine(NULL, "「あとは、……ここだけの話なんだけど。",
-		   NULL, "\"Also...... this is just between us, but.", Line_WaitForInput);
-	OutputLine(NULL, "………このウィルス、テレビで言ってるアフリカの殺人ウィルスってのとは別物らしいって噂もあるんだよ。」",
-		   NULL, " .........There's talk that this one might be different from the African killer virus they mentioned on TV.\"", Line_Normal);
+	OutputLine(NULL, "「あとは、……ここだけの話なんだけど。………このウィルス、テレビで言ってるアフリカの殺人ウィルスってのとは別物らしいって噂もあるんだよ。」",
+		   NULL, "\"Also...... this is just between us, but. .........There's talk that this one might be different from the African killer virus they mentioned on TV.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -1221,10 +1089,8 @@ void main()
 
 	ChangeBustshot( 1, "sprites/mion/sifuku/me_tohohoa1", 200, FALSE );
 	FadeBustshot( 40, FALSE, 0, 0, 0, 0, 200, TRUE );
-	OutputLine(NULL, "「……私もよくはわからないんだけど、",
-		   NULL, "\"......I'm not sure either,", Line_WaitForInput);
-	OutputLine(NULL, "傍受できた無線の一部から、今回のウィルス騒ぎを雛見沢土着の風土病を疑うような内容が聞けたんだよ。」",
-		   NULL, " but some of the chatter I'm picking up on the radio suggests that they suspect this whole virus crisis might be caused by an endemic disease native to Hinamizawa.\"", Line_Normal);
+	OutputLine(NULL, "「……私もよくはわからないんだけど、傍受できた無線の一部から、今回のウィルス騒ぎを雛見沢土着の風土病を疑うような内容が聞けたんだよ。」",
+		   NULL, "\"......I'm not sure either, but some of the chatter I'm picking up on the radio suggests that they suspect this whole virus crisis might be caused by an endemic disease native to Hinamizawa.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -1239,24 +1105,14 @@ void main()
 
 	ChangeBustshot( 1, "sprites/mion/sifuku/me_majimea1", 200, TRUE );
 
-	OutputLine(NULL, "「私もよくはわかんないけど…。",
-		   NULL, "\"I'm not sure either...", Line_WaitForInput);
-	OutputLine(NULL, "ただ、雛見沢の古い伝承には、沼から不浄な何かが湧き出して村を襲ったという話が残ってる。",
-		   NULL, " The only thing I do know is that there's an old legend still passed on around here that talks about something 'impure' rising from the swamp and attacking the village.", Line_WaitForInput);
-	OutputLine(NULL, "それが再び湧き出したのではないかって疑えないこともないね。」",
-		   NULL, " Makes you wonder whether something's risen up out of there again.\"", Line_Normal);
+	OutputLine(NULL, "「私もよくはわかんないけど…。ただ、雛見沢の古い伝承には、沼から不浄な何かが湧き出して村を襲ったという話が残ってる。それが再び湧き出したのではないかって疑えないこともないね。」",
+		   NULL, "\"I'm not sure either... The only thing I do know is that there's an old legend still passed on around here that talks about something 'impure' rising from the swamp and attacking the village. Makes you wonder whether something's risen up out of there again.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	DrawBustshot( 4, "sprites/rena/sifuku/re_defa1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
-	OutputLine(NULL, "「でも魅ぃちゃん。",
-		   NULL, "\"But Mii-chan,", Line_WaitForInput);
-	OutputLine(NULL, "だとしたらまだ安心できるね。",
-		   NULL, " if that's true, then we can rest easy.", Line_WaitForInput);
-	OutputLine(NULL, "だって、その大昔の時には、村が滅んだわけじゃないんでしょ？",
-		   NULL, " I mean, the village wasn't wiped out all those years ago, right?", Line_WaitForInput);
-	OutputLine(NULL, "　ということは、テレビで言ってる村を全滅させるようなウィルスよりはずっと毒性が弱いってことだよ。」",
-		   NULL, " Which means it's far less lethal than the virus they're talking about on TV that wipes out whole villages.\"", Line_Normal);
+	OutputLine(NULL, "「でも魅ぃちゃん。だとしたらまだ安心できるね。だって、その大昔の時には、村が滅んだわけじゃないんでしょ？　ということは、テレビで言ってる村を全滅させるようなウィルスよりはずっと毒性が弱いってことだよ。」",
+		   NULL, "\"But Mii-chan, if that's true, then we can rest easy. I mean, the village wasn't wiped out all those years ago, right? Which means it's far less lethal than the virus they're talking about on TV that wipes out whole villages.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -1264,30 +1120,24 @@ void main()
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, FALSE );
 	DrawBustshot( 41, "sprites/mion/sifuku/me_majimea2", -180, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 42, 200, TRUE );
 
-	OutputLine(NULL, "「…鬼ヶ淵村の伝承では、沼より湧き出した不浄に取り憑かれると鬼と化したらしい。",
-		   NULL, "\"...According to the myths of old Onigafuchi, anyone possessed by the impurity from the swamp became a demon.", Line_WaitForInput);
-	OutputLine(NULL, "結局、人の手では何もできず、オヤシロさまの降臨まで人々に打つ手はなかった。」",
-		   NULL, " In the end, the villagers couldn't do anything, and they were at their wits' end... until Oyashiro-sama descended before them.\"", Line_Normal);
+	OutputLine(NULL, "「…鬼ヶ淵村の伝承では、沼より湧き出した不浄に取り憑かれると鬼と化したらしい。結局、人の手では何もできず、オヤシロさまの降臨まで人々に打つ手はなかった。」",
+		   NULL, "\"...According to the myths of old Onigafuchi, anyone possessed by the impurity from the swamp became a demon. In the end, the villagers couldn't do anything, and they were at their wits' end... until Oyashiro-sama descended before them.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 
 	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 200, FALSE );
 	DrawBustshot( 42, "sprites/keiiti/sifuku/kei_nayamu", 140, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 40, 200, TRUE );
-	OutputLine(NULL, "「………つまり、伝説に残るような奇跡が起こるまで、",
-		   NULL, "\".........Which means the village couldn't escape that disaster", Line_WaitForInput);
-	OutputLine(NULL, "村はその災禍から逃れられなかったってことだな。」",
-		   NULL, " until a miracle occurred.\"", Line_WaitForInput);
+	OutputLine(NULL, "「………つまり、伝説に残るような奇跡が起こるまで、村はその災禍から逃れられなかったってことだな。」",
+		   NULL, "\".........Which means the village couldn't escape that disaster until a miracle occurred.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
 
 	ChangeBustshot( 41, "sprites/mion/sifuku/me_majimea1", 200, TRUE );
 
-	OutputLine(NULL, "「そうだね。",
-		   NULL, "\"Exactly.", Line_WaitForInput);
-	OutputLine(NULL, "…奇跡が起こらなければ、村は全滅してたってことだね…。」",
-		   NULL, " ...If not for that miracle, the village would've been wiped out...\"", Line_Normal);
+	OutputLine(NULL, "「そうだね。…奇跡が起こらなければ、村は全滅してたってことだね…。」",
+		   NULL, "\"Exactly. ...If not for that miracle, the village would've been wiped out...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -1306,10 +1156,8 @@ void main()
 
 
 	DrawBustshot( 1, "sprites/mion/sifuku/me_tokuia1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
-	OutputLine(NULL, "「オヤシロさまの生まれ変わりである梨花ちゃんが、それを否定してくれれば騒ぎは落ち着くんだろうけどね。",
-		   NULL, "\"That commotion would settle down if Rika-chan, the reincarnation of Oyashiro-sama, would just deny that it's the curse.", Line_WaitForInput);
-	OutputLine(NULL, "婆っちゃが今、自衛隊の人にそれを説明してるところだよ。」",
-		   NULL, " My granny's trying to explain that to the people from the SDF right now.\"", Line_Normal);
+	OutputLine(NULL, "「オヤシロさまの生まれ変わりである梨花ちゃんが、それを否定してくれれば騒ぎは落ち着くんだろうけどね。婆っちゃが今、自衛隊の人にそれを説明してるところだよ。」",
+		   NULL, "\"That commotion would settle down if Rika-chan, the reincarnation of Oyashiro-sama, would just deny that it's the curse. My granny's trying to explain that to the people from the SDF right now.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -1321,10 +1169,8 @@ void main()
 
 
 	DrawBustshot( 2, "sprites/keiiti/sifuku/kei_komaru", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
-	OutputLine(NULL, "「…だな。",
-		   NULL, "\"...Yeah.", Line_WaitForInput);
-	OutputLine(NULL, "………迷信の話は抜きにしても、俺も早く無事な梨花ちゃんと沙都子の姿を見て安心したいぜ…。」",
-		   NULL, " .........The superstitions aside, it would be a relief to see Rika-chan and Satoko myself...\"", Line_Normal);
+	OutputLine(NULL, "「…だな。………迷信の話は抜きにしても、俺も早く無事な梨花ちゃんと沙都子の姿を見て安心したいぜ…。」",
+		   NULL, "\"...Yeah. .........The superstitions aside, it would be a relief to see Rika-chan and Satoko myself...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -1562,12 +1408,8 @@ void main()
 
 
 	ChangeBustshot( 1, "sprites/mion/sifuku/me_waraia2", 200, TRUE );
-	OutputLine(NULL, "「……圭ちゃん！",
-		   NULL, "\"...Kei-chan!", Line_WaitForInput);
-	OutputLine(NULL, "　具合は良さそうだね。",
-		   NULL, " You look well.", Line_WaitForInput);
-	OutputLine(NULL, "変な斑点とか出てない？」",
-		   NULL, " Got any strange spots?\"", Line_WaitForInput);
+	OutputLine(NULL, "「……圭ちゃん！　具合は良さそうだね。変な斑点とか出てない？」",
+		   NULL, "\"...Kei-chan! You look well. Got any strange spots?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
@@ -1579,25 +1421,15 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 3, "sprites/keiiti/sifuku/kei_warai", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
-	OutputLine(NULL, "「魅音！",
-		   NULL, "\"Mion!", Line_WaitForInput);
-	OutputLine(NULL, "　レナもか！",
-		   NULL, " And Rena too!", Line_WaitForInput);
-	OutputLine(NULL, "　よかった、相変わらず電話が通じないからな。",
-		   NULL, " Thank goodness. The phones are still out, as usual.", Line_WaitForInput);
-	OutputLine(NULL, "こうして会えるとほっとするぜ…。」",
-		   NULL, " So seeing you here is a relief...\"", Line_WaitForInput);
+	OutputLine(NULL, "「魅音！　レナもか！　よかった、相変わらず電話が通じないからな。こうして会えるとほっとするぜ…。」",
+		   NULL, "\"Mion! And Rena too! Thank goodness. The phones are still out, as usual. So seeing you here is a relief...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
 
 	ChangeBustshot( 2, "sprites/rena/sifuku/re_komarub1", 200, TRUE );
-	OutputLine(NULL, "「だね。",
-		   NULL, "\"Yeah.", Line_WaitForInput);
-	OutputLine(NULL, "レナも最近は、学校が再開してくれないかなって思うくらいだもん。",
-		   NULL, " Lately I've been wishing they'd reopen the school.", Line_WaitForInput);
-	OutputLine(NULL, "…はぅ。」",
-		   NULL, " ...Hau.\"", Line_Normal);
+	OutputLine(NULL, "「だね。レナも最近は、学校が再開してくれないかなって思うくらいだもん。…はぅ。」",
+		   NULL, "\"Yeah. Lately I've been wishing they'd reopen the school. ...Hau.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -1623,10 +1455,8 @@ void main()
 
 	//;ld c,mio_3,80
 
-	OutputLine(NULL, "「はは、せっかく未曾有の大災害で休校なんだからさ。",
-		   NULL, "\"Haha, well, it's not so bad. Since school's closed over this unprecedented disaster,", Line_WaitForInput);
-	OutputLine(NULL, "たまにはこういうライフを満喫するのも悪くないけどねぇ～！」",
-		   NULL, " we should take the chance to enjoy living free like this!\"", Line_Normal);
+	OutputLine(NULL, "「はは、せっかく未曾有の大災害で休校なんだからさ。たまにはこういうライフを満喫するのも悪くないけどねぇ～！」",
+		   NULL, "\"Haha, well, it's not so bad. Since school's closed over this unprecedented disaster, we should take the chance to enjoy living free like this!\"", Line_Normal);
 	ClearMessage();
 
 	//;ld l,kei_1,80
@@ -1658,12 +1488,8 @@ void main()
 	DrawBustshot( 1, "sprites/mion/sifuku/me_majimea2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
 	PlayBGM( 0, "bgm1/toosenakiya", 70, 0 );
 
-	OutputLine(NULL, "「そうだ、…………レナ、圭ちゃん。",
-		   NULL, "\"Oh, right...... Rena, Kei-chan.", Line_WaitForInput);
-	OutputLine(NULL, "…気を悪くしないで聞いて。",
-		   NULL, " ...Don't get upset, but listen.", Line_WaitForInput);
-	OutputLine(NULL, "ここだけの話だから。」",
-		   NULL, " This is just between us, okay?\"", Line_WaitForInput);
+	OutputLine(NULL, "「そうだ、…………レナ、圭ちゃん。…気を悪くしないで聞いて。ここだけの話だから。」",
+		   NULL, "\"Oh, right...... Rena, Kei-chan. ...Don't get upset, but listen. This is just between us, okay?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -1676,10 +1502,8 @@ void main()
 
 
 	DrawBustshot( 2, "sprites/rena/sifuku/re_nandea1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
-	OutputLine(NULL, "「…何？",
-		   NULL, "\"...What?", Line_WaitForInput);
-	OutputLine(NULL, "　どうしたの魅ぃちゃん。」",
-		   NULL, " What is it, Mii-chan?\"", Line_WaitForInput);
+	OutputLine(NULL, "「…何？　どうしたの魅ぃちゃん。」",
+		   NULL, "\"...What? What is it, Mii-chan?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
@@ -1723,21 +1547,15 @@ void main()
 
 	FadeBustshot( 40, FALSE, 0, 0, 0, 0, 400, TRUE );
 	ChangeBustshot( 3, "sprites/keiiti/sifuku/kei_nayamu", 400, TRUE );
-	OutputLine(NULL, "「何しろ、未だ電話が回復しないからな。",
-		   NULL, "\"Well, our phone lines still haven't recovered.", Line_WaitForInput);
-	OutputLine(NULL, "こういう時、本当に無線は貴重だぜ。",
-		   NULL, " So the radios are really crucial in times like these.", Line_WaitForInput);
-	OutputLine(NULL, "…それで、何がわかったんだ？」",
-		   NULL, " ...So, did you learn anything?\"", Line_Normal);
+	OutputLine(NULL, "「何しろ、未だ電話が回復しないからな。こういう時、本当に無線は貴重だぜ。…それで、何がわかったんだ？」",
+		   NULL, "\"Well, our phone lines still haven't recovered. So the radios are really crucial in times like these. ...So, did you learn anything?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 400, FALSE );
 	DrawBustshot( 41, "sprites/mion/sifuku/me_majimea1", -180, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 42, 400, TRUE );
-	OutputLine(NULL, "「………………うん。",
-		   NULL, "\"..................Yes.", Line_WaitForInput);
-	OutputLine(NULL, "というか、……………梨花ちゃんが収容されて容態不明ってのは本当らしい。」",
-		   NULL, " Well............... It sounds like it's true that Rika-chan's been taken into custody, and no one knows what's going on with her.\"", Line_Normal);
+	OutputLine(NULL, "「………………うん。というか、……………梨花ちゃんが収容されて容態不明ってのは本当らしい。」",
+		   NULL, "\"..................Yes. Well............... It sounds like it's true that Rika-chan's been taken into custody, and no one knows what's going on with her.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -1807,24 +1625,14 @@ void main()
 	DrawBustshot( 1, "sprites/rena/sifuku/re_bikkuria1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawScene( "bg/gakkou/gr4", 400 );
 
-	OutputLine(NULL, "「梨花ちゃんが容態不明ってどういうことなの？！",
-		   NULL, "\"What do you mean no one knows how Rika-chan's doing?!", Line_WaitForInput);
-	OutputLine(NULL, "　梨花ちゃんがウィルスにやられちゃったってことなの？！」",
-		   NULL, " Are you saying Rika-chan got hit by the virus?!\"", Line_Normal);
+	OutputLine(NULL, "「梨花ちゃんが容態不明ってどういうことなの？！　梨花ちゃんがウィルスにやられちゃったってことなの？！」",
+		   NULL, "\"What do you mean no one knows how Rika-chan's doing?! Are you saying Rika-chan got hit by the virus?!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	DrawBustshot( 2, "sprites/mion/sifuku/me_odorokia1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
-	OutputLine(NULL, "「シー！！",
-		   NULL, "\"Shh!!", Line_WaitForInput);
-	OutputLine(NULL, "　声が大きいよ！",
-		   NULL, " You're being too loud!", Line_WaitForInput);
-	OutputLine(NULL, "　……ウィルスかどうかは知らないけど、とにかく防疫部隊に収容されて、その後、戻ってこないらしいの。",
-		   NULL, " ......I don't know if it was the virus, but either way, she was taken into custody by the disease control squad, and she hasn't been seen since.", Line_WaitForInput);
-	OutputLine(NULL, "安否は不明。",
-		   NULL, " No one knows if she's safe.", Line_WaitForInput);
-	OutputLine(NULL, "連れてかれたのは何人かが目撃していて間違いないって。」",
-		   NULL, " Several different people witnessed her being taken away, so that's certain, at least.\"", Line_Normal);
+	OutputLine(NULL, "「シー！！　声が大きいよ！　……ウィルスかどうかは知らないけど、とにかく防疫部隊に収容されて、その後、戻ってこないらしいの。安否は不明。連れてかれたのは何人かが目撃していて間違いないって。」",
+		   NULL, "\"Shh!! You're being too loud! ......I don't know if it was the virus, but either way, she was taken into custody by the disease control squad, and she hasn't been seen since. No one knows if she's safe. Several different people witnessed her being taken away, so that's certain, at least.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -1844,12 +1652,8 @@ void main()
 
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, FALSE );
 	DrawBustshot( 40, "sprites/rena/sifuku/ren_13", -180, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 42, 200, TRUE );
-	OutputLine(NULL, "「…沙都子ちゃんは？！",
-		   NULL, "\"...And Satoko-chan?!", Line_WaitForInput);
-	OutputLine(NULL, "　梨花ちゃんと一緒に住んでるんだから、",
-		   NULL, " She lives with Rika-chan, so...", Line_WaitForInput);
-	OutputLine(NULL, "……その、…、」",
-		   NULL, " well...\"", Line_WaitForInput);
+	OutputLine(NULL, "「…沙都子ちゃんは？！　梨花ちゃんと一緒に住んでるんだから、……その、…、」",
+		   NULL, "\"...And Satoko-chan?! She lives with Rika-chan, so... well...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -1871,12 +1675,8 @@ void main()
 
 
 	ChangeBustshot( 3, "sprites/keiiti/sifuku/kei_nayamu", 200, TRUE );
-	OutputLine(NULL, "「……だろうな。",
-		   NULL, "\"...Figures.", Line_WaitForInput);
-	OutputLine(NULL, "村の年寄り連中は、梨花ちゃんのことに関心はあっても、",
-		   NULL, " The elders of the village may care about Rika-chan,", Line_WaitForInput);
-	OutputLine(NULL, "沙都子のことはまったく無関心だからな。」",
-		   NULL, " but they've never wanted anything to do with Satoko.\"", Line_Normal);
+	OutputLine(NULL, "「……だろうな。村の年寄り連中は、梨花ちゃんのことに関心はあっても、沙都子のことはまったく無関心だからな。」",
+		   NULL, "\"...Figures. The elders of the village may care about Rika-chan, but they've never wanted anything to do with Satoko.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -1891,20 +1691,14 @@ void main()
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, FALSE );
 	FadeBustshot( 40, FALSE, 0, 0, 0, 0, 200, FALSE );
 	DrawBustshot( 41, "sprites/mion/sifuku/me_majimea1", -20, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 41, 200, TRUE );
-	OutputLine(NULL, "「………沙都子は収容されたわけじゃないみたい。",
-		   NULL, "\"......Doesn't sound like it.", Line_WaitForInput);
-	OutputLine(NULL, "…感染者が出たら、同居人だって疑うのが防疫の基本だと思うんだけどね。」",
-		   NULL, " ...Though I think it's just basic disease control to suspect infection in anyone living with an infected person.\"", Line_Normal);
+	OutputLine(NULL, "「………沙都子は収容されたわけじゃないみたい。…感染者が出たら、同居人だって疑うのが防疫の基本だと思うんだけどね。」",
+		   NULL, "\"......Doesn't sound like it. ...Though I think it's just basic disease control to suspect infection in anyone living with an infected person.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	ChangeBustshot( 41, "sprites/mion/sifuku/me_yowakia1", 200, TRUE );
-	OutputLine(NULL, "「…無線で聞く限りは、収容されたのは梨花ちゃんだけで、",
-		   NULL, "\"...From what I'm hearing on the radio, only Rika-chan was taken in.", Line_WaitForInput);
-	OutputLine(NULL, "沙都子はそういうわけじゃないみたい。",
-		   NULL, " Satoko wasn't, apparently.", Line_WaitForInput);
-	OutputLine(NULL, "………それでね、…何だか妙な話になってるんだよ…。」",
-		   NULL, " ......Also... this part sounds kind of strange, but...\"", Line_Normal);
+	OutputLine(NULL, "「…無線で聞く限りは、収容されたのは梨花ちゃんだけで、沙都子はそういうわけじゃないみたい。………それでね、…何だか妙な話になってるんだよ…。」",
+		   NULL, "\"...From what I'm hearing on the radio, only Rika-chan was taken in. Satoko wasn't, apparently. ......Also... this part sounds kind of strange, but...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -1943,10 +1737,8 @@ void main()
 	ClearMessage();
 
 	//;ld c,ren_1,22
-	OutputLine(NULL, "「……沙都子ちゃんの北条家が、",
-		   NULL, "\"...You're talking about the rumor that Satoko-chan and the Houjou family", Line_WaitForInput);
-	OutputLine(NULL, "オヤシロさまに祟られている、呪われている、というような話？」",
-		   NULL, " are cursed and hated by Oyashiro-sama?\"", Line_Normal);
+	OutputLine(NULL, "「……沙都子ちゃんの北条家が、オヤシロさまに祟られている、呪われている、というような話？」",
+		   NULL, "\"...You're talking about the rumor that Satoko-chan and the Houjou family are cursed and hated by Oyashiro-sama?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -1971,39 +1763,23 @@ void main()
 	DrawBustshot( 2, "sprites/keiiti/sifuku/kei_ikari2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, TRUE );
 	PlaySE( 0, "a5_10316", 50, 64 );
 	ShakeScreen( 2, 6,  100 , 3, 33, );
-	OutputLine(NULL, "「何だって？！",
-		   NULL, "\"What?!", Line_WaitForInput);
-	OutputLine(NULL, "　馬鹿な話しやがって！！",
-		   NULL, " That's stupid as hell!!", Line_WaitForInput);
-	OutputLine(NULL, "　連中は箸が転んでも沙都子のせいだな！！」",
-		   NULL, " Those jerks will blame Satoko at the drop of a hat!!\"", Line_Normal);
+	OutputLine(NULL, "「何だって？！　馬鹿な話しやがって！！　連中は箸が転んでも沙都子のせいだな！！」",
+		   NULL, "\"What?! That's stupid as hell!! Those jerks will blame Satoko at the drop of a hat!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 
 	ChangeBustshot( 1, "sprites/mion/sifuku/me_majimea1", 200, TRUE );
-	OutputLine(NULL, "「もちろん、冗談だと信じたいけど。",
-		   NULL, "\"Of course it's nonsense.", Line_WaitForInput);
-	OutputLine(NULL, "……沙都子を簀巻きにして鬼ヶ淵に沈めれば、オヤシロさまのお怒りが治まるんじゃないかって話が、",
-		   NULL, " ...but people in the other areas are starting to say they might be able to quell Oyashiro-sama's anger by binding up Satoko and sinking her into the swamp.", Line_WaitForInput);
-	OutputLine(NULL, "向こうの町会でまことしやかに流れてるらしいよ…。」",
-		   NULL, " And they're talking like they believe it too...\"", Line_Normal);
+	OutputLine(NULL, "「もちろん、冗談だと信じたいけど。……沙都子を簀巻きにして鬼ヶ淵に沈めれば、オヤシロさまのお怒りが治まるんじゃないかって話が、向こうの町会でまことしやかに流れてるらしいよ…。」",
+		   NULL, "\"Of course it's nonsense. ...but people in the other areas are starting to say they might be able to quell Oyashiro-sama's anger by binding up Satoko and sinking her into the swamp. And they're talking like they believe it too...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	DrawBustshot( 40, "sprites/rena/sifuku/ren_14", -20, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 41, 0, TRUE );
 	PlaySE( 0, "a5_10316", 50, 64 );
 	ShakeScreen( 2, 6,  100 , 3, 33, );
-	OutputLine(NULL, "「そんな…！！",
-		   NULL, "\"No way...!!", Line_WaitForInput);
-	OutputLine(NULL, "　ねぇ私たちって、そんなにも未開人なの？！",
-		   NULL, " Are we savages now?!", Line_WaitForInput);
-	OutputLine(NULL, "　文明人じゃないの？！",
-		   NULL, " I thought we were civilized!", Line_WaitForInput);
-	OutputLine(NULL, "　私たちが日常を失ってから、やっと１週間が経った程度なのに、",
-		   NULL, " It's only been a week since our daily routines were broken,", Line_WaitForInput);
-	OutputLine(NULL, "もうそんな迷信が蔓延ってるの？！」",
-		   NULL, " and we're already talking about drowning people in swamps?!\"", Line_Normal);
+	OutputLine(NULL, "「そんな…！！　ねぇ私たちって、そんなにも未開人なの？！　文明人じゃないの？！　私たちが日常を失ってから、やっと１週間が経った程度なのに、もうそんな迷信が蔓延ってるの？！」",
+		   NULL, "\"No way...!! Are we savages now?! I thought we were civilized! It's only been a week since our daily routines were broken, and we're already talking about drowning people in swamps?!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -2057,33 +1833,23 @@ void main()
 	DrawBustshot( 3, "sprites/mion/sifuku/me_odorokia1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, FALSE );
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
 
-	OutputLine(NULL, "「も、もちろん私も無線で冷静になるように言ってるよ？！",
-		   NULL, "\"O-Of course I've told them they need to calm down over the radio!", Line_WaitForInput);
-	OutputLine(NULL, "　でも、なかなか治まってくれない…。」",
-		   NULL, " But they're not listening to me at all...\"", Line_Normal);
+	OutputLine(NULL, "「も、もちろん私も無線で冷静になるように言ってるよ？！　でも、なかなか治まってくれない…。」",
+		   NULL, "\"O-Of course I've told them they need to calm down over the radio! But they're not listening to me at all...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 
 	ChangeBustshot( 1, "sprites/keiiti/sifuku/kei_ikari2", 200, TRUE );
 
-	OutputLine(NULL, "「く、くそ…！",
-		   NULL, "\"Kh! Shit...!", Line_WaitForInput);
-	OutputLine(NULL, "　梨花ちゃんが収容されたということは、沙都子は今、ひとりであの倉庫小屋に暮らしてるわけか。",
-		   NULL, " If Rika-chan's been taken into custody, that means Satoko is currently living in that storage hut all by herself?", Line_WaitForInput);
-	OutputLine(NULL, "………万が一を考えると危なくないか？！」",
-		   NULL, " ......She's in danger if they try to pull anything, isn't she?!\"", Line_Normal);
+	OutputLine(NULL, "「く、くそ…！　梨花ちゃんが収容されたということは、沙都子は今、ひとりであの倉庫小屋に暮らしてるわけか。………万が一を考えると危なくないか？！」",
+		   NULL, "\"Kh! Shit...! If Rika-chan's been taken into custody, that means Satoko is currently living in that storage hut all by herself? ......She's in danger if they try to pull anything, isn't she?!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 
 	DrawBustshot( 4, "sprites/rena/sifuku/re_okorua1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
-	OutputLine(NULL, "「そうだね。",
-		   NULL, "\"True.", Line_WaitForInput);
-	OutputLine(NULL, "沙都子ちゃん１人じゃできることに限界もあると思う。",
-		   NULL, " There's only so much Satoko-chan can do by herself.", Line_WaitForInput);
-	OutputLine(NULL, "…私たちのところに匿う方がいいんじゃないかな、かな。」",
-		   NULL, " ...Wouldn't it better to shelter her in our area? Wouldn't it?\"", Line_Normal);
+	OutputLine(NULL, "「そうだね。沙都子ちゃん１人じゃできることに限界もあると思う。…私たちのところに匿う方がいいんじゃないかな、かな。」",
+		   NULL, "\"True. There's only so much Satoko-chan can do by herself. ...Wouldn't it better to shelter her in our area? Wouldn't it?\"", Line_Normal);
 	ClearMessage();
 
 
@@ -2164,16 +1930,8 @@ void main()
 
 	ChangeBustshot( 3, "sprites/rena/sifuku/re_okorua1", 200, TRUE );
 
-	OutputLine(NULL, "「……うん。",
-		   NULL, "\"......Yeah.", Line_WaitForInput);
-	OutputLine(NULL, "みんなの家じゃどうせ無理だろうってのはわかってるよ。",
-		   NULL, " I know it's impossible for your families.", Line_WaitForInput);
-	OutputLine(NULL, "だから、もし沙都子ちゃんを匿おうってことになったら、レナの家で匿うよ。",
-		   NULL, " So if we do end up sheltering Satoko-chan, I'll shelter her in my home.", Line_WaitForInput);
-	OutputLine(NULL, "……大丈夫。",
-		   NULL, " ......Don't worry.", Line_WaitForInput);
-	OutputLine(NULL, "お父さんには文句なんか言わせないから。」",
-		   NULL, " I won't let my father voice any objections.\"", Line_Normal);
+	OutputLine(NULL, "「……うん。みんなの家じゃどうせ無理だろうってのはわかってるよ。だから、もし沙都子ちゃんを匿おうってことになったら、レナの家で匿うよ。……大丈夫。お父さんには文句なんか言わせないから。」",
+		   NULL, "\"......Yeah. I know it's impossible for your families. So if we do end up sheltering Satoko-chan, I'll shelter her in my home. ......Don't worry. I won't let my father voice any objections.\"", Line_Normal);
 	ClearMessage();
 
 
@@ -2197,27 +1955,15 @@ void main()
 
 
 	ChangeBustshot( 1, "sprites/keiiti/sifuku/kei_ikari1", 200, TRUE );
-	OutputLine(NULL, "「わかった。",
-		   NULL, "\"All right.", Line_WaitForInput);
-	OutputLine(NULL, "沙都子と接触できたら、レナの家へ行くよう伝えよう。",
-		   NULL, " If we can make contact with Satoko, we'll tell her to head to Rena's home.", Line_WaitForInput);
-	OutputLine(NULL, "いや、むしろ何とか沙都子と接触をして、こちらへ呼びたいくらいだな。",
-		   NULL, " I wish I could reach out to her myself, but...", Line_WaitForInput);
-	OutputLine(NULL, "……魅音の話を聞く限り、沙都子のいる町会周りはどうもヤバそうだからな…。」",
-		   NULL, " ...From what you've told us, Mion, it sounds like the area around Satoko's house is dangerous...\"", Line_Normal);
+	OutputLine(NULL, "「わかった。沙都子と接触できたら、レナの家へ行くよう伝えよう。いや、むしろ何とか沙都子と接触をして、こちらへ呼びたいくらいだな。……魅音の話を聞く限り、沙都子のいる町会周りはどうもヤバそうだからな…。」",
+		   NULL, "\"All right. If we can make contact with Satoko, we'll tell her to head to Rena's home. I wish I could reach out to her myself, but... ...From what you've told us, Mion, it sounds like the area around Satoko's house is dangerous...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, FALSE );
 	DrawBustshot( 40, "sprites/mion/sifuku/me_majimea2", -20, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 41, 200, TRUE );
-	OutputLine(NULL, "「あっちは信心深くて過激な神社部の幹部が多いからね……。",
-		   NULL, "\"That's because there's a lot of strong believers who live around there...", Line_WaitForInput);
-	OutputLine(NULL, "でね、……実は、",
-		   NULL, " But... to be honest,", Line_WaitForInput);
-	OutputLine(NULL, "沙都子だけの問題じゃないんだよ。",
-		   NULL, " Satoko's not the only problem.", Line_WaitForInput);
-	OutputLine(NULL, "………場合によっては、…圭ちゃんやレナも危ないかもしれないんだよ。」",
-		   NULL, " .........Depending how it goes... both of you two could be in trouble too.\"", Line_Normal);
+	OutputLine(NULL, "「あっちは信心深くて過激な神社部の幹部が多いからね……。でね、……実は、沙都子だけの問題じゃないんだよ。………場合によっては、…圭ちゃんやレナも危ないかもしれないんだよ。」",
+		   NULL, "\"That's because there's a lot of strong believers who live around there... But... to be honest, Satoko's not the only problem. .........Depending how it goes... both of you two could be in trouble too.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -2247,14 +1993,8 @@ void main()
 
 	PlayBGM( 0, "bgm0/snow4", 70, 0 );
 
-	OutputLine(NULL, "「先日も話したよね。",
-		   NULL, "\"I mentioned this the other day, right?", Line_WaitForInput);
-	OutputLine(NULL, "例のウィルスが雛見沢土着のものかもしれないって噂。",
-		   NULL, " The rumors that this virus might be indigenous to Hinamizawa.", Line_WaitForInput);
-	OutputLine(NULL, "その話がね、だいぶ信憑性を帯びてきててね。",
-		   NULL, " Those rumors are starting to gain a lot of traction.", Line_WaitForInput);
-	OutputLine(NULL, "古来から村人全員が感染してたんじゃないかって言うんだよ。」",
-		   NULL, " Some are even saying every villager's probably been infected for hundreds of years.\"", Line_Normal);
+	OutputLine(NULL, "「先日も話したよね。例のウィルスが雛見沢土着のものかもしれないって噂。その話がね、だいぶ信憑性を帯びてきててね。古来から村人全員が感染してたんじゃないかって言うんだよ。」",
+		   NULL, "\"I mentioned this the other day, right? The rumors that this virus might be indigenous to Hinamizawa. Those rumors are starting to gain a lot of traction. Some are even saying every villager's probably been infected for hundreds of years.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -2264,39 +2004,27 @@ void main()
 	DrawScene( "bg/gakkou/g1", 200 );
 	ShakeScreen( 0, 6, 100, 2, 50, );
 
-	OutputLine(NULL, "「だから、それじゃおかしいだろ…！",
-		   NULL, "\"But that's just crazy...!", Line_WaitForInput);
-	OutputLine(NULL, "　だったら昔から連日死者が出てなきゃならないぞ！」",
-		   NULL, " If that were true, then people would've been dying every day way back when!\"", Line_Normal);
+	OutputLine(NULL, "「だから、それじゃおかしいだろ…！　だったら昔から連日死者が出てなきゃならないぞ！」",
+		   NULL, "\"But that's just crazy...! If that were true, then people would've been dying every day way back when!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	DrawBustshot( 2, "sprites/mion/sifuku/me_yowakia1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
-	OutputLine(NULL, "「それでその、…そうだと言ってる連中の言い分が面白いんだよ…。",
-		   NULL, "\"Well, umm... the ones insisting on that argument have an interesting idea...", Line_WaitForInput);
-	OutputLine(NULL, "そのウィルスは、この村の中にいる限りは安定していて無害だって言うんだよ。」",
-		   NULL, " They're saying that the virus remains stable and harmless so long as you stay in the village.\"", Line_Normal);
+	OutputLine(NULL, "「それでその、…そうだと言ってる連中の言い分が面白いんだよ…。そのウィルスは、この村の中にいる限りは安定していて無害だって言うんだよ。」",
+		   NULL, "\"Well, umm... the ones insisting on that argument have an interesting idea... They're saying that the virus remains stable and harmless so long as you stay in the village.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	ChangeBustshot( 2, "sprites/mion/sifuku/me_majimea1", 400, TRUE );
-	OutputLine(NULL, "「さらに言うと、この村にずっとずっと長く住み続けている一族には、",
-		   NULL, "\"They go even further, arguing that the families who have lived in this village for many, many years", Line_WaitForInput);
-	OutputLine(NULL, "生まれつきの免疫みたいなものがあって大丈夫だって話らしいんだよ。」",
-		   NULL, " are all born with an immunity that keeps them safe.\"", Line_Normal);
+	OutputLine(NULL, "「さらに言うと、この村にずっとずっと長く住み続けている一族には、生まれつきの免疫みたいなものがあって大丈夫だって話らしいんだよ。」",
+		   NULL, "\"They go even further, arguing that the families who have lived in this village for many, many years are all born with an immunity that keeps them safe.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 
 	ChangeBustshot( 1, "sprites/keiiti/sifuku/kei_ikari1", 200, TRUE );
-	OutputLine(NULL, "「…さっぱりわからねぇぞ。",
-		   NULL, "\"...I don't get it.", Line_WaitForInput);
-	OutputLine(NULL, "つまり何だ。",
-		   NULL, " So what?", Line_WaitForInput);
-	OutputLine(NULL, "……まさか、例えば他所から引っ越してきた俺やレナは、",
-		   NULL, " ......Are you telling me they're saying that people like Rena and I, who moved here from outside,", Line_WaitForInput);
-	OutputLine(NULL, "その免疫がないからとか言い出すんじゃないだろうな。」",
-		   NULL, " are a risk because we don't have that immunity?\"", Line_Normal);
+	OutputLine(NULL, "「…さっぱりわからねぇぞ。つまり何だ。……まさか、例えば他所から引っ越してきた俺やレナは、その免疫がないからとか言い出すんじゃないだろうな。」",
+		   NULL, "\"...I don't get it. So what? ......Are you telling me they're saying that people like Rena and I, who moved here from outside, are a risk because we don't have that immunity?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -2304,14 +2032,8 @@ void main()
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, FALSE );
 	DrawBustshot( 3, "sprites/mion/sifuku/me_odorokia2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
 	ShakeScreen( 2, 3,  100 , 2, 50, );
-	OutputLine(NULL, "「まさにそれだよ！",
-		   NULL, "\"That's exactly it!", Line_WaitForInput);
-	OutputLine(NULL, "　近年、雛見沢に引っ越してきた人間のせいで、そのウィルスの調和が崩れて、……その、村人全員のウィルスがおかしくなって、",
-		   NULL, " They're saying our harmony or whatever with the virus is collapsing because of the people moving into Hinamizawa... and umm, that's making the virus go crazy in everyone...", Line_WaitForInput);
-	OutputLine(NULL, "……えぇっと、",
-		   NULL, " Uhh...", Line_WaitForInput);
-	OutputLine(NULL, "……うぅん、」",
-		   NULL, " Nah.\"", Line_Normal);
+	OutputLine(NULL, "「まさにそれだよ！　近年、雛見沢に引っ越してきた人間のせいで、そのウィルスの調和が崩れて、……その、村人全員のウィルスがおかしくなって、……えぇっと、……うぅん、」",
+		   NULL, "\"That's exactly it! They're saying our harmony or whatever with the virus is collapsing because of the people moving into Hinamizawa... and umm, that's making the virus go crazy in everyone... Uhh... Nah.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -2328,56 +2050,36 @@ void main()
 	//;wait 500
 	ChangeBustshot( 5, "sprites/mion/sifuku/me_ikaria2", 200, TRUE );
 	DisplayWindow();
-	OutputLine(NULL, "「もちろんだよ！",
-		   NULL, "\"Of course not!", Line_WaitForInput);
-	OutputLine(NULL, "　こんな訳のわかんない話が通用するわけない！！",
-		   NULL, " There's no way I'd fall for anything that sounds that crazy!!", Line_WaitForInput);
-	OutputLine(NULL, "　でも、…なぜかみんな信じてるんだよ！！",
-		   NULL, " But... for some reason everyone else believes it!!", Line_WaitForInput);
-	OutputLine(NULL, "　私も訳がわかんない！！」",
-		   NULL, " I don't get it at all!!\"", Line_Normal);
+	OutputLine(NULL, "「もちろんだよ！　こんな訳のわかんない話が通用するわけない！！　でも、…なぜかみんな信じてるんだよ！！　私も訳がわかんない！！」",
+		   NULL, "\"Of course not! There's no way I'd fall for anything that sounds that crazy!! But... for some reason everyone else believes it!! I don't get it at all!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	ChangeBustshot( 5, "sprites/mion/sifuku/me_yowakia1", 200, TRUE );
-	OutputLine(NULL, "「普段だったら絶対こんな馬鹿な話は誰も信じないのに！",
-		   NULL, "\"Normally no one would ever believe such stupid nonsense!", Line_WaitForInput);
-	OutputLine(NULL, "　なぜかここ数日、妙な話やデマが当り前のように通用して飛び交ってる！」",
-		   NULL, " But these past few days, those weird ideas and rumors are being passed around like they're just common sense!\"", Line_Normal);
+	OutputLine(NULL, "「普段だったら絶対こんな馬鹿な話は誰も信じないのに！　なぜかここ数日、妙な話やデマが当り前のように通用して飛び交ってる！」",
+		   NULL, "\"Normally no one would ever believe such stupid nonsense! But these past few days, those weird ideas and rumors are being passed around like they're just common sense!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 
 	ChangeBustshot( 5, "sprites/mion/sifuku/me_ikaria1", 200, TRUE );
-	OutputLine(NULL, "「私は初日からずっと無線を聞いてるんだけど、",
-		   NULL, "\"I've been listening on the radio since the very first day,", Line_WaitForInput);
-	OutputLine(NULL, "最近の村人はどんどんおかしくなってるんだよ…！",
-		   NULL, " but lately, the villagers are believing weirder and weirder stuff...!", Line_WaitForInput);
-	OutputLine(NULL, "　異常な生活で心の緊張がとかトラウマがとか、そんな甘っちょろいレベルじゃない！」",
-		   NULL, " I don't know if it's mental stress or trauma or whatever, but calling it that is optimistic at this point!\"", Line_Normal);
+	OutputLine(NULL, "「私は初日からずっと無線を聞いてるんだけど、最近の村人はどんどんおかしくなってるんだよ…！　異常な生活で心の緊張がとかトラウマがとか、そんな甘っちょろいレベルじゃない！」",
+		   NULL, "\"I've been listening on the radio since the very first day, but lately, the villagers are believing weirder and weirder stuff...! I don't know if it's mental stress or trauma or whatever, but calling it that is optimistic at this point!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	ChangeBustshot( 5, "sprites/mion/sifuku/me_majimea1", 200, TRUE );
-	OutputLine(NULL, "「明らかに嘘だろうデマだろうと思うことが当り前のように横行し、それを誰も覆せない！",
-		   NULL, "\"These lies and rumors are running rampant, but no one is doing anything to stop them!", Line_WaitForInput);
-	OutputLine(NULL, "　誰かがそれを否定すると、感染者扱いをされそうになる！」",
-		   NULL, " If anyone tries, they could be treated as one of the infected too!\"", Line_Normal);
+	OutputLine(NULL, "「明らかに嘘だろうデマだろうと思うことが当り前のように横行し、それを誰も覆せない！　誰かがそれを否定すると、感染者扱いをされそうになる！」",
+		   NULL, "\"These lies and rumors are running rampant, but no one is doing anything to stop them! If anyone tries, they could be treated as one of the infected too!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	ChangeBustshot( 5, "sprites/mion/sifuku/me_ikaria2", 200, TRUE );
-	OutputLine(NULL, "「すっごく気持ち悪いことになってるんだよ！",
-		   NULL, "\"It's getting really awful around here!", Line_WaitForInput);
-	OutputLine(NULL, "　何かが変！！",
-		   NULL, " Something's not right with people!!", Line_ContinueAfterTyping);
 
 	Wait( 100 );
 	SetSpeedOfMessage( TRUE, 128 );
-	OutputLine(NULL, "",
-		   NULL, " ", Line_WaitForInput);
-	OutputLine(NULL, "だから用心して！」",
-		   NULL, " So watch yourselves!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "「すっごく気持ち悪いことになってるんだよ！　何かが変！！だから用心して！」",
+		   NULL, "\"It's getting really awful around here! Something's not right with people!!  So watch yourselves!\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
 	PlaySE( 0, "a5_10316", 50, 64 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
@@ -2445,43 +2147,29 @@ void main()
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/rena/sifuku/re_komarua2", 200, TRUE );
-	OutputLine(NULL, "「…………………圭一くん。",
-		   NULL, "\".....................Keiichi-kun.", Line_WaitForInput);
-	OutputLine(NULL, "…用心しよ。」",
-		   NULL, " ...Protect yourself, okay?\"", Line_WaitForInput);
+	OutputLine(NULL, "「…………………圭一くん。…用心しよ。」",
+		   NULL, "\".....................Keiichi-kun. ...Protect yourself, okay?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
 
 	DrawBustshot( 2, "sprites/keiiti/sifuku/kei_nayamu", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
 
-	OutputLine(NULL, "「そ、…そうだな。",
-		   NULL, "\"Y-Yeah.", Line_WaitForInput);
-	OutputLine(NULL, "下らないデマのせいで疑われるのは気に入らねぇが、",
-		   NULL, " I don't like being distrusted just because of stupid rumors,", Line_WaitForInput);
-	OutputLine(NULL, "李下に冠ってこともあるしな…。」",
-		   NULL, " but it's best not to fuel the fire...\"", Line_Normal);
+	OutputLine(NULL, "「そ、…そうだな。下らないデマのせいで疑われるのは気に入らねぇが、李下に冠ってこともあるしな…。」",
+		   NULL, "\"Y-Yeah. I don't like being distrusted just because of stupid rumors, but it's best not to fuel the fire...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 
 	DrawBustshot( 3, "sprites/mion/sifuku/me_yowakia1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
-	OutputLine(NULL, "「…うん。",
-		   NULL, "\"...Yeah.", Line_WaitForInput);
-	OutputLine(NULL, "レナも圭ちゃんも無用の外出は避けた方がいいと思う。",
-		   NULL, " Rena, Kei-chan, you two should avoid going outside unless you have to.", Line_WaitForInput);
-	OutputLine(NULL, "あと、くれぐれもひとりで外出しないように。",
-		   NULL, " Also, make sure you don't go out alone.", Line_WaitForInput);
-	OutputLine(NULL, "家のシャッターは締め切ってね。」",
-		   NULL, " And seal your home up tight.\"", Line_Normal);
+	OutputLine(NULL, "「…うん。レナも圭ちゃんも無用の外出は避けた方がいいと思う。あと、くれぐれもひとりで外出しないように。家のシャッターは締め切ってね。」",
+		   NULL, "\"...Yeah. Rena, Kei-chan, you two should avoid going outside unless you have to. Also, make sure you don't go out alone. And seal your home up tight.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	ChangeBustshot( 3, "sprites/mion/sifuku/me_majimea1", 200, TRUE );
-	OutputLine(NULL, "「……心無いことを言ってくる人があっても、どんなに悔しくても買い言葉を返さないこと。",
-		   NULL, "\"......If anyone says anything inconsiderate, don't provoke them. No matter how frustrating.", Line_WaitForInput);
-	OutputLine(NULL, "……いいね…？」",
-		   NULL, " ...Got it...?\"", Line_Normal);
+	OutputLine(NULL, "「……心無いことを言ってくる人があっても、どんなに悔しくても買い言葉を返さないこと。……いいね…？」",
+		   NULL, "\"......If anyone says anything inconsiderate, don't provoke them. No matter how frustrating. ...Got it...?\"", Line_Normal);
 	ClearMessage();
 
 
@@ -3141,12 +2829,8 @@ void main()
 
 	DrawScene( "black", 400 );
 	PlayBGM( 1, "me/a5_14446", 70, 0 );
-	OutputLine(NULL, "「こちらは陸上自衛隊です。",
-		   NULL, "\"This is the JGSDF.", Line_WaitForInput);
-	OutputLine(NULL, "隔離地域内からの離脱は認められていません。",
-		   NULL, " You are not permitted to leave the quarantine zone.", Line_WaitForInput);
-	OutputLine(NULL, "速やかに自宅に戻ってください！」",
-		   NULL, " Please return to your homes at once!\"", Line_WaitForInput);
+	OutputLine(NULL, "「こちらは陸上自衛隊です。隔離地域内からの離脱は認められていません。速やかに自宅に戻ってください！」",
+		   NULL, "\"This is the JGSDF. You are not permitted to leave the quarantine zone. Please return to your homes at once!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3474,18 +3158,14 @@ void main()
 		   NULL, " She was clutching an envelope in her hand.", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "「圭一…。",
-		   NULL, "\"Keiichi...", Line_WaitForInput);
-	OutputLine(NULL, "今ね、圭一宛の手紙が来たのよ。」",
-		   NULL, " Just now we received a letter for you, Keiichi.\"", Line_WaitForInput);
+	OutputLine(NULL, "「圭一…。今ね、圭一宛の手紙が来たのよ。」",
+		   NULL, "\"Keiichi... Just now we received a letter for you, Keiichi.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 	//;ld l,kei_4,80
-	OutputLine(NULL, "「手紙？",
-		   NULL, "\"A letter?", Line_WaitForInput);
-	OutputLine(NULL, "　俺宛…？！」",
-		   NULL, " To me...?!\"", Line_Normal);
+	OutputLine(NULL, "「手紙？　俺宛…？！」",
+		   NULL, "\"A letter? To me...?!\"", Line_Normal);
 	ClearMessage();
 
 	OutputLine(NULL, "　それをお袋から引っ手繰る。",
@@ -3562,16 +3242,8 @@ void main()
 	PlaySE( 0, "wav/kami", 50, 64 );
 	PlayBGM( 0, "bgm1/hakumu", 70, 0 );
 
-	OutputLine(NULL, "「圭ちゃんへ。",
-		   NULL, "\"To Kei-chan.", Line_WaitForInput);
-	OutputLine(NULL, "気をつけて！",
-		   NULL, " Be careful!", Line_WaitForInput);
-	OutputLine(NULL, "　ウチの町会内で、前原家と竜宮家を槍玉に挙げようという意見が強くなってる。",
-		   NULL, " The idea that we should make an example out of the Maebaras and Ryuugus is gaining more strength in our council area.", Line_WaitForInput);
-	OutputLine(NULL, "もう本当に馬鹿げてることだけれども、",
-		   NULL, " I know it's a really crazy idea,", Line_WaitForInput);
-	OutputLine(NULL, "彼らは誰かを生贄にあげないと恐怖感に押しつぶされてしまうところまで追い詰められている。」",
-		   NULL, " but they've already been driven to the point where they'll be consumed by fear if they don't sacrifice someone.\"", Line_Normal);
+	OutputLine(NULL, "「圭ちゃんへ。気をつけて！　ウチの町会内で、前原家と竜宮家を槍玉に挙げようという意見が強くなってる。もう本当に馬鹿げてることだけれども、彼らは誰かを生贄にあげないと恐怖感に押しつぶされてしまうところまで追い詰められている。」",
+		   NULL, "\"To Kei-chan. Be careful! The idea that we should make an example out of the Maebaras and Ryuugus is gaining more strength in our council area. I know it's a really crazy idea, but they've already been driven to the point where they'll be consumed by fear if they don't sacrifice someone.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -3591,31 +3263,21 @@ void main()
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/mion/sifuku/me_majimea2", 200, TRUE );
-	OutputLine(NULL, "「ウィルス派とオヤシロさまの崇り派が互角だった内は、双方が支離滅裂な論争をするだけだから良かったんだけど、",
-		   NULL, "\"It was fine back when they were all evenly split between the virus supporters and the Oyashiro-sama's curse supporters, since they'd both just argue incoherently with each other,", Line_WaitForInput);
-	OutputLine(NULL, "最近、オヤシロさまの崇り派が伸してきてね。",
-		   NULL, " but lately the curse supporters are gaining ground.", Line_WaitForInput);
-	OutputLine(NULL, "全体をリードするようになりつつある。」",
-		   NULL, " It won't be long before they're leading the whole group.\"", Line_Normal);
+	OutputLine(NULL, "「ウィルス派とオヤシロさまの崇り派が互角だった内は、双方が支離滅裂な論争をするだけだから良かったんだけど、最近、オヤシロさまの崇り派が伸してきてね。全体をリードするようになりつつある。」",
+		   NULL, "\"It was fine back when they were all evenly split between the virus supporters and the Oyashiro-sama's curse supporters, since they'd both just argue incoherently with each other, but lately the curse supporters are gaining ground. It won't be long before they're leading the whole group.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	DrawBustshot( 2, "sprites/mion/sifuku/me_yowakia2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, FALSE );
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, TRUE );
-	OutputLine(NULL, "「婆っちゃが元気だったならこんな暴走は許さないんだけど、",
-		   NULL, "\"If my granny were well, she'd never allow such a riot,", Line_WaitForInput);
-	OutputLine(NULL, "実は数日前に高熱を出しちゃって起き上がることもできないんだよ。」",
-		   NULL, " but she actually came down with a fever a few days ago, and now she can't get out of bed.\"", Line_Normal);
+	OutputLine(NULL, "「婆っちゃが元気だったならこんな暴走は許さないんだけど、実は数日前に高熱を出しちゃって起き上がることもできないんだよ。」",
+		   NULL, "\"If my granny were well, she'd never allow such a riot, but she actually came down with a fever a few days ago, and now she can't get out of bed.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	ChangeBustshot( 2, "sprites/mion/sifuku/me_odorokia1", 200, TRUE );
-	OutputLine(NULL, "「一部の親類はそれを感染ではないかと吹聴していて、私の発言力もすでに危うい。",
-		   NULL, "\"Some of my relatives have started spreading rumors that it's the infection, so I'm losing my ability to speak at the council too.", Line_WaitForInput);
-	OutputLine(NULL, "いや、私自身、下手をすれば生贄にされかねないよ！",
-		   NULL, " Like, if I'm not careful, they could sacrifice me as well!", Line_WaitForInput);
-	OutputLine(NULL, "　そんな立場の私には、これ以上、圭ちゃんやレナの家を庇う発言は難しい。」",
-		   NULL, " With the position I'm in now, it's going to be hard for me to speak on behalf of your and Rena's family anymore.\"", Line_Normal);
+	OutputLine(NULL, "「一部の親類はそれを感染ではないかと吹聴していて、私の発言力もすでに危うい。いや、私自身、下手をすれば生贄にされかねないよ！　そんな立場の私には、これ以上、圭ちゃんやレナの家を庇う発言は難しい。」",
+		   NULL, "\"Some of my relatives have started spreading rumors that it's the infection, so I'm losing my ability to speak at the council too. Like, if I'm not careful, they could sacrifice me as well! With the position I'm in now, it's going to be hard for me to speak on behalf of your and Rena's family anymore.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -3634,33 +3296,21 @@ void main()
 	DrawScene( "black", 400 );
 	DrawBustshot( 1, "sprites/mion/sifuku/me_majimea1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 	PlaySE( 0, "wav/kami", 50, 64 );
-	OutputLine(NULL, "「これ以上、雛見沢に留まることは危険だと思う。",
-		   NULL, "\"I think it's dangerous to stay in Hinamizawa any longer than this.", Line_WaitForInput);
-	OutputLine(NULL, "少なくともこのまま自宅に閉じこもっていれば私たちはいずれ必ず殺される！",
-		   NULL, " At the very least, if we stay shut up in our homes like this, then sooner or later we'll be murdered!", Line_WaitForInput);
-	OutputLine(NULL, "　だから明日の夜に村から脱出しようと思う。」",
-		   NULL, " So I'm planning to escape the village tomorrow night.\"", Line_Normal);
+	OutputLine(NULL, "「これ以上、雛見沢に留まることは危険だと思う。少なくともこのまま自宅に閉じこもっていれば私たちはいずれ必ず殺される！　だから明日の夜に村から脱出しようと思う。」",
+		   NULL, "\"I think it's dangerous to stay in Hinamizawa any longer than this. At the very least, if we stay shut up in our homes like this, then sooner or later we'll be murdered! So I'm planning to escape the village tomorrow night.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	DrawScene( "bg/sonozaki/so_k1", 400 );
-	OutputLine(NULL, "「周囲は自衛隊に封鎖されているけど、園崎家は秘密のトンネルを持っていて、",
-		   NULL, "\"The SDF is blocking off the perimeter, but the Sonozakis have secret tunnels,", Line_WaitForInput);
-	OutputLine(NULL, "その内のひとつが封鎖線の外に出口を持ってるの。",
-		   NULL, " and one of them exits out beyond the quarantine.", Line_WaitForInput);
-	OutputLine(NULL, "このトンネルは私と婆っちゃしか知らない。」",
-		   NULL, " Me and Granny are the only ones who know about these tunnels.\"", Line_Normal);
+	OutputLine(NULL, "「周囲は自衛隊に封鎖されているけど、園崎家は秘密のトンネルを持っていて、その内のひとつが封鎖線の外に出口を持ってるの。このトンネルは私と婆っちゃしか知らない。」",
+		   NULL, "\"The SDF is blocking off the perimeter, but the Sonozakis have secret tunnels, and one of them exits out beyond the quarantine. Me and Granny are the only ones who know about these tunnels.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	DrawBustshot( 1, "sprites/mion/sifuku/me_yowakia1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
 	DrawScene( "black", 400 );
-	OutputLine(NULL, "「婆っちゃの回復を待ちたかったけど、",
-		   NULL, "\"I wanted to wait until after she recovered,", Line_WaitForInput);
-	OutputLine(NULL, "もう無理みたい…。",
-		   NULL, " but that doesn't look possible anymore...", Line_WaitForInput);
-	OutputLine(NULL, "さっき婆っちゃに、自分を置いて逃げろと言われたところ…。」",
-		   NULL, " My Granny just told me to leave her behind and run...\"", Line_Normal);
+	OutputLine(NULL, "「婆っちゃの回復を待ちたかったけど、もう無理みたい…。さっき婆っちゃに、自分を置いて逃げろと言われたところ…。」",
+		   NULL, "\"I wanted to wait until after she recovered, but that doesn't look possible anymore... My Granny just told me to leave her behind and run...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -3668,22 +3318,14 @@ void main()
 	SetNameColor(220, 85, 85);
 	DrawFilm( 2, 220, 85, 85, 256, 0, 300, TRUE ); //redout mode
 	DrawScene( "bg/mura/hi2", 400 );
-	OutputLine(NULL, "「……婆っちゃはこの事態は、",
-		   NULL, "\"......My Granny is saying", Line_WaitForInput);
-	OutputLine(NULL, "古代の伝承の、鬼ヶ淵の沼より鬼があふれ出し～の再来だと言ってる。",
-		   NULL, " that this is a return to the ancient legend of demons coming out from Onigafuchi Swamp.", Line_WaitForInput);
-	OutputLine(NULL, "今に村人たちに鬼が取り憑き、村人が村人を殺し出す地獄絵図になると！」",
-		   NULL, " Right now all the villagers are possessed by demons, and they're going to start murdering each other!\"", Line_Normal);
+	OutputLine(NULL, "「……婆っちゃはこの事態は、古代の伝承の、鬼ヶ淵の沼より鬼があふれ出し～の再来だと言ってる。今に村人たちに鬼が取り憑き、村人が村人を殺し出す地獄絵図になると！」",
+		   NULL, "\"......My Granny is saying that this is a return to the ancient legend of demons coming out from Onigafuchi Swamp. Right now all the villagers are possessed by demons, and they're going to start murdering each other!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	DrawScene( "bg/jinja/ji2", 400 );
-	OutputLine(NULL, "「伝承ではオヤシロさまがそれを治めてくれるんだけど、",
-		   NULL, "\"In those legends, Oyashiro-sama managed to calm everyone down,", Line_WaitForInput);
-	OutputLine(NULL, "治めてくれるまでの間、血みどろの争いが繰り返され、",
-		   NULL, " but before they were able to do so, the blood-soaked conflict they produced", Line_WaitForInput);
-	OutputLine(NULL, "大勢の死者が出たと伝承に残している！」",
-		   NULL, " resulted in a massive number of casualties!\"", Line_Normal);
+	OutputLine(NULL, "「伝承ではオヤシロさまがそれを治めてくれるんだけど、治めてくれるまでの間、血みどろの争いが繰り返され、大勢の死者が出たと伝承に残している！」",
+		   NULL, "\"In those legends, Oyashiro-sama managed to calm everyone down, but before they were able to do so, the blood-soaked conflict they produced resulted in a massive number of casualties!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -3738,18 +3380,8 @@ void main()
 	DrawScene( "black", 400 );
 	DrawBustshot( 1, "sprites/mion/sifuku/me_majimea2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 	PlaySE( 0, "wav/kami", 50, 64 );
-	OutputLine(NULL, "「それで本題。",
-		   NULL, "\"That brings me to the main point.", Line_WaitForInput);
-	OutputLine(NULL, "今夜中に圭ちゃんの家族に話して準備をさせて。",
-		   NULL, " Tell your family tonight about all this and have them get ready, Kei-chan.", Line_WaitForInput);
-	OutputLine(NULL, "明日の夜、迎えに行くからみんなで脱出しよう。",
-		   NULL, " I'll come for you all tomorrow night, and then we'll escape.", Line_WaitForInput);
-	OutputLine(NULL, "持ち物は現金、保険証や通帳、印鑑類。",
-		   NULL, " Bring your cash, insurance card, bankbook, and family seal.", Line_WaitForInput);
-	OutputLine(NULL, "あと、重過ぎない範囲でリュックサックに着替えや日用品を詰め込んで。",
-		   NULL, " Also, fill your backpack with clothes and daily necessities, but don't let it get too heavy.", Line_WaitForInput);
-	OutputLine(NULL, "手荷物は厳禁！」",
-		   NULL, " Don't bring anything you have to carry!\"", Line_Normal);
+	OutputLine(NULL, "「それで本題。今夜中に圭ちゃんの家族に話して準備をさせて。明日の夜、迎えに行くからみんなで脱出しよう。持ち物は現金、保険証や通帳、印鑑類。あと、重過ぎない範囲でリュックサックに着替えや日用品を詰め込んで。手荷物は厳禁！」",
+		   NULL, "\"That brings me to the main point. Tell your family tonight about all this and have them get ready, Kei-chan. I'll come for you all tomorrow night, and then we'll escape. Bring your cash, insurance card, bankbook, and family seal. Also, fill your backpack with clothes and daily necessities, but don't let it get too heavy. Don't bring anything you have to carry!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -3770,24 +3402,14 @@ void main()
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/mion/sifuku/me_ikaria1", 200, TRUE );
-	OutputLine(NULL, "「…でも信じて！",
-		   NULL, "\"...But trust me!", Line_WaitForInput);
-	OutputLine(NULL, "　私は御三家の集まりや町会の会合、",
-		   NULL, " I've been to the town council meetings and the gatherings of the Three Families,", Line_WaitForInput);
-	OutputLine(NULL, "そして無線で情報を集めていたからこの村を取り巻く異常さがどれほどおかしいかよくわかってる！！」",
-		   NULL, " so I have a very clear idea of just how crazy this village has become!!\"", Line_Normal);
+	OutputLine(NULL, "「…でも信じて！　私は御三家の集まりや町会の会合、そして無線で情報を集めていたからこの村を取り巻く異常さがどれほどおかしいかよくわかってる！！」",
+		   NULL, "\"...But trust me! I've been to the town council meetings and the gatherings of the Three Families, so I have a very clear idea of just how crazy this village has become!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/mion/sifuku/me_majimea1", 200, TRUE );
-	OutputLine(NULL, "「私と同じ危機感を持って！",
-		   NULL, "\"You need to understand how dangerous this is!", Line_WaitForInput);
-	OutputLine(NULL, "　圭ちゃんが私を信じて全ての行動を共にしてくれても、",
-		   NULL, " Even if you have faith in and do everything I've asked,", Line_WaitForInput);
-	OutputLine(NULL, "私は自分と圭ちゃん、レナ、",
-		   NULL, " I'm estimating only a 10% possibility at best", Line_WaitForInput);
-	OutputLine(NULL, "その家族が全員無事で雛見沢を脱出できる確率は１０％なら高い方と見積もってる。」",
-		   NULL, " of you, me, Rena, and our families all escaping Hinamizawa safely.\"", Line_Normal);
+	OutputLine(NULL, "「私と同じ危機感を持って！　圭ちゃんが私を信じて全ての行動を共にしてくれても、私は自分と圭ちゃん、レナ、その家族が全員無事で雛見沢を脱出できる確率は１０％なら高い方と見積もってる。」",
+		   NULL, "\"You need to understand how dangerous this is! Even if you have faith in and do everything I've asked, I'm estimating only a 10% possibility at best of you, me, Rena, and our families all escaping Hinamizawa safely.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -3801,12 +3423,10 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	SetSpeedOfMessage( TRUE, 128 );
-	OutputLine(NULL, "　な、",
-		   NULL, "Wha", Line_ContinueAfterTyping);
 
 	Wait( 500 );
-	OutputLine(NULL, "……何なんだよこれはッ…！！",
-		   NULL, " ...What the hell...?!!", Line_ContinueAfterTyping);
+	OutputLine(NULL, "　な、……何なんだよこれはッ…！！",
+		   NULL, "Wha ...What the hell...?!!", Line_ContinueAfterTyping);
 	PlaySE( 0, "a5_10316", 50, 64 );
 	ShakeScreen( 0, 9, 100, 5, 20, );
 	SetSpeedOfMessage( FALSE, 0 );
@@ -4093,13 +3713,11 @@ void main()
 	ClearMessage();
 
 
-	OutputLine(NULL, "「だ、",
-		   NULL, "\"Wh-", Line_ContinueAfterTyping);
 
 	Wait( 500 );
 	SetSpeedOfMessage( TRUE, 128 );
-	OutputLine(NULL, "誰ですか！！」",
-		   NULL, " Who is it?!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "「だ、誰ですか！！」",
+		   NULL, "\"Wh- Who is it?!\"", Line_ContinueAfterTyping);
 
 	ShakeScreen( 4, 9, 20, 25, 2, );
 	SetSpeedOfMessage( FALSE, 0 );
@@ -4117,15 +3735,13 @@ void main()
 	ClearMessage();
 
 
-	OutputLine(NULL, "「こんばんは、竜宮です！",
-		   NULL, "\"Good evening, it's Ryuugu!", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "a1_07132", 50, 64 );
 	ShakeScreen( 2, 9,  100 , 4, 25, );
 	Wait( 1000 );
 
-	OutputLine(NULL, "　開けてください！」",
-		   NULL, " Please let me in!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "「こんばんは、竜宮です！　開けてください！」",
+		   NULL, "\"Good evening, it's Ryuugu! Please let me in!\"", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "a1_07132", 50, 64 );
 	Wait( 100 );
@@ -4181,21 +3797,15 @@ void main()
 
 
 	DrawBustshot( 1, "sprites/keiiti/sifuku/kei_ikari2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
-	OutputLine(NULL, "「ぅ、うわ？！",
-		   NULL, "\"W-Wha?!", Line_WaitForInput);
-	OutputLine(NULL, "　み、魅音？！",
-		   NULL, " M-Mion?!", Line_WaitForInput);
-	OutputLine(NULL, "　大丈夫かッ？！」",
-		   NULL, " Are you all right?!\"", Line_WaitForInput);
+	OutputLine(NULL, "「ぅ、うわ？！　み、魅音？！　大丈夫かッ？！」",
+		   NULL, "\"W-Wha?! M-Mion?! Are you all right?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
 
 	DrawBustshotWithFiltering( 2, "sprites/rena/sifuku/ren_14", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
-	OutputLine(NULL, "「大丈夫なんかじゃない！",
-		   NULL, "\"She's not all right!", Line_WaitForInput);
-	OutputLine(NULL, "　早く止血を…！」",
-		   NULL, " We need to hurry and stop the bleeding...!\"", Line_Normal);
+	OutputLine(NULL, "「大丈夫なんかじゃない！　早く止血を…！」",
+		   NULL, "\"She's not all right! We need to hurry and stop the bleeding...!\"", Line_Normal);
 	ClearMessage();
 
 
@@ -4242,12 +3852,8 @@ void main()
 	DisableWindow();
 
 	DrawScene( "bg/maebara/ma_g2", 400 );
-	OutputLine(NULL, "「か、母さん！！",
-		   NULL, "\"H-Hey!!", Line_WaitForInput);
-	OutputLine(NULL, "　手当てをして！",
-		   NULL, " She needs help!", Line_WaitForInput);
-	OutputLine(NULL, "　何かタオルを…！！」",
-		   NULL, " Grab a towel or something...!!\"", Line_Normal);
+	OutputLine(NULL, "「か、母さん！！　手当てをして！　何かタオルを…！！」",
+		   NULL, "\"H-Hey!! She needs help! Grab a towel or something...!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -4280,10 +3886,8 @@ void main()
 	ClearMessage();
 
 
-	OutputLine(NULL, "「い、一体何があったんだ…？！",
-		   NULL, "\"W-What on earth happened...?!", Line_WaitForInput);
-	OutputLine(NULL, "　レナちゃん、これは一体…！！」",
-		   NULL, " Rena-chan, what's going on here...?!\"", Line_WaitForInput);
+	OutputLine(NULL, "「い、一体何があったんだ…？！　レナちゃん、これは一体…！！」",
+		   NULL, "\"W-What on earth happened...?! Rena-chan, what's going on here...?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4384,15 +3988,13 @@ void main()
 
 	DrawBustshot( 1, "sprites/rena/sifuku_c/ren_13c", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, TRUE );
 	ShakeScreen( 0, 15, 100, 10, 10, );
-	OutputLine(NULL, "「「ぅ、",
-		   NULL, "\"\"Uu", Line_ContinueAfterTyping);
 	DisableWindow();
 
 	Wait( 300 );
 	DrawBustshot( 2, "sprites/rena/sifuku_c/ren_14c", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, FALSE );
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, TRUE );
-	OutputLine(NULL, "うわあああぁああああぁッ！！！」」",
-		   NULL, " Uwaaaaaaaah!!!\"\"", Line_Normal);
+	OutputLine(NULL, "「「ぅ、うわあああぁああああぁッ！！！」」",
+		   NULL, "\"\"Uu Uwaaaaaaaah!!!\"\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -4419,12 +4021,10 @@ void main()
 	DisableWindow();
 
 	DrawBustshotWithFiltering( 1, "sprites/keiiti/sifuku_b/kei_4b", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
-	OutputLine(NULL, "「レ、",
-		   NULL, "\"Re-", Line_ContinueAfterTyping);
 
 	Wait( 500 );
-	OutputLine(NULL, "レナぁああぁッ！！！」",
-		   NULL, " Renaaaaa!!!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "「レ、レナぁああぁッ！！！」",
+		   NULL, "\"Re- Renaaaaa!!!\"", Line_ContinueAfterTyping);
 
 	ShakeScreen( 4, 9, 20, 30, 1, );
 	OutputLineAll(NULL, "", Line_Normal);
@@ -4571,13 +4171,9 @@ void main()
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/rena/sifuku_c/ren_10c", 200, TRUE );
-	OutputLine(NULL, "「……ひ、",
-		   NULL, "\"......Ki", Line_ContinueAfterTyping);
 
 	SetSpeedOfMessage( TRUE, 128 );
 	//;wait 500
-	OutputLine(NULL, "…人を殺すってことはね、",
-		   NULL, " ...Killing someone,", Line_ContinueAfterTyping);
 	DisableWindow();
 
 	ShakeScreen( 2, 6,  100 , 4, 25, );
@@ -4585,13 +4181,11 @@ void main()
 
 	ChangeBustshot( 1, "sprites/rena/sifuku_c/ren_14c", 400, TRUE );
 	ShakeScreen( 2, 6,  100 , 4, 25, );
-	OutputLine(NULL, "自分も殺されることを覚悟するってことだよ！",
-		   NULL, " means that you're ready to be killed in return!", Line_ContinueAfterTyping);
 
 
 	Wait( 300 );
-	OutputLine(NULL, "　甘えるんじゃないッ！！」",
-		   NULL, " So don't take it lightly!!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "「……ひ、…人を殺すってことはね、自分も殺されることを覚悟するってことだよ！　甘えるんじゃないッ！！」",
+		   NULL, "\"......Ki ...Killing someone, means that you're ready to be killed in return! So don't take it lightly!!\"", Line_ContinueAfterTyping);
 
 	ShakeScreen( 4, 12, 20, 40, 1, );
 	SetSpeedOfMessage( FALSE, 0 );
@@ -4645,12 +4239,10 @@ void main()
 
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
 	DrawSceneWithMask( "bg/maebara/ma2", "effect/left", 0, 0, 300 );
-	OutputLine(NULL, "「…え、",
-		   NULL, "\"...Huh?", Line_ContinueAfterTyping);
 
 	Wait( 500 );
-	OutputLine(NULL, "……ぁッ、」",
-		   NULL, " ......Oh!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "「…え、……ぁッ、」",
+		   NULL, "\"...Huh? ......Oh!\"", Line_ContinueAfterTyping);
 
 	ShakeScreen( 4, 6, 20, 25, 2, );
 
@@ -4782,10 +4374,8 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 2, "sprites/rena/sifuku_c/ren_14c", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
-	OutputLine(NULL, "「いいよ！",
-		   NULL, "\"It's fine!", Line_WaitForInput);
-	OutputLine(NULL, "　それより早く！」",
-		   NULL, " Just hurry!\"", Line_WaitForInput);
+	OutputLine(NULL, "「いいよ！　それより早く！」",
+		   NULL, "\"It's fine! Just hurry!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -4807,20 +4397,16 @@ void main()
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/keiiti/sifuku/kei_nayamu", 200, TRUE );
-	OutputLine(NULL, "「ぅ、",
-		   NULL, "\"Urk.", Line_ContinueAfterTyping);
 	Wait( 500 );
-	OutputLine(NULL, "………そ、そうだな…。」",
-		   NULL, " ......R-Right...\"", Line_WaitForInput);
+	OutputLine(NULL, "「ぅ、………そ、そうだな…。」",
+		   NULL, "\"Urk. ......R-Right...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
 
 	ChangeBustshot( 2, "sprites/rena/sifuku_c/ren_14c", 200, TRUE );
-	OutputLine(NULL, "「それより、",
-		   NULL, "\"That's fine,", Line_WaitForInput);
-	OutputLine(NULL, "早く逃げる準備を！！」",
-		   NULL, " just hurry up and get ready to run!!\"", Line_Normal);
+	OutputLine(NULL, "「それより、早く逃げる準備を！！」",
+		   NULL, "\"That's fine, just hurry up and get ready to run!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -4845,10 +4431,8 @@ void main()
 	ChangeVolumeOfBGM( 1, 0, 2000 );
 	Wait( 2000 );
 
-	OutputLine(NULL, "「あ、…あぁ！！",
-		   NULL, "\"Oh... Yeah!!", Line_WaitForInput);
-	OutputLine(NULL, "　でも教えてくれ、一体何があったんだ？！」",
-		   NULL, " But tell me, what on earth happened?!\"", Line_WaitForInput);
+	OutputLine(NULL, "「あ、…あぁ！！　でも教えてくれ、一体何があったんだ？！」",
+		   NULL, "\"Oh... Yeah!! But tell me, what on earth happened?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -4865,10 +4449,8 @@ void main()
 	DrawScene( "bg/maebara/ma2", 400 );
 	PlayBGM( 1, "me/a5_14446", 70, 0 );
 
-	OutputLine(NULL, "「…圭一くんのところにも手紙が来たでしょ？",
-		   NULL, "\"...You got a letter from her too, right Keiichi-kun?", Line_WaitForInput);
-	OutputLine(NULL, "　魅ぃちゃんは私の家にも同じ手紙を持ってきた。」",
-		   NULL, " Mii-chan brought the same letter over to my house.\"", Line_Normal);
+	OutputLine(NULL, "「…圭一くんのところにも手紙が来たでしょ？　魅ぃちゃんは私の家にも同じ手紙を持ってきた。」",
+		   NULL, "\"...You got a letter from her too, right Keiichi-kun? Mii-chan brought the same letter over to my house.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -4891,28 +4473,16 @@ void main()
 	FadeBustshot( 41, FALSE, 0, 0, 0, 0, 400, TRUE );
 	PlaySE( 1, "wav/mc071", 25, 64 );
 	Wait( 500 );
-	OutputLine(NULL, "「そこで夜回りの自警団に見付かって撃たれたんだよ！",
-		   NULL, "\"That was when the neighborhood watch discovered her and shot her!", Line_WaitForInput);
-	OutputLine(NULL, "　魅ぃちゃんが何かしたわけじゃない。",
-		   NULL, " Mii-chan hadn't done anything to them.", Line_WaitForInput);
-	OutputLine(NULL, "　ただレナに手紙を持ってきただけなのに撃たれた…！」",
-		   NULL, " All she did was deliver a letter to me and they shot her...!\"", Line_Normal);
+	OutputLine(NULL, "「そこで夜回りの自警団に見付かって撃たれたんだよ！　魅ぃちゃんが何かしたわけじゃない。　ただレナに手紙を持ってきただけなのに撃たれた…！」",
+		   NULL, "\"That was when the neighborhood watch discovered her and shot her! Mii-chan hadn't done anything to them. All she did was deliver a letter to me and they shot her...!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	DrawScene( "black", 400 );
 	FadeFilm( 300, TRUE ); //end monocrome color
 	DrawScene( "bg/maebara/ma2", 400 );
-	OutputLine(NULL, "「…竜宮家は感染患者だから、",
-		   NULL, "\"...They said the Ryuugus were infected,", Line_WaitForInput);
-	OutputLine(NULL, "そこに接触するのは感染者の仲間だって勝手に決め付けられて、",
-		   NULL, " and anyone interacting with them was an ally of the infected, but they decided that all on their own,", Line_WaitForInput);
-	OutputLine(NULL, "一方的に撃たれた！！",
-		   NULL, " and they shot her for it!!", Line_WaitForInput);
-	OutputLine(NULL, "　魅ぃちゃんが彼らに対し何かしたわけじゃないのに、",
-		   NULL, " Mii-chan hadn't done anything to them,", Line_WaitForInput);
-	OutputLine(NULL, "構わずに撃たれたッ！！」",
-		   NULL, " but they didn't care and they shot her anyway!!\"", Line_Normal);
+	OutputLine(NULL, "「…竜宮家は感染患者だから、そこに接触するのは感染者の仲間だって勝手に決め付けられて、一方的に撃たれた！！　魅ぃちゃんが彼らに対し何かしたわけじゃないのに、構わずに撃たれたッ！！」",
+		   NULL, "\"...They said the Ryuugus were infected, and anyone interacting with them was an ally of the infected, but they decided that all on their own, and they shot her for it!! Mii-chan hadn't done anything to them, but they didn't care and they shot her anyway!!\"", Line_Normal);
 	ClearMessage();
 
 
@@ -4970,26 +4540,14 @@ void main()
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/rena/sifuku_c/ren_13c", 200, TRUE );
-	OutputLine(NULL, "「おじさま、今すぐここから逃げなければ死にます。",
-		   NULL, "\"Sir, if we don't flee this place right now, we'll die.", Line_WaitForInput);
-	OutputLine(NULL, "……私のお父さんはもう殺されました！！",
-		   NULL, " ......My own father was already murdered!!", Line_WaitForInput);
-	OutputLine(NULL, "　さっき！",
-		   NULL, " Just now!", Line_WaitForInput);
-	OutputLine(NULL, "　魅ぃちゃんを助けようとして、",
-		   NULL, " He tried to save Mii-chan", Line_WaitForInput);
-	OutputLine(NULL, "…あいつらは躊躇わなかった！」",
-		   NULL, " ...so they didn't even hesitate!\"", Line_Normal);
+	OutputLine(NULL, "「おじさま、今すぐここから逃げなければ死にます。……私のお父さんはもう殺されました！！　さっき！　魅ぃちゃんを助けようとして、…あいつらは躊躇わなかった！」",
+		   NULL, "\"Sir, if we don't flee this place right now, we'll die. ......My own father was already murdered!! Just now! He tried to save Mii-chan ...so they didn't even hesitate!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/rena/sifuku_c/ren_14c", 200, TRUE );
-	OutputLine(NULL, "「カラスか何かを追っ払うかのようにいとも簡単に撃ったッ！！",
-		   NULL, "\"They shot him as easily as if they were driving off crows!!", Line_WaitForInput);
-	OutputLine(NULL, "　信じられない…、",
-		   NULL, " I can't believe it...", Line_WaitForInput);
-	OutputLine(NULL, "信じられないッ！！！」",
-		   NULL, " I can't believe it!!!\"", Line_Normal);
+	OutputLine(NULL, "「カラスか何かを追っ払うかのようにいとも簡単に撃ったッ！！　信じられない…、信じられないッ！！！」",
+		   NULL, "\"They shot him as easily as if they were driving off crows!! I can't believe it... I can't believe it!!!\"", Line_Normal);
 	ClearMessage();
 
 
@@ -4997,12 +4555,8 @@ void main()
 	OutputLine(NULL, "　その叫びに、魅音が弱々しく口を開く…。",
 		   NULL, "Mion's mouth opened feebly after hearing Rena's screams...", Line_Normal);
 	ClearMessage();
-	OutputLine(NULL, "「…………ごめん……レナ…。",
-		   NULL, "\"........I'm sorry...... Rena...", Line_WaitForInput);
-	OutputLine(NULL, "……私がドジらなきゃ、…………。",
-		   NULL, " ......If I hadn't screwed up.........", Line_WaitForInput);
-	OutputLine(NULL, "……本当に……ごめん……。」",
-		   NULL, " ......I'm really...... sorry......\"", Line_Normal);
+	OutputLine(NULL, "「…………ごめん……レナ…。……私がドジらなきゃ、…………。……本当に……ごめん……。」",
+		   NULL, "\"........I'm sorry...... Rena... ......If I hadn't screwed up......... ......I'm really...... sorry......\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -5010,14 +4564,8 @@ void main()
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, FALSE );
 	DrawBustshot( 2, "sprites/rena/sifuku/re_okorua1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
 
-	OutputLine(NULL, "「…魅ぃちゃんは悪くないよ。",
-		   NULL, "\"...It's not your fault, Mii-chan.", Line_WaitForInput);
-	OutputLine(NULL, "そしてレナは誰も恨んでなんかいない。",
-		   NULL, " And I don't hate anyone anymore.", Line_WaitForInput);
-	OutputLine(NULL, "私が恨むべき人間は、全員然るべき清算をさせたもの。",
-		   NULL, " Those who deserved my hatred... have all paid the proper price.", Line_WaitForInput);
-	OutputLine(NULL, "もちろん、魅ぃちゃんを撃った人にもね。」",
-		   NULL, " So did the man who shot you, Mii-chan.\"", Line_WaitForInput);
+	OutputLine(NULL, "「…魅ぃちゃんは悪くないよ。そしてレナは誰も恨んでなんかいない。私が恨むべき人間は、全員然るべき清算をさせたもの。もちろん、魅ぃちゃんを撃った人にもね。」",
+		   NULL, "\"...It's not your fault, Mii-chan. And I don't hate anyone anymore. Those who deserved my hatred... have all paid the proper price. So did the man who shot you, Mii-chan.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -5051,10 +4599,8 @@ void main()
 	DrawScene( "bg/maebara/ma_g3", 400 );
 	DrawBustshot( 1, "sprites/rena/sifuku/ren_13", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 
-	OutputLine(NULL, "「………とにかく、…すぐに逃げる準備を……。",
-		   NULL, "\".........Anyway... you need to get ready to run right now......", Line_WaitForInput);
-	OutputLine(NULL, "もうすぐみんな押し寄せてくる…！」",
-		   NULL, " The others are already closing in...!\"", Line_Normal);
+	OutputLine(NULL, "「………とにかく、…すぐに逃げる準備を……。もうすぐみんな押し寄せてくる…！」",
+		   NULL, "\".........Anyway... you need to get ready to run right now...... The others are already closing in...!\"", Line_Normal);
 	ClearMessage();
 
 	OutputLine(NULL, "　なぜ、どうして、ここに村人が押し寄せてくるのか。",
@@ -5080,28 +4626,20 @@ void main()
 
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "「に、逃げるって、",
-		   NULL, "\"R-Run?", Line_WaitForInput);
-	OutputLine(NULL, "…どこへ…！」",
-		   NULL, " ...To where...?!\"", Line_Normal);
+	OutputLine(NULL, "「に、逃げるって、…どこへ…！」",
+		   NULL, "\"R-Run? ...To where...?!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/rena/sifuku/re_okorub1", 200, TRUE );
-	OutputLine(NULL, "「魅ぃちゃんの家の秘密の地下に、村人は誰も知らない隠しトンネルがあるんです！",
-		   NULL, "\"There's a hidden tunnel in Mii-chan's secret basement that none of the villagers know about!", Line_WaitForInput);
-	OutputLine(NULL, "　そこまで逃げ延びれば、",
-		   NULL, " So long as we can make it there,", Line_WaitForInput);
-	OutputLine(NULL, "何とかなるかもって…！」",
-		   NULL, " we should be able to pull through...!\"", Line_Normal);
+	OutputLine(NULL, "「魅ぃちゃんの家の秘密の地下に、村人は誰も知らない隠しトンネルがあるんです！　そこまで逃げ延びれば、何とかなるかもって…！」",
+		   NULL, "\"There's a hidden tunnel in Mii-chan's secret basement that none of the villagers know about! So long as we can make it there, we should be able to pull through...!\"", Line_Normal);
 	ClearMessage();
 
 
-	OutputLine(NULL, "「……げほ、",
-		   NULL, "\"......*Cough*", Line_ContinueAfterTyping);
 	ShakeScreen( 0, 6, 100, 3, 33, );
-	OutputLine(NULL, "…げほ…！」",
-		   NULL, " ...*Cough*...!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "「……げほ、…げほ…！」",
+		   NULL, "\"......*Cough* ...*Cough*...!\"", Line_ContinueAfterTyping);
 	ShakeScreen( 2, 9,  100 , 5, 20, );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
@@ -5127,10 +4665,8 @@ void main()
 
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "「……そ、…そうだな、",
-		   NULL, "\"......R-Right.", Line_WaitForInput);
-	OutputLine(NULL, "そうしよう！」",
-		   NULL, " Let's go!\"", Line_Normal);
+	OutputLine(NULL, "「……そ、…そうだな、そうしよう！」",
+		   NULL, "\"......R-Right. Let's go!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -5144,12 +4680,8 @@ void main()
 		   NULL, " ...But my mother couldn't make a quick decision.", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "「で、でも！",
-		   NULL, "\"B-But!", Line_WaitForInput);
-	OutputLine(NULL, "　逃げたらこの家はどうなるんですか！？",
-		   NULL, " If we run, what'll happen to our home?!", Line_WaitForInput);
-	OutputLine(NULL, "　何が起こるかわからないのよ？！」",
-		   NULL, " We don't know what's going to happen!\"", Line_Normal);
+	OutputLine(NULL, "「で、でも！　逃げたらこの家はどうなるんですか！？　何が起こるかわからないのよ？！」",
+		   NULL, "\"B-But! If we run, what'll happen to our home?! We don't know what's going to happen!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -5209,23 +4741,13 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 1, "sprites/rena/sifuku/ren_14", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
-	OutputLine(NULL, "「ダメだよ！",
-		   NULL, "\"No!", Line_WaitForInput);
-	OutputLine(NULL, "　魅ぃちゃんじゃなきゃ、秘密の地下はわからない！",
-		   NULL, " Without you, we won't know where the secret basement is!", Line_WaitForInput);
-	OutputLine(NULL, "　軽々しく責任を放棄しないで！！",
-		   NULL, " Don't abandon your responsibility so lightly!!", Line_WaitForInput);
-	OutputLine(NULL, "　私たちを導いてッ！！」",
-		   NULL, " Now take us there!!\"", Line_Normal);
+	OutputLine(NULL, "「ダメだよ！　魅ぃちゃんじゃなきゃ、秘密の地下はわからない！　軽々しく責任を放棄しないで！！　私たちを導いてッ！！」",
+		   NULL, "\"No! Without you, we won't know where the secret basement is! Don't abandon your responsibility so lightly!! Now take us there!!\"", Line_Normal);
 	ClearMessage();
 
 	//;ld l,mio_5,22
-	OutputLine(NULL, "「……はは、",
-		   NULL, "\"......Haha.........", Line_WaitForInput);
-	OutputLine(NULL, "………レナにかかっちゃ、",
-		   NULL, " With you around,", Line_WaitForInput);
-	OutputLine(NULL, "…おちおち死なせてももらえないや…。」",
-		   NULL, " I can't die an easy death at all...\"", Line_WaitForInput);
+	OutputLine(NULL, "「……はは、………レナにかかっちゃ、…おちおち死なせてももらえないや…。」",
+		   NULL, "\"......Haha......... With you around, I can't die an easy death at all...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -5243,10 +4765,8 @@ void main()
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/rena/sifuku/re_komarua2", 200, TRUE );
-	OutputLine(NULL, "「…ねぇ、魅ぃちゃん。",
-		   NULL, "\"...Hey, Mii-chan.", Line_WaitForInput);
-	OutputLine(NULL, "………問答してる時間はないから素直に教えて。」",
-		   NULL, " .........We don't have time to debate this, so give me an answer.\"", Line_WaitForInput);
+	OutputLine(NULL, "「…ねぇ、魅ぃちゃん。………問答してる時間はないから素直に教えて。」",
+		   NULL, "\"...Hey, Mii-chan. .........We don't have time to debate this, so give me an answer.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -5278,16 +4798,8 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 3, "sprites/keiiti/sifuku/kei_ikari2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
-	OutputLine(NULL, "「……そ、そうだ！",
-		   NULL, "\"......Y-Yeah!", Line_WaitForInput);
-	OutputLine(NULL, "　それは俺も思ってた！！",
-		   NULL, " I wondered that myself!!", Line_WaitForInput);
-	OutputLine(NULL, "　沙都子はどうしたんだよ魅音！",
-		   NULL, " What's going on with Satoko, Mion?!", Line_WaitForInput);
-	OutputLine(NULL, "　状況的には俺やレナよりもずっとまずいんだろ？！",
-		   NULL, " She's in a worse position than me and Rena, right?!", Line_WaitForInput);
-	OutputLine(NULL, "　沙都子だけ置いてなんかいけないぞ！！」",
-		   NULL, " We can't just leave Satoko behind!!\"", Line_Normal);
+	OutputLine(NULL, "「……そ、そうだ！　それは俺も思ってた！！　沙都子はどうしたんだよ魅音！　状況的には俺やレナよりもずっとまずいんだろ？！　沙都子だけ置いてなんかいけないぞ！！」",
+		   NULL, "\"......Y-Yeah! I wondered that myself!! What's going on with Satoko, Mion?! She's in a worse position than me and Rena, right?! We can't just leave Satoko behind!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -5311,12 +4823,8 @@ void main()
 	ChangeBustshot( 2, "sprites/rena/sifuku/ren_14", 200, TRUE );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 
-	OutputLine(NULL, "「死んだなら死んだってちゃんと言って…！！",
-		   NULL, "\"If she's dead, then just tell us...!!", Line_WaitForInput);
-	OutputLine(NULL, "　じゃなきゃ私は、",
-		   NULL, " If you don't,", Line_WaitForInput);
-	OutputLine(NULL, "沙都子ちゃんは生きているって信じるッ！！」",
-		   NULL, " then we're going to believe she's still alive!!\"", Line_Normal);
+	OutputLine(NULL, "「死んだなら死んだってちゃんと言って…！！　じゃなきゃ私は、沙都子ちゃんは生きているって信じるッ！！」",
+		   NULL, "\"If she's dead, then just tell us...!! If you don't, then we're going to believe she's still alive!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -5353,12 +4861,8 @@ void main()
 	DrawScene( "black", 400 );
 	DrawScene( "bg/maebara/ma_g3", 400 );
 	DrawBustshot( 1, "sprites/mion/sifuku/me_yowakia2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
-	OutputLine(NULL, "「……さ、………沙都子は、",
-		   NULL, "\"......Sa .........Satoko's", Line_ContinueAfterTyping);
 
 	Wait( 300 );
-	OutputLine(NULL, "……………。",
-		   NULL, " ............", Line_WaitForInput);
 
 	ChangeVolumeOfBGM( 0, 0, 800 );
 	ChangeVolumeOfBGM( 1, 0, 800 );
@@ -5366,12 +4870,8 @@ void main()
 	Wait( 800 );
 
 	//;ld r,mio_1,80
-	OutputLine(NULL, "……さっき、暴徒に連れ去られたらしい…。",
-		   NULL, " ......been taken away by those rioters from before...", Line_WaitForInput);
-	OutputLine(NULL, "話では鬼ヶ淵に引き連れてったって…。",
-		   NULL, " They said they were dragging her to Onigafuchi...", Line_WaitForInput);
-	OutputLine(NULL, "伝承の生贄の儀に沿って、三日かけて沈めて殺す気らしい…。」",
-		   NULL, " Apparently they're going spend three days submerging her, according to the rituals passed down in the village...\"", Line_Normal);
+	OutputLine(NULL, "「……さ、………沙都子は、……………。……さっき、暴徒に連れ去られたらしい…。話では鬼ヶ淵に引き連れてったって…。伝承の生贄の儀に沿って、三日かけて沈めて殺す気らしい…。」",
+		   NULL, "\"......Sa .........Satoko's ............ ......been taken away by those rioters from before... They said they were dragging her to Onigafuchi... Apparently they're going spend three days submerging her, according to the rituals passed down in the village...\"", Line_Normal);
 	ClearMessage();
 
 	SetSpeedOfMessage( TRUE, 128 );
@@ -5422,12 +4922,8 @@ void main()
 	DrawBustshot( 2, "sprites/rena/sifuku/ren_14", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, FALSE );
 	ChangeBustshot( 1, "sprites/mion/sifuku/me_yowakia1", 200, FALSE );
 	FadeBustshot( 41, FALSE, 0, 0, 0, 0, 200, TRUE );
-	OutputLine(NULL, "「……どうしようもない…！",
-		   NULL, "\"...I couldn't do anything...!", Line_WaitForInput);
-	OutputLine(NULL, "　どうしようもないんだよ…！！",
-		   NULL, " I couldn't do anything about it...!!", Line_WaitForInput);
-	OutputLine(NULL, "　ううぅぅ！」",
-		   NULL, " Nnnh!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "「……どうしようもない…！　どうしようもないんだよ…！！　ううぅぅ！」",
+		   NULL, "\"...I couldn't do anything...! I couldn't do anything about it...!! Nnnh!\"", Line_ContinueAfterTyping);
 
 	ShakeScreen( 4, 12, 20, 40, 1, );
 	OutputLineAll(NULL, "", Line_Normal);
@@ -5439,28 +4935,18 @@ void main()
 	DrawScene( "black", 400 );
 	DrawScene( "bg/jinja/jy2", 400 );
 	//;ld r,mio_11,80
-	OutputLine(NULL, "「町会役員たちが音頭を取って、",
-		   NULL, "\"The council's officials took the lead", Line_WaitForInput);
-	OutputLine(NULL, "神社部と青年部、防犯部がさらに村の有志も加えて１００人以上に膨れ上がってるらしい！！",
-		   NULL, " and after they added the Shrine group, the youth group, the neighbourhood watch, and other volunteers from the village, their numbers swelled past a hundred people!!", Line_WaitForInput);
-	OutputLine(NULL, "　防犯部には猟友会も合流してて少なくとも２０丁以上のショットガン、ライフルで武装してる！」",
-		   NULL, " The watch is close with the hunting club too, so they're armed with at least 20 shotguns and rifles!\"", Line_Normal);
+	OutputLine(NULL, "「町会役員たちが音頭を取って、神社部と青年部、防犯部がさらに村の有志も加えて１００人以上に膨れ上がってるらしい！！　防犯部には猟友会も合流してて少なくとも２０丁以上のショットガン、ライフルで武装してる！」",
+		   NULL, "\"The council's officials took the lead and after they added the Shrine group, the youth group, the neighbourhood watch, and other volunteers from the village, their numbers swelled past a hundred people!! The watch is close with the hunting club too, so they're armed with at least 20 shotguns and rifles!\"", Line_Normal);
 	ClearMessage();
 
 	//;ld r,mio_9b,80
-	OutputLine(NULL, "「みんなオヤシロさまの名を連呼しながら狂気に取り憑かれてる暴徒なんだよ！！",
-		   NULL, "\"Everyone keeps spouting Oyashiro-sama, Oyashiro-sama like they've all been possessed!!", Line_WaitForInput);
-	OutputLine(NULL, "　連中は容赦ない！",
-		   NULL, " There's no mercy left in them!", Line_WaitForInput);
-	OutputLine(NULL, "　沙都子を庇おうとした村人を躊躇なく射殺してる！！」",
-		   NULL, " If I tried to protect Satoko, the villagers would've shot me to death without hesitation!!\"", Line_Normal);
+	OutputLine(NULL, "「みんなオヤシロさまの名を連呼しながら狂気に取り憑かれてる暴徒なんだよ！！　連中は容赦ない！　沙都子を庇おうとした村人を躊躇なく射殺してる！！」",
+		   NULL, "\"Everyone keeps spouting Oyashiro-sama, Oyashiro-sama like they've all been possessed!! There's no mercy left in them! If I tried to protect Satoko, the villagers would've shot me to death without hesitation!!\"", Line_Normal);
 	ClearMessage();
 
 	//;ld c,ren_12,80
-	OutputLine(NULL, "「魅ぃちゃんや、",
-		   NULL, "\"Like they did to you", Line_WaitForInput);
-	OutputLine(NULL, "私のお父さんのように…？」",
-		   NULL, " and to my father...?\"", Line_WaitForInput);
+	OutputLine(NULL, "「魅ぃちゃんや、私のお父さんのように…？」",
+		   NULL, "\"Like they did to you and to my father...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -5486,24 +4972,14 @@ void main()
 	ShakeScreen( 4, 9, 20, 30, 1, );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	OutputLine(NULL, "　みんなつい３日前までは普通だった、冷静だったッ！！",
-		   NULL, " Everyone was normal just three days ago! They were reasonable then!!", Line_WaitForInput);
-	OutputLine(NULL, "　この７２時間でみるみるおかしくなっていった！",
-		   NULL, " But they've gone mad in just the past 72 hours!", Line_WaitForInput);
-	OutputLine(NULL, "　みんな目が血走ったようになって、冷静さを失っていった！」",
-		   NULL, " Their eyes are bloodshot, and they've lost all reason!\"", Line_Normal);
+	OutputLine(NULL, "　みんなつい３日前までは普通だった、冷静だったッ！！　この７２時間でみるみるおかしくなっていった！　みんな目が血走ったようになって、冷静さを失っていった！」",
+		   NULL, " Everyone was normal just three days ago! They were reasonable then!! But they've gone mad in just the past 72 hours! Their eyes are bloodshot, and they've lost all reason!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 400 );
 	DrawScene( "bg/mura/hi8", 400 );
-	OutputLine(NULL, "「自衛隊がいなくなったからおかしくなったんじゃない！",
-		   NULL, "\"They didn't go crazy just because the SDF left!", Line_WaitForInput);
-	OutputLine(NULL, "　その前からもうおかしかったんだよ！！",
-		   NULL, " They were crazy before then!!", Line_WaitForInput);
-	OutputLine(NULL, "　今や怖いのは殺人ウィルスなんかじゃない、",
-		   NULL, " The killer virus isn't what's scary now,", Line_WaitForInput);
-	OutputLine(NULL, "村のみんななんだ…ッ！！」",
-		   NULL, " it's everyone in the village...!!\"", Line_Normal);
+	OutputLine(NULL, "「自衛隊がいなくなったからおかしくなったんじゃない！　その前からもうおかしかったんだよ！！　今や怖いのは殺人ウィルスなんかじゃない、村のみんななんだ…ッ！！」",
+		   NULL, "\"They didn't go crazy just because the SDF left! They were crazy before then!! The killer virus isn't what's scary now, it's everyone in the village...!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -5553,12 +5029,10 @@ void main()
 	PlaySE( 0, "a5_10317", 50, 64 );
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 0, TRUE );
 	ShakeScreen( 0, 9, 100, 6, 16, );
-	OutputLine(NULL, "「………落ち着け、",
-		   NULL, "\".........Calm down,", Line_ContinueAfterTyping);
 
 	Wait( 500 );
-	OutputLine(NULL, "魅音……！」",
-		   NULL, " Mion...!\"", Line_WaitForInput);
+	OutputLine(NULL, "「………落ち着け、魅音……！」",
+		   NULL, "\".........Calm down, Mion...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -5576,14 +5050,8 @@ void main()
 	DrawFilm( 2, 0xcc, 0xcc, 0xcc, 256, 0, 300, TRUE ); //monochrome mode
 	DrawBustshot( 1, "sprites/mion/sifuku/me_ikaria1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
 	DrawScene( "bg/sonozaki/ryoutei1", 400 );
-	OutputLine(NULL, "「…………ありがとうな。",
-		   NULL, "\"...............Thank you.", Line_WaitForInput);
-	OutputLine(NULL, "…俺やレナが事態を把握できずのんびりしている間にも、",
-		   NULL, " ...While Rena and I were taking it easy without realizing what was going on,", Line_WaitForInput);
-	OutputLine(NULL, "魅音は村の裏側で、妙なデマを押さえるために色々と苦労していてくれたんだよな…。",
-		   NULL, " you were working hard behind the scenes to try and stop the rumors...", Line_WaitForInput);
-	OutputLine(NULL, "……だから、きっと今日までこの村は狂気に飲み込まれなかった…。」",
-		   NULL, " ......I'm sure that's why the village wasn't swallowed by madness until today...\"", Line_Normal);
+	OutputLine(NULL, "「…………ありがとうな。…俺やレナが事態を把握できずのんびりしている間にも、魅音は村の裏側で、妙なデマを押さえるために色々と苦労していてくれたんだよな…。……だから、きっと今日までこの村は狂気に飲み込まれなかった…。」",
+		   NULL, "\"...............Thank you. ...While Rena and I were taking it easy without realizing what was going on, you were working hard behind the scenes to try and stop the rumors... ......I'm sure that's why the village wasn't swallowed by madness until today...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -5591,10 +5059,8 @@ void main()
 	FadeFilm( 300, TRUE ); //end monocrome color
 	DrawBustshot( 1, "sprites/keiiti/sifuku/kei_def2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
 	DrawScene( "bg/maebara/ma_g3", 400 );
-	OutputLine(NULL, "「……魅音の頑張りがなかったら、",
-		   NULL, "\"......If it wasn't for your hard work,", Line_WaitForInput);
-	OutputLine(NULL, "……いずれ迎えていたかもしれない惨劇の今日は、…とっくに俺たちを飲み込んでいた。」",
-		   NULL, " the inevitable tragedy we faced today... would've consumed us long ago.\"", Line_Normal);
+	OutputLine(NULL, "「……魅音の頑張りがなかったら、……いずれ迎えていたかもしれない惨劇の今日は、…とっくに俺たちを飲み込んでいた。」",
+		   NULL, "\"......If it wasn't for your hard work, the inevitable tragedy we faced today... would've consumed us long ago.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -5603,14 +5069,10 @@ void main()
 		   NULL, "\"............So thank you, Mion.\"", Line_Normal);
 	ClearMessage();
 	//;ld c,mio_12,22
-	OutputLine(NULL, "「…………………ぁ",
-		   NULL, "\"........................Ah", Line_ContinueAfterTyping);
 	Wait( 500 );
-	OutputLine(NULL, "………ぅ、",
-		   NULL, " ............Nh", Line_ContinueAfterTyping);
 	Wait( 500 );
-	OutputLine(NULL, "……………ぅああ…ああぁああああぁあぁあぁ…。」",
-		   NULL, " ..................Nh, aah... aaahaaaaaaahhaahaah...\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "「…………………ぁ………ぅ、……………ぅああ…ああぁああああぁあぁあぁ…。」",
+		   NULL, "\"........................Ah ............Nh ..................Nh, aah... aaahaaaaaaahhaahaah...\"", Line_ContinueAfterTyping);
 	ShakeScreen( 4, 12, 20, 50, 1, );
 	OutputLineAll(NULL, "", Line_Normal);
 
@@ -5650,19 +5112,15 @@ void main()
 	DrawScene( "bg/maebara/ma_g3", 400 );
 
 	DrawBustshot( 1, "sprites/keiiti/sifuku/kei_komaru", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
-	OutputLine(NULL, "「…レナ。",
-		   NULL, "\"...Rena.", Line_WaitForInput);
-	OutputLine(NULL, "魅音を責めたい気持ちもあるだろうが…、」",
-		   NULL, " I know you might want to blame Mion, but...\"", Line_WaitForInput);
+	OutputLine(NULL, "「…レナ。魅音を責めたい気持ちもあるだろうが…、」",
+		   NULL, "\"...Rena. I know you might want to blame Mion, but...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
 
 	DrawBustshot( 2, "sprites/rena/sifuku/re_defb1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
-	OutputLine(NULL, "「責める気なんかないよ。",
-		   NULL, "\"I don't plan on blaming her at all.", Line_WaitForInput);
-	OutputLine(NULL, "それどころか朗報だと思ってる。」",
-		   NULL, " That's actually good to hear.\"", Line_Normal);
+	OutputLine(NULL, "「責める気なんかないよ。それどころか朗報だと思ってる。」",
+		   NULL, "\"I don't plan on blaming her at all. That's actually good to hear.\"", Line_Normal);
 	ClearMessage();
 
 	//;ld l,kei_1,80
@@ -5696,32 +5154,24 @@ void main()
 
 
 
-	OutputLine(NULL, "「あぁ、そうだな。",
-		   NULL, "\"Yeah, that's true.", Line_WaitForInput);
-	OutputLine(NULL, "間違いなく、こいつぁ朗報だぜ。」",
-		   NULL, " This is good news, without a doubt.\"", Line_WaitForInput);
+	OutputLine(NULL, "「あぁ、そうだな。間違いなく、こいつぁ朗報だぜ。」",
+		   NULL, "\"Yeah, that's true. This is good news, without a doubt.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
 
 	ChangeBustshot( 2, "sprites/rena/sifuku_c/ren_8c", 200, TRUE );
-	OutputLine(NULL, "「うん、朗報だね。",
-		   NULL, "\"Yeah, it's great news.", Line_WaitForInput);
-	OutputLine(NULL, "だって、沙都子ちゃんは生きてる。」",
-		   NULL, " I mean, Satoko-chan's alive.\"", Line_Normal);
+	OutputLine(NULL, "「うん、朗報だね。だって、沙都子ちゃんは生きてる。」",
+		   NULL, "\"Yeah, it's great news. I mean, Satoko-chan's alive.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/keiiti/sifuku_b/kei_3b", 200, TRUE );
-	OutputLine(NULL, "「しかも、",
-		   NULL, "\"On top of that,", Line_WaitForInput);
-	OutputLine(NULL, "７２時間は生かしておいてくれるというオマケ付きだ。",
-		   NULL, " we know they'll keep her alive for another 72 hours.", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/keiiti/sifuku_b/kei_9b", 200, TRUE );
-	OutputLine(NULL, "確かにこいつぁ朗報だぜ。」",
-		   NULL, " That's fantastic to hear!\"", Line_Normal);
+	OutputLine(NULL, "「しかも、７２時間は生かしておいてくれるというオマケ付きだ。確かにこいつぁ朗報だぜ。」",
+		   NULL, "\"On top of that, we know they'll keep her alive for another 72 hours. That's fantastic to hear!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -5754,19 +5204,15 @@ void main()
 	DisableWindow();
 
 	DrawScene( "bg/maebara/ma_g3", 400 );
-	OutputLine(NULL, "「……け、圭一、まさか、",
-		   NULL, "\"...K-Keiichi, don't tell me", Line_WaitForInput);
-	OutputLine(NULL, "……沙都子ちゃんを助け出すつもりなのか…。」",
-		   NULL, " ......you're planning on rescuing Satoko-chan...?\"", Line_Normal);
+	OutputLine(NULL, "「……け、圭一、まさか、……沙都子ちゃんを助け出すつもりなのか…。」",
+		   NULL, "\"...K-Keiichi, don't tell me ......you're planning on rescuing Satoko-chan...?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 
 	DrawBustshot( 1, "sprites/keiiti/sifuku/kei_def1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
-	OutputLine(NULL, "「父さんは、母さんと一緒に魅音を連れて裏口から逃げて。",
-		   NULL, "\"Dad, take Mom and Mion and escape through the secret exit.", Line_WaitForInput);
-	OutputLine(NULL, "あとは俺とレナでやる。」",
-		   NULL, " Rena and I will handle the rest.\"", Line_WaitForInput);
+	OutputLine(NULL, "「父さんは、母さんと一緒に魅音を連れて裏口から逃げて。あとは俺とレナでやる。」",
+		   NULL, "\"Dad, take Mom and Mion and escape through the secret exit. Rena and I will handle the rest.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	OutputLine(NULL, "「け、…圭一…！」",
@@ -5775,29 +5221,19 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 2, "sprites/rena/sifuku/re_komarua2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
-	OutputLine(NULL, "「おばさま、ごめんなさい。",
-		   NULL, "\"I'm sorry, ma'am.", Line_WaitForInput);
-	OutputLine(NULL, "魅ぃちゃんをよろしくお願いします。」",
-		   NULL, " Please take care of Mii-chan.\"", Line_Normal);
+	OutputLine(NULL, "「おばさま、ごめんなさい。魅ぃちゃんをよろしくお願いします。」",
+		   NULL, "\"I'm sorry, ma'am. Please take care of Mii-chan.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	ChangeBustshot( 2, "sprites/rena/sifuku/re_waraib1", 200, TRUE );
-	OutputLine(NULL, "「そして目を離さないでください。",
-		   NULL, "\"Also, don't take your eyes off of her.", Line_WaitForInput);
-	OutputLine(NULL, "魅ぃちゃんはおいしいところだけを持っていこうとするズルっ子だから、",
-		   NULL, " Mii-chan doesn't play fair and likes to steal the spotlight.", Line_WaitForInput);
-	OutputLine(NULL, "のこのこと私たちを追い掛けて来るかもしれない。",
-		   NULL, " So she might try sneaking off after us.", Line_WaitForInput);
-	OutputLine(NULL, "大怪我してて辛いにもかかわらず。」",
-		   NULL, " Even though she's badly wounded and in a lot of pain.\"", Line_Normal);
+	OutputLine(NULL, "「そして目を離さないでください。魅ぃちゃんはおいしいところだけを持っていこうとするズルっ子だから、のこのこと私たちを追い掛けて来るかもしれない。大怪我してて辛いにもかかわらず。」",
+		   NULL, "\"Also, don't take your eyes off of her. Mii-chan doesn't play fair and likes to steal the spotlight. So she might try sneaking off after us. Even though she's badly wounded and in a lot of pain.\"", Line_Normal);
 	ClearMessage();
 
 	//;ld r,mio_5b,46
-	OutputLine(NULL, "「……………ちぇ、",
-		   NULL, "\"............Tsk.", Line_WaitForInput);
-	OutputLine(NULL, "……人を足手まとい扱いにしてさ……。」",
-		   NULL, " ......Treating me like I'm dead weight......\"", Line_Normal);
+	OutputLine(NULL, "「……………ちぇ、……人を足手まとい扱いにしてさ……。」",
+		   NULL, "\"............Tsk. ......Treating me like I'm dead weight......\"", Line_Normal);
 	ClearMessage();
 
 	//;ld l,kei_5,80
@@ -5835,44 +5271,30 @@ void main()
 	ClearMessage();
 
 
-	OutputLine(NULL, "「け、",
-		   NULL, "\"Ke-", Line_ContinueAfterTyping);
 
 	Wait( 500 );
-	OutputLine(NULL, "………圭一………！！」",
-		   NULL, " .........Keiichi.........!!\"", Line_WaitForInput);
+	OutputLine(NULL, "「け、………圭一………！！」",
+		   NULL, "\"Ke- .........Keiichi.........!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
 
 	DrawBustshot( 3, "sprites/keiiti/sifuku/kei_warai", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
-	OutputLine(NULL, "「みっともない顔すんなよ母さん。",
-		   NULL, "\"Don't give me such a sad look, Mom.", Line_WaitForInput);
-	OutputLine(NULL, "こういう時は火打石で見送るもんだぜ…！",
-		   NULL, " At times like these, you gotta send us off with a smile...!", Line_WaitForInput);
-	OutputLine(NULL, "　父さん、後で園崎家で会おうぜ…！」",
-		   NULL, " Dad, I'll meet up with you later at the Sonozaki house...!\"", Line_Normal);
+	OutputLine(NULL, "「みっともない顔すんなよ母さん。こういう時は火打石で見送るもんだぜ…！　父さん、後で園崎家で会おうぜ…！」",
+		   NULL, "\"Don't give me such a sad look, Mom. At times like these, you gotta send us off with a smile...! Dad, I'll meet up with you later at the Sonozaki house...!\"", Line_Normal);
 	ClearMessage();
 
-	OutputLine(NULL, "「け、",
-		   NULL, "\"Ke-", Line_ContinueAfterTyping);
 
 	Wait( 500 );
-	OutputLine(NULL, "圭一たちも一緒に逃げるんだ…！",
-		   NULL, " Keiichi, you two should come with us...!", Line_WaitForInput);
-	OutputLine(NULL, "　たった二人で立ち向かったところで…、」",
-		   NULL, " You can't face them alone...\"", Line_WaitForInput);
+	OutputLine(NULL, "「け、圭一たちも一緒に逃げるんだ…！　たった二人で立ち向かったところで…、」",
+		   NULL, "\"Ke- Keiichi, you two should come with us...! You can't face them alone...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
 
 	DrawBustshot( 40, "sprites/rena/sifuku/re_defa1", -20, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 41, 400, TRUE );
-	OutputLine(NULL, "「おじさま、お気持ちはうれしいけど、",
-		   NULL, "\"Sir, I appreciate the sentiment,", Line_WaitForInput);
-	OutputLine(NULL, "…もう手遅れなんです。",
-		   NULL, " but it's already too late.", Line_WaitForInput);
-	OutputLine(NULL, "ほら。」",
-		   NULL, " See?\"", Line_Normal);
+	OutputLine(NULL, "「おじさま、お気持ちはうれしいけど、…もう手遅れなんです。ほら。」",
+		   NULL, "\"Sir, I appreciate the sentiment, but it's already too late. See?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -5962,20 +5384,16 @@ void main()
 	DrawBustshot( 2, "sprites/rena/sifuku/re_waraib1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
 	PlayBGM( 0, "bgm1/zero", 85, 0 );
 
-	OutputLine(NULL, "「行こっか。",
-		   NULL, "\"Let's go,", Line_WaitForInput);
-	OutputLine(NULL, "圭一くん…！」",
-		   NULL, " Keiichi-kun...!\"", Line_WaitForInput);
+	OutputLine(NULL, "「行こっか。圭一くん…！」",
+		   NULL, "\"Let's go, Keiichi-kun...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
 
 	DrawBustshot( 3, "sprites/keiiti/sifuku/kei_warai", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
 
-	OutputLine(NULL, "「そうだなぁ、",
-		   NULL, "\"Right.", Line_WaitForInput);
-	OutputLine(NULL, "そんじゃちょっくら行ってくるわ！」",
-		   NULL, " Let's go take care of this real quick!\"", Line_WaitForInput);
+	OutputLine(NULL, "「そうだなぁ、そんじゃちょっくら行ってくるわ！」",
+		   NULL, "\"Right. Let's go take care of this real quick!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -6049,31 +5467,21 @@ void main()
 	ShakeScreen( 0, 6, 100, 3, 33, );
 	Wait( 500 );
 	ChangeBustshot( 1, "sprites/keiiti/sifuku_b/kei_2b", 200, TRUE );
-	OutputLine(NULL, "「ひゅう…。",
-		   NULL, "\"Wow...", Line_WaitForInput);
-	OutputLine(NULL, "２０人ちょいかぁ。",
-		   NULL, " Just over 20, huh?", Line_WaitForInput);
-	OutputLine(NULL, "…連中、勝てると思ってるかねぇ？」",
-		   NULL, " ...You think they think they can win?\"", Line_WaitForInput);
+	OutputLine(NULL, "「ひゅう…。２０人ちょいかぁ。…連中、勝てると思ってるかねぇ？」",
+		   NULL, "\"Wow... Just over 20, huh? ...You think they think they can win?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
 
 	ChangeBustshot( 2, "sprites/rena/sifuku/re_waraib1", 200, TRUE );
-	OutputLine(NULL, "「思ってるんじゃないかな。",
-		   NULL, "\"I'm betting they do.", Line_WaitForInput);
-	OutputLine(NULL, "まぁ、素人なら２０人も群れればそう思うだろうね。",
-		   NULL, " Well, amateurs would believe that when there's 20 of them together.", Line_WaitForInput);
-	OutputLine(NULL, "あはは。」",
-		   NULL, " Ahaha.\"", Line_Normal);
+	OutputLine(NULL, "「思ってるんじゃないかな。まぁ、素人なら２０人も群れればそう思うだろうね。あはは。」",
+		   NULL, "\"I'm betting they do. Well, amateurs would believe that when there's 20 of them together. Ahaha.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/keiiti/sifuku_b/kei_1b", 200, TRUE );
-	OutputLine(NULL, "「……馬鹿な連中だぜ。",
-		   NULL, "\"...What a foolish bunch they are.", Line_WaitForInput);
-	OutputLine(NULL, "…穏便に済ましてりゃ、もう少し永らえただろうによ。」",
-		   NULL, " ...If they tried to settle things peacefully, they might have held out a little longer.\"", Line_Normal);
+	OutputLine(NULL, "「……馬鹿な連中だぜ。…穏便に済ましてりゃ、もう少し永らえただろうによ。」",
+		   NULL, "\"...What a foolish bunch they are. ...If they tried to settle things peacefully, they might have held out a little longer.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -6085,12 +5493,8 @@ void main()
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/keiiti/sifuku_b/kei_4b", 200, TRUE );
-	OutputLine(NULL, "「あぁ、犯した。",
-		   NULL, "\"Yeah, they did.", Line_WaitForInput);
-	OutputLine(NULL, "魅音を撃った！",
-		   NULL, " They attacked Mion!", Line_WaitForInput);
-	OutputLine(NULL, "　沙都子をさらった！」",
-		   NULL, " They kidnapped Satoko!\"", Line_Normal);
+	OutputLine(NULL, "「あぁ、犯した。魅音を撃った！　沙都子をさらった！」",
+		   NULL, "\"Yeah, they did. They attacked Mion! They kidnapped Satoko!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -6170,17 +5574,13 @@ void main()
 
 	DrawScene( "black", 400 );
 	//;ld r,ren_1,22
-	OutputLine(NULL, "「何でだろうね。",
-		   NULL, "\"I wonder why?", Line_WaitForInput);
-	OutputLine(NULL, "私たち、これだけの人数を相手にするのに、全然怖くないね。」",
-		   NULL, " Even though we're facing so many people, I'm not afraid at all.\"", Line_WaitForInput);
+	OutputLine(NULL, "「何でだろうね。私たち、これだけの人数を相手にするのに、全然怖くないね。」",
+		   NULL, "\"I wonder why? Even though we're facing so many people, I'm not afraid at all.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	//;ld l,kei_1,22
-	OutputLine(NULL, "「それは確かに不思議だな。",
-		   NULL, "\"That much is strange.", Line_WaitForInput);
-	OutputLine(NULL, "どうしてだろうな。」",
-		   NULL, " I wonder why too.\"", Line_Normal);
+	OutputLine(NULL, "「それは確かに不思議だな。どうしてだろうな。」",
+		   NULL, "\"That much is strange. I wonder why too.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -6205,24 +5605,14 @@ void main()
 	FadeFilm( 300, TRUE ); //end monocrome color
 	DrawScene( "bg/maebara/ma2", 400 );
 	DrawBustshot( 1, "sprites/rena/sifuku/re_waraia1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
-	OutputLine(NULL, "「ねぇ、圭一くん。",
-		   NULL, "\"Hey, Keiichi-kun.", Line_WaitForInput);
-	OutputLine(NULL, "さっき魅ぃちゃんの話を聞いてさ。",
-		   NULL, " When Mii-chan was talking to us earlier?", Line_WaitForInput);
-	OutputLine(NULL, "圭一くんも朗報だって言ってくれたけどさ。",
-		   NULL, " When you said you thought that was good news too,", Line_WaitForInput);
-	OutputLine(NULL, "私は他の意味でも朗報だ、って思ったよ。」",
-		   NULL, " I thought it was good news for a different reason.\"", Line_Normal);
+	OutputLine(NULL, "「ねぇ、圭一くん。さっき魅ぃちゃんの話を聞いてさ。圭一くんも朗報だって言ってくれたけどさ。私は他の意味でも朗報だ、って思ったよ。」",
+		   NULL, "\"Hey, Keiichi-kun. When Mii-chan was talking to us earlier? When you said you thought that was good news too, I thought it was good news for a different reason.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	DrawBustshot( 2, "sprites/keiiti/sifuku/kei_def1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
-	OutputLine(NULL, "「何だよ、他の意味って。",
-		   NULL, "\"What? What other reason?", Line_WaitForInput);
-	OutputLine(NULL, "面白そうだから聞かせてくれ。",
-		   NULL, " It sounds fun, so tell me.", Line_WaitForInput);
-	OutputLine(NULL, "…いや、あるいは俺、もう気付いてるか？」",
-		   NULL, " ...Or wait, have I already figured it out?\"", Line_WaitForInput);
+	OutputLine(NULL, "「何だよ、他の意味って。面白そうだから聞かせてくれ。…いや、あるいは俺、もう気付いてるか？」",
+		   NULL, "\"What? What other reason? It sounds fun, so tell me. ...Or wait, have I already figured it out?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -6237,34 +5627,24 @@ void main()
 
 	DrawScene( "bg/mura/moon", 400 );
 	//;ld r,ren_1b,22
-	OutputLine(NULL, "「圭一くんの場合は、気付いてるってより、",
-		   NULL, "\"It's not so much that you've figured it out,", Line_WaitForInput);
-	OutputLine(NULL, "別にそんなのはまったくどうでもいいって感じかな。」",
-		   NULL, " as it just doesn't matter to you at all, really.\"", Line_WaitForInput);
+	OutputLine(NULL, "「圭一くんの場合は、気付いてるってより、別にそんなのはまったくどうでもいいって感じかな。」",
+		   NULL, "\"It's not so much that you've figured it out, as it just doesn't matter to you at all, really.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 	//;ld l,kei_2,22
-	OutputLine(NULL, "「へへへ、教えてくれよ。",
-		   NULL, "\"Heh heh heh, then tell me.", Line_WaitForInput);
-	OutputLine(NULL, "レナにとってのもうひとつの朗報ってヤツをよ。」",
-		   NULL, " What was this good news for you?\"", Line_Normal);
+	OutputLine(NULL, "「へへへ、教えてくれよ。レナにとってのもうひとつの朗報ってヤツをよ。」",
+		   NULL, "\"Heh heh heh, then tell me. What was this good news for you?\"", Line_Normal);
 	ClearMessage();
 
 	//;ld r,ren_8,80
-	OutputLine(NULL, "「あは、だってさぁ。",
-		   NULL, "\"Aha, well...", Line_WaitForInput);
-	OutputLine(NULL, "敵は町会神社部と青年部と防犯部で、だいたい１００人ちょっとなんでしょ？",
-		   NULL, " Our enemies are the town council's shrine group, the youth group, and the neighborhood watch, totaling a little over a hundred, right?", Line_WaitForInput);
-	OutputLine(NULL, "　それでさらに猟友会が加わって鉄砲が２０丁以上。」",
-		   NULL, " On top of that there's the hunting club with about 20 rifles.\"", Line_Normal);
+	OutputLine(NULL, "「あは、だってさぁ。敵は町会神社部と青年部と防犯部で、だいたい１００人ちょっとなんでしょ？　それでさらに猟友会が加わって鉄砲が２０丁以上。」",
+		   NULL, "\"Aha, well... Our enemies are the town council's shrine group, the youth group, and the neighborhood watch, totaling a little over a hundred, right? On top of that there's the hunting club with about 20 rifles.\"", Line_Normal);
 	ClearMessage();
 
 	//;ld l,kei_9,80
-	OutputLine(NULL, "「……やれやれ、",
-		   NULL, "\"...Good grief.", Line_WaitForInput);
-	OutputLine(NULL, "まったくにもこいつぁツイてるぜ。」",
-		   NULL, " Luck is totally on our side, isn't it?\"", Line_Normal);
+	OutputLine(NULL, "「……やれやれ、まったくにもこいつぁツイてるぜ。」",
+		   NULL, "\"...Good grief. Luck is totally on our side, isn't it?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -6312,30 +5692,22 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 2, "sprites/keiiti/sifuku_b/kei_9b", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
-	OutputLine(NULL, "「俺ぁ、てっきり村全部が敵でよ、",
-		   NULL, "\"I was convinced the whole village was our enemy.", Line_WaitForInput);
-	OutputLine(NULL, "雛見沢２０００人を丸々ぶっ潰すつもりだったから、あんまりの少なさに拍子抜けしちまってたところだぜッ！！」",
-		   NULL, " I was ready to crush all 2,000 people in Hinamizawa, so I was almost disappointed to hear there were so few!!\"", Line_Normal);
+	OutputLine(NULL, "「俺ぁ、てっきり村全部が敵でよ、雛見沢２０００人を丸々ぶっ潰すつもりだったから、あんまりの少なさに拍子抜けしちまってたところだぜッ！！」",
+		   NULL, "\"I was convinced the whole village was our enemy. I was ready to crush all 2,000 people in Hinamizawa, so I was almost disappointed to hear there were so few!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/rena/sifuku_c/ren_1c", 200, TRUE );
-	OutputLine(NULL, "「１００人を７２時間で？",
-		   NULL, "\"A hundred people in 72 hours?", Line_WaitForInput);
-	OutputLine(NULL, "　そして今ここにいるのが２０人？」",
-		   NULL, " And there's only twenty here.\"", Line_WaitForInput);
+	OutputLine(NULL, "「１００人を７２時間で？　そして今ここにいるのが２０人？」",
+		   NULL, "\"A hundred people in 72 hours? And there's only twenty here.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
 
 	ChangeBustshot( 2, "sprites/keiiti/sifuku_b/kei_4b", 0, TRUE );
 	ShakeScreen( 0, 6, 100, 3, 33, );
-	OutputLine(NULL, "「馬鹿にしてやがるぜ、",
-		   NULL, "\"They're underestimating us.", Line_WaitForInput);
-	OutputLine(NULL, "まったくにもって馬鹿にしてやがるぜ！",
-		   NULL, " They're absolutely underestimating us!", Line_WaitForInput);
-	OutputLine(NULL, "　本気の俺とレナを相手に、１００人を７２時間でだって？！」",
-		   NULL, " Taking down a hundred foes in 72 hours when Rena and I are both serious?!\"", Line_Normal);
+	OutputLine(NULL, "「馬鹿にしてやがるぜ、まったくにもって馬鹿にしてやがるぜ！　本気の俺とレナを相手に、１００人を７２時間でだって？！」",
+		   NULL, "\"They're underestimating us. They're absolutely underestimating us! Taking down a hundred foes in 72 hours when Rena and I are both serious?!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -6362,10 +5734,8 @@ void main()
 
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, FALSE );
 	DrawBustshot( 4, "sprites/keiiti/sifuku_b/kei_1b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
-	OutputLine(NULL, "「…ばぁか。",
-		   NULL, "\"...Idiot.", Line_WaitForInput);
-	OutputLine(NULL, "違うだろ？」",
-		   NULL, " That's not what I meant.\"", Line_Normal);
+	OutputLine(NULL, "「…ばぁか。違うだろ？」",
+		   NULL, "\"...Idiot. That's not what I meant.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -6385,10 +5755,8 @@ void main()
 
 	DrawBustshot( 5, "sprites/keiiti/sifuku_b/kei_4b", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, FALSE );
 	FadeBustshot( 4, FALSE, 0, 0, 0, 0, 200, TRUE );
-	OutputLine(NULL, "「さぁてお楽しみだぜッ！！",
-		   NULL, "\"Now, let's have some fun!!", Line_WaitForInput);
-	OutputLine(NULL, "　７２時間、たっぷり楽しませてもらおうじゃねぇかッ！！」",
-		   NULL, " Let's have lots and lots of fun over these next 72 hours!!\"", Line_WaitForInput);
+	OutputLine(NULL, "「さぁてお楽しみだぜッ！！　７２時間、たっぷり楽しませてもらおうじゃねぇかッ！！」",
+		   NULL, "\"Now, let's have some fun!! Let's have lots and lots of fun over these next 72 hours!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
@@ -6963,22 +6331,16 @@ void main()
 
 	DrawBustshot( 2, "sprites/satoko/sifuku/sa_muhyoua1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
 	//;【沙都子】
-	OutputLine(NULL, "「………薄々そんな気はしてましてよ。",
-		   NULL, "\".........I had a faint suspicion about this.", Line_WaitForInput);
-	OutputLine(NULL, "まだまだ、……終わらないんですわ。」",
-		   NULL, " This still... isn't over yet, is it?\"", Line_Normal);
+	OutputLine(NULL, "「………薄々そんな気はしてましてよ。まだまだ、……終わらないんですわ。」",
+		   NULL, "\".........I had a faint suspicion about this. This still... isn't over yet, is it?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 
 	DrawBustshot( 3, "sprites/mion/sifuku/me_yowakia1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 	//;【魅音】
-	OutputLine(NULL, "「ウィルス騒ぎは興宮にだけ広がったのか。",
-		   NULL, "\"Has this virus commotion only spread to Okinomiya?", Line_WaitForInput);
-	OutputLine(NULL, "……それとも、もっともっと広大な範囲に広がったのか。",
-		   NULL, " ......Or do you think it's spread even further?", Line_WaitForInput);
-	OutputLine(NULL, "……ここから見るだけじゃわからないね。」",
-		   NULL, " ......I can't tell by looking from here.\"", Line_Normal);
+	OutputLine(NULL, "「ウィルス騒ぎは興宮にだけ広がったのか。……それとも、もっともっと広大な範囲に広がったのか。……ここから見るだけじゃわからないね。」",
+		   NULL, "\"Has this virus commotion only spread to Okinomiya? ......Or do you think it's spread even further? ......I can't tell by looking from here.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -6987,10 +6349,8 @@ void main()
 	DrawSceneWithMask( "bg/jinja/jt2", "effect/left", 0, 0, 300 );
 	DrawBustshot( 1, "sprites/keiiti/sifuku/kei_komaru", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 	//;【圭一】
-	OutputLine(NULL, "「……世界は、",
-		   NULL, "\"...Has the whole world", Line_WaitForInput);
-	OutputLine(NULL, "滅びちまったわけなのか……？」",
-		   NULL, " gone to ruin...?\"", Line_WaitForInput);
+	OutputLine(NULL, "「……世界は、滅びちまったわけなのか……？」",
+		   NULL, "\"...Has the whole world gone to ruin...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
@@ -6998,24 +6358,16 @@ void main()
 
 	DrawBustshot( 2, "sprites/rena/sifuku/re_okorua1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
 	//;【レナ】
-	OutputLine(NULL, "「わからない。",
-		   NULL, "\"I don't know.", Line_WaitForInput);
-	OutputLine(NULL, "……でも、私たちはここにいる。",
-		   NULL, " ......But we're all here.", Line_WaitForInput);
-	OutputLine(NULL, "雛見沢の人たちだって、全員がおかしくなったわけじゃない。」",
-		   NULL, " It's not like everyone in Hinamizawa went crazy, either.\"", Line_Normal);
+	OutputLine(NULL, "「わからない。……でも、私たちはここにいる。雛見沢の人たちだって、全員がおかしくなったわけじゃない。」",
+		   NULL, "\"I don't know. ......But we're all here. It's not like everyone in Hinamizawa went crazy, either.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 
 	DrawBustshot( 3, "sprites/satoko/sifuku/sa_haub1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 	//;【沙都子】
-	OutputLine(NULL, "「そうですわ。",
-		   NULL, "\"That's true.", Line_WaitForInput);
-	OutputLine(NULL, "未だに冷静を保ってる人たちだってまだまだいますもの。",
-		   NULL, " There are still those who retain their sanity even now.", Line_WaitForInput);
-	OutputLine(NULL, "興宮にだって、きっといるに決まってますわ。」",
-		   NULL, " I'm sure there are some in Okinomiya as well.\"", Line_Normal);
+	OutputLine(NULL, "「そうですわ。未だに冷静を保ってる人たちだってまだまだいますもの。興宮にだって、きっといるに決まってますわ。」",
+		   NULL, "\"That's true. There are still those who retain their sanity even now. I'm sure there are some in Okinomiya as well.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -7044,19 +6396,15 @@ void main()
 	DrawBustshot( 2, "sprites/mion/sifuku/me_ikaria1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 
 	//;【魅音】
-	OutputLine(NULL, "「世界が本当に滅びたのかどうか。",
-		   NULL, "\"We have to see for ourselves", Line_WaitForInput);
-	OutputLine(NULL, "私たちは見届けなきゃならない。」",
-		   NULL, " whether the world's really been destroyed or not.\"", Line_Normal);
+	OutputLine(NULL, "「世界が本当に滅びたのかどうか。私たちは見届けなきゃならない。」",
+		   NULL, "\"We have to see for ourselves whether the world's really been destroyed or not.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	DrawBustshot( 3, "sprites/rena/sifuku/re_higurasi_muhyoua1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
 	//;【レナ】
-	OutputLine(NULL, "「村は食料も生活必需品もなくなりかけてる。",
-		   NULL, "\"The village is about to run out of food and daily necessities.", Line_WaitForInput);
-	OutputLine(NULL, "……追手も撒いたけど、村に留まる理由もない。」",
-		   NULL, " ......We threw off our pursuers, but there's no need to stay in the village.\"", Line_Normal);
+	OutputLine(NULL, "「村は食料も生活必需品もなくなりかけてる。……追手も撒いたけど、村に留まる理由もない。」",
+		   NULL, "\"The village is about to run out of food and daily necessities. ......We threw off our pursuers, but there's no need to stay in the village.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -7071,10 +6419,8 @@ void main()
 
 	ChangeBustshot( 2, "sprites/keiiti/sifuku/kei_ikari1", 400, TRUE );
 	//;【圭一】
-	OutputLine(NULL, "「となりゃ、決まりだな。",
-		   NULL, "\"In that case, it's settled.", Line_WaitForInput);
-	OutputLine(NULL, "……行こうぜ、街へ。興宮へ。」",
-		   NULL, " ...Let's go into town. To Okinomiya.\"", Line_Normal);
+	OutputLine(NULL, "「となりゃ、決まりだな。……行こうぜ、街へ。興宮へ。」",
+		   NULL, "\"In that case, it's settled. ...Let's go into town. To Okinomiya.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -7119,12 +6465,8 @@ void main()
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 400, TRUE );
 	//;ld l,rik_2,80
 	//;【梨花】
-	OutputLine(NULL, "「ボクは、雛見沢に残るのです。",
-		   NULL, "\"I'll stay behind in Hinamizawa.", Line_WaitForInput);
-	OutputLine(NULL, "……この騒ぎが落ち着いた時、",
-		   NULL, " ......Because once this commotion has settled...", Line_WaitForInput);
-	OutputLine(NULL, "……彼らに、戻るべき場所がここであることを、教える為に。」",
-		   NULL, " ......I'll need to tell them this is where they belong.\"", Line_Normal);
+	OutputLine(NULL, "「ボクは、雛見沢に残るのです。……この騒ぎが落ち着いた時、……彼らに、戻るべき場所がここであることを、教える為に。」",
+		   NULL, "\"I'll stay behind in Hinamizawa. ......Because once this commotion has settled... ......I'll need to tell them this is where they belong.\"", Line_Normal);
 	ClearMessage();
 
 
@@ -7142,24 +6484,16 @@ void main()
 
 	ChangeBustshot( 2, "sprites/satoko/sifuku/sa_hannbesoa1", 200, TRUE );
 	//;【沙都子】
-	OutputLine(NULL, "「そんな……！",
-		   NULL, "\"No way...!", Line_WaitForInput);
-	OutputLine(NULL, "　危険でしてよ、梨花！",
-		   NULL, " That's dangerous, Rika!", Line_WaitForInput);
-	OutputLine(NULL, "　まだ連中が私たちを探し回ってるに決まってますわ！」",
-		   NULL, " Those guys are still out searching for you, you know!\"", Line_Normal);
+	OutputLine(NULL, "「そんな……！　危険でしてよ、梨花！　まだ連中が私たちを探し回ってるに決まってますわ！」",
+		   NULL, "\"No way...! That's dangerous, Rika! Those guys are still out searching for you, you know!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 
 	ChangeBustshot( 3, "sprites/rika/sifuku/rik_5", 200, TRUE );
 	//;【梨花】
-	OutputLine(NULL, "「大丈夫なのです。",
-		   NULL, "\"I'll be alright.", Line_WaitForInput);
-	OutputLine(NULL, "隠れん坊は得意なのですよ、",
-		   NULL, " I'm good at hide-and-seek.", Line_WaitForInput);
-	OutputLine(NULL, "にぱ～☆」",
-		   NULL, " Nipah~☆\"", Line_Normal);
+	OutputLine(NULL, "「大丈夫なのです。隠れん坊は得意なのですよ、にぱ～☆」",
+		   NULL, "\"I'll be alright. I'm good at hide-and-seek. Nipah~☆\"", Line_Normal);
 	ClearMessage();
 
 
@@ -7191,16 +6525,8 @@ void main()
 
 	DrawScene( "bg/mura/hi2", 400 );
 	//;【梨花】
-	OutputLine(NULL, "「ボクのことは気にしないでいいのです。",
-		   NULL, "\"You don't need to worry about me.", Line_WaitForInput);
-	OutputLine(NULL, "……それより、世界を見てきてほしいのです。",
-		   NULL, " ...I'd rather you go check on the world.", Line_WaitForInput);
-	OutputLine(NULL, "……この騒ぎは、終わりの始まりなのか。",
-		   NULL, " ......Is this the beginning of the end to this commotion?", Line_WaitForInput);
-	OutputLine(NULL, "それとももう、終わるのか。",
-		   NULL, " Or is it already over?", Line_WaitForInput);
-	OutputLine(NULL, "……それを、見届けて欲しいのです。」",
-		   NULL, " ......I want you to figure that out.\"", Line_Normal);
+	OutputLine(NULL, "「ボクのことは気にしないでいいのです。……それより、世界を見てきてほしいのです。……この騒ぎは、終わりの始まりなのか。それとももう、終わるのか。……それを、見届けて欲しいのです。」",
+		   NULL, "\"You don't need to worry about me. ...I'd rather you go check on the world. ......Is this the beginning of the end to this commotion? Or is it already over? ......I want you to figure that out.\"", Line_Normal);
 	ClearMessage();
 
 
@@ -7230,16 +6556,12 @@ void main()
 	ChangeBustshot( 1, "sprites/rika/sifuku/rik_5", 400, TRUE );
 	//;wait 1000
 	//;【梨花】
-	OutputLine(NULL, "「ふぁいと、",
-		   NULL, "\"Fight,", Line_ContinueAfterTyping);
 
 	Wait( 500 );
-	OutputLine(NULL, "おーっ、",
-		   NULL, " oh!", Line_ContinueAfterTyping);
 
 	Wait( 500 );
-	OutputLine(NULL, "なのですっ。」",
-		   NULL, " You guys!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "「ふぁいと、おーっ、なのですっ。」",
+		   NULL, "\"Fight, oh! You guys!\"", Line_ContinueAfterTyping);
 
 
 	ShakeScreen( 4, 9, 20, 30, 1, );
