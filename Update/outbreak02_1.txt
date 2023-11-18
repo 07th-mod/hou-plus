@@ -1323,14 +1323,19 @@ void main()
 	DrawBustshotWithFiltering( 40, "sprites/mo5/mo5_6", "effect/up", 0, -20, 0, FALSE, 0, 0, 0, 0, 0, 41, 300, TRUE );
 
 
+	OutputLine(NULL, "「ぶっ殺せッぶっ殺せ！！",
+		   NULL, "\"Kill them! Kill them!", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "wav/tataku", 70, 64 );
 	ShakeScreen( 4, 9, 20, 40, 1, );
+	OutputLine(NULL, "　感染者は殺せ！！",
+		   NULL, " Kill the infected!!", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "wav/tataku", 70, 64 );
 	ShakeScreen( 4, 9, 20, 40, 1, );
-	OutputLine(NULL, "「ぶっ殺せッぶっ殺せ！！　感染者は殺せ！！　殺して死体を焼き払えッ！！」",
-		   NULL, "\"Kill them! Kill them! Kill the infected!! Kill them and burn their corpses!!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "　殺して死体を焼き払えッ！！」",
+		   NULL, " Kill them and burn their corpses!!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「ぶっ殺せッぶっ殺せ！！　感染者は殺せ！！　殺して死体を焼き払えッ！！」",		   NULL, "\"Kill them! Kill them! Kill the infected!! Kill them and burn their corpses!!\"", Line_ContinueAfterTyping);
 	PlaySE( 0, "wav/tataku", 100, 64 );
 	ShakeScreen( 4, 9, 20, 40, 1, );
 
@@ -1460,6 +1465,8 @@ void main()
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 400, FALSE );
 	DrawBustshot( 40, "sprites/satoko/sifuku/sa_haub2", -180, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 42, 400, TRUE );
 	//;【沙都子】
+	OutputLine(NULL, "「安全第一が一番ですわ。",
+		   NULL, "\"Then let us practice safety first.", Line_WaitForInput);
 	DisableWindow();
 
 	StopBGM( 0 );
@@ -1470,8 +1477,9 @@ void main()
 	Wait( 300 );
 
 
-	OutputLine(NULL, "「安全第一が一番ですわ。………ッ？！　静かに！」",
-		   NULL, "\"Then let us practice safety first. ......?! Quiet!\"", Line_Normal);
+	OutputLine(NULL, "………ッ？！　静かに！」",
+		   NULL, " ......?! Quiet!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「安全第一が一番ですわ。………ッ？！　静かに！」",		   NULL, "\"Then let us practice safety first. ......?! Quiet!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -1551,6 +1559,8 @@ void main()
 
 	DrawBustshot( 2, "sprites/keiiti/sifuku/kei_ikari2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
 	//;【圭一】
+	OutputLine(NULL, "「お、おう……！！",
+		   NULL, "\"Y-Yeah...!!", Line_WaitForInput);
 	DisableWindow();
 
 	Wait( 500 );
@@ -1561,8 +1571,9 @@ void main()
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 0, FALSE );
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 0, TRUE );
 	ShakeScreen( 4, 12, 20, 50, 1, );
-	OutputLine(NULL, "「お、おう……！！　……うわッ！」",
-		   NULL, "\"Y-Yeah...!! ......Uwah!\"", Line_Normal);
+	OutputLine(NULL, "　……うわッ！」",
+		   NULL, " ......Uwah!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「お、おう……！！　……うわッ！」",		   NULL, "\"Y-Yeah...!! ......Uwah!\"", Line_Normal);
 	ClearMessage();
 
 	OutputLine(NULL, "　痛恨のミス。",
@@ -1586,16 +1597,21 @@ void main()
 	DrawBustshot( 40, "sprites/mo5/mo5_9", -20, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 41, 400, TRUE );
 
 	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「おいッ、",
+		   NULL, "\"Hey!", Line_ContinueAfterTyping);
 
 	PlaySE( 1, "wav/tataku", 25, 64 );
 	ShakeScreen( 2, 9,  100 , 5, 20, );
 	Wait( 200 );
+	OutputLine(NULL, "何か聞こえたぞッ！！",
+		   NULL, " I heard something!!", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "wav/tataku", 25, 64 );
 	ShakeScreen( 2, 9,  100 , 5, 20, );
 	Wait( 300 );
-	OutputLine(NULL, "「おいッ、何か聞こえたぞッ！！　感染野郎に違いねえぇッ！！」",
-		   NULL, "\"Hey! I heard something!! It must be another infected!!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "　感染野郎に違いねえぇッ！！」",
+		   NULL, " It must be another infected!!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「おいッ、何か聞こえたぞッ！！　感染野郎に違いねえぇッ！！」",		   NULL, "\"Hey! I heard something!! It must be another infected!!\"", Line_ContinueAfterTyping);
 	PlaySE( 1, "wav/tataku", 50, 64 );
 	ShakeScreen( 4, 9, 20, 25, 2, );
 	SetSpeedOfMessage( FALSE, 0 );
@@ -1817,14 +1833,20 @@ void main()
 	SetSpeedOfMessage( TRUE, 128 );
 	//;ld c,kei_4,22
 	//;【圭一】
+	OutputLine(NULL, "「うぉおおおぉおお、",
+		   NULL, "\"Ooooooooooh!", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "wav/down3", 50, 64 );
 	ShakeScreen( 2, 6,  100 , 4, 25, );
 	Wait( 500 );
+	OutputLine(NULL, "天の神様、",
+		   NULL, " God in Heaven!", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "a5_10316", 50, 64 );
 	ShakeScreen( 2, 6,  100 , 4, 25, );
 	Wait( 500 );
+	OutputLine(NULL, "オヤシロさま！！",
+		   NULL, " Oyashiro-sama!!", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "a5_10316", 50, 64 );
 	ShakeScreen( 2, 6,  100 , 4, 25, );
@@ -1832,8 +1854,9 @@ void main()
 
 	PlaySE( 1, "wav/garasu", 25, 64 );
 	PlaySE( 0, "rakurai3", 50, 64 );
-	OutputLine(NULL, "「うぉおおおぉおお、天の神様、オヤシロさま！！　どうか梯子をお恵み下さいぃいいぃ！！」",
-		   NULL, "\"Ooooooooooh! God in Heaven! Oyashiro-sama!! Please bless us with a ladderrrrr!!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "　どうか梯子をお恵み下さいぃいいぃ！！」",
+		   NULL, " Please bless us with a ladderrrrr!!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「うぉおおおぉおお、天の神様、オヤシロさま！！　どうか梯子をお恵み下さいぃいいぃ！！」",		   NULL, "\"Ooooooooooh! God in Heaven! Oyashiro-sama!! Please bless us with a ladderrrrr!!\"", Line_ContinueAfterTyping);
 	ShakeScreen( 4, 9, 20, 40, 1, );
 	OutputLineAll(NULL, "", Line_Normal);
 
@@ -2025,8 +2048,11 @@ void main()
 
 	ChangeBustshot( 3, "sprites/mo3/mo3_6", 200, TRUE );
 
-	OutputLine(NULL, "「ぶっ殺せぶっ殺せ！！　ヒャッハハハハハハハッ！！」",
-		   NULL, "\"Kill them! Kill them!! Hyahahahahahahahaha!!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "「ぶっ殺せぶっ殺せ！！",
+		   NULL, "\"Kill them! Kill them!!", Line_WaitForInput);
+	OutputLine(NULL, "　ヒャッハハハハハハハッ！！」",
+		   NULL, " Hyahahahahahahahaha!!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「ぶっ殺せぶっ殺せ！！　ヒャッハハハハハハハッ！！」",		   NULL, "\"Kill them! Kill them!! Hyahahahahahahahaha!!\"", Line_ContinueAfterTyping);
 	ShakeScreen( 4, 9, 20, 15, 3, );
 	OutputLineAll(NULL, "", Line_Normal);
 
@@ -2043,14 +2069,17 @@ void main()
 	//;wait 500
 	ChangeBustshot( 3, "sprites/rena/sifuku_c/ren_9c", 200, TRUE );
 	//;【レナ】
+	OutputLine(NULL, "「殺すってことは、",
+		   NULL, "\"If you're out to kill,", Line_ContinueAfterTyping);
 	DisableWindow();
 	PlaySE( 0, "a5_10315", 50, 64 );
 	ShakeScreen( 2, 9,  100 , 5, 20, );
 	//;wait 800
 	ChangeBustshot( 3, "sprites/rena/sifuku_c/ren_11c", 400, TRUE );
 	Wait( 500 );
-	OutputLine(NULL, "「殺すってことは、自分が殺されることも覚悟することだよッ！」",
-		   NULL, "\"If you're out to kill, then you're prepared to be killed too, right?!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "自分が殺されることも覚悟することだよッ！」",
+		   NULL, " then you're prepared to be killed too, right?!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「殺すってことは、自分が殺されることも覚悟することだよッ！」",		   NULL, "\"If you're out to kill, then you're prepared to be killed too, right?!\"", Line_ContinueAfterTyping);
 	DisableWindow();
 	PlaySE( 0, "a5_10316", 50, 64 );
 	ShakeScreen( 4, 9, 20, 25, 2, );
@@ -5498,10 +5527,15 @@ void main()
 	//;mcl c,0
 
 	//;【采】
+	OutputLine(NULL, "「あ、",
+		   NULL, "\"Th", Line_ContinueAfterTyping);
 	Wait( 300 );
+	OutputLine(NULL, "……ありがとう……、",
+		   NULL, " ......Thank you......", Line_ContinueAfterTyping);
 	Wait( 700 );
-	OutputLine(NULL, "「あ、……ありがとう……、…………です…………。」",
-		   NULL, "\"Th ......Thank you...... .........for that............\"", Line_Normal);
+	OutputLine(NULL, "…………です…………。」",
+		   NULL, " .........for that............\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「あ、……ありがとう……、…………です…………。」",		   NULL, "\"Th ......Thank you...... .........for that............\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -7043,17 +7077,22 @@ void main()
 	PlaySE( 0, "wav/kan", 50, 64 );
 	DrawBustshotWithFiltering( 2, "sprites/mo5/mo5_6a", "effect/up", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「逃げるぞッ、",
+		   NULL, "\"They're running!", Line_ContinueAfterTyping);
 
 	ShakeScreen( 2, 6,  100 , 3, 33, );
 	PlaySE( 1, "wav/kan", 10, 64 );
 	//;wait 700
 
+	OutputLine(NULL, "追え！！",
+		   NULL, " After them!!", Line_ContinueAfterTyping);
 	PlaySE( 2, "wav/tataku", 50, 64 );
 	ShakeScreen( 0, 6, 100, 3, 33, );
 	//;wait 1000
 
-	OutputLine(NULL, "「逃げるぞッ、追え！！　感染者野郎に違いねぇ！！」",
-		   NULL, "\"They're running! After them!! It has to be the infected!!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "　感染者野郎に違いねぇ！！」",
+		   NULL, " It has to be the infected!!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「逃げるぞッ、追え！！　感染者野郎に違いねぇ！！」",		   NULL, "\"They're running! After them!! It has to be the infected!!\"", Line_ContinueAfterTyping);
 
 	PlaySE( 2, "wav/tataku", 50, 64 );
 	ShakeScreen( 4, 6, 20, 15, 3, );
@@ -7537,16 +7576,21 @@ void main()
 
 	SetSpeedOfMessage( TRUE, 128 );
 	//;【富竹】
+	OutputLine(NULL, "「諸君、",
+		   NULL, "\"Gentlemen,", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "se_dageki_06", 50, 64 );
 	ShakeScreen( 0, 6, 100, 3, 33, );
 	//;wait 700
+	OutputLine(NULL, "それまでだ！",
+		   NULL, " that's enough!", Line_ContinueAfterTyping);
 
 	PlaySE( 1, "se_dageki_04", 50, 64 );
 	ShakeScreen( 0, 9, 100, 5, 20, );
 	Wait( 100 );
-	OutputLine(NULL, "「諸君、それまでだ！　法に基づかない私刑は、如何なる状況下でも認められないぞ！！」",
-		   NULL, "\"Gentlemen, that's enough! Unlawful lynching is unacceptable, no matter the circumstance!!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "　法に基づかない私刑は、如何なる状況下でも認められないぞ！！」",
+		   NULL, " Unlawful lynching is unacceptable, no matter the circumstance!!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「諸君、それまでだ！　法に基づかない私刑は、如何なる状況下でも認められないぞ！！」",		   NULL, "\"Gentlemen, that's enough! Unlawful lynching is unacceptable, no matter the circumstance!!\"", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -10158,11 +10202,14 @@ void main()
 
 	DrawBustshot( 3, "sprites/kasai/kasa6", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 	//;【葛西】
+	OutputLine(NULL, "「その必要がない限りはしませんが、",
+		   NULL, "\"I won't do it unless it's necessary...", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 3, "sprites/kasai/kasa4", 200, TRUE );
-	OutputLine(NULL, "「その必要がない限りはしませんが、……紳士でもありませんので、万一の際は悪しからずです。」",
-		   NULL, "\"I won't do it unless it's necessary... but I'm no gentleman, so forgive me if it comes to that.\"", Line_Normal);
+	OutputLine(NULL, "……紳士でもありませんので、万一の際は悪しからずです。」",
+		   NULL, " but I'm no gentleman, so forgive me if it comes to that.\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「その必要がない限りはしませんが、……紳士でもありませんので、万一の際は悪しからずです。」",		   NULL, "\"I won't do it unless it's necessary... but I'm no gentleman, so forgive me if it comes to that.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -10194,11 +10241,20 @@ void main()
 	PlayBGM( 2, "me/koware_wind", 70, 0 );
 	//;ld c,tak_1,80
 	//;【鷹野】
+	OutputLine(NULL, "「この程度なのかしら？",
+		   NULL, "\"Is this the full extent?", Line_WaitForInput);
+	OutputLine(NULL, "　私に与えられた力というのは……？",
+		   NULL, " Of the power you're granting me......?", Line_WaitForInput);
+	OutputLine(NULL, "　……違うわよねぇ？",
+		   NULL, " ......It's not, is it?", Line_WaitForInput);
+	OutputLine(NULL, "　くす……、",
+		   NULL, " Hee......", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( TRUE, 128 );
 	Wait( 1000 );
 
-	OutputLine(NULL, "「この程度なのかしら？　私に与えられた力というのは……？　……違うわよねぇ？　くす……、くすくすくすくす……！」",
-		   NULL, "\"Is this the full extent? Of the power you're granting me......? ......It's not, is it? Hee...... Heeheeheehee......!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "くすくすくすくす……！」",
+		   NULL, " Heeheeheehee......!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「この程度なのかしら？　私に与えられた力というのは……？　……違うわよねぇ？　くす……、くすくすくすくす……！」",		   NULL, "\"Is this the full extent? Of the power you're granting me......? ......It's not, is it? Hee...... Heeheeheehee......!\"", Line_ContinueAfterTyping);
 	ShakeScreen( 4, 9, 20, 40, 1, );
 	OutputLineAll(NULL, "", Line_Normal);
 
@@ -10211,12 +10267,15 @@ void main()
 
 	//;ld c,kas_1,80
 	//;【葛西】
+	OutputLine(NULL, "「んぬ、",
+		   NULL, "\"Nnngh!", Line_ContinueAfterTyping);
 
 	StopBGM( 1 );
 	StopBGM( 2 );
 	Wait( 200 );
-	OutputLine(NULL, "「んぬ、………むおッ…！」",
-		   NULL, "\"Nnngh! ......Nngoh...!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "………むおッ…！」",
+		   NULL, " ......Nngoh...!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「んぬ、………むおッ…！」",		   NULL, "\"Nnngh! ......Nngoh...!\"", Line_ContinueAfterTyping);
 	ShakeScreen( 4, 9, 20, 50, 1, );
 	OutputLineAll(NULL, "", Line_Normal);
 
@@ -10459,13 +10518,22 @@ void main()
 	DrawBustshot( 2, "sprites/tam/tam_8", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, TRUE );
 	ShakeScreen( 2, 9,  100 , 5, 20, );
 	//;【田村】
+	OutputLine(NULL, "「黙り給え、吾輩はそなたの指図など受けぬと知り奉れッ。",
+		   NULL, "\"Be quiet! Know that I shall not listen to you!", Line_WaitForInput);
+	OutputLine(NULL, "神聖なる大地を穢そうとする新たなる輩を成敗する也ッ。",
+		   NULL, " I shall punish all peoples who dare to taint our sacred land!", Line_WaitForInput);
+	OutputLine(NULL, "邪魔は無用と知り給え！！",
+		   NULL, " Know that your hindrance is useless!!", Line_WaitForInput);
+	OutputLine(NULL, "　そこに直れ、",
+		   NULL, " Prepare yourself,", Line_ContinueAfterTyping);
 	DisableWindow();
 
 	ChangeBustshot( 2, "sprites/tam/tam_9", 0, TRUE );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 	PlaySE( 0, "a5_10316", 70, 64 );
-	OutputLine(NULL, "「黙り給え、吾輩はそなたの指図など受けぬと知り奉れッ。神聖なる大地を穢そうとする新たなる輩を成敗する也ッ。邪魔は無用と知り給え！！　そこに直れ、ウネッ！！」",
-		   NULL, "\"Be quiet! Know that I shall not listen to you! I shall punish all peoples who dare to taint our sacred land! Know that your hindrance is useless!! Prepare yourself, Une!!\"", Line_Normal);
+	OutputLine(NULL, "ウネッ！！」",
+		   NULL, " Une!!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「黙り給え、吾輩はそなたの指図など受けぬと知り奉れッ。神聖なる大地を穢そうとする新たなる輩を成敗する也ッ。邪魔は無用と知り給え！！　そこに直れ、ウネッ！！」",		   NULL, "\"Be quiet! Know that I shall not listen to you! I shall punish all peoples who dare to taint our sacred land! Know that your hindrance is useless!! Prepare yourself, Une!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -10508,10 +10576,17 @@ void main()
 	PlaySE( 0, "a5_10316", 70, 64 );
 
 	//;【梨花】
+	OutputLine(NULL, "「田村の何とか。",
+		   NULL, "\"Tamura-no-Whatever.", Line_WaitForInput);
+	OutputLine(NULL, "あんたに恨みはないけれど、あんたの巫女は個人的に気に入らないの。",
+		   NULL, " I hold no grudge against you, but I personally dislike your priestess.", Line_WaitForInput);
+	OutputLine(NULL, "悪いけど、あんたが右って言うなら、",
+		   NULL, " So sorry, but if you're choosing right,", Line_WaitForInput);
 	DisableWindow();
 	ChangeBustshot( 3, "sprites/rika/sifuku/rik_8", 200, TRUE );
-	OutputLine(NULL, "「田村の何とか。あんたに恨みはないけれど、あんたの巫女は個人的に気に入らないの。悪いけど、あんたが右って言うなら、私たちは左にさせてもらうわ！」",
-		   NULL, "\"Tamura-no-Whatever. I hold no grudge against you, but I personally dislike your priestess. So sorry, but if you're choosing right, then we're choosing left!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "私たちは左にさせてもらうわ！」",
+		   NULL, " then we're choosing left!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「田村の何とか。あんたに恨みはないけれど、あんたの巫女は個人的に気に入らないの。悪いけど、あんたが右って言うなら、私たちは左にさせてもらうわ！」",		   NULL, "\"Tamura-no-Whatever. I hold no grudge against you, but I personally dislike your priestess. So sorry, but if you're choosing right, then we're choosing left!\"", Line_ContinueAfterTyping);
 	PlaySE( 0, "wav/tataku", 25, 64 );
 	ShakeScreen( 2, 6,  100 , 5, 20, );
 	OutputLineAll(NULL, "", Line_Normal);
@@ -10660,11 +10735,14 @@ void main()
 
 	DrawBustshot( 2, "sprites/une/une_9a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
 	//;【采】
+	OutputLine(NULL, "「……に、……逃げ……、",
+		   NULL, "\"......R...... Run......", Line_ContinueAfterTyping);
 
 	ShakeScreen( 2, 6,  100 , 4, 25, );
 	Wait( 600 );
-	OutputLine(NULL, "「……に、……逃げ……、ひい………、」",
-		   NULL, "\"......R...... Run...... Hiii.........\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "ひい………、」",
+		   NULL, " Hiii.........\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「……に、……逃げ……、ひい………、」",		   NULL, "\"......R...... Run...... Hiii.........\"", Line_ContinueAfterTyping);
 
 	ShakeScreen( 2, 6,  100 , 4, 25, );
 	OutputLineAll(NULL, "", Line_Normal);
@@ -10712,6 +10790,10 @@ void main()
 
 	DrawBustshot( 3, "sprites/mion/sifuku/me_ikaria1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 	//;【魅音】
+	OutputLine(NULL, "「梨花ちゃん、何やってんの！！",
+		   NULL, "\"Rika-chan, what are you doing?!!", Line_WaitForInput);
+	OutputLine(NULL, "　逃げるよ！！",
+		   NULL, " Run!!", Line_WaitForInput);
 
 	DisableWindow();
 	PlaySE( 0, "se_5403", 50, 64 );
@@ -10723,8 +10805,9 @@ void main()
 	ShakeScreen( 2, 15,  100 , 1, 50, );
 	//;wait 300
 	DisplayWindow();
-	OutputLine(NULL, "「梨花ちゃん、何やってんの！！　逃げるよ！！　うわあッ！！」",
-		   NULL, "\"Rika-chan, what are you doing?!! Run!! Uwaah!!\"", Line_Normal);
+	OutputLine(NULL, "　うわあッ！！」",
+		   NULL, " Uwaah!!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「梨花ちゃん、何やってんの！！　逃げるよ！！　うわあッ！！」",		   NULL, "\"Rika-chan, what are you doing?!! Run!! Uwaah!!\"", Line_Normal);
 	ClearMessage();
 
 	OutputLine(NULL, "　この程度の壁など、今の鷹野を、",
@@ -10753,19 +10836,24 @@ void main()
 
 	DrawBustshot( 5, "sprites/une/une_9a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 	//;【采】
+	OutputLine(NULL, "「ひ、……ひいっ、",
+		   NULL, "\"Hii...... Hiiii!", Line_ContinueAfterTyping);
 	DisableWindow();
 
 
 	Wait( 500 );
 	DrawBustshot( 6, "sprites/une/une_10", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, FALSE );
 	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 200, TRUE );
+	OutputLine(NULL, "……ひいっ……！",
+		   NULL, " ......Hiii......!", Line_WaitForInput);
 	DisableWindow();
 
 	PlaySE( 0, "wav/down2", 50, 64 );
 	FadeBustshot( 6, FALSE, 0, 0, 0, 0, 0, TRUE );
 	ShakeScreen( 2, 6,  100 , 5, 20, );
-	OutputLine(NULL, "「ひ、……ひいっ、……ひいっ……！　あッ！」",
-		   NULL, "\"Hii...... Hiiii! ......Hiii......! Ah!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "　あッ！」",
+		   NULL, " Ah!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「ひ、……ひいっ、……ひいっ……！　あッ！」",		   NULL, "\"Hii...... Hiiii! ......Hiii......! Ah!\"", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -10837,11 +10925,17 @@ void main()
 	StopBGM( 2 );
 	PlayBGM( 0, "bgm1/zoku_haimen_no_tomoshibi", 70, 0 );
 	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「残念！",
+		   NULL, "\"Sorry!", Line_ContinueAfterTyping);
 	//;wait 500
+	OutputLine(NULL, "　薄幸の美少女、",
+		   NULL, " It was the pretty, misfortunate girl,", Line_ContinueAfterTyping);
 
 	PlaySE( 1, "wav/boyon", 50, 64 );
 	//;wait 500
 
+	OutputLine(NULL, "沙都子ちゃんでしてよ！",
+		   NULL, " Satoko-chan!", Line_WaitForInput);
 	DisableWindow();
 
 	PlaySE( 0, "wav/koruku", 50, 64 );
@@ -10849,8 +10943,9 @@ void main()
 	//;wait 300
 	FadeBustshot( 9, FALSE, 0, 0, 0, 0, 400, FALSE );
 	ChangeBustshot( 40, "sprites/satoko/sifuku/sa_akuwaraib1", 400, TRUE );
-	OutputLine(NULL, "「残念！　薄幸の美少女、沙都子ちゃんでしてよ！　采さんだと思いまして？」",
-		   NULL, "\"Sorry! It was the pretty, misfortunate girl, Satoko-chan! Did you think it was Une-san?\"", Line_Normal);
+	OutputLine(NULL, "　采さんだと思いまして？」",
+		   NULL, " Did you think it was Une-san?\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「残念！　薄幸の美少女、沙都子ちゃんでしてよ！　采さんだと思いまして？」",		   NULL, "\"Sorry! It was the pretty, misfortunate girl, Satoko-chan! Did you think it was Une-san?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -10858,14 +10953,17 @@ void main()
 	//;wait 2000
 	ChangeBustshot( 40, "sprites/satoko/sifuku/sa_waraia1", 200, TRUE );
 	PlaySE( 1, "wav/boyon", 50, 64 );
+	OutputLine(NULL, "「残念ですわねぇ、",
+		   NULL, "\"Too bad for you!", Line_ContinueAfterTyping);
 	//;wait 200
 	PlaySE( 0, "wav/boyon", 50, 64 );
 	//;wait 200
 	PlaySE( 2, "wav/boyon", 50, 64 );
 
 	//;wait 800
-	OutputLine(NULL, "「残念ですわねぇ、おーっほっほっほっほ！！」",
-		   NULL, "\"Too bad for you! Ohhohohoho!!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "おーっほっほっほっほ！！」",
+		   NULL, " Ohhohohoho!!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「残念ですわねぇ、おーっほっほっほっほ！！」",		   NULL, "\"Too bad for you! Ohhohohoho!!\"", Line_ContinueAfterTyping);
 	//;se2v 37,50
 	PlaySE( 0, "wav/daidageki", 100, 64 );
 	ShakeScreen( 4, 12, 20, 50, 1, );
@@ -10957,6 +11055,8 @@ void main()
 	DrawBustshot( 3, "sprites/hanyu/miko/han_9", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, FALSE );
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
 	//;【羽入】
+	OutputLine(NULL, "「行きますですよ、",
+		   NULL, "\"Here I go!", Line_ContinueAfterTyping);
 	DisableWindow();
 
 	//;wait 500
@@ -10964,8 +11064,9 @@ void main()
 	DrawScene( "white", 200 );
 	DrawScene( "effect/bg0", 200 );
 	ShakeScreen( 4, 12, 20, 25, 2, );
-	OutputLine(NULL, "「行きますですよ、ピカーッ！！」",
-		   NULL, "\"Here I go! Flash!!\"", Line_Normal);
+	OutputLine(NULL, "ピカーッ！！」",
+		   NULL, " Flash!!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「行きますですよ、ピカーッ！！」",		   NULL, "\"Here I go! Flash!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -11333,6 +11434,12 @@ void main()
 
 	ChangeBustshot( 40, "sprites/hanyu/miko/han_9a", 200, TRUE );
 	//;【羽入】
+	OutputLine(NULL, "「僕の巫女たちの力を侮るからなのですよ！",
+		   NULL, "\"This happened because you underestimated the power of my priestess!", Line_WaitForInput);
+	OutputLine(NULL, "　さぁ、田村媛命！",
+		   NULL, " Now, Tamurahime-no-Mikoto!", Line_WaitForInput);
+	OutputLine(NULL, "　お前はしばらく静かにしているのですッ。",
+		   NULL, " You shall be silent for a while!", Line_WaitForInput);
 	DisableWindow();
 	PlaySE( 0, "wav/hikaru", 50, 64 );
 	EndLayerPersistence( 41 );
@@ -11341,8 +11448,9 @@ void main()
 	DrawScene( "effect/bg0", 200 );
 	PlaySE( 1, "wav/finish", 50, 64 );
 	ShakeScreen( 4, 12, 20, 25, 2, );
-	OutputLine(NULL, "「僕の巫女たちの力を侮るからなのですよ！　さぁ、田村媛命！　お前はしばらく静かにしているのですッ。羽入フラーッシュ！！」",
-		   NULL, "\"This happened because you underestimated the power of my priestess! Now, Tamurahime-no-Mikoto! You shall be silent for a while! Hanyuu Flash!!\"", Line_Normal);
+	OutputLine(NULL, "羽入フラーッシュ！！」",
+		   NULL, " Hanyuu Flash!!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「僕の巫女たちの力を侮るからなのですよ！　さぁ、田村媛命！　お前はしばらく静かにしているのですッ。羽入フラーッシュ！！」",		   NULL, "\"This happened because you underestimated the power of my priestess! Now, Tamurahime-no-Mikoto! You shall be silent for a while! Hanyuu Flash!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -11563,11 +11671,14 @@ void main()
 
 	DrawBustshot( 2, "sprites/tomi/sifuku/tomitake2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
 	//;【富竹】
+	OutputLine(NULL, "「いやぁ、はっはっは…、",
+		   NULL, "\"Well, hahaha...", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 2, "sprites/tomi/sifuku/tomitake3", 200, TRUE );
-	OutputLine(NULL, "「いやぁ、はっはっは…、ちょ、ちょっと趣味でかじったことがあってねぇ……！」",
-		   NULL, "\"Well, hahaha... I-I just studied it a bit as a hobby......!\"", Line_Normal);
+	OutputLine(NULL, "ちょ、ちょっと趣味でかじったことがあってねぇ……！」",
+		   NULL, " I-I just studied it a bit as a hobby......!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「いやぁ、はっはっは…、ちょ、ちょっと趣味でかじったことがあってねぇ……！」",		   NULL, "\"Well, hahaha... I-I just studied it a bit as a hobby......!\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -11723,9 +11834,16 @@ void main()
 
 	DrawBustshot( 5, "sprites/tomi/sifuku/tomitake3", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
 	//;【富竹】
+	OutputLine(NULL, "「申し訳ないね。",
+		   NULL, "\"I'm sorry.", Line_WaitForInput);
+	OutputLine(NULL, "η１７……、",
+		   NULL, " η17......", Line_ContinueAfterTyping);
 	Wait( 500 );
-	OutputLine(NULL, "「申し訳ないね。η１７……、じゃない、この病気の正体がわかるまで、僕たちは外に出るわけにはいかないんだ。」",
-		   NULL, "\"I'm sorry. η17...... No, until we understand the cause of this illness, we can't be allowed to leave.\"", Line_Normal);
+	OutputLine(NULL, "じゃない、",
+		   NULL, " No,", Line_WaitForInput);
+	OutputLine(NULL, "この病気の正体がわかるまで、僕たちは外に出るわけにはいかないんだ。」",
+		   NULL, " until we understand the cause of this illness, we can't be allowed to leave.\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「申し訳ないね。η１７……、じゃない、この病気の正体がわかるまで、僕たちは外に出るわけにはいかないんだ。」",		   NULL, "\"I'm sorry. η17...... No, until we understand the cause of this illness, we can't be allowed to leave.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -11903,8 +12021,17 @@ void main()
 	DisplayWindow();
 	//;【ウネ】
 
-	OutputLine(NULL, "「……我の種が、……この青い花壇の隅々にまで行き届いたのです。……くっふふふふ、……嬉しい。……チョー嬉しいのです。くふふふふふふふふっふっふっふ……。」",
-		   NULL, "\"......My seeds, have reached every corner of this blue flower bed. ......Kfufufufu, I'm happy. ......I'm super happy. Kfufufufufufufufufufufufu......\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "「……我の種が、",
+		   NULL, "\"......My seeds,", Line_WaitForInput);
+	OutputLine(NULL, "……この青い花壇の隅々にまで行き届いたのです。",
+		   NULL, " have reached every corner of this blue flower bed.", Line_WaitForInput);
+	OutputLine(NULL, "……くっふふふふ、……嬉しい。",
+		   NULL, " ......Kfufufufu, I'm happy.", Line_WaitForInput);
+	OutputLine(NULL, "……チョー嬉しいのです。",
+		   NULL, " ......I'm super happy.", Line_WaitForInput);
+	OutputLine(NULL, "くふふふふふふふふっふっふっふ……。」",
+		   NULL, " Kfufufufufufufufufufufufu......\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「……我の種が、……この青い花壇の隅々にまで行き届いたのです。……くっふふふふ、……嬉しい。……チョー嬉しいのです。くふふふふふふふふっふっふっふ……。」",		   NULL, "\"......My seeds, have reached every corner of this blue flower bed. ......Kfufufufu, I'm happy. ......I'm super happy. Kfufufufufufufufufufufufu......\"", Line_ContinueAfterTyping);
 	ShakeScreen( 4, 9, 20, 25, 2, );
 	OutputLineAll(NULL, "", Line_Normal);
 
@@ -12012,11 +12139,16 @@ void main()
 
 	ChangeBustshot( 40, "sprites/rika/sifuku/rik_6", 200, TRUE );
 	//;【梨花】
+	OutputLine(NULL, "「角の民のことを毛嫌いする田村が、",
+		   NULL, "\"Tamura loathes the horned people,", Line_WaitForInput);
+	OutputLine(NULL, "なぜ角の民を拡散させようとしたのか。",
+		   NULL, " so why would she try to spread them outside of Hinamizawa?", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 40, "sprites/rika/sifuku/rik_10a", 200, TRUE );
-	OutputLine(NULL, "「角の民のことを毛嫌いする田村が、なぜ角の民を拡散させようとしたのか。…………まさか……。」",
-		   NULL, "\"Tamura loathes the horned people, so why would she try to spread them outside of Hinamizawa? .........It can't be......\"", Line_Normal);
+	OutputLine(NULL, "…………まさか……。」",
+		   NULL, " .........It can't be......\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「角の民のことを毛嫌いする田村が、なぜ角の民を拡散させようとしたのか。…………まさか……。」",		   NULL, "\"Tamura loathes the horned people, so why would she try to spread them outside of Hinamizawa? .........It can't be......\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -12201,11 +12333,16 @@ void main()
 
 	ChangeBustshot( 40, "sprites/une/2/une_10", 200, TRUE );
 	//;【ウネ】
+	OutputLine(NULL, "「我、チョー途方に暮れていたのです。",
+		   NULL, "\"I was at a total loss.", Line_WaitForInput);
 	DisableWindow();
 	ChangeBustshot( 40, "sprites/une/2/une_12", 200, TRUE );
 
-	OutputLine(NULL, "「我、チョー途方に暮れていたのです。そこへノコノコと、我の話を信じてくれそうな、マヌケな民の長が現れたのです。……くっふふふふふふふふ……！！」",
-		   NULL, "\"I was at a total loss. But then a dumbass who believed my story just happened to show up. ......Kfufufufufufufufu......!!\"", Line_Normal);
+	OutputLine(NULL, "そこへノコノコと、我の話を信じてくれそうな、マヌケな民の長が現れたのです。",
+		   NULL, " But then a dumbass who believed my story just happened to show up.", Line_WaitForInput);
+	OutputLine(NULL, "……くっふふふふふふふふ……！！」",
+		   NULL, " ......Kfufufufufufufufu......!!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「我、チョー途方に暮れていたのです。そこへノコノコと、我の話を信じてくれそうな、マヌケな民の長が現れたのです。……くっふふふふふふふふ……！！」",		   NULL, "\"I was at a total loss. But then a dumbass who believed my story just happened to show up. ......Kfufufufufufufufu......!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -12688,9 +12825,13 @@ void main()
 
 	SetSpeedOfMessage( TRUE, 128 );
 	ChangeBustshot( 1, "sprites/une/2/une_13", 200, TRUE );
+	OutputLine(NULL, "「チョー愉快、",
+		   NULL, "\"Super fun!", Line_ContinueAfterTyping);
 	PlaySE( 0, "a5_10316", 50, 64 );
 	ShakeScreen( 0, 6, 100, 5, 20, );
 	Wait( 100 );
+	OutputLine(NULL, "チョー愉悦、",
+		   NULL, " Super happy!", Line_ContinueAfterTyping);
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/une/2/une_14", 200, TRUE );
@@ -12698,6 +12839,8 @@ void main()
 	PlaySE( 0, "a5_10316", 50, 64 );
 	ShakeScreen( 2, 6,  100 , 5, 20, );
 	Wait( 100 );
+	OutputLine(NULL, "チョー最高！",
+		   NULL, " Super awesome!", Line_ContinueAfterTyping);
 	DisableWindow();
 
 	//;se1v 12,50
@@ -12706,12 +12849,15 @@ void main()
 	ShakeScreen( 0, 6, 100, 3, 33, );
 	Wait( 500 );
 	ChangeBustshot( 1, "sprites/une/2/une_13", 200, TRUE );
+	OutputLine(NULL, "　　　　チョーチョーチョーなのですよ、",
+		   NULL, " Super super duper!", Line_ContinueAfterTyping);
 	//;br
 	//;langjp　チョーチョーチョーなのですよ、/
 	PlaySE( 0, "a5_10316", 50, 64 );
 	//;wait 2000
-	OutputLine(NULL, "「チョー愉快、チョー愉悦、チョー最高！　　　　チョーチョーチョーなのですよ、チョーくっふふっはっはっはっはっはっはッ！！」",
-		   NULL, "\"Super fun! Super happy! Super awesome! Super super duper! Super kfufuhahahahahaha!!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "チョーくっふふっはっはっはっはっはっはッ！！」",
+		   NULL, " Super kfufuhahahahahaha!!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「チョー愉快、チョー愉悦、チョー最高！　　　　チョーチョーチョーなのですよ、チョーくっふふっはっはっはっはっはっはッ！！」",		   NULL, "\"Super fun! Super happy! Super awesome! Super super duper! Super kfufuhahahahahaha!!\"", Line_ContinueAfterTyping);
 
 	ShakeScreen( 4, 12, 20, 75, 0, );
 	OutputLineAll(NULL, "", Line_Normal);
@@ -12793,11 +12939,16 @@ void main()
 
 	DrawBustshot( 2, "sprites/une/2/une_14", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, FALSE );
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, TRUE );
+	OutputLine(NULL, "「神も無能で巫女も無能！",
+		   NULL, "\"When the god's incompetent, so is the priestess!", Line_WaitForInput);
+	OutputLine(NULL, "　何の役にも立たず何の力も持たず、何の神通力も持たぬ役立たずの神なのです、",
+		   NULL, " You're a useless god with nothing useful to your name! No power, and no supernatural power either!", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 2, "sprites/une/2/une_13", 200, TRUE );
-	OutputLine(NULL, "「神も無能で巫女も無能！　何の役にも立たず何の力も持たず、何の神通力も持たぬ役立たずの神なのです、チョーマヌケ！！　くっはははははははははははははははははッ！！！」",
-		   NULL, "\"When the god's incompetent, so is the priestess! You're a useless god with nothing useful to your name! No power, and no supernatural power either! You're a super dumbo!! Khahahahahahahahahahahahahahahahaha!!!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "チョーマヌケ！！　くっはははははははははははははははははッ！！！」",
+		   NULL, " You're a super dumbo!! Khahahahahahahahahahahahahahahahaha!!!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「神も無能で巫女も無能！　何の役にも立たず何の力も持たず、何の神通力も持たぬ役立たずの神なのです、チョーマヌケ！！　くっはははははははははははははははははッ！！！」",		   NULL, "\"When the god's incompetent, so is the priestess! You're a useless god with nothing useful to your name! No power, and no supernatural power either! You're a super dumbo!! Khahahahahahahahahahahahahahahahaha!!!\"", Line_ContinueAfterTyping);
 	ShakeScreen( 4, 12, 20, 75, 0, );
 	OutputLineAll(NULL, "", Line_Normal);
 
@@ -12888,12 +13039,17 @@ void main()
 	FadeBustshot( 4, FALSE, 0, 0, 0, 0, 400, TRUE );
 	DrawBustshot( 7, "sprites/une/2/une_14", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 	//;【ウネ】
+	OutputLine(NULL, "「くっふふふふははははははは、",
+		   NULL, "\"Kfufufufuhahahahahahahaha!", Line_ContinueAfterTyping);
 
 	ShakeScreen( 4, 12, 20, 15, 3, );
+	OutputLine(NULL, "チョー愉快なのです、",
+		   NULL, " This is super fun!", Line_ContinueAfterTyping);
 
 	Wait( 1000 );
-	OutputLine(NULL, "「くっふふふふははははははは、チョー愉快なのです、くっはははははは！！",
-		   NULL, "\"Kfufufufuhahahahahahahaha! This is super fun! Khahahahahaha!!", Line_ContinueAfterTyping);
+	OutputLine(NULL, "くっはははははは！！",
+		   NULL, " Khahahahahaha!!", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「くっふふふふははははははは、チョー愉快なのです、くっはははははは！！",		   NULL, "\"Kfufufufuhahahahahahahaha! This is super fun! Khahahahahaha!!", Line_ContinueAfterTyping);
 
 	ShakeScreen( 4, 12, 20, 25, 2, );
 	OutputLineAll(NULL, "", Line_WaitForInput);
@@ -12953,6 +13109,8 @@ void main()
 
 	SetSpeedOfMessage( TRUE, 128 );
 	ChangeBustshot( 40, "sprites/rika/sifuku/rik_10a", 400, TRUE );
+	OutputLine(NULL, "「……無能って言葉はね、",
+		   NULL, "\"......The term incompetent", Line_WaitForInput);
 	DisableWindow();
 
 	//;texton
@@ -12970,8 +13128,9 @@ void main()
 	PlaySE( 0, "wav/tataku", 100, 64 );
 	StopBGM( 1 );
 	ShakeScreen( 2, 12,  100 , 10, 10, );
-	OutputLine(NULL, "「……無能って言葉はね、肝心な時に温泉行ってるような男に使うものよ…！」",
-		   NULL, "\"......The term incompetent is what you use for a man who goes off to the hot spring at a critical moment...!\"", Line_Normal);
+	OutputLine(NULL, "肝心な時に温泉行ってるような男に使うものよ…！」",
+		   NULL, " is what you use for a man who goes off to the hot spring at a critical moment...!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「……無能って言葉はね、肝心な時に温泉行ってるような男に使うものよ…！」",		   NULL, "\"......The term incompetent is what you use for a man who goes off to the hot spring at a critical moment...!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	SetSpeedOfMessage( FALSE, 0 );
@@ -12987,8 +13146,13 @@ void main()
 
 	DrawBustshot( 1, "sprites/une/2/une_14", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 	//;【ウネ】
-	OutputLine(NULL, "「我に立ち向かうつもりか、人の子風情が。我、チョー笑えるのです。くっふふふふふふ！」",
-		   NULL, "\"You intend to oppose me? You, a mere child of man? That's super funny. Kfufufufufufu!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "「我に立ち向かうつもりか、人の子風情が。",
+		   NULL, "\"You intend to oppose me? You, a mere child of man?", Line_WaitForInput);
+	OutputLine(NULL, "我、チョー笑えるのです。",
+		   NULL, " That's super funny.", Line_WaitForInput);
+	OutputLine(NULL, "くっふふふふふふ！」",
+		   NULL, " Kfufufufufufu!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「我に立ち向かうつもりか、人の子風情が。我、チョー笑えるのです。くっふふふふふふ！」",		   NULL, "\"You intend to oppose me? You, a mere child of man? That's super funny. Kfufufufufufu!\"", Line_ContinueAfterTyping);
 	ShakeScreen( 4, 12, 20, 50, 1, );
 	OutputLineAll(NULL, "", Line_Normal);
 
@@ -13085,8 +13249,13 @@ void main()
 
 	DrawBustshot( 2, "sprites/hanyu/miko/han_6a", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 	//;【羽入】
-	OutputLine(NULL, "「やかましいのですッ、ご飯の１杯くらいで千年も恨むなど、本当に田村のナンチャラは心が狭いのですよー！」",
-		   NULL, "\"That's enough! Honestly, it's your fault for being so petty, Tamura, and holding a thousand year grudge over a single meal!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "「やかましいのですッ、",
+		   NULL, "\"That's enough!", Line_WaitForInput);
+	OutputLine(NULL, "ご飯の１杯くらいで千年も恨むなど、",
+		   NULL, " Honestly, it's your fault for being so petty, Tamura,", Line_WaitForInput);
+	OutputLine(NULL, "本当に田村のナンチャラは心が狭いのですよー！」",
+		   NULL, " and holding a thousand year grudge over a single meal!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「やかましいのですッ、ご飯の１杯くらいで千年も恨むなど、本当に田村のナンチャラは心が狭いのですよー！」",		   NULL, "\"That's enough! Honestly, it's your fault for being so petty, Tamura, and holding a thousand year grudge over a single meal!\"", Line_ContinueAfterTyping);
 	ShakeScreen( 4, 9, 20, 25, 2, );
 	OutputLineAll(NULL, "", Line_Normal);
 
@@ -13121,11 +13290,16 @@ void main()
 	DrawScene( "bg/sonota/fure3", 400 );
 	DrawBustshot( 1, "sprites/rika/sifuku/rik_10a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 	//;【梨花】
+	OutputLine(NULL, "「……よしなさいよ、あんたたち。",
+		   NULL, "\"......Stop it, you two.", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/rika/sifuku/rik_9", 200, TRUE );
-	OutputLine(NULL, "「……よしなさいよ、あんたたち。それにね、戦いはまだ終わっちゃいないわ。」",
-		   NULL, "\"......Stop it, you two. Besides, this battle isn't over yet.\"", Line_Normal);
+	OutputLine(NULL, "それにね、",
+		   NULL, " Besides,", Line_WaitForInput);
+	OutputLine(NULL, "戦いはまだ終わっちゃいないわ。」",
+		   NULL, " this battle isn't over yet.\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「……よしなさいよ、あんたたち。それにね、戦いはまだ終わっちゃいないわ。」",		   NULL, "\"......Stop it, you two. Besides, this battle isn't over yet.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -13498,11 +13672,14 @@ void main()
 
 	DrawBustshot( 40, "sprites/keiiti/sifuku/kei_def1", -180, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 42, 400, TRUE );
 	//;【圭一】
+	OutputLine(NULL, "「レナ、見付けたのか？！",
+		   NULL, "\"Rena, did you find her?!", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshotWithFiltering( 40, "sprites/keiiti/sifuku/kei_warai", "effect/left", 0, 300, TRUE );
-	OutputLine(NULL, "「レナ、見付けたのか？！　おお、確かにこの子だ！」",
-		   NULL, "\"Rena, did you find her?! Ohh, this must be her!\"", Line_WaitForInput);
+	OutputLine(NULL, "　おお、確かにこの子だ！」",
+		   NULL, " Ohh, this must be her!\"", Line_WaitForInput);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「レナ、見付けたのか？！　おお、確かにこの子だ！」",		   NULL, "\"Rena, did you find her?! Ohh, this must be her!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
@@ -13591,8 +13768,17 @@ void main()
 	FadeBustshot( 6, FALSE, 0, 0, 0, 0, 400, FALSE );
 	DrawBustshot( 43, "sprites/rika/sifuku/rik_9", -180, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 42, 400, TRUE );
 	//;【梨花】
-	OutputLine(NULL, "「ねぇ？　角の民の長とその巫女の能力、無能じゃないでしょ？　ちょーっと気が長くなるくらい面倒臭いだけで、私から見れば、無能はあんたの方なんだからね。くすくすくすくす！」",
-		   NULL, "\"See? The leader of the horned people and her priestess aren't so powerless or incompetent after all, huh? It's just so tiresome it wears on the patience a bit, but from my point of view, you're the incompetent one. Heeheeheehee!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "「ねぇ？",
+		   NULL, "\"See?", Line_WaitForInput);
+	OutputLine(NULL, "　角の民の長とその巫女の能力、無能じゃないでしょ？",
+		   NULL, " The leader of the horned people and her priestess aren't so powerless or incompetent after all, huh?", Line_WaitForInput);
+	OutputLine(NULL, "　ちょーっと気が長くなるくらい面倒臭いだけで、",
+		   NULL, " It's just so tiresome it wears on the patience a bit,", Line_WaitForInput);
+	OutputLine(NULL, "私から見れば、無能はあんたの方なんだからね。",
+		   NULL, " but from my point of view, you're the incompetent one.", Line_WaitForInput);
+	OutputLine(NULL, "くすくすくすくす！」",
+		   NULL, " Heeheeheehee!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「ねぇ？　角の民の長とその巫女の能力、無能じゃないでしょ？　ちょーっと気が長くなるくらい面倒臭いだけで、私から見れば、無能はあんたの方なんだからね。くすくすくすくす！」",		   NULL, "\"See? The leader of the horned people and her priestess aren't so powerless or incompetent after all, huh? It's just so tiresome it wears on the patience a bit, but from my point of view, you're the incompetent one. Heeheeheehee!\"", Line_ContinueAfterTyping);
 	ShakeScreen( 4, 9, 20, 40, 1, );
 	OutputLineAll(NULL, "", Line_Normal);
 
@@ -13643,11 +13829,14 @@ void main()
 	Wait( 200 );
 	DrawBustshot( 2, "sprites/une/une_10a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
 	//;【采】
+	OutputLine(NULL, "「……わ、我、グルグル巻き！",
+		   NULL, "\"......Y-You're binding me in circles!", Line_WaitForInput);
 	SetSpeedOfMessage( TRUE, 128 );
 
 	PlaySE( 0, "a1_16258", 50, 64 );
-	OutputLine(NULL, "「……わ、我、グルグル巻き！　あ～れ～！！」",
-		   NULL, "\"......Y-You're binding me in circles! Ahhhh!!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "　あ～れ～！！」",
+		   NULL, " Ahhhh!!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「……わ、我、グルグル巻き！　あ～れ～！！」",		   NULL, "\"......Y-You're binding me in circles! Ahhhh!!\"", Line_ContinueAfterTyping);
 	ShakeScreen( 4, 12, 20, 75, 0, );
 	SetSpeedOfMessage( FALSE, 0 );
 	DisableWindow();
@@ -13723,10 +13912,15 @@ void main()
 
 	DrawBustshot( 40, "sprites/tam/tam_10a", -20, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 41, 400, TRUE );
 	//;【田村】
+	OutputLine(NULL, "「なッ、なんと！！",
+		   NULL, "\"W-What?!!", Line_WaitForInput);
+	OutputLine(NULL, "　神縛りの秘宝とは！！",
+		   NULL, " The god-binding treasure?!!", Line_WaitForInput);
 
 	PlaySE( 0, "a1_16258", 50, 64 );
-	OutputLine(NULL, "「なッ、なんと！！　神縛りの秘宝とは！！　あ～れ～！！」",
-		   NULL, "\"W-What?!! The god-binding treasure?!! Ahhh!!\"", Line_Normal);
+	OutputLine(NULL, "　あ～れ～！！」",
+		   NULL, " Ahhh!!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「なッ、なんと！！　神縛りの秘宝とは！！　あ～れ～！！」",		   NULL, "\"W-What?!! The god-binding treasure?!! Ahhh!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -13775,14 +13969,19 @@ void main()
 	DrawBustshot( 3, "sprites/rika/sifuku/rik_8", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
 	PlaySE( 0, "boyon", 50, 64 );
 	//;【梨花】
+	OutputLine(NULL, "「つまり、あんたがドロボーしたってことでしょうが。",
+		   NULL, "\"In other words, you stole it from her.", Line_WaitForInput);
+	OutputLine(NULL, "というわけで、あんたも有罪！",
+		   NULL, " So you're just as guilty!", Line_WaitForInput);
 	DisableWindow();
 
 	PlaySE( 0, "wav/finish", 50, 64 );
 	DrawScene( "effect/bg0", 0 );
 	ShakeScreen( 4, 15, 20, 75, 0, );
 
-	OutputLine(NULL, "「つまり、あんたがドロボーしたってことでしょうが。というわけで、あんたも有罪！　ピカー！！！」",
-		   NULL, "\"In other words, you stole it from her. So you're just as guilty! Flash!!!\"", Line_Normal);
+	OutputLine(NULL, "　ピカー！！！」",
+		   NULL, " Flash!!!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「つまり、あんたがドロボーしたってことでしょうが。というわけで、あんたも有罪！　ピカー！！！」",		   NULL, "\"In other words, you stole it from her. So you're just as guilty! Flash!!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -13799,10 +13998,13 @@ void main()
 
 	DrawBustshot( 1, "sprites/hanyu/miko/han_6a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 	//;【羽入】
+	OutputLine(NULL, "「だから注連縄を３本持ってきたのですか～！",
+		   NULL, "\"Is this why you brought three sacred ropes with you?!", Line_WaitForInput);
 
 	PlaySE( 0, "a1_16258", 50, 64 );
-	OutputLine(NULL, "「だから注連縄を３本持ってきたのですか～！　あ～れ～！！！」",
-		   NULL, "\"Is this why you brought three sacred ropes with you?! Ahhh!!!\"", Line_Normal);
+	OutputLine(NULL, "　あ～れ～！！！」",
+		   NULL, " Ahhh!!!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「だから注連縄を３本持ってきたのですか～！　あ～れ～！！！」",		   NULL, "\"Is this why you brought three sacred ropes with you?! Ahhh!!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -14399,6 +14601,10 @@ void main()
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 400, TRUE );
 	DrawBustshot( 2, "sprites/tam/tam_6", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 	//;【田村】
+	OutputLine(NULL, "「ふっふっふ！",
+		   NULL, "\"Fufufu!", Line_WaitForInput);
+	OutputLine(NULL, "　神の強運を思い知り給え！！",
+		   NULL, " Know the powerful luck of the gods!!", Line_WaitForInput);
 
 	DisableWindow();
 	ChangeBustshot( 2, "sprites/tam/tam_9", 200, TRUE );
@@ -14408,8 +14614,9 @@ void main()
 	Wait( 200 );
 	PlaySE( 2, "wav/tataku", 100, 64 );
 	ShakeScreen( 2, 6,  100 , 5, 20, );
-	OutputLine(NULL, "「ふっふっふ！　神の強運を思い知り給え！！　　發を切ってダブル立直と知り奉れッ！」",
-		   NULL, "\"Fufufu! Know the powerful luck of the gods!! I am discarding a green dragon and declaring double riichi!\"", Line_Normal);
+	OutputLine(NULL, "　　發を切ってダブル立直と知り奉れッ！」",
+		   NULL, " I am discarding a green dragon and declaring double riichi!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「ふっふっふ！　神の強運を思い知り給え！！　　發を切ってダブル立直と知り奉れッ！」",		   NULL, "\"Fufufu! Know the powerful luck of the gods!! I am discarding a green dragon and declaring double riichi!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -14468,20 +14675,31 @@ void main()
 	//;wait 500
 	//;【レナ】
 	//;langjp「私もロ～ン！　人和、七対子、赤々ドラドラ、ただの役満、３万２千点～！！」
+	OutputLine(NULL, "「私もロ～ン！",
+		   NULL, "\"Ron for me too!", Line_WaitForInput);
+	OutputLine(NULL, "　人和、",
+		   NULL, " Hand of man,", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "a1_07132", 70, 64 );
 	Wait( 100 );
+	OutputLine(NULL, "七対子、",
+		   NULL, " seven pairs,", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "a1_07132", 80, 64 );
 	Wait( 100 );
+	OutputLine(NULL, "赤々ドラドラ、",
+		   NULL, " red, red, dora, dora,", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "a1_07132", 1000, 64 );
 	Wait( 500 );
+	OutputLine(NULL, "ただの役満、",
+		   NULL, " so just a simple yakuman", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( TRUE, 128 );
 
 	//;wait 500
-	OutputLine(NULL, "「私もロ～ン！　人和、七対子、赤々ドラドラ、ただの役満、３万２千点～！！」",
-		   NULL, "\"Ron for me too! Hand of man, seven pairs, red, red, dora, dora, so just a simple yakuman for 32,000 points!!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "３万２千点～！！」",
+		   NULL, " for 32,000 points!!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「私もロ～ン！　人和、七対子、赤々ドラドラ、ただの役満、３万２千点～！！」",		   NULL, "\"Ron for me too! Hand of man, seven pairs, red, red, dora, dora, so just a simple yakuman for 32,000 points!!\"", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "wav/daidageki", 50, 64 );
 	ShakeScreen( 2, 6,  100 , 5, 20, );
@@ -14495,9 +14713,12 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 	DrawBustshot( 3, "sprites/tam/tam_9a", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 	//;【田村】
+	OutputLine(NULL, "「んなッ、",
+		   NULL, "\"Wha?!", Line_ContinueAfterTyping);
 	Wait( 300 );
-	OutputLine(NULL, "「んなッ、なななななななななッ？！？！」",
-		   NULL, "\"Wha?! W-W-W-W-W-W-W-W-Wha?!?!\"", Line_Normal);
+	OutputLine(NULL, "なななななななななッ？！？！」",
+		   NULL, " W-W-W-W-W-W-W-W-Wha?!?!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「んなッ、なななななななななッ？！？！」",		   NULL, "\"Wha?! W-W-W-W-W-W-W-W-Wha?!?!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -14580,13 +14801,18 @@ void main()
 	FadeBustshot( 41, FALSE, 0, 0, 0, 0, 200, FALSE );
 	DrawBustshot( 42, "sprites/tam/tam_10a", 140, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 40, 200, TRUE );
 	//;【田村】
+	OutputLine(NULL, "「ちょ、直撃３５万２千？！？！",
+		   NULL, "\"3-352,000 straight from me?!?!", Line_WaitForInput);
+	OutputLine(NULL, "　そ、そんなこと有り得ない也や！",
+		   NULL, " T-That's impossible!", Line_WaitForInput);
 	DisableWindow();
 
 	PlaySE( 0, "a5_10317", 70, 64 );
 	FadeBustshotWithFiltering( 42, "effect/down", 0, FALSE, 0, 0, 300, TRUE );
 
-	OutputLine(NULL, "「ちょ、直撃３５万２千？！？！　そ、そんなこと有り得ない也や！　ぎゃわわ～んッ！！！」",
-		   NULL, "\"3-352,000 straight from me?!?! T-That's impossible! Gyawawahn!!\"", Line_Normal);
+	OutputLine(NULL, "　ぎゃわわ～んッ！！！」",
+		   NULL, " Gyawawahn!!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「ちょ、直撃３５万２千？！？！　そ、そんなこと有り得ない也や！　ぎゃわわ～んッ！！！」",		   NULL, "\"3-352,000 straight from me?!?! T-That's impossible! Gyawawahn!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -14682,8 +14908,11 @@ void main()
 	DrawBustshot( 40, "sprites/rena/re_waraib1", -180, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 42, 200, TRUE );
 	Wait( 500 );
 	//;【レナ】
-	OutputLine(NULL, "「じゃ～ん！　これでアガリ～！」",
-		   NULL, "\"Tada! Now I'm out!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "「じゃ～ん！",
+		   NULL, "\"Tada!", Line_WaitForInput);
+	OutputLine(NULL, "　これでアガリ～！」",
+		   NULL, " Now I'm out!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「じゃ～ん！　これでアガリ～！」",		   NULL, "\"Tada! Now I'm out!\"", Line_ContinueAfterTyping);
 	PlaySE( 0, "sys_se/page", 70, 64 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
@@ -14698,8 +14927,11 @@ void main()
 	FadeBustshot( 40, FALSE, 0, 0, 0, 0, 200, TRUE );
 	//;wait 500
 	//;【沙都子】
-	OutputLine(NULL, "「をっほっほっほ！　私もこれでアガリでしてよー！」",
-		   NULL, "\"Ohhohoho! I'm out now too!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "「をっほっほっほ！",
+		   NULL, "\"Ohhohoho!", Line_WaitForInput);
+	OutputLine(NULL, "　私もこれでアガリでしてよー！」",
+		   NULL, " I'm out now too!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「をっほっほっほ！　私もこれでアガリでしてよー！」",		   NULL, "\"Ohhohoho! I'm out now too!\"", Line_ContinueAfterTyping);
 	PlaySE( 0, "sys_se/page", 70, 64 );
 	OutputLineAll(NULL, "", Line_Normal);
 
@@ -14934,12 +15166,17 @@ void main()
 	ShakeScreen( 2, 3,  100 , 2, 50, );
 	//;!s0
 	//;【魅音】
+	OutputLine(NULL, "「ハーイ！",
+		   NULL, "\"Okay!", Line_WaitForInput);
+	OutputLine(NULL, "　カミングアウトします、おじさんは占い師です！",
+		   NULL, " I'm revealing myself! I'm the fortune teller!", Line_WaitForInput);
 	DisableWindow();
 
 	DrawBustshot( 3, "sprites/mion/me_akuwaraia1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, FALSE );
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
-	OutputLine(NULL, "「ハーイ！　カミングアウトします、おじさんは占い師です！　羽入ちゃんは狼でーす！！」",
-		   NULL, "\"Okay! I'm revealing myself! I'm the fortune teller! Hanyuu-chan is the wolf!!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "　羽入ちゃんは狼でーす！！」",
+		   NULL, " Hanyuu-chan is the wolf!!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「ハーイ！　カミングアウトします、おじさんは占い師です！　羽入ちゃんは狼でーす！！」",		   NULL, "\"Okay! I'm revealing myself! I'm the fortune teller! Hanyuu-chan is the wolf!!\"", Line_ContinueAfterTyping);
 	PlaySE( 0, "wav/daidageki", 50, 64 );
 	//;!sd/
 	OutputLineAll(NULL, "", Line_Normal);
@@ -14975,6 +15212,8 @@ void main()
 
 	DrawBustshot( 2, "sprites/keiiti/kei_ikari1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 	//;【圭一】
+	OutputLine(NULL, "「決定だぜ！",
+		   NULL, "\"Decided!", Line_ContinueAfterTyping);
 
 	SetSpeedOfMessage( TRUE, 128 );
 	DisableWindow();
@@ -14983,8 +15222,9 @@ void main()
 	ChangeBustshot( 2, "sprites/keiiti/kei_warai", 200, TRUE );
 	PlaySE( 0, "wav/finish", 50, 64 );
 
-	OutputLine(NULL, "「決定だぜ！　吊るされるのは羽入だぁああぁぁ！！」",
-		   NULL, "\"Decided! We're hanging Hanyuuuuu!!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "　吊るされるのは羽入だぁああぁぁ！！」",
+		   NULL, " We're hanging Hanyuuuuu!!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「決定だぜ！　吊るされるのは羽入だぁああぁぁ！！」",		   NULL, "\"Decided! We're hanging Hanyuuuuu!!\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
 	ShakeScreen( 4, 12, 20, 50, 1, );
 	OutputLineAll(NULL, "", Line_Normal);

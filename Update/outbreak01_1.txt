@@ -254,10 +254,19 @@ void main()
 	ClearMessage();
 
 
+	OutputLine(NULL, "「………シ！",
+		   NULL, "\"......Shh!", Line_WaitForInput);
+	OutputLine(NULL, "　今テレビでその説明してるよ！！",
+		   NULL, " They're explaining it on the TV right now!!", Line_WaitForInput);
+	OutputLine(NULL, "　……発症すると、",
+		   NULL, " ......Once the initial signs appear,", Line_ContinueAfterTyping);
 	Wait( 500 );
+	OutputLine(NULL, "１週間ほどで以下の症状がって、",
+		   NULL, " the following symptoms develop over the following week...", Line_ContinueAfterTyping);
 	Wait( 300 );
-	OutputLine(NULL, "「………シ！　今テレビでその説明してるよ！！　……発症すると、１週間ほどで以下の症状がって、…………ぅ、」",
-		   NULL, "\"......Shh! They're explaining it on the TV right now!! ......Once the initial signs appear, the following symptoms develop over the following week... ...Hhh!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "…………ぅ、」",
+		   NULL, " ...Hhh!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「………シ！　今テレビでその説明してるよ！！　……発症すると、１週間ほどで以下の症状がって、…………ぅ、」",		   NULL, "\"......Shh! They're explaining it on the TV right now!! ......Once the initial signs appear, the following symptoms develop over the following week... ...Hhh!\"", Line_ContinueAfterTyping);
 	ShakeScreen( 4, 3, 20, 25, 2, );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
@@ -2075,11 +2084,18 @@ void main()
 	DisableWindow();
 
 	ChangeBustshot( 5, "sprites/mion/sifuku/me_ikaria2", 200, TRUE );
+	OutputLine(NULL, "「すっごく気持ち悪いことになってるんだよ！",
+		   NULL, "\"It's getting really awful around here!", Line_WaitForInput);
+	OutputLine(NULL, "　何かが変！！",
+		   NULL, " Something's not right with people!!", Line_ContinueAfterTyping);
 
 	Wait( 100 );
 	SetSpeedOfMessage( TRUE, 128 );
-	OutputLine(NULL, "「すっごく気持ち悪いことになってるんだよ！　何かが変！！だから用心して！」",
-		   NULL, "\"It's getting really awful around here! Something's not right with people!!  So watch yourselves!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "",
+		   NULL, " ", Line_WaitForInput);
+	OutputLine(NULL, "だから用心して！」",
+		   NULL, " So watch yourselves!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「すっごく気持ち悪いことになってるんだよ！　何かが変！！だから用心して！」",		   NULL, "\"It's getting really awful around here! Something's not right with people!!  So watch yourselves!\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
 	PlaySE( 0, "a5_10316", 50, 64 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
@@ -3423,10 +3439,13 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "　な、",
+		   NULL, "Wha", Line_ContinueAfterTyping);
 
 	Wait( 500 );
-	OutputLine(NULL, "　な、……何なんだよこれはッ…！！",
-		   NULL, "Wha ...What the hell...?!!", Line_ContinueAfterTyping);
+	OutputLine(NULL, "……何なんだよこれはッ…！！",
+		   NULL, " ...What the hell...?!!", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "　な、……何なんだよこれはッ…！！",		   NULL, "Wha ...What the hell...?!!", Line_ContinueAfterTyping);
 	PlaySE( 0, "a5_10316", 50, 64 );
 	ShakeScreen( 0, 9, 100, 5, 20, );
 	SetSpeedOfMessage( FALSE, 0 );
@@ -3713,11 +3732,14 @@ void main()
 	ClearMessage();
 
 
+	OutputLine(NULL, "「だ、",
+		   NULL, "\"Wh-", Line_ContinueAfterTyping);
 
 	Wait( 500 );
 	SetSpeedOfMessage( TRUE, 128 );
-	OutputLine(NULL, "「だ、誰ですか！！」",
-		   NULL, "\"Wh- Who is it?!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "誰ですか！！」",
+		   NULL, " Who is it?!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「だ、誰ですか！！」",		   NULL, "\"Wh- Who is it?!\"", Line_ContinueAfterTyping);
 
 	ShakeScreen( 4, 9, 20, 25, 2, );
 	SetSpeedOfMessage( FALSE, 0 );
@@ -3735,13 +3757,16 @@ void main()
 	ClearMessage();
 
 
+	OutputLine(NULL, "「こんばんは、竜宮です！",
+		   NULL, "\"Good evening, it's Ryuugu!", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "a1_07132", 50, 64 );
 	ShakeScreen( 2, 9,  100 , 4, 25, );
 	Wait( 1000 );
 
-	OutputLine(NULL, "「こんばんは、竜宮です！　開けてください！」",
-		   NULL, "\"Good evening, it's Ryuugu! Please let me in!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "　開けてください！」",
+		   NULL, " Please let me in!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「こんばんは、竜宮です！　開けてください！」",		   NULL, "\"Good evening, it's Ryuugu! Please let me in!\"", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "a1_07132", 50, 64 );
 	Wait( 100 );
@@ -3988,13 +4013,16 @@ void main()
 
 	DrawBustshot( 1, "sprites/rena/sifuku_c/ren_13c", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, TRUE );
 	ShakeScreen( 0, 15, 100, 10, 10, );
+	OutputLine(NULL, "「「ぅ、",
+		   NULL, "\"\"Uu", Line_ContinueAfterTyping);
 	DisableWindow();
 
 	Wait( 300 );
 	DrawBustshot( 2, "sprites/rena/sifuku_c/ren_14c", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, FALSE );
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, TRUE );
-	OutputLine(NULL, "「「ぅ、うわあああぁああああぁッ！！！」」",
-		   NULL, "\"\"Uu Uwaaaaaaaah!!!\"\"", Line_Normal);
+	OutputLine(NULL, "うわあああぁああああぁッ！！！」」",
+		   NULL, " Uwaaaaaaaah!!!\"\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「「ぅ、うわあああぁああああぁッ！！！」」",		   NULL, "\"\"Uu Uwaaaaaaaah!!!\"\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -4021,10 +4049,13 @@ void main()
 	DisableWindow();
 
 	DrawBustshotWithFiltering( 1, "sprites/keiiti/sifuku_b/kei_4b", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	OutputLine(NULL, "「レ、",
+		   NULL, "\"Re-", Line_ContinueAfterTyping);
 
 	Wait( 500 );
-	OutputLine(NULL, "「レ、レナぁああぁッ！！！」",
-		   NULL, "\"Re- Renaaaaa!!!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "レナぁああぁッ！！！」",
+		   NULL, " Renaaaaa!!!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「レ、レナぁああぁッ！！！」",		   NULL, "\"Re- Renaaaaa!!!\"", Line_ContinueAfterTyping);
 
 	ShakeScreen( 4, 9, 20, 30, 1, );
 	OutputLineAll(NULL, "", Line_Normal);
@@ -4171,9 +4202,13 @@ void main()
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/rena/sifuku_c/ren_10c", 200, TRUE );
+	OutputLine(NULL, "「……ひ、",
+		   NULL, "\"......Ki", Line_ContinueAfterTyping);
 
 	SetSpeedOfMessage( TRUE, 128 );
 	//;wait 500
+	OutputLine(NULL, "…人を殺すってことはね、",
+		   NULL, " ...Killing someone,", Line_ContinueAfterTyping);
 	DisableWindow();
 
 	ShakeScreen( 2, 6,  100 , 4, 25, );
@@ -4181,11 +4216,14 @@ void main()
 
 	ChangeBustshot( 1, "sprites/rena/sifuku_c/ren_14c", 400, TRUE );
 	ShakeScreen( 2, 6,  100 , 4, 25, );
+	OutputLine(NULL, "自分も殺されることを覚悟するってことだよ！",
+		   NULL, " means that you're ready to be killed in return!", Line_ContinueAfterTyping);
 
 
 	Wait( 300 );
-	OutputLine(NULL, "「……ひ、…人を殺すってことはね、自分も殺されることを覚悟するってことだよ！　甘えるんじゃないッ！！」",
-		   NULL, "\"......Ki ...Killing someone, means that you're ready to be killed in return! So don't take it lightly!!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "　甘えるんじゃないッ！！」",
+		   NULL, " So don't take it lightly!!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「……ひ、…人を殺すってことはね、自分も殺されることを覚悟するってことだよ！　甘えるんじゃないッ！！」",		   NULL, "\"......Ki ...Killing someone, means that you're ready to be killed in return! So don't take it lightly!!\"", Line_ContinueAfterTyping);
 
 	ShakeScreen( 4, 12, 20, 40, 1, );
 	SetSpeedOfMessage( FALSE, 0 );
@@ -4239,10 +4277,13 @@ void main()
 
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
 	DrawSceneWithMask( "bg/maebara/ma2", "effect/left", 0, 0, 300 );
+	OutputLine(NULL, "「…え、",
+		   NULL, "\"...Huh?", Line_ContinueAfterTyping);
 
 	Wait( 500 );
-	OutputLine(NULL, "「…え、……ぁッ、」",
-		   NULL, "\"...Huh? ......Oh!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "……ぁッ、」",
+		   NULL, " ......Oh!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「…え、……ぁッ、」",		   NULL, "\"...Huh? ......Oh!\"", Line_ContinueAfterTyping);
 
 	ShakeScreen( 4, 6, 20, 25, 2, );
 
@@ -4397,9 +4438,12 @@ void main()
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/keiiti/sifuku/kei_nayamu", 200, TRUE );
+	OutputLine(NULL, "「ぅ、",
+		   NULL, "\"Urk.", Line_ContinueAfterTyping);
 	Wait( 500 );
-	OutputLine(NULL, "「ぅ、………そ、そうだな…。」",
-		   NULL, "\"Urk. ......R-Right...\"", Line_WaitForInput);
+	OutputLine(NULL, "………そ、そうだな…。」",
+		   NULL, " ......R-Right...\"", Line_WaitForInput);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「ぅ、………そ、そうだな…。」",		   NULL, "\"Urk. ......R-Right...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
@@ -4637,9 +4681,12 @@ void main()
 	ClearMessage();
 
 
+	OutputLine(NULL, "「……げほ、",
+		   NULL, "\"......*Cough*", Line_ContinueAfterTyping);
 	ShakeScreen( 0, 6, 100, 3, 33, );
-	OutputLine(NULL, "「……げほ、…げほ…！」",
-		   NULL, "\"......*Cough* ...*Cough*...!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "…げほ…！」",
+		   NULL, " ...*Cough*...!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「……げほ、…げほ…！」",		   NULL, "\"......*Cough* ...*Cough*...!\"", Line_ContinueAfterTyping);
 	ShakeScreen( 2, 9,  100 , 5, 20, );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
@@ -4861,8 +4908,12 @@ void main()
 	DrawScene( "black", 400 );
 	DrawScene( "bg/maebara/ma_g3", 400 );
 	DrawBustshot( 1, "sprites/mion/sifuku/me_yowakia2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
+	OutputLine(NULL, "「……さ、………沙都子は、",
+		   NULL, "\"......Sa .........Satoko's", Line_ContinueAfterTyping);
 
 	Wait( 300 );
+	OutputLine(NULL, "……………。",
+		   NULL, " ............", Line_WaitForInput);
 
 	ChangeVolumeOfBGM( 0, 0, 800 );
 	ChangeVolumeOfBGM( 1, 0, 800 );
@@ -4870,8 +4921,13 @@ void main()
 	Wait( 800 );
 
 	//;ld r,mio_1,80
-	OutputLine(NULL, "「……さ、………沙都子は、……………。……さっき、暴徒に連れ去られたらしい…。話では鬼ヶ淵に引き連れてったって…。伝承の生贄の儀に沿って、三日かけて沈めて殺す気らしい…。」",
-		   NULL, "\"......Sa .........Satoko's ............ ......been taken away by those rioters from before... They said they were dragging her to Onigafuchi... Apparently they're going spend three days submerging her, according to the rituals passed down in the village...\"", Line_Normal);
+	OutputLine(NULL, "……さっき、暴徒に連れ去られたらしい…。",
+		   NULL, " ......been taken away by those rioters from before...", Line_WaitForInput);
+	OutputLine(NULL, "話では鬼ヶ淵に引き連れてったって…。",
+		   NULL, " They said they were dragging her to Onigafuchi...", Line_WaitForInput);
+	OutputLine(NULL, "伝承の生贄の儀に沿って、三日かけて沈めて殺す気らしい…。」",
+		   NULL, " Apparently they're going spend three days submerging her, according to the rituals passed down in the village...\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「……さ、………沙都子は、……………。……さっき、暴徒に連れ去られたらしい…。話では鬼ヶ淵に引き連れてったって…。伝承の生贄の儀に沿って、三日かけて沈めて殺す気らしい…。」",		   NULL, "\"......Sa .........Satoko's ............ ......been taken away by those rioters from before... They said they were dragging her to Onigafuchi... Apparently they're going spend three days submerging her, according to the rituals passed down in the village...\"", Line_Normal);
 	ClearMessage();
 
 	SetSpeedOfMessage( TRUE, 128 );
@@ -4922,8 +4978,13 @@ void main()
 	DrawBustshot( 2, "sprites/rena/sifuku/ren_14", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, FALSE );
 	ChangeBustshot( 1, "sprites/mion/sifuku/me_yowakia1", 200, FALSE );
 	FadeBustshot( 41, FALSE, 0, 0, 0, 0, 200, TRUE );
-	OutputLine(NULL, "「……どうしようもない…！　どうしようもないんだよ…！！　ううぅぅ！」",
-		   NULL, "\"...I couldn't do anything...! I couldn't do anything about it...!! Nnnh!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "「……どうしようもない…！",
+		   NULL, "\"...I couldn't do anything...!", Line_WaitForInput);
+	OutputLine(NULL, "　どうしようもないんだよ…！！",
+		   NULL, " I couldn't do anything about it...!!", Line_WaitForInput);
+	OutputLine(NULL, "　ううぅぅ！」",
+		   NULL, " Nnnh!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「……どうしようもない…！　どうしようもないんだよ…！！　ううぅぅ！」",		   NULL, "\"...I couldn't do anything...! I couldn't do anything about it...!! Nnnh!\"", Line_ContinueAfterTyping);
 
 	ShakeScreen( 4, 12, 20, 40, 1, );
 	OutputLineAll(NULL, "", Line_Normal);
@@ -5029,10 +5090,13 @@ void main()
 	PlaySE( 0, "a5_10317", 50, 64 );
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 0, TRUE );
 	ShakeScreen( 0, 9, 100, 6, 16, );
+	OutputLine(NULL, "「………落ち着け、",
+		   NULL, "\".........Calm down,", Line_ContinueAfterTyping);
 
 	Wait( 500 );
-	OutputLine(NULL, "「………落ち着け、魅音……！」",
-		   NULL, "\".........Calm down, Mion...!\"", Line_WaitForInput);
+	OutputLine(NULL, "魅音……！」",
+		   NULL, " Mion...!\"", Line_WaitForInput);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「………落ち着け、魅音……！」",		   NULL, "\".........Calm down, Mion...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -5069,10 +5133,15 @@ void main()
 		   NULL, "\"............So thank you, Mion.\"", Line_Normal);
 	ClearMessage();
 	//;ld c,mio_12,22
+	OutputLine(NULL, "「…………………ぁ",
+		   NULL, "\"........................Ah", Line_ContinueAfterTyping);
 	Wait( 500 );
+	OutputLine(NULL, "………ぅ、",
+		   NULL, " ............Nh", Line_ContinueAfterTyping);
 	Wait( 500 );
-	OutputLine(NULL, "「…………………ぁ………ぅ、……………ぅああ…ああぁああああぁあぁあぁ…。」",
-		   NULL, "\"........................Ah ............Nh ..................Nh, aah... aaahaaaaaaahhaahaah...\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "……………ぅああ…ああぁああああぁあぁあぁ…。」",
+		   NULL, " ..................Nh, aah... aaahaaaaaaahhaahaah...\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「…………………ぁ………ぅ、……………ぅああ…ああぁああああぁあぁあぁ…。」",		   NULL, "\"........................Ah ............Nh ..................Nh, aah... aaahaaaaaaahhaahaah...\"", Line_ContinueAfterTyping);
 	ShakeScreen( 4, 12, 20, 50, 1, );
 	OutputLineAll(NULL, "", Line_Normal);
 
@@ -5167,11 +5236,16 @@ void main()
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/keiiti/sifuku_b/kei_3b", 200, TRUE );
+	OutputLine(NULL, "「しかも、",
+		   NULL, "\"On top of that,", Line_WaitForInput);
+	OutputLine(NULL, "７２時間は生かしておいてくれるというオマケ付きだ。",
+		   NULL, " we know they'll keep her alive for another 72 hours.", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/keiiti/sifuku_b/kei_9b", 200, TRUE );
-	OutputLine(NULL, "「しかも、７２時間は生かしておいてくれるというオマケ付きだ。確かにこいつぁ朗報だぜ。」",
-		   NULL, "\"On top of that, we know they'll keep her alive for another 72 hours. That's fantastic to hear!\"", Line_Normal);
+	OutputLine(NULL, "確かにこいつぁ朗報だぜ。」",
+		   NULL, " That's fantastic to hear!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「しかも、７２時間は生かしておいてくれるというオマケ付きだ。確かにこいつぁ朗報だぜ。」",		   NULL, "\"On top of that, we know they'll keep her alive for another 72 hours. That's fantastic to hear!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -5271,10 +5345,13 @@ void main()
 	ClearMessage();
 
 
+	OutputLine(NULL, "「け、",
+		   NULL, "\"Ke-", Line_ContinueAfterTyping);
 
 	Wait( 500 );
-	OutputLine(NULL, "「け、………圭一………！！」",
-		   NULL, "\"Ke- .........Keiichi.........!!\"", Line_WaitForInput);
+	OutputLine(NULL, "………圭一………！！」",
+		   NULL, " .........Keiichi.........!!\"", Line_WaitForInput);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「け、………圭一………！！」",		   NULL, "\"Ke- .........Keiichi.........!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
@@ -5284,10 +5361,15 @@ void main()
 		   NULL, "\"Don't give me such a sad look, Mom. At times like these, you gotta send us off with a smile...! Dad, I'll meet up with you later at the Sonozaki house...!\"", Line_Normal);
 	ClearMessage();
 
+	OutputLine(NULL, "「け、",
+		   NULL, "\"Ke-", Line_ContinueAfterTyping);
 
 	Wait( 500 );
-	OutputLine(NULL, "「け、圭一たちも一緒に逃げるんだ…！　たった二人で立ち向かったところで…、」",
-		   NULL, "\"Ke- Keiichi, you two should come with us...! You can't face them alone...\"", Line_WaitForInput);
+	OutputLine(NULL, "圭一たちも一緒に逃げるんだ…！",
+		   NULL, " Keiichi, you two should come with us...!", Line_WaitForInput);
+	OutputLine(NULL, "　たった二人で立ち向かったところで…、」",
+		   NULL, " You can't face them alone...\"", Line_WaitForInput);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「け、圭一たちも一緒に逃げるんだ…！　たった二人で立ち向かったところで…、」",		   NULL, "\"Ke- Keiichi, you two should come with us...! You can't face them alone...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
@@ -6556,12 +6638,17 @@ void main()
 	ChangeBustshot( 1, "sprites/rika/sifuku/rik_5", 400, TRUE );
 	//;wait 1000
 	//;【梨花】
+	OutputLine(NULL, "「ふぁいと、",
+		   NULL, "\"Fight,", Line_ContinueAfterTyping);
 
 	Wait( 500 );
+	OutputLine(NULL, "おーっ、",
+		   NULL, " oh!", Line_ContinueAfterTyping);
 
 	Wait( 500 );
-	OutputLine(NULL, "「ふぁいと、おーっ、なのですっ。」",
-		   NULL, "\"Fight, oh! You guys!\"", Line_ContinueAfterTyping);
+	OutputLine(NULL, "なのですっ。」",
+		   NULL, " You guys!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine(NULL, "「ふぁいと、おーっ、なのですっ。」",		   NULL, "\"Fight, oh! You guys!\"", Line_ContinueAfterTyping);
 
 
 	ShakeScreen( 4, 9, 20, 30, 1, );

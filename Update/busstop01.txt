@@ -179,14 +179,21 @@ void main()
 	DisableWindow();
 
 	ChangeBustshot( 3, "sprites/mio/mio_d6", 200, TRUE );
+	OutputLine("魅音", "「あっはっはっは！",
+		   "Mion", "\"Ahahaha!", Line_WaitForInput);
+	OutputLine(NULL, "笑い死ねたらそれこそ本望ってもんすよ！",
+		   NULL, " I'd love nothing more than to die laughing!", Line_WaitForInput);
+	OutputLine(NULL, "あーっはっはっは！",
+		   NULL, " Ahhhahaha!", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 3, "sprites/mio/mio_d8a", 200, TRUE );
 
 	ShakeScreen( 4, 9, 20, 15, 3, );
 
-	OutputLine("魅音", "「あっはっはっは！笑い死ねたらそれこそ本望ってもんすよ！あーっはっはっは！…げほげほげほッ！」",
-		   "Mion", "\"Ahahaha! I'd love nothing more than to die laughing! Ahhhahaha! ...Ghoh, ghoh, ghoh!\"", Line_Normal);
+	OutputLine("魅音", "…げほげほげほッ！」",
+		   "Mion", " ...Ghoh, ghoh, ghoh!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine("魅音", "「あっはっはっは！笑い死ねたらそれこそ本望ってもんすよ！あーっはっはっは！…げほげほげほッ！」",		   "Mion", "\"Ahahaha! I'd love nothing more than to die laughing! Ahhhahaha! ...Ghoh, ghoh, ghoh!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -329,14 +336,19 @@ void main()
 
 	DrawBustshot( 4, "sprites/mio/mio_d10", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, FALSE );
 	FadeBustshot( 41, FALSE, 0, 0, 0, 0, 400, TRUE );
+	OutputLine("魅音", "「来週の水曜日学校をさぼらない？」",
+		   "Mion", "'Want to skip school next wednesday?'", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 4, "sprites/mio/mio_d7a", 200, TRUE );
 
 	ShakeScreen( 4, 9, 20, 15, 3, );
 
-	OutputLine("魅音", "「来週の水曜日学校をさぼらない？」なんて言われた日にゃもー、休むしか！ってカンジでー！」",
-		   "Mion", "'Want to skip school next wednesday?' Well, when that day came, I just had to skip! You know?!\"", Line_Normal);
+	OutputLine("魅音", "なんて言われた日にゃもー、休むしか！",
+		   "Mion", " Well, when that day came, I just had to skip!", Line_WaitForInput);
+	OutputLine(NULL, "ってカンジでー！」",
+		   NULL, " You know?!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine("魅音", "「来週の水曜日学校をさぼらない？」なんて言われた日にゃもー、休むしか！ってカンジでー！」",		   "Mion", "'Want to skip school next wednesday?' Well, when that day came, I just had to skip! You know?!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -581,13 +593,18 @@ void main()
 
 	DrawBustshotWithFiltering( 2, "sprites/mio/mio_d15a", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 
+	OutputLine("魅音", "「ちきしょー！",
+		   "Mion", "\"Dammit!", Line_WaitForInput);
+	OutputLine(NULL, "…隙見てあいつらスマキにするっすー。",
+		   NULL, " ...When I get my chance, I'll bury the two of 'em.", Line_WaitForInput);
 	DisableWindow();
 
 	DrawBustshot( 3, "sprites/mio/mio_d4", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, FALSE );
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
 
-	OutputLine("魅音", "「ちきしょー！…隙見てあいつらスマキにするっすー。…梨花さん、続きはその後ってことで。」",
-		   "Mion", "\"Dammit! ...When I get my chance, I'll bury the two of 'em. ...Rika-san, we'll continue afterward.\"", Line_Normal);
+	OutputLine("魅音", "…梨花さん、続きはその後ってことで。」",
+		   "Mion", " ...Rika-san, we'll continue afterward.\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine("魅音", "「ちきしょー！…隙見てあいつらスマキにするっすー。…梨花さん、続きはその後ってことで。」",		   "Mion", "\"Dammit! ...When I get my chance, I'll bury the two of 'em. ...Rika-san, we'll continue afterward.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -866,6 +883,10 @@ void main()
 	DrawBustshot( 1, "sprites/mio/mio_d13", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawSceneWithMask( "bg/hina/bus_03", "effect/left", 0, 0, 300 );
 
+	OutputLine("魅音", "「…へー、梨花さんよくわかりますねぇ。",
+		   "Mion", "\"...Wow, I'm surprised!", Line_WaitForInput);
+	OutputLine(NULL, "…いわゆるあれですかー？",
+		   NULL, " ...Is this one of those,", Line_WaitForInput);
 	DisableWindow();
 
 	PlaySE( 0, "a1_17270", 70, 64 );
@@ -873,8 +894,9 @@ void main()
 	ChangeBustshot( 1, "sprites/mio/mio_d2", 400, FALSE );
 	FadeBustshot( 40, FALSE, 0, 0, 0, 0, 400, TRUE );
 
-	OutputLine("魅音", "「…へー、梨花さんよくわかりますねぇ。…いわゆるあれですかー？「簡単な推理だよワトソン君」ってヤツー！」",
-		   "Mion", "\"...Wow, I'm surprised! ...Is this one of those, 'It's elementary, Watson!' sorta things?!\"", Line_Normal);
+	OutputLine("魅音", "「簡単な推理だよワトソン君」ってヤツー！」",
+		   "Mion", " 'It's elementary, Watson!' sorta things?!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine("魅音", "「…へー、梨花さんよくわかりますねぇ。…いわゆるあれですかー？「簡単な推理だよワトソン君」ってヤツー！」",		   "Mion", "\"...Wow, I'm surprised! ...Is this one of those, 'It's elementary, Watson!' sorta things?!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -2121,6 +2143,8 @@ void main()
 	ChangeBustshot( 5, "sprites/yos/yos_d1", 200, FALSE );
 	FadeBustshot( 41, FALSE, 0, 0, 0, 0, 200, TRUE );
 
+	OutputLine("吉村", "「趣味はいろいろ。",
+		   "Yoshimura", "\"I have many different hobbies.", Line_WaitForInput);
 	DisableWindow();
 
 
@@ -2131,8 +2155,9 @@ void main()
 
 	FadeBustshot( 42, FALSE, 0, 0, 0, 0, 400, TRUE );
 
-	OutputLine("吉村", "「趣味はいろいろ。職業はフリーライターってとこかな。」",
-		   "Yoshimura", "\"I have many different hobbies. I guess you could say my career is in freelance writing.\"", Line_Normal);
+	OutputLine("吉村", "職業はフリーライターってとこかな。」",
+		   "Yoshimura", " I guess you could say my career is in freelance writing.\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine("吉村", "「趣味はいろいろ。職業はフリーライターってとこかな。」",		   "Yoshimura", "\"I have many different hobbies. I guess you could say my career is in freelance writing.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -3200,8 +3225,11 @@ void main()
 
 	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 200, FALSE );
 	DrawBustshot( 40, "sprites/ara/ara_d4a", -20, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 41, 200, TRUE );
-	OutputLine("荒川", "「…みんなは面白がってそれをオヤシロさまの祟りだと囃し立てました。オヤシロさまが夢枕に立ってるんだ、って言って！」",
-		   "Arakawa", "\"...They all thought it was amusing to play it up as Oyashiro-sama's curse. They say that Oyashiro-sama's standing by their bedsides!\"", Line_ContinueAfterTyping);
+	OutputLine("荒川", "「…みんなは面白がってそれをオヤシロさまの祟りだと囃し立てました。",
+		   "Arakawa", "\"...They all thought it was amusing to play it up as Oyashiro-sama's curse.", Line_WaitForInput);
+	OutputLine(NULL, "オヤシロさまが夢枕に立ってるんだ、って言って！」",
+		   NULL, " They say that Oyashiro-sama's standing by their bedsides!\"", Line_ContinueAfterTyping);
+	// 07th-mod Split Voice above - OutputLine("荒川", "「…みんなは面白がってそれをオヤシロさまの祟りだと囃し立てました。オヤシロさまが夢枕に立ってるんだ、って言って！」",		   "Arakawa", "\"...They all thought it was amusing to play it up as Oyashiro-sama's curse. They say that Oyashiro-sama's standing by their bedsides!\"", Line_ContinueAfterTyping);
 
 	ShakeScreen( 4, 6, 20, 10, 5, );
 	OutputLineAll(NULL, "", Line_Normal);
@@ -4034,23 +4062,35 @@ void main()
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/ara/ara_d8a", 200, TRUE );
+	OutputLine("荒川", "「「いる」わけないじゃないですかッ！",
+		   "Arakawa", "\"There's no way they could be there!", Line_WaitForInput);
 
 	ShakeScreen( 4, 9, 20, 15, 3, );
 
-	OutputLine("荒川", "「「いる」わけないじゃないですかッ！「い」ないんですよッ！落ち着いて下さいッ！」",
-		   "Arakawa", "\"There's no way they could be there! They don't exist! Please calm down!\"", Line_Normal);
+	OutputLine(NULL, "「い」ないんですよッ！",
+		   NULL, " They don't exist!", Line_WaitForInput);
+	OutputLine(NULL, "落ち着いて下さいッ！」",
+		   NULL, " Please calm down!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine("荒川", "「「いる」わけないじゃないですかッ！「い」ないんですよッ！落ち着いて下さいッ！」",		   "Arakawa", "\"There's no way they could be there! They don't exist! Please calm down!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/ara/ara_d4a", 200, TRUE );
+	OutputLine("荒川", "「お伽話ですよ！",
+		   "Arakawa", "\"It's a fairy tale!", Line_WaitForInput);
 
 	ShakeScreen( 4, 9, 20, 15, 3, );
 
+	OutputLine(NULL, "…「い」ないんだッ！",
+		   NULL, " ...They don't exist!", Line_WaitForInput);
+	OutputLine(NULL, "オヤシロさまなんて！",
+		   NULL, " Oyashiro-sama!", Line_WaitForInput);
 
 	ShakeScreen( 4, 9, 20, 15, 3, );
 
-	OutputLine("荒川", "「お伽話ですよ！…「い」ないんだッ！オヤシロさまなんて！「い」ないんだぁあああぁッ！」",
-		   "Arakawa", "\"It's a fairy tale! ...They don't exist! Oyashiro-sama! Isn't reaaaaaaal!\"", Line_Normal);
+	OutputLine(NULL, "「い」ないんだぁあああぁッ！」",
+		   NULL, " Isn't reaaaaaaal!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine("荒川", "「お伽話ですよ！…「い」ないんだッ！オヤシロさまなんて！「い」ないんだぁあああぁッ！」",		   "Arakawa", "\"It's a fairy tale! ...They don't exist! Oyashiro-sama! Isn't reaaaaaaal!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -6153,13 +6193,18 @@ void main()
 
 	//;quake 2,1000
 
+	OutputLine("吉村", "「…殴りかかりましたね。",
+		   "Yoshimura", "\"...So you beat her, didn't you?", Line_WaitForInput);
+	OutputLine(NULL, "箒の柄で何度も何度も！",
+		   NULL, " Over and over again with a broomstick!", Line_WaitForInput);
 	PlaySE( 1, "a5_10315", 70, 64 );
 	Wait( 300 );
 	PlaySE( 0, "a5_10316", 70, 64 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 
-	OutputLine("吉村", "「…殴りかかりましたね。箒の柄で何度も何度も！泣いても叩き続けた。」",
-		   "Yoshimura", "\"...So you beat her, didn't you? Over and over again with a broomstick! You kept beating her even after she started crying.\"", Line_Normal);
+	OutputLine(NULL, "泣いても叩き続けた。」",
+		   NULL, " You kept beating her even after she started crying.\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine("吉村", "「…殴りかかりましたね。箒の柄で何度も何度も！泣いても叩き続けた。」",		   "Yoshimura", "\"...So you beat her, didn't you? Over and over again with a broomstick! You kept beating her even after she started crying.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -6189,11 +6234,16 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 40, "sprites/mio/mio_d15a", -20, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 41, 200, TRUE );
+	OutputLine("魅音", "「わぁあぁあああああーん！",
+		   "Mion", "\"Waaaaaaaaaaahhn!", Line_ContinueAfterTyping);
 
 	ShakeScreen( 4, 6, 20, 50, 1, );
 
-	OutputLine("魅音", "「わぁあぁあああああーん！荒川がぶったー！」",
-		   "Mion", "\"Waaaaaaaaaaahhn!  Arakawa hit me!\"", Line_Normal);
+	OutputLine(NULL, "",
+		   NULL, " ", Line_WaitForInput);
+	OutputLine(NULL, "荒川がぶったー！」",
+		   NULL, " Arakawa hit me!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine("魅音", "「わぁあぁあああああーん！荒川がぶったー！」",		   "Mion", "\"Waaaaaaaaaaahhn!  Arakawa hit me!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -7347,6 +7397,8 @@ void main()
 	FadeBustshot( 43, FALSE, 0, 0, 0, 0, 200, TRUE );
 	ShakeScreen( 0, 6, 100, 2, 50, );
 
+	OutputLine("魅音", "「ひ……人殺しぃいぃいッ！",
+		   "Mion", "\"You...... You murdererrrrr!", Line_WaitForInput);
 	DisableWindow();
 
 
@@ -7354,8 +7406,9 @@ void main()
 
 	ShakeScreen( 4, 9, 20, 15, 3, );
 
-	OutputLine("魅音", "「ひ……人殺しぃいぃいッ！……ふぐッ！」",
-		   "Mion", "\"You...... You murdererrrrr! ......Fggh!\"", Line_Normal);
+	OutputLine("魅音", "……ふぐッ！」",
+		   "Mion", " ......Fggh!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine("魅音", "「ひ……人殺しぃいぃいッ！……ふぐッ！」",		   "Mion", "\"You...... You murdererrrrr! ......Fggh!\"", Line_Normal);
 	ClearMessage();
 
 	OutputLine(NULL, "　再び吉村が手をかざすと魅音、喉を詰まらせたように咳き込む。",
@@ -7706,6 +7759,8 @@ void main()
 
 	ChangeBustshot( 3, "sprites/mio/mio_d8a", 200, TRUE );
 
+	OutputLine("魅音", "「がぁああぁあ…ッ！",
+		   "Mion", "\"Gaaaaaaah...!", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 3, "sprites/mio/mio_d15a", 200, TRUE );
@@ -7718,8 +7773,13 @@ void main()
 
 	ShakeScreen( 4, 9, 20, 15, 3, );
 
-	OutputLine("魅音", "「がぁああぁあ…ッ！…今すぐやめろ。…やめるんだよこれッ！今すぐッ！」",
-		   "Mion", "\"Gaaaaaaah...! ...Stop this at once. ...Stop this! Right now!\"", Line_Normal);
+	OutputLine("魅音", "…今すぐやめろ。",
+		   "Mion", " ...Stop this at once.", Line_WaitForInput);
+	OutputLine(NULL, "…やめるんだよこれッ！",
+		   NULL, " ...Stop this!", Line_WaitForInput);
+	OutputLine(NULL, "今すぐッ！」",
+		   NULL, " Right now!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine("魅音", "「がぁああぁあ…ッ！…今すぐやめろ。…やめるんだよこれッ！今すぐッ！」",		   "Mion", "\"Gaaaaaaah...! ...Stop this at once. ...Stop this! Right now!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -8784,14 +8844,23 @@ void main()
 	DisableWindow();
 
 	ChangeBustshot( 5, "sprites/mio/mio_d4", 200, TRUE );
+	OutputLine("魅音", "「ははッ！",
+		   "Mion", "\"Haha!", Line_WaitForInput);
+	OutputLine(NULL, "やったね！",
+		   NULL, " Hooray!", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 5, "sprites/mio/mio_d7a", 200, TRUE );
 
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 
-	OutputLine("魅音", "「ははッ！やったね！………なんて言う訳ないじゃん。バーカ。……理由もなくうまい話が来るわけないでしょー。」",
-		   "Mion", "\"Haha! Hooray! .........Did you really think I'd say that? Idiots. ......There's no way such a sweet deal would come without strings attached.\"", Line_Normal);
+	OutputLine("魅音", "………なんて言う訳ないじゃん。",
+		   "Mion", " .........Did you really think I'd say that?", Line_WaitForInput);
+	OutputLine(NULL, "バーカ。",
+		   NULL, " Idiots.", Line_WaitForInput);
+	OutputLine(NULL, "……理由もなくうまい話が来るわけないでしょー。」",
+		   NULL, " ......There's no way such a sweet deal would come without strings attached.\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine("魅音", "「ははッ！やったね！………なんて言う訳ないじゃん。バーカ。……理由もなくうまい話が来るわけないでしょー。」",		   "Mion", "\"Haha! Hooray! .........Did you really think I'd say that? Idiots. ......There's no way such a sweet deal would come without strings attached.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -9623,13 +9692,18 @@ void main()
 	DisableWindow();
 
 	ChangeBustshot( 3, "sprites/mio/mio_d8a", 200, TRUE );
+	OutputLine("魅音", "「……バカなこと言わないで下さいよ…。",
+		   "Mion", "\"......Please stop saying these ridiculous things...", Line_WaitForInput);
+	OutputLine(NULL, "…私は東京なんかじゃなく、…ここにいるんですよ？",
+		   NULL, " ...I'm not in Tokyo... I'm right here.", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 3, "sprites/mio/mio_d14a", 200, TRUE );
 
 	ShakeScreen( 4, 9, 20, 15, 3, );
-	OutputLine("魅音", "「……バカなこと言わないで下さいよ…。…私は東京なんかじゃなく、…ここにいるんですよ？……ぅぅう……。」",
-		   "Mion", "\"......Please stop saying these ridiculous things... ...I'm not in Tokyo... I'm right here. ......Nnngh......!\"", Line_Normal);
+	OutputLine("魅音", "……ぅぅう……。」",
+		   "Mion", " ......Nnngh......!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine("魅音", "「……バカなこと言わないで下さいよ…。…私は東京なんかじゃなく、…ここにいるんですよ？……ぅぅう……。」",		   "Mion", "\"......Please stop saying these ridiculous things... ...I'm not in Tokyo... I'm right here. ......Nnngh......!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -9718,6 +9792,8 @@ void main()
 	DrawBustshot( 43, "sprites/mio/mio_d15a", -20, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 41, 200, TRUE );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 
+	OutputLine("魅音", "「…ちッ…近寄るなッ！",
+		   "Mion", "\"...Sta... Stay back!", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 43, "sprites/mio/mio_d14a", 200, TRUE );
@@ -9725,8 +9801,9 @@ void main()
 	ShakeScreen( 4, 9, 20, 15, 3, );
 
 
-	OutputLine("魅音", "「…ちッ…近寄るなッ！……がぁ…ああぁあ…ッ…！」",
-		   "Mion", "\"...Sta... Stay back! ......Gaah... Aaaaagh...! ...!\"", Line_Normal);
+	OutputLine("魅音", "……がぁ…ああぁあ…ッ…！」",
+		   "Mion", " ......Gaah... Aaaaagh...! ...!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine("魅音", "「…ちッ…近寄るなッ！……がぁ…ああぁあ…ッ…！」",		   "Mion", "\"...Sta... Stay back! ......Gaah... Aaaaagh...! ...!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -9888,10 +9965,13 @@ void main()
 	DrawSceneWithMask( "bg/hina/bus_05", "effect/down", 0, 0, 300 );
 
 	//;ld c,mio_D15a,80
+	OutputLine("魅音", "「…ぁああぁあ…ッ！",
+		   "Mion", "\"...Aaaaaaagh...!", Line_WaitForInput);
 	ShakeScreen( 4, 6, 20, 50, 1, );
 
-	OutputLine("魅音", "「…ぁああぁあ…ッ！……うるせえよ…頭が…がんがんするってぇのに…ッ！」",
-		   "Mion", "\"...Aaaaaaagh...! ......Shut up...! I told you... my head is pounding...!\"", Line_Normal);
+	OutputLine(NULL, "……うるせえよ…頭が…がんがんするってぇのに…ッ！」",
+		   NULL, " ......Shut up...! I told you... my head is pounding...!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine("魅音", "「…ぁああぁあ…ッ！……うるせえよ…頭が…がんがんするってぇのに…ッ！」",		   "Mion", "\"...Aaaaaaagh...! ......Shut up...! I told you... my head is pounding...!\"", Line_Normal);
 	ClearMessage();
 
 	//;ld r,nit_d5,80
@@ -10453,19 +10533,30 @@ void main()
 
 	DrawBustshot( 3, "sprites/mio/mio_d6a", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, FALSE );
 	FadeBustshot( 41, FALSE, 0, 0, 0, 0, 200, TRUE );
+	OutputLine("魅音", "「殺してやるぞ殺してやるぞッ！",
+		   "Mion", "\"I'll kill you, I'll kill you!", Line_WaitForInput);
+	OutputLine(NULL, "…梨花さんを殺したヤツらは皆殺しにしてやるッ！",
+		   NULL, " ...I'll kill everyone who killed Rika-san!", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 3, "sprites/mio/mio_d15a", 200, TRUE );
 
 	ShakeScreen( 4, 9, 20, 15, 3, );
-	OutputLine("魅音", "「殺してやるぞ殺してやるぞッ！…梨花さんを殺したヤツらは皆殺しにしてやるッ！…おおおぉぉおおおおおッ！」",
-		   "Mion", "\"I'll kill you, I'll kill you! ...I'll kill everyone who killed Rika-san! ...Hoooooooooooooooh!\"", Line_Normal);
+	OutputLine("魅音", "…おおおぉぉおおおおおッ！」",
+		   "Mion", " ...Hoooooooooooooooh!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine("魅音", "「殺してやるぞ殺してやるぞッ！…梨花さんを殺したヤツらは皆殺しにしてやるッ！…おおおぉぉおおおおおッ！」",		   "Mion", "\"I'll kill you, I'll kill you! ...I'll kill everyone who killed Rika-san! ...Hoooooooooooooooh!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	ChangeBustshot( 2, "sprites/nit/nit_d5a", 200, TRUE );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 
+	OutputLine("新田", "「落ち着け！",
+		   "Nitta", "\"Calm down!", Line_WaitForInput);
+	OutputLine(NULL, "落ち着くんだッ！",
+		   NULL, " Calm down now!", Line_WaitForInput);
+	OutputLine(NULL, "…園崎君！",
+		   NULL, " ...Sonozaki-kun!", Line_WaitForInput);
 	DisableWindow();
 
 
@@ -10477,8 +10568,9 @@ void main()
 	ShakeScreen( 0, 6, 100, 2, 50, );
 	FadeBustshotWithFiltering( 2, "effect/down", 0, FALSE, 0, 0, 300, TRUE );
 
-	OutputLine("新田", "「落ち着け！落ち着くんだッ！…園崎君！………ッ！」",
-		   "Nitta", "\"Calm down! Calm down now! ...Sonozaki-kun! .........!\"", Line_Normal);
+	OutputLine("新田", "………ッ！」",
+		   "Nitta", " .........!\"", Line_Normal);
+	// 07th-mod Split Voice above - OutputLine("新田", "「落ち着け！落ち着くんだッ！…園崎君！………ッ！」",		   "Nitta", "\"Calm down! Calm down now! ...Sonozaki-kun! .........!\"", Line_Normal);
 	ClearMessage();
 
 
