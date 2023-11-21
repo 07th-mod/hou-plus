@@ -141,22 +141,18 @@ void main()
 
 
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s24/00/njie_0030", 128, 64);
 	OutputLine(NULL, "「こちらは陸上自衛隊です！",
 		   NULL, "\"This is the JGSDF!", Line_WaitForInput);
-	PlaySE(4, "ps3/s24/00/njie_0030", 128, 64);
 	OutputLine(NULL, "　当地区は防疫上の理由から県知事の判断により緊急に隔離されました。",
 		   NULL, " By order of your prefectural governor, this region has been quarantined to prevent the further spread of disease.", Line_WaitForInput);
 	PlaySE(4, "ps3/s24/00/njie_0040", 128, 64);
 	OutputLine(NULL, "隔離地区からの離脱はできません！",
 		   NULL, " You are not permitted to leave the quarantine zone!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　皆さんへの食料、飲料水、生活必需品、",
 		   NULL, " We promise to secure food, water, other daily necessities,", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "電力、通信の自由は保障されます！",
 		   NULL, " electricity, and communication systems for everyone!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　どうか冷静な対応をお願いいたします！！」",
 		   NULL, " Please continue to remain calm!!\"", Line_Normal);
 	ClearMessage();
@@ -279,18 +275,14 @@ void main()
 	PlaySE(4, "ps3/s24/01/nkei_0020", 128, 64);
 	OutputLine(NULL, "「………シ！",
 		   NULL, "\"......Shh!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　今テレビでその説明してるよ！！",
 		   NULL, " They're explaining it on the TV right now!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　……発症すると、",
 		   NULL, " ......Once the initial signs appear,", Line_ContinueAfterTyping);
 	Wait( 500 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "１週間ほどで以下の症状がって、",
 		   NULL, " the following symptoms develop over the following week...", Line_ContinueAfterTyping);
 	Wait( 300 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…………ぅ、」",
 		   NULL, " ...Hhh!\"", Line_ContinueAfterTyping);
 	// 07th-mod Split Voice above - OutputLine(NULL, "「………シ！　今テレビでその説明してるよ！！　……発症すると、１週間ほどで以下の症状がって、…………ぅ、」",		   NULL, "\"......Shh! They're explaining it on the TV right now!! ......Once the initial signs appear, the following symptoms develop over the following week... ...Hhh!\"", Line_ContinueAfterTyping);
@@ -457,9 +449,12 @@ void main()
 
 	DrawScene( "bg/maebara/ribing1", 400 );
 
-	PlaySE(4, "", 128, 64);
-	OutputLine(NULL, "「圭一は２階を頼むぞ！　窓をぴったり閉めてガムテープで目張りをするんだ！　クーラーも外気とつながってるかもしれんな！　クーラーは噴出孔を新聞紙で覆ってそれからガムテープでしっかりと止めるんだ！　父さんは１階をやるからな！　母さんは台所を頼む！！」",
-		   NULL, "\"Keiichi, you cover the second floor! Shut the windows tight and seal them up with duct tape! Our air conditioner might be connected to the air outside, too! Cover the AC vents with newspaper, then seal them up with duct tape! I'll cover the first floor! Your mom can cover the kitchen!!\"", Line_Normal);
+	PlaySE(4, "ps3/s24/00/nkfa_0030", 128, 64);
+	OutputLine(NULL, "「圭一は２階を頼むぞ！　窓をぴったり閉めてガムテープで目張りをするんだ！」",
+		   NULL, "\"Keiichi, you cover the second floor! Shut the windows tight and seal them up with duct tape!", Line_WaitForInput);
+	PlaySE(4, "ps3/s24/00/nkfa_0040", 128, 64);
+	OutputLine(NULL, "「　クーラーも外気とつながってるかもしれんな！　クーラーは噴出孔を新聞紙で覆ってそれからガムテープでしっかりと止めるんだ！　父さんは１階をやるからな！　母さんは台所を頼む！！」",
+		   NULL, " Our air conditioner might be connected to the air outside, too! Cover the AC vents with newspaper, then seal them up with duct tape! I'll cover the first floor! Your mom can cover the kitchen!!\"", Line_Normal);
 	ClearMessage();
 
 
@@ -481,7 +476,6 @@ void main()
 	ShakeScreen( 2, 3,  100 , 3, 33, );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　いいから母さんもやりなさいッ！！」",
 		   NULL, " Just help already!!\"", Line_Normal);
 	ClearMessage();
@@ -1823,10 +1817,9 @@ void main()
 	PlayBGM( 0, "bgm0/nazo", 70, 0 );
 
 	//;ld c,mio_1,22
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s24/03/nmio_0240", 128, 64);
 	OutputLine(NULL, "「…うん。",
 		   NULL, "\"...Yeah.", Line_WaitForInput);
-	PlaySE(4, "ps3/s24/03/nmio_0240", 128, 64);
 	OutputLine(NULL, "…………ほら、沙都子の両親がダムの誘致派だったのは知ってるでしょ？",
 		   NULL, " .........So, you know how Satoko's parents were in favor of the dam being built, right?", Line_WaitForInput);
 	PlaySE(4, "ps3/s24/03/nmio_0250", 128, 64);
@@ -1848,13 +1841,11 @@ void main()
 	DrawScene( "bg/gakkou/gr3", 400 );
 	DrawBustshot( 1, "sprites/mion/sifuku/me_yowakia2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 
-	PlaySE(4, "ps3/meha/rena9025", 128, 64);
+	PlaySE(4, "ps3/s24/03/nmio_0260", 128, 64);
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Yeah.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……罰当たり者の沙都子が、オヤシロさまの生まれ変わりである神聖な梨花ちゃまと同居すると穢れが移るかもしれない、",
 		   NULL, " ......There has always been a horrible group of people that said", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "みたいな酷いことを言ってる連中が前からいたんだけど、",
 		   NULL, " living with a cursed person like Satoko would cause her taint to pass onto the holy reincarnation, Rika-chan...", Line_WaitForInput);
 	PlaySE(4, "ps3/s24/03/nmio_0270", 128, 64);
@@ -1923,7 +1914,7 @@ void main()
 
 	DrawBustshot( 2, "sprites/mion/sifuku/me_yowakia2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s24/03/nmio_0290", 128, 64);
 	OutputLine(NULL, "「……………………。」",
 		   NULL, "\"........................\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2203,7 +2194,6 @@ void main()
 	PlaySE(4, "ps3/s24/03/nmio_0400", 128, 64);
 	OutputLine(NULL, "「すっごく気持ち悪いことになってるんだよ！",
 		   NULL, "\"It's getting really awful around here!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　何かが変！！",
 		   NULL, " Something's not right with people!!", Line_ContinueAfterTyping);
 
@@ -2211,7 +2201,6 @@ void main()
 	SetSpeedOfMessage( TRUE, 128 );
 	OutputLine(NULL, "",
 		   NULL, " ", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "だから用心して！」",
 		   NULL, " So watch yourselves!\"", Line_ContinueAfterTyping);
 	// 07th-mod Split Voice above - OutputLine(NULL, "「すっごく気持ち悪いことになってるんだよ！　何かが変！！だから用心して！」",		   NULL, "\"It's getting really awful around here! Something's not right with people!!  So watch yourselves!\"", Line_ContinueAfterTyping);
@@ -3173,10 +3162,8 @@ void main()
 
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「無期限休業します。御用のない方の立入を禁止します。",
 		   NULL, "\"We are closed indefinitely. If you have no business here, you may not set foot within.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "どうしてもご入用の方は個別にご相談下さい」",
 		   NULL, " If you still insist on entering, then please discuss it with us on a case-by-case basis,\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3198,7 +3185,6 @@ void main()
 
 	DrawScene( "bg/mati/tennai1", 400 );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「高津戸にお住まいの方はご遠慮下さい」",
 		   NULL, "\"Those living in Takatsudo, please go away.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3403,10 +3389,8 @@ void main()
 	PlaySE(4, "ps3/s24/03/nmio_0450", 128, 64);
 	OutputLine(NULL, "数日前からそうであるように、少しでも反論すると、",
 		   NULL, " But starting several days ago, if anyone tried to object,", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "感染者を庇うのはお前も感染者だからだろうなんておかしな論法になっちゃって、",
 		   NULL, " they argued that person was covering for the infected because they were infected too.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "リンチ話に誰もストップがかけられない！」",
 		   NULL, " Now no one's putting a stop to this talk of lynching you all!\"", Line_Normal);
 	ClearMessage();
@@ -3548,10 +3532,8 @@ void main()
 	PlaySE(4, "ps3/s24/03/nmio_0550", 128, 64);
 	OutputLine(NULL, "「絶対に両手は空けること。",
 		   NULL, "\"Make absolutely certain you can use both hands.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "靴はスニーカー等の履きなれた歩きやすい物！",
 		   NULL, " For shoes, wear a comfortable pair you can walk easily in!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　同じ手紙はレナにも送ってある。",
 		   NULL, " I'm sending this same letter to Rena as well.", Line_WaitForInput);
 
@@ -3559,7 +3541,6 @@ void main()
 	PlaySE(4, "ps3/s24/03/nmio_0560", 128, 64);
 	OutputLine(NULL, "……圭ちゃんにはあまりに突拍子もないことで、",
 		   NULL, " ......This might seem like it's coming out of left field,", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "多分現実感が伴わないと思う。」",
 		   NULL, " so I doubt it feels real to you just yet.\"", Line_Normal);
 	ClearMessage();
@@ -3882,13 +3863,12 @@ void main()
 	ClearMessage();
 
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s24/00/nkfa_0060", 128, 64);
 	OutputLine(NULL, "「だ、",
 		   NULL, "\"Wh-", Line_ContinueAfterTyping);
 
 	Wait( 500 );
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "誰ですか！！」",
 		   NULL, " Who is it?!\"", Line_ContinueAfterTyping);
 	// 07th-mod Split Voice above - OutputLine(NULL, "「だ、誰ですか！！」",		   NULL, "\"Wh- Who is it?!\"", Line_ContinueAfterTyping);
@@ -3917,7 +3897,6 @@ void main()
 	ShakeScreen( 2, 9,  100 , 4, 25, );
 	Wait( 1000 );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　開けてください！」",
 		   NULL, " Please let me in!\"", Line_ContinueAfterTyping);
 	// 07th-mod Split Voice above - OutputLine(NULL, "「こんばんは、竜宮です！　開けてください！」",		   NULL, "\"Good evening, it's Ryuugu! Please let me in!\"", Line_ContinueAfterTyping);
@@ -4172,7 +4151,7 @@ void main()
 
 	DrawBustshot( 1, "sprites/rena/sifuku_c/ren_13c", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, TRUE );
 	ShakeScreen( 0, 15, 100, 10, 10, );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s24/01/nkei_0330", 128, 64);
 	OutputLine(NULL, "「「ぅ、",
 		   NULL, "\"\"Uu", Line_ContinueAfterTyping);
 	DisableWindow();
@@ -4180,7 +4159,6 @@ void main()
 	Wait( 300 );
 	DrawBustshot( 2, "sprites/rena/sifuku_c/ren_14c", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, FALSE );
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "うわあああぁああああぁッ！！！」」",
 		   NULL, " Uwaaaaaaaah!!!\"\"", Line_Normal);
 	// 07th-mod Split Voice above - OutputLine(NULL, "「「ぅ、うわあああぁああああぁッ！！！」」",		   NULL, "\"\"Uu Uwaaaaaaaah!!!\"\"", Line_Normal);
@@ -4210,7 +4188,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshotWithFiltering( 1, "sprites/keiiti/sifuku_b/kei_4b", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s24/01/nkei_0340", 128, 64);
 	OutputLine(NULL, "「レ、",
 		   NULL, "\"Re-", Line_ContinueAfterTyping);
 
@@ -4371,7 +4349,6 @@ void main()
 
 	SetSpeedOfMessage( TRUE, 128 );
 	//;wait 500
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…人を殺すってことはね、",
 		   NULL, " ...Killing someone,", Line_ContinueAfterTyping);
 	DisableWindow();
@@ -4381,13 +4358,11 @@ void main()
 
 	ChangeBustshot( 1, "sprites/rena/sifuku_c/ren_14c", 400, TRUE );
 	ShakeScreen( 2, 6,  100 , 4, 25, );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "自分も殺されることを覚悟するってことだよ！",
 		   NULL, " means that you're ready to be killed in return!", Line_ContinueAfterTyping);
 
 
 	Wait( 300 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　甘えるんじゃないッ！！」",
 		   NULL, " So don't take it lightly!!\"", Line_ContinueAfterTyping);
 	// 07th-mod Split Voice above - OutputLine(NULL, "「……ひ、…人を殺すってことはね、自分も殺されることを覚悟するってことだよ！　甘えるんじゃないッ！！」",		   NULL, "\"......Ki ...Killing someone, means that you're ready to be killed in return! So don't take it lightly!!\"", Line_ContinueAfterTyping);
@@ -4434,7 +4409,6 @@ void main()
 
 	ShakeScreen( 2, 6,  100 , 5, 20, );
 	Wait( 500 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "生きてるよ！！」",
 		   NULL, " still alive!!\"", Line_ContinueAfterTyping);
 
@@ -4446,12 +4420,11 @@ void main()
 
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
 	DrawSceneWithMask( "bg/maebara/ma2", "effect/left", 0, 0, 300 );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s24/01/nkei_0350", 128, 64);
 	OutputLine(NULL, "「…え、",
 		   NULL, "\"...Huh?", Line_ContinueAfterTyping);
 
 	Wait( 500 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……ぁッ、」",
 		   NULL, " ......Oh!\"", Line_ContinueAfterTyping);
 	// 07th-mod Split Voice above - OutputLine(NULL, "「…え、……ぁッ、」",		   NULL, "\"...Huh? ......Oh!\"", Line_ContinueAfterTyping);
@@ -4613,11 +4586,10 @@ void main()
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/keiiti/sifuku/kei_nayamu", 200, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s24/01/nkei_0370", 128, 64);
 	OutputLine(NULL, "「ぅ、",
 		   NULL, "\"Urk.", Line_ContinueAfterTyping);
 	Wait( 500 );
-	PlaySE(4, "ps3/s24/01/nkei_0370", 128, 64);
 	OutputLine(NULL, "………そ、そうだな…。」",
 		   NULL, " ......R-Right...\"", Line_WaitForInput);
 	// 07th-mod Split Voice above - OutputLine(NULL, "「ぅ、………そ、そうだな…。」",		   NULL, "\"Urk. ......R-Right...\"", Line_WaitForInput);
@@ -4875,7 +4847,6 @@ void main()
 	OutputLine(NULL, "「……げほ、",
 		   NULL, "\"......*Cough*", Line_ContinueAfterTyping);
 	ShakeScreen( 0, 6, 100, 3, 33, );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…げほ…！」",
 		   NULL, " ...*Cough*...!\"", Line_ContinueAfterTyping);
 	// 07th-mod Split Voice above - OutputLine(NULL, "「……げほ、…げほ…！」",		   NULL, "\"......*Cough* ...*Cough*...!\"", Line_ContinueAfterTyping);
@@ -5110,12 +5081,11 @@ void main()
 	DrawScene( "black", 400 );
 	DrawScene( "bg/maebara/ma_g3", 400 );
 	DrawBustshot( 1, "sprites/mion/sifuku/me_yowakia2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
-	PlaySE(4, "ps3/s24/03/nmio_0630", 128, 64);
+	PlaySE(4, "ps3/s24/03/nmio_0640", 128, 64);
 	OutputLine(NULL, "「……さ、………沙都子は、",
 		   NULL, "\"......Sa .........Satoko's", Line_ContinueAfterTyping);
 
 	Wait( 300 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……………。",
 		   NULL, " ............", Line_WaitForInput);
 
@@ -5125,13 +5095,10 @@ void main()
 	Wait( 800 );
 
 	//;ld r,mio_1,80
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……さっき、暴徒に連れ去られたらしい…。",
 		   NULL, " ......been taken away by those rioters from before...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "話では鬼ヶ淵に引き連れてったって…。",
 		   NULL, " They said they were dragging her to Onigafuchi...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "伝承の生贄の儀に沿って、三日かけて沈めて殺す気らしい…。」",
 		   NULL, " Apparently they're going spend three days submerging her, according to the rituals passed down in the village...\"", Line_Normal);
 	// 07th-mod Split Voice above - OutputLine(NULL, "「……さ、………沙都子は、……………。……さっき、暴徒に連れ去られたらしい…。話では鬼ヶ淵に引き連れてったって…。伝承の生贄の儀に沿って、三日かけて沈めて殺す気らしい…。」",		   NULL, "\"......Sa .........Satoko's ............ ......been taken away by those rioters from before... They said they were dragging her to Onigafuchi... Apparently they're going spend three days submerging her, according to the rituals passed down in the village...\"", Line_Normal);
@@ -5145,12 +5112,12 @@ void main()
 	DrawBustshot( 40, "sprites/keiiti/sifuku/kei_ikari2", -180, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 42, 0, FALSE );
 	DrawBustshot( 41, "sprites/rena/sifuku/ren_14", -20, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 41, 0, TRUE );
 	ShakeScreen( 4, 12, 20, 50, 1, );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s24/01/nkei_0410", 128, 64);
 	OutputLine(NULL, "「生きてるのねッ？！」",
 		   NULL, "\"So she's alive?!\"", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s24/02/nren_0390", 128, 64);
 	OutputLine(NULL, "「生きてるんだなッ？！　少なくともまだッ！！」",
 		   NULL, "\"She's still alive then?! At least for now?!!\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -5190,10 +5157,8 @@ void main()
 	PlaySE(4, "ps3/s24/03/nmio_0650", 128, 64);
 	OutputLine(NULL, "「……どうしようもない…！",
 		   NULL, "\"...I couldn't do anything...!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　どうしようもないんだよ…！！",
 		   NULL, " I couldn't do anything about it...!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　ううぅぅ！」",
 		   NULL, " Nnnh!\"", Line_ContinueAfterTyping);
 	// 07th-mod Split Voice above - OutputLine(NULL, "「……どうしようもない…！　どうしようもないんだよ…！！　ううぅぅ！」",		   NULL, "\"...I couldn't do anything...! I couldn't do anything about it...!! Nnnh!\"", Line_ContinueAfterTyping);
@@ -5267,19 +5232,15 @@ void main()
 	PlaySE(4, "ps3/s24/03/nmio_0700", 128, 64);
 	OutputLine(NULL, "「……………私、……思うんだよ。",
 		   NULL, "\"............I..... have a few thoughts.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "………このウィルスってさ。",
 		   NULL, " .........This virus...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……人を死に至らしめるんじゃなくて、",
 		   NULL, " it isn't one that drives people to death,", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "人を狂気に駆り立てるウィルスなんじゃないかなって。",
 		   NULL, " but one that drives people to madness,", Line_WaitForInput);
 	PlaySE(4, "ps3/s24/03/nmio_0705", 128, 64);
 	OutputLine(NULL, "……そして村人を次々、鬼に変えていって、",
 		   NULL, " making the villagers become demons one after another.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……オヤシロさま伝説をもう一度なぞり直すんだよ…！」",
 		   NULL, " ...Just try retracing the legend of Oyashiro-sama once more...!\"", Line_Normal);
 	ClearMessage();
@@ -5294,20 +5255,16 @@ void main()
 	PlaySE(4, "ps3/s24/03/nmio_0710", 128, 64);
 	OutputLine(NULL, "「この事態を何とかできるのはオヤシロさましかいない！",
 		   NULL, "\"Oyashiro-sama is the only one who can resolve this situation!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　そしてその生まれ変わりの梨花ちゃんはいない！",
 		   NULL, " And her reincarnation, Rika-chan, is nowhere to be found!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s24/03/nmio_0715", 128, 64);
 	OutputLine(NULL, "　それにそもそもオヤシロさまは神さまなんだよ？",
 		   NULL, " Besides, Oyashiro-sama was a god anyway, right?", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　人間じゃないんだよ？！",
 		   NULL, " They weren't human, were they?!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　私たち人間には何もできないんだよ、",
 		   NULL, " There's nothing we humans can do!", Line_ContinueAfterTyping);
 	Wait( 500 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "何もッ！！！」",
 		   NULL, " Nothing!!!\"", Line_ContinueAfterTyping);
 	PlaySE( 0, "a1_07132", 50, 64 );
@@ -5325,7 +5282,6 @@ void main()
 		   NULL, "\".........Calm down,", Line_ContinueAfterTyping);
 
 	Wait( 500 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "魅音……！」",
 		   NULL, " Mion...!\"", Line_WaitForInput);
 	// 07th-mod Split Voice above - OutputLine(NULL, "「………落ち着け、魅音……！」",		   NULL, "\".........Calm down, Mion...!\"", Line_WaitForInput);
@@ -5372,11 +5328,9 @@ void main()
 	OutputLine(NULL, "「…………………ぁ",
 		   NULL, "\"........................Ah", Line_ContinueAfterTyping);
 	Wait( 500 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "………ぅ、",
 		   NULL, " ............Nh", Line_ContinueAfterTyping);
 	Wait( 500 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……………ぅああ…ああぁああああぁあぁあぁ…。」",
 		   NULL, " ..................Nh, aah... aaahaaaaaaahhaahaah...\"", Line_ContinueAfterTyping);
 	// 07th-mod Split Voice above - OutputLine(NULL, "「…………………ぁ………ぅ、……………ぅああ…ああぁああああぁあぁあぁ…。」",		   NULL, "\"........................Ah ............Nh ..................Nh, aah... aaahaaaaaaahhaahaah...\"", Line_ContinueAfterTyping);
@@ -5481,13 +5435,11 @@ void main()
 	PlaySE(4, "ps3/s24/01/nkei_0480", 128, 64);
 	OutputLine(NULL, "「しかも、",
 		   NULL, "\"On top of that,", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "７２時間は生かしておいてくれるというオマケ付きだ。",
 		   NULL, " we know they'll keep her alive for another 72 hours.", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/keiiti/sifuku_b/kei_9b", 200, TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "確かにこいつぁ朗報だぜ。」",
 		   NULL, " That's fantastic to hear!\"", Line_Normal);
 	// 07th-mod Split Voice above - OutputLine(NULL, "「しかも、７２時間は生かしておいてくれるというオマケ付きだ。確かにこいつぁ朗報だぜ。」",		   NULL, "\"On top of that, we know they'll keep her alive for another 72 hours. That's fantastic to hear!\"", Line_Normal);
@@ -5596,12 +5548,11 @@ void main()
 	ClearMessage();
 
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s24/00/nkmo_0060", 128, 64);
 	OutputLine(NULL, "「け、",
 		   NULL, "\"Ke-", Line_ContinueAfterTyping);
 
 	Wait( 500 );
-	PlaySE(4, "ps3/s24/00/nkmo_0060", 128, 64);
 	OutputLine(NULL, "………圭一………！！」",
 		   NULL, " .........Keiichi.........!!\"", Line_WaitForInput);
 	// 07th-mod Split Voice above - OutputLine(NULL, "「け、………圭一………！！」",		   NULL, "\"Ke- .........Keiichi.........!!\"", Line_WaitForInput);
@@ -5615,15 +5566,13 @@ void main()
 		   NULL, "\"Don't give me such a sad look, Mom. At times like these, you gotta send us off with a smile...! Dad, I'll meet up with you later at the Sonozaki house...!\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s24/00/nkfa_0120", 128, 64);
 	OutputLine(NULL, "「け、",
 		   NULL, "\"Ke-", Line_ContinueAfterTyping);
 
 	Wait( 500 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "圭一たちも一緒に逃げるんだ…！",
 		   NULL, " Keiichi, you two should come with us...!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　たった二人で立ち向かったところで…、」",
 		   NULL, " You can't face them alone...\"", Line_WaitForInput);
 	// 07th-mod Split Voice above - OutputLine(NULL, "「け、圭一たちも一緒に逃げるんだ…！　たった二人で立ち向かったところで…、」",		   NULL, "\"Ke- Keiichi, you two should come with us...! You can't face them alone...\"", Line_WaitForInput);
@@ -5839,9 +5788,12 @@ void main()
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/keiiti/sifuku_b/kei_4b", 200, TRUE );
-	PlaySE(4, "", 128, 64);
-	OutputLine(NULL, "「あぁ、犯した。魅音を撃った！　沙都子をさらった！」",
-		   NULL, "\"Yeah, they did. They attacked Mion! They kidnapped Satoko!\"", Line_Normal);
+	PlaySE(4, "ps3/s24/01/nkei_0540", 128, 64);
+	OutputLine(NULL, "「あぁ、犯した。",
+		   NULL, "\"Yeah, they did.", Line_WaitForInput);
+	PlaySE(4, "ps3/s24/01/nkei_0550", 128, 64);
+	OutputLine(NULL, "　魅音を撃った！　沙都子をさらった！」",
+		   NULL, " They attacked Mion! They kidnapped Satoko!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -6824,7 +6776,6 @@ void main()
 
 	ChangeBustshot( 1, "sprites/rika/sifuku/rik_5", 400, TRUE );
 	//;【梨花】
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……………………。",
 		   NULL, "\"..................", Line_WaitForInput);
 	PlaySE(4, "ps3/s24/05/nrik_0010", 128, 64);
@@ -6948,12 +6899,10 @@ void main()
 		   NULL, "\"Fight,", Line_ContinueAfterTyping);
 
 	Wait( 500 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "おーっ、",
 		   NULL, " oh!", Line_ContinueAfterTyping);
 
 	Wait( 500 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "なのですっ。」",
 		   NULL, " You guys!\"", Line_ContinueAfterTyping);
 	// 07th-mod Split Voice above - OutputLine(NULL, "「ふぁいと、おーっ、なのですっ。」",		   NULL, "\"Fight, oh! You guys!\"", Line_ContinueAfterTyping);

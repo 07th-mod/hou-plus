@@ -130,7 +130,7 @@ void main()
 
 	PlayBGM( 0, "bgm0/iru", 70, 0 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/52/tmio_0000", 128, 64);
 	OutputLine("魅音", "「あはははは！あーっはっはっはっは！！」",
 		   "Mion", "\"Ahahahaha! Ahhhahahaha!!\"", Line_Normal);
 	ClearMessage();
@@ -189,10 +189,8 @@ void main()
 	PlaySE(4, "ps3/s26/53/tmio_0040", 128, 64);
 	OutputLine("魅音", "「あっはっはっは！",
 		   "Mion", "\"Ahahaha!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "笑い死ねたらそれこそ本望ってもんすよ！",
 		   NULL, " I'd love nothing more than to die laughing!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "あーっはっはっは！",
 		   NULL, " Ahhhahaha!", Line_WaitForInput);
 	DisableWindow();
@@ -201,7 +199,6 @@ void main()
 
 	ShakeScreen( 4, 9, 20, 15, 3, );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine("魅音", "…げほげほげほッ！」",
 		   "Mion", " ...Ghoh, ghoh, ghoh!\"", Line_Normal);
 	// 07th-mod Split Voice above - OutputLine("魅音", "「あっはっはっは！笑い死ねたらそれこそ本望ってもんすよ！あーっはっはっは！…げほげほげほッ！」",		   "Mion", "\"Ahahaha! I'd love nothing more than to die laughing! Ahhhahaha! ...Ghoh, ghoh, ghoh!\"", Line_Normal);
@@ -294,13 +291,11 @@ void main()
 	PlaySE(4, "ps3/s26/53/tmio_0100", 128, 64);
 	OutputLine("魅音", "「梨花さんに誘われたらもー！",
 		   "Mion", "\"When I got your invitation, man!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "予定なんかオールキャンセル！",
 		   NULL, " All my plans, bam, canceled!", Line_ContinueAfterTyping);
 	ShakeScreen( 0, 9, 100, 3, 33, );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "学校なんかないも同然ですよ！」",
 		   NULL, " Forget about school too!\"", Line_Normal);
 	ClearMessage();
@@ -366,7 +361,7 @@ void main()
 
 	DrawBustshot( 4, "sprites/mio/mio_d10", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, FALSE );
 	FadeBustshot( 41, FALSE, 0, 0, 0, 0, 400, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/53/tmio_0150", 128, 64);
 	OutputLine("魅音", "「来週の水曜日学校をさぼらない？」",
 		   "Mion", "'Want to skip school next wednesday?'", Line_WaitForInput);
 	DisableWindow();
@@ -392,13 +387,11 @@ void main()
 	PlaySE(4, "ps3/s26/53/tmio_0160", 128, 64);
 	OutputLine("魅音", "「ひょっとしてコクられちゃうのかな！？",
 		   "Mion", "\"I even thought you might be confessing to me!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "なんてーッ！",
 		   NULL, " Just kidding!", Line_ContinueAfterTyping);
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "いつしか二人は友情からもう一歩上の感情へステップアーップ！！」",
 		   NULL, " But before we know it, maybe our emotions will take us one step up from friendship!!\"", Line_Normal);
 	ClearMessage();
@@ -461,7 +454,7 @@ void main()
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, FALSE );
 	DrawBustshot( 3, "sprites/rik/rik_d3a", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/52/trik_0120", 128, 64);
 	OutputLine("梨花", "「…しかも今日は雨だからね…。」",
 		   "Rika", "\"...Not to mention, it's also raining today...\"", Line_Normal);
 	ClearMessage();
@@ -477,7 +470,7 @@ void main()
 
 	ChangeBustshot( 3, "sprites/rik/rik_d1a", 200, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/52/trik_0130", 128, 64);
 	OutputLine("梨花", "「…しかも今日は雨だからね…。」",
 		   "Rika", "\"...Not to mention, it's also raining today...\"", Line_Normal);
 	ClearMessage();
@@ -494,7 +487,7 @@ void main()
 
 	ChangeBustshot( 3, "sprites/rik/rik_d7a", 200, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/52/trik_0140", 128, 64);
 	OutputLine("梨花", "「…しかも今日は雨だからね…。」",
 		   "Rika", "\"...Not to mention, it's also raining today...\"", Line_Normal);
 	ClearMessage();
@@ -567,7 +560,7 @@ void main()
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 	PlaySE( 0, "a5_10316", 70, 64 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/53/tmio_0230", 128, 64);
 	OutputLine("魅音", "「雨ですからーッ！」",
 		   "Mion", "\"And because of the rain!\"", Line_Normal);
 	ClearMessage();
@@ -604,7 +597,7 @@ void main()
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 	PlaySE( 1, "a5_10316", 70, 64 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/53/tmio_0230", 128, 64);
 	OutputLine("魅音", "「雨ですからーッ！」",
 		   "Mion", "\"And because of the rain!\"", Line_Normal);
 	ClearMessage();
@@ -649,7 +642,6 @@ void main()
 	PlaySE(4, "ps3/s26/53/tmio_0240", 128, 64);
 	OutputLine("魅音", "「ちきしょー！",
 		   "Mion", "\"Dammit!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…隙見てあいつらスマキにするっすー。",
 		   NULL, " ...When I get my chance, I'll bury the two of 'em.", Line_WaitForInput);
 	DisableWindow();
@@ -657,7 +649,6 @@ void main()
 	DrawBustshot( 3, "sprites/mio/mio_d4", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, FALSE );
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine("魅音", "…梨花さん、続きはその後ってことで。」",
 		   "Mion", " ...Rika-san, we'll continue afterward.\"", Line_Normal);
 	// 07th-mod Split Voice above - OutputLine("魅音", "「ちきしょー！…隙見てあいつらスマキにするっすー。…梨花さん、続きはその後ってことで。」",		   "Mion", "\"Dammit! ...When I get my chance, I'll bury the two of 'em. ...Rika-san, we'll continue afterward.\"", Line_Normal);
@@ -739,7 +730,7 @@ void main()
 
 	DrawBustshotWithFiltering( 2, "sprites/ton/ton_d6a", "effect/right", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/56/tton_0040", 128, 64);
 	OutputLine("利根川", "「ここ今度から気をつけるよ。…だけどあの子が言うほど臭ったりはしないだろう！？」",
 		   "Tonegawa", "\"I'll be more careful. ...But I don't smell as bad as she's claiming, right?!\"", Line_Normal);
 	ClearMessage();
@@ -845,7 +836,6 @@ void main()
 
 	ChangeBustshot( 2, "sprites/rik/rik_d6", 200, TRUE );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine("梨花", "「…赤ちゃんの産めない体になりたい？」",
 		   "Rika", "\"...Want me to make it so your body can never bear children?\"", Line_Normal);
 	ClearMessage();
@@ -950,7 +940,7 @@ void main()
 
 	ChangeBustshot( 1, "sprites/ara/ara_d3a", 200, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/55/tara_0080", 128, 64);
 	OutputLine("荒川", "「え？…えぇ、まぁ…！」",
 		   "Arakawa", "\"Huh? ...Well, yes...!\"", Line_Normal);
 	ClearMessage();
@@ -971,7 +961,6 @@ void main()
 	PlaySE(4, "ps3/s26/53/tmio_0320", 128, 64);
 	OutputLine("魅音", "「…へー、梨花さんよくわかりますねぇ。",
 		   "Mion", "\"...Wow, I'm surprised!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…いわゆるあれですかー？",
 		   NULL, " ...Is this one of those,", Line_WaitForInput);
 	DisableWindow();
@@ -981,7 +970,6 @@ void main()
 	ChangeBustshot( 1, "sprites/mio/mio_d2", 400, FALSE );
 	FadeBustshot( 40, FALSE, 0, 0, 0, 0, 400, TRUE );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine("魅音", "「簡単な推理だよワトソン君」ってヤツー！」",
 		   "Mion", " 'It's elementary, Watson!' sorta things?!\"", Line_Normal);
 	// 07th-mod Split Voice above - OutputLine("魅音", "「…へー、梨花さんよくわかりますねぇ。…いわゆるあれですかー？「簡単な推理だよワトソン君」ってヤツー！」",		   "Mion", "\"...Wow, I'm surprised! ...Is this one of those, 'It's elementary, Watson!' sorta things?!\"", Line_Normal);
@@ -1061,7 +1049,7 @@ void main()
 
 	PlayBGM( 0, "bgm0/nazo", 70, 0 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/52/trik_0270", 128, 64);
 	OutputLine("梨花", "「…握手なんかすると思う？…雛見沢を滅ぼそうとする人間と。」",
 		   "Rika", "\"...Did you really think I'd shake your hand? ...When you're one of the ones trying to destroy Hinamizawa?\"", Line_Normal);
 	ClearMessage();
@@ -1069,7 +1057,7 @@ void main()
 
 	ChangeBustshot( 1, "sprites/ton/ton_d4a", 200, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/56/tton_0120", 128, 64);
 	OutputLine("利根川", "「…これは手厳しい。」（利根川、手を引っ込める）",
 		   "Tonegawa", "\"...That's harsh.\" (Drawing his hand back)", Line_Normal);
 	ClearMessage();
@@ -1080,7 +1068,7 @@ void main()
 	DrawBustshotWithFiltering( 41, "sprites/rik/rik_d5", "effect/right", 0, -180, 0, FALSE, 0, 0, 0, 0, 0, 42, 300, FALSE );
 	FadeBustshotWithFiltering( 40, "effect/right", 0, FALSE, 0, 0, 300, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/52/trik_0280", 128, 64);
 	OutputLine("梨花", "「…握手なんかすると思う？…雛見沢を汚そうとする人間と。」",
 		   "Rika", "\"...Did you think I'd shake your hand? ...When you're one of the ones trying to defile Hinamizawa?\"", Line_Normal);
 	ClearMessage();
@@ -1089,7 +1077,7 @@ void main()
 
 	ChangeBustshot( 2, "sprites/ara/ara_d5", 200, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3s26/55/tara_0100", 128, 64);
 	OutputLine("荒川", "「…これは手厳しい。」（荒川、手を引っ込める）",
 		   "Arakawa", "\"...That's harsh.\" (Drawing his hand back)", Line_Normal);
 	ClearMessage();
@@ -1099,7 +1087,7 @@ void main()
 
 	DrawBustshot( 3, "sprites/mio/mio_d4a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/53/tmio_0340", 128, 64);
 	OutputLine("魅音", "「…へっへっへー…！」（苦笑いしながら握手を待つ魅音）",
 		   "Mion", "\"...Hehehe...!\" (Waiting for her handshake with a wry smile)", Line_Normal);
 	ClearMessage();
@@ -1107,7 +1095,7 @@ void main()
 
 	ChangeBustshot( 41, "sprites/rik/rik_d4", 200, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/52/trik_0290", 128, 64);
 	OutputLine("梨花", "「……雛見沢にダムなんて許さない。」（魅音に構わず２人を凝視する梨花）",
 		   "Rika", "\"......We won't allow there to be a dam here in Hinamizawa.\" (Ignoring Mion and staring at the other two)", Line_Normal);
 	ClearMessage();
@@ -1127,7 +1115,7 @@ void main()
 
 	DrawBustshot( 2, "sprites/rik/rik_d1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/52/trik_0300", 128, 64);
 	OutputLine("梨花", "「だめ。」",
 		   "Rika", "\"No.\"", Line_Normal);
 	ClearMessage();
@@ -1143,7 +1131,7 @@ void main()
 
 	ChangeBustshot( 2, "sprites/rik/rik_d4", 200, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/52/trik_0310", 128, 64);
 	OutputLine("梨花", "「だめ。」",
 		   "Rika", "\"No.\"", Line_Normal);
 	ClearMessage();
@@ -1161,7 +1149,7 @@ void main()
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, FALSE );
 	DrawBustshot( 40, "sprites/rik/rik_d6", -20, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 41, 200, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/52/trik_0320", 128, 64);
 	OutputLine("梨花", "「だめ。」",
 		   "Rika", "\"No.\"", Line_Normal);
 	ClearMessage();
@@ -1222,7 +1210,7 @@ void main()
 
 	DrawBustshot( 3, "sprites/rik/rik_d8", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/52/trik_0340", 128, 64);
 	OutputLine("梨花", "「それで？」",
 		   "Rika", "\"So?\"", Line_Normal);
 	ClearMessage();
@@ -1246,7 +1234,7 @@ void main()
 
 	ChangeBustshot( 3, "sprites/rik/rik_d4", 200, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/52/trik_0360", 128, 64);
 	OutputLine("梨花", "「それで？」",
 		   "Rika", "\"So?\"", Line_Normal);
 	ClearMessage();
@@ -1271,7 +1259,7 @@ void main()
 	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 200, FALSE );
 	DrawBustshot( 40, "sprites/rik/rik_d3", -20, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 41, 200, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/52/trik_0370", 128, 64);
 	OutputLine("梨花", "「それで？」",
 		   "Rika", "\"So?\"", Line_Normal);
 	ClearMessage();
@@ -1295,7 +1283,7 @@ void main()
 
 	ChangeBustshot( 40, "sprites/rik/rik_d12", 200, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/52/trik_0380", 128, 64);
 	OutputLine("梨花", "「それで？」",
 		   "Rika", "\"So?\"", Line_Normal);
 	ClearMessage();
@@ -1358,7 +1346,7 @@ void main()
 
 	ChangeBustshot( 2, "sprites/rik/rik_d13", 200, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/52/trik_0390", 128, 64);
 	OutputLine("梨花", "「それで？」",
 		   "Rika", "\"So?\"", Line_Normal);
 	ClearMessage();
@@ -1376,7 +1364,7 @@ void main()
 	DrawBustshot( 4, "sprites/rik/rik_d12", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, FALSE );
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/52/trik_0400", 128, 64);
 	OutputLine("梨花", "「それで？」",
 		   "Rika", "\"So?\"", Line_Normal);
 	ClearMessage();
@@ -1491,7 +1479,7 @@ void main()
 
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/56/tton_0210", 128, 64);
 	OutputLine("利根川", "「ぼぼぼ暴力はいかん！」（２人抱き合いながら後退る）",
 		   "Tonegawa", "\"Y-Y-Y-You can't resort to violence!\" (Both men back away while holding each other.)", Line_Normal);
 	ClearMessage();
@@ -1553,7 +1541,6 @@ void main()
 	PlaySE(4, "ps3/s26/52/trik_0430", 128, 64);
 	OutputLine("梨花", "「とにかくダムはだめ。",
 		   "Rika", "\"Anyway, the dam is no good.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "絶対にだめ。」（魅音に向き直りセリフ）",
 		   NULL, " In fact, it's absolutely bad.\" (Said while turning to Mion)", Line_Normal);
 	ClearMessage();
@@ -1561,10 +1548,9 @@ void main()
 
 	ChangeBustshot( 1, "sprites/mio/mio_d8a", 200, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/53/tmio_0410", 128, 64);
 	OutputLine("魅音", "「どーしてだめなんですかー？」（魅音、大袈裟に身を翻しセリフ。",
 		   "Mion", "\"Why is it a bad thing?\" (Mion says while dodging exaggeratedly.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "腹痛はなくなり、殴られた事は「なかった事」になっている。）",
 		   NULL, " Her stomach pain has disappeared, as if she were never hit at all.)", Line_Normal);
 	ClearMessage();
@@ -1663,7 +1649,7 @@ void main()
 
 	DrawBustshot( 5, "sprites/ara/ara_d6a", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/55/tara_0200", 128, 64);
 	OutputLine("荒川", "「それは駅弁…。」（魅音と荒川、申し訳なさそうに笑う。）",
 		   "Arakawa", "\"That's sandwich artistry...\" (Mion and Arakawa smile guiltily.)", Line_Normal);
 	ClearMessage();
@@ -1675,10 +1661,8 @@ void main()
 	ChangeBustshot( 4, "sprites/mio/mio_d8a", 200, FALSE );
 	ChangeBustshot( 5, "sprites/ara/ara_d5a", 200, TRUE );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　キッと周囲を睨み付ける梨花。",
 		   NULL, "Rika glares sharply at those around her.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "魅音と荒川、しゅんとする。",
 		   NULL, " Both Mion and Arakawa shrivel up on the spot.", Line_Normal);
 	ClearMessage();
@@ -2032,7 +2016,7 @@ void main()
 
 	//;ld l,MIO_D1,80
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/53/tmio_0630", 128, 64);
 	OutputLine("魅音", "「…雨ですからー。」",
 		   "Mion", "\"...It is raining out.\"", Line_Normal);
 	ClearMessage();
@@ -2376,7 +2360,6 @@ void main()
 
 	FadeBustshot( 42, FALSE, 0, 0, 0, 0, 400, TRUE );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine("吉村", "職業はフリーライターってとこかな。」",
 		   "Yoshimura", " I guess you could say my career is in freelance writing.\"", Line_Normal);
 	// 07th-mod Split Voice above - OutputLine("吉村", "「趣味はいろいろ。職業はフリーライターってとこかな。」",		   "Yoshimura", "\"I have many different hobbies. I guess you could say my career is in freelance writing.\"", Line_Normal);
@@ -2468,10 +2451,9 @@ void main()
 
 	DrawBustshotWithFiltering( 2, "sprites/ara/ara_d6", "effect/right", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/55/tara_0250", 128, 64);
 	OutputLine("荒川", "「どうも。",
 		   "Arakawa", "\"Hello.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "都市河川の荒川です。」（手を差し出す）",
 		   NULL, " Arakawa, also from the Urban River Office.\" (Holding out his hand.)", Line_Normal);
 	ClearMessage();
@@ -2480,10 +2462,10 @@ void main()
 	DrawBustshot( 3, "sprites/mio/mio_d6", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, FALSE );
 	DrawBustshot( 40, "sprites/rik/rik_d8", -180, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 42, 400, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/53/tmio_0780", 128, 64);
+	PlaySE(5, "ps3/s26/52/trik_0610", 128, 64);
 	OutputLine("魅音・梨花", "「どうも。",
 		   "Mion & Rika", "\"Hello.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ワカリマセンの園崎（古手）です。」（吉村に手を差し出す）",
 		   NULL, " Sonozaki (Furude), also from makes-no-sense-to-me.\" (Holding their hands out to Yoshimura.)", Line_Normal);
 	ClearMessage();
@@ -2719,7 +2701,6 @@ void main()
 	PlaySE(4, "ps3/s26/53/tmio_0800", 128, 64);
 	OutputLine("魅音", "「美少女突撃リポート東北編！",
 		   "Mion", "\"A surprise report on pretty young girls from Northern Honshu!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "雛見沢に国民的美少女を見たッ！」",
 		   NULL, " National beauties discovered in Hinamizawa!\"", Line_ContinueAfterTyping);
 
@@ -3558,7 +3539,6 @@ void main()
 	PlaySE(4, "ps3/s26/55/tara_0450", 128, 64);
 	OutputLine("荒川", "「…みんなは面白がってそれをオヤシロさまの祟りだと囃し立てました。",
 		   "Arakawa", "\"...They all thought it was amusing to play it up as Oyashiro-sama's curse.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "オヤシロさまが夢枕に立ってるんだ、って言って！」",
 		   NULL, " They say that Oyashiro-sama's standing by their bedsides!\"", Line_ContinueAfterTyping);
 	// 07th-mod Split Voice above - OutputLine("荒川", "「…みんなは面白がってそれをオヤシロさまの祟りだと囃し立てました。オヤシロさまが夢枕に立ってるんだ、って言って！」",		   "Arakawa", "\"...They all thought it was amusing to play it up as Oyashiro-sama's curse. They say that Oyashiro-sama's standing by their bedsides!\"", Line_ContinueAfterTyping);
@@ -3604,7 +3584,7 @@ void main()
 	DrawBustshot( 2, "sprites/mio/mio_d3a", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, FALSE );
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 400, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/53/tmio_0920", 128, 64);
 	OutputLine("魅音", "「…「いる」って……、……はは……ヤダなぁ……。」",
 		   "Mion", "\"...He was there......? ......Haha...... No way......\"", Line_Normal);
 	ClearMessage();
@@ -3873,13 +3853,10 @@ void main()
 	ChangeBustshot( 1, "sprites/mio/mio_d3a", 200, TRUE );
 
 
-	PlaySE(4, "", 128, 64);
 	OutputLine("魅音", "「…はっはははは！",
 		   "Mion", "\"...Hah! Hahahaha!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "馬鹿にしてますよね！",
 		   NULL, " He was just making fun, I bet!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "何だかんだ言いながら、そういう人に限って結婚記念日とかには律儀に帰ってるんですよねー！」",
 		   NULL, " People like that are always the ones to diligently remember their anniversary and such, and come home on those days, no matter what they may say!\"", Line_Normal);
 	ClearMessage();
@@ -3888,10 +3865,8 @@ void main()
 
 	DrawBustshot( 3, "sprites/mio/mio_d5a", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, FALSE );
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, TRUE );
-	PlaySE(4, "ps3/s26/53/tmio_1130", 128, 64);
 	OutputLine("魅音", "「はははは、はははははは！",
 		   "Mion", "\"Hahahaha, hahahahahaha!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "あっははははははははッ！」",
 		   NULL, " Ahahahahahahahaha!\"", Line_Normal);
 	ClearMessage();
@@ -3989,7 +3964,6 @@ void main()
 		   "Arakawa", "\"Ha! ...Hahahaha! ...Numa-san, please stop that! ...Is it showing up at your place too?! The you know what.\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
 	OutputLine("柿沼の声", "「……………荒ちゃんは何も感じないかい。…夜とか。」",
 		   "<size=32>Kakinuma’s Voice</size>", "\"...............You don't sense anything, Ara-chan? ...At night?\"", Line_Normal);
 	ClearMessage();
@@ -4001,10 +3975,9 @@ void main()
 		   "Arakawa", "\"Sense something at night? ...Hahaha! Sounds like something naughty!\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/00/tkak_0030", 128, 64);
 	OutputLine("柿沼の声", "「…………確かに「いる」んだよ。",
 		   "<size=32>Kakinuma’s Voice</size>", "\"............I'm positive that they're there.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "………「いる」。」",
 		   NULL, " .........Positive.\"", Line_Normal);
 	ClearMessage();
@@ -4023,7 +3996,7 @@ void main()
 	ClearMessage();
 
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/00/tkak_0050", 128, 64);
 	OutputLine("柿沼の声", "「………近藤さんもさ。…ひと月くらい前から、そんなこと言ってたよな…。」",
 		   "<size=32>Kakinuma’s Voice</size>", "\".........Kondou-san also... said things like that, about a month before now, right...?\"", Line_Normal);
 	ClearMessage();
@@ -4145,7 +4118,6 @@ void main()
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…あんな話のあった直後とは言え！…事故なんですよッ！」",
 		   NULL, " ...Even if it did happen right after that conversation! ...It was an accident!\"", Line_Normal);
 	ClearMessage();
@@ -4485,16 +4457,14 @@ void main()
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/ara/ara_d8a", 200, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/55/tara_0770", 128, 64);
 	OutputLine("荒川", "「「いる」わけないじゃないですかッ！",
 		   "Arakawa", "\"There's no way they could be there!", Line_WaitForInput);
 
 	ShakeScreen( 4, 9, 20, 15, 3, );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「い」ないんですよッ！",
 		   NULL, " They don't exist!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "落ち着いて下さいッ！」",
 		   NULL, " Please calm down!\"", Line_Normal);
 	// 07th-mod Split Voice above - OutputLine("荒川", "「「いる」わけないじゃないですかッ！「い」ないんですよッ！落ち着いて下さいッ！」",		   "Arakawa", "\"There's no way they could be there! They don't exist! Please calm down!\"", Line_Normal);
@@ -4508,16 +4478,13 @@ void main()
 
 	ShakeScreen( 4, 9, 20, 15, 3, );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…「い」ないんだッ！",
 		   NULL, " ...They don't exist!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "オヤシロさまなんて！",
 		   NULL, " Oyashiro-sama!", Line_WaitForInput);
 
 	ShakeScreen( 4, 9, 20, 15, 3, );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「い」ないんだぁあああぁッ！」",
 		   NULL, " Isn't reaaaaaaal!\"", Line_Normal);
 	// 07th-mod Split Voice above - OutputLine("荒川", "「お伽話ですよ！…「い」ないんだッ！オヤシロさまなんて！「い」ないんだぁあああぁッ！」",		   "Arakawa", "\"It's a fairy tale! ...They don't exist! Oyashiro-sama! Isn't reaaaaaaal!\"", Line_Normal);
@@ -4869,7 +4836,6 @@ void main()
 	PlaySE(4, "ps3/s26/54/tyos_0730", 128, 64);
 	OutputLine("吉村", "「ホテルシーサイド江戸海って所に泊まったんだよ。",
 		   "Yoshimura", "\"We stayed in a place called Hotel Seaside Edokai.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "葛西臨海公園の中にある瀟洒なホテルでねぇ。」",
 		   NULL, " It's an elegant hotel in Kasai Rinkai Park.\"", Line_Normal);
 	ClearMessage();
@@ -4915,7 +4881,7 @@ void main()
 	ClearMessage();
 
 	//;ld r,mio_D4,80
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "s26/53/tmio_1090", 128, 64);
 	OutputLine("魅音", "「あはははは！吉村さんもですかー？私もなんですよー！」",
 		   "Mion", "\"Ahahahahaha! You too, Yoshimura-san? I did that too!\"", Line_Normal);
 	ClearMessage();
@@ -4983,7 +4949,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 1, "sprites/mio/mio_d6a", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/53/tmio_1110", 128, 64);
 	OutputLine("魅音", "「あはははは！吉村さんもですかー？私もなん、」",
 		   "Mion", "\"Ahahahahaha! You too, Yoshimura-san? I did that t--!\"", Line_Normal);
 	ClearMessage();
@@ -5010,7 +4976,7 @@ void main()
 
 	DrawBustshot( 2, "sprites/mio/mio_d3a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, FALSE );
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/53/tmio_1120", 128, 64);
 	OutputLine("魅音", "「あはははは！吉村さんも…、」",
 		   "Mion", "\"Ahahahahaha! You too, Yoshimu--\"", Line_Normal);
 	ClearMessage();
@@ -5250,7 +5216,7 @@ void main()
 
 	ChangeBustshot( 40, "sprites/yos/yos_d5", 200, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/54/tyos_1030", 128, 64);
 	OutputLine("吉村", "「………くっくっく、はっはっは！あーっはっはっはっはッ！」",
 		   "Yoshimura", "\"............Kukuku, hahaha! Ahahahaha!\"", Line_Normal);
 	ClearMessage();
@@ -5431,7 +5397,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 2, "sprites/rik/rik_d7", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/52/trik_0910", 128, 64);
 	OutputLine("梨花", "「…雨だからね…。」",
 		   "Rika", "\"...It is raining out, after all...\"", Line_Normal);
 	ClearMessage();
@@ -5459,7 +5425,7 @@ void main()
 	ClearMessage();
 
 	//;ld r,rik_D9,80
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/52/trik_0920", 128, 64);
 	OutputLine("梨花", "「…雨だからね…。」",
 		   "Rika", "\"...Because it's raining out...\"", Line_Normal);
 	ClearMessage();
@@ -5681,7 +5647,7 @@ void main()
 
 	ChangeBustshot( 40, "sprites/mio/mio_d4a", 200, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/53/tmio_1240", 128, 64);
 	OutputLine("魅音", "「え？…へへぇー……！」",
 		   "Mion", "\"Huh? ...Hehee......!\"", Line_Normal);
 	ClearMessage();
@@ -6308,7 +6274,7 @@ void main()
 		   NULL, " The light centers on Arakawa.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/00/tkak_0120", 128, 64);
 	OutputLine("柿沼の声", "「……………荒ちゃんは何も感じないかい。…夜とか。」",
 		   "<size=32>Kakinuma’s Voice</size>", "\"...............You don't sense anything, Ara-chan? ...At night?\"", Line_Normal);
 	ClearMessage();
@@ -6321,10 +6287,9 @@ void main()
 		   "Arakawa", "\"I don't sense anything! Nothing!\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/00/tkak_0130", 128, 64);
 	OutputLine("柿沼の声", "「…………確かに「いる」んだよ。",
 		   "<size=32>Kakinuma’s Voice</size>", "\"............I'm positive they're there.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "………「いる」。」",
 		   NULL, " .........Positive.\"", Line_Normal);
 	ClearMessage();
@@ -6332,15 +6297,14 @@ void main()
 
 	DrawBustshot( 8, "sprites/ara/ara_d4a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, FALSE );
 	FadeBustshot( 7, FALSE, 0, 0, 0, 0, 200, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/55/tara_0990", 128, 64);
 	OutputLine("荒川", "「「い」ないッ！",
 		   "Arakawa", "\"They're not there!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…何にも「い」ないッ！」",
 		   NULL, " ...There's nothing there!\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/00/tkak_0140", 128, 64);
 	OutputLine("柿沼の声", "「………近藤さんもさ。…ひと月くらい前から、そんなこと言ってたよな…。」",
 		   "<size=32>Kakinuma’s Voice</size>", "\".........Kondou-san also... said things like that, about a month before now, right...?\"", Line_Normal);
 	ClearMessage();
@@ -6372,7 +6336,7 @@ void main()
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 	PlaySE( 1, "a5_10316", 70, 64 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/55/tara_1000", 128, 64);
 	OutputLine("荒川", "「「い」ないッ！…嘘っぱちだッ！」",
 		   "Arakawa", "\"They're not there! ...It's all!\"", Line_Normal);
 	ClearMessage();
@@ -6536,17 +6500,15 @@ void main()
 	DrawScene( "bg/hina/bus_rain", 400 );
 	DrawBustshot( 1, "sprites/ara/ara_d4a", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 
-	PlaySE(4, "ps3/meha/keiichi9220", 128, 64);
+	PlaySE(4, "ps3/s26/55/tara_1050", 128, 64);
 	OutputLine("荒川", "「…ぁあぁああぁあッ！",
 		   "Arakawa", "\"...Aaaaaaah!", Line_ContinueAfterTyping);
 	ShakeScreen( 4, 6, 20, 50, 1, );
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…「い」ないんだ！",
 		   NULL, " ...They don't exist!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…オヤシロさまなんて…！」",
 		   NULL, " ...Oyashiro-sama doesn't exist...!\"", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -6559,20 +6521,18 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 2, "sprites/yos/yos_d4", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/54/tyos_1340", 128, 64);
 	OutputLine("吉村", "「…嫌でしょう。…「いる」のに会えないなんて。…悔しいですよねぇ。……「いる」のに。」",
 		   "Yoshimura", "\"...You hate it, don't you? ...Not being able to meet them when they're there. ...It's frustrating, isn't it? ......When they're right there next to you.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/ara/ara_d7a", 200, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/55/tara_1060", 128, 64);
 	OutputLine("荒川", "「「い」ない！",
 		   "Arakawa", "\"They're not there!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「い」ない！",
 		   NULL, " They're not there!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「い」ないーッ！」",
 		   NULL, " They're not theeere!\"", Line_Normal);
 	ClearMessage();
@@ -6590,7 +6550,7 @@ void main()
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/55/tara_1070", 128, 64);
 	OutputLine("荒川", "「嫌だ！嫌だ！嫌だッ！」",
 		   "Arakawa", "\"No! No! No!\"", Line_Normal);
 	ClearMessage();
@@ -6613,7 +6573,7 @@ void main()
 	DisableWindow();
 
 	ChangeBustshot( 3, "sprites/yos/yos_d5", 200, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/54/tyos_1370", 128, 64);
 	OutputLine("吉村", "「…会いたいでしょう？…会いたいはずだ。」",
 		   "Yoshimura", "\"...You want to meet them, right? ...You should want to meet them.\"", Line_Normal);
 	ClearMessage();
@@ -6621,7 +6581,7 @@ void main()
 
 	FadeBustshot( 4, FALSE, 0, 0, 0, 0, 200, FALSE );
 	DrawBustshot( 5, "sprites/ara/ara_d4a", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/55/tara_1090", 128, 64);
 	OutputLine("荒川", "「嫌だッ！嫌だッ！…助けてッ！」",
 		   "Arakawa", "\"No! No! ...Help!\"", Line_Normal);
 	ClearMessage();
@@ -6837,7 +6797,6 @@ void main()
 	PlaySE(4, "ps3/s26/54/tyos_1460", 128, 64);
 	OutputLine("吉村", "「…殴りかかりましたね。",
 		   "Yoshimura", "\"...So you beat her, didn't you?", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "箒の柄で何度も何度も！",
 		   NULL, " Over and over again with a broomstick!", Line_WaitForInput);
 	PlaySE( 1, "a5_10315", 70, 64 );
@@ -6845,7 +6804,6 @@ void main()
 	PlaySE( 0, "a5_10316", 70, 64 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "泣いても叩き続けた。」",
 		   NULL, " You kept beating her even after she started crying.\"", Line_Normal);
 	// 07th-mod Split Voice above - OutputLine("吉村", "「…殴りかかりましたね。箒の柄で何度も何度も！泣いても叩き続けた。」",		   "Yoshimura", "\"...So you beat her, didn't you? Over and over again with a broomstick! You kept beating her even after she started crying.\"", Line_Normal);
@@ -6887,7 +6845,6 @@ void main()
 
 	OutputLine(NULL, "",
 		   NULL, " ", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "荒川がぶったー！」",
 		   NULL, " Arakawa hit me!\"", Line_Normal);
 	// 07th-mod Split Voice above - OutputLine("魅音", "「わぁあぁあああああーん！荒川がぶったー！」",		   "Mion", "\"Waaaaaaaaaaahhn!  Arakawa hit me!\"", Line_Normal);
@@ -7251,7 +7208,7 @@ void main()
 	DisableWindow();
 
 	ChangeBustshot( 42, "sprites/yos/yos_d2", 200, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/54/tyos_1570", 128, 64);
 	OutputLine("吉村", "「…会いたいでしょう？…会いたいでしょう！」",
 		   "Yoshimura", "\"...You want to meet them, right? ...You want to meet them, right?!\"", Line_Normal);
 	ClearMessage();
@@ -7273,7 +7230,6 @@ void main()
 	ChangeBustshot( 6, "sprites/ara/ara_d4a", 200, TRUE );
 	ShakeScreen( 4, 9, 20, 15, 3, );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine("荒川", "「会ってやろうじゃねえかッ！…みんなみんなぶっ殺してやるッ！」",
 		   "Arakawa", "\"I'll go ahead and meet them, then! ...And I'll kill every last one of them!\"", Line_Normal);
 	ClearMessage();
@@ -7290,7 +7246,7 @@ void main()
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/yos/yos_d5", 200, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/54/tyos_1590", 128, 64);
 	OutputLine("吉村", "「……っはっはっはっは！あーっはっはっはっはっはっはッ！」",
 		   "Yoshimura", "\"......Hahahaha! Ahhhahahahahaha!\"", Line_Normal);
 	ClearMessage();
@@ -8158,7 +8114,6 @@ void main()
 
 	ShakeScreen( 4, 9, 20, 15, 3, );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine("魅音", "……ふぐッ！」",
 		   "Mion", " ......Fggh!\"", Line_Normal);
 	// 07th-mod Split Voice above - OutputLine("魅音", "「ひ……人殺しぃいぃいッ！……ふぐッ！」",		   "Mion", "\"You...... You murdererrrrr! ......Fggh!\"", Line_Normal);
@@ -8564,13 +8519,10 @@ void main()
 
 	ShakeScreen( 4, 9, 20, 15, 3, );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine("魅音", "…今すぐやめろ。",
 		   "Mion", " ...Stop this at once.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…やめるんだよこれッ！",
 		   NULL, " ...Stop this!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "今すぐッ！」",
 		   NULL, " Right now!\"", Line_Normal);
 	// 07th-mod Split Voice above - OutputLine("魅音", "「がぁああぁあ…ッ！…今すぐやめろ。…やめるんだよこれッ！今すぐッ！」",		   "Mion", "\"Gaaaaaaah...! ...Stop this at once. ...Stop this! Right now!\"", Line_Normal);
@@ -8690,19 +8642,15 @@ void main()
 	DrawScene( "bg/efe/blood_1a", 400 );
 
 	//;ld c,yos_D5,80
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/54/tyos_2170", 128, 64);
 	OutputLine("吉村", "「さぁ！",
 		   "Yoshimura", "\"Now!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "吐き出してしまいなさいッ！",
 		   NULL, " Spit them all up!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "何万という蠢く汚いウジをッ！",
 		   NULL, " Spit out those thousands of filthy, squirming maggots!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "さぁ！",
 		   NULL, " Go on!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "さあ！」",
 		   NULL, " Go on!\"", Line_Normal);
 	ClearMessage();
@@ -8822,10 +8770,8 @@ void main()
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "痛てててッ！",
 		   NULL, " Owww!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "離せよぉッ！」",
 		   NULL, " Let go of me!\"", Line_Normal);
 	ClearMessage();
@@ -8861,7 +8807,7 @@ void main()
 	ShakeScreen( 0, 6, 100, 2, 50, );
 
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/53/tmio_1780", 128, 64);
 	OutputLine("魅音", "「梨花さん！梨花さん！…わぁああぁああぁあああッ！」",
 		   "Mion", "\"Rika-san! Rika-san! ...Waaaaaaaaaaaaaaah!\"", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -8929,7 +8875,7 @@ void main()
 	ClearMessage();
 
 	//;mld c,mio_D7a,80
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/53/tmio_1810", 128, 64);
 	OutputLine("魅音", "「梨花さん！…梨花さんッ！」",
 		   "Mion", "\"Rika-san! ...Rika-san!\"", Line_Normal);
 	ClearMessage();
@@ -9753,7 +9699,6 @@ void main()
 	PlaySE(4, "ps3/s26/53/tmio_2210", 128, 64);
 	OutputLine("魅音", "「ははッ！",
 		   "Mion", "\"Haha!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "やったね！",
 		   NULL, " Hooray!", Line_WaitForInput);
 	DisableWindow();
@@ -9762,13 +9707,11 @@ void main()
 
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/53/tmio_2211", 128, 64);
 	OutputLine("魅音", "………なんて言う訳ないじゃん。",
 		   "Mion", " .........Did you really think I'd say that?", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "バーカ。",
 		   NULL, " Idiots.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……理由もなくうまい話が来るわけないでしょー。」",
 		   NULL, " ......There's no way such a sweet deal would come without strings attached.\"", Line_Normal);
 	// 07th-mod Split Voice above - OutputLine("魅音", "「ははッ！やったね！………なんて言う訳ないじゃん。バーカ。……理由もなくうまい話が来るわけないでしょー。」",		   "Mion", "\"Haha! Hooray! .........Did you really think I'd say that? Idiots. ......There's no way such a sweet deal would come without strings attached.\"", Line_Normal);
@@ -10713,7 +10656,6 @@ void main()
 	PlaySE(4, "ps3/s26/53/tmio_2530", 128, 64);
 	OutputLine("魅音", "「……バカなこと言わないで下さいよ…。",
 		   "Mion", "\"......Please stop saying these ridiculous things...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…私は東京なんかじゃなく、…ここにいるんですよ？",
 		   NULL, " ...I'm not in Tokyo... I'm right here.", Line_WaitForInput);
 	DisableWindow();
@@ -10721,7 +10663,6 @@ void main()
 	ChangeBustshot( 3, "sprites/mio/mio_d14a", 200, TRUE );
 
 	ShakeScreen( 4, 9, 20, 15, 3, );
-	PlaySE(4, "", 128, 64);
 	OutputLine("魅音", "……ぅぅう……。」",
 		   "Mion", " ......Nnngh......!\"", Line_Normal);
 	// 07th-mod Split Voice above - OutputLine("魅音", "「……バカなこと言わないで下さいよ…。…私は東京なんかじゃなく、…ここにいるんですよ？……ぅぅう……。」",		   "Mion", "\"......Please stop saying these ridiculous things... ...I'm not in Tokyo... I'm right here. ......Nnngh......!\"", Line_Normal);
@@ -10760,7 +10701,6 @@ void main()
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……ぅぅ…嘘だ…ッ！」",
 		   NULL, " ......nnngh... Lies...!\"", Line_Normal);
 	ClearMessage();
@@ -10831,7 +10771,6 @@ void main()
 	ShakeScreen( 4, 9, 20, 15, 3, );
 
 
-	PlaySE(4, "", 128, 64);
 	OutputLine("魅音", "……がぁ…ああぁあ…ッ…！」",
 		   "Mion", " ......Gaah... Aaaaagh...! ...!\"", Line_Normal);
 	// 07th-mod Split Voice above - OutputLine("魅音", "「…ちッ…近寄るなッ！……がぁ…ああぁあ…ッ…！」",		   "Mion", "\"...Sta... Stay back! ......Gaah... Aaaaagh...! ...!\"", Line_Normal);
@@ -11638,7 +11577,6 @@ void main()
 	PlaySE(4, "ps3/s26/53/tmio_2720", 128, 64);
 	OutputLine("魅音", "「殺してやるぞ殺してやるぞッ！",
 		   "Mion", "\"I'll kill you, I'll kill you!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…梨花さんを殺したヤツらは皆殺しにしてやるッ！",
 		   NULL, " ...I'll kill everyone who killed Rika-san!", Line_WaitForInput);
 	DisableWindow();
@@ -11646,7 +11584,6 @@ void main()
 	ChangeBustshot( 3, "sprites/mio/mio_d15a", 200, TRUE );
 
 	ShakeScreen( 4, 9, 20, 15, 3, );
-	PlaySE(4, "", 128, 64);
 	OutputLine("魅音", "…おおおぉぉおおおおおッ！」",
 		   "Mion", " ...Hoooooooooooooooh!\"", Line_Normal);
 	// 07th-mod Split Voice above - OutputLine("魅音", "「殺してやるぞ殺してやるぞッ！…梨花さんを殺したヤツらは皆殺しにしてやるッ！…おおおぉぉおおおおおッ！」",		   "Mion", "\"I'll kill you, I'll kill you! ...I'll kill everyone who killed Rika-san! ...Hoooooooooooooooh!\"", Line_Normal);
@@ -11659,10 +11596,8 @@ void main()
 	PlaySE(4, "ps3/s26/57/tnit_0440", 128, 64);
 	OutputLine("新田", "「落ち着け！",
 		   "Nitta", "\"Calm down!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "落ち着くんだッ！",
 		   NULL, " Calm down now!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…園崎君！",
 		   NULL, " ...Sonozaki-kun!", Line_WaitForInput);
 	DisableWindow();
@@ -11676,7 +11611,6 @@ void main()
 	ShakeScreen( 0, 6, 100, 2, 50, );
 	FadeBustshotWithFiltering( 2, "effect/down", 0, FALSE, 0, 0, 300, TRUE );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine("新田", "………ッ！」",
 		   "Nitta", " .........!\"", Line_Normal);
 	// 07th-mod Split Voice above - OutputLine("新田", "「落ち着け！落ち着くんだッ！…園崎君！………ッ！」",		   "Nitta", "\"Calm down! Calm down now! ...Sonozaki-kun! .........!\"", Line_Normal);
@@ -11749,10 +11683,9 @@ void main()
 	DrawScene( "black", 400 );
 	DrawScene( "bg/hina/douro_04", 400 );
 	//;ld r,mio_D15,22
-	PlaySE(4, "ps3/meha/keiichi9220", 128, 64);
+	PlaySE(4, "ps3/s26/53/tmio_2730", 128, 64);
 	OutputLine("魅音", "「があぁああぁああッ！",
 		   "Mion", "\"Gaaaaaaaagh!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…梨花さんを殺したのは誰だッ！",
 		   NULL, " ...Who was the one that killed Rika-san?!", Line_ContinueAfterTyping);
 
@@ -11760,7 +11693,6 @@ void main()
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…畜生畜生畜生ッ！",
 		   NULL, " ...Dammit, dammit, dammit!", Line_WaitForInput);
 	ShakeScreen( 2, 6,  100 , 2, 50, );
@@ -11768,21 +11700,20 @@ void main()
 	Wait( 20 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 	PlaySE( 1, "a5_10316", 70, 64 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…殺してやる殺してやる殺してやるッ！」",
 		   NULL, " ...I'll kill you, I'll kill you, I'll kill you!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	DrawBustshot( 1, "sprites/hos/hos_d4a", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/58/thos_0520", 128, 64);
 	OutputLine("星野", "「…園崎さん！　…落ち着いて！私たちは何もしてないわ！　本当よ！…あなたが…幻覚を見てひとりで暴れてるだけなのよ！…落ち着いてッ！」",
 		   "Hoshino", "\"...Sonozaki-san! ...Calm down! We haven't done anything! Honest! ...You're... just hallucinating! You're being violent for no reason! ...Calm down!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	DrawBustshot( 2, "sprites/mio/mio_d14", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/53/tmio_2740", 128, 64);
 	OutputLine("魅音", "「うるせぇよ…！…梨花さんを返せよッ！…おああぁぁああぁあッ！」",
 		   "Mion", "\"Shut up...! ...Give me back Rika-san! ...Hoaaaaaaaaaaagh!\"", Line_Normal);
 	ClearMessage();
@@ -11824,7 +11755,7 @@ void main()
 	DrawScene( "black", 400 );
 	DrawScene( "bg/hina/douro_04", 400 );
 	//;ld c,mio_D7a,22
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/53/tmio_2750", 128, 64);
 	OutputLine("魅音", "「…梨花さん…。……梨花さん…！…起きて下さいよぅ…！…そろそろ帰りましょうよぅ……。」",
 		   "Mion", "\"...Rika-san... ......Rika-san...! ...Please wake up...! ...It's time for us to go home......\"", Line_Normal);
 	ClearMessage();
@@ -11877,7 +11808,7 @@ void main()
 	ChangeBustshot( 1, "sprites/mio/mio_d15a", 200, TRUE );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/53/tmio_2770", 128, 64);
 	OutputLine("魅音", "「梨花さん！…梨花さん！…嘘だぁあぁああああッ！」",
 		   "Mion", "\"Rika-san! ...Rika-san! ...It's all a lieeeeeeee!\"", Line_Normal);
 	ClearMessage();
@@ -12017,7 +11948,7 @@ void main()
 	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 200, TRUE );
 	ShakeScreen( 0, 6, 100, 2, 50, );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/53/tmio_2820", 128, 64);
 	OutputLine("魅音", "「梨花さん…。……梨花さん！……梨花さんッ！」",
 		   "Mion", "\"Rika-san... ......Rika-san! ......Rika-san!\"", Line_Normal);
 	ClearMessage();
@@ -12205,7 +12136,7 @@ void main()
 	DrawSceneWithMask( "bg/hina/bus_05", "effect/up", 0, 0, 300 );
 
 	//;ld r,mio_D4,80
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s26/53/tmio_2910", 128, 64);
 	OutputLine("魅音", "「雨ですからーッ！」",
 		   "Mion", "\"Well, it is raining!\"", Line_Normal);
 	ClearMessage();
