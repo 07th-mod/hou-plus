@@ -130,7 +130,7 @@ void main()
 
 	PlayBGM( 0, "bgm0/iru", 70, 0 );
 
-	PlaySE(4, "ps3/s26/52/tmio_0000", 128, 64);
+	PlaySE(4, "ps3/s26/53/tmio_0000", 128, 64);
 	OutputLine("魅音", "「あはははは！あーっはっはっはっは！！」",
 		   "Mion", "\"Ahahahaha! Ahhhahahaha!!\"", Line_Normal);
 	ClearMessage();
