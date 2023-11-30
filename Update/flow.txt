@@ -43,15 +43,17 @@ void Kamikashimashi()
 
 void Busstop()
 {
-	SetWindowBackground("cinema_window_name");
-	SetWindowMargins(60, 530, 50, 30);
-	SetNameFormat("<line-height=50><size=36><margin-right=654><align=center>{0}<margin-right=30>\n</align></size></line-height>");
-	SetJpNameFormat("<line-height=60><size=36><margin-right=654><align=center>{0}<margin-right=30>\n</align></size></line-height>");
-	SetNameHistoryFormat("{0}: ");
-	SetFontSize(32);
-	SetJpFontSize(36);
-	SetLineSpacing(1);
-	SetJpLineSpacing(5);
+// For our mod, these settings should be set via the mod menu
+// according to the user's preferences, rather than be dicated by this flow.txt
+//	SetWindowBackground("cinema_window_name");
+//	SetWindowMargins(60, 530, 50, 30);
+//	SetNameFormat("<line-height=50><size=36><margin-right=654><align=center>{0}<margin-right=30>\n</align></size></line-height>");
+//	SetJpNameFormat("<line-height=60><size=36><margin-right=654><align=center>{0}<margin-right=30>\n</align></size></line-height>");
+//	SetNameHistoryFormat("{0}: ");
+//	SetFontSize(32);
+//	SetJpFontSize(36);
+//	SetLineSpacing(1);
+//	SetJpLineSpacing(5);
 
 	SetWindowFadeTime(0); //instant
 	SetWindowFadeOutTime(0); //instant
@@ -452,15 +454,17 @@ void ResetScene()
 
 	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
 
-	SetWindowBackground("windo_filter");
-	SetWindowMargins(60, 30, 50, 30);
-	SetNameFormat("");
-	SetJpNameFormat("");
-	SetNameHistoryFormat("");
-	SetFontSize(42);
-	SetJpFontSize(42);
-	SetLineSpacing(1);
-	SetJpLineSpacing(1);
+// For our mod, these settings should be set via the mod menu
+// according to the user's preferences, rather than be dicated by this flow.txt
+//	SetWindowBackground("windo_filter");
+//	SetWindowMargins(60, 30, 50, 30);
+//	SetNameFormat("");
+//	SetJpNameFormat("");
+//	SetNameHistoryFormat("");
+//	SetFontSize(42);
+//	SetJpFontSize(42);
+//	SetLineSpacing(1);
+//	SetJpLineSpacing(1);
 	SetWindowFadeTime(200); // 0.2s
 	SetWindowFadeOutTime(500); // 0.5s
 	SetNameColor(255,255,255);
