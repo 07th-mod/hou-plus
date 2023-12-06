@@ -1,12 +1,12 @@
 ﻿
 void main()
 {
-	if(IsUnityEditor() == 0) {
-		SetValidityOfSaving( FALSE );
-		CallSection("BrandLogo");
-	} else {
-		CallScript( "test" );
-	}
+	//if(IsUnityEditor() == 0) {
+	SetValidityOfSaving( FALSE );
+	CallSection("BrandLogo");
+	//} else {
+	//	CallScript( "test" );
+	//}
 	JumpSection("Title");
 }
 
@@ -44,7 +44,7 @@ void Kamikashimashi()
 void Busstop()
 {
 // For our mod, these settings should be set via the mod menu
-// according to the user's preferences, rather than be dicated by this flow.txt
+// according to the user's preferences, rather than be dictated by this flow.txt
 //	SetWindowBackground("cinema_window_name");
 //	SetWindowMargins(60, 530, 50, 30);
 //	SetNameFormat("<line-height=50><size=36><margin-right=654><align=center>{0}<margin-right=30>\n</align></size></line-height>");
@@ -95,9 +95,9 @@ void BrandLogo()
 	DrawScene( "title/07thlogo", 1000 );
 	Wait( 2000 );
 	DrawSceneWithMask( "title/mangagamer", "effect/logomask", 0, 0, 1000 );
-
 	Wait( 2000 );
-
+	DrawSceneWithMask( "title/07th-mod", "effect/logomask", 0, 0, 1000 );
+	Wait( 2000 );
 	DrawSceneWithMask( "black", "effect/logomask", 0, 0, 1000 );
 }
 
@@ -130,7 +130,7 @@ void Title()
 
 	int titleMode;
 	titleMode = 0;
-	
+
 	if((GetGlobalFlag(TEIEND) > 10) && (GetGlobalFlag(HIGUEND) > 20) && (GetGlobalFlag(MEHEND) > 10))
 		titleMode = 1;
 
@@ -168,7 +168,7 @@ void Title()
 		if((rnd == 4) || (rnd == 5))
 			PlayBGM( 2, "bgm2/hutarihitori_mb", 128, 0 );
 	}
-	
+
 	DrawSpriteFixedSize( 10, "title/logo", NULL, -320, -240, 0, 0, 0, 320, 120, 0, FALSE, FALSE, 0, 0, 25, 3000, TRUE );
 	DrawSpriteWithFilteringFixedSize( 9, "title/akairo", "effect/down", 0, -320, -240, 128, 480, FALSE, FALSE, 0, 0, 20, 3000, TRUE );
 
@@ -189,7 +189,7 @@ void TitleLoop()
 	TitleScreen();
 
 	if(GetLocalFlag( LOCALWORK_NO_RESULT ) > 0) //so we don't drop into this from the Omake screen
-		CallSection("ChapterPreview"); 
+		CallSection("ChapterPreview");
 
 	JumpSection("Title");
 }
@@ -227,7 +227,7 @@ void OmakeSubSection()
 		DrawScene("black", 400);
 
 	OmakeScreenSection();
-	
+
 	JumpSection("OmakeLoop");
 }
 
@@ -267,7 +267,7 @@ void TitleClick()
 	int state;
 	state = GetGlobalFlag(TitleState) + 1;
 	SetGlobalFlag(TitleState, state);
-	
+
 	if(state == 7)
 		CallSection("RikaAnim1");
 	if(state == 8)
@@ -277,16 +277,20 @@ void TitleClick()
 		CallSection("HanyuuAnim1");
 	if(state == 15)
 		CallSection("HanyuuAnim2");
-	
+
 	JumpSection("TitleLoop");
 }
 
 void ChapterPreview()
 {
-	PlayBGM( 2, "bgm1/it moves", 128, 0 );
-	DrawSceneWithMask( "black", "effect/mask2", 0, 0, 1000 );
+	Wait( 200 );
+	FadeOutBGM( 1, 300, FALSE );
+	FadeOutBGM( 2, 300, FALSE );
+	DisableWindow();
 
-	Wait(1000);
+	PlayBGM( 0, "bgm1/it moves", 128, 0 );
+	DrawSceneWithMask("black", "effect/mask2", 0, 0, 1200 );
+	Wait( 1500 );
 
 	DrawScene("chapter/back", 1000);
 
@@ -306,10 +310,10 @@ void ChapterPreview()
 			JumpSection("EnterMehagashi");
 	}
 
-	FadeOutBGM( 2, 1000, FALSE );
+	FadeOutBGM( 0, 1000, FALSE );
 
 	DrawScene("black", 1000);
-	
+
 	CallSection("Title");
 }
 
@@ -455,7 +459,7 @@ void ResetScene()
 	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
 
 // For our mod, these settings should be set via the mod menu
-// according to the user's preferences, rather than be dicated by this flow.txt
+// according to the user's preferences, rather than be dictated by this flow.txt
 //	SetWindowBackground("windo_filter");
 //	SetWindowMargins(60, 30, 50, 30);
 //	SetNameFormat("");
@@ -488,62 +492,62 @@ void ReturnToTitle()
 	JumpSection("Title");
 }
 
-var RikaAnim1()
+void RikaAnim1()
 {
 	SetValidityOfInput(FALSE);
-	
-	DrawSpriteFixedSize( 12, "title/rik_3", NULL, -20, 190, 0, 0, 0, 349, 480, 0, FALSE, FALSE, 0, 0, 12, 0, TRUE );
-	MoveSprite( 12, -98, 70, 0, 0, 0, 0, 0, 300, TRUE );
+
+	DrawSpriteFixedSize( 12, "sprite/ri4_niko_a1_2", NULL, -280, 190, 0, 0, 0, 1280, 720, 0, FALSE, FALSE, 0, 0, 12, 200, TRUE );
+	MoveSprite( 12, -358, 70, 0, 0, 0, 0, 0, 300, TRUE );
 	Wait(800);
-	MoveSprite( 12, -27, -123, 0, 0, 0, 0, 0, 500, TRUE );
+	MoveSprite( 12, -287, -123, 0, 0, 0, 0, 0, 500, TRUE );
 	Wait(500);
-	MoveSprite( 12, -58, -240, 0, 0, 0, 0, 0, 800, TRUE );
+	MoveSprite( 12, -318, -240, 0, 0, 0, 0, 0, 800, TRUE );
 	Wait(500);
-	ChangeBustshot(12, "title/rik_2", 500, TRUE);
+	ChangeBustshot(12, "sprite/ri4_warai_a1_2", 500, TRUE);
 
 	SetValidityOfInput(TRUE);
 }
 
 void RikaAnim2()
 {
-	SetValidityOfInput(FALSE);	
+	SetValidityOfInput(FALSE);
 
-	//DrawSpriteFixedSize( 12, "title/rik_2", NULL, -58, -240, 0, 0, 0, 349, 480, 0, FALSE, FALSE, 0, 0, 12, 0, TRUE );
-	DrawSpriteFixedSize( 13, "title/ren_k", NULL, 188, 92, 0, 0, 0, 401, 480, 0, FALSE, FALSE, 0, 0, 13, 0, TRUE );
-	MoveSprite( 13, 122, -42, 0, 0, 0, 0, 0, 2200, TRUE );
+	//DrawSpriteFixedSize( 12, "sprite/ri4_warai_a1_2", NULL, -318, -240, 0, 0, 0, 1280, 720, 0, FALSE, FALSE, 0, 0, 12, 0, TRUE );
+	DrawSpriteFixedSize( 13, "sprite/re2b_kaii_b1_2", NULL, -12, 92, 0, 0, 0, 1280, 720, 0, FALSE, FALSE, 0, 0, 13, 200, TRUE );
+	MoveSprite( 13, -78, -42, 0, 0, 0, 0, 0, 2200, TRUE );
 	Wait(400);
-	MoveSprite( 13, 188, 92, 0, 0, 0, 0, 0, 2200, TRUE );
+	MoveSprite( 13, -12, 92, 0, 0, 0, 0, 0, 2200, TRUE );
 	Wait(500);
-	ChangeBustshot(12, "title/rik_3f", 500, TRUE);
+	ChangeBustshot(12, "title/rik_alt", 500, TRUE);
 	Wait(400);
-	FadeBustshot(13, FALSE, 0, 0, 0, 0, 0, FALSE);
-	ChangeBustshot(12, "title/rik_2", 500, TRUE);
+	FadeBustshot(13, FALSE, 0, 0, 0, 0, 200, FALSE);
+	ChangeBustshot(12, "sprite/ri4_warai_a1_2", 500, TRUE);
 	Wait(1500);
 
-	DrawSpriteFixedSize( 11, "title/ren_k", NULL, 300, -240, 0, 0, 0, 401, 480, 0, FALSE, FALSE, 0, 0, 11, 0, TRUE );
-	MoveSprite( 11, 165, -240, 0, 0, 0, 0, 0, 1500, TRUE );
+	DrawSpriteFixedSize( 11, "sprite/re2b_kaii_b1_2", NULL, 100, -240, 0, 0, 0, 1280, 720, 0, FALSE, FALSE, 0, 0, 11, 200, TRUE );
+	MoveSprite( 11, -35, -240, 0, 0, 0, 0, 0, 1500, TRUE );
 	Wait(500);
-	MoveSprite( 11, -16, -240, 0, 0, 0, 0, 0, 1500, TRUE );
+	MoveSprite( 11, -216, -240, 0, 0, 0, 0, 0, 1500, TRUE );
 
-	MoveSprite( 11, -723, -240, 0, 0, 0, 0, 0, 1500, FALSE );
-	MoveSprite( 12, -746, -240, 0, 0, 0, 0, 0, 1500, TRUE );
+	MoveSprite( 11, -923, -240, 0, 0, 0, 0, 0, 1500, FALSE );
+	MoveSprite( 12, -1006, -240, 0, 0, 0, 0, 0, 1500, TRUE );
 
-	FadeBustshot(11, FALSE, 0, 0, 0, 0, 0, FALSE);
-	FadeBustshot(12, FALSE, 0, 0, 0, 0, 0, TRUE);
+	FadeBustshot(11, FALSE, 0, 0, 0, 0, 200, FALSE);
+	FadeBustshot(12, FALSE, 0, 0, 0, 0, 200, TRUE);
 
 	SetValidityOfInput(TRUE);
 }
 
 void HanyuuAnim1()
 {
-	SetValidityOfInput(FALSE);	
+	SetValidityOfInput(FALSE);
 
-	DrawSpriteFixedSize( 12, "title/han_11", NULL, 10, 238, 0, 0, 0, 470, 480, 0, FALSE, FALSE, 0, 0, 12, 0, TRUE );
-	MoveSprite( 12, -94, 60, 0, 0, 0, 0, 0, 400, TRUE );
+	DrawSpriteFixedSize( 12, "sprite/ha5_shinken_0", NULL, -190, 238, 0, 0, 0, 1280, 720, 0, FALSE, FALSE, 0, 0, 12, 200, TRUE );
+	MoveSprite( 12, -294, 60, 0, 0, 0, 0, 0, 400, TRUE );
 	ShakeScreen( 1, 6, 30, 12, 0, );
-	MoveSprite( 12, -34, -138, 0, 0, 0, 0, 0, 400, TRUE );
+	MoveSprite( 12, -234, -138, 0, 0, 0, 0, 0, 400, TRUE );
 	ShakeScreen( 1, 6, 30, 12, 0, );
-	MoveSprite( 12, -71, -240, 0, 0, 0, 0, 0, 400, TRUE );
+	MoveSprite( 12, -271, -240, 0, 0, 0, 0, 0, 400, TRUE );
 	ShakeScreen( 1, 6, 30, 12, 0, );
 
 	SetValidityOfInput(TRUE);
@@ -551,27 +555,27 @@ void HanyuuAnim1()
 
 void HanyuuAnim2()
 {
-	SetValidityOfInput(FALSE);	
+	SetValidityOfInput(FALSE);
 
-	DrawSpriteFixedSize( 12, "title/han_11", NULL, -71, -240, 0, 0, 0, 470, 480, 0, FALSE, FALSE, 0, 0, 12, 0, TRUE );
-	MoveSprite( 12, -126, -37, 0, 0, 0, 0, 0, 400, TRUE );
+	DrawSpriteFixedSize( 12, "sprite/ha5_shinken_0", NULL, -271, -240, 0, 0, 0, 1280, 720, 0, FALSE, FALSE, 0, 0, 12, 0, TRUE );
+	MoveSprite( 12, -326, -37, 0, 0, 0, 0, 0, 400, TRUE );
 	ShakeScreen( 1, 6, 30, 12, 0, );
-	MoveSprite( 12, -69, 163, 0, 0, 0, 0, 0, 400, TRUE );
+	MoveSprite( 12, -269, 163, 0, 0, 0, 0, 0, 400, TRUE );
 	ShakeScreen( 1, 6, 30, 12, 0, );
-	MoveSprite( 12, -100, 253, 0, 0, 0, 0, 0, 400, TRUE );
+	MoveSprite( 12, -300, 253, 0, 0, 0, 0, 0, 400, TRUE );
 	ShakeScreen( 1, 6, 30, 12, 0, );
 	Wait(500);
-	MoveSprite( 12, -71, -86, 0, 0, 0, 0, 0, 150, TRUE );
+	MoveSprite( 12, -271, -86, 0, 0, 0, 0, 0, 150, TRUE );
 	ShakeScreen( 1, 6, 30, 12, 0, );
-	MoveSprite( 12, -629, -86, 0, 0, 256, 0, 0, 1000, FALSE ); //fade out
+	MoveSprite( 12, -829, -86, 0, 0, 256, 0, 0, 1000, FALSE ); //fade out
 	Update(); //execute stored actions
 	Wait(600);
 	if(GetGlobalFlag(MEHEND) >= 20)
 		FadeBustshot(5, FALSE, 0, 0, 0, 0, 400, TRUE); //fade out the sword
 	else
 		Wait(400);
-	
-	FadeBustshot(12, FALSE, 0, 0, 0, 0, 0, TRUE);
+
+	FadeBustshot(12, FALSE, 0, 0, 0, 0, 300, TRUE);
 
 	SetValidityOfInput(TRUE);
 }
@@ -699,14 +703,14 @@ void AchievementCheck()
 	if(GetGlobalFlag(MEHEND) < 21)
 		Return();
 
-	if(GetGlobalFlag(ReadStaffRoom1) 
-	 + GetGlobalFlag(ReadStaffRoom2) 
-	 + GetGlobalFlag(ReadStaffRoom3) 
-	 + GetGlobalFlag(ReadStaffRoom4) 
-	 + GetGlobalFlag(ReadStaffRoom5) 
-	 + GetGlobalFlag(ReadStaffRoom6) 
-	 + GetGlobalFlag(ReadStaffRoom7) 
-	 + GetGlobalFlag(ReadStaffRoom8) 
+	if(GetGlobalFlag(ReadStaffRoom1)
+	 + GetGlobalFlag(ReadStaffRoom2)
+	 + GetGlobalFlag(ReadStaffRoom3)
+	 + GetGlobalFlag(ReadStaffRoom4)
+	 + GetGlobalFlag(ReadStaffRoom5)
+	 + GetGlobalFlag(ReadStaffRoom6)
+	 + GetGlobalFlag(ReadStaffRoom7)
+	 + GetGlobalFlag(ReadStaffRoom8)
 	 + GetGlobalFlag(ReadStaffRoom9) >= 9)
 	 	GetAchievement("HOU_CLEAR");
 }
