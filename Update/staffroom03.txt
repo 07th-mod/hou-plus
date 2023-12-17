@@ -1,7 +1,15 @@
 void main()
 {
+	int AdvMode;
+	AdvMode = 1;
+	int Line_ModeSpecific;
+	if (AdvMode) {
+		Line_ModeSpecific = Line_Normal;
+	} else {
+		Line_ModeSpecific = Line_WaitForInput;
+	}
 
-	//Unhandled: *Staff_room3                               
+	//Unhandled: *Staff_room3
 	//;スタッフルーム
 
 	//;■スタッフルーム
@@ -37,32 +45,37 @@ void main()
 
 	PlaySE( 0, "wav/boyon", 70, 64 );
 
+	ClearMessage();
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「こんにちは、竜騎士07です。",
 		   NULL, "\"Hello, Ryukishi07 here.", Line_WaitForInput);
 	OutputLine(NULL, "いよいよ『ひぐらし』も第６話ですねぇ！",
 		   NULL, " Higurashi's finally up to chapter six!", Line_WaitForInput);
 	OutputLine(NULL, "　これが飛行機なら、本機は着陸態勢に入りました、シートベルトをお締めになってくださいってアナウンスが入るところですよー！」",
-		   NULL, " If we were on a plane right now, the announcer would be telling everyone to fasten their seatbelts as we prepare for landing!\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " If we were on a plane right now, the announcer would be telling everyone to fasten their seatbelts as we prepare for landing!\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	PlaySE( 0, "wav/boyon", 70, 64 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「シートベルトに拘束されて墜落まで逃げ場ナシとも言うにゃりね。",
 		   NULL, "\"Though once you're bound by your seatbelt, there's nowhere left to run until it crashes, nya.", Line_WaitForInput);
 	OutputLine(NULL, "八咫桜にゃりん。」",
 		   NULL, " Yatazakura here, nya.\"", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「まぁまぁ！",
 		   NULL, "\"Now, now!", Line_WaitForInput);
 
 	PlaySE( 0, "wav/hikaru", 70, 64 );
 
 	OutputLine(NULL, "　ところで当サークルですが、『ひぐらし』が終わったら次は何を作りましょうねぇ？」",
-		   NULL, " By the way, what's our circle going to create once Higurashi's finished?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " By the way, what's our circle going to create once Higurashi's finished?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「できるできないは別にして、アイデアは自由に出しておきたいにゃりんね。",
 		   NULL, "\"I'd like to brainstorm a few ideas ahead of time, regardless of whether or not we can do them, nya.\"", Line_WaitForInput);
 	OutputLine(NULL, "では、とにかく言いたい放題で行ってみようにゃりー！」",
@@ -74,14 +87,16 @@ void main()
 	DrawScene( "black", 400 );
 	PlayBGM( 0, "bgm0/4", 70, 0 );
 	PlaySE( 0, "wav/boyon", 70, 64 );
-	SetDrawingPointOfMessage( 5, 3 );
+	if (AdvMode == 0) { SetDrawingPointOfMessage( 5, 3 ); }
 	SetSpeedOfMessage( TRUE, 128 );
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "サルでも作れる　（愛称サルじか）",
 		   NULL, "Next Work Classroom", Line_ContinueAfterTyping);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	SetDrawingPointOfMessage( 7, 6 );
+	if (AdvMode == 0) { SetDrawingPointOfMessage( 7, 6 ); }
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "次　回　作　教　室",
 		   NULL, "For Games Even Monkeys Can Make (AKA Monkey Works)", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -92,20 +107,24 @@ void main()
 
 	DrawSceneWithMask( "img/dsc00039", "effect/up", 0, 0, 300 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「次回作の構想を練るにゃり。」",
-		   NULL, "\"Let's iron out some ideas for our next work, nya.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "\"Let's iron out some ideas for our next work, nya.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「うむ。」",
 		   NULL, "\"Mhmm.\"", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「まずはジャンルを決めるにゃり。",
 		   NULL, "\"First we'll need to pick the genre, nya.", Line_WaitForInput);
 	OutputLine(NULL, "竜騎士さん、あんたが子どもの頃、一番面白かったゲームは何かにゃ？」",
-		   NULL, " Ryukishi-san, what game did you find the most entertaining when you were a child, nya?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Ryukishi-san, what game did you find the most entertaining when you were a child, nya?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「一番面白かった…？」",
 		   NULL, "\"The most entertaining...?\"", Line_Normal);
 	ClearMessage();
@@ -115,7 +134,8 @@ void main()
 	DrawScene( "white", 1000 ); //Unhandled: Mosaic transition
 	DrawScene( "white", 400 );
 	DrawScene( "black", 400 );
-	SetDrawingPointOfMessage( 3, 6 );
+	if (AdvMode == 0) { SetDrawingPointOfMessage( 3, 6 ); }
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ＦＩＮＡＬ　Ｆ▲ＮＴＡＳＹ",
 		   NULL, "FINAL F▲NTASY", Line_Normal);
 	ClearMessage();
@@ -123,6 +143,7 @@ void main()
 
 	DrawScene( "img/dsc00039", 400 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「おお！",
 		   NULL, "\"Ohh!", Line_WaitForInput);
 
@@ -170,34 +191,42 @@ void main()
 	ClearMessage();
 
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ファイナルファンタジー▼…。",
-		   NULL, "Final Fantasy ▼...", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "Final Fantasy ▼...", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　かつてスーファミで竜騎士07がやり狂ったゲームのひとつだ。",
 		   NULL, "This was a game Ryukishi07 once played like crazy on the SNES.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ストーリーは単純だが王道で馴染みやすく、変に気取ったところがないのが好印象であった。",
-		   NULL, "The story was simple, yet orthodox and easily relatable, and the lack of weird pretension left a good impression.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "The story was simple, yet orthodox and easily relatable, and the lack of weird pretension left a good impression.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　力を秘めたクリスタルを巡る悪と主人公たちの攻防と冒険…。",
-		   NULL, "There were adventures, and battles between the heroes and villains over the crystals and their power...", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "There were adventures, and battles between the heroes and villains over the crystals and their power...", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　また、奇数作品ではお馴染みのジョブチェンジシステムはシリーズ中最高の形で昇華されていた（と筆者は信じる）。",
-		   NULL, "Also, like the other odd numbered games in the series, it featured a familiar job change system, but this one was refined into the greatest one throughout the series (or so this author believes).", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "Also, like the other odd numbered games in the series, it featured a familiar job change system, but this one was refined into the greatest one throughout the series (or so this author believes).", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "　多彩なジョブとアビリティの組み合わせが生み出した無数の戦略は、様々なボスに様々な勝ち方を提案し、クリア後も再びプレイしたくなる魅力を秘めていた…。",
 		   NULL, "There were countless strategies that could be formed by combining the abilities from various jobs, which suggested many different ways one could different the various bosses, so even after you beat the game, it still held a charm that made you want to play it again...", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　当サークルのマスコットキャラの竜騎士レナが、このゲームを愛したがゆえに生み出された事実は、関係者には広く知られた事実だ…。",
 		   NULL, "It's widely known to those involved in this circle that our mascot character, Ryukishi Rena, was actually born out of love for that game...", Line_Normal);
 	ClearMessage();
@@ -205,12 +234,15 @@ void main()
 
 	DrawScene( "img/dsc000102", 400 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ＲＰＧというジャンルはキャラクターへの感情移入も高まるし、",
-		   NULL, "\"RPGs make it easier to empathize with the characters.", Line_WaitForInput);
+		   NULL, "\"RPGs make it easier to empathize with the characters. ", Line_ModeSpecific);
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "コツコツ経験値を稼げば、必ず難関を突破できる努力、友情、そして勝利なところも、日本人には向いているにゃりね。」",
-		   NULL, " The way steady effort lets you earn EXP and guarantees you can clear the hurdles before you, along with the party's friendship leading to victory is really well suited to Japanese people, nya.\"", Line_Normal);
+		   NULL, "The way steady effort lets you earn EXP and guarantees you can clear the hurdles before you, along with the party's friendship leading to victory is really well suited to Japanese people, nya.\"", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そうだろう、そうだろう！",
 		   NULL, "\"That's right, that's right!", Line_WaitForInput);
 
@@ -245,6 +277,7 @@ void main()
 	DrawScene( "img/dsc00039", 400 );
 	PlaySE( 0, "wav/kyupirn", 70, 64 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「基本はＲＰＧテイストで、努力・友情・戦いのジャンプ三原則に従ったストーリー展開。",
 		   NULL, "\"Fundamentally it'll have a taste of RPG, and the plot will develop in line with Jump's three golden rules: effort, friendship, and battles.", Line_WaitForInput);
 
@@ -256,23 +289,26 @@ void main()
 	ShakeScreen( 2, 9,  30 , 2, 50, );
 	Wait( 40 );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, " ", Line_ModeSpecific);
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…うむ、実現できればなかなか良さそうにゃりん！",
-		   NULL, " ...Yeah, that sounds pretty great if we can make it happen, nya!", Line_WaitForInput);
+		   NULL, "...Yeah, that sounds pretty great if we can make it happen, nya!", Line_WaitForInput);
 
 	PlaySE( 0, "wav/boyon", 70, 64 );
 
 	OutputLine(NULL, "　……だが、そんなに高度なプログラムが組めるわけでもないにゃり。",
-		   NULL, " ......However, none of us can do such advanced programming work, nya.", Line_WaitForInput);
+		   NULL, " ......However, none of us can do such advanced programming work, nya. ", Line_ModeSpecific);
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "Ｎスクリプトで制作可能な条件が付くにゃりんよ。」",
-		   NULL, " We have to limit ourselves to something that can be created on N-Scripter, nya.\"", Line_Normal);
+		   NULL, "We have to limit ourselves to something that can be created on N-Scripter, nya.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	DrawSceneWithMask( "white", "effect/left", 0, 0, 300 );
 	DrawSceneWithMask( "img/dsc00038", "effect/left", 0, 0, 300 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「んんんん…。",
 		   NULL, "\"Hmmm...", Line_WaitForInput);
 	OutputLine(NULL, "ということは、…ＲＰＧテイストな物語のサウンドノベル…ということしかないなぁ。」",
@@ -281,13 +317,14 @@ void main()
 
 	PlaySE( 0, "wav/koruku", 70, 64 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ストーリーも練らないとダメにゃりん。",
 		   NULL, "\"We'll need to iron out the story too, nya.", Line_WaitForInput);
 
 	PlaySE( 0, "wav/kira", 70, 64 );
 
 	OutputLine(NULL, "クリスタルを巡る攻防は面白そうにゃりが、クリスタルはＦＦ▼の代名詞にゃりよ、この辺も考えないといかんにゃりん。",
-		   NULL, " Battles over crystals sounds interesting, nya, but the crystals are synonymous with FF▼, nya. We'll have to be careful about that, nya.", Line_WaitForInput);
+		   NULL, " Battles over crystals sounds interesting, nya, but the crystals are synonymous with FF▼, nya. We'll have to be careful about that, nya. ", Line_ModeSpecific);
 
 	PlaySE( 0, "wav/furu", 70, 64 );
 	Wait( 200 );
@@ -295,15 +332,17 @@ void main()
 	Wait( 200 );
 	PlaySE( 0, "wav/furu", 70, 64 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "では竜騎士さん、あんたが今まで見た映画で、一番面白かった映画は何かにゃ？」",
-		   NULL, " So Ryukishi-san, what was the most entertaining movie out of all the ones you've seen, nya?\"", Line_ContinueAfterTyping);
+		   NULL, "So Ryukishi-san, what was the most entertaining movie out of all the ones you've seen, nya?\"", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "wav/hikaru", 70, 64 );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_ModeSpecific);
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…んんん、一番面白かった映画…？」",
 		   NULL, "\"...Hmmmm, the most entertaining movie...?\"", Line_Normal);
 	ClearMessage();
@@ -313,13 +352,15 @@ void main()
 	DrawScene( "white", 1000 ); //Unhandled: Mosaic transition
 	DrawScene( "white", 400 );
 	DrawScene( "black", 400 );
-	SetDrawingPointOfMessage( 3, 5 );
+	if (AdvMode == 0) { SetDrawingPointOfMessage( 3, 5 ); }
 	SetSpeedOfMessage( TRUE, 128 );
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ハリソ■・フォード主演（89年上映）",
 		   NULL, "Indiana Jones and the Last Crusade,", Line_ContinueAfterTyping);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	SetDrawingPointOfMessage( 3, 7 );
+	if (AdvMode == 0) { SetDrawingPointOfMessage( 3, 7 ); }
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "イ■ディ・ジョーンズ　最後の聖戦",
 		   NULL, "starring Harrison Ford (aired in 1989).", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -330,20 +371,25 @@ void main()
 
 	DrawScene( "img/dsc00038", 400 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「おお！",
 		   NULL, "\"Ohh!", Line_WaitForInput);
 	OutputLine(NULL, "　ジェットコースタームービーと讃えられた手に汗握る展開は確かに、間を嫌う現代感覚にピッタリにゃりん！」",
 		   NULL, " That movie was hailed as a roller coaster ride, and its exciting twists and turns are perfect for the modern audience that hates downtime, nya!\"", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "「中でも第３作の『最後の聖戦』は、永遠の力を秘めたキリストの聖杯を巡って、ナチス第３帝国とイ■ディが、世界を狭しと駆け巡る、壮大なアクション大活劇映画だったのだ！」",
-		   NULL, "\"Of all the ones in the series, the third one, The Last Crusade, was a magnificent action film where Indy fought the Nazis of the Third Reich over the Holy Grail and the power of immortality within, their battles spanning across the globe!\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "\"Of all the ones in the series, the third one, The Last Crusade, was a magnificent action film where Indy fought the Nazis of the Third Reich over the Holy Grail and the power of immortality within, their battles spanning across the globe!\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「低予算映画が流行っている昨今では、そのスケールの大きさはむしろ斬新にゃりね。」",
 		   NULL, "\"With low budget films being in style nowadays, the huge scale of it was novel, nya.\"", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そうだろう、そうだろう！",
 		   NULL, "\"That's right, that's right!", Line_WaitForInput);
 
@@ -377,10 +423,12 @@ void main()
 
 	DrawScene( "img/dsc00039", 400 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「んで、これをアレンジするわけだが、まず時代設定を現代にした方がいいにゃりね。」",
 		   NULL, "\"So, if we're going to adapt that, then first, I think we should update the setting to modern times.\"", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…そーすっとアレかな。",
 		   NULL, "\"...If we do that, then...", Line_WaitForInput);
 
@@ -392,13 +440,15 @@ void main()
 
 	PlaySE( 0, "wav/boyon", 70, 64 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「いや、キリストの聖杯なんて言ったら文化庁が管轄すべきにゃり。",
 		   NULL, "\"No, the Holy Grail would fall under the Agency for Cultural Affairs' jurisdiction, nya.", Line_WaitForInput);
 	OutputLine(NULL, "バチカンとも連絡が必要だろうし、学生が触れられるようなものじゃないにゃりよ。",
-		   NULL, " They'd have to contact the Vatican too, so students would never be able to touch it, nya.", Line_WaitForInput);
+		   NULL, " They'd have to contact the Vatican too, so students would never be able to touch it, nya. ", Line_ModeSpecific);
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "下手をすれば国際問題にゃりん。」",
-		   NULL, " One wrong move and it'd become an international incident, nya.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "One wrong move and it'd become an international incident, nya.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	PlaySE( 0, "wav/furu", 70, 64 );
@@ -409,12 +459,15 @@ void main()
 	Wait( 200 );
 	PlaySE( 0, "wav/kyupirn", 70, 64 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「じゃあ主人公を文化庁の職員にしとけばいいんだ！",
-		   NULL, "\"So then we just need to make the main character an employee at the Agency for Cultural Affairs!", Line_WaitForInput);
+		   NULL, "\"So then we just need to make the main character an employee at the Agency for Cultural Affairs! ", Line_ModeSpecific);
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そーすれば古代遺跡にも出入りできるし、伝説の秘宝を手にしても大丈夫だ！」",
-		   NULL, " If we do that, then they can go in and out of ancient ruins too, and they'll be able to uncover legendary treasures as well!\"", Line_Normal);
+		   NULL, "If we do that, then they can go in and out of ancient ruins too, and they'll be able to uncover legendary treasures as well!\"", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ほんで？",
 		   NULL, "\"So then what?", Line_WaitForInput);
 	OutputLine(NULL, "　その文化庁職員がジョブチェンジしたりしながら悪と戦うの？",
@@ -425,9 +478,10 @@ void main()
 	OutputLine(NULL, "　ジョブチェンジって何よ。",
 		   NULL, " What's a job change here anyway?", Line_WaitForInput);
 	OutputLine(NULL, "戦士とか狩人とか黒魔道師とかになったりするにゃりか？",
-		   NULL, " Is he going to become a Warrior, Ranger, Black Mage, or something, nya?", Line_WaitForInput);
+		   NULL, " Is he going to become a Warrior, Ranger, Black Mage, or something, nya? ", Line_ModeSpecific);
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　戦士なんて呼び方、全共闘時代じゃあるまいし、今時のナウでヤングな若者には通用しないにゃりよ。」",
-		   NULL, " The term Warrior doesn't the fit the time period at all, and I don't think the young people living in the now of modern times would get it, nya.\"", Line_Normal);
+		   NULL, "The term Warrior doesn't the fit the time period at all, and I don't think the young people living in the now of modern times would get it, nya.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -435,6 +489,7 @@ void main()
 	DrawScene( "img/dsc00038", 400 );
 	FadeOutBGM( 0, 0, TRUE );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…うむむむむむむ………。",
 		   NULL, "\"...Hmmmmmmm.........", Line_WaitForInput);
 	DisableWindow();
@@ -458,13 +513,14 @@ void main()
 
 	ShakeScreen( 2, 9,  100 , 1, 50, );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, " ", Line_ModeSpecific);
 
 
 	PlaySE( 0, "wav/dageki", 70, 64 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　狩人はアーチャーで黒魔道師はキャスター！！",
-		   NULL, " For Ranger, we'll use Archer, and for Black Mage, we'll use Caster!!", Line_ContinueAfterTyping);
+		   NULL, "For Ranger, we'll use Archer, and for Black Mage, we'll use Caster!!", Line_ContinueAfterTyping);
 
 	ShakeScreen( 0, 9, 100, 1, 50, );
 
@@ -485,7 +541,7 @@ void main()
 	ShakeScreen( 0, 15, 30, 2, 50, );
 	Wait( 40 );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, " ", Line_ModeSpecific);
 
 	SetSpeedOfMessage( TRUE, 128 );
 	DisableWindow();
@@ -493,8 +549,10 @@ void main()
 	DrawScene( "effect/f_c", 0 );
 	PlaySE( 0, "wav/finish", 70, 64 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "　そして手にした者の願いをかなえるという伝説の聖杯を巡って選ばれた主人公たちが様々なジョブを持つキャラクターたちを従え、終わらぬ戦いに身を投じていくのだ！！」",
-		   NULL, " So then the heroes chosen to fight over the legendary Holy Grail, which can grant the wish of anyone who obtains it, will command characters that possess one of those jobs, and throw themselves into never ending battles!!\"", Line_ContinueAfterTyping);
+		   NULL, "So then the heroes chosen to fight over the legendary Holy Grail, which can grant the wish of anyone who obtains it, will command characters that possess one of those jobs, and throw themselves into never ending battles!!\"", Line_ContinueAfterTyping);
 
 	ShakeScreen( 2, 15,  30 , 2, 50, );
 	Wait( 40 );
@@ -508,6 +566,7 @@ void main()
 	PlaySE( 0, "wav/daidageki", 70, 64 );
 
 	SetSpeedOfMessage( TRUE, 128 );
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「面白い！！",
 		   NULL, "\"That sounds interesting!!", Line_ContinueAfterTyping);
 
@@ -530,12 +589,13 @@ void main()
 	PlaySE( 0, "wav/dageki", 70, 64 );
 
 	OutputLine(NULL, "　ＦＦ▼を彷彿させるジョブ感覚にファンタジー感！",
-		   NULL, " It brings out that fantasy feel with a resemblance to FF▼'s job system!", Line_WaitForInput);
+		   NULL, " It brings out that fantasy feel with a resemblance to FF▼'s job system! ", Line_ModeSpecific);
 
 	PlaySE( 0, "wav/hikaru", 70, 64 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　イ■ディ・ジョーンズ顔負けの伝説の秘宝を巡る目まぐるしい攻防！",
-		   NULL, " It captures the hectic, back and forth battles of Indiana Jones over some legendary treasure!", Line_ContinueAfterTyping);
+		   NULL, "It captures the hectic, back and forth battles of Indiana Jones over some legendary treasure!", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "wav/kira", 70, 64 );
 
@@ -548,19 +608,21 @@ void main()
 	ShakeScreen( 2, 12,  30 , 2, 50, );
 	Wait( 40 );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, " ", Line_ModeSpecific);
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　しかも現代という舞台の中で超常的な存在が跋扈する世界観は流行最先端の伝奇ものを思わせるにゃりん！！",
-		   NULL, " Plus that worldview of the supernatural lurking everywhere in modern day society rings out with the mystery and otherworldliness that's at the leading edge of popularity now, nya!", Line_ContinueAfterTyping);
+		   NULL, "Plus that worldview of the supernatural lurking everywhere in modern day society rings out with the mystery and otherworldliness that's at the leading edge of popularity now, nya!", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "wav/tatakiwaru", 70, 64 );
 	ShakeScreen( 0, 15, 30, 2, 50, );
 	Wait( 40 );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, " ", Line_ModeSpecific);
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これは同人ソフト界に壮絶なインパクトを与えるにゃり！！",
-		   NULL, " This will have a huge impact on the world of doujin games, nya!!", Line_ContinueAfterTyping);
+		   NULL, "This will have a huge impact on the world of doujin games, nya!!", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "wav/daidageki", 70, 64 );
 	ShakeScreen( 2, 15,  30 , 2, 50, );
@@ -581,6 +643,7 @@ void main()
 
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「やったッ、超えたぞ『ひぐらし』を！！",
 		   NULL, "\"We did it! We've surpassed Higurashi!!", Line_WaitForInput);
 
@@ -614,24 +677,28 @@ void main()
 	DrawScene( "img/dsc00039", 400 );
 	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
 	SetSpeedOfMessage( FALSE, 0 );
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「よし、じゃ昨日出た素晴らしい設定を、もう少し煮詰めるにゃりん！",
 		   NULL, "\"Alright, let's take that wonderful setting we came up with and iron it out a little more, nya!", Line_WaitForInput);
 	OutputLine(NULL, "　まず、タイトルだがどうするにゃりか？」",
-		   NULL, " First, what should we go with for the title, nya?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " First, what should we go with for the title, nya?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「うむ！",
 		   NULL, "\"Yes!", Line_WaitForInput);
 	OutputLine(NULL, "　それについては今思いついた画期的なタイトルがある！」",
 		   NULL, " I have a revolutionary title that I just thought of!\"", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「それは奇遇にゃりね。",
 		   NULL, "\"What a coincidence, nya.", Line_WaitForInput);
 	OutputLine(NULL, "僕も今思いついたタイトルがあるにゃりん。」",
-		   NULL, " I just thought of a title as well, nya.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " I just thought of a title as well, nya.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ほう、では同時に言ってみよう！」",
 		   NULL, "\"Oh? Then let's both say ours together!\"", Line_Normal);
 	ClearMessage();
@@ -639,7 +706,8 @@ void main()
 
 	DrawScene( "black", 0 );
 	PlaySE( 0, "wav/boyon", 70, 64 );
-	SetDrawingPointOfMessage( 2, 7 );
+	if (AdvMode == 0) { SetDrawingPointOfMessage( 2, 7 ); }
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「「Ｆａｔｅ／ｓ■ａｙ　ｎｉｇｈｔ」」",
 		   NULL, "\"\"Fate/s*ay night!\"\"", Line_Normal);
 	ClearMessage();
@@ -648,6 +716,7 @@ void main()
 	DrawScene( "bg/mura/sora4", 200 );
 
 	SetSpeedOfMessage( TRUE, 128 );
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「「あああああああああああーーッ？！」」",
 		   NULL, "\"\"Aaaaaaaaaaaaaaaaah?!\"\"", Line_ContinueAfterTyping);
 

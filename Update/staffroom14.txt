@@ -1,9 +1,17 @@
 void main()
 {
+	int AdvMode;
+	AdvMode = 1;
+	int Line_ModeSpecific;
+	if (AdvMode) {
+		Line_ModeSpecific = Line_Normal;
+	} else {
+		Line_ModeSpecific = Line_WaitForInput;
+	}
 
 
 	//;■スタッフルーム（クリア後のおまけ）※奉無印スタッフルーム。裏スタッフルームにて閲覧可能
-	//Unhandled: *Staff_room14                               
+	//Unhandled: *Staff_room14
 	//;スタッフルーム
 	//Unhandled subroutine: omake_s
 
@@ -27,18 +35,22 @@ void main()
 
 	Wait( 2000 );
 
+	ClearMessage();
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　こんにちは、竜騎士07です。",
-		   NULL, "Hello, Ryukishi07 here.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "Hello, Ryukishi07 here.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ここを読んでくださっているということは、全てのシナリオを読んで頂いたということだと思います。",
-		   NULL, "If you're reading this now, then I believe you've read all of the chapters.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "If you're reading this now, then I believe you've read all of the chapters.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　長旅を本当にお疲れ様でした。",
 		   NULL, "It truly has been a long journey.", Line_WaitForInput);
 	OutputLine(NULL, "そしてここまでお付き合い下さり有難うございます。",
@@ -47,24 +59,28 @@ void main()
 
 
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　「ひぐらしのなく頃に」を発表してから、僕の人生は大きく変わりました。",
-		   NULL, "My life has changed dramatically since I first announced Higurashi When They Cry.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "My life has changed dramatically since I first announced Higurashi When They Cry.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　「ひぐらしのなく頃に」がたくさんの方に愛され、様々な派生をして、僕の創作の幅や考え方は大きく変わりました。",
 		   NULL, "So many people have fallen in love with Higurashi When They Cry and created many derivative works, and both my outlook on creation and the breadth of what I create have changed a lot.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　「ひぐらしのなく頃に」のお陰で、たくさんの素晴らしい出会いがあり、",
 		   NULL, "I've met many wonderful people thanks to Higurashi When They Cry,", Line_WaitForInput);
 	OutputLine(NULL, "僕は素晴らしい人々に恵まれていることを知りました。",
-		   NULL, " and I've learned how blessed I am to have such wonderful people around me.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " and I've learned how blessed I am to have such wonderful people around me.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして皆さんもきっと、「ひぐらし」からの十年間で、それぞれに様々な人生を歩まれたかと思います。",
 		   NULL, "I also believe that all of you are now walking different paths in life since Higurashi was created ten years ago.", Line_Normal);
 	ClearMessage();
@@ -72,46 +88,54 @@ void main()
 
 
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "“「ひぐらしのなく頃に」のお陰で結婚して、子供が生まれ、家族で白川郷に行きました”",
-		   NULL, "\"Thanks to Higurashi When They Cry, I got married, and we had a child, and our family took a trip to Shirakawa-go together.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "\"Thanks to Higurashi When They Cry, I got married, and we had a child, and our family took a trip to Shirakawa-go together.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "“「うみねこのなく頃に」が縁で結婚することになりました。指輪やウェルカムボードに片翼の鷲をモチーフに使っていいですか？”",
 		   NULL, "\"Thanks to Umineko When They Cry, I'm getting married. Would it be alright if we used the one winged eagle motif on our rings and welcome board?\"", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "“07th作品が縁で、国境を超えた方と結婚することになりました”",
-		   NULL, "\"Because of 07th's works, I'm now getting married to someone from a completely different nation.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "\"Because of 07th's works, I'm now getting married to someone from a completely different nation.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんなメールを頂いたことがあります。",
 		   NULL, "These are just some of the e-mails I've received.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自分の作品が、誰かの人生にこれほど大きな変化を与えるなどと、想像も出来ませんでした。",
-		   NULL, "I never imagined that my titles could have such a huge influence on the life of someone else.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "I never imagined that my titles could have such a huge influence on the life of someone else.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、それを心から嬉しく、光栄に思います。",
 		   NULL, "It makes me happy with all my heart, and I feel honored.", Line_Normal);
 	ClearMessage();
 
 
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　「ひぐらし」という長い長い物語は、僕にとってだけでなく、応援して下さった大勢の方にとっても人生の一部だったなら。",
-		   NULL, "If the long, long story of Higurashi can be a part of the lives of the many people who have supported us, as well as my own,", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "If the long, long story of Higurashi can be a part of the lives of the many people who have supported us, as well as my own,", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これほど嬉しいことはありません。",
 		   NULL, "then nothing could make me happier.", Line_Normal);
 	ClearMessage();
@@ -121,42 +145,50 @@ void main()
 
 	Wait( 2000 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もちろん、人生には酸いも甘いも色々あります。",
-		   NULL, "Of course life is filled with both sweet moments and bitterness.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "Of course life is filled with both sweet moments and bitterness.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　「ひぐらしのなく頃に」を発表したあの日から、たくさんの出会いと別れ、楽しいことと悲しいこと。",
 		   NULL, "Since announcing Higurashi When They Cry, I've met and parted with many people, and experienced many things both fun and sad.", Line_WaitForInput);
 	OutputLine(NULL, "生まれてきたことに感謝したり、生きていくことに絶望したり。",
-		   NULL, " I've both felt grateful to be alive, and depressed at the thought of living any longer.", Line_WaitForInput);
+		   NULL, " I've both felt grateful to be alive, and depressed at the thought of living any longer. ", Line_ModeSpecific);
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "それはもう、本当にたくさんのことがありました。",
-		   NULL, " There really have been so many things that have happened over the years.", Line_Normal);
+		   NULL, "There really have been so many things that have happened over the years.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　「ひぐらしのなく頃に」とは、紛れも無く、僕の人生の一部でした。",
-		   NULL, "Higurashi When They Cry is without a doubt a piece of my life.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "Higurashi When They Cry is without a doubt a piece of my life.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それをもう一度、このような形で発表できて、心から嬉しく思うとともに、言い表せない充実感を覚えます。",
 		   NULL, "While I'm truly happy to announce that once more in this shape, there's also a satisfaction I can hardly express.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その人生の一部を、皆さんとわずかの間でも共有できた。",
-		   NULL, "For however brief a moment it was, I have been able to share this piece of my life with all of you.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "For however brief a moment it was, I have been able to share this piece of my life with all of you.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それが、何にも勝る喜びです。",
-		   NULL, "Nothing can ever beat that joy.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "Nothing can ever beat that joy.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この場をお借りしまして、今日まで応援して下さった全ての皆さんに、厚く御礼申し上げます。",
 		   NULL, "So I'd like to take this chance to offer my deepest gratitude to all of you who have supported me up until this day.", Line_Normal);
 	ClearMessage();
@@ -164,30 +196,35 @@ void main()
 
 	DrawScene( "black", 400 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　皆さんの応援がなければ、竜騎士07は今日まで執筆を続けることなど出来ませんでした。",
-		   NULL, "Without your support, Ryukishi07 could not have kept writing this long.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "Without your support, Ryukishi07 could not have kept writing this long.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう。",
 		   NULL, "Yes.", Line_WaitForInput);
 	OutputLine(NULL, "まさに私の命は、皆さんにいただいたものだったのです。",
 		   NULL, " You all are the reason I'm alive here today.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その感謝の気持ちを皆さんに捧げたくて。",
-		   NULL, "So I would like to offer you all my sincerest gratitude.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "So I would like to offer you all my sincerest gratitude.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この度のタイトルを「奉」とさせていただきました。",
-		   NULL, "That is why I have given this edition the title, \"Hou\", or \"offering\".", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "That is why I have given this edition the title, \"Hou\", or \"offering\".", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　どうか、お受け取りいただければ幸いです。",
 		   NULL, "So please, I hope you all will accept these thanks from me.", Line_Normal);
 	ClearMessage();
@@ -199,6 +236,7 @@ void main()
 
 	PlayBGM( 0, "bgm1/musou_orgelver", 70, 0 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　さて、過去の奉納を終え、ここからは未来の話をしたいと思います。",
 		   NULL, "Now, with our dedication to the past complete, I would like to discuss the future.", Line_Normal);
 	ClearMessage();
@@ -206,62 +244,74 @@ void main()
 
 	DrawScene( "img/dsc00004", 400 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今まで、僕は年２回のコミックマーケットに毎回新作を発表するというスタイルを１０年以上続けてきました。",
-		   NULL, "Up until now I have continued to release a new title at every Comic Market held twice a year for over ten years straight.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "Up until now I have continued to release a new title at every Comic Market held twice a year for over ten years straight.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　若き日の１０年は、まるで夏休みのように、充実しつつも気付けば、あっという間に過ぎ去っているものです。",
 		   NULL, "Those ten years of my youthful days were like a summer vacation - though every moment was fulfilling, they all flew by in the blink of an eye.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　かつて、気力体力共に充実していた僕も、気付けば不惑の年。",
-		   NULL, "While I used to have both plenty of stamina and willpower, I've hit my forties without even realizing it.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "While I used to have both plenty of stamina and willpower, I've hit my forties without even realizing it.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　「ひぐらし」制作の当時のような、睡眠時間を削って体力の限りを制作に費やせるような若さの時間を全て、捧げきっておりました。",
 		   NULL, "I've already dedicated all of the youth I could spare shaving away at sleep and pushing my body to its limits as I did back when creating Higurashi.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　引退？",
 		   NULL, "Retire?", Line_WaitForInput);
 	OutputLine(NULL, "　そんなわけはない。",
 		   NULL, " Of course not.", Line_WaitForInput);
 	OutputLine(NULL, "まだまだ新しい作品を作ることへの興味と情熱はなくなりません。",
-		   NULL, " I haven't lost my interest and passion for creating new titles yet.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " I haven't lost my interest and passion for creating new titles yet.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ただ、年齢に見合ったライフスタイルに、見直していこうかと思うのです。",
 		   NULL, "I just need to adjust my lifestyle to one more befitting my age.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　僕がこれまで掲げてきた、「年２回のコミケにて、必ず新作を発表すること」",
-		   NULL, "I touted the idea of \"announce a new title at every Comiket held twice a year\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "I touted the idea of \"announce a new title at every Comiket held twice a year\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これがこの十年間の僕の至上命題でした。",
 		   NULL, "as if it was a supreme command for the past ten years.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　しかし、あれだけの分量のテキストに演出をつけてデバッグして発表するという作業を、",
-		   NULL, "However, the amount of work involved in adding production effects to that much text and debugging it all", Line_WaitForInput);
+		   NULL, "However, the amount of work involved in adding production effects to that much text and debugging it all ", Line_ModeSpecific);
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "頼もしいとはいえ、わずかな仲間たちと共に続けるには、そろそろ僕だけでなく、スタッフたちの若き時間も限界です。",
-		   NULL, " is something neither myself nor our reliable staff and few companions are young enough to continue doing as we once did.", Line_Normal);
+		   NULL, "is something neither myself nor our reliable staff and few companions are young enough to continue doing as we once did.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんなとき、ふと気が付いたのです。",
-		   NULL, "That was when I realized something.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "That was when I realized something.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　僕の作品を読んでくれる皆さんが求めているのは「年２回出すこと」ではないのではないか。",
 		   NULL, "What everyone reading my titles is looking for isn't \"producing a new one twice a year\", is it?", Line_Normal);
 	ClearMessage();
@@ -269,60 +319,71 @@ void main()
 
 	DrawScene( "black", 400 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　年２回にこだわり続けてきたのには、理由があります。",
-		   NULL, "There was a reason I continued to focus on releasing twice a year.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "There was a reason I continued to focus on releasing twice a year.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　どうせまぐれで当たった竜騎士07は、せめて年２回新作を出し続けなければ、その存在を忘れられてしまう……。",
-		   NULL, "\"It was only a lucky fluke, and if I at least continue to produce two new titles a year, then people will remember me......\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "\"It was only a lucky fluke, and if I at least continue to produce two new titles a year, then people will remember me......\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そういう理由、あるいは脅迫観念があったからです。",
 		   NULL, "That was the reason, or the sense of threat that loomed over me.", Line_Normal);
 	ClearMessage();
 
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　「ひぐらしのなく頃に奉」を今回出させていただき、",
 		   NULL, "When I produced Higurashi When They Cry Hou this time,", Line_WaitForInput);
 	OutputLine(NULL, "僕はやっと、２０代、３０代の頃の生き方や、「年２回」という呪縛を、",
-		   NULL, " I finally felt like I had the chance to be free of the way I lived my twenties and thirties, a chance to be free of the \"twice a year\" curse,", Line_WaitForInput);
+		   NULL, " I finally felt like I had the chance to be free of the way I lived my twenties and thirties, a chance to be free of the \"twice a year\" curse, ", Line_ModeSpecific);
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そして何より、自分を許す機会を頂いたのだと思います。",
-		   NULL, " and above all, the chance to forgive myself.", Line_Normal);
+		   NULL, "and above all, the chance to forgive myself.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	DrawScene( "img/dsc00038", 400 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　応援して下さる皆さんのお陰で、僕は今日まで走って来れました。",
-		   NULL, "Thanks to all of your support, I've managed to be where I am today.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "Thanks to all of your support, I've managed to be where I am today.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それはもう短距離走のような、あまりに早く、あまりにあっという間の人生でした。",
-		   NULL, "My life until now has passed by far too fast, like I was in a short distance race.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "My life until now has passed by far too fast, like I was in a short distance race.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんな痛快な人生を与えて下さった皆さんには、いくら感謝してもしたりません。",
 		   NULL, "But I can't be grateful enough to all of you who gave me such a thrilling life.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これから先の１０年、２０年は、そんな皆さんに恩返しをしていく時間だと思っています。",
-		   NULL, "I hope to spend the next ten or twenty years returning the favor to you all.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "I hope to spend the next ten or twenty years returning the favor to you all.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、まだその具体的な方法は見つかっていません。",
 		   NULL, "Though I still haven't figured out exactly how to do that yet.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そこで考えたのが、もしかして僕の恩返しの方法は、",
 		   NULL, "But then I thought, perhaps my way of returning that favor is to", Line_WaitForInput);
 	OutputLine(NULL, "「年２回でなくとも、作品を作り続けることではないのか」。",
@@ -331,97 +392,115 @@ void main()
 		   NULL, " Yes, I think it is.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、今はまだちょっぴり不安もあります。",
-		   NULL, "But I'm still a little worried.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "But I'm still a little worried.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　年２回の発表をやめたら、皆さんにはやっぱり忘れ去られてしまうんじゃないかな。",
 		   NULL, "If I stop producing two titles a year, will everyone forget about me?", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　本当は、その恐怖から逃れる為だけに、明日倒れることになろうとも、年２回発表の信念を翻したくはないのです。",
-		   NULL, "To be honest, I'd rather run from that fear by holding to my conviction of announcing two new titles per year, even if it meant I might collapse tomorrow.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "To be honest, I'd rather run from that fear by holding to my conviction of announcing two new titles per year, even if it meant I might collapse tomorrow.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でももう、そんなやせ我慢の時期も過ぎ去り、自分を見直す決断をしなければならない時期となりました。",
 		   NULL, "But the time for such forced endurance is long past, and I'm at a point where I need to hold firm to reevaluating myself.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もし、僕にわがままをひとつ言うことをお許しいただけるなら。",
-		   NULL, "If I were allowed to ask one selfish thing,", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "If I were allowed to ask one selfish thing,", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　どうかどうか、……いつになるかお約束は出来ないけれど、次なる何らかの作品で、また皆さんとぜひ再会したいのです。",
 		   NULL, "then please, please... while I can't promise when it will be, I'd like to see you all again in whatever my next title ends up being.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それがどんな作品で、どんな形になり、いつ発表されることになるのか。",
-		   NULL, "I don't know what my next title will be, what shape it will take, or when it will be announced.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "I don't know what my next title will be, what shape it will take, or when it will be announced.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　何もお約束できないのが心苦しいです。",
-		   NULL, "It pains me that can't promise anything about it.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "It pains me that can't promise anything about it.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、ひとつだけ、全身全霊をかけてお約束できることがあります。",
 		   NULL, "But there is one thing I can promise with my very soul.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは。",
-		   NULL, "And that...", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "And that...", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　絶対に、僕は作品を作り続けることを止めないということ。",
-		   NULL, "is that I will not stop continuing to produce new titles.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "is that I will not stop continuing to produce new titles.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　僕にたくさんの作品を執筆する機会と気力を下さった皆さんに、必ずや恩返しをしたいということ。",
-		   NULL, "I definitely want to repay you all for giving me the opportunity and the willpower to write so many things.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "I definitely want to repay you all for giving me the opportunity and the willpower to write so many things.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それだけだけれども、……それだけは絶対にお約束したいです。",
 		   NULL, "So even if that's all I can promise...... I want to promise you at least that.", Line_Normal);
 	ClearMessage();
 
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今後は、ノベルゲームだけではないと思います。",
-		   NULL, "My next title might not be limited to visual novels.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "My next title might not be limited to visual novels.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　０７ｔｈ　Ｅｘｐａｎｓｉｏｎの原点に立ち戻り、非電源ゲームを発表することもあるでしょう。",
-		   NULL, "I might return to 07th Expansion's roots and announce a non-electric game.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "I might return to 07th Expansion's roots and announce a non-electric game.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あるいはビジュアルアーツさんの「Ｒｅｗｒｉｔｅ」のように、商業作品にかかわって発表することもあるでしょう。",
 		   NULL, "Perhaps I might announce my involvement in a professional title like Visual Arts-san's Rewrite.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あるいは、今の僕にも想像できないような、まったく新しい何かかもしれません。",
-		   NULL, "Or perhaps it will be something completely new that I can't even imagine right now.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "Or perhaps it will be something completely new that I can't even imagine right now.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、必ず必ず。",
 		   NULL, "But I definitely, definitely", Line_WaitForInput);
 	OutputLine(NULL, "皆さんに楽しんでもらえる何かを作り続けていきたいと思っています。",
@@ -431,16 +510,19 @@ void main()
 
 
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　来年から、短距離走ではなく、長距離走になるかもしれません。",
-		   NULL, "Starting next year, perhaps it'll be a marathon instead of a short-distance race.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "Starting next year, perhaps it'll be a marathon instead of a short-distance race.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　年１回のコミケ発表という形も難しいかもしれません。",
 		   NULL, "It might prove difficult even doing even one comiket release per year.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、僕は書くこと、作ることを止めたりはしません。",
 		   NULL, "But writing and creating is something I'll never stop doing.", Line_Normal);
 	ClearMessage();
@@ -448,22 +530,26 @@ void main()
 
 	DrawScene( "black", 400 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　どうか、待っていてほしい。",
-		   NULL, "So please wait for me.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "So please wait for me.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　次はなにが、いつ「なくのか」。",
 		   NULL, "For whatever, and whenever the next When They Cry comes.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　どうか長い目で待っていて頂けると嬉しいです。",
-		   NULL, "I hope you'll wait patiently for me.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "I hope you'll wait patiently for me.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　長くなりましたが、僕のわがままにお付き合いを下さり、ありがとうございます……。",
 		   NULL, "This has grown long now, but thank you very much for putting up with my selfishness......", Line_Normal);
 	ClearMessage();
@@ -476,113 +562,133 @@ void main()
 	DrawScene( "bg/jinja/jt1", 3000 );
 	PlayBGM( 0, "bgm1/cure_world", 70, 0 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　さて、最後にお知らせです。",
-		   NULL, "Now, I have one announcement at the end.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "Now, I have one announcement at the end.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　毎年開催してきた公式イベント、07thパーティーですが、",
 		   NULL, "This is regarding the public event hosted every year, the 07th Party.", Line_WaitForInput);
 	OutputLine(NULL, "今年の１０月の開催以降は、いつ開催できるのか、ちょっと見通しがついておりません。",
 		   NULL, " I'm not really sure when the next one will be held after the one being hosted this October.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ひょっとしたら、最後の機会になってしまうかも……。",
-		   NULL, "Maybe that could end up being the last one......", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "Maybe that could end up being the last one......", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、ならば皆さんに最後にもう一度会って、これまでの感謝をしたい。",
-		   NULL, "But with that in mind, I would like to see everyone one more time and express my gratitude.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "But with that in mind, I would like to see everyone one more time and express my gratitude.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　心からそう思っております。",
-		   NULL, "I truly would.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "I truly would.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　宣伝めいていて恐縮ですが、どうかぜひ足をお運びいただければ幸いです。",
 		   NULL, "I'm sorry this is becoming something of an advertisement, but please, it would be really nice if you could make it.", Line_Normal);
 	ClearMessage();
 
 
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　なんだか、今にも死んじゃいそうなしんみりした話ばかりですみません。",
-		   NULL, "I'm sorry for such serious talk that makes it sound like I could die at any minute.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "I'm sorry for such serious talk that makes it sound like I could die at any minute.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、竜騎士07は今日も元気です。",
-		   NULL, "I'm perfectly healthy right now.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "I'm perfectly healthy right now.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　僕の作品作りへのモチベーションは、決して枯れることはありません。",
-		   NULL, "My motivation for creating new titles hasn't dwindled at all.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "My motivation for creating new titles hasn't dwindled at all.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だって、皆さんに再会する唯一の方法が、作品を作り続けることだと思っているからです。",
 		   NULL, "After all, the only way for me to see all of you again, is for me to keep creating new tites.", Line_Normal);
 	ClearMessage();
 
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　「ひぐらし」からずっとずっと。",
-		   NULL, "I'd like to truly thank you very much", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "I'd like to truly thank you very much", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　応援を本当にありがとうございました。",
 		   NULL, "for supporting Higurashi all this time.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これまでの竜騎士07は、皆さんの応援で後押ししていただいた竜騎士07。",
-		   NULL, "Up until today, the support I've recieved from you all has kept me moving forward.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "Up until today, the support I've recieved from you all has kept me moving forward.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これからの竜騎士07は、そんな皆さんへの恩返しの為に頑張る竜騎士07。",
-		   NULL, "So from today onward, I'll be doing my best to repay you all.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "So from today onward, I'll be doing my best to repay you all.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんな感じで、この節目に、人生を少しだけ変えてみたいと思います。",
 		   NULL, "So, with that turning point in mind, I'm hoping to change my life around a little bit.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　長々と長文をここまでお付き合い下さり、本当にありがとうございました。",
-		   NULL, "I'm truly grateful to you for accompanying me through such long text.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "I'm truly grateful to you for accompanying me through such long text.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　また、遠くないいつか。",
-		   NULL, "I hope that someday, in the not too distant future,", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "I hope that someday, in the not too distant future,", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　何かの作品にてまたお会いしましょう。",
 		   NULL, "we're able to meet again in another title.", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そしてその作品こそは。",
-		   NULL, "I plan to make that title", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "I plan to make that title", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今ここをお読みのあなたへ、捧げる物語のつもりです。",
 		   NULL, "a story I offer to all of you reading this now.", Line_Normal);
 	ClearMessage();

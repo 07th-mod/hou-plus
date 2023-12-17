@@ -32,7 +32,7 @@ void EyeCatch()
 void EyeCatch2()
 {
 	DisableWindow();
-	ClearMessage();
+	if (AdvMode == 0) { ClearMessage(); }
 	//SetValidityOfInput( FALSE );
 	DrawBustshotWithFiltering( 6, "effect/cinema", "effect/x", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 62, 1300, TRUE );
 	DrawBustshot( 7, "effect/title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 63, 3000, TRUE );
@@ -59,7 +59,7 @@ void HanyuuDance()
 	x = x - 20;
 	y = y + 30;
 	DrawSpriteFixedSize( 25, "sprites/hanyu/miko/han_3", NULL, x, y, 0, 0, 0, 640, 480, 0, FALSE, FALSE, 0, 0, 25, 400, TRUE );
-	
+
 	PlaySE( 0, "a1_16258", 50, 64 );
 
 	x = x + 390;
@@ -123,7 +123,7 @@ void HanyuuDance()
 	PlaySE( 0, "wav/down3", 50, 64 );
 	y = y - 40;
 	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 250, TRUE );
-	
+
 	y = y + 120;
 	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 250, TRUE );
 
