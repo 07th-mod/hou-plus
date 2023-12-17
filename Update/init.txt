@@ -3,8 +3,8 @@ void main()
 	// Max Number for Global Flags hotkey
 	SetGlobalFlag(GCensorMaxNum , 5);
 	SetGlobalFlag(GEffectExtendMaxNum , 0);
-	SetGlobalFlag(GAltBGMflowMaxNum , 0);
-	SetGlobalFlag(GAltSEflowMaxNum , 0);
+	SetGlobalFlag(GAltBGMflowMaxNum , 1);
+	SetGlobalFlag(GAltSEflowMaxNum , 1);
 
 	// restore default ADV-MODE setting
 	if(GetGlobalFlag(GMOD_SETTING_LOADER) == 0) {
@@ -12,6 +12,7 @@ void main()
 		SetGlobalFlag(GSEVolume , 50);
 		SetGlobalFlag(GBGMVolume , 50);
 		SetGlobalFlag(GADVMode , 1);
+		SetGlobalFlag(GLipSync , 1);
 		SetGlobalFlag(GEffectExtend , 0);
 		SetGlobalFlag(GAltBGM , 0);
 		SetGlobalFlag(GAltSE , 0);
@@ -20,10 +21,10 @@ void main()
 		SetGlobalFlag(GAltBGMflow , 0);
 		SetGlobalFlag(GAltSEflow , 0);
 		SetGlobalFlag(GAltVoicePriority , 0);
-		SetGlobalFlag(GWindowOpacity , 100);
+		SetGlobalFlag(GWindowOpacity , 50);
 		SetGlobalFlag(GHideButtons , 0);
 		SetGlobalFlag(GArtStyle , 0);
-		SetGlobalFlag(GMOD_SETTING_LOADER ,3 );
+		SetGlobalFlag(GMOD_SETTING_LOADER , 3);
 	}
 
 	// restore default NVL-MODE setting
@@ -32,6 +33,7 @@ void main()
 		SetGlobalFlag(GSEVolume , 50);
 		SetGlobalFlag(GBGMVolume , 50);
 		SetGlobalFlag(GADVMode , 0);
+		SetGlobalFlag(GLipSync , 0);
 		SetGlobalFlag(GEffectExtend , 0);
 		SetGlobalFlag(GAltBGM , 0);
 		SetGlobalFlag(GAltSE , 0);
@@ -52,6 +54,7 @@ void main()
 		SetGlobalFlag(GSEVolume , 50);
 		SetGlobalFlag(GBGMVolume , 50);
 		SetGlobalFlag(GADVMode , 0);
+		SetGlobalFlag(GLipSync , 0);
 		SetGlobalFlag(GEffectExtend , 0);
 		SetGlobalFlag(GAltBGM , 0);
 		SetGlobalFlag(GAltSE , 0);
@@ -62,28 +65,31 @@ void main()
 		SetGlobalFlag(GAltVoicePriority , 0);
 		SetGlobalFlag(GWindowOpacity , 50);
 		SetGlobalFlag(GHideButtons , 0);
-		SetGlobalFlag(GArtStyle , 1);
 		SetGlobalFlag(GMOD_SETTING_LOADER , 0);
 		SetGlobalFlag(GCensorMaxNum , 0);
 		SetGlobalFlag(GEffectExtendMaxNum , 0);
 		SetGlobalFlag(GAltBGMflowMaxNum , 0);
 		SetGlobalFlag(GAltSEflowMaxNum , 0);
+		SetGlobalFlag(GArtStyle , 1);
 	}
 
+	// Some values have been adjusted in Rei for new font/font renderer
+	// and also to prevent text overflow. With the new font you can fit
+	// four lines of text (normally only 3 are ever used though)
 	ModADVModeSettingLoad(
 		"<size=+4>{0}\n</size>", //NameFormat
 		-170, //WindowPosX
-		-275, //WindowPosY
+		-300, //WindowPosY
 		1150, //WindowSizeX
 		250, //WindowSizeY
 		60, //WindowMarginLeft
-		30, //WindowMarginTop
+		15, //WindowMarginTop - Rei: Adjust to 15 (was 30)
 		50, //WindowMarginRight
 		30, //WindowMarginBottom
-		3, //FontID
+		1, //FontID
 		0, //CharSpacing
-		8, //LineSpacing
-		30 //FontSize
+		0, //LineSpacing - Rei: Adjust to 0 (was 8)
+		28 //FontSize - Rei: Adjust to 28 (was 30)
 	);
 
 	ModNVLModeSettingLoad(
@@ -96,9 +102,9 @@ void main()
 		30, //WindowMarginTop
 		50, //WindowMarginRight
 		30, //WindowMarginBottom
-		3, //FontID
+		1, //FontID
 		0, //CharSpacing
-		8, //LineSpacing
+		0, //LineSpacing - Rei: Adjust to 0 (was 8)
 		34 //FontSize
 	);
 
@@ -112,16 +118,72 @@ void main()
 		30, //WindowMarginTop
 		50, //WindowMarginRight
 		30, //WindowMarginBottom
-		3, //FontID
+		1, //FontID
 		0, //CharSpacing
-		8, //LineSpacing
+		0, //LineSpacing - Rei: Adjust to 0 (was 8)
 		34 //FontSize
 	);
 
+	// For Hou+, you can also specify the window fade in and out time
+	SetWindowFadeTime(200); // 0.2s
+	SetWindowFadeOutTime(500); // 0.5s
+
 	SetScreenAspect("0.5625");
 	SetGUIPosition(170, 0);
-	OutputLineAll(NULL, "", Line_ContinueAfterTyping);
-	DisableWindow();
+	ModSetConfigFontSize(15);
+
+//	TODO: Commented out for now until we add custom fonts
+//	ModSetMainFontOutlineWidth(10);
+
+	ModAddArtset("Console", "ゲーム機", "CG");
+//	ModAddArtset("Remake", "リメーク", "CGAlt:CG");
+//	ModAddArtset("Original", "オリジナル", "OGBackgrounds:OGSprites:CG");
+
+	// GAltBGM controls which of these are selected
+	ModAddBGMset("New BGM", "Placeholder", "ExtraBGM:BGM");
+//	ModAddBGMset("GIN's BGM", "Placeholder", "OGBGM:ExtraBGM:BGM");
+
+	// GAltSE controls which of these are selected
+	ModAddSEset("New SE", "Placeholder", "ExtraSE:SE");
+//	ModAddSEset("GIN's SE", "Placeholder", "OGSE:ExtraSE:SE");
+
+	// Audio presets the user can select, consisting of a combination of the BGM and SE flags
+	ModAddAudioset(
+		"New BGM/SE",
+		"Use the BGM/SE that came with the MangaGamer version of Higurashi Hou+ (2023), played with the Console timings.
+
+		NOTE: We haven't analysed Hou yet for possible april update BGM/SE changes.
+
+		Please see the BGM/SE FAQ for more info.",
+		"JP: New BGM/SE",
+		"JP: Use the BGM/SE that came with the MangaGamer version of Higurashi Hou+ (2023), played with the Console timings.
+
+		NOTE: We haven't analysed Hou yet for possible april update BGM/SE changes.
+
+		Please see the BGM/SE FAQ for more info.",
+		0, // GAltBGM
+		0, // GAltBGMFlow
+		0, // GAltSE
+		0  // GAltSEFlow
+	);
+
+
+//	ModAddAudioset(
+//		"GIN's BGM/SE",
+//		"This option uses GIN's Background Music (BGM) and Sound Effects (SE), which bring the BGM/SE closer to the original Japanese release.
+//
+//		Please click on the 'Open BGM/SE FAQ' button to view the 07th-mod wiki for more details.",
+//		"JP: GIN's BGM/SE",
+//		"JP: This option uses GIN's Background Music (BGM) and Sound Effects (SE), which bring the BGM/SE closer to the original Japanese release.
+//
+//		Please click on the 'Open BGM/SE FAQ' button to view the 07th-mod wiki for more details.",
+//		1, // GAltBGM
+//		1, // GAltBGMFlow
+//		1, // GAltSE
+//		1  // GAltSEFlow
+//	);
+
+	ModGenericCall("LipSyncSettings", ".3, .7, true");
 
 	CallScript( "flow" );
 }
