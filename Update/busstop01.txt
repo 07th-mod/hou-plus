@@ -205,7 +205,7 @@ void main()
 	PlaySE(4, "ps3/s26/53/tmio_0040", 128, 64);
 	OutputLine("魅音", "「あっはっはっは！",
 		   "Mion", "\"Ahahaha!", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "笑い死ねたらそれこそ本望ってもんすよ！",
 		   NULL, " I'd love nothing more than to die laughing!", Line_WaitForInput);
 	OutputLine(NULL, "あーっはっはっは！",
@@ -308,7 +308,7 @@ void main()
 	PlaySE(4, "ps3/s26/53/tmio_0100", 128, 64);
 	OutputLine("魅音", "「梨花さんに誘われたらもー！",
 		   "Mion", "\"When I got your invitation, man!", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "予定なんかオールキャンセル！",
 		   NULL, " All my plans, bam, canceled!", Line_ContinueAfterTyping);
 	ShakeScreen( 0, 9, 100, 3, 33, );
@@ -390,7 +390,7 @@ void main()
 
 	OutputLine("魅音", "なんて言われた日にゃもー、休むしか！",
 		   "Mion", " Well, when that day came, I just had to skip!", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ってカンジでー！」",
 		   NULL, " You know?!\"", Line_Normal);
 	// 07th-mod Split Voice above - OutputLine("魅音", "「来週の水曜日学校をさぼらない？」なんて言われた日にゃもー、休むしか！ってカンジでー！」",		   "Mion", "'Want to skip school next wednesday?' Well, when that day came, I just had to skip! You know?!\"", Line_Normal);
@@ -406,7 +406,7 @@ void main()
 	PlaySE(4, "ps3/s26/53/tmio_0160", 128, 64);
 	OutputLine("魅音", "「ひょっとしてコクられちゃうのかな！？",
 		   "Mion", "\"I even thought you might be confessing to me!", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "なんてーッ！",
 		   NULL, " Just kidding!", Line_ContinueAfterTyping);
 	ShakeScreen( 2, 6,  100 , 2, 50, );
@@ -447,7 +447,7 @@ void main()
 
 	DrawSceneWithMask( "bg/hina/bus_rain", "effect/right", 0, 0, 300 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　怪しくにやにや笑いながら詰め寄る魅音。",
 		   NULL, "Mion draws close to her with an ominous grin.", Line_WaitForInput);
 	OutputLine(NULL, "じりじりとベンチの端へ逃げる梨花。",
@@ -532,7 +532,7 @@ void main()
 	DrawScene( "white", 400 );
 	DrawScene( "bg/hina/bus_05", 400 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　まさに魅音が梨花に飛び掛かろうとした時、２人の男（利根川・荒川）が登場する。",
 		   NULL, "As Mion prepares to launch herself on Rika, two men (Tonegawa and Arakawa) appear.", Line_Normal);
 	ClearMessage();
@@ -665,7 +665,7 @@ void main()
 	PlaySE(4, "ps3/s26/53/tmio_0240", 128, 64);
 	OutputLine("魅音", "「ちきしょー！",
 		   "Mion", "\"Dammit!", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…隙見てあいつらスマキにするっすー。",
 		   NULL, " ...When I get my chance, I'll bury the two of 'em.", Line_WaitForInput);
 	DisableWindow();
@@ -689,7 +689,7 @@ void main()
 
 	ChangeBustshot( 3, "sprites/mio/mio_d14", 200, TRUE );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　怪しいぎらぎらとした目つきで２人の男を凝視する魅音。",
 		   NULL, "Mion glares at both men with a suspicious, burning look.", Line_WaitForInput);
 	OutputLine(NULL, "あまりの異様さに思わず後退る利根川と荒川。",
@@ -818,7 +818,7 @@ void main()
 	FadeBustshotWithFiltering( 1, "effect/down", 0, FALSE, 0, 0, 300, TRUE );
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#ccaa95>利根川</color>", NULL, "<color=#ccaa95>Tonegawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　間髪入れずに魅音の下腹部に拳を埋め込む梨花。",
 		   NULL, "Rika buries her fist into Mion's stomach without a moment's pause.", Line_WaitForInput);
 	OutputLine(NULL, "魅音、沈黙しうずくまる。",
@@ -854,7 +854,7 @@ void main()
 	ShakeScreen( 0, 3, 100, 1, 50, );
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音の首を小脇で締め上げる梨花。",
 		   NULL, "Rika wraps her arm around Mion's neck and strangles her in her armpit.", Line_Normal);
 	ClearMessage();
@@ -898,7 +898,7 @@ void main()
 	FadeBustshotWithFiltering( 1, "effect/down", 0, FALSE, 0, 0, 300, TRUE );
 	PlaySE( 0, "a5_10317", 70, 64 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　即座に魅音の下腹に拳を叩き込む梨花。",
 		   NULL, "Rika immediately slams her fist into Mion's stomach again.", Line_WaitForInput);
 	OutputLine(NULL, "たまらず今度こそダウンする魅音。",
@@ -989,7 +989,7 @@ void main()
 	PlaySE(4, "ps3/s26/53/tmio_0320", 128, 64);
 	OutputLine("魅音", "「…へー、梨花さんよくわかりますねぇ。",
 		   "Mion", "\"...Wow, I'm surprised!", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…いわゆるあれですかー？",
 		   NULL, " ...Is this one of those,", Line_WaitForInput);
 	DisableWindow();
@@ -1060,7 +1060,7 @@ void main()
 
 	FadeOutMultiBGM( 1, 5, 1000, TRUE );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ほんのしばらくの沈黙。",
 		   NULL, "A moment of silence passes.", Line_WaitForInput);
 	OutputLine(NULL, "梨花は差し出される手に握手しようとしない。",
@@ -1192,7 +1192,7 @@ void main()
 	DrawBustshot( 2, "sprites/rik/rik_d6", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawScene( "bg/hina/bus_02", 400 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　相変わらず魅音は握手を求めたまま固まっている。",
 		   NULL, "Mion remains frozen, looking for a handshake.", Line_WaitForInput);
 	DisableWindow();
@@ -1361,7 +1361,7 @@ void main()
 		   "Rika", "\"...So?\"", Line_Normal);
 	if (AdvMode == 0) { ClearMessage(); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ぎょろりと魅音に振り返る梨花。",
 		   NULL, "Rika turns and glares at Mion.", Line_WaitForInput);
 	OutputLine(NULL, "真面目な話に水をさす魅音をどんどん追い詰めていく。",
@@ -1435,7 +1435,7 @@ void main()
 	FadeBustshotWithFiltering( 4, "effect/right", 0, FALSE, 0, 0, 300, TRUE );
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ずんずんと追い詰められ、上記セリフを叫びながら２人退場。",
 		   NULL, "Rika rapidly closes in on Mion and the two exit the scene while screaming her usual line.", Line_WaitForInput);
 	OutputLine(NULL, "何の事やら理解できず立ち尽くす建設省の２人。",
@@ -1475,7 +1475,7 @@ void main()
 
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>Arakawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　どっかん！",
 		   NULL, "Bang!", Line_WaitForInput);
 	OutputLine(NULL, "ばっかん！",
@@ -1558,7 +1558,7 @@ void main()
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
 	DrawSceneWithMask( "bg/hina/bus_02", "effect/left", 0, 0, 300 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>Arakawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　下腹部を押さえながらよろよろと魅音が戻ってくる。",
 		   NULL, "Mion returns to the scene clutching her stomach and staggering.", Line_Normal);
 	ClearMessage();
@@ -1579,7 +1579,7 @@ void main()
 	PlaySE(4, "ps3/s26/52/trik_0430", 128, 64);
 	OutputLine("梨花", "「とにかくダムはだめ。",
 		   "Rika", "\"Anyway, the dam is no good.", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "絶対にだめ。」（魅音に向き直りセリフ）",
 		   NULL, " In fact, it's absolutely bad.\" (Said while turning to Mion)", Line_Normal);
 	ClearMessage();
@@ -1590,7 +1590,7 @@ void main()
 	PlaySE(4, "ps3/s26/53/tmio_0410", 128, 64);
 	OutputLine("魅音", "「どーしてだめなんですかー？」（魅音、大袈裟に身を翻しセリフ。",
 		   "Mion", "\"Why is it a bad thing?\" (Mion says while dodging exaggeratedly.", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "腹痛はなくなり、殴られた事は「なかった事」になっている。）",
 		   NULL, " Her stomach pain has disappeared, as if she were never hit at all.)", Line_Normal);
 	ClearMessage();
@@ -1618,7 +1618,7 @@ void main()
 	DrawScene( "black", 400 );
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これ以降、魅音がダム賛成意見を述べる度に、建設省の２人大仰に頷く。",
 		   NULL, "Henceforth, the two Ministry men add exaggerated nods every time Mion expresses agreement with the dam.", Line_WaitForInput);
 	OutputLine(NULL, "たまに梨花に睨まれ、抱き合ったまますくみ上がる。",
@@ -1702,7 +1702,7 @@ void main()
 	ChangeBustshot( 4, "sprites/mio/mio_d8a", 200, FALSE );
 	ChangeBustshot( 5, "sprites/ara/ara_d5a", 200, TRUE );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>Arakawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　キッと周囲を睨み付ける梨花。",
 		   NULL, "Rika glares sharply at those around her.", Line_WaitForInput);
 	OutputLine(NULL, "魅音と荒川、しゅんとする。",
@@ -1907,7 +1907,7 @@ void main()
 	//;gosub *rain_off
 	DrawScene( "bg/hina/bus_02", 400 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　激情に涙をためる魅音。",
 		   NULL, "Tears well in Mion's eyes, full of violent emotion,", Line_WaitForInput);
 	OutputLine(NULL, "言葉少なく立ち尽くす梨花。",
@@ -1938,7 +1938,7 @@ void main()
 	if (AdvMode == 0) { ClearMessage(); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　足早に退場する梨花。",
 		   NULL, "Rika exits quickly.", Line_WaitForInput);
 	OutputLine(NULL, "はっと我に返り追おうとする魅音。",
@@ -2071,7 +2071,7 @@ void main()
 
 	GetAchievement("BUSSTOP_1");
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　暗転。",
 		   NULL, "Blackout.", Line_WaitForInput);
 	OutputLine(NULL, "どしゃぶりの音。",
@@ -2096,7 +2096,7 @@ void main()
 
 	PlaySE( 0, "enrai2", 70, 64 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#f5e6d3>声</color>", NULL, "<color=#f5e6d3>Koe</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　遠くで雷の音。",
 		   NULL, "The sound of thunder echoes in the distance.", Line_WaitForInput);
 	OutputLine(NULL, "徐々に舞台明るくなる。",
@@ -2450,7 +2450,7 @@ void main()
 	DrawBustshot( 2, "sprites/ara/ara_d1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　利根川と荒川、トイレから戻ってくる。",
 		   NULL, "Tonegawa and Arakawa return from the bathroom.", Line_WaitForInput);
 	DisableWindow();
@@ -2504,7 +2504,7 @@ void main()
 	PlaySE(4, "ps3/s26/55/tara_0250", 128, 64);
 	OutputLine("荒川", "「どうも。",
 		   "Arakawa", "\"Hello.", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>Arakawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "都市河川の荒川です。」（手を差し出す）",
 		   NULL, " Arakawa, also from the Urban River Office.\" (Holding out his hand.)", Line_Normal);
 	ClearMessage();
@@ -2517,7 +2517,7 @@ void main()
 	PlaySE(5, "ps3/s26/52/trik_0610", 128, 64);
 	OutputLine("魅音・梨花", "「どうも。",
 		   "Mion & Rika", "\"Hello.", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>＆<color=#6972c1>梨花</color>", NULL, "<color=#5ec69a>Mion</color> & <color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ワカリマセンの園崎（古手）です。」（吉村に手を差し出す）",
 		   NULL, " Sonozaki (Furude), also from makes-no-sense-to-me.\" (Holding their hands out to Yoshimura.)", Line_Normal);
 	ClearMessage();
@@ -2535,7 +2535,7 @@ void main()
 		   "Yoshimura", "\"...L-Looks like you're all getting along well... ...Are you all friends...?\"", Line_Normal);
 	if (AdvMode == 0) { ClearMessage(); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　４人、顔を見合せてからゆっくりと首を横に振る。",
 		   NULL, "All four look at each other and slowly shake their heads.", Line_Normal);
 	ClearMessage();
@@ -2594,7 +2594,7 @@ void main()
 	Wait( 2000 );
 	StopBGM( 0 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　暗転。",
 		   NULL, "Blackout.", Line_WaitForInput);
 	OutputLine(NULL, "どかどかどっかん！",
@@ -2627,7 +2627,7 @@ void main()
 	ChangeVolumeOfBGM( 1, 50, 2000 );
 	Wait( 2000 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#f5e6d3>声</color>", NULL, "<color=#f5e6d3>Koe</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　落雷の音。",
 		   NULL, "Thunder echoes.", Line_WaitForInput);
 	OutputLine(NULL, "徐々に舞台明るくなる。",
@@ -2757,7 +2757,7 @@ void main()
 	PlaySE(4, "ps3/s26/53/tmio_0800", 128, 64);
 	OutputLine("魅音", "「美少女突撃リポート東北編！",
 		   "Mion", "\"A surprise report on pretty young girls from Northern Honshu!", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "雛見沢に国民的美少女を見たッ！」",
 		   NULL, " National beauties discovered in Hinamizawa!\"", Line_ContinueAfterTyping);
 
@@ -2785,7 +2785,7 @@ void main()
 	EndLayerPersistence( 40 );
 	DrawScene( "bg/hina/bus_04", 400 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もったいぶる吉村。",
 		   NULL, "Yoshimura pauses to build tension.", Line_WaitForInput);
 	OutputLine(NULL, "魅音はいつまでも固まっている。",
@@ -2987,7 +2987,7 @@ void main()
 
 	DrawScene( "bg/hina/douro_01", 400 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>＆<color=#6972c1>梨花</color>", NULL, "<color=#5ec69a>Mion</color> & <color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　遠雷。",
 		   NULL, "Distant thunder.", Line_WaitForInput);
 	OutputLine(NULL, "雨の音が少し強くなる。",
@@ -3265,7 +3265,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 40, "sprites/ara/ara_d9a", -180, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 42, 400, TRUE );
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#ccaa95>利根川</color>", NULL, "<color=#ccaa95>Tonegawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　苦い顔をして俯く荒川。",
 		   NULL, "Arakawa bitterly hangs his head.", Line_WaitForInput);
 	OutputLine(NULL, "利根川は何が何やらわからない。",
@@ -3559,7 +3559,7 @@ void main()
 
 	DrawScene( "bg/hina/bus_05", 400 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　遠くで雷鳴。",
 		   NULL, "Thunder rings in the distance.", Line_WaitForInput);
 	OutputLine(NULL, "相変わらず土砂降りの雨。",
@@ -3600,7 +3600,7 @@ void main()
 	PlaySE(4, "ps3/s26/55/tara_0450", 128, 64);
 	OutputLine("荒川", "「…みんなは面白がってそれをオヤシロさまの祟りだと囃し立てました。",
 		   "Arakawa", "\"...They all thought it was amusing to play it up as Oyashiro-sama's curse.", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>Arakawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "オヤシロさまが夢枕に立ってるんだ、って言って！」",
 		   NULL, " They say that Oyashiro-sama's standing by their bedsides!\"", Line_ContinueAfterTyping);
 	// 07th-mod Split Voice above - OutputLine("荒川", "「…みんなは面白がってそれをオヤシロさまの祟りだと囃し立てました。オヤシロさまが夢枕に立ってるんだ、って言って！」",		   "Arakawa", "\"...They all thought it was amusing to play it up as Oyashiro-sama's curse. They say that Oyashiro-sama's standing by their bedsides!\"", Line_ContinueAfterTyping);
@@ -3917,7 +3917,7 @@ void main()
 
 	OutputLine("魅音", "「…はっはははは！",
 		   "Mion", "\"...Hah! Hahahaha!", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#f5e6d3>柿沼の声</color>", NULL, "<color=#f5e6d3>Kakinuma’s Voice</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "馬鹿にしてますよね！",
 		   NULL, " He was just making fun, I bet!", Line_WaitForInput);
 	OutputLine(NULL, "何だかんだ言いながら、そういう人に限って結婚記念日とかには律儀に帰ってるんですよねー！」",
@@ -4045,7 +4045,7 @@ void main()
 	PlaySE(4, "ps3/s26/00/tkak_0030", 128, 64);
 	OutputLine("柿沼の声", "「…………確かに「いる」んだよ。",
 		   "<size=32>Kakinuma’s Voice</size>", "\"............I'm positive that they're there.", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#f5e6d3>柿沼の声</color>", NULL, "<color=#f5e6d3>Kakinuma’s Voice</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "………「いる」。」",
 		   NULL, " .........Positive.\"", Line_Normal);
 	ClearMessage();
@@ -4125,7 +4125,7 @@ void main()
 	StopAllSound();
 	PlaySE( 0, "searchlight", 70, 64 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#f5e6d3>柿沼の声</color>", NULL, "<color=#f5e6d3>Kakinuma’s Voice</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ライト消え、舞台真っ暗になる。",
 		   NULL, "The light goes out and the stage goes dark.", Line_Normal);
 	ClearMessage();
@@ -4187,7 +4187,7 @@ void main()
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>Arakawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…あんな話のあった直後とは言え！…事故なんですよッ！」",
 		   NULL, " ...Even if it did happen right after that conversation! ...It was an accident!\"", Line_Normal);
 	ClearMessage();
@@ -4281,7 +4281,7 @@ void main()
 	DrawScene( "black", 400 );
 	DrawScene( "bg/hina/bus_01", 400 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　遠雷。",
 		   NULL, "Distant thunder.", Line_WaitForInput);
 	OutputLine(NULL, "雨の音。",
@@ -4508,7 +4508,7 @@ void main()
 
 	Wait( 500 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>Arakawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　舞台、暗くなる。",
 		   NULL, "The stage goes dark.", Line_WaitForInput);
 	OutputLine(NULL, "荒川にライトが当たる。",
@@ -4535,7 +4535,7 @@ void main()
 
 	ShakeScreen( 4, 9, 20, 15, 3, );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>Arakawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「い」ないんですよッ！",
 		   NULL, " They don't exist!", Line_WaitForInput);
 	OutputLine(NULL, "落ち着いて下さいッ！」",
@@ -4551,7 +4551,7 @@ void main()
 
 	ShakeScreen( 4, 9, 20, 15, 3, );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>Arakawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…「い」ないんだッ！",
 		   NULL, " ...They don't exist!", Line_WaitForInput);
 	OutputLine(NULL, "オヤシロさまなんて！",
@@ -4618,7 +4618,7 @@ void main()
 
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 400, TRUE );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>Arakawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　荒川、辛そうに退場する。",
 		   NULL, "Arakawa bitterly leaves the stage.", Line_WaitForInput);
 	OutputLine(NULL, "…再び雨の音。",
@@ -4697,7 +4697,7 @@ void main()
 
 	ChangeBustshot( 3, "sprites/yos/yos_d3a", 400, TRUE );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　重苦しい沈黙。",
 		   NULL, "A heavy silence hangs between them.", Line_WaitForInput);
 	OutputLine(NULL, "吉村は答えない。",
@@ -4724,7 +4724,7 @@ void main()
 	DrawScene( "black", 1000 );
 	CallScriptSection( "util", "RainOn" );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雨の音と共に舞台、徐々に暗転。",
 		   NULL, "The sound of rain gradually fades out along with the lights.", Line_WaitForInput);
 	OutputLine(NULL, "しばらくの沈黙。",
@@ -4760,7 +4760,7 @@ void main()
 	ChangeVolumeOfBGM( 1, 50, 2000 );
 	Wait( 2000 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#f5e6d3>声</color>", NULL, "<color=#f5e6d3>Koe</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　落雷の音。",
 		   NULL, "The sound of thunder strikes.", Line_WaitForInput);
 	OutputLine(NULL, "徐々に舞台明るくなる。",
@@ -4841,7 +4841,7 @@ void main()
 	DrawScene( "black", 400 );
 	DrawScene( "bg/hina/bus_04", 400 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#ccaa95>利根川</color>", NULL, "<color=#ccaa95>Tonegawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　利根川退場。",
 		   NULL, "Tonegawa exits.", Line_WaitForInput);
 	OutputLine(NULL, "しばらくしてから梨花も立ち上がる。",
@@ -4869,7 +4869,7 @@ void main()
 
 	DrawScene( "black", 400 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　取り残される魅音と吉村。",
 		   NULL, "Mion and Yoshimura are left behind.", Line_WaitForInput);
 	OutputLine(NULL, "雨の音と沈黙。",
@@ -4919,7 +4919,7 @@ void main()
 	PlaySE(4, "ps3/s26/54/tyos_0730", 128, 64);
 	OutputLine("吉村", "「ホテルシーサイド江戸海って所に泊まったんだよ。",
 		   "Yoshimura", "\"We stayed in a place called Hotel Seaside Edokai.", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "葛西臨海公園の中にある瀟洒なホテルでねぇ。」",
 		   NULL, " It's an elegant hotel in Kasai Rinkai Park.\"", Line_Normal);
 	ClearMessage();
@@ -5161,7 +5161,7 @@ void main()
 
 	DrawScene( "bg/hina/bus_rain", 400 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　遠雷。",
 		   NULL, "Thunder rings in the distance.", Line_WaitForInput);
 	OutputLine(NULL, "雨の音。",
@@ -5241,7 +5241,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 1000, TRUE );
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音、カタカタと小さく震えながら後退る。",
 		   NULL, "Mion steps back, shuddering a little.", Line_Normal);
 	ClearMessage();
@@ -5309,7 +5309,7 @@ void main()
 
 	ShakeScreen( 4, 6, 20, 50, 1, );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　狂ったように笑い転げる吉村。",
 		   NULL, "Yoshimura begins to laugh like crazy.", Line_WaitForInput);
 	OutputLine(NULL, "異様な状況に魅音、立ち尽くす。",
@@ -5344,7 +5344,7 @@ void main()
 
 	GetAchievement("BUSSTOP_2");
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大きな雷鳴。",
 		   NULL, "Thunder violently roars.", Line_WaitForInput);
 	OutputLine(NULL, "土砂降りの雨の音と共に暗転。",
@@ -5371,7 +5371,7 @@ void main()
 	EndLayerPersistence( 40 );
 	DrawScene( "black", 400 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#f5e6d3>声</color>", NULL, "<color=#f5e6d3>Koe</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　落雷の音。",
 		   NULL, "Thunder booms out again.", Line_WaitForInput);
 	OutputLine(NULL, "徐々に舞台明るくなる。",
@@ -5465,7 +5465,7 @@ void main()
 	DrawScene( "black", 400 );
 	DrawScene( "bg/hina/bus_04", 400 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　過剰な反応を示して拒否する魅音。",
 		   NULL, "Mion refuses with an excessive response.", Line_WaitForInput);
 	OutputLine(NULL, "吉村と利根川・荒川、異様な反応にちょっと驚く。",
@@ -5501,7 +5501,7 @@ void main()
 	CallScriptSection( "util", "RainOn" );
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　しばらくの沈黙と雨の音。",
 		   NULL, "There's a moment of silence accompanied by the sound of rain.", Line_WaitForInput);
 	OutputLine(NULL, "そこへ刑事２人（星野・岡野）登場。",
@@ -5783,7 +5783,7 @@ void main()
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#574f58>岡野</color>", NULL, "<color=#574f58>Okano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　吉村、立ち上がって建設省の２人と魅音・梨花を見比べる。",
 		   NULL, "Yoshimura stands up and looks over the two Ministry men and then Mion and Rika.", Line_Normal);
 	ClearMessage();
@@ -5807,7 +5807,7 @@ void main()
 	DrawBustshotWithFiltering( 40, "sprites/mio/mio_d14a", "effect/up", 0, -20, 0, FALSE, 0, 0, 0, 0, 0, 41, 300, TRUE );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#574f58>岡野</color>", NULL, "<color=#574f58>Okano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音、立ち上がって建設省の２人と吉村を見比べる。",
 		   NULL, "Mion stands up and looks over the two Ministry men, and then at Yoshimura.", Line_WaitForInput);
 	OutputLine(NULL, "吉村は建設省の２人を疑う。",
@@ -5966,7 +5966,7 @@ void main()
 	//;cl c,0
 	//;cl r,22
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音と梨花を伴って星野退場。",
 		   NULL, "Mion and Rika leave the scene with Hoshino.", Line_Normal);
 	ClearMessage();
@@ -5997,7 +5997,7 @@ void main()
 
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 400, TRUE );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#ccaa95>利根川</color>", NULL, "<color=#ccaa95>Tonegawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　利根川退場。",
 		   NULL, "Tonegawa leaves the scene.", Line_WaitForInput);
 	OutputLine(NULL, "しばらくして岡野に電話が入る。",
@@ -6016,7 +6016,7 @@ void main()
 
 	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 400, TRUE );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#574f58>岡野</color>", NULL, "<color=#574f58>Okano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　岡野は携帯で話をしながら退場する。",
 		   NULL, "Okano exits the stage talking on his phone.", Line_Normal);
 	ClearMessage();
@@ -6188,7 +6188,7 @@ void main()
 		   "Yoshimura", "\"Really? ...If you're really getting that much sleep, then you shouldn't be in so much pain.\"", Line_Normal);
 	if (AdvMode == 0) { ClearMessage(); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悶え苦しむ荒川。",
 		   NULL, "Arakawa continues writhing in pain.", Line_WaitForInput);
 	OutputLine(NULL, "吉村は得意そうに話すだけ。",
@@ -6368,7 +6368,7 @@ void main()
 
 	PlayBGM( 1, "me/a5_14446", 70, 0 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>Arakawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　舞台は薄暗い真っ赤なライトで照らし出される。",
 		   NULL, "A dim, pure red light shines down on the stage.", Line_WaitForInput);
 	OutputLine(NULL, "その中で荒川にライト。",
@@ -6391,7 +6391,7 @@ void main()
 	PlaySE(4, "ps3/s26/00/tkak_0130", 128, 64);
 	OutputLine("柿沼の声", "「…………確かに「いる」んだよ。",
 		   "<size=32>Kakinuma’s Voice</size>", "\"............I'm positive they're there.", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#f5e6d3>柿沼の声</color>", NULL, "<color=#f5e6d3>Kakinuma’s Voice</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "………「いる」。」",
 		   NULL, " .........Positive.\"", Line_Normal);
 	ClearMessage();
@@ -6402,7 +6402,7 @@ void main()
 	PlaySE(4, "ps3/s26/55/tara_0990", 128, 64);
 	OutputLine("荒川", "「「い」ないッ！",
 		   "Arakawa", "\"They're not there!", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>Arakawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…何にも「い」ないッ！」",
 		   NULL, " ...There's nothing there!\"", Line_Normal);
 	ClearMessage();
@@ -6421,7 +6421,7 @@ void main()
 	FadeBustshot( 44, FALSE, 0, 0, 0, 0, 200, TRUE );
 	//Unhandled: print 22
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#f5e6d3>柿沼の声</color>", NULL, "<color=#f5e6d3>Kakinuma’s Voice</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　真っ赤なライトが今度は青いライトに変わる。",
 		   NULL, "The red light changes into a blue one.", Line_Normal);
 	ClearMessage();
@@ -6472,7 +6472,7 @@ void main()
 	SetNameColor(220, 85, 85);
 	DrawFilm( 2, 220, 85, 85, 256, 0, 400, TRUE ); //redout mode
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>Arakawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　青いライトが再び真っ赤なライトに変わる。",
 		   NULL, "The blue light changes back to red once more.", Line_Normal);
 	ClearMessage();
@@ -6563,7 +6563,7 @@ void main()
 	ResetNameColor();
 	FadeFilm( 400, TRUE ); //end monocrome color
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>Arakawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　電車の入ってくる音。",
 		   NULL, "The sound of an oncoming train is heard,", Line_WaitForInput);
 	OutputLine(NULL, "ぐしゃあ！　という嫌な音。",
@@ -6613,7 +6613,7 @@ void main()
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>Arakawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…「い」ないんだ！",
 		   NULL, " ...They don't exist!", Line_WaitForInput);
 	OutputLine(NULL, "…オヤシロさまなんて…！」",
@@ -6638,7 +6638,7 @@ void main()
 	PlaySE(4, "ps3/s26/55/tara_1060", 128, 64);
 	OutputLine("荒川", "「「い」ない！",
 		   "Arakawa", "\"They're not there!", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>Arakawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「い」ない！",
 		   NULL, " They're not there!", Line_WaitForInput);
 	OutputLine(NULL, "「い」ないーッ！」",
@@ -6697,7 +6697,7 @@ void main()
 
 	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 400, TRUE );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>Arakawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　地べたを這いつくばりながら、どこかへ逃げようとする荒川。",
 		   NULL, "Arakawa crawls along the ground, trying to escape to anywhere else.", Line_WaitForInput);
 	OutputLine(NULL, "頭痛がひどく、それもままならない。",
@@ -6728,7 +6728,7 @@ void main()
 		   "Yoshimura", "\"......You shouldn't be so frightened when you're an adult... ...It's rather pathetic.\"", Line_Normal);
 	if (AdvMode == 0) { ClearMessage(); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　荒川は舞台中央で腰をぬかし、がたがた震えるだけ。",
 		   NULL, "Arakawa's legs give out at center stage, and he just keeps shuddering.", Line_Normal);
 	ClearMessage();
@@ -6773,7 +6773,7 @@ void main()
 
 	//;舞台、すぅっと暗くなる。
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ライトに照らされる荒川。",
 		   NULL, "The light shines on Arakawa.", Line_WaitForInput);
 	OutputLine(NULL, "無表情な魅音・梨花・利根川・星野・岡野登場。",
@@ -6870,7 +6870,7 @@ void main()
 	if (AdvMode == 0) { ClearMessage(); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　吉村・荒川以外は大笑い。",
 		   NULL, "All but Yoshimura and Arakawa are laughing loudly.", Line_Normal);
 	ClearMessage();
@@ -6909,7 +6909,7 @@ void main()
 	PlaySE(4, "ps3/s26/54/tyos_1460", 128, 64);
 	OutputLine("吉村", "「…殴りかかりましたね。",
 		   "Yoshimura", "\"...So you beat her, didn't you?", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "箒の柄で何度も何度も！",
 		   NULL, " Over and over again with a broomstick!", Line_WaitForInput);
 	PlaySE( 1, "a5_10315", 70, 64 );
@@ -6956,7 +6956,7 @@ void main()
 
 	ShakeScreen( 4, 6, 20, 50, 1, );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "",
 		   NULL, " ", Line_WaitForInput);
 	OutputLine(NULL, "荒川がぶったー！」",
@@ -7142,7 +7142,7 @@ void main()
 	DrawScene( "bg/hina/bus_03", 400 );
 	PlayBGM( 1, "me/lgsk_warai", 10, 0 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　吉村・荒川以外は笑い続けている。",
 		   NULL, "All but Yoshimura and Arakawa continue to laugh.", Line_WaitForInput);
 	OutputLine(NULL, "荒川は傘を握りしめながらよろよろと立ち上がる。",
@@ -7187,7 +7187,7 @@ void main()
 	PlaySE( 1, "a5_10315", 70, 64 );
 	ShakeScreen( 4, 6, 20, 50, 1, );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>Arakawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　傘を振り回しながら魅音・梨花に歩み寄る荒川。",
 		   NULL, "Arakawa steps toward Mion and Rika, swinging his umbrella around.", Line_WaitForInput);
 	OutputLine(NULL, "２人は笑い転げながら後退る。",
@@ -7224,7 +7224,7 @@ void main()
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 400, FALSE );
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 400, FALSE );
 	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 400, TRUE );
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>Arakawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　傘を振り回しながら利根川・星野・岡野に歩み寄る荒川。",
 		   NULL, "Arakawa steps toward Tonegawa, Hoshino, and Okano, swinging his umbrella around.", Line_WaitForInput);
 	OutputLine(NULL, "３人も笑いながら後退る。",
@@ -7426,7 +7426,7 @@ void main()
 
 	CallScriptSection( "util", "RainOn" );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　フラッシュした後、暗転。",
 		   NULL, "The scene flashes, then goes dark.", Line_WaitForInput);
 	OutputLine(NULL, "雷鳴が轟く。",
@@ -7450,7 +7450,7 @@ void main()
 
 	PlaySE( 0, "rakurai3", 100, 64 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#f5e6d3>声</color>", NULL, "<color=#f5e6d3>Koe</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　落雷の音。",
 		   NULL, "Thunder echoes out.", Line_WaitForInput);
 	OutputLine(NULL, "徐々に舞台明るくなる。",
@@ -7528,7 +7528,7 @@ void main()
 	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 200, FALSE );
 	DrawBustshot( 40, "sprites/oka/oka_d3a", -20, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 41, 200, TRUE );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　荒川の傷口を見る星野。",
 		   NULL, "Hoshino looks at Arakawa's wounds.", Line_Normal);
 	ClearMessage();
@@ -7563,7 +7563,7 @@ void main()
 		   "Tonegawa", "\"C-C-C-Can you save him?! Hey! Hey?!\"", Line_Normal);
 	if (AdvMode == 0) { ClearMessage(); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#ccaa95>利根川</color>", NULL, "<color=#ccaa95>Tonegawa</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　荒川を担いで星野と岡野・利根川退場。",
 		   NULL, "Tonegawa leaves the stage, following Hoshino and Okano as they carry Arakawa.", Line_Normal);
 	ClearMessage();
@@ -7766,7 +7766,7 @@ void main()
 	ChangeVolumeOfBGM( 2, 0, 2000 );
 	Wait( 2000 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　緊迫の沈黙。",
 		   NULL, "A tense silence passes between them.", Line_WaitForInput);
 	OutputLine(NULL, "そこへ星野がやって来る。",
@@ -7795,7 +7795,7 @@ void main()
 		   "Rika", "\".....................Yes.\"", Line_Normal);
 	if (AdvMode == 0) { ClearMessage(); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　最後の最後まで吉村を目で威嚇し、星野に伴われ退場する梨花。",
 		   NULL, "Rika leaves the stage, following Hoshino, but her eyes continue to menace Yoshimura until the very last moment.", Line_Normal);
 	ClearMessage();
@@ -7878,7 +7878,7 @@ void main()
 	EndLayerPersistence( 41 );
 	DrawScene( "bg/hina/bus_04", 400 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　轟く雷鳴。",
 		   NULL, "Thunder rumbles.", Line_Normal);
 	ClearMessage();
@@ -7889,7 +7889,7 @@ void main()
 		   "Yoshimura", "\"...Dammit...! ......I'm scared... I'm scared! ...Dammit! ......Dammit...!\"", Line_Normal);
 	if (AdvMode == 0) { ClearMessage(); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　吉村は俯きながらガタガタと震え、泣きかけている。",
 		   NULL, "Yoshimura shudders as he looks downward, his face on the verge of tears.", Line_Normal);
 	ClearMessage();
@@ -8003,7 +8003,7 @@ void main()
 
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　膝に突っ伏して号泣する吉村。",
 		   NULL, "Yoshimura falls to his knees and wails.", Line_WaitForInput);
 	OutputLine(NULL, "魅音は淡々としている。",
@@ -8026,7 +8026,7 @@ void main()
 	DrawBustshot( 41, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 39, 0, TRUE );
 	FadeBustshot( 41, FALSE, 0, 0, 0, 0, 400, TRUE );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音の頭にずきんと激痛が走り始める。",
 		   NULL, "A sharp pain races through Mion's head.", Line_Normal);
 	ClearMessage();
@@ -8048,7 +8048,7 @@ void main()
 
 
 	PlaySE(4, "ps3/s26/54/tyos_1830", 128, 64);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…はははははは、…あーっはっはっはっはっはっはッ！」",
 		   NULL, "\"...Hahahahahaha! ...Ahhhahahahahaha!\"", Line_Normal);
 	ClearMessage();
@@ -8148,7 +8148,7 @@ void main()
 
 	if (AdvMode == 0) { ClearMessage(); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　吉村が、すっと手をかざすと魅音、喉を詰まらせたように咳き込む。",
 		   NULL, "Yoshimura gently waves his hand, and Mion coughs like something's stuck in her throat.", Line_Normal);
 	ClearMessage();
@@ -8254,7 +8254,7 @@ void main()
 	// 07th-mod Split Voice above - OutputLine("魅音", "「ひ……人殺しぃいぃいッ！……ふぐッ！」",		   "Mion", "\"You...... You murdererrrrr! ......Fggh!\"", Line_Normal);
 	if (AdvMode == 0) { ClearMessage(); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　再び吉村が手をかざすと魅音、喉を詰まらせたように咳き込む。",
 		   NULL, "Yoshimura waves his hand once more, and Mion coughs like something's stuck in her throat.", Line_ContinueAfterTyping);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -8518,7 +8518,7 @@ void main()
 		   "Yoshimura", "\"But overcoming that pain... will make you a villager of Hinamizawa once more. ............Here I go.\"", Line_Normal);
 	if (AdvMode == 0) { ClearMessage(); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　吉村が手をかざすと、魅音の腹に激痛が走る。",
 		   NULL, "Yoshimura waves his hand, and intense pain races through Mion's stomach.", Line_WaitForInput);
 	OutputLine(NULL, "たまらず悲鳴をあげる魅音。",
@@ -8600,7 +8600,7 @@ void main()
 
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　激痛に呻く魅音。",
 		   NULL, "Mion groans over and over.", Line_WaitForInput);
 	OutputLine(NULL, "やがて、荒川の落とした傘を手によろよろと立ち上がる。",
@@ -8659,7 +8659,7 @@ void main()
 
 	OutputLine("魅音", "…今すぐやめろ。",
 		   "Mion", " ...Stop this at once.", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…やめるんだよこれッ！",
 		   NULL, " ...Stop this!", Line_WaitForInput);
 	OutputLine(NULL, "今すぐッ！」",
@@ -8713,7 +8713,7 @@ void main()
 	DrawScene( "black", 400 );
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雄叫びを上げながら傘で殴り掛かる魅音。",
 		   NULL, "Mion swings the umbrella at him with a roar.", Line_WaitForInput);
 	OutputLine(NULL, "吉村は難なく避ける。",
@@ -8785,7 +8785,7 @@ void main()
 	PlaySE(4, "ps3/s26/54/tyos_2170", 128, 64);
 	OutputLine("吉村", "「さぁ！",
 		   "Yoshimura", "\"Now!", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "吐き出してしまいなさいッ！",
 		   NULL, " Spit them all up!", Line_WaitForInput);
 	OutputLine(NULL, "何万という蠢く汚いウジをッ！",
@@ -8852,7 +8852,7 @@ void main()
 
 	FadeBustshotWithFiltering( 1, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花が駆けて来て、魅音に飛びつく。",
 		   NULL, "Rika flies to Mion's side.", Line_WaitForInput);
 	OutputLine(NULL, "驚いて後退る吉村。",
@@ -8889,7 +8889,7 @@ void main()
 
 	PlaySE( 0, "wav/down2", 70, 64 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　混乱しながら岡野に掴みかかる吉村。",
 		   NULL, "Yoshimura grabs at Okano in confusion.", Line_WaitForInput);
 	OutputLine(NULL, "だがあっさりと組み伏せられてしまう。",
@@ -8914,7 +8914,7 @@ void main()
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#715348>吉村</color>", NULL, "<color=#715348>Yoshimura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "痛てててッ！",
 		   NULL, " Owww!", Line_WaitForInput);
 	OutputLine(NULL, "離せよぉッ！」",
@@ -9028,7 +9028,7 @@ void main()
 	if (AdvMode == 0) { ClearMessage(); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花の胸で泣きじゃくる魅音。",
 		   NULL, "Mion sobs into Rika's chest.", Line_WaitForInput);
 	OutputLine(NULL, "舞台、徐々に暗転。",
@@ -9058,7 +9058,7 @@ void main()
 
 	GetAchievement("BUSSTOP_3");
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#f5e6d3>声</color>", NULL, "<color=#f5e6d3>Koe</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　落雷の音。",
 		   NULL, "Thunder roars.", Line_WaitForInput);
 	OutputLine(NULL, "徐々に舞台明るくなる。",
@@ -9230,7 +9230,7 @@ void main()
 	EndLayerPersistence( 41 );
 	DrawScene( "bg/hina/bus_04", 400 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雨の音。",
 		   NULL, "The sound of rain continues.", Line_WaitForInput);
 	OutputLine(NULL, "ようやく落ち着き梨花から離れる魅音。",
@@ -9326,7 +9326,7 @@ void main()
 	if (AdvMode == 0) { ClearMessage(); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　真面目な顔で魅音の瞳を見つめる梨花。",
 		   NULL, "Rika stares into Mion's eyes with a stern look.", Line_Normal);
 	ClearMessage();
@@ -9451,7 +9451,7 @@ void main()
 		   "Mion", "\"......I! ...I'm sorry! ...I didn't... mean to say it like that.........?!\"", Line_Normal);
 	if (AdvMode == 0) { ClearMessage(); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　涙をぼろぼろこぼし始める梨花。",
 		   NULL, "Tears start streaming from Rika's eyes.", Line_WaitForInput);
 	OutputLine(NULL, "何事かと驚く魅音。",
@@ -9494,7 +9494,7 @@ void main()
 		   "Rika", "\"...What...... What...... have I done......?!\"", Line_Normal);
 	if (AdvMode == 0) { ClearMessage(); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花、ポケットから小さな錠剤の瓶を取り出し魅音に託す。",
 		   NULL, "Rika pulls a small bottle of pills from her pocket and hands them to Mion.", Line_Normal);
 	ClearMessage();
@@ -9649,7 +9649,7 @@ void main()
 	ChangeBustshot( 2, "sprites/hod/hod_d3", 400, FALSE );
 	DrawBustshot( 40, "sprites/nit/nit_d2", -20, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 41, 400, TRUE );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　星野と岡野がぬっと現れる。",
 		   NULL, "Hoshino and Okano suddenly appear.", Line_WaitForInput);
 	OutputLine(NULL, "続いて新田を先頭に保土田・織田が入ってくる。",
@@ -9856,7 +9856,7 @@ void main()
 	PlaySE(4, "ps3/s26/53/tmio_2210", 128, 64);
 	OutputLine("魅音", "「ははッ！",
 		   "Mion", "\"Haha!", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "やったね！",
 		   NULL, " Hooray!", Line_WaitForInput);
 	DisableWindow();
@@ -10729,7 +10729,7 @@ void main()
 	DrawScene( "bg/hina/bus_04", 400 );
 	PlayBGM( 1, "me/a5_14446", 70, 0 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　何が何やら判らなくなって、よろよろと梨花から離れる魅音、舞台中央へ。",
 		   NULL, "Mion can't understand any of what's going on, and she totters away from Rika toward the center of the stage.", Line_WaitForInput);
 	OutputLine(NULL, "また頭痛が始まる。",
@@ -10815,7 +10815,7 @@ void main()
 	PlaySE(4, "ps3/s26/53/tmio_2530", 128, 64);
 	OutputLine("魅音", "「……バカなこと言わないで下さいよ…。",
 		   "Mion", "\"......Please stop saying these ridiculous things...", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…私は東京なんかじゃなく、…ここにいるんですよ？",
 		   NULL, " ...I'm not in Tokyo... I'm right here.", Line_WaitForInput);
 	DisableWindow();
@@ -10861,7 +10861,7 @@ void main()
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……ぅぅ…嘘だ…ッ！」",
 		   NULL, " ......nnngh... Lies...!\"", Line_Normal);
 	ClearMessage();
@@ -10903,7 +10903,7 @@ void main()
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	PlaySE(4, "ps3/s26/57/tnit_0240", 128, 64);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6b493e>新田</color>", NULL, "<color=#6b493e>Nitta</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "梨花さんの態度は判りました。少々態度を変えさせてもらいます。」",
 		   NULL, " We understand your attitude on this, Rika-san. So we'll change our attitude as well.\"", Line_Normal);
 	ClearMessage();
@@ -11121,7 +11121,7 @@ void main()
 	ShakeScreen( 4, 6, 20, 50, 1, );
 
 	PlaySE(4, "ps3/s26/53/tmio_2590", 128, 64);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……うるせえよ…頭が…がんがんするってぇのに…ッ！」",
 		   NULL, " ......Shut up...! I told you... my head is pounding...!\"", Line_Normal);
 	// 07th-mod Split Voice above - OutputLine("魅音", "「…ぁああぁあ…ッ！……うるせえよ…頭が…がんがんするってぇのに…ッ！」",		   "Mion", "\"...Aaaaaaagh...! ......Shut up...! I told you... my head is pounding...!\"", Line_Normal);
@@ -11170,7 +11170,7 @@ void main()
 
 	DrawScene( "bg/hina/bus_rain", 400 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音を捕らえようと男たちが飛び掛かろうとした瞬間、",
 		   NULL, "The moment the men spring forth to capture Mion,", Line_WaitForInput);
 	OutputLine(NULL, "梨花が魅音を捕らえ、その首筋にどこからか取り出した刃物を当てる。",
@@ -11454,7 +11454,7 @@ void main()
 	OutputLine("新田", "「……織田君。",
 		   "Nitta", "\"......Oda-kun.", Line_WaitForInput);
 	PlaySE(4, "ps3/s26/57/tnit_0391", 128, 64);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6b493e>新田</color>", NULL, "<color=#6b493e>Nitta</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…外すな。」",
 		   NULL, " ...Don't miss.\"", Line_Normal);
 	ClearMessage();
@@ -11534,7 +11534,7 @@ void main()
 	PlaySE( 1, "a5_10317", 70, 64 );
 	Wait( 1000 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　狙いを定めた織田の拳銃が火を噴く。",
 		   NULL, "Oda takes careful aim, and then light flashes from his handgun.", Line_WaitForInput);
 	OutputLine(NULL, "胸を撃ち抜かれ一撃で絶命する梨花。",
@@ -11606,7 +11606,7 @@ void main()
 	DrawScene( "bg/hina/bus_05", 400 );
 	PlayBGM( 0, "bgm1/tsukisanbika", 100, 0 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6b493e>新田</color>", NULL, "<color=#6b493e>Nitta</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音、すばやく梨花の刃物をひったくり身構える。",
 		   NULL, "Mion nimbly snatches the knife away from Rika and readies herself.", Line_WaitForInput);
 	OutputLine(NULL, "男たちは一斉に銃を向ける。",
@@ -11717,7 +11717,7 @@ void main()
 	PlaySE( 0, "a5_10317", 70, 64 );
 	ShakeScreen( 0, 6, 100, 2, 50, );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音、織田に飛びつき腹部に刃物を突きたてる。",
 		   NULL, "Mion leaps at Oda and shoves her knife into his stomach.", Line_WaitForInput);
 	OutputLine(NULL, "織田はその場にうずくまる。",
@@ -11746,7 +11746,7 @@ void main()
 	PlaySE(4, "ps3/s26/53/tmio_2720", 128, 64);
 	OutputLine("魅音", "「殺してやるぞ殺してやるぞッ！",
 		   "Mion", "\"I'll kill you, I'll kill you!", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…梨花さんを殺したヤツらは皆殺しにしてやるッ！",
 		   NULL, " ...I'll kill everyone who killed Rika-san!", Line_WaitForInput);
 	DisableWindow();
@@ -11766,7 +11766,7 @@ void main()
 	PlaySE(4, "ps3/s26/57/tnit_0440", 128, 64);
 	OutputLine("新田", "「落ち着け！",
 		   "Nitta", "\"Calm down!", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6b493e>新田</color>", NULL, "<color=#6b493e>Nitta</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "落ち着くんだッ！",
 		   NULL, " Calm down now!", Line_WaitForInput);
 	OutputLine(NULL, "…園崎君！",
@@ -11815,7 +11815,7 @@ void main()
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
 	DrawSceneWithMask( "bg/hina/bus_04", "effect/left", 0, 0, 300 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#574f58>岡野</color>", NULL, "<color=#574f58>Okano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音に後ろから掴みかかる岡野。",
 		   NULL, "Okano grabs hold of Mion from behind.", Line_WaitForInput);
 	OutputLine(NULL, "揉み合いの途中で魅音のナイフが首に入る。",
@@ -11861,7 +11861,7 @@ void main()
 	PlaySE(4, "ps3/s26/53/tmio_2730", 128, 64);
 	OutputLine("魅音", "「があぁああぁああッ！",
 		   "Mion", "\"Gaaaaaaaagh!", Line_WaitForInput);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…梨花さんを殺したのは誰だッ！",
 		   NULL, " ...Who was the one that killed Rika-san?!", Line_ContinueAfterTyping);
 
@@ -11899,7 +11899,7 @@ void main()
 	ShakeScreen( 4, 9, 20, 15, 3, );
 	PlaySE( 0, "a5_01026", 100, 64 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　星野に飛び掛かり腹部を深々と刺す。",
 		   NULL, "She springs onto Hoshino and stabs the knife deep into her stomach.", Line_Normal);
 	ClearMessage();
@@ -11971,7 +11971,7 @@ void main()
 	SetNameColor(220, 85, 85);
 	DrawFilm( 2, 220, 85, 85, 256, 0, 400, TRUE ); //redout mode
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　舞台は真っ赤なライトで照らされる。",
 		   NULL, "A bright red light shines down on the stage.", Line_WaitForInput);
 	OutputLine(NULL, "泣いて絶叫する魅音。",
@@ -12052,7 +12052,7 @@ void main()
 	CallScriptSection( "util", "RainOn" );
 	PlayBGM( 1, "me/ame2", 70, 0 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　おおきな雷鳴。",
 		   NULL, "There's a loud crack of thunder.", Line_WaitForInput);
 	OutputLine(NULL, "舞台フラッシュして暗転。",
@@ -12136,7 +12136,7 @@ void main()
 	if (AdvMode == 0) { ClearMessage(); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花に抱きつく魅音。",
 		   NULL, "Mion clings to Rika.", Line_WaitForInput);
 	DisableWindow();
@@ -12178,7 +12178,7 @@ void main()
 	if (AdvMode == 0) { ClearMessage(); }
 	//;（号泣）
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　慈しむ表情で魅音を抱きしめる梨花。",
 		   NULL, "Rika hugs Mion with an affectionate expression.", Line_Normal);
 	ClearMessage();
@@ -12325,7 +12325,7 @@ void main()
 		   "Mion", "\"Well, it is raining!\"", Line_Normal);
 	if (AdvMode == 0) { ClearMessage(); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　立ち上がる２人。",
 		   NULL, "Both of them stand there for a moment.", Line_Normal);
 	ClearMessage();
@@ -12379,7 +12379,7 @@ void main()
 	//;mld r,rik_D10,22
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音の肩を抱きながら歩き出す梨花。",
 		   NULL, "Rika starts walking, still holding Mion's shoulder.", Line_WaitForInput);
 	OutputLine(NULL, "魅音はどきどきして緊張している。",
@@ -12413,7 +12413,7 @@ void main()
 	Wait( 1000 );
 	DrawScene( "black", 3000 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　舞台、徐々に暗転。",
 		   NULL, "The stage gradually fades to black.", Line_Normal);
 	ClearMessage();
