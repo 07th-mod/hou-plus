@@ -58,7 +58,7 @@ void HanyuuDance()
 
 	x = x - 20;
 	y = y + 30;
-	DrawSpriteFixedSize( 25, "sprites/hanyu/miko/han_3", NULL, x, y, 0, 0, 0, 640, 480, 0, FALSE, FALSE, 0, 0, 25, 400, TRUE );
+	DrawSpriteFixedSize( 25, "sprite/hanyu/miko/han_3", NULL, x, y, 0, 0, 0, 640, 480, 0, FALSE, FALSE, 0, 0, 25, 400, TRUE );
 
 	PlaySE( 0, "a1_16258", 50, 64 );
 
@@ -154,7 +154,7 @@ void RenaMove1()
 {
 	//lsp 890,":b;bmp2\TATI\rena\sifuku\re_kaiib1.png",710,0
 
-	DrawSpriteFixedSize( 25, "sprites/rena/sifuku/re_kaiib1", NULL, 390, -240, 0, 0, 0, 640, 480, 0, FALSE, FALSE, 0, 0, 25, 0, TRUE);
+	DrawSpriteFixedSize( 25, "sprite/rena/sifuku/re_kaiib1", NULL, 390, -240, 0, 0, 0, 640, 480, 0, FALSE, FALSE, 0, 0, 25, 0, TRUE);
 	MoveSprite( 25, -160, -240, 0, 0, 0, 0, 0, 200, TRUE );
 
 	PlaySE( 0, "b1", 50, 64 );
@@ -170,7 +170,7 @@ void RenaMove1()
 
 void RenaMove2()
 {
-	DrawSpriteFixedSize( 25, "sprites/rena/sifuku/re_kaiib1", NULL, -160, -240, 0, 0, 0, 640, 480, 0, FALSE, FALSE, 0, 0, 25, 400, TRUE);
+	DrawSpriteFixedSize( 25, "sprite/rena/sifuku/re_kaiib1", NULL, -160, -240, 0, 0, 0, 640, 480, 0, FALSE, FALSE, 0, 0, 25, 400, TRUE);
 	Wait( 500 );
 	MoveSprite( 25, -160-351, -240, 0, 0, 0, 0, 0, 180, TRUE );
 }

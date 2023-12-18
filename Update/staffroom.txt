@@ -29,7 +29,7 @@ void main()
 
 	PlaySE( 0, "boyon", 70, 64 );
 	//;ld c,oko_1,26
-	DrawBustshotWithFiltering( 1, "sprites/okonogi/oko_def", "effect/up", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/okonogi/oko_def", "effect/up", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
 
 	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
 	//Unhandled: rmode ON
@@ -52,7 +52,7 @@ void main()
 	PlaySE( 0, "boyon", 70, 64 );
 
 	//;ld c,oko_3,80
-	ChangeBustshot( 1, "sprites/okonogi/oko_warai", 200, TRUE );
+	ChangeBustshot( 1, "sprite/okonogi/oko_warai", 200, TRUE );
 
 	OutputLine(NULL, "いやー、このところ、長編ばかりだったんで、たまには短編もいいもんですねー！」",
 		   NULL, " Well! We've had nothing but long chapters thus far, so it's nice to have short ones once in a while!\"", GetGlobalFlag(GLinemodeSp));
@@ -60,14 +60,14 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprites/sonota/oisi10", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/sonota/oisi10", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「素直に、作業が楽でよかったと白状するにゃり。",
 		   NULL, "\"Just confess that it was easier to do the work, nyari.", Line_WaitForInput);
 	DisableWindow();
 
-	ChangeBustshot( 2, "sprites/sonota/oisi7", 200, TRUE );
+	ChangeBustshot( 2, "sprite/sonota/oisi7", 200, TRUE );
 
 	OutputLine(NULL, "こんにちは、今回は有給を取らずに済みそうな八咫桜にゃりん。」",
 		   NULL, " Hello. I'm Yatazakura, and it looks like I won't be getting a paycheck this time.\"", Line_Normal);
@@ -75,7 +75,7 @@ void main()
 	DisableWindow();
 
 	DrawSceneWithMask( "img/dsc00039", "effect/right", 0, 0, 300 );
-	DrawBustshotWithFiltering( 1, "sprites/okonogi/oko_warai", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/okonogi/oko_warai", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「まぁ、それはさて置いて！",
@@ -99,7 +99,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprites/rika/nekomimi/ri_defa1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/rika/nekomimi/ri_defa1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……みー？",
@@ -108,7 +108,7 @@ void main()
 		   NULL, " Didn't we decide on Umineko: When They Cry?", Line_WaitForInput);
 	DisableWindow();
 
-	ChangeBustshot( 2, "sprites/rika/nekomimi/ri_waraia1", 200, TRUE );
+	ChangeBustshot( 2, "sprite/rika/nekomimi/ri_waraia1", 200, TRUE );
 
 	OutputLine(NULL, "　こんにちは、ＢＴなのです。",
 		   NULL, " Hello, I am BT.", Line_WaitForInput);
@@ -117,7 +117,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/okonogi/oko_def", 200, TRUE );
+	ChangeBustshot( 1, "sprite/okonogi/oko_def", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「うむ。",
@@ -150,7 +150,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshotWithFiltering( 2, "sprites/sonota/oisi9", "effect/left", 0, 300, TRUE );
+	ChangeBustshotWithFiltering( 2, "sprite/sonota/oisi9", "effect/left", 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「カレーというより闇鍋という感じにゃり。",
@@ -160,7 +160,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/okonogi/oko_ikari", 200, TRUE );
+	ChangeBustshot( 1, "sprite/okonogi/oko_ikari", 200, TRUE );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -212,7 +212,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshot( 3, "sprites/rika/nekomimi/ri_komarua1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
+	DrawBustshot( 3, "sprite/rika/nekomimi/ri_komarua1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawSceneWithMask( "img/dsc00038", "effect/left", 0, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -224,7 +224,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 4, "sprites/sonota/oisi10", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+	DrawBustshotWithFiltering( 4, "sprite/sonota/oisi10", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「甘いにゃりよ…。",
@@ -252,9 +252,9 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshot( 5, "sprites/okonogi/oko_def2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
+	DrawBustshot( 5, "sprite/okonogi/oko_def2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
 	DrawSceneWithMask( "img/dsc00039", "effect/right", 0, 0, 300 );
-	ChangeBustshot( 5, "sprites/okonogi/oko_akuwarai", 200, TRUE );
+	ChangeBustshot( 5, "sprite/okonogi/oko_akuwarai", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「むむむむむ、ならばこういうのはどうか！",
@@ -271,7 +271,7 @@ void main()
 	Wait( 200 );
 	DisableWindow();
 	PlaySE( 0, "wav/nageru", 70, 64 );
-	ChangeBustshot( 5, "sprites/okonogi/oko_warai", 200, TRUE );
+	ChangeBustshot( 5, "sprite/okonogi/oko_warai", 200, TRUE );
 	PlaySE( 0, "wav/kyupirn", 70, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -280,7 +280,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshot( 6, "sprites/sonota/oisi9", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+	DrawBustshot( 6, "sprite/sonota/oisi9", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawSceneWithMask( "img/dsc00038", "effect/left", 0, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -295,7 +295,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 7, "sprites/rika/nekomimi/ri_komarua1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	DrawBustshotWithFiltering( 7, "sprite/rika/nekomimi/ri_komarua1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……カレーライスにフルーツポンチにイチゴのショートケーキ。",
@@ -306,7 +306,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshotWithFiltering( 6, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 8, "sprites/okonogi/oko_akuwarai", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+	DrawBustshotWithFiltering( 8, "sprite/okonogi/oko_akuwarai", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そうだろうか？",
@@ -318,7 +318,7 @@ void main()
 	//;gosub *G_sys
 	PlaySE( 0, "wav/kyupirn", 70, 64 );
 	DrawScene( "white", 400 );
-	DrawBustshot( 1, "sprites/okonogi/oko_warai", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+	DrawBustshot( 1, "sprite/okonogi/oko_warai", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawScene( "img/dsc00038", 200 );
 
 	OutputLine(NULL, "　それを実践してみようじゃないか、カレーにフルーツポンチ大いに結構！",
@@ -359,7 +359,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprites/sonota/oisi6", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/sonota/oisi6", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…カレーにショートケーキ混じってるの食ったら、唇を洗いたくもなるにゃりんよ。",
@@ -370,7 +370,7 @@ void main()
 	DisableWindow();
 
 	FadeOutBGM( 0, 0, TRUE );
-	ChangeBustshot( 1, "sprites/okonogi/oko_def", 200, TRUE );
+	ChangeBustshot( 1, "sprite/okonogi/oko_def", 200, TRUE );
 	PlayBGM( 0, "bgm0/4", 70, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -393,7 +393,7 @@ void main()
 	DisableWindow();
 
 	DrawSceneWithMask( "img/dsc00038", "effect/left", 0, 0, 300 );
-	DrawBustshotWithFiltering( 1, "sprites/rika/nekomimi/ri_nikoa1", "effect/right", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/rika/nekomimi/ri_nikoa1", "effect/right", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……みー。",
@@ -402,7 +402,7 @@ void main()
 		   NULL, " It's very difficult for me to pick out one of them, but...", Line_WaitForInput);
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/rika/nekomimi/ri_waraia1", 200, TRUE );
+	ChangeBustshot( 1, "sprite/rika/nekomimi/ri_waraia1", 200, TRUE );
 
 	OutputLine(NULL, "…では、ここは無難に■ーゼンメイデンを挙げてみますのです。」",
 		   NULL, " I'll go with the safe choice and suggest __zen Maiden.\"", Line_ContinueAfterTyping);
@@ -415,7 +415,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprites/sonota/oisi7", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/sonota/oisi7", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ほほぅ、無難どころかなかなかの本命にゃりんよ！",
@@ -426,7 +426,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshotWithFiltering( 1, "effect/right", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "sprites/okonogi/oko_warai", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/okonogi/oko_warai", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「いやいや、それだけではないぞ。",
@@ -462,7 +462,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshotWithFiltering( 2, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 4, "sprites/rika/nekomimi/ri_defa1", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+	DrawBustshotWithFiltering( 4, "sprite/rika/nekomimi/ri_defa1", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……では、次は八咫桜さんが行ってみるのですよ。",
@@ -473,7 +473,7 @@ void main()
 	DisableWindow();
 
 	DrawSceneWithMask( "img/dsc00039", "effect/right", 0, 0, 300 );
-	DrawBustshot( 1, "sprites/sonota/oisi7", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
+	DrawBustshot( 1, "sprite/sonota/oisi7", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ふっふっふっふっふ！！",
@@ -551,7 +551,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshot( 1, "sprites/rika/nekomimi/ri_komarua1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+	DrawBustshot( 1, "sprite/rika/nekomimi/ri_komarua1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawSceneWithMask( "img/dsc00038", "effect/up", 0, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -561,7 +561,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprites/sonota/oisi10", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/sonota/oisi10", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 	PlaySE( 0, "wav/kyupirn", 70, 64 );
 
 	SetSpeedOfMessage( TRUE, 128 );
@@ -588,7 +588,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 3, "sprites/okonogi/oko_warai", "effect/left", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/okonogi/oko_warai", "effect/left", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ふぅむ、さすがは八咫桜くん、鋭い読みよ！",
@@ -956,7 +956,7 @@ void main()
 	Wait( 1000 );
 	FadeOutBGM( 0, 0, TRUE );
 	SetSpeedOfMessage( TRUE, 128 );
-	DrawBustshot( 1, "sprites/okonogi/oko_akuwarai", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
+	DrawBustshot( 1, "sprite/okonogi/oko_akuwarai", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
 	DrawScene( "img/dsc00039", 0 );
 	PlaySE( 0, "wav/daidageki", 70, 64 );
 	PlayBGM( 0, "bgm1/rika", 70, 0 );
@@ -974,7 +974,7 @@ void main()
 	DisableWindow();
 
 	DrawSceneWithMask( "img/dsc00038", "effect/left", 0, 0, 300 );
-	DrawBustshotWithFiltering( 1, "sprites/rika/nekomimi/ri_komarua1", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/rika/nekomimi/ri_komarua1", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……みー。",
@@ -985,7 +985,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprites/sonota/oisi6", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/sonota/oisi6", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「斬新なのにも関わらず、…すでにどこかのサークルが描いてそうな気がする内容にゃりん…。」",
@@ -994,7 +994,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshotWithFiltering( 1, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "sprites/okonogi/oko_def2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/okonogi/oko_def2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「む、むぅ…。",
@@ -1003,7 +1003,7 @@ void main()
 		   NULL, " Yes, I'm sure another circle has already thought of this...", Line_WaitForInput);
 	DisableWindow();
 
-	ChangeBustshot( 3, "sprites/okonogi/oko_ikari", 200, TRUE );
+	ChangeBustshot( 3, "sprite/okonogi/oko_ikari", 200, TRUE );
 
 	OutputLine(NULL, "だ、だがまだまだ！！",
 		   NULL, " B-But we're not done yet!!", Line_WaitForInput);
@@ -1023,7 +1023,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshotWithFiltering( 2, "effect/right", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 4, "sprites/rika/nekomimi/ri_waraia1", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	DrawBustshotWithFiltering( 4, "sprite/rika/nekomimi/ri_waraia1", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……みー。",
@@ -1039,7 +1039,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshotWithFiltering( 3, "effect/left", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 5, "sprites/sonota/oisi7", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+	DrawBustshotWithFiltering( 5, "sprite/sonota/oisi7", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 	PlayBGM( 0, "bgm0/4", 70, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1051,7 +1051,7 @@ void main()
 	DisableWindow();
 
 	DrawSceneWithMask( "img/dsc00039", "effect/left", 0, 0, 300 );
-	DrawBustshot( 1, "sprites/okonogi/oko_warai", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+	DrawBustshot( 1, "sprite/okonogi/oko_warai", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ふふふふふ、よくぞ聞いてくれました！！",
@@ -1117,7 +1117,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshot( 1, "sprites/sonota/oisi7", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+	DrawBustshot( 1, "sprite/sonota/oisi7", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawSceneWithMask( "img/dsc00038", "effect/up", 0, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1128,7 +1128,7 @@ void main()
 	DisableWindow();
 
 	//Unknown BGM track ID 112
-	DrawBustshotWithFiltering( 2, "sprites/rika/nekomimi/ri_komarua1", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/rika/nekomimi/ri_komarua1", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……みー。",
@@ -1141,7 +1141,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshotWithFiltering( 1, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "sprites/okonogi/oko_def", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/okonogi/oko_def", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「もちろん、シューティングというゲーム性は抽出できないが、その魅力的な世界観のエッセンスは充ッ分に抽出可能！",
@@ -1149,7 +1149,7 @@ void main()
 	DisableWindow();
 
 	PlaySE( 0, "wav/kyupirn", 70, 64 );
-	ChangeBustshot( 3, "sprites/okonogi/oko_warai", 200, TRUE );
+	ChangeBustshot( 3, "sprite/okonogi/oko_warai", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ふっふっふ、日本男児を今なお鼓舞して止まないジャ○プ系の王道、■塾に、",
@@ -1177,7 +1177,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "img/dsc00039", 400 );
-	DrawBustshotWithFiltering( 1, "sprites/sonota/oisi6", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/sonota/oisi6", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「り、理屈はわかるにゃりんが、どの辺のエッセンスを吸い出すにゃりんか。",
@@ -1188,7 +1188,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprites/rika/nekomimi/ri_waraia1", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/rika/nekomimi/ri_waraia1", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……みー。",
@@ -1202,7 +1202,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 3, "sprites/okonogi/oko_def", "effect/right", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/okonogi/oko_def", "effect/right", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
 	PlayBGM( 0, "bgm1/rika", 70, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1217,7 +1217,7 @@ void main()
 	//;gosub *G_sys
 	PlaySE( 0, "wav/kyupirn", 70, 64 );
 	DrawScene( "white", 0 );
-	DrawBustshot( 1, "sprites/okonogi/oko_warai", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
+	DrawBustshot( 1, "sprite/okonogi/oko_warai", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
 	DrawScene( "img/dsc00039", 200 );
 
 	SetSpeedOfMessage( TRUE, 128 );
@@ -1308,7 +1308,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshot( 1, "sprites/rika/nekomimi/ri_komarua1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+	DrawBustshot( 1, "sprite/rika/nekomimi/ri_komarua1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawSceneWithMask( "img/dsc00038", "effect/up", 0, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1322,7 +1322,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprites/sonota/oisi7", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/sonota/oisi7", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「りゅ、…竜騎士が言いたいことを要約すると、",
@@ -1349,7 +1349,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, TRUE );
-	DrawBustshotWithFiltering( 3, "sprites/okonogi/oko_warai", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/okonogi/oko_warai", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1366,7 +1366,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshotWithFiltering( 2, "effect/right", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 4, "sprites/rika/nekomimi/ri_komarua1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	DrawBustshotWithFiltering( 4, "sprite/rika/nekomimi/ri_komarua1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……みー。",
@@ -1375,14 +1375,14 @@ void main()
 		   NULL, " I would think there are other things we could learn from Tou___, but...", Line_WaitForInput);
 	DisableWindow();
 
-	ChangeBustshot( 4, "sprites/rika/nekomimi/ri_nikoa1", 200, TRUE );
+	ChangeBustshot( 4, "sprite/rika/nekomimi/ri_nikoa1", 200, TRUE );
 
 	OutputLine(NULL, "取り合えず、竜騎士が抽出したいところはソコ、ということなのです。」",
 		   NULL, " For now, Ryukishi is referring to that when he talks about what to extract.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 3, "sprites/okonogi/oko_akuwarai", 200, TRUE );
+	ChangeBustshot( 3, "sprite/okonogi/oko_akuwarai", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「くっくくくくく、ふはーっはっはっはっは！！",
@@ -1722,7 +1722,7 @@ void main()
 	Wait( 1000 );
 	PlayBGM( 0, "bgm1/rika", 70, 0 );
 	DrawSceneWithMask( "img/dsc00039", "effect/up", 0, 0, 300 );
-	DrawBustshotWithFiltering( 1, "sprites/sonota/oisi10", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/sonota/oisi10", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 	PlaySE( 0, "boyon", 70, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1733,7 +1733,7 @@ void main()
 	DisableWindow();
 
 	PlaySE( 0, "boyon", 70, 64 );
-	DrawBustshotWithFiltering( 2, "sprites/okonogi/oko_warai", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/okonogi/oko_warai", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「くっくっく～～！",
@@ -1743,7 +1743,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshot( 3, "sprites/rika/nekomimi/ri_komarua1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+	DrawBustshot( 3, "sprite/rika/nekomimi/ri_komarua1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawSceneWithMask( "img/dsc00038", "effect/right", 0, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1755,7 +1755,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 4, "sprites/sonota/oisi9", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	DrawBustshotWithFiltering( 4, "sprite/sonota/oisi9", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「どうやら『うみねこ』のことは竜騎士抜きで僕たちで考えた方がよさそうにゃりん。」",
@@ -1763,14 +1763,14 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 3, "sprites/rika/nekomimi/ri_waraia1", 200, TRUE );
+	ChangeBustshot( 3, "sprite/rika/nekomimi/ri_waraia1", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……なのですよ、にぱ～☆",
 		   NULL, "\"......You heard them, nipah~☆", Line_WaitForInput);
 	DisableWindow();
 
-	ChangeBustshot( 3, "sprites/rika/nekomimi/ri_nikoa1", 200, TRUE );
+	ChangeBustshot( 3, "sprite/rika/nekomimi/ri_nikoa1", 200, TRUE );
 
 	OutputLine(NULL, "　ボクたちでちゃんとした次回作を作りますので、どうかご安心なのです。」",
 		   NULL, " I'll make an actual game, so don't worry about anything.\"", GetGlobalFlag(GLinemodeSp));
@@ -1778,7 +1778,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 4, "sprites/sonota/oisi7", 200, TRUE );
+	ChangeBustshot( 4, "sprite/sonota/oisi7", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「次回の、仮称『うみねこのなく頃に』もどうか乞うご期待にゃりん！",
@@ -1789,7 +1789,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 3, "sprites/rika/nekomimi/ri_waraia1", 200, TRUE );
+	ChangeBustshot( 3, "sprite/rika/nekomimi/ri_waraia1", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「お願いしますにぱ～☆」",
@@ -1798,7 +1798,7 @@ void main()
 	DisableWindow();
 
 	PlaySE( 0, "boyon", 70, 64 );
-	ChangeBustshot( 4, "sprites/sonota/oisi6", 200, TRUE );
+	ChangeBustshot( 4, "sprite/sonota/oisi6", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…思うに、竜騎士が色々ごちゃ混ぜにしたからおかしくなったにゃりんよ。",
@@ -1809,7 +1809,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 3, "sprites/rika/nekomimi/ri_defa1", 200, TRUE );
+	ChangeBustshot( 3, "sprite/rika/nekomimi/ri_defa1", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……みー！",
@@ -1819,7 +1819,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 4, "sprites/sonota/oisi7", 200, TRUE );
+	ChangeBustshot( 4, "sprite/sonota/oisi7", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「というわけでｄａｉさん召喚！！",
@@ -1829,8 +1829,8 @@ void main()
 	//;gosub *G_sys
 	PlaySE( 0, "wav/taitoru", 70, 64 );
 	DrawScene( "white", 3000 );
-	DrawBustshot( 1, "sprites/takano/hakui/ta_def", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawBustshot( 2, "sprites/sonota/oisi7", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+	DrawBustshot( 1, "sprite/takano/hakui/ta_def", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
+	DrawBustshot( 2, "sprite/sonota/oisi7", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawScene( "img/dsc00039", 400 );
 
 	OutputLine(NULL, "　ｄａｉさんご無沙汰にゃりんよ。」",
@@ -1838,7 +1838,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/takano/hakui/ta_warai", 200, TRUE );
+	ChangeBustshot( 1, "sprite/takano/hakui/ta_warai", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「くすくす、どうもこんにちは、ｄａｉです。",
@@ -1850,7 +1850,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshotWithFiltering( 2, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "sprites/rika/nekomimi/ri_nikoa1", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/rika/nekomimi/ri_nikoa1", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1861,7 +1861,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/takano/hakui/ta_def", 200, TRUE );
+	ChangeBustshot( 1, "sprite/takano/hakui/ta_def", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「うーん、……そうねぇ。",
@@ -1870,14 +1870,14 @@ void main()
 		   NULL, " ...There are so many to choose from.", Line_WaitForInput);
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/takano/hakui/ta_warai", 200, TRUE );
+	ChangeBustshot( 1, "sprite/takano/hakui/ta_warai", 200, TRUE );
 
 	OutputLine(NULL, "…ドラ■ンボールとかどう？」",
 		   NULL, " ...But what about Dra__nball?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshot( 4, "sprites/okonogi/oko_warai", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
+	DrawBustshot( 4, "sprite/okonogi/oko_warai", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
 	DrawSceneWithMask( "img/dsc00038", "effect/right", 0, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1998,7 +1998,7 @@ void main()
 	//;ld c,oko_3,22
 	//;!w1000
 	DrawScene( "img/dsc00038", 400 );
-	DrawBustshotWithFiltering( 1, "sprites/takano/hakui/ta_komaru", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/takano/hakui/ta_komaru", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
 	SetSpeedOfMessage( FALSE, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2008,7 +2008,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprites/rika/nekomimi/ri_komarua1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/rika/nekomimi/ri_komarua1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……何となく想像はしていましたが…、",
@@ -2020,7 +2020,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/takano/hakui/ta_tukare", 200, TRUE );
+	ChangeBustshot( 1, "sprite/takano/hakui/ta_tukare", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「さ、先行きが不安になってくるわね…。",
@@ -2032,7 +2032,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshot( 3, "sprites/sonota/oisi7", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
+	DrawBustshot( 3, "sprite/sonota/oisi7", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……どうか今後も当サークルを、見捨てずによろしくお願いしますにゃりん！」",
@@ -2041,8 +2041,8 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 2, "sprites/rika/nekomimi/ri_waraia1", 200, FALSE );
-	ChangeBustshot( 1, "sprites/takano/hakui/ta_warai", 200, TRUE );
+	ChangeBustshot( 2, "sprite/rika/nekomimi/ri_waraia1", 200, FALSE );
+	ChangeBustshot( 1, "sprite/takano/hakui/ta_warai", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「にぱ～☆」",
