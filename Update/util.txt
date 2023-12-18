@@ -32,7 +32,7 @@ void EyeCatch()
 void EyeCatch2()
 {
 	DisableWindow();
-	if (AdvMode == 0) { ClearMessage(); }
+	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	//SetValidityOfInput( FALSE );
 	DrawBustshotWithFiltering( 6, "effect/cinema", "effect/x", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 62, 1300, TRUE );
 	DrawBustshot( 7, "effect/title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 63, 3000, TRUE );

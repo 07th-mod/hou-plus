@@ -1,13 +1,5 @@
 void main()
 {
-	int AdvMode;
-	AdvMode = 1;
-	int Line_ModeSpecific;
-	if (AdvMode) {
-		Line_ModeSpecific = Line_Normal;
-	} else {
-		Line_ModeSpecific = Line_WaitForInput;
-	}
 
 	//Unhandled: *Staff_room12
 	//;スタッフルーム祟殺し
@@ -25,7 +17,7 @@ void main()
 	//;■スタッフルーム
 
 	ClearMessage();
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「こんばんは。竜騎士07です。",
 		   NULL, "\"Good evening. This is Ryukishi07.", Line_WaitForInput);
 
@@ -59,11 +51,11 @@ void main()
 	ShakeScreen( 2, 9,  30 , 2, 50, );
 	Wait( 40 );
 
-	OutputLineAll(NULL, "", Line_ModeSpecific);
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「こんばんは。",
 		   NULL, "\"Good evening.", Line_WaitForInput);
 	OutputLine(NULL, "八咫桜です。",
@@ -100,12 +92,12 @@ void main()
 	PlaySE( 0, "wav/boyon", 70, 64 );
 
 	OutputLine(NULL, "　あと４日も！！",
-		   NULL, " A whole four days!! ", Line_ModeSpecific);
+		   NULL, " A whole four days!! ", GetGlobalFlag(GLinemodeSp));
 
 	PlaySE( 0, "wav/finish", 70, 64 );
 
 	SetSpeedOfMessage( TRUE, 128 );
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　９６時間くらいはあるにゃー！！！」",
 		   NULL, "We have 96 hours left, nyaaa!!!\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -117,7 +109,7 @@ void main()
 
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「前回とは大違い！！",
 		   NULL, "\"That's a huge difference from last time!!", Line_WaitForInput);
 	OutputLine(NULL, "　やればできるんだね！！",
@@ -139,11 +131,11 @@ void main()
 	ShakeScreen( 2, 12,  30 , 2, 50, );
 	Wait( 40 );
 
-	OutputLineAll(NULL, "", Line_ModeSpecific);
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あぅうあ…。",
 		   NULL, "\"Auuuah...", Line_WaitForInput);
 	OutputLine(NULL, "でも、今回もまたちょいと複雑ですからにゃ…。",
@@ -152,55 +144,55 @@ void main()
 		   NULL, " I need to do plenty of error checking...\"", Line_Normal);
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「エラーチェックしたら量産して。",
 		   NULL, "\"Once you're done error checking, let's print.", Line_WaitForInput);
 	OutputLine(NULL, "量産したＲにラベルシールを貼って。",
 		   NULL, " Then we'll put the label stickers on the printed CDs.", Line_WaitForInput);
 	OutputLine(NULL, "それから店頭レイアウトに少し気を使わないと…。",
-		   NULL, " Then we'll need to put a little thought into our counter layout... ", Line_ModeSpecific);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, " Then we'll need to put a little thought into our counter layout... ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…前回はテーブルクロスすら忘れちゃって…すごくひもじい出展でした…。」",
-		   NULL, "...Last time we forgot even the tablecloth... It was a really pathetic display...\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "...Last time we forgot even the tablecloth... It was a really pathetic display...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そもそも…同人ソフトって世界は同人誌に比べて辛い世界にゃりね…。」",
 		   NULL, "\"For starters... the world of doujinshi software is harsher than that of doujinshi manga, nya...\"", Line_Normal);
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Yeah.", Line_WaitForInput);
 	OutputLine(NULL, "だって同人誌は、立ち読みして吟味して、ある程度納得がいってから買えるからリスクは非常に低いんですが、ソフトはそうはいかないですからねー…。」",
-		   NULL, " With manga you can stand there, read a sample, and get a general idea before buying, so they're extremely low risk purchases, but you can't do that with software...\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " With manga you can stand there, read a sample, and get a general idea before buying, so they're extremely low risk purchases, but you can't do that with software...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ＣＧ集なんかは表裏がないにゃりね。",
 		   NULL, "\"There's nothing hidden with CG collections, nya.", Line_WaitForInput);
 	OutputLine(NULL, "見たまんまが中身にゃり。」",
 		   NULL, " What you see is what you get there, nya.\"", Line_Normal);
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「でもうちみたいなノベルは…どうやってＰＲすりゃいいんですかね……。",
-		   NULL, "\"But with novel games like ours... how are you supposed to promote them...?", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "\"But with novel games like ours... how are you supposed to promote them...?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　噂じゃ、あの大「月姫」さまだって、半月版とかの最初のリリース時にはほとんど誰も手にとってくれなかった…なんて話らしいし…。」",
-		   NULL, "From what I've heard, even big Tsukihime-sama saw hardly anyone pick it up when it was first released in its half-moon version... At least that's the story...\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "From what I've heard, even big Tsukihime-sama saw hardly anyone pick it up when it was first released in its half-moon version... At least that's the story...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「もうこればかりは、ひたすら頑張って良い作品を作って…、",
 		   NULL, "\"The only thing you can do is to work hard and make a good game...", Line_WaitForInput);
 	OutputLine(NULL, "信頼を築き上げていくほかないにょり。」",
 		   NULL, " so that way you can build up trust, nya.\"", Line_Normal);
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「………ぅぅ、…たくさんの人にプレイしてもらいたいのは、送り手としての唯一の夢じゃないですか…。",
 		   NULL, "\".........Nnh... But it's every creator's biggest dream to have lots of people play their games, you know...", Line_WaitForInput);
 	OutputLine(NULL, "私にとってのコミケのソロデビューは…とっても悲しい現実でしたよ……。」",
@@ -212,71 +204,71 @@ void main()
 	FadeOutBGM( 0, 0, TRUE );
 	DrawScene( "img/dsc00004", 1000 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あれは…いつの夏コミだったかも思い出せない…。",
-		   NULL, "That... was some Summerket I don't remember...", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "That... was some Summerket I don't remember...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	PlayBGM( 0, "bgm0/tell_a_thing", 70, 0 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　本職多忙に打ちのめされ、来る日も来る日も、ただ夜が訪れるのを待つだけのために過し。",
-		   NULL, "I was worn out from how busy my main job was, and I spent my time day in and day out just waiting for night to come. ", Line_ModeSpecific);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, "I was worn out from how busy my main job was, and I spent my time day in and day out just waiting for night to come. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……自らの時間が、指の間からさらさらとこぼれていくのにただただ恐怖した日々…。",
 		   NULL, "......I spent those days just constantly afraid as time for myself kept slipping through my fingers...", Line_Normal);
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　偶然、八咫桜さんの部屋で拾った同人誌の奥付に書いてあった、「メンバー募集」に惹かれ、……今とは異なるＰＮで同人活動を始めた。",
 		   NULL, "That was when I was drawn to a \"Recruiting Members\" ad written in the colophon of a doujinshi I picked up in Yatazakura-san's room... and I started doing doujin work under a different penname than I use now.", Line_Normal);
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いろいろと和気あいあいしながら……竜騎士07はささやかな原稿を描き溜め……。",
-		   NULL, "We all got along well enough...... and I drew up a modest manuscript......", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "We all got along well enough...... and I drew up a modest manuscript......", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いろいろな人の力や助言を得ながら、入稿し、初のオフセ個人誌を２００冊刷った…。",
-		   NULL, "Then after gaining advice and help from a lot of different people, I sent it to press and printed 200 copies of my first offset doujinshi...", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "Then after gaining advice and help from a lot of different people, I sent it to press and printed 200 copies of my first offset doujinshi...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今でこそ、そこそこの実績のお陰か、コミケには当選するようになったけど…あの当時は冷たかった…。",
-		   NULL, "I've been showing modest results now, so we make it through Comiket's selection, but... back then they were cold to me...", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "I've been showing modest results now, so we make it through Comiket's selection, but... back then they were cold to me...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　入稿後に届いた落選通知の悲しさは今でも忘れられない…。",
 		   NULL, "I'll never forget the sadness I felt when the rejection letter came after I'd sent it to press...", Line_Normal);
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　結局、当時のサークルの人のご好意で……とりあえず出展には漕ぎ着けたけど、",
 		   NULL, "In the end, the circle I was with at the time showed me kidness...... and I managed to get my book on display there...", Line_ContinueAfterTyping);
 	Wait( 1000 );
 	OutputLine(NULL, "………今から思えば、…出展しない方が、マシだったんだ。",
-		   NULL, " .........but thinking back on it now... it would've been better if I hadn't.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " .........but thinking back on it now... it would've been better if I hadn't.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　夏コミには…数万人、数十万人の人が訪れるのに…。",
-		   NULL, "Summerket sees... tens, no hundreds of thousands of people pass through...", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "Summerket sees... tens, no hundreds of thousands of people pass through...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…誰も本を手に取ってくれなかった…。",
 		   NULL, "...but no one would take up my book...", Line_Normal);
 	ClearMessage();
@@ -284,51 +276,51 @@ void main()
 
 	DrawScene( "black", 1000 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あんなに頑張って…いっぱい描いたのに…。",
-		   NULL, "I worked so hard... I drew so much...", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "I worked so hard... I drew so much...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　結局、……５部くらいしか、売れなかった。",
-		   NULL, "But in the end...... I only sold about five copies.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "But in the end...... I only sold about five copies.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…悲しかった。",
-		   NULL, "...I was sad.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "...I was sad.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…悔しかった。",
-		   NULL, "...I was frustrated.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "...I was frustrated.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…こみパでは詠美のシナリオに本気で涙を流した。",
 		   NULL, "...I played Comic Party, and I seriously cried at Eimi's route.", Line_Normal);
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あの日に全てを絶望して活動をやめることも出来たんだ。",
-		   NULL, "I could have given in to despair and stopped creating anything that day.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "I could have given in to despair and stopped creating anything that day.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも……、自分の創った作品のボールで…、コミケでしか出会えない人たちとキャッチボールがしたい…。",
-		   NULL, "But...... I wanted to play catch with the people I could only meet at Comiket... with the work I created as our ball...", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "But...... I wanted to play catch with the people I could only meet at Comiket... with the work I created as our ball...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それだけの…コミュニケーションがしたいって…。",
-		   NULL, "It was just... the desire for that communication...", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "It was just... the desire for that communication...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…それだけを望みにして……………。",
 		   NULL, "...That was my only hope............", Line_Normal);
 	ClearMessage();
@@ -336,7 +328,7 @@ void main()
 
 	DrawScene( "img/dsc000103", 1000 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ぅぅぅぅぅ！",
 		   NULL, "\"Uuuunh!", Line_WaitForInput);
 	OutputLine(NULL, "　竜タソも涙をこぼしながら頑張ってきたにゃりね…。",
@@ -346,15 +338,15 @@ void main()
 	PlaySE( 0, "wav/kyupirn", 70, 64 );
 
 	OutputLine(NULL, "ところで、その時出した個人誌ってどんなヤツだったにゃ？」",
-		   NULL, " By the way, what kind of doujinshi was it that you made, nya?\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " By the way, what kind of doujinshi was it that you made, nya?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「部屋を探せば出てくるでしょうが…、恥ずかしいので絵は勘弁して下さい…。」",
 		   NULL, "\"I think you can find it if you search my room... but it's so embarassing, so cut me some slack on the art...\"", Line_Normal);
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「本は絵だけでは決まらないにょり！！",
 		   NULL, "\"Don't judge a book on art alone, nya!!", Line_WaitForInput);
 	OutputLine(NULL, "　大事なのは中身とハートにゃ！！",
@@ -363,14 +355,14 @@ void main()
 		   NULL, " Now, come on, tell me about it.\"", Line_Normal);
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「えっとですね、……創作漫画なんですよ。",
 		   NULL, "\"Well, uhh...... it was a story manga.", Line_WaitForInput);
 	OutputLine(NULL, "オリジナルの。」",
-		   NULL, " An original one.\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " An original one.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ほうほう。",
 		   NULL, "\"Ho-ho?", Line_WaitForInput);
 	OutputLine(NULL, "二次創作全盛の同人漫画界で創作とはガッツがあるにゃりよ。」",
@@ -379,56 +371,56 @@ void main()
 
 	PlayBGM( 0, "bgm1/rika", 70, 0 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「でですね、１８禁なんですよ…。」",
-		   NULL, "\"So, well, it was also 18+...\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "\"So, well, it was also 18+...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「まぁ、同人１８禁はお約束にょり。",
 		   NULL, "\"Well, most doujin are 18+, nya.", Line_WaitForInput);
 	OutputLine(NULL, "して中身は？」",
-		   NULL, " So what was in it?\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " So what was in it?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「えっとですね、ギャグとか救いのない、いわゆる鬼畜系なんですよ…。」",
 		   NULL, "\"Well, umm, there were no gags or salvation. It was what they'd call the brute genre...\"", Line_Normal);
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ほほう、それはハードですにゃ。",
 		   NULL, "\"Ho-ho, so you went hardcore, nya.", Line_WaitForInput);
 
 	PlaySE( 0, "wav/kira", 70, 64 );
 
 	OutputLine(NULL, "してどんなシチュの？」",
-		   NULL, " So what situations were they in?\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " So what situations were they in?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「まぁそのですね、ある女の子が悪い連中に弱みを握られて、言いなりにさせられちゃうと。」",
 		   NULL, "\"Well, umm, there was a woman who was being blackmailed by a bad group of people that forced her to do as they told her.\"", Line_Normal);
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ふむふむ。",
 		   NULL, "\"Mhmm.", Line_WaitForInput);
 	OutputLine(NULL, "ありがちですにゃ。",
 		   NULL, " That's common, nya.", Line_WaitForInput);
 	OutputLine(NULL, "して、どんなことの言いなりに？」",
-		   NULL, " So then what did they tell her to do?\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " So then what did they tell her to do?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「えっとですね、色々と着替えさせられるんですよ。」",
-		   NULL, "\"Uhh, well, they had her change into different outfits.\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "\"Uhh, well, they had her change into different outfits.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	PlaySE( 0, "wav/boyon", 70, 64 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「何ですかソレ。」",
 		   NULL, "\"What do you mean?\"", Line_Normal);
 	ClearMessage();
@@ -436,15 +428,15 @@ void main()
 
 	DrawScene( "black", 400 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「当時はＦＦⅦの発売が目前でして、竜騎士07はＦＦにはまっていたんですよ。」",
-		   NULL, "\"At the time FF7's release date was getting close, and I was hooked on FF.\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "\"At the time FF7's release date was getting close, and I was hooked on FF.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「話が全然見えんにょり。」",
-		   NULL, "\"I don't see how that relates, nya.\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "\"I don't see how that relates, nya.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	PlaySE( 0, "wav/furu", 70, 64 );
@@ -453,24 +445,24 @@ void main()
 	Wait( 300 );
 	PlaySE( 0, "wav/furu", 70, 64 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「つまりですね。",
 		   NULL, "\"Well, in short,", Line_WaitForInput);
 
 	PlaySE( 0, "wav/hikaru", 70, 64 );
 
 	OutputLine(NULL, "その女の子に、次々とＦＦの衣装を着させてＨをするわけなんですよ。」",
-		   NULL, " they made that girl change into one FF outfit after another and had sex with her.\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " they made that girl change into one FF outfit after another and had sex with her.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ＦＦの衣装と言われても、いっぱいあってさっぱり見当がつかないにゃ。」",
 		   NULL, "\"You say FF outfits, but there are so many I can't even begin to picture this, nya.\"", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 0, 0, TRUE );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「えっとですね…、記憶を辿るとですね…。",
 		   NULL, "\"Uhh, well... to trace my memory back...", Line_WaitForInput);
 
@@ -478,26 +470,26 @@ void main()
 	PlayBGM( 0, "bgm0/4", 70, 0 );
 
 	OutputLine(NULL, "まずＦＦⅠ～Ⅲからは各お姫さまの衣装をドット絵から想像して描き起こして。",
-		   NULL, " First I had to imagine what each princess's outfit from FF 1~3 would be from the pixel art. ", Line_ModeSpecific);
+		   NULL, " First I had to imagine what each princess's outfit from FF 1~3 would be from the pixel art. ", GetGlobalFlag(GLinemodeSp));
 
 	PlaySE( 0, "wav/boyon", 70, 64 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ＦＦⅣはローザの衣装で、ＦＦⅤはモンクの衣装に赤魔導師に竜騎士にすっぴんに！",
 		   NULL, "There was Rosa's outfit from FF4, then there were the Monk, Red Mage, and Dragoon outfits from FF5 with no makeup!", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 0, "wav/boyon", 70, 64 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ＦＦⅥはもちろんティナとセリスの衣装なのですよ！",
-		   NULL, "And of course there was Terra and Celes's outfits from FF6!", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "And of course there was Terra and Celes's outfits from FF6!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	PlaySE( 0, "wav/boyon", 70, 64 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　んで発売直前とは言え、イラストが公開されていたＦＦⅦからはティナたんとエアリスたんの衣装をチョイス！！",
 		   NULL, "And even though it was yet to be released, they'd publicized illustrations already, so I chose to use Tina and Aerith's oufits from FF7!!", Line_WaitForInput);
 	OutputLine(NULL, "　どうですよ？！",
@@ -524,30 +516,30 @@ void main()
 	Wait( 40 );
 	DrawScene( "img/dsc000103", 400 );
 
-	OutputLineAll(NULL, " ", Line_ModeSpecific);
+	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　んで、これらの衣装を次々と着せられてＨを強要されると。",
 		   NULL, "So the guys would have her change into the different outfits and force her to have sex with them.", Line_WaitForInput);
 	OutputLine(NULL, "ね？！",
 		   NULL, " See?!", Line_WaitForInput);
 	OutputLine(NULL, "　ね？！",
-		   NULL, " See?!", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " See?!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　スゴイでしょー？！？！」",
 		   NULL, "Incredible, right?!?!\"", Line_Normal);
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「………専門学校時代の友達のＨ君、彼、ス●ウェアでしょ。",
 		   NULL, "\".........Your friend from Vocational School, H-kun, he's with Square, right?", Line_WaitForInput);
 	OutputLine(NULL, "そーゆうの公言しちゃマズイんじゃ。」",
 		   NULL, " Should you really be saying this to the public?\"", Line_Normal);
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ちなみにですね！",
 		   NULL, "\"By the way!", Line_WaitForInput);
 	OutputLine(NULL, "　このＦＦ編はあくまでもひとつのお話でして、実際の個人誌にはさらにもう一話がプラスッ！！！",
@@ -555,13 +547,13 @@ void main()
 	OutputLine(NULL, "　こっちもですね、なかなか見捨てて置けない内容なんですよ？！",
 		   NULL, " The other one had some content that's pretty hard to put down too, you know?!", Line_WaitForInput);
 	OutputLine(NULL, "　にゃにゃにゃんと！！",
-		   NULL, " Would you believe it?! ", Line_ModeSpecific);
+		   NULL, " Would you believe it?! ", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
 
 	DrawScene( "effect/f_b", 0 );
 
 	SetSpeedOfMessage( TRUE, 128 );
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ＦＦ編に対してこっちは万人向けに「学校制服編」！！！」",
 		   NULL, "In contrast to the FF chapter, this one was a school uniform chapter for the general public!!!\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -576,19 +568,19 @@ void main()
 
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…それは何とも、描き手が幸せそうな感じですにゃ。」",
-		   NULL, "\"...That sounds like something the author would love drawing, nya.\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "\"...That sounds like something the author would love drawing, nya.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「こっちはもちろん着せられる衣装の内容も方向転換んん！！",
 		   NULL, "\"In this one they take a different direction with the outfits they force her to change into!!", Line_WaitForInput);
 	OutputLine(NULL, "　ブレザー、セーラー服等から数種の制服をチョイス！",
 		   NULL, " There were blazers, sailor uniforms, and several more select uniforms!", Line_WaitForInput);
 	OutputLine(NULL, "　もちろん体操服もあったにゃり～！！！",
-		   NULL, " Of course there were PE uniforms too, nya~!!! ", Line_ModeSpecific);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		   NULL, " Of course there were PE uniforms too, nya~!!! ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あぁあぁ？！",
 		   NULL, "Aaaaah?!", Line_WaitForInput);
 	OutputLine(NULL, "　当時の竜騎士、浅はか過ぎ？！",
@@ -600,16 +592,16 @@ void main()
 	OutputLine(NULL, "　スク水がチョイスされてないぃいいぃいい！！！」",
 		   NULL, " I didn't go with any school swimsuiiiiiiiits!!!\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
-	OutputLineAll(NULL, "", Line_ModeSpecific);
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「これがホントの逝ってよしですにゃ。」",
 		   NULL, "\"It's seriously okay for you die now, nya.\"", Line_Normal);
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あぁあぁ…！！",
 		   NULL, "\"Aahaah...!!", Line_WaitForInput);
 	OutputLine(NULL, "　今ですね、もしも竜騎士07が分身できるとしたら、もうひとりの自分にはこのシリーズの第３話を描いてもらいますよ！！",
@@ -618,11 +610,11 @@ void main()
 	PlaySE( 0, "wav/boyon", 70, 64 );
 
 	OutputLine(NULL, "　もちろん今度は「ラグナ■ク編」！！！",
-		   NULL, " Of course this time it'd be a Ragnarok chapter!!! ", Line_ModeSpecific);
+		   NULL, " Of course this time it'd be a Ragnarok chapter!!! ", GetGlobalFlag(GLinemodeSp));
 
 	PlaySE( 0, "wav/kyupirn", 70, 64 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　アコたんやプリたんの衣装ではぁはぁ…！",
 		   NULL, "Aco-tan and Pri-tan's outfits, hahh, hahh...!", Line_WaitForInput);
 
@@ -640,11 +632,11 @@ void main()
 	PlaySE( 0, "wav/pou", 70, 64 );
 
 	OutputLine(NULL, "ムナたんやソヒーたん、ハァハァ！！",
-		   NULL, " and Muna-tan, and Sophee-tan, hahh, hahh!! ", Line_ModeSpecific);
+		   NULL, " and Muna-tan, and Sophee-tan, hahh, hahh!! ", GetGlobalFlag(GLinemodeSp));
 
 	PlaySE( 0, "wav/boyon", 70, 64 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　プリたんのパンチラ、ぱんつじゃなくて紺ブルマになったんですって？！",
 		   NULL, "And I hear Pri-tan wears striped bloomers, not panties under her outfit?!", Line_WaitForInput);
 
@@ -671,7 +663,7 @@ void main()
 
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「とんでもないダメ人間全開にゃり。",
 		   NULL, "\"What an incredible display of human failure, nya.", Line_WaitForInput);
 	OutputLine(NULL, "…竜騎士さんがまたしてもえいえその世界に旅立たれたので、今回も私が締めますにゃ。」",
@@ -680,78 +672,78 @@ void main()
 
 	PlayBGM( 0, "bgm0/2", 70, 0 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この度は『ひぐらしのなく頃に』をお手に取ってくださり、誠にありがとうございました。",
-		   NULL, "We're truly grateful that you've decided to purchase Higurashi When They Cry.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "We're truly grateful that you've decided to purchase Higurashi When They Cry.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　またこの場をお借りしまして、『ひぐらし』の製作にご協力下さった全ての皆さんに感謝いたします…。",
-		   NULL, "We're also truly grateful to all of those who helped us produce Higurashi When They Cry.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "We're also truly grateful to all of those who helped us produce Higurashi When They Cry.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　このような作品にも関わらず、応援して下さる全ての方々にも本当に感謝いたします。",
 		   NULL, "We're also truly grateful to all of you for supporting us, despite our work being what it is.", Line_Normal);
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう、…この作品はそんな皆さんへの感謝の気持ちでできています。",
-		   NULL, "Yes... This title is made from our gratitude toward you all for supporting us.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "Yes... This title is made from our gratitude toward you all for supporting us.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今日まで皆さんからいただいた、様々な形のご恩に報いることのできる作品に仕上がっていたなら、竜騎士07、八咫桜、これほどの喜びはありません。",
-		   NULL, "It would truly bring us both great joy if this title we've finished up has managed to repay some of the kindness we've recieved from all of you thus far.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "It would truly bring us both great joy if this title we've finished up has managed to repay some of the kindness we've recieved from all of you thus far.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ささやかな作品でありますが、…お楽しみいただけることを祈っております。",
 		   NULL, "Though this is just a modest title... we pray that you'll enjoy it.", Line_Normal);
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この度は本当にありがとうございました。",
-		   NULL, "We'd truly like to thank you all very much.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "We'd truly like to thank you all very much.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今後とも、ご指導ご鞭撻をよろしくお願いいたします。",
-		   NULL, "We hope you'll continue to offer us your guidance and encouragement.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "We hope you'll continue to offer us your guidance and encouragement.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　次回シナリオより『ひぐらし』もいよいよ急展開！",
 		   NULL, "With our next chapter of Higurashi we're finally entering the climax!", Line_WaitForInput);
 	OutputLine(NULL, "　がんばって製作しますので、ちょっぴりでも楽しみにしていただけたら嬉しいです",
-		   NULL, " We'll be working hard to produce it, so we'll be very happy if you're looking forward to it, even a little.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " We'll be working hard to produce it, so we'll be very happy if you're looking forward to it, even a little.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　　　　　　　　　　　　平成１５年８月１１日",
 		   NULL, "　　　　　　　　　　　　August 11th, 2003", Line_ContinueAfterTyping);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　　　　　　　　０７ｔｈ　Ｅｘｐａｎｓｉｏｎ",
 		   NULL, "　　　　　　　　07th Expansion", Line_ContinueAfterTyping);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　　　　　　　　　　　　　竜騎士07・八咫桜",
 		   NULL, "　　　　　　　　　　　　　Ryukishi07 & Yatazakura", Line_Normal);
 	ClearMessage();
@@ -759,26 +751,26 @@ void main()
 
 	DrawScene( "black", 400 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「次回は…冬コミ！！",
 		   NULL, "\"Next time... will be at Winterket!!", Line_WaitForInput);
 	OutputLine(NULL, "　９月１日から製作を始めても…４ヶ月しかないにゃりー！！」",
-		   NULL, " Even if we start production on September 1st... that's only four months, nya!!\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " Even if we start production on September 1st... that's only four months, nya!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「それでですね！！",
 		   NULL, "\"So then, okay!!", Line_WaitForInput);
 
 	PlaySE( 0, "wav/hikaru", 70, 64 );
 
 	OutputLine(NULL, "　女アサはどう見てもスク水に見えるわけなんですよ！！",
-		   NULL, " The female Assassin's outfit looks like a school swimsuit, no matter how you look at it!! ", Line_ModeSpecific);
+		   NULL, " The female Assassin's outfit looks like a school swimsuit, no matter how you look at it!! ", GetGlobalFlag(GLinemodeSp));
 
 	PlaySE( 0, "wav/daidageki", 70, 64 );
 
 	SetSpeedOfMessage( TRUE, 128 );
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もちろん新上級職の踊り子の過剰露出にも期待大ぃいいいぃい！！！」",
 		   NULL, "Of course I have great expectations for the excessive exposure of the Dancer's newest advanced Class toooooooo!!!\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -786,11 +778,11 @@ void main()
 	ShakeScreen( 2, 9,  30 , 2, 50, );
 	Wait( 40 );
 
-	OutputLineAll(NULL, "", Line_ModeSpecific);
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「歯を食いしばるにゃあぁああぁああ！！",
 		   NULL, "\"Grit your teeth, nyaaaaaaaaaah!!", Line_WaitForInput);
 	OutputLine(NULL, "　はぃいいぃ！！　指導指導ーッ！！！」",
@@ -842,7 +834,7 @@ void main()
 	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
 	SetSpeedOfMessage( FALSE, 0 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ひぃいいいぃ！！　暴力教師ぃいいぃいい！！！」",
 		   NULL, "\"Hiiiiiiii!! Violent teacheeeeeeeeeeeeeer!!!\"", Line_Normal);
 	ClearMessage();

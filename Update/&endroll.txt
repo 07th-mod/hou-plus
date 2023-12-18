@@ -8,7 +8,7 @@ void BusStopEndRoll()
 	int h2 = 2590;
 	int time = 100000;
 	int noSkipTime = 10000;
-	
+
 	SetValidityOfInput(FALSE);
 	SetValidityOfSkipping(FALSE);
 
@@ -44,7 +44,7 @@ void HouCastRoll()
 	int h2 = 2098;
 	int time = 80000;
 	int noSkipTime = 10000;
-	
+
 	SetValidityOfInput(FALSE);
 	SetValidityOfSkipping(FALSE);
 
