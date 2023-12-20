@@ -567,7 +567,7 @@ void HanyuuAnim2()
 	Wait(500);
 	MoveSprite( 12, -271, -86, 0, 0, 0, 0, 0, 150, TRUE );
 	ShakeScreen( 1, 6, 30, 12, 0, );
-	MoveSprite( 12, -829, -86, 0, 0, 256, 0, 0, 1000, FALSE ); //fade out
+	MoveSprite( 12, -1029, -86, 0, 0, 256, 0, 0, 1000, FALSE ); //fade out
 	Update(); //execute stored actions
 	Wait(600);
 	if(GetGlobalFlag(MEHEND) >= 20)
