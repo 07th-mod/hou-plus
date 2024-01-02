@@ -2,7 +2,7 @@ void RainOn()
 {
 	//rain is set to layer 60. Layers above 32 are automatically persistent between scene transitions.
 	if(GetLayerPriority(60) == -1) //will return -1 if the rain layer is not active
-		DrawSpriteWithFiltering(60, "effect/rain", "effect/down", 0, 0, 0, FALSE, FALSE, 0, 0, 60, 1300, TRUE);
+	//	DrawSpriteWithFiltering(60, "effect/rain", "effect/down", 0, 0, 0, FALSE, FALSE, 0, 0, 60, 1300, TRUE);
 }
 
 void RainOff()

@@ -1917,7 +1917,7 @@ void main()
 	Wait( 1000 );
 	StopBGM( 0 );
 
-	DrawScene( "bg/flashback/hi1", 400 );
+	DrawScene( "bg/greyscale/hi1", 400 );
 	//;ld c,sat_11,22
 
 
