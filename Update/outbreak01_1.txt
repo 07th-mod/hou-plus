@@ -818,7 +818,7 @@ void main()
 
 	DrawScene( "bg/hi1", 400 );
 	Wait( 200 );
-	DrawFilm( 2, 0xcc, 0xcc, 0xcc, 256, 0, 3000, TRUE ); //monochrome mode
+	DrawScene( "bg/greyscale/hi1", 3000 );
 	Wait( 200 );
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -842,7 +842,6 @@ void main()
 
 
 	DrawScene( "black", 400 );
-	FadeFilm( 0, TRUE ); //end monocrome color
 	DrawScene( "bg/m_hi8", 400 );
 
 	ChangeVolumeOfBGM( 1, 70, 100 );
@@ -1065,7 +1064,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	DrawScene( "bg/flashback/so1", 400 );
+	DrawScene( "bg/greyscale/so1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今さら説明するまでもなく、",
@@ -1697,7 +1696,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "bg/flashback/hi4", 1000 );
+	DrawScene( "bg/greyscale/hi4", 1000 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そうなると口コミの噂話しかなくなるが、",
 		   NULL, "That meant we were left with nothing but rumors and word of mouth,", Line_WaitForInput);
@@ -1749,7 +1748,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "bg/flashback/ji2", 400 );
+	DrawScene( "bg/greyscale/ji2", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　オヤシロさまの祟りを疑い不安感を拭えない人々のために、",
 		   NULL, "The Sonozaki family had been strongly requesting that Rika Furude go around the village,", Line_Continue);
@@ -2081,8 +2080,8 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	DrawBustshot( 1, "sprite/flashback/sa2a_muhyou_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/flashback/hu2", 400 );
+	DrawBustshot( 1, "sprite/greyscale/sa2a_muhyou_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
+	DrawScene( "bg/greyscale/hu2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音が言うには、",
@@ -2111,7 +2110,7 @@ void main()
 	DisableWindow();
 
 
-	DrawScene( "bg/flashback/so1", 400 );
+	DrawScene( "bg/greyscale/so1", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　言うまでもなく、",
 		   NULL, "It went without saying,", Line_Continue);
@@ -2122,7 +2121,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "bg/flashback/ma1", 400 );
+	DrawScene( "bg/greyscale/ma1", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　俺の家ならどうか。",
 		   NULL, "What about my family?", Line_WaitForInput);
@@ -2212,7 +2211,7 @@ void main()
 	ChangeVolumeOfBGM( 1, 0, 1000 );
 	Wait( 1000 );
 
-	DrawScene( "bg/flashback/hi4", 400 );
+	DrawScene( "bg/greyscale/hi4", 400 );
 
 	PlayBGM( 0, "bgm0/snow4", 70, 0 );
 
@@ -2762,7 +2761,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	ResetNameColor();
-	FadeFilm( 0, TRUE ); //end monocrome color
+	FadeFilm( 0, TRUE ); //end monochrome color
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　また、それぞれの丙種には人格・行動の基礎にも深く関与していると言われ、",
@@ -3714,7 +3713,7 @@ void main()
 	ResetNameColor();
 	//;ld c,mio_9,80
 
-	FadeFilm( 300, TRUE ); //end monocrome color
+	FadeFilm( 300, TRUE ); //end monochrome color
 	PlaySE( 0, "wav/thisikuki", 50, 64 );
 	DrawScene( "effect/blood_2a", 50 );
 	ShakeScreen( 2, 9,  100 , 8, 12, );
@@ -3854,8 +3853,8 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	DrawBustshot( 1, "sprite/flashback/sa2a_def_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/flashback/hu2", 400 );
+	DrawBustshot( 1, "sprite/greyscale/sa2a_def_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
+	DrawScene( "bg/greyscale/hu2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして同時に、沙都子はという不安感も持った。",
@@ -4868,8 +4867,8 @@ void main()
 	DisableWindow();
 
 
-	DrawBustshot( 1, "sprite/flashback/me2_majime_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/flashback/ma2", 400 );
+	DrawBustshot( 1, "sprite/greyscale/me2_majime_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
+	DrawScene( "bg/greyscale/ma2", 400 );
 	PlayBGM( 1, "me/a5_14446", 70, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -4881,11 +4880,11 @@ void main()
 
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
 	Wait( 500 );
-	DrawBustshot( 2, "sprite/flashback/me2_majime_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawSceneWithMask( "bg/flashback/re_s4_01", "effect/left", 0, 0, 300 );
+	DrawBustshot( 2, "sprite/greyscale/me2_majime_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
+	DrawSceneWithMask( "bg/greyscale/re_s4_01", "effect/left", 0, 0, 300 );
 	Wait( 500 );
-	ChangeBustshot( 2, "sprite/flashback/me2_odoroki_a1_2", 400, FALSE );
-	DrawBustshot( 1, "sprite/flashback/mura_01_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
+	ChangeBustshot( 2, "sprite/greyscale/me2_odoroki_a1_2", 400, FALSE );
+	DrawBustshot( 1, "sprite/greyscale/mura_01_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 	//;wait 500
 	Wait( 300 );
 	PlaySE( 0, "wav/mc071", 50, 64 );
@@ -5495,7 +5494,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	ResetNameColor();
-	FadeFilm( 300, TRUE ); //end monocrome color
+	FadeFilm( 300, TRUE ); //end monochrome color
 	DrawBustshot( 1, "sprite/normal/me7_odoroki_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
 	DrawScene( "bg/ma_g3", 400 );
 	PlaySE( 0, "a1_07132", 50, 64 );
@@ -5544,8 +5543,8 @@ void main()
 
 
 	DrawScene( "black", 400 );
-	DrawBustshot( 1, "sprite/flashback/me2_ikari_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/flashback/ryoutei2_01", 400 );
+	DrawBustshot( 1, "sprite/greyscale/me2_ikari_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
+	DrawScene( "bg/greyscale/ryoutei2_01", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s24/01/nkei_0430", 128);
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
@@ -6302,10 +6301,18 @@ void main()
 	ChangeBustshot( 2, "sprite/night/renasen1_tuukaku_0", 400, TRUE );
 	Wait( 500 );
 	PlaySE( 0, "wav/down3", 70, 64 );
-	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, FALSE );
+	MoveSprite( 1, -159, 0, 0, 0, 0, 0, 0, 1, TRUE ); // fix fade out somehow not working without
+	MoveSprite( 1, 170, 0, 0, 0, 256, 0, 0, 200, FALSE ); //fade out
+	Update(); //execute stored actions
+	Wait(200);
+	FadeBustshot(1, FALSE, 0, 0, 0, 0, 0, TRUE);
 	Wait(400);
 	PlaySE( 1, "wav/down3", 70, 64 );
-	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, FALSE );
+	MoveSprite( 2, 159, 0, 0, 0, 0, 0, 0, 1, TRUE ); // fix fade out somehow not working without
+	MoveSprite( 2, -170, 0, 0, 0, 256, 0, 0, 200, FALSE ); //fade out
+	Update(); //execute stored actions
+	Wait(200);
+	FadeBustshot(2, FALSE, 0, 0, 0, 0, 0, TRUE);
 	Wait(400);
 	DrawScene( "black", 1000 );
 

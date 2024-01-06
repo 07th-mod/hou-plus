@@ -5645,7 +5645,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	ResetNameColor();
-	FadeFilm( 0, TRUE ); //end monocrome color
+	FadeFilm( 0, TRUE ); //end monochrome color
 	PlaySE( 0, "danmaku", 70, 64 );
 	PlayBGM( 2, "me/flangefemale", 0, 0 );
 	PlayBGM( 3, "me/kaze_fr1", 0, 0 );
@@ -10278,7 +10278,7 @@ void main()
 
 	DrawScene( "black", 0 );
 	ResetNameColor();
-	FadeFilm( 0, TRUE ); //end monocrome color
+	FadeFilm( 0, TRUE ); //end monochrome color
 	DrawScene( "white", 0 );
 
 	PlaySE( 0, "rakurai3", 100, 64 );

@@ -56,100 +56,100 @@ void HanyuuDance()
 {
 	//lsp 1,":b;Bmp2\Tati\Hanyu\miko\han_3.png",-20,30
 
-	int x = -320-120;
-	int y = -240;
+	int x = -120;
+	int y = 0;
 
 	x = x - 20;
 	y = y + 30;
-	DrawSpriteFixedSize( 25, "sprite/hanyu/miko/han_3", NULL, x, y, 0, 0, 0, 640, 480, 0, FALSE, FALSE, 0, 0, 25, 400, TRUE );
+	DrawBustshot( 25, "sprite/normal/ha1_warai_2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 400, TRUE );
 
 	PlaySE( 0, "a1_16258", 50, 64 );
 
 	x = x + 390;
-	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 500, TRUE );
+	MoveBustshot( 25, NULL, x, y, 0, 25, 500, TRUE );
 
 	PlaySE( 1, "a1_17270", 50, 64 );
 	y = y + 40;
-	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 250, TRUE );
+	MoveBustshot( 25, NULL, x, y, 0, 25, 250, TRUE );
 	y = y - 40;
-	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 250, TRUE );
+	MoveBustshot( 25, NULL, x, y, 0, 25, 250, TRUE );
 
 
 	PlaySE( 1, "a1_17270", 50, 64 );
 	y = y + 40;
-	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 250, TRUE );
+	MoveBustshot( 25, NULL, x, y, 0, 25, 250, TRUE );
 	y = y - 40;
-	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 250, TRUE );
+	MoveBustshot( 25, NULL, x, y, 0, 25, 250, TRUE );
 
 	PlaySE( 1, "a1_17270", 50, 64 );
 	y = y + 40;
-	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 250, TRUE );
+	MoveBustshot( 25, NULL, x, y, 0, 25, 250, TRUE );
 	y = y - 40;
-	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 250, TRUE );
+	MoveBustshot( 25, NULL, x, y, 0, 25, 250, TRUE );
 
 	PlaySE( 0, "wav/boyon", 50, 64 );
 	x = x -150;
 	y = y + 90;
-	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 500, TRUE );
+	MoveBustshot( 25, NULL, x, y, 0, 25, 500, TRUE );
 
 
 	PlaySE( 0, "b5", 50, 64 );
 	x = x -150;
 	y = y - 90;
-	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 500, TRUE );
+	MoveBustshot( 25, NULL, x, y, 0, 25, 500, TRUE );
 
 	PlaySE( 0, "wav/boyon", 50, 64 );
 	x = x - 90;
 	y = y + 90;
-	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 500, TRUE );
+	MoveBustshot( 25, NULL, x, y, 0, 25, 500, TRUE );
 
 
 	PlaySE( 0, "b5", 50, 64 );
 	x = x - 90;
 	y = y - 90;
-	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 500, TRUE );
+	MoveBustshot( 25, NULL, x, y, 0, 25, 500, TRUE );
 
 
 	PlaySE( 0, "wav/boyon", 50, 64 );
 	x = x + 120;
 	y = y + 90;
-	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 500, TRUE );
+	MoveBustshot( 25, NULL, x, y, 0, 25, 500, TRUE );
 
 	PlaySE( 0, "b5", 50, 64 );
 	x = x + 120;
 	y = y - 90;
-	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 500, TRUE );
+	MoveBustshot( 25, NULL, x, y, 0, 25, 500, TRUE );
 
 	y = y + 40;
-	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 250, TRUE );
+	MoveBustshot( 25, NULL, x, y, 0, 25, 250, TRUE );
 
 	PlaySE( 0, "wav/down3", 50, 64 );
 	y = y - 40;
-	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 250, TRUE );
+	MoveBustshot( 25, NULL, x, y, 0, 25, 250, TRUE );
 
 	y = y + 120;
-	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 250, TRUE );
+	MoveBustshot( 25, NULL, x, y, 0, 25, 250, TRUE );
 
 	PlaySE( 0, "wav/down3", 50, 64 );
 	Wait( 500 );
 
 	y = y - 100;
-	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 100, TRUE );
+	MoveBustshot( 25, NULL, x, y, 0, 25, 100, TRUE );
 
 	PlaySE( 0, "wav/finish", 50, 64 );
 	ShakeScreen( 4, 9, 20, 50, 1, );
 
 	PlaySE( 1, "horror", 50, 64 );
 
-	MoveSprite( 25, x, y, 0, 0, 120, 0, 0, 600, TRUE );
-	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 600, TRUE );
-	MoveSprite( 25, x, y, 0, 0, 120, 0, 0, 600, TRUE );
-	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 600, TRUE );
+	DrawBustshot( 25, "sprite/transparent/ha1_warai_2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
+	DrawBustshot( 25, "sprite/normal/ha1_warai_2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
+	DrawBustshot( 25, "sprite/transparent/ha1_warai_2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
+	DrawBustshot( 25, "sprite/normal/ha1_warai_2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
 
 	Wait( 500 );
 	PlaySE( 1, "a1_16258", 50, 64 );
 	x = x - 750;
-	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 1000, TRUE );
+	MoveBustshot( 25, NULL, x, y, 0, 25, 1000, TRUE );
 	FadeBustshot(25, FALSE, 0, 0, 0, 0, 0, TRUE);
 }
 
@@ -157,23 +157,23 @@ void RenaMove1()
 {
 	//lsp 890,":b;bmp2\TATI\rena\sifuku\re_kaiib1.png",710,0
 
-	DrawSpriteFixedSize( 25, "sprite/rena/sifuku/re_kaiib1", NULL, 390, -240, 0, 0, 0, 640, 480, 0, FALSE, FALSE, 0, 0, 25, 0, TRUE);
-	MoveSprite( 25, -160, -240, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 25, "sprite/normal/re2b_kaii_b1_2", 480, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 0, TRUE );
+	MoveBustshot( 25, NULL, 150, 0, 0, 25, 200, TRUE );
 
 	PlaySE( 0, "b1", 50, 64 );
-	MoveSprite( 25, -160, -240+63, 0, 0, 0, 0, 0, 200, TRUE );
-	MoveSprite( 25, -160, -240, 0, 0, 0, 0, 0, 200, TRUE );
+	MoveBustshot( 25, NULL, 150, 63, 0, 25, 200, TRUE );
+	MoveBustshot( 25, NULL, 150, 0, 0, 25, 200, TRUE );
 
 	PlaySE( 1, "b1", 50, 64 );
-	MoveSprite( 25, -160, -240+63, 0, 0, 0, 0, 0, 200, TRUE );
-	MoveSprite( 25, -160, -240, 0, 0, 0, 0, 0, 200, TRUE );
+	MoveBustshot( 25, NULL, 150, 63, 0, 25, 200, TRUE );
+	MoveBustshot( 25, NULL, 150, 0, 0, 25, 200, TRUE );
 
 	Wait( 1000 );
 }
 
 void RenaMove2()
 {
-	DrawSpriteFixedSize( 25, "sprite/rena/sifuku/re_kaiib1", NULL, -160, -240, 0, 0, 0, 640, 480, 0, FALSE, FALSE, 0, 0, 25, 400, TRUE);
+	DrawBustshot( 25, "sprite/normal/re2a_kaii_a1_2", 150, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 400, TRUE );
 	Wait( 500 );
-	MoveSprite( 25, -160-351, -240, 0, 0, 0, 0, 0, 180, TRUE );
+	MoveBustshot( 25, NULL, 150-351, 0, 0, 25, 180, TRUE );
 }

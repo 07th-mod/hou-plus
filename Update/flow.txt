@@ -222,7 +222,7 @@ void OmakeSubSection()
 	if(state == 2)
 		DrawScene("omake/tyuit", 400); //secret staff room background
 	if(state == 1)
-		DrawSceneWithMask("omake/lock_bg", "effect/4", 0, 0, 1000); //unlock all background
+		DrawSceneWithMask("omake/lock_bg", "effect/mask4", 0, 0, 1000); //unlock all background
 	if(state == 0)
 		DrawScene("black", 400);
 
@@ -496,14 +496,14 @@ void RikaAnim1()
 {
 	SetValidityOfInput(FALSE);
 
-	DrawSpriteFixedSize( 12, "sprite/ri4_niko_a1_2", NULL, -280, 190, 0, 0, 0, 1280, 720, 0, FALSE, FALSE, 0, 0, 12, 200, TRUE );
-	MoveSprite( 12, -358, 70, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshot( 12, "sprite/normal/ri4_niko_a1_2", -20+220, 190+240, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 200, TRUE );
+	MoveBustshot( 12, NULL, -98+220, 70+240, 0, 12, 300, TRUE );
 	Wait(800);
-	MoveSprite( 12, -287, -123, 0, 0, 0, 0, 0, 500, TRUE );
+	MoveBustshot( 12, NULL, -27+220, -123+240, 0, 12, 500, TRUE );
 	Wait(500);
-	MoveSprite( 12, -318, -240, 0, 0, 0, 0, 0, 800, TRUE );
+	MoveBustshot( 12, NULL, -58+220, -240+240, 0, 12, 800, TRUE );
 	Wait(500);
-	ChangeBustshot(12, "sprite/ri4_warai_a1_2", 500, TRUE);
+	ChangeBustshot(12, "sprite/normal/ri4_warai_a1_2", 500, TRUE);
 
 	SetValidityOfInput(TRUE);
 }
@@ -512,25 +512,25 @@ void RikaAnim2()
 {
 	SetValidityOfInput(FALSE);
 
-	//DrawSpriteFixedSize( 12, "sprite/ri4_warai_a1_2", NULL, -318, -240, 0, 0, 0, 1280, 720, 0, FALSE, FALSE, 0, 0, 12, 0, TRUE );
-	DrawSpriteFixedSize( 13, "sprite/re2b_kaii_b1_2", NULL, -12, 92, 0, 0, 0, 1280, 720, 0, FALSE, FALSE, 0, 0, 13, 200, TRUE );
-	MoveSprite( 13, -78, -42, 0, 0, 0, 0, 0, 2200, TRUE );
+	//DrawBustshot( 12, "sprite/normal/ri4_warai_a1_2", -318+220, -240+240, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 200, TRUE );
+	DrawBustshot( 13, "sprite/normal/re2b_kaii_b1_2", 188+280, 92+240, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 13, 200, TRUE );
+	MoveBustshot( 13, NULL, 122+280, -42+240, 0, 13, 2200, TRUE );
 	Wait(400);
-	MoveSprite( 13, -12, 92, 0, 0, 0, 0, 0, 2200, TRUE );
+	MoveBustshot( 13, NULL, 188+280, 92+240, 0, 13, 2200, TRUE );
 	Wait(500);
 	ChangeBustshot(12, "title/rik_alt", 500, TRUE);
 	Wait(400);
 	FadeBustshot(13, FALSE, 0, 0, 0, 0, 200, FALSE);
-	ChangeBustshot(12, "sprite/ri4_warai_a1_2", 500, TRUE);
+	ChangeBustshot(12, "sprite/normal/ri4_warai_a1_2", 500, TRUE);
 	Wait(1500);
 
-	DrawSpriteFixedSize( 11, "sprite/re2b_kaii_b1_2", NULL, 100, -240, 0, 0, 0, 1280, 720, 0, FALSE, FALSE, 0, 0, 11, 200, TRUE );
-	MoveSprite( 11, -35, -240, 0, 0, 0, 0, 0, 1500, TRUE );
+	DrawBustshot( 11, "sprite/normal/re2b_kaii_b1_2", 300+280, -240+240, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 11, 200, TRUE );
+	MoveBustshot( 11, NULL, 165+280, -240+240, 0, 11, 1500, TRUE );
 	Wait(500);
-	MoveSprite( 11, -216, -240, 0, 0, 0, 0, 0, 1500, TRUE );
+	MoveBustshot( 11, NULL, -16+280, -240+240, 0, 11, 1500, TRUE );
 
-	MoveSprite( 11, -923, -240, 0, 0, 0, 0, 0, 1500, FALSE );
-	MoveSprite( 12, -1006, -240, 0, 0, 0, 0, 0, 1500, TRUE );
+	MoveBustshot( 11, NULL, -723+80, -240+240, 0, 11, 1500, FALSE );
+	MoveBustshot( 12, NULL, -746+20, -240+240, 0, 11, 1500, TRUE );
 
 	FadeBustshot(11, FALSE, 0, 0, 0, 0, 200, FALSE);
 	FadeBustshot(12, FALSE, 0, 0, 0, 0, 200, TRUE);
@@ -542,12 +542,12 @@ void HanyuuAnim1()
 {
 	SetValidityOfInput(FALSE);
 
-	DrawSpriteFixedSize( 12, "sprite/ha5_shinken_0", NULL, -190, 238, 0, 0, 0, 1280, 720, 0, FALSE, FALSE, 0, 0, 12, 200, TRUE );
-	MoveSprite( 12, -294, 60, 0, 0, 0, 0, 0, 400, TRUE );
+	DrawBustshot( 12, "sprite/normal/ha5_shinken_0", 10+280, 238+240, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 200, TRUE );
+	MoveBustshot( 12, NULL, -94+280, 60+240, 0, 12, 400, TRUE );
 	ShakeScreen( 1, 6, 30, 12, 0, );
-	MoveSprite( 12, -234, -138, 0, 0, 0, 0, 0, 400, TRUE );
+	MoveBustshot( 12, NULL, -34+280, -138+240, 0, 12, 400, TRUE );
 	ShakeScreen( 1, 6, 30, 12, 0, );
-	MoveSprite( 12, -271, -240, 0, 0, 0, 0, 0, 400, TRUE );
+	MoveBustshot( 12, NULL, -71+280, -240+240, 0, 12, 400, TRUE );
 	ShakeScreen( 1, 6, 30, 12, 0, );
 
 	SetValidityOfInput(TRUE);
@@ -557,17 +557,17 @@ void HanyuuAnim2()
 {
 	SetValidityOfInput(FALSE);
 
-	DrawSpriteFixedSize( 12, "sprite/ha5_shinken_0", NULL, -271, -240, 0, 0, 0, 1280, 720, 0, FALSE, FALSE, 0, 0, 12, 0, TRUE );
-	MoveSprite( 12, -326, -37, 0, 0, 0, 0, 0, 400, TRUE );
+	DrawBustshot( 12, "sprite/normal/ha5_shinken_0", -71+280, -240+240, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 0, TRUE );
+	MoveBustshot( 12, NULL, -126+280, -37+240, 0, 12, 400, TRUE );
 	ShakeScreen( 1, 6, 30, 12, 0, );
-	MoveSprite( 12, -269, 163, 0, 0, 0, 0, 0, 400, TRUE );
+	MoveBustshot( 12, NULL, -69+280, 163+240, 0, 12, 400, TRUE );
 	ShakeScreen( 1, 6, 30, 12, 0, );
-	MoveSprite( 12, -300, 253, 0, 0, 0, 0, 0, 400, TRUE );
+	MoveBustshot( 12, NULL, -100+280, 253+240, 0, 12, 400, TRUE );
 	ShakeScreen( 1, 6, 30, 12, 0, );
 	Wait(500);
-	MoveSprite( 12, -271, -86, 0, 0, 0, 0, 0, 150, TRUE );
+	MoveBustshot( 12, NULL, -71+280, -86+240, 0, 12, 150, TRUE );
 	ShakeScreen( 1, 6, 30, 12, 0, );
-	MoveSprite( 12, -1029, -86, 0, 0, 256, 0, 0, 1000, FALSE ); //fade out
+	MoveSprite( 12, -629+80, -86+240, 0, 0, 256, 0, 0, 1000, FALSE ); //fade out
 	Update(); //execute stored actions
 	Wait(600);
 	if(GetGlobalFlag(MEHEND) >= 20)

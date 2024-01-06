@@ -184,6 +184,7 @@ void main()
 //	);
 
 	ModGenericCall("LipSyncSettings", ".3, .7, true");
+	SetNameHistoryFormat("{0}\n");//history seems to have broken nametags without it
 
 	CallScript( "flow" );
 }

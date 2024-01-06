@@ -102,7 +102,7 @@ void HouStaffRoll()
 	DrawSprite( 7, img2, NULL, -320, 0-h2+240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 8, 0, FALSE );
 	DrawScene("black", 0);
 
-	FadeOutBGM( 0, 6000, FALSE );
+	FadeOutBGM( 0, 10000, FALSE );
 	FadeSprite( 7, 6000, TRUE );
 	DrawScene( "black" , 100 );
 
