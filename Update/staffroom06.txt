@@ -19,10 +19,6 @@ void main()
 
 	//Unhandled: *Staff_room6
 
-	DrawScene( "black", 3000 );
-	FadeOutBGM( 0, 0, TRUE );
-	FadeOutBGM( 1, 0, TRUE );
-	StopSE( 0 );
 	//csp -1
 	//print 7
 	//Unhandled: mov %ZERO_MUGIC,0
@@ -100,7 +96,7 @@ void main()
 	DisableWindow();
 
 	PlaySE( 0, "wav/finish", 70, 64 );
-	DrawScene( "effect/f_a", 0 );
+	DrawScene( "effect/furiker_a", 50 );
 	ShakeScreen( 2, 15,  100 , 4, 25, );
 	DrawScene( "black", 400 );
 
@@ -347,7 +343,7 @@ void main()
 	DisableWindow();
 
 	PlaySE( 0, "wav/kaminari2", 70, 64 );
-	DrawScene( "effect/f_b", 0 );
+	DrawScene( "effect/furiker_b", 50 );
 	ShakeScreen( 2, 21,  100 , 4, 25, );
 	DrawScene( "black", 400 );
 
@@ -370,7 +366,7 @@ void main()
 	DisableWindow();
 
 	PlaySE( 0, "wav/finish", 70, 64 );
-	DrawScene( "effect/f_c", 0 );
+	DrawScene( "effect/furiker_a", 50 );
 	ShakeScreen( 2, 15,  100 , 2, 50, );
 
 	OutputLine(NULL, "って、",
@@ -396,12 +392,13 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "white", 1000 );
 	PlayBGM( 0, "bgm0/cafe", 70, 0 );
-	DrawScene( "img/dsc00039", 400 );
+	DrawScene( "bg/ke_shiryou1_02", 400 );
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「こんにちは、竜騎士07です。",
 		   NULL, "\"Hello, this is Ryukishi07.", Line_WaitForInput);
 	OutputLine(NULL, "…いやぁ、今回の修羅場は長かった！",
@@ -410,16 +407,16 @@ void main()
 		   NULL, " Thanks for your hard work, everyone---!!", Line_WaitForInput);
 	OutputLine(NULL, "　…とは言っても、これを打っている時点ではまさに追い込み中。",
 		   NULL, " ...Though as I'm typing this, we're right in the final stages. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "修羅場に疲れ切った男たちのうめき声が漏れ聞こえるのみです。」",
 		   NULL, "All I can hear are the groans of men thoroughly exhausted by this hell.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
-	DrawSceneWithMask( "img/dsc00038", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/left", 0, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……こんにちは、八咫桜にゃりん。",
 		   NULL, "\"......Hello, this is Yatazakura, nya.", Line_WaitForInput);
 	OutputLine(NULL, "…今回のシナリオがちゃんと冬コミに間に合ったとしたら、それはおいらのお陰にゃりんよ…。",
@@ -438,7 +435,7 @@ void main()
 
 	PlaySE( 0, "wav/boyon", 70, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「負ううん～負うぅん～。",
 		   NULL, "\"Fmmm~ Fmmm~.", Line_WaitForInput);
 	OutputLine(NULL, "こんにちは、ＢＴでござる。",
@@ -455,7 +452,7 @@ void main()
 		   NULL, " Fmmm, fmmm.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「スタッフの皆さん、本当にいつもありがとうございます…。",
 		   NULL, "\"To all the staff here, thank you very much for always doing this...", Line_WaitForInput);
 	OutputLine(NULL, "『ひぐらし』が無事に世に出せるのは皆さんのお力があればこそですーー！！」",
@@ -464,7 +461,7 @@ void main()
 	DisableWindow();
 
 	DrawSceneWithMask( "black", "effect/right", 0, 0, 300 );
-	DrawSceneWithMask( "img/dsc00039", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/right", 0, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　お陰様で、『ひぐらしのなく頃に』も無事に第７話をお届けすることができました。",
@@ -511,7 +508,10 @@ void main()
 	ClearMessage();
 
 	//Unhandled subroutine: omake_e
+	DisableWindow();
 
+	FadeOutBGM( 0, 1000, FALSE );
+	DrawScene( "black", 1000 );
 
 	//Unhandled: goto *Omake_mode
 }

@@ -8,7 +8,6 @@ void main()
 	//Unhandled subroutine: omake_s
 
 	//csp -1
-	DrawScene( "black", 1000 );
 	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
 	SetSpeedOfMessage( FALSE, 0 );
 
@@ -19,13 +18,14 @@ void main()
 
 	PlayBGM( 0, "bgm1/otonasi", 70, 0 );
 
-	DrawScene( "img/dsc00039", 1000 );
+	DrawScene( "bg/ke_shiryou1_02", 1000 );
 
 	Wait( 2000 );
+	DrawScene( "black", 1000 );
 
-	DrawScene( "img/dsc00038", 3000 );
+	DrawScene( "bg/ke_shiryou1_02", 3000 );
 
-	Wait( 2000 );
+	Wait( 1000 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -133,9 +133,10 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "img/dsc000102", 3000 );
+	DrawScene( "black", 1000 );
+	DrawScene( "bg/ke_shiryou1_02", 3000 );
 
-	Wait( 2000 );
+	Wait( 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もちろん、人生には酸いも甘いも色々あります。",
@@ -234,7 +235,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "img/dsc00004", 400 );
+	DrawScene( "bg/ke_shiryou1_02", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今まで、僕は年２回のコミックマーケットに毎回新作を発表するというスタイルを１０年以上続けてきました。",
@@ -342,7 +343,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "img/dsc00038", 400 );
+	DrawScene( "bg/ke_shiryou1_02", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　応援して下さる皆さんのお陰で、僕は今日まで走って来れました。",
@@ -551,7 +552,7 @@ void main()
 	FadeOutMultiBGM( 0, 5, 1000, TRUE );
 	StopAllSound();
 
-	DrawScene( "bg/jinja/jt1", 3000 );
+	DrawScene( "bg/jt1", 3000 );
 	PlayBGM( 0, "bgm1/cure_world", 70, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -619,7 +620,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だって、皆さんに再会する唯一の方法が、作品を作り続けることだと思っているからです。",
-		   NULL, "After all, the only way for me to see all of you again, is for me to keep creating new tites.", Line_Normal);
+		   NULL, "After all, the only way for me to see all of you again, is for me to keep creating new titles.", Line_Normal);
 	ClearMessage();
 
 
@@ -690,6 +691,7 @@ void main()
 	Wait( 2000 );
 	Wait( 3000 );
 
+	FadeOutBGM( 0, 3000, FALSE );
 	DrawScene( "black", 3000 );
 
 

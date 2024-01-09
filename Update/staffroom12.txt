@@ -8,16 +8,15 @@ void main()
 	//Unhandled subroutine: omake_s
 
 	//csp -1
-	DrawScene( "black", 1000 );
 	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
 	SetSpeedOfMessage( FALSE, 0 );
 
-	DrawScene( "img/dsc000102", 1000 );
+	DrawScene( "bg/ke_shiryou1_02", 1000 );
 	PlayBGM( 0, "bgm0/amber", 70, 0 );
 	//;■スタッフルーム
 
 	ClearMessage();
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「こんばんは。竜騎士07です。",
 		   NULL, "\"Good evening. This is Ryukishi07.", Line_WaitForInput);
 
@@ -55,7 +54,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「こんばんは。",
 		   NULL, "\"Good evening.", Line_WaitForInput);
 	OutputLine(NULL, "八咫桜です。",
@@ -97,7 +96,7 @@ void main()
 	PlaySE( 0, "wav/finish", 70, 64 );
 
 	SetSpeedOfMessage( TRUE, 128 );
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　９６時間くらいはあるにゃー！！！」",
 		   NULL, "We have 96 hours left, nyaaa!!!\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -109,7 +108,7 @@ void main()
 
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「前回とは大違い！！",
 		   NULL, "\"That's a huge difference from last time!!", Line_WaitForInput);
 	OutputLine(NULL, "　やればできるんだね！！",
@@ -135,7 +134,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あぅうあ…。",
 		   NULL, "\"Auuuah...", Line_WaitForInput);
 	OutputLine(NULL, "でも、今回もまたちょいと複雑ですからにゃ…。",
@@ -144,55 +143,55 @@ void main()
 		   NULL, " I need to do plenty of error checking...\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「エラーチェックしたら量産して。",
 		   NULL, "\"Once you're done error checking, let's print.", Line_WaitForInput);
 	OutputLine(NULL, "量産したＲにラベルシールを貼って。",
 		   NULL, " Then we'll put the label stickers on the printed CDs.", Line_WaitForInput);
 	OutputLine(NULL, "それから店頭レイアウトに少し気を使わないと…。",
 		   NULL, " Then we'll need to put a little thought into our counter layout... ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…前回はテーブルクロスすら忘れちゃって…すごくひもじい出展でした…。」",
 		   NULL, "...Last time we forgot even the tablecloth... It was a really pathetic display...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そもそも…同人ソフトって世界は同人誌に比べて辛い世界にゃりね…。」",
 		   NULL, "\"For starters... the world of doujinshi software is harsher than that of doujinshi manga, nya...\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Yeah.", Line_WaitForInput);
 	OutputLine(NULL, "だって同人誌は、立ち読みして吟味して、ある程度納得がいってから買えるからリスクは非常に低いんですが、ソフトはそうはいかないですからねー…。」",
 		   NULL, " With manga you can stand there, read a sample, and get a general idea before buying, so they're extremely low risk purchases, but you can't do that with software...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ＣＧ集なんかは表裏がないにゃりね。",
 		   NULL, "\"There's nothing hidden with CG collections, nya.", Line_WaitForInput);
 	OutputLine(NULL, "見たまんまが中身にゃり。」",
 		   NULL, " What you see is what you get there, nya.\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「でもうちみたいなノベルは…どうやってＰＲすりゃいいんですかね……。",
 		   NULL, "\"But with novel games like ours... how are you supposed to promote them...?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　噂じゃ、あの大「月姫」さまだって、半月版とかの最初のリリース時にはほとんど誰も手にとってくれなかった…なんて話らしいし…。」",
 		   NULL, "From what I've heard, even big Tsukihime-sama saw hardly anyone pick it up when it was first released in its half-moon version... At least that's the story...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「もうこればかりは、ひたすら頑張って良い作品を作って…、",
 		   NULL, "\"The only thing you can do is to work hard and make a good game...", Line_WaitForInput);
 	OutputLine(NULL, "信頼を築き上げていくほかないにょり。」",
 		   NULL, " so that way you can build up trust, nya.\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「………ぅぅ、…たくさんの人にプレイしてもらいたいのは、送り手としての唯一の夢じゃないですか…。",
 		   NULL, "\".........Nnh... But it's every creator's biggest dream to have lots of people play their games, you know...", Line_WaitForInput);
 	OutputLine(NULL, "私にとってのコミケのソロデビューは…とっても悲しい現実でしたよ……。」",
@@ -201,8 +200,8 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	FadeOutBGM( 0, 0, TRUE );
-	DrawScene( "img/dsc00004", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	DrawScene( "bg/ke_shiryou1_02", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あれは…いつの夏コミだったかも思い出せない…。",
@@ -253,7 +252,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　結局、当時のサークルの人のご好意で……とりあえず出展には漕ぎ着けたけど、",
-		   NULL, "In the end, the circle I was with at the time showed me kidness...... and I managed to get my book on display there...", Line_ContinueAfterTyping);
+		   NULL, "In the end, the circle I was with at the time showed me kindness...... and I managed to get my book on display there...", Line_ContinueAfterTyping);
 	Wait( 1000 );
 	OutputLine(NULL, "………今から思えば、…出展しない方が、マシだったんだ。",
 		   NULL, " .........but thinking back on it now... it would've been better if I hadn't.", GetGlobalFlag(GLinemodeSp));
@@ -326,9 +325,9 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "img/dsc000103", 1000 );
+	DrawScene( "bg/ke_shiryou1_02", 1000 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ぅぅぅぅぅ！",
 		   NULL, "\"Uuuunh!", Line_WaitForInput);
 	OutputLine(NULL, "　竜タソも涙をこぼしながら頑張ってきたにゃりね…。",
@@ -341,12 +340,12 @@ void main()
 		   NULL, " By the way, what kind of doujinshi was it that you made, nya?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「部屋を探せば出てくるでしょうが…、恥ずかしいので絵は勘弁して下さい…。」",
-		   NULL, "\"I think you can find it if you search my room... but it's so embarassing, so cut me some slack on the art...\"", Line_Normal);
+		   NULL, "\"I think you can find it if you search my room... but it's so embarrassing, so cut me some slack on the art...\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「本は絵だけでは決まらないにょり！！",
 		   NULL, "\"Don't judge a book on art alone, nya!!", Line_WaitForInput);
 	OutputLine(NULL, "　大事なのは中身とハートにゃ！！",
@@ -355,14 +354,14 @@ void main()
 		   NULL, " Now, come on, tell me about it.\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「えっとですね、……創作漫画なんですよ。",
 		   NULL, "\"Well, uhh...... it was a story manga.", Line_WaitForInput);
 	OutputLine(NULL, "オリジナルの。」",
 		   NULL, " An original one.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ほうほう。",
 		   NULL, "\"Ho-ho?", Line_WaitForInput);
 	OutputLine(NULL, "二次創作全盛の同人漫画界で創作とはガッツがあるにゃりよ。」",
@@ -371,24 +370,24 @@ void main()
 
 	PlayBGM( 0, "bgm1/rika", 70, 0 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「でですね、１８禁なんですよ…。」",
 		   NULL, "\"So, well, it was also 18+...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「まぁ、同人１８禁はお約束にょり。",
 		   NULL, "\"Well, most doujin are 18+, nya.", Line_WaitForInput);
 	OutputLine(NULL, "して中身は？」",
 		   NULL, " So what was in it?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「えっとですね、ギャグとか救いのない、いわゆる鬼畜系なんですよ…。」",
 		   NULL, "\"Well, umm, there were no gags or salvation. It was what they'd call the brute genre...\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ほほう、それはハードですにゃ。",
 		   NULL, "\"Ho-ho, so you went hardcore, nya.", Line_WaitForInput);
 
@@ -398,12 +397,12 @@ void main()
 		   NULL, " So what situations were they in?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「まぁそのですね、ある女の子が悪い連中に弱みを握られて、言いなりにさせられちゃうと。」",
 		   NULL, "\"Well, umm, there was a woman who was being blackmailed by a bad group of people that forced her to do as they told her.\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ふむふむ。",
 		   NULL, "\"Mhmm.", Line_WaitForInput);
 	OutputLine(NULL, "ありがちですにゃ。",
@@ -412,7 +411,7 @@ void main()
 		   NULL, " So then what did they tell her to do?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「えっとですね、色々と着替えさせられるんですよ。」",
 		   NULL, "\"Uhh, well, they had her change into different outfits.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -420,7 +419,7 @@ void main()
 
 	PlaySE( 0, "wav/boyon", 70, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「何ですかソレ。」",
 		   NULL, "\"What do you mean?\"", Line_Normal);
 	ClearMessage();
@@ -428,12 +427,12 @@ void main()
 
 	DrawScene( "black", 400 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「当時はＦＦⅦの発売が目前でして、竜騎士07はＦＦにはまっていたんですよ。」",
 		   NULL, "\"At the time FF7's release date was getting close, and I was hooked on FF.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「話が全然見えんにょり。」",
 		   NULL, "\"I don't see how that relates, nya.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -445,7 +444,7 @@ void main()
 	Wait( 300 );
 	PlaySE( 0, "wav/furu", 70, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「つまりですね。",
 		   NULL, "\"Well, in short,", Line_WaitForInput);
 
@@ -455,14 +454,14 @@ void main()
 		   NULL, " they made that girl change into one FF outfit after another and had sex with her.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ＦＦの衣装と言われても、いっぱいあってさっぱり見当がつかないにゃ。」",
 		   NULL, "\"You say FF outfits, but there are so many I can't even begin to picture this, nya.\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「えっとですね…、記憶を辿るとですね…。",
 		   NULL, "\"Uhh, well... to trace my memory back...", Line_WaitForInput);
 
@@ -474,14 +473,14 @@ void main()
 
 	PlaySE( 0, "wav/boyon", 70, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ＦＦⅣはローザの衣装で、ＦＦⅤはモンクの衣装に赤魔導師に竜騎士にすっぴんに！",
 		   NULL, "There was Rosa's outfit from FF4, then there were the Monk, Red Mage, and Dragoon outfits from FF5 with no makeup!", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 0, "wav/boyon", 70, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ＦＦⅥはもちろんティナとセリスの衣装なのですよ！",
 		   NULL, "And of course there was Terra and Celes's outfits from FF6!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -489,9 +488,9 @@ void main()
 
 	PlaySE( 0, "wav/boyon", 70, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　んで発売直前とは言え、イラストが公開されていたＦＦⅦからはティナたんとエアリスたんの衣装をチョイス！！",
-		   NULL, "And even though it was yet to be released, they'd publicized illustrations already, so I chose to use Tina and Aerith's oufits from FF7!!", Line_WaitForInput);
+		   NULL, "And even though it was yet to be released, they'd publicized illustrations already, so I chose to use Tifa and Aerith's oufits from FF7!!", Line_WaitForInput);
 	OutputLine(NULL, "　どうですよ？！",
 		   NULL, " What do you think?!", Line_WaitForInput);
 
@@ -503,7 +502,7 @@ void main()
 	Wait( 200 );
 	DisableWindow();
 
-	DrawScene( "effect/f_a", 0 );
+	DrawScene( "effect/furiker_a", 50 );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	OutputLine(NULL, "　ＦＦ古今東西勢揃いコスプレＨ漫画なんですよ～～！！！",
@@ -514,11 +513,11 @@ void main()
 	PlaySE( 0, "wav/daidageki", 70, 64 );
 	ShakeScreen( 2, 12,  30 , 2, 50, );
 	Wait( 40 );
-	DrawScene( "img/dsc000103", 400 );
+	DrawScene( "bg/ke_shiryou1_02", 400 );
 
 	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　んで、これらの衣装を次々と着せられてＨを強要されると。",
 		   NULL, "So the guys would have her change into the different outfits and force her to have sex with them.", Line_WaitForInput);
 	OutputLine(NULL, "ね？！",
@@ -527,19 +526,19 @@ void main()
 		   NULL, " See?!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　スゴイでしょー？！？！」",
 		   NULL, "Incredible, right?!?!\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「………専門学校時代の友達のＨ君、彼、ス●ウェアでしょ。",
 		   NULL, "\".........Your friend from Vocational School, H-kun, he's with Square, right?", Line_WaitForInput);
 	OutputLine(NULL, "そーゆうの公言しちゃマズイんじゃ。」",
 		   NULL, " Should you really be saying this to the public?\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ちなみにですね！",
 		   NULL, "\"By the way!", Line_WaitForInput);
 	OutputLine(NULL, "　このＦＦ編はあくまでもひとつのお話でして、実際の個人誌にはさらにもう一話がプラスッ！！！",
@@ -550,10 +549,9 @@ void main()
 		   NULL, " Would you believe it?! ", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
 
-	DrawScene( "effect/f_b", 0 );
+	DrawScene( "effect/furiker_b", 50 );
 
-	SetSpeedOfMessage( TRUE, 128 );
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ＦＦ編に対してこっちは万人向けに「学校制服編」！！！」",
 		   NULL, "In contrast to the FF chapter, this one was a school uniform chapter for the general public!!!\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -562,25 +560,25 @@ void main()
 	PlaySE( 0, "wav/finish", 70, 64 );
 	ShakeScreen( 0, 12, 30, 2, 50, );
 	Wait( 40 );
-	DrawScene( "img/dsc000103", 400 );
+	DrawScene( "bg/ke_shiryou1_02", 400 );
 
 	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…それは何とも、描き手が幸せそうな感じですにゃ。」",
 		   NULL, "\"...That sounds like something the author would love drawing, nya.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「こっちはもちろん着せられる衣装の内容も方向転換んん！！",
 		   NULL, "\"In this one they take a different direction with the outfits they force her to change into!!", Line_WaitForInput);
 	OutputLine(NULL, "　ブレザー、セーラー服等から数種の制服をチョイス！",
 		   NULL, " There were blazers, sailor uniforms, and several more select uniforms!", Line_WaitForInput);
 	OutputLine(NULL, "　もちろん体操服もあったにゃり～！！！",
 		   NULL, " Of course there were PE uniforms too, nya~!!! ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あぁあぁ？！",
 		   NULL, "Aaaaah?!", Line_WaitForInput);
 	OutputLine(NULL, "　当時の竜騎士、浅はか過ぎ？！",
@@ -596,12 +594,12 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「これがホントの逝ってよしですにゃ。」",
 		   NULL, "\"It's seriously okay for you die now, nya.\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あぁあぁ…！！",
 		   NULL, "\"Aahaah...!!", Line_WaitForInput);
 	OutputLine(NULL, "　今ですね、もしも竜騎士07が分身できるとしたら、もうひとりの自分にはこのシリーズの第３話を描いてもらいますよ！！",
@@ -614,7 +612,7 @@ void main()
 
 	PlaySE( 0, "wav/kyupirn", 70, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　アコたんやプリたんの衣装ではぁはぁ…！",
 		   NULL, "Aco-tan and Pri-tan's outfits, hahh, hahh...!", Line_WaitForInput);
 
@@ -636,7 +634,7 @@ void main()
 
 	PlaySE( 0, "wav/boyon", 70, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　プリたんのパンチラ、ぱんつじゃなくて紺ブルマになったんですって？！",
 		   NULL, "And I hear Pri-tan wears striped bloomers, not panties under her outfit?!", Line_WaitForInput);
 
@@ -663,7 +661,7 @@ void main()
 
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「とんでもないダメ人間全開にゃり。",
 		   NULL, "\"What an incredible display of human failure, nya.", Line_WaitForInput);
 	OutputLine(NULL, "…竜騎士さんがまたしてもえいえその世界に旅立たれたので、今回も私が締めますにゃ。」",
@@ -751,14 +749,14 @@ void main()
 
 	DrawScene( "black", 400 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「次回は…冬コミ！！",
 		   NULL, "\"Next time... will be at Winterket!!", Line_WaitForInput);
 	OutputLine(NULL, "　９月１日から製作を始めても…４ヶ月しかないにゃりー！！」",
 		   NULL, " Even if we start production on September 1st... that's only four months, nya!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「それでですね！！",
 		   NULL, "\"So then, okay!!", Line_WaitForInput);
 
@@ -770,7 +768,7 @@ void main()
 	PlaySE( 0, "wav/daidageki", 70, 64 );
 
 	SetSpeedOfMessage( TRUE, 128 );
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もちろん新上級職の踊り子の過剰露出にも期待大ぃいいいぃい！！！」",
 		   NULL, "Of course I have great expectations for the excessive exposure of the Dancer's newest advanced Class toooooooo!!!\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -782,7 +780,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「歯を食いしばるにゃあぁああぁああ！！",
 		   NULL, "\"Grit your teeth, nyaaaaaaaaaah!!", Line_WaitForInput);
 	OutputLine(NULL, "　はぃいいぃ！！　指導指導ーッ！！！」",
@@ -797,32 +795,32 @@ void main()
 	Wait( 300 );
 	PlaySE( 0, "wav/nageru", 70, 64 );
 	Wait( 300 );
-	DrawScene( "effect/f_b", 0 );
+	DrawScene( "effect/furiker_b", 50 );
 	Wait( 300 );
 	PlaySE( 0, "wav/dageki", 70, 64 );
 	ShakeScreen( 2, 3,  30 , 2, 50, );
 	Wait( 40 );
-	DrawScene( "effect/f_a", 0 );
+	DrawScene( "effect/furiker_a", 50 );
 	Wait( 300 );
 	PlaySE( 0, "wav/dageki", 70, 64 );
 	ShakeScreen( 0, 3, 30, 2, 50, );
 	Wait( 40 );
-	DrawScene( "effect/f_b", 0 );
+	DrawScene( "effect/furiker_b", 50 );
 	Wait( 300 );
 	PlaySE( 0, "wav/dageki", 70, 64 );
 	ShakeScreen( 2, 3,  30 , 2, 50, );
 	Wait( 40 );
-	DrawScene( "effect/f_a", 0 );
+	DrawScene( "effect/furiker_a", 50 );
 	Wait( 300 );
 	PlaySE( 0, "wav/daidageki", 70, 64 );
 	ShakeScreen( 0, 12, 30, 2, 50, );
 	Wait( 40 );
-	DrawScene( "effect/bg0", 0 );
+	DrawScene( "effect/furiker_c", 50 );
 	Wait( 300 );
 	PlaySE( 0, "wav/daidageki", 70, 64 );
 	ShakeScreen( 0, 12, 30, 2, 50, );
 	Wait( 40 );
-	DrawScene( "white", 0 );
+	DrawScene( "white", 50 );
 	Wait( 300 );
 	PlaySE( 0, "wav/finish", 70, 64 );
 	ShakeScreen( 2, 9,  30 , 2, 50, );
@@ -830,11 +828,11 @@ void main()
 
 	//;■エフェクトよろしくです☆　連打してください☆
 
-	DrawScene( "img/dsc000103", 3000 );
+	DrawScene( "bg/ke_shiryou1_02", 3000 );
 	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
 	SetSpeedOfMessage( FALSE, 0 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ひぃいいいぃ！！　暴力教師ぃいいぃいい！！！」",
 		   NULL, "\"Hiiiiiiii!! Violent teacheeeeeeeeeeeeeer!!!\"", Line_Normal);
 	ClearMessage();
@@ -845,6 +843,7 @@ void main()
 
 
 
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 	//Unhandled subroutine: omake_e
 

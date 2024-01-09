@@ -2647,7 +2647,7 @@ void main()
 	StopBGM( 0 );
 
 	DrawScene( "white", 50 );
-	DrawScene( "bg/effect/eye", 400 );
+	DrawScene( "effect/eye", 400 );
 	DrawScene( "black", 400 );
 
 	//CallScriptSection( "util", "RainOn" );
@@ -2728,7 +2728,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	ChangeBustshotWithFiltering( 1, "sprite/normal/hara1a_11_0", "effect/right", 0, 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/hara1a_11_0", 300, TRUE );
 
 	PlayVoice(4, "ps3/s26/55/tara_0340", 128);
 	OutputLine("<color=#5f5248>荒川</color> ", "「公務中に倒れる度にどこぞの祟りだなんて言われてたらたまったもんじゃないんですよッ！」",
@@ -3225,7 +3225,7 @@ void main()
 
 	DrawScene( "black", 1000 );
 	//CallScriptSection( "util", "RainOff" );
-	DrawScene( "bg/effect/eye", 400 );
+	DrawScene( "effect/eye", 400 );
 	PlayBGM( 2, "me/a5_14446", 70, 0 );
 	//;ld r,ara_D4a,80
 
@@ -5804,7 +5804,7 @@ void main()
 	ChangeBustshot( 6, "sprite/normal/hyos1a_13_0", 200, TRUE );
 	PlayVoice(4, "ps3/s26/54/tyos_1400", 128);
 	OutputLine("<color=#715348>吉村</color> ", "「……あれ、…ひょっとして失禁しました…？……恥ずかしいなぁ…。」",
-		   "<color=#715348>Yoshimura</color> ", "\"......Huh? ...Did you wet yourself, by chance...? ......How embarassing...\"", Line_Normal);
+		   "<color=#715348>Yoshimura</color> ", "\"......Huh? ...Did you wet yourself, by chance...? ......How embarrassing...\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 

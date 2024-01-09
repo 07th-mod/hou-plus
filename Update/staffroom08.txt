@@ -8,13 +8,9 @@ void main()
 	//Unhandled subroutine: omake_s
 
 	//csp -1
-	DrawScene( "black", 1000 );
 
 	//Unhandled: *Staff_room8
 
-	FadeOutBGM( 0, 0, TRUE );
-	FadeOutBGM( 1, 0, TRUE );
-	StopSE( 0 );
 	//csp -1
 	//print 7
 	//Unhandled: mov %ZERO_MUGIC,0
@@ -45,8 +41,8 @@ void main()
 	DisableWindow();
 
 
-	DrawSceneWithMask( "img/dsc000103", "effect/up", 0, 0, 1300 );
-	DrawBustshot( 1, "sprite/okonogi/oko_akuwarai", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
+	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/up", 0, 0, 1300 );
+	DrawBustshot( 1, "sprite/normal/oko3_niyari_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　前日まで風邪で寝込んでいた竜騎士07は、病み上がりにも関わらず、シナリオを熱演。",
@@ -66,7 +62,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "black", 0 );
+	DrawScene( "black", 100 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ひとつ決定的に違うことがあり、",
@@ -84,7 +80,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "bg/mura/sora", 400 );
+	DrawScene( "bg/sora", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……あぁ、大きな変化があった。",
@@ -93,7 +89,7 @@ void main()
 	DisableWindow();
 
 	PlaySE( 0, "wav/hikaru", 70, 64 );
-	DrawBustshotWithFiltering( 1, "sprite/okonogi/oko_akuwarai", "effect/right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/oko3_niyari_2", "effect/right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　竜騎士07が、夏になったらプールに行きたいと言い出したのだ。",
@@ -126,7 +122,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	FadeFilm( 0, FALSE ); //end negative color
+	FadeFilm( 300, TRUE ); //end negative color
 	//Unhandled: print 1
 
 	SetSpeedOfMessage( TRUE, 128 );
@@ -198,7 +194,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "img/dsc00039", 0 );
+	DrawScene( "bg/ke_shiryou1_02", 50 );
 	PlaySE( 0, "wav/boyon", 70, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -230,8 +226,8 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "img/dsc000102", 400 );
-	DrawBustshotWithFiltering( 1, "sprite/sonota/oisi10", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	DrawScene( "bg/ke_shiryou1_02", 400 );
+	DrawBustshotWithFiltering( 1, "sprite/normal/oisi2_10_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　八咫桜は、コミケが終わったら積みゲー消化のため、ゲームに専念するように誓わされているらしい。",
@@ -252,7 +248,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprite/sonota/oisi7", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/oisi2_7_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もっとも、稀代の名将（何のだよｗ）、八咫桜がまさか積みゲーに埋もれて死亡なんてことはあるまい。",
@@ -303,7 +299,7 @@ void main()
 	Wait( 300 );
 	DisableWindow();
 	PlaySE( 0, "wav/tatakiwaru", 70, 64 );
-	DrawScene( "effect/ryuuketu1", 0 );
+	DrawScene( "effect/ryuuketu1", 50 );
 	ShakeScreen( 0, 12, 100, 3, 33, );
 
 	OutputLine(NULL, "（ry",
@@ -315,8 +311,8 @@ void main()
 	//;dwaveload 13,"WAV\Heri1.wav"
 	//;dwaveplay 13
 
-	DrawSceneWithMask( "bg/sonota/heri1", "effect/up", 0, 0, 1300 );
-	DrawBustshotWithFiltering( 1, "sprite/rika/nekomimi/ri_komarua1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	DrawSceneWithMask( "bg/heri_gunji_01", "effect/up", 0, 0, 1300 );
+	DrawBustshotWithFiltering( 1, "sprite/normal/ri4_komaru_a1_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 	SetSpeedOfMessage( FALSE, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ＢＴは、今後もどうか我がサークルＨＰの管理人をと打診されているという。",
@@ -388,9 +384,8 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	FadeOutBGM( 1, 0, TRUE );
-	DrawSceneWithMask( "bg/resut/re5", "effect/maskc", 0, 0, 1300 );
-	DrawBustshotWithFiltering( 1, "sprite/takano/hakui/ta_akuwarai", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+	DrawSceneWithMask( "bg/res5", "effect/maskc", 0, 0, 1300 );
+	DrawBustshotWithFiltering( 1, "sprite/normal/ta2_akuwarai_2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ｄａｉさんもまた、ますます元気になっていく。",
@@ -400,7 +395,6 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　本当は音楽協力だけのはずだったのに、",
 		   NULL, "Even though he's only supposed to be helping with the music, when Ryukishi07 pitifully cried,", Line_WaitForInput);
-	SetSpeedOfMessage( TRUE, 128 );
 
 	PlaySE( 0, "wav/boyon", 70, 64 );
 
@@ -428,7 +422,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprite/takano/hakui/ta_komaru2", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/ta2_iradachi_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　監禁生活は長期にわたり、自分はこのまま誘拐されたことになって郷里の両親に捜索願を出されてしまうのではと、戦々恐々としながら過ごしているという。",
@@ -461,8 +455,8 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "bg/tokyo/ho3", 400 );
-	DrawBustshotWithFiltering( 1, "sprite/sonota/tetu1", "effect/up", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 1300, TRUE );
+	DrawScene( "bg/je1", 400 );
+	DrawBustshotWithFiltering( 1, "sprite/normal/tetu_1_0", "effect/up", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 400, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　なるせ椿だって、ますますに元気が止まらなくなっていく。",
 		   NULL, "Naruse Tsubaki was also growing more and more full of life.", Line_Normal);
@@ -549,7 +543,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "bg/sonozaki/ryoutei2", 400 );
+	DrawScene( "bg/ryoutei2_01", 400 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -559,7 +553,7 @@ void main()
 	DisableWindow();
 
 
-	DrawBustshotWithFiltering( 1, "sprite/okonogi/oko_akuwarai", "effect/right", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/oko3_def_0", "effect/right", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
 
 	PlaySE( 0, "wav/nageru", 70, 64 );
 	Wait( 200 );
@@ -567,8 +561,7 @@ void main()
 	Wait( 200 );
 	PlaySE( 0, "wav/nageru", 70, 64 );
 
-	SetSpeedOfMessage( TRUE, 128 );
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あーすみません～！",
 		   NULL, "\"Oh, excuse me!", Line_WaitForInput);
 	OutputLine(NULL, "　こっち注文お願いします～！！",
@@ -580,13 +573,13 @@ void main()
 		   NULL, " Hehehe, now, young lady.", Line_WaitForInput);
 	OutputLine(NULL, "俺がこれから頼むものには全部、頭に“特上”をつけてくれよ？",
 		   NULL, " Could you add 'first class' in front of everything I'm about to order? ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ロースと特上ロースじゃあ、雲泥の差があるんだからよ～ぅ。",
 		   NULL, "There's a world of difference between a roast and a first class roast, after all.", Line_WaitForInput);
 	DisableWindow();
 
 	PlaySE( 0, "wav/hikaru", 70, 64 );
-	ChangeBustshot( 1, "sprite/okonogi/oko_warai", 200, TRUE );
+	ChangeBustshot( 1, "sprite/normal/oko3_niyari_2", 200, TRUE );
 
 	OutputLine(NULL, "へっへっへ、",
 		   NULL, " Hehehe.", Line_ContinueAfterTyping);
@@ -601,7 +594,7 @@ void main()
 
 	PlaySE( 0, "wav/boyon", 70, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……まずナムルにクッパにユッケを人数分、",
 		   NULL, "......First off, one namul, gukbap, and yukhoe for everyone here,", Line_ContinueAfterTyping);
 
@@ -632,33 +625,28 @@ void main()
 
 	PlaySE( 0, "wav/boyon", 70, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……あとはコーラでいい？」",
 		   NULL, "......Also, can we get some soda?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "bg/mura/sora", 0 );
-	SetSpeedOfMessage( TRUE, 128 );
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "「「「肉頼めよ肉ぅううううぅ！」」」",
-		   NULL, "\"\"\"Order some meat! Some meeeeat!\"\"\"", Line_ContinueAfterTyping);
-
+	DrawScene( "bg/sora", 50 );
 	PlaySE( 0, "bb", 70, 64 );
 	ShakeScreen( 2, 15,  100 , 4, 25, );
-
-	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
-
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>全員</color>", NULL, "<color=#f5e6d3>Everyone</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「「「肉頼めよ肉ぅううううぅ！」」」",
+		   NULL, "\"\"\"Order some meat! Some meeeeat!\"\"\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「どれも特上ないじゃんって突っ込めよーー！！」",
 		   NULL, "\"Call me out on none of those being first class--!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "bg/sonota/fure2", "effect/maskc", 0, 0, 1300 );
+	DrawSceneWithMask( "bg/fure2", "effect/maskc", 0, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　修羅場を共にしてくれた戦友諸君に敬礼…！！",
