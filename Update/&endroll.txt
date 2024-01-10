@@ -155,10 +155,10 @@ void HouStaffFinal()
 
 	SetValidityOfInput(FALSE);
 	Wait(2000);
-	DrawScene("bg\2021_add\s_roll_last_1", 1000);
+	DrawScene("omake\s_roll_last_1", 1000);
 
 	Wait(2000);
-	DrawScene("bg\2021_add\s_roll_last_2", 1000);
+	DrawScene("omake\s_roll_last_2", 1000);
 	Wait(4000);
 
 	FadeOutBGM( 0, 4000, FALSE );

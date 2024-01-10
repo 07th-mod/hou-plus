@@ -1919,12 +1919,28 @@ void main()
 
 	DrawScene( "white", 1000 );
 
-	DrawScene( "omake/thanks_for_all_0", 1000 );
+	DrawBustshot( 1, "sprite/normal/kasa_1_0", -390, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
+	DrawBustshot( 2, "sprite/normal/oko3_niyari_2", 390, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
+	DrawBustshot( 3, "sprite/normal/tetu_5_0", -275, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+	DrawBustshot( 4, "sprite/normal/aks1_warai_2", 275, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE );
+	DrawBustshot( 5, "sprite/normal/iri1_warai_2", -165, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
+	DrawBustshot( 6, "sprite/normal/oisi1_2_2", 165, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 6, 0, FALSE );
+	DrawBustshot( 7, "sprite/normal/tomi1_warai_2", -55, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 7, 0, FALSE );
+	DrawBustshot( 8, "sprite/normal/ta1_warai_2", 55, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawScene( "bg/res5", 1000 );
 	//;全員集合1
 
 	Wait( 4000 );
 
-	DrawScene( "omake/thanks_for_all_1", 1000 );
+	DrawBustshot( 11, "sprite/normal/sato1_warai_1", -375, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 11, 0, FALSE );
+	DrawBustshot( 12, "sprite/normal/ha1_warai_2", 375, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 0, FALSE );
+	DrawBustshot( 13, "sprite/normal/si1a_warai_a1_2", -225, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 13, 0, FALSE );
+	DrawBustshot( 14, "sprite/normal/me2_warai_a1_2", 225, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 14, 0, FALSE );
+	DrawBustshot( 15, "sprite/normal/sa2a_warai_a1_0", -375, 95, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 15, 0, FALSE );
+	DrawBustshot( 16, "sprite/normal/re2a_warai_a1_2", 75, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 16, 0, FALSE );
+	DrawBustshot( 17, "sprite/normal/ri2_warai_a1_2", -225, 95, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 17, 0, FALSE );
+	DrawBustshot( 18, "sprite/normal/kei2_warai_2", -75, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 0, FALSE );
+	DrawScene( "bg/res1", 1000 );
 	//;全員集合2
 
 	Wait( 4000 );
