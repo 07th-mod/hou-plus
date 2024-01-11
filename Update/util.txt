@@ -141,9 +141,9 @@ void HanyuuDance()
 
 	PlaySE( 1, "horror", 50, 64 );
 
-	DrawBustshot( 25, "sprite/transparent/ha1_warai_2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
+	DrawBustshot( 25, "sprite/normal-70/ha1_warai_2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
 	DrawBustshot( 25, "sprite/normal/ha1_warai_2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
-	DrawBustshot( 25, "sprite/transparent/ha1_warai_2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
+	DrawBustshot( 25, "sprite/normal-70/ha1_warai_2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
 	DrawBustshot( 25, "sprite/normal/ha1_warai_2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
 
 	Wait( 500 );

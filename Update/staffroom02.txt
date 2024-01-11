@@ -15,7 +15,7 @@ void main()
 	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
 	//Unhandled: rmode ON
 
-	DrawScene( "bg/ke_shiryou1_02", 400 );
+	DrawScene( "background/ke_shiryou1_02", 400 );
 	PlayBGM( 0, "bgm0/4", 70, 0 );
 	SetSpeedOfMessage( FALSE, 0 );
 	ClearMessage();
@@ -32,7 +32,7 @@ void main()
 	DrawScene( "effect/furiker_a", 50 );
 	ShakeScreen( 0, 12, 30, 2, 50, );
 	Wait( 40 );
-	DrawScene( "bg/ke_shiryou1_02", 200 );
+	DrawScene( "background/ke_shiryou1_02", 200 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
@@ -102,7 +102,7 @@ void main()
 
 	ShakeScreen( 2, 12,  30 , 2, 50, );
 	Wait( 40 );
-	DrawScene( "bg/ke_shiryou1_02", 200 );
+	DrawScene( "background/ke_shiryou1_02", 200 );
 
 	OutputLineAll(NULL, "", Line_Normal);
 
@@ -267,7 +267,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	DrawScene( "bg/ke_shiryou1_02", 400 );
+	DrawScene( "background/ke_shiryou1_02", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ぶっちゃけ、ＲＯでは２アカ２ＰＣって人、少なくないと思うんですよ。",
@@ -306,7 +306,7 @@ void main()
 
 	DisableWindow();
 
-	DrawScene( "bg/ke_shiryou1_02", 400 );
+	DrawScene( "background/ke_shiryou1_02", 400 );
 
 	OutputLine(NULL, "　ＰＳはプレステ。",
 		   NULL, " PS being Playstation.", Line_WaitForInput);
@@ -544,7 +544,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 200 );
-	DrawScene( "bg/ke_shiryou1_02", 400 );
+	DrawScene( "background/ke_shiryou1_02", 400 );
 	SetSpeedOfMessage( FALSE, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「この度は『ひぐらしのなく頃に』目明し編をお楽しみくださいまして、誠にありがとうございますにゃり。」",
@@ -608,7 +608,7 @@ void main()
 
 	DisableWindow();
 	DrawScene( "black", 200 );
-	DrawScene( "bg/ke_shiryou1_02", 400 );
+	DrawScene( "background/ke_shiryou1_02", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「どうか今後とも、よろしくお願い申し上げます…、ぺこり。」",
 		   NULL, "\"We hope you'll continue supporting us in the future as well. ...Bow.\"", GetGlobalFlag(GLinemodeSp));

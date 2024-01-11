@@ -12,7 +12,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 
 
-	DrawScene( "bg/ke_shiryou1_02", 1000 );
+	DrawScene( "background/ke_shiryou1_02", 1000 );
 	PlayBGM( 0, "bgm1/rika", 70, 0 );
 
 	SetSpeedOfMessage( TRUE, 128 );
@@ -71,7 +71,7 @@ void main()
 	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "white", 400 );
 	PlaySE( 0, "wav/door", 70, 64 );
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/right", 1, 0, 300 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/right", 1, 0, 300 );
 	PlayBGM( 0, "bgm1/satoko", 70, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>４Ｕ</color>", NULL, "<color=#f5e6d3>4U</color>", NULL, Line_ContinueAfterTyping); }
@@ -253,7 +253,7 @@ void main()
 	Wait( 40 );
 	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/right", 0, 0, 1300 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/right", 0, 0, 1300 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -275,7 +275,7 @@ void main()
 
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
 	FadeOutBGM( 0, 1000, FALSE );
-	DrawScene( "bg/ke_shiryou1_02", 1000 );
+	DrawScene( "background/ke_shiryou1_02", 1000 );
 	PlayBGM( 0, "bgm1/mion", 70, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
@@ -339,7 +339,7 @@ void main()
 
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
 	FadeOutBGM( 0, 300, FALSE );
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/left", 0, 0, 300 );
 	PlayBGM( 0, "bgm1/rena", 70, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
@@ -433,7 +433,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/right", 0, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>亀屋</color>", NULL, "<color=#f5e6d3>Kameya</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「どーもー！",
@@ -473,7 +473,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 200 );
-	DrawScene( "bg/ke_shiryou1_02", 400 );
+	DrawScene( "background/ke_shiryou1_02", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ご結婚、おめでとうございますー！！！",
@@ -522,7 +522,7 @@ void main()
 	//;＜ドカバキズガ！
 
 	FadeOutBGM( 0, 300, FALSE );
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/left", 0, 0, 300 );
 	PlayBGM( 0, "bgm1/rika", 70, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -550,7 +550,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	FadeOutBGM( 0, 300, FALSE );
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/left", 0, 0, 300 );
 	PlayBGM( 0, "bgm0/6", 70, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -592,7 +592,7 @@ void main()
 
 	DrawSceneWithMask( "white", "effect/right", 0, 0, 300 );
 	FadeOutBGM( 0, 300, FALSE );
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/right", 0, 0, 300 );
 	PlayBGM( 0, "bgm0/semi", 70, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -666,7 +666,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/left", 0, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ねね、八咫桜さん、せっかくですから…私も紹介してくださいよ～～！」",
@@ -756,7 +756,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/left", 0, 0, 300 );
 	PlayBGM( 0, "bgm0/3", 70, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
@@ -821,7 +821,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/right", 0, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……………んーと、",
@@ -945,7 +945,7 @@ void main()
 	Wait( 40 );
 	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
 
-	DrawScene( "bg/ke_shiryou1_02", 1000 );
+	DrawScene( "background/ke_shiryou1_02", 1000 );
 
 	SetSpeedOfMessage( FALSE, 0 );
 	//;＜ドカバキズガズガドギャーン！！
@@ -1068,7 +1068,7 @@ void main()
 	DrawScene( "white", 50 );
 
 
-	DrawScene( "bg/ke_shiryou1_02", 400 );
+	DrawScene( "background/ke_shiryou1_02", 400 );
 	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
 	SetSpeedOfMessage( FALSE, 0 );
 

@@ -13,7 +13,7 @@ void main()
 	PlaySE( 0, "wav/taitoru", 128, 64 );
 	DrawScene( "white", 3000 );
 	DrawScene( "black", 1000 );
-	DrawScene( "bg/ke_shiryou1_02", 1000 );
+	DrawScene( "background/ke_shiryou1_02", 1000 );
 	PlayBGM( 0, "bgm1/rika", 120, 0 );
 	PlaySE( 0, "boyon", 128, 64 );
 	DrawBustshotWithFiltering( 1, "sprite/normal/oko3_def_0", "effect/up", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
@@ -61,7 +61,7 @@ void main()
 		   NULL, "Hello. I'm Yatazakura, and it looks like I won't be getting a paycheck this time.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/right", 0, 0, 500 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/right", 0, 0, 500 );
 	DrawBustshotWithFiltering( 1, "sprite/normal/oko3_niyari_2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 
@@ -223,7 +223,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/left", 0, 0, 300 );
 	DrawBustshot( 4, "sprite/normal/ri4_komaru_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 
@@ -271,7 +271,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 3, "sprite/normal/oko3_odoroki_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/right", 0, 0, 500 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/right", 0, 0, 500 );
 	ChangeBustshot( 3, "sprite/normal/oko3_kumon_2", 300, TRUE );
 
 
@@ -303,7 +303,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 1, "sprite/normal/oisi2_9_1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/left", 0, 0, 500 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/left", 0, 0, 500 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -346,7 +346,7 @@ void main()
 	PlaySE( 0, "wav/kyupirn", 128, 64 );
 	DrawScene( "white", 200 );
 	DrawBustshot( 1, "sprite/normal/oko3_niyari_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawScene( "bg/ke_shiryou1_02", 500 );
+	DrawScene( "background/ke_shiryou1_02", 500 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
@@ -432,7 +432,7 @@ void main()
 		   NULL, "All right... First must be you, BT-san!!\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/left", 0, 0, 500 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/left", 0, 0, 500 );
 	DrawBustshotWithFiltering( 1, "sprite/normal/ri4_niko_a1_2", "effect/right", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 
@@ -527,7 +527,7 @@ void main()
 		   NULL, " ...I have a bad feeling about what he'll say, though☆\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/right", 0, 0, 500 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/right", 0, 0, 500 );
 	DrawBustshot( 1, "sprite/normal/oisi2_7_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, TRUE );
 
 
@@ -616,7 +616,7 @@ void main()
 	ClearMessage();
 
 	DrawBustshot( 1, "sprite/normal/ri4_komaru_a1_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/up", 0, 0, 500 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/up", 0, 0, 500 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
@@ -722,7 +722,7 @@ void main()
 	DrawSceneWithMask( "white", "effect/up", 0, 0, 3000 );
 	Wait( 1000 );
 	DrawScene( "black", 1000 );
-	DrawSceneWithMask( "bg/hasi3", "effect/up", 0, 0, 500 );
+	DrawSceneWithMask( "background/hasi3", "effect/up", 0, 0, 500 );
 	PlayBGM( 0, "bgm1/fearlessnessl_e", 120, 0 );
 	SetSpeedOfMessage( FALSE, 0 );
 
@@ -801,7 +801,7 @@ void main()
 	Wait( 300 );
 	PlaySE( 0, "wav/metal43", 128, 64 );
 	Wait( 500 );
-	DrawScene( "bg/hasi3", 50 );
+	DrawScene( "background/hasi3", 50 );
 	PlaySE( 0, "wav/down2", 128, 64 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 
@@ -824,7 +824,7 @@ void main()
 	PlaySE( 0, "wav/finish", 128, 64 );
 	DrawScene( "effect/furiker_c", 50 );
 	ShakeScreen( 2, 15,  100 , 3, 33, );
-	DrawScene( "bg/hasi3", 500 );
+	DrawScene( "background/hasi3", 500 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
@@ -839,7 +839,8 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
-	DrawSceneWithMask( "bg/greyscale/file", "effect/maskc", 0, 0, 1300 );
+	DrawFilm( 2, 0xcc, 0xcc, 0xcc, 256, 0, 0, TRUE ); //monochrome mode
+	DrawSceneWithMask( "background/file", "effect/maskc", 0, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　唖離須外江夢（ア■スゲエム）。",
@@ -895,11 +896,12 @@ void main()
 
 	FadeOutBGM( 0, 600, FALSE );
 	DrawScene( "black", 600 );
+	FadeFilm( 0, TRUE ); //end monochrome color
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
 	//;■バトル演出を〜〜
 	PlayBGM( 0, "bgm1/attack", 120, 0 );
-	DrawScene( "bg/hasi3", 600 );
+	DrawScene( "background/hasi3", 600 );
 	PlaySE( 0, "wav/furu", 128, 64 );
 	//Unhandled: btndef "bmp\Haikei\Mori\Hasi3.jpg"
 	//Unhandled: mov %Staff_a,0
@@ -937,7 +939,7 @@ void main()
 	PlaySE( 0, "wav/metal43", 128, 64 );
 	DrawScene( "effect/furiker_a", 50 );
 	ShakeScreen( 2, 6,  100 , 1, 50, );
-	DrawScene( "bg/hasi3", 500 );
+	DrawScene( "background/hasi3", 500 );
 	PlaySE( 0, "wav/nageru", 128, 64 );
 	Wait( 300 );
 	PlaySE( 0, "wav/kyupirn", 128, 64 );
@@ -951,7 +953,7 @@ void main()
 	ShakeScreen( 2, 9,  100 , 2, 50, );
 	DrawScene( "effect/furiker_b", 50 );
 	ShakeScreen( 2, 9,  100 , 2, 50, );
-	DrawScene( "bg/hasi3", 500 );
+	DrawScene( "background/hasi3", 500 );
 	Wait( 500 );
 	PlaySE( 0, "wav/nageru", 128, 64 );
 	Wait( 700 );
@@ -964,7 +966,7 @@ void main()
 	PlaySE( 0, "wav/metal43", 128, 64 );
 	DrawScene( "effect/furiker_c", 50 );
 	ShakeScreen( 2, 12,  100 , 3, 33, );
-	DrawScene( "bg/hasi3", 500 );
+	DrawScene( "background/hasi3", 500 );
 	PlaySE( 0, "wav/down3", 128, 64 );
 	ShakeScreen( 2, 9,  100 , 6, 16, );
 	Wait( 500 );
@@ -985,7 +987,7 @@ void main()
 	ShakeScreen( 2, 21,  100 , 8, 12, );
 
 	DrawSceneWithMask( "black", "effect/right", 0, 0, 500 );
-	DrawSceneWithMask( "bg/hasi3", "effect/left", 0, 0, 500 );
+	DrawSceneWithMask( "background/hasi3", "effect/left", 0, 0, 500 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
@@ -1018,7 +1020,7 @@ void main()
 	Wait( 1000 );
 	SetSpeedOfMessage( TRUE, 128 );
 	DrawBustshot( 1, "sprite/normal/oko3_niyari_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawScene( "bg/ke_shiryou1_02", 50 );
+	DrawScene( "background/ke_shiryou1_02", 50 );
 	PlaySE( 0, "wav/daidageki", 128, 64 );
 	PlayBGM( 0, "bgm1/rika", 120, 0 );
 
@@ -1033,7 +1035,7 @@ void main()
 
 	ClearMessage();
 
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/left", 0, 0, 500 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/left", 0, 0, 500 );
 	DrawBustshotWithFiltering( 1, "sprite/normal/ri4_komaru_a1_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 
@@ -1124,7 +1126,7 @@ void main()
 		   NULL, " What kind of work will you suggest to us, nyarin?\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/left", 0, 0, 500 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/left", 0, 0, 500 );
 	DrawBustshot( 1, "sprite/normal/oko3_niyari_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 
@@ -1198,7 +1200,7 @@ void main()
 	ClearMessage();
 
 	DrawBustshot( 1, "sprite/normal/oisi2_7_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/up", 0, 0, 500 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/up", 0, 0, 500 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -1266,7 +1268,7 @@ void main()
 	ShakeScreen( 2, 24,  100 , 3, 33, );
 	DrawScene( "black", 600 );
 
-	DrawScene( "bg/ke_shiryou1_02", 600 );
+	DrawScene( "background/ke_shiryou1_02", 600 );
 	DrawBustshotWithFiltering( 1, "sprite/normal/oisi2_6_0", "effect/left", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 
@@ -1317,7 +1319,7 @@ void main()
 	PlaySE( 0, "wav/kyupirn", 128, 64 );
 	DrawScene( "white", 50 );
 	DrawBustshot( 1, "sprite/normal/oko3_niyari_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawScene( "bg/ke_shiryou1_02", 500 );
+	DrawScene( "background/ke_shiryou1_02", 500 );
 
 	SetSpeedOfMessage( TRUE, 128 );
 
@@ -1413,7 +1415,7 @@ void main()
 	DrawScene( "black", 600 );
 
 	DrawBustshot( 1, "sprite/normal/ri4_komaru_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/up", 0, 0, 500 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/up", 0, 0, 500 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
@@ -1523,7 +1525,7 @@ void main()
 	Wait( 1000 );
 	DrawScene( "black", 1000 );
 	PlayBGM( 0, "bgm1/search and destroy(long)_ver3", 120, 0 );
-	DrawSceneWithMask( "bg/hasi3", "effect/up", 0, 0, 500 );
+	DrawSceneWithMask( "background/hasi3", "effect/up", 0, 0, 500 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1550,7 +1552,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 500 );
-	DrawSceneWithMask( "bg/hasi3", "effect/left", 0, 0, 500 );
+	DrawSceneWithMask( "background/hasi3", "effect/left", 0, 0, 500 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
@@ -1568,7 +1570,7 @@ void main()
 	Wait( 300 );
 	PlaySE( 0, "wav/nageru", 128, 64 );
 	Wait( 200 );
-	DrawScene( "bg/hasi3", 0 );
+	DrawScene( "background/hasi3", 0 );
 	PlaySE( 0, "wav/down2", 128, 64 );
 	ShakeScreen( 2, 3,  100 , 1, 50, );
 
@@ -1703,7 +1705,7 @@ void main()
 	PlaySE( 0, "wav/kaminari2", 128, 64 );
 	DrawScene( "white", 50 );
 	ShakeScreen( 2, 18,  100 , 8, 12, );
-	DrawScene( "bg/hasi3", 500 );
+	DrawScene( "background/hasi3", 500 );
 	PlaySE( 0, "wav/dageki", 128, 64 );
 	ShakeScreen( 2, 6,  100 , 1, 50, );
 	PlaySE( 0, "wav/dageki", 128, 64 );
@@ -1711,7 +1713,7 @@ void main()
 	PlaySE( 0, "wav/metal43", 128, 64 );
 	DrawScene( "effect/furiker_b", 50 );
 	ShakeScreen( 2, 12,  100 , 3, 33, );
-	DrawScene( "bg/hasi3", 500 );
+	DrawScene( "background/hasi3", 500 );
 	PlaySE( 0, "wav/kyupirn", 128, 64 );
 	Wait( 600 );
 	PlaySE( 0, "wav/nageru", 128, 64 );
@@ -1764,7 +1766,7 @@ void main()
 
 	//Unhandled: btndef ""
 
-	DrawScene( "bg/hasi3", 500 );
+	DrawScene( "background/hasi3", 500 );
 	PlaySE( 0, "wav/down3", 128, 64 );
 	ShakeScreen( 2, 6,  100 , 1, 50, );
 	PlaySE( 0, "wav/down", 128, 64 );
@@ -1790,7 +1792,7 @@ void main()
 	PlaySE( 0, "wav/metal43", 128, 64 );
 	DrawScene( "effect/furiker_a", 50 );
 	ShakeScreen( 2, 6,  100 , 1, 50, );
-	DrawScene( "bg/hasi3", 100 );
+	DrawScene( "background/hasi3", 100 );
 	PlaySE( 0, "wav/dageki", 128, 64 );
 	ShakeScreen( 2, 6,  100 , 1, 50, );
 	PlaySE( 0, "wav/dageki", 128, 64 );
@@ -1836,7 +1838,7 @@ void main()
 	FadeOutBGM( 0, 1000, FALSE );
 	Wait( 1000 );
 	PlayBGM( 0, "bgm1/rika", 120, 0 );
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/up", 0, 0, 500 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/up", 0, 0, 500 );
 	DrawBustshotWithFiltering( 1, "sprite/normal/oisi2_10_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 	PlaySE( 0, "boyon", 128, 64 );
 
@@ -1861,7 +1863,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 3, "sprite/normal/ri4_komaru_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/right", 0, 0, 500 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/right", 0, 0, 500 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
@@ -1962,7 +1964,7 @@ void main()
 	DrawScene( "white", 3000 );
 	DrawBustshot( 1, "sprite/normal/ta2_def_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawBustshot( 2, "sprite/normal/oisi2_7_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene( "bg/ke_shiryou1_02", 600 );
+	DrawScene( "background/ke_shiryou1_02", 600 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -2019,7 +2021,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 4, "sprite/normal/oko3_niyari_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/right", 0, 0, 500 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/right", 0, 0, 500 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
@@ -2045,7 +2047,7 @@ void main()
 
 	PlaySE( 0, "wav/taitoru", 128, 64 );
 	DrawScene( "white", 3000 );
-	DrawScene( "bg/hasi3", 600 );
+	DrawScene( "background/hasi3", 600 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
@@ -2054,7 +2056,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawSceneWithMask( "black", "effect/right", 0, 0, 500 );
-	DrawSceneWithMask( "bg/hasi3", "effect/right", 0, 0, 500 );
+	DrawSceneWithMask( "background/hasi3", "effect/right", 0, 0, 500 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
@@ -2150,7 +2152,7 @@ void main()
 	//;bg "bmp\Omake\DSC00039.JPG",0
 	//;gosub *G_sys:ld c,$normal/oko3_niyari_2,22
 	//;!w1000
-	DrawScene( "bg/ke_shiryou1_02", 600 );
+	DrawScene( "background/ke_shiryou1_02", 600 );
 	DrawBustshotWithFiltering( 1, "sprite/normal/ta2_iradachi_2", "effect/right", 0, 240, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 	SetSpeedOfMessage( FALSE, 0 );
 

@@ -35,7 +35,7 @@ void main()
 	//Unhandled lsph: lsph Namewindow,":a;bmp\system\name_window.bmp",25,330
 	//;setwindow 50,370,27,3,20,20,0,5,20,0,1,#666666,25,360,615,460
 
-	DrawScene( "bg/hina_title_1", 400 );
+	DrawScene( "background/hina_title_1", 400 );
 	Wait( 5000 );
 	DrawScene( "black", 1000 );
 
@@ -46,9 +46,9 @@ void main()
 
 	//CallScriptSection( "util", "RainOn" );
 
-	DrawScene( "bg/hina_douro_01", 400 );
+	DrawScene( "background/hina_douro_01", 400 );
 	Wait( 2000 );
-	DrawScene( "bg/hina_bus_01", 400 );
+	DrawScene( "background/hina_bus_01", 400 );
 
 	//;―――雛見沢停留所―――
 
@@ -129,7 +129,7 @@ void main()
 	Wait( 400 );
 	PlayBGM( 0, "bgm0/iru", 70, 0 );
 
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 	DrawBustshot( 3, "sprite/normal/hmi2a_02_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 2000, TRUE );
 
 
@@ -475,7 +475,7 @@ void main()
 
 	DrawBustshot( 1, "sprite/normal/hton1a_04_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 3, "sprite/normal/hara1a_04_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 1000 );
+	DrawScene( "background/hina_bus_03", 1000 );
 
 	PlayBGM( 0, "bgm1/bigbear", 70, 0 );
 
@@ -549,7 +549,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	DrawScene( "bg/hina_bus_03", 300 );
+	DrawScene( "background/hina_bus_03", 300 );
 
 	DrawBustshotWithFiltering( 1, "sprite/normal/hri2a_02_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
@@ -589,7 +589,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawSceneWithMask( "bg/hina_bus_03", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/hina_bus_03", "effect/left", 0, 0, 300 );
 
 	DrawBustshotWithFiltering( 1, "sprite/normal/hton1a_04_0", "effect/right", 0, 110, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
 
@@ -727,7 +727,7 @@ void main()
 
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
 	//CallScriptSection( "util", "RainOn" );
-	DrawSceneWithMask( "bg/hina_bus_02", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/hina_bus_02", "effect/left", 0, 0, 300 );
 
 	PlaySE( 0, "b5", 70, 64 );
 	DrawBustshotWithFiltering( 1, "sprite/normal/hmi2a_05_0", "effect/up", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
@@ -761,7 +761,7 @@ void main()
 	DisableWindow();
 
 	DrawSceneWithMask( "black", "effect/right", 0, 0, 300 );
-	DrawSceneWithMask( "bg/hina_bus_03", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "background/hina_bus_03", "effect/right", 0, 0, 300 );
 	DrawBustshotWithFiltering( 3, "sprite/normal/hton1a_01_0", "effect/right", 0, 110, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 
 	PlayVoice(4, "ps3/s26/56/tton_0060", 128);
@@ -929,7 +929,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	DrawScene( "bg/hina_bus_04", 400 );
+	DrawScene( "background/hina_bus_04", 400 );
 
 	PlayVoice(4, "ps3/s26/52/trik_0260", 128);
 	OutputLine("<color=#6972c1>梨花</color> ", "「同じくワカンナイのはあんたの脳ミソよ…。」",
@@ -949,7 +949,7 @@ void main()
 	DrawBustshot( 1, "sprite/normal/hton1a_01_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 2, "sprite/normal/hara1a_01_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawBustshot( 3, "sprite/normal/hri2a_09_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 
 	PlayVoice(4, "ps3/s26/52/trik_0270", 128);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…握手なんかすると思う？…雛見沢を滅ぼそうとする人間と。」",
@@ -1000,8 +1000,9 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 1000 );
+	DrawFilm( 2, 0xcc, 0xcc, 0xcc, 256, 0, 0, TRUE ); //monochrome mode
 	FadeOutBGM( 2, 1000, FALSE );
-	DrawScene( "bg/greyscale/oni1", 1000 );
+	DrawScene( "background/oni1", 1000 );
 
 	PlayVoice(4, "ps3/s26/56/tton_0130", 128);
 	OutputLine("<color=#ccaa95>利根川</color> ", "「雛見川にダムは必要なんです。下流地域の利水と治水事業にこの上なく貢献できるでしょう。」",
@@ -1014,7 +1015,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	DrawScene( "bg/greyscale/damu4", 1000 );
+	DrawScene( "background/damu4", 1000 );
 
 	PlayVoice(4, "ps3/s26/55/tara_0110", 128);
 	OutputLine("<color=#5f5248>荒川</color> ", "「ダムで発電できる電力も重要です。最大３５万キロワットの大電力は日本の高度経済成長の追い風となります。」",
@@ -1027,7 +1028,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	DrawScene( "bg/greyscale/damu2", 1000 );
+	DrawScene( "background/damu2", 1000 );
 
 	PlayVoice(4, "ps3/s26/56/tton_0140", 128);
 	OutputLine("<color=#ccaa95>利根川</color> ", "「ダムの地域開発効果も無視する事はできません。地元はもちろん、沿線各都市の産業文化の向上に大いに貢献するでしょう。」",
@@ -1040,9 +1041,11 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
+	DrawScene( "black", 400 );
+	FadeFilm( 0, TRUE ); //end monochrome color
 	DrawBustshot( 1, "sprite/normal/hmi2a_08_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawBustshot( 2, "sprite/normal/hri2a_08_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 	PlayBGM( 1, "me/ame2", 50, 0 );
 
 	OutputLine(NULL, "　相変わらず魅音は握手を求めたまま固まっている。",
@@ -1069,7 +1072,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	DrawScene( "bg/hina_bus_04", 400 );
+	DrawScene( "background/hina_bus_04", 400 );
 
 	PlayVoice(4, "ps3/s26/52/trik_0330", 128);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…どんな綺麗事を並べたって。雛見沢をダム湖に沈める理由になんかならない。」",
@@ -1079,7 +1082,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	DrawBustshot( 1, "sprite/normal/hton1a_04_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 
 	PlayVoice(4, "ps3/s26/56/tton_0150", 128);
 	OutputLine("<color=#ccaa95>利根川</color> ", "「…もちろんお気持ちはわかります。ですが雛見沢はダム工事に有利な条件をいくつも持っているのです。」",
@@ -1185,7 +1188,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	DrawScene( "bg/hina_bus_04", 400 );
+	DrawScene( "background/hina_bus_04", 400 );
 
 	PlayVoice(4, "ps3/s26/53/tmio_0350", 128);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「ついでに温泉旅行が当ります。」",
@@ -1198,7 +1201,7 @@ void main()
 	DrawSceneWithMask( "black", "effect/right", 0, 0, 300 );
 	DrawBustshot( 1, "sprite/normal/hmi2a_03_1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
 	DrawBustshot( 2, "sprite/normal/hri2a_06_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawSceneWithMask( "bg/hina_bus_03", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "background/hina_bus_03", "effect/right", 0, 0, 300 );
 
 	PlayVoice(4, "ps3/s26/52/trik_0380", 128);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…それで？」",
@@ -1299,7 +1302,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	DrawScene( "bg/hina_bus_04", 50 );
+	DrawScene( "background/hina_bus_04", 50 );
 	PlaySE( 0, "a5_10316", 70, 64 );
 	//;wait 500
 	ShakeScreen( 0, 3, 100, 1, 50, );
@@ -1324,7 +1327,7 @@ void main()
 
 	DrawBustshot( 1, "sprite/normal/hton1a_07_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 2, "sprite/normal/hara1a_04_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　建設省の２人、ぎょっとして顔を見合わせる。",
@@ -1387,7 +1390,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawSceneWithMask( "bg/hina_bus_03", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/hina_bus_03", "effect/left", 0, 0, 300 );
 	StopBGM( 2 );
 	DrawBustshot( 1, "sprite/normal/hmi2a_05_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 
@@ -1445,7 +1448,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 5, "effect/cinema", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/greyscale/kawa4", 1000 );
+	DrawScene( "background/greyscale/kawa4", 1000 );
 	DrawBustshot( 1, "portrait/normal/hmi2a_02_2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 
 	PlayVoice(4, "ps3/s26/53/tmio_0430", 128);
@@ -1572,7 +1575,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 5, "effect/cinema", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/greyscale/neki1", 400 );
+	DrawScene( "background/greyscale/neki1", 400 );
 	DrawBustshot( 4, "portrait/normal/hton1a_01_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 	PlayVoice(4, "ps3/s26/56/tton_0250", 128);
@@ -1709,7 +1712,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 1, "sprite/normal/hri2a_09_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 
 	PlayVoice(4, "ps3/s26/52/trik_0530", 128);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…お手洗い行ってくる。」",
@@ -1827,7 +1830,7 @@ void main()
 	DrawScene( "black", 400 );
 	//CallScriptSection( "util", "RainOn" );
 
-	DrawScene( "bg/hina_bus_04", 400 );
+	DrawScene( "background/hina_bus_04", 400 );
 
 	//;ld r,MIO_D1,80
 
@@ -1889,7 +1892,7 @@ void main()
 	ChangeVolumeOfBGM( 1, 50, 2000 );
 	//CallScriptSection( "util", "RainOff" );
 
-	DrawSceneWithMask( "bg/hina_bus_03", "effect/up", 0, 0, 3000 );
+	DrawSceneWithMask( "background/hina_bus_03", "effect/up", 0, 0, 3000 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2169,7 +2172,7 @@ void main()
 
 	DrawSceneWithMask( "black", "effect/right", 0, 0, 300 );
 	DrawBustshot( 3, "sprite/normal/hyos1a_04_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 
 	PlayVoice(4, "ps3/s26/54/tyos_0120", 128);
 	OutputLine("<color=#715348>吉村</color> ", "「…次のバスは……何だ。だいぶ時間があるじゃないか。…こいつはついてるなー！…若い女の子たちと雨宿りとはねぇ！」",
@@ -2362,7 +2365,7 @@ void main()
 
 	//CallScriptSection( "util", "RainOn" );
 	DrawBustshot( 4, "sprite/normal/hyos1a_06_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 3000 );
+	DrawScene( "background/hina_bus_03", 3000 );
 
 	PlayVoice(4, "ps3/s26/54/tyos_0180", 128);
 	OutputLine("<color=#715348>吉村</color> ", "「…いやー、雷雨とはまた！…ひっどい天気になっちゃったねぇ。」",
@@ -2482,7 +2485,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "bg/hina_bus_04", 400 );
+	DrawScene( "background/hina_bus_04", 400 );
 
 	PlayVoice(4, "ps3/s26/55/tara_0280", 128);
 	OutputLine("<color=#5f5248>荒川</color> ", "「……何です？…もったいぶらないで下さいよ。」",
@@ -2502,7 +2505,7 @@ void main()
 	//;（はしゃいでいた魅音、ぴたと止まる。）@
 
 	DrawBustshot( 1, "sprite/normal/hmi2a_07_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 1000 );
+	DrawScene( "background/hina_bus_03", 1000 );
 
 	PlayVoice(4, "ps3/s26/53/tmio_0810", 128);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「………オヤシロさまって…、」",
@@ -2520,7 +2523,7 @@ void main()
 	CallScriptSection( "util", "EyeCatch2" );
 
 	DrawBustshot( 2, "sprite/normal/hton1a_04_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 1000 );
+	DrawScene( "background/hina_bus_03", 1000 );
 	PlayBGM( 0, "bgm0/depressive paranoia", 70, 0 );
 
 	PlayVoice(4, "ps3/s26/56/tton_0360", 128);
@@ -2563,7 +2566,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 	DrawBustshot( 5, "sprite/normal/hton1a_01_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 
 	PlayVoice(4, "ps3/s26/56/tton_0370", 128);
@@ -2596,7 +2599,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 	DrawBustshot( 1, "sprite/normal/hyos1a_09_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 
 	PlayVoice(4, "ps3/s26/54/tyos_0270", 128);
@@ -2622,7 +2625,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	DrawScene( "bg/hina_bus_04", 400 );
+	DrawScene( "background/hina_bus_04", 400 );
 
 	PlayVoice(4, "ps3/s26/52/trik_0650", 128);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…オヤシロさまのお伽話よ。…雛見沢を汚そうとするとね…、」",
@@ -2653,7 +2656,7 @@ void main()
 	//CallScriptSection( "util", "RainOn" );
 
 	PlayBGM( 1, "me/rain4_long", 70, 0 );
-	DrawScene( "bg/hina_douro_01", 400 );
+	DrawScene( "background/hina_douro_01", 400 );
 
 	OutputLine(NULL, "　遠雷。",
 		   NULL, "Distant thunder.", Line_WaitForInput);
@@ -2674,7 +2677,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 
 	DrawBustshot( 1, "sprite/normal/hri2a_09_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 
@@ -2717,7 +2720,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	DrawScene( "bg/hina_bus_03", 200 );
+	DrawScene( "background/hina_bus_03", 200 );
 	DrawBustshot( 1, "sprite/normal/hara1a_10_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 200, TRUE );
 	PlaySE( 0, "a5_10316", 100, 64 );
 	ShakeScreen( 4, 9, 20, 15, 3, );
@@ -2774,7 +2777,7 @@ void main()
 	//CallScriptSection( "util", "RainOff" );
 	StopBGM( 1 );
 
-	DrawScene( "bg/hina_simen1", 1000 );
+	DrawScene( "background/hina_simen1", 1000 );
 
 
 	PlayVoice(4, "ps3/s26/54/tyos_0320", 128);
@@ -2790,7 +2793,7 @@ void main()
 
 
 	DrawBustshot( 6, "effect/cinema", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/greyscale/kawa4", 1000 );
+	DrawScene( "background/greyscale/kawa4", 1000 );
 	DrawBustshot( 2, "portrait/normal/hri2a_09_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 300, TRUE );
 	PlayBGM( 0, "bgm0/nazo", 70, 0 );
 
@@ -2857,7 +2860,7 @@ void main()
 	DrawScene( "black", 400 );
 	PlayBGM( 1, "me/ame2", 50, 0 );
 	DrawBustshot( 4, "sprite/normal/hmi2a_09_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 
 	PlayVoice(4, "ps3/s26/53/tmio_0870", 128);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「…他にもあるんですか。…そーいうの…。」",
@@ -2898,7 +2901,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	DrawScene( "bg/hina_bus_03", 200 );
+	DrawScene( "background/hina_bus_03", 200 );
 	DrawBustshot( 1, "sprite/normal/hri2a_08_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
 
 	PlayVoice(4, "ps3/s26/52/trik_0700", 128);
@@ -2925,7 +2928,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	DrawScene( "bg/hina_bus_04", 400 );
+	DrawScene( "background/hina_bus_04", 400 );
 
 	PlayVoice(4, "ps3/s26/54/tyos_0380", 128);
 	OutputLine("<color=#715348>吉村</color> ", "「彼の事件直後から雛見沢ダムの担当者の間にある噂が流れ始めました。」",
@@ -2956,7 +2959,7 @@ void main()
 	FadeOutBGM( 0, 400, FALSE );
 	DrawBustshot( 1, "sprite/normal/hara1a_11_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawBustshot( 3, "sprite/normal/hri2a_09_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 100 );
+	DrawScene( "background/hina_bus_03", 100 );
 	PlaySE( 0, "a5_01026", 100, 64 );
 	ShakeScreen( 4, 9, 20, 50, 1, );
 
@@ -2988,7 +2991,7 @@ void main()
 	//CallScriptSection( "util", "RainOff" );
 	PlayBGM( 0, "bgm1/toosenakiya", 70, 0 );
 	DrawBustshot( 6, "effect/cinema", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawSceneWithMask( "bg/greyscale/hi1", "effect/maskc", 0, 0, 3000 );
+	DrawSceneWithMask( "background/greyscale/hi1", "effect/maskc", 0, 0, 3000 );
 	DrawBustshot( 2, "portrait/normal/hri2a_10_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 400, TRUE );
 
 	PlayVoice(4, "ps3/s26/52/trik_0720", 128);
@@ -3041,7 +3044,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 6, "effect/cinema", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/greyscale/moon", 400 );
+	DrawScene( "background/greyscale/moon", 400 );
 	DrawBustshot( 2, "portrait/normal/hri2a_12_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 400, TRUE );
 
 	PlayVoice(4, "ps3/s26/52/trik_0750", 128);
@@ -3062,7 +3065,7 @@ void main()
 	DrawScene( "black", 400 );
 	PlayBGM( 1, "me/ame2", 50, 0 );
 	DrawBustshot( 1, "sprite/normal/hton1a_05_2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 
 	PlayVoice(4, "ps3/s26/56/tton_0470", 128);
 	OutputLine("<color=#ccaa95>利根川</color> ", "「……それで？」",
@@ -3163,7 +3166,7 @@ void main()
 	FadeOutBGM( 0, 1000, FALSE );
 	ChangeVolumeOfBGM( 1, 70, 2000 );
 
-	DrawScene( "bg/hina_bus_04", 400 );
+	DrawScene( "background/hina_bus_04", 400 );
 
 	OutputLine(NULL, "　遠くで雷鳴。",
 		   NULL, "Thunder rings in the distance.", Line_WaitForInput);
@@ -3176,7 +3179,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	DrawBustshot( 1, "sprite/normal/hara1a_08_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 
 	PlayVoice(4, "ps3/s26/55/tara_0430", 128);
 	OutputLine("<color=#5f5248>荒川</color> ", "「最初に言ったのは誰か忘れました。…ここんところ眠れなくて辛いって言うんですよ。…寝ようとすると落ち着かなくなって起きてしまうって！」",
@@ -3237,7 +3240,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	DrawBustshot( 1, "sprite/normal/hmi2a_08_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 
 	PlayVoice(4, "ps3/s26/53/tmio_0920", 128);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「…「いる」って……、……はは……ヤダなぁ……。」",
@@ -3277,7 +3280,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	DrawScene( "bg/hina_bus_03", 300 );
+	DrawScene( "background/hina_bus_03", 300 );
 	DrawBustshot( 2, "sprite/normal/hri2a_08_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 300, TRUE );
 	PlayVoice(4, "ps3/s26/52/trik_0770", 128);
 	OutputLine("<color=#6972c1>梨花</color> ", "「馬鹿馬鹿しくなんかない。…「いる」んだもの。…オヤシロさまは。」",
@@ -3289,7 +3292,7 @@ void main()
 
 	PlayBGM( 2, "me/a5_14446", 70, 0 );
 	PlayBGM( 1, "me/ame2", 70, 0 );
-	DrawScene( "bg/hina_bus_04", 1000 );
+	DrawScene( "background/hina_bus_04", 1000 );
 
 	PlayVoice(4, "ps3/s26/55/tara_0520", 128);
 	OutputLine("<color=#5f5248>荒川</color> ", "「…いつしか、その「何か」は！…オヤシロさまと呼ばれるようになりました。」",
@@ -3299,7 +3302,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	DrawBustshot( 1, "sprite/normal/hton1a_05_2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 	PlayVoice(4, "ps3/s26/56/tton_0500", 128);
 	OutputLine("<color=#ccaa95>利根川</color> ", "「…そんな噂はまったく聞いた事がないよ！」",
 		   "<color=#ccaa95>Tonegawa</color> ", "\"...I've never heard anything about these rumors!\"", Line_Normal);
@@ -3364,7 +3367,7 @@ void main()
 
 	FadeOutBGM( 2, 1500, FALSE );
 
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 	DrawBustshot( 1, "sprite/normal/hmi2a_08_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 
 
@@ -3397,7 +3400,7 @@ void main()
 	DisableWindow();
 	//;（一人で空笑い）
 
-	DrawScene( "bg/hina_bus_03", 200 );
+	DrawScene( "background/hina_bus_03", 200 );
 	DrawBustshot( 4, "sprite/normal/hara1a_09_2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );
 	PlaySE( 0, "a5_04105", 70, 64 );
 	ShakeScreen( 4, 9, 20, 15, 3, );
@@ -3459,7 +3462,8 @@ void main()
 
 	PlayBGM( 1, "me/mati_kotu2", 50, 0 );
 	PlayBGM( 0, "bgm1/toosenakiya", 70, 0 );
-	DrawScene( "bg/greyscale/kuruma5_01", 1000 );
+	DrawFilm( 2, 0xcc, 0xcc, 0xcc, 256, 0, 0, TRUE ); //monochrome mode
+	DrawScene( "background/kuruma5_01", 1000 );
 
 	PlayVoice(4, "ps3/s26/55/tara_0590", 128);
 	OutputLine("<color=#5f5248>荒川</color> ", "「…たまには早い時間に帰ってあげた方がいいんじゃないですか」",
@@ -3475,9 +3479,10 @@ void main()
 	FadeOutBGM( 1, 1000, FALSE );
 
 	DrawScene( "black", 1000 );
+	FadeFilm( 0, TRUE ); //end monochrome color
 	PlayBGM( 1, "me/ame2", 70, 0 );
 	DrawBustshot( 2, "sprite/normal/hara1a_08_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 1000 );
+	DrawScene( "background/hina_bus_03", 1000 );
 
 	PlayVoice(4, "ps3/s26/55/tara_0600", 128);
 	OutputLine("<color=#5f5248>荒川</color> ", "「…どうも疲れてるみたいでした。連日の激務でしたからね。無理もない事だと思ってました。」",
@@ -3500,15 +3505,16 @@ void main()
 	PlayBGM( 2, "me/mati_kotu2", 70, 0 );
 
 	DrawScene( "black", 400 );
-	DrawScene( "bg/greyscale/y_damu2", 1000 );
+	DrawFilm( 2, 0xcc, 0xcc, 0xcc, 256, 0, 0, TRUE ); //monochrome mode
+	DrawScene( "background/y_damu2", 1000 );
 	Wait( 2000 );
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
-	DrawSceneWithMask( "bg/greyscale/mati7", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/mati7", "effect/left", 0, 0, 300 );
 	Wait( 2000 );
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
 	//;bg black,22
 	//CallScriptSection( "util", "RainOff" );
-	DrawSceneWithMask( "bg/greyscale/kuruma5", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/kuruma5", "effect/left", 0, 0, 300 );
 	Wait( 2000 );
 
 	//;ld l,ara_D1,22
@@ -3599,6 +3605,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 0 );
+	FadeFilm( 0, TRUE ); //end monochrome color
 	StopAllSound();
 	PlaySE( 0, "searchlight", 70, 64 );
 
@@ -3645,7 +3652,7 @@ void main()
 	DrawScene( "black", 400 );
 	ChangeVolumeOfBGM( 1, 50, 500 );
 	DrawBustshot( 2, "sprite/normal/hyos1a_09_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 1000 );
+	DrawScene( "background/hina_bus_03", 1000 );
 
 	PlayVoice(4, "ps3/s26/54/tyos_0540", 128);
 	OutputLine("<color=#715348>吉村</color> ", "「…その日の深夜ですよね。……対向車線のダンプに突っ込み、亡くなられました。」",
@@ -3683,7 +3690,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	DrawScene( "bg/hina_bus_03", 200 );
+	DrawScene( "background/hina_bus_03", 200 );
 	DrawBustshot( 2, "sprite/normal/hmi2a_09_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
 
 	PlayVoice(4, "ps3/s26/53/tmio_0980", 128);
@@ -3700,7 +3707,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	DrawScene( "bg/hina_bus_03", 200 );
+	DrawScene( "background/hina_bus_03", 200 );
 	DrawBustshot( 2, "sprite/normal/hara1a_09_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 200, TRUE );
 	PlaySE( 0, "down3", 70, 64 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
@@ -3725,7 +3732,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	DrawScene( "bg/hina_bus_03", 200 );
+	DrawScene( "background/hina_bus_03", 200 );
 	DrawBustshot( 4, "sprite/normal/hri2a_10_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
 	PlayVoice(4, "ps3/s26/52/trik_0800", 128);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…彼は「会って」しまったのよ。………………オヤシロさまに。」",
@@ -3754,7 +3761,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 3, "sprite/normal/hyos1a_09_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 1000 );
+	DrawScene( "background/hina_bus_03", 1000 );
 
 	StopAllSound();
 	PlayBGM( 0, "bgm1/urameshikodama", 70, 0 );
@@ -3866,7 +3873,7 @@ void main()
 	DisableWindow();
 
 	//CallScriptSection( "util", "RainOff" );
-	DrawScene( "bg/hina_bus_03", 200 );
+	DrawScene( "background/hina_bus_03", 200 );
 	DrawBustshot( 2, "sprite/normal/hmi2a_07_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
 
 	PlayVoice(4, "ps3/s26/53/tmio_0990", 128);
@@ -3883,7 +3890,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 1000 );
-	DrawScene( "bg/hina_bus_04", 1000 );
+	DrawScene( "background/hina_bus_04", 1000 );
 
 	PlayVoice(4, "ps3/s26/54/tyos_0650", 128);
 	OutputLine("<color=#715348>吉村</color> ", "「…関係者の口が大変硬く 、あまり詳しいことはよくわかりませんが、以下の事は確実です。」",
@@ -3894,7 +3901,7 @@ void main()
 
 	DrawScene( "black", 1000 );
 	DrawBustshot( 3, "sprite/normal/hyos1a_09_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 1000 );
+	DrawScene( "background/hina_bus_03", 1000 );
 
 	PlayVoice(4, "ps3/s26/54/tyos_0660", 128);
 	OutputLine("<color=#715348>吉村</color> ", "「…昼休みの終わり頃、席で寝ていた森さんは突然起き出し、千枚通しで隣の席の職員を刺しました。」",
@@ -4007,7 +4014,7 @@ void main()
 	StopBGM( 0 );
 
 	DrawBustshot( 1, "sprite/normal/hara1a_05_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 1000 );
+	DrawScene( "background/hina_bus_03", 1000 );
 
 	PlayVoice(4, "ps3/s26/55/tara_0790", 128);
 	OutputLine("<color=#5f5248>荒川</color> ", "「……お手洗い。……すみません。…もう一度、失礼します。」",
@@ -4153,7 +4160,7 @@ void main()
 
 	//CallScriptSection( "util", "RainOff" );
 	DrawBustshot( 2, "sprite/normal/hton1a_05_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 
 	PlayVoice(4, "ps3/s26/56/tton_0590", 128);
 	OutputLine("<color=#ccaa95>利根川</color> ", "「…遅いな。荒川君。………また調子でも悪くなったのかな…？」",
@@ -4206,7 +4213,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	DrawScene( "bg/hina_bus_04", 400 );
+	DrawScene( "background/hina_bus_04", 400 );
 
 	OutputLine(NULL, "　利根川退場。",
 		   NULL, "Tonegawa exits.", Line_WaitForInput);
@@ -4217,7 +4224,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	DrawBustshot( 1, "sprite/normal/hri2a_02_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 	PlayVoice(4, "ps3/s26/52/trik_0870", 128);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…頭痛に効く薬、持ってるのよ。……ちょっと私も行ってくるわね。…すぐ戻るから。」",
 		   "<color=#6972c1>Rika</color> ", "\"...I have some medicine that's good for headaches. ......So I'll go see him too. ...I'll be right back.\"", Line_Normal);
@@ -4302,7 +4309,7 @@ void main()
 	DisableWindow();
 
 
-	DrawScene( "bg/hina_ryouri", 400 );
+	DrawScene( "background/hina_ryouri", 400 );
 
 
 	//;ld l,yos_D1,80
@@ -4325,7 +4332,7 @@ void main()
 	DisableWindow();
 
 
-	DrawScene( "bg/koudou_02", 400 );
+	DrawScene( "background/koudou_02", 400 );
 
 	//;ld l,yos_D5,80
 	PlayVoice(4, "ps3/s26/54/tyos_0770", 128);
@@ -4459,7 +4466,7 @@ void main()
 
 	//CallScriptSection( "util", "RainOn" );
 
-	DrawScene( "bg/hina_bus_01", 400 );
+	DrawScene( "background/hina_bus_01", 400 );
 
 	OutputLine(NULL, "　遠雷。",
 		   NULL, "Thunder rings in the distance.", Line_WaitForInput);
@@ -4476,7 +4483,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	DrawBustshot( 2, "sprite/normal/hyos1a_09_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 
 	PlayVoice(4, "ps3/s26/54/tyos_0920", 128);
 	OutputLine("<color=#715348>吉村</color> ", "「……君、ダムは賛成派だよな。立ち退き料で東京へ引っ越してくれないかと期待してる。」",
@@ -4552,7 +4559,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	DrawBustshot( 1, "sprite/normal/hmi2a_09_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/hina_douro_03", 400 );
+	DrawScene( "background/hina_douro_03", 400 );
 
 	PlayVoice(4, "ps3/s26/53/tmio_1170", 128);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「…あ………あ、……あんた…………誰…。」",
@@ -4561,7 +4568,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 2, "portrait/normal/hyos1a_08_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/hina_bus_02", 400 );
+	DrawScene( "background/hina_bus_02", 400 );
 
 	PlayVoice(4, "ps3/s26/54/tyos_1020", 128);
 	OutputLine("<color=#715348>吉村</color> ", "「僕？…僕かい？」",
@@ -4643,7 +4650,7 @@ void main()
 
 	//CallScriptSection( "util", "RainOff" );
 	DrawBustshot( 3, "sprite/normal/hri2a_01_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 
 	PlayVoice(4, "ps3/s26/52/trik_0880", 128);
 	OutputLine("<color=#6972c1>梨花</color> ", "「……どう？…薬、効いてきた？」",
@@ -4706,7 +4713,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	DrawScene( "bg/hina_bus_04", 400 );
+	DrawScene( "background/hina_bus_04", 400 );
 
 	OutputLine(NULL, "　過剰な反応を示して拒否する魅音。",
 		   NULL, "Mion refuses with an excessive response.", Line_WaitForInput);
@@ -4722,7 +4729,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 1, "sprite/normal/hton1a_04_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 	PlayVoice(4, "ps3/s26/56/tton_0610", 128);
 	OutputLine("<color=#ccaa95>利根川</color> ", "「それにしても、…バスが来ないですね。もう来る時間だと思うんですけど。」",
 		   "<color=#ccaa95>Tonegawa</color> ", "\"Still... that bus sure isn't coming, is it? It should be here by now, though.\"", Line_Normal);
@@ -4747,7 +4754,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "bg/hina_title_1", 400 );
+	DrawScene( "background/hina_title_1", 400 );
 
 	//;ld c,mio_D13a,80
 	PlayVoice(4, "ps3/s26/53/tmio_1210", 128);
@@ -4765,7 +4772,7 @@ void main()
 	//;bg black,22
 	DrawScene( "black", 400 );
 	DrawBustshot( 2, "sprite/normal/hoka1a_04_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/hina_bus_01", 400 );
+	DrawScene( "background/hina_bus_01", 400 );
 
 	PlayVoice(4, "ps3/s26/59/toka_0000", 128);
 	OutputLine("<color=#574f58>岡野</color> ", "「こんにちは。…皆さんはバスをお待ちですか？」",
@@ -4792,7 +4799,7 @@ void main()
 	//CallScriptSection( "util", "RainOff" );
 	PlayBGM( 0, "bgm0/depressive paranoia", 70, 0 );
 	DrawBustshot( 1, "sprite/normal/hton1a_05_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/hina_bus_02", 400 );
+	DrawScene( "background/hina_bus_02", 400 );
 
 	PlayVoice(4, "ps3/s26/56/tton_0620", 128);
 	OutputLine("<color=#ccaa95>利根川</color> ", "「え、…それはどういう、」",
@@ -4922,7 +4929,7 @@ void main()
 	DrawScene( "black", 400 );
 	DrawBustshot( 6, "sprite/normal/hara1a_04_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 7, "sprite/normal/hton1a_05_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_01", 400 );
+	DrawScene( "background/hina_bus_01", 400 );
 
 	PlayVoice(4, "ps3/s26/56/tton_0640", 128);
 	OutputLine("<color=#ccaa95>利根川</color> ", "「建設省の者です。職員証も免許証もあります。」",
@@ -4939,7 +4946,7 @@ void main()
 	DrawBustshot( 1, "sprite/normal/hri2a_09_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawBustshot( 3, "sprite/normal/hmi2a_05_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 2, "sprite/normal/hhos1a_07_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 
 	PlayVoice(4, "ps3/s26/58/thos_0030", 128);
 	OutputLine("<color=#ffedab>星野</color> ", "「そっちの二人は？」",
@@ -4956,7 +4963,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	DrawScene( "bg/hina_bus_03", 200 );
+	DrawScene( "background/hina_bus_03", 200 );
 	DrawBustshot( 1, "sprite/normal/hyos1a_11_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
 	PlayVoice(4, "ps3/s26/54/tyos_1120", 128);
 	OutputLine("<color=#715348>吉村</color> ", "「犯人はどんなヤツなんですか！ひょっとすると誰か見てるかも知れない。」",
@@ -5032,7 +5039,7 @@ void main()
 
 
 	DrawBustshot( 2, "sprite/normal/hhos1a_02_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 	PlayVoice(4, "ps3/s26/58/thos_0050", 128);
 	OutputLine("<color=#ffedab>星野</color> ", "「…で？…君たちの身分証は？」",
 		   "<color=#ffedab>Hoshino</color> ", "\"...So? ...What about your IDs?\"", Line_Normal);
@@ -5093,7 +5100,7 @@ void main()
 
 
 	DrawScene( "black", 400 );
-	DrawScene( "bg/hina_bus_04", 400 );
+	DrawScene( "background/hina_bus_04", 400 );
 
 	//;ld l,hos_d6,80
 	PlayVoice(4, "ps3/s26/58/thos_0090", 128);
@@ -5119,7 +5126,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 1, "sprite/normal/hton1a_04_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 
 	PlayVoice(4, "ps3/s26/56/tton_0650", 128);
 	OutputLine("<color=#ccaa95>利根川</color> ", "「…あ、……トイレに行っちゃまずいですか…？」",
@@ -5204,7 +5211,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	ChangeVolumeOfBGM( 2, 50, 1000 );
-	DrawScene( "bg/hina_bus_04", 400 );
+	DrawScene( "background/hina_bus_04", 400 );
 
 	//;E_A
 	PlayBGM( 0, "bgm1/toosenakiya", 70, 0 );
@@ -5246,7 +5253,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 1, "sprite/normal/hyos1a_09_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 
 	PlayVoice(4, "ps3/s26/54/tyos_1210", 128);
 	OutputLine("<color=#715348>吉村</color> ", "「辛そうですねぇ。…いっその事、介錯してあげられればいいんですけど。」",
@@ -5293,7 +5300,7 @@ void main()
 	FadeOutBGM( 2, 1000, FALSE );
 	DrawScene( "black", 400 );
 	DrawBustshot( 6, "effect/cinema", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/greyscale/kimi_ten1", 400 );
+	DrawScene( "background/greyscale/kimi_ten1", 400 );
 	DrawBustshot( 2, "portrait/normal/hyos1a_09_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 300, TRUE );
 
 	//;ld l,yos_D1,80
@@ -5334,7 +5341,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 6, "effect/cinema", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/greyscale/hoteru", 400 );
+	DrawScene( "background/greyscale/hoteru", 400 );
 	DrawBustshot( 2, "portrait/normal/hyos1a_08_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 300, TRUE );
 
 	PlayVoice(4, "ps3/s26/54/tyos_1270", 128);
@@ -5697,7 +5704,7 @@ void main()
 	//;bg black,80
 
 	DrawBustshot( 1, "sprite/normal/hara1a_12_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/hina_bus_01", 400 );
+	DrawScene( "background/hina_bus_01", 400 );
 
 	PlayVoice(4, "ps3/s26/55/tara_1050", 128);
 	OutputLine("<color=#5f5248>荒川</color> ", "「…ぁあぁああぁあッ！",
@@ -5873,7 +5880,7 @@ void main()
 	PlaySE( 1, "searchlight", 70, 64 );
 
 	DrawBustshot( 6, "effect/cinema", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/greyscale/susuki", 400 );
+	DrawScene( "background/greyscale/susuki", 400 );
 	Wait( 1000 );
 	DrawBustshot( 1, "sprite/normal/hoka1a_04_2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 	PlayBGM( 0, "bgm0/cradle song", 70, 0 );
@@ -5977,7 +5984,7 @@ void main()
 	Wait( 1000 );
 
 	DrawBustshot( 6, "effect/cinema", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/greyscale/gk1", 50 );
+	DrawScene( "background/greyscale/gk1", 50 );
 	PlaySE( 0, "a5_10316", 70, 64 );
 	//;quakey 2,200
 	ShakeScreen( 2, 6,  100 , 2, 50, );
@@ -6010,7 +6017,7 @@ void main()
 
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
 	DrawBustshot( 6, "effect/cinema", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawSceneWithMask( "bg/greyscale/gk3", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/greyscale/gk3", "effect/left", 0, 0, 300 );
 	DrawBustshotWithFiltering( 1, "sprite/normal/hton1a_04_0", "effect/left", 0, 240, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 
 	PlayVoice(4, "ps3/s26/56/tton_0680", 128);
@@ -6049,7 +6056,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 6, "effect/cinema", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/greyscale/ng_kyo", 400 );
+	DrawScene( "background/greyscale/ng_kyo", 400 );
 	DrawBustshot( 1, "sprite/normal/hri2a_14_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 400, TRUE );
 	PlayVoice(4, "ps3/s26/52/trik_0950", 128);
 	OutputLine("<color=#6972c1>梨花</color> ", "「あいつ？…噂の野グソ男。」",
@@ -6099,7 +6106,7 @@ void main()
 
 	//;bg Tosyo5,22
 	DrawBustshot( 6, "effect/cinema", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/greyscale/toi_1a", 400 );
+	DrawScene( "background/greyscale/toi_1a", 400 );
 	Wait( 400 );
 	//;ld l,ton_D4,0
 	//;ld r,hos_d6,0
@@ -6143,7 +6150,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 6, "effect/cinema", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/greyscale/hina_bus_03", 400 );
+	DrawScene( "background/greyscale/hina_bus_03", 400 );
 	PlayBGM( 1, "me/lgsk_warai", 10, 0 );
 
 	OutputLine(NULL, "　吉村・荒川以外は笑い続けている。",
@@ -6385,7 +6392,7 @@ void main()
 	DrawScene( "white", 200 );
 	ShakeScreen( 0, 6, 100, 2, 50, );
 
-	DrawScene( "bg/hina_bus_01", 2000 );
+	DrawScene( "background/hina_bus_01", 2000 );
 	Wait( 1000 );
 
 
@@ -6481,7 +6488,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 1, "sprite/normal/hri2a_12_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/hina_douro_03", 400 );
+	DrawScene( "background/hina_douro_03", 400 );
 
 	PlayVoice(4, "ps3/s26/52/trik_0960", 128);
 	OutputLine("<color=#6972c1>梨花</color> ", "「………突然、暴れ出して…？」",
@@ -6650,7 +6657,7 @@ void main()
 	PlaySE( 0, "rakurai3", 100, 64 );
 
 	DrawBustshot( 5, "white", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 100, TRUE );
-	DrawScene( "bg/hina_title_1", 200 );
+	DrawScene( "background/hina_title_1", 200 );
 
 	OutputLine(NULL, "　緊迫の沈黙。",
 		   NULL, "A tense silence passes between them.", Line_WaitForInput);
@@ -6663,7 +6670,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	DrawBustshot( 2, "sprite/normal/hhos1a_07_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/hina_bus_01", 400 );
+	DrawScene( "background/hina_bus_01", 400 );
 
 	PlayVoice(4, "ps3/s26/58/thos_0140", 128);
 	OutputLine("<color=#ffedab>星野</color> ", "「古手　梨花さん。…ちょっと来てもらえる？」",
@@ -6679,7 +6686,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	DrawScene( "bg/hina_bus_01", 400 );
+	DrawScene( "background/hina_bus_01", 400 );
 	OutputLine(NULL, "　最後の最後まで吉村を目で威嚇し、星野に伴われ退場する梨花。",
 		   NULL, "Rika leaves the stage, following Hoshino, but her eyes continue to menace Yoshimura until the very last moment.", Line_Normal);
 	ClearMessage();
@@ -6689,7 +6696,7 @@ void main()
 	DrawScene( "black", 400 );
 	//CallScriptSection( "util", "RainOff" );
 	DrawBustshot( 1, "sprite/normal/hyos1a_12_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 	PlayVoice(4, "ps3/s26/54/tyos_1720", 128);
 	OutputLine("<color=#715348>吉村</color> ", "「は！………はぁあぁあー………。……脅し過ぎだよ…あの子は…。」",
 		   "<color=#715348>Yoshimura</color> ", "\"Hah! .........Haaaaah......... ......That girl... is too threatening...\"", Line_Normal);
@@ -6750,7 +6757,7 @@ void main()
 	DrawScene( "white", 100 );
 	PlaySE( 0, "rakurai3", 50, 64 );
 	DrawScene( "black", 200 );
-	DrawScene( "bg/hina_bus_04", 400 );
+	DrawScene( "background/hina_bus_04", 400 );
 
 	OutputLine(NULL, "　轟く雷鳴。",
 		   NULL, "Thunder rumbles.", Line_Normal);
@@ -6770,7 +6777,7 @@ void main()
 	DrawScene( "black", 400 );
 	ChangeVolumeOfBGM( 2, 0, 2000 );
 	DrawBustshot( 1, "sprite/normal/hmi2a_05_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 
 	//;E_MA
 
@@ -6954,7 +6961,7 @@ void main()
 
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
 	//CallScriptSection( "util", "RainOn" );
-	DrawSceneWithMask( "bg/hina_bus_01", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/hina_bus_01", "effect/left", 0, 0, 300 );
 
 	//;ld r,mio_D7a,80
 	PlayVoice(4, "ps3/s26/53/tmio_1500", 128);
@@ -7073,7 +7080,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	DrawScene( "bg/hina_douro_01", 400 );
+	DrawScene( "background/hina_douro_01", 400 );
 
 	//;ld r,mio_D7a,80
 	PlayVoice(4, "ps3/s26/53/tmio_1570", 128);
@@ -7096,7 +7103,7 @@ void main()
 
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
 	DrawBustshot( 1, "sprite/normal/hyos1a_06_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawSceneWithMask( "bg/hina_douro_03", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/hina_douro_03", "effect/left", 0, 0, 300 );
 
 	PlayVoice(4, "ps3/s26/54/tyos_1960", 128);
 	OutputLine("<color=#715348>吉村</color> ", "「建設省の皆さんはよそ者ですからね。…オヤシロさまの事をよく知らなかったので多少、大目にも見ましたが。」",
@@ -7277,7 +7284,7 @@ void main()
 	DisableWindow();
 
 
-	DrawScene( "bg/hina_douro_04", 400 );
+	DrawScene( "background/hina_douro_04", 400 );
 	PlayBGM( 2, "me/flangefemale", 70, 0 );
 	ShakeScreen( 4, 6, 20, 50, 1, );
 
@@ -7327,7 +7334,7 @@ void main()
 
 	DrawBustshot( 3, "sprite/normal/hmi2a_10_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
 	DrawBustshot( 2, "sprite/normal/hyos1a_09_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/hina_bus_01", 400 );
+	DrawScene( "background/hina_bus_01", 400 );
 
 	PlayVoice(4, "ps3/s26/54/tyos_2110", 128);
 	OutputLine("<color=#715348>吉村</color> ", "「……何の真似ですか…？」",
@@ -7505,7 +7512,7 @@ void main()
 	//;喉元まで何かがこみ上げてくる魅音。@錯乱しながら喉元をばりばりと掻きむしる。\
 
 	DrawBustshot( 1, "sprite/normal/hri2a_06_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_01", 400 );
+	DrawScene( "background/hina_bus_01", 400 );
 
 	PlayVoice(4, "ps3/s26/52/trik_1070", 128);
 	OutputLine("<color=#6972c1>梨花</color> ", "「魅音ッ！…魅音ッ！…誰か来てッ！」",
@@ -7553,7 +7560,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "bg/hina_bus_01", 200 );
+	DrawScene( "background/hina_bus_01", 200 );
 	DrawBustshot( 4, "sprite/normal/hhos1a_02_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );
 	PlayVoice(4, "ps3/s26/58/thos_0150", 128);
 	OutputLine("<color=#ffedab>星野</color> ", "「悪いけど、ちょっと来てもらうわよ。」",
@@ -7591,7 +7598,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 2, "sprite/normal/hmi2a_09_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 50 );
+	DrawScene( "background/hina_bus_03", 50 );
 	ShakeScreen( 0, 6, 100, 2, 50, );
 
 
@@ -7641,7 +7648,7 @@ void main()
 
 	DrawScene( "black", 1000 );
 	//CallScriptSection( "util", "RainOn" );
-	DrawScene( "bg/hina_title_1", 1000 );
+	DrawScene( "background/hina_title_1", 1000 );
 
 	//;ld r,rik_D5a,80
 	PlayVoice(4, "ps3/s26/52/trik_1100", 128);
@@ -7710,7 +7717,7 @@ void main()
 	Wait( 1000 );
 
 	DrawBustshot( 1, "sprite/normal/hri2a_02_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 	PlayBGM( 0, "bgm0/tell_a_thing", 70, 0 );
 
 
@@ -7841,7 +7848,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	DrawScene( "bg/hina_bus_04", 400 );
+	DrawScene( "background/hina_bus_04", 400 );
 
 	OutputLine(NULL, "　雨の音。",
 		   NULL, "The sound of rain continues.", Line_WaitForInput);
@@ -7855,7 +7862,7 @@ void main()
 	DrawScene( "black", 400 );
 	DrawBustshot( 1, "sprite/normal/hmi2a_08_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 2, "sprite/normal/hri2a_09_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 	StopBGM( 0 );
 
 	PlayVoice(4, "ps3/s26/53/tmio_1920", 128);
@@ -7993,7 +8000,8 @@ void main()
 
 
 	DrawScene( "black", 400 );
-	DrawScene( "bg/greyscale/juku1_01", 400 );
+	DrawFilm( 2, 0xcc, 0xcc, 0xcc, 256, 0, 0, TRUE ); //monochrome mode
+	DrawScene( "background/juku1_01", 400 );
 
 	//;ld c,mio_D4,80
 	PlayVoice(4, "ps3/s26/53/tmio_2010", 128);
@@ -8023,9 +8031,10 @@ void main()
 
 
 	DrawScene( "black", 400 );
+	FadeFilm( 0, TRUE ); //end monochrome color
 	DrawBustshot( 1, "sprite/normal/hmi2a_02_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawBustshot( 2, "sprite/normal/hri2a_04_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 
 
 	PlayVoice(4, "ps3/s26/53/tmio_2040", 128);
@@ -8200,7 +8209,7 @@ void main()
 
 	//CallScriptSection( "util", "RainOn" );
 
-	DrawScene( "bg/hina_bus_01", 400 );
+	DrawScene( "background/hina_bus_01", 400 );
 	//;ld r,rik_D6a,80
 	PlayVoice(4, "ps3/s26/52/trik_1380", 128);
 	OutputLine("<color=#6972c1>梨花</color> ", "「早く行ってッ！早くしないと…！…あいつらがッ！…逃げてぇええぇえッ！」",
@@ -8214,7 +8223,7 @@ void main()
 	DrawBustshot( 5, "white", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 50, TRUE );
 	StopBGM( 0 );
 	DrawScene( "black", 200 );
-	DrawScene( "bg/hina_bus_01", 400 );
+	DrawScene( "background/hina_bus_01", 400 );
 
 	//CallScriptSection( "util", "RainOn" );
 
@@ -8227,7 +8236,7 @@ void main()
 	DrawBustshot( 1, "sprite/normal/hhos1a_02_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, FALSE );
 	DrawBustshot( 2, "sprite/normal/hoka1a_02_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 	Wait( 2000 );
-	DrawScene( "bg/hina_bus_01", 400 );
+	DrawScene( "background/hina_bus_01", 400 );
 	DrawBustshot( 1, "sprite/normal/hoda1a_02_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, FALSE );
 	DrawBustshot( 2, "sprite/normal/hhot1a_02_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, FALSE );
 	DrawBustshot( 3, "sprite/normal/hnit1a_01_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
@@ -8243,7 +8252,7 @@ void main()
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
 	DrawBustshot( 1, "sprite/normal/hmi2a_09_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 2, "sprite/normal/hri2a_08_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawSceneWithMask( "bg/hina_douro_03", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/hina_douro_03", "effect/left", 0, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花は魅音の前に立ち、魅音をかばう。",
@@ -8293,7 +8302,7 @@ void main()
 
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
 	DrawBustshot( 1, "sprite/normal/hhos1a_05_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawSceneWithMask( "bg/hina_bus_01", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/hina_bus_01", "effect/left", 0, 0, 300 );
 	PlayVoice(4, "ps3/s26/58/thos_0160", 128);
 	OutputLine("<color=#ffedab>星野</color> ", "「係長。…すでに末期症状です。刺激しないように注意して下さい。」",
 		   "<color=#ffedab>Hoshino</color> ", "\"Chief. ...She's already at the terminal stage. Please take care not to agitate her.\"", Line_Normal);
@@ -8345,7 +8354,7 @@ void main()
 	DrawScene( "black", 400 );
 	//CallScriptSection( "util", "RainOff" );
 	DrawBustshot( 1, "sprite/normal/hmi2a_08_2", 320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_02", 400 );
+	DrawScene( "background/hina_bus_02", 400 );
 
 	PlayVoice(4, "ps3/s26/53/tmio_2180", 128);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「…はぁ…。……何か今日はお役人のオンパレードですねぇ…。…建設省に厚生省。文部省とか大蔵省も来ますかねぇ？」",
@@ -8565,7 +8574,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	DrawScene( "bg/hina_ari", 400 );
+	DrawScene( "background/hina_ari", 400 );
 
 	//;ld l,hos_d6,80
 	PlayVoice(4, "ps3/s26/58/thos_0220", 128);
@@ -8624,7 +8633,7 @@ void main()
 	DrawScene( "black", 400 );
 	DrawBustshot( 1, "sprite/normal/hhos1a_06_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 2, "sprite/normal/hnit1a_03_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_02", 400 );
+	DrawScene( "background/hina_bus_02", 400 );
 
 	PlayVoice(4, "ps3/s26/57/tnit_0140", 128);
 	OutputLine("<color=#6b493e>新田</color> ", "「星野さん。脱線してます。」",
@@ -8705,7 +8714,7 @@ void main()
 
 	PlayBGM( 1, "me/rain4_long", 50, 0 );
 	DrawBustshot( 1, "sprite/normal/hhos1a_02_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_02", 400 );
+	DrawScene( "background/hina_bus_02", 400 );
 	PlayVoice(4, "ps3/s26/58/thos_0350", 128);
 	OutputLine("<color=#ffedab>星野</color> ", "「どれくらいの期間、どれくらいの距離を離れればアリが狂い出すのか。…これは個人差が激しく一概には言えません。」",
 		   "<color=#ffedab>Hoshino</color> ", "\"How long does it take to start? How far can the host go before the ant goes crazy? ...Those have varied greatly between individual cases, so we can't make any broad generalizations, unfortunately.\"", Line_Normal);
@@ -8739,7 +8748,7 @@ void main()
 	PlayBGM( 1, "me/rain4_long", 50, 0 );
 	PlayBGM( 0, "bgm0/gear", 70, 0 );
 	DrawBustshot( 2, "sprite/normal/hmi2a_04_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/hina_bus_02", 1000 );
+	DrawScene( "background/hina_bus_02", 1000 );
 
 	PlayVoice(4, "ps3/s26/53/tmio_2320", 128);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「はぁ……！？」",
@@ -8803,7 +8812,8 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	DrawScene( "bg/greyscale/jt1", 400 );
+	DrawFilm( 2, 0xcc, 0xcc, 0xcc, 256, 0, 0, TRUE ); //monochrome mode
+	DrawScene( "background/jt1", 400 );
 
 	//;ld l,nit_d3,22
 	PlayVoice(4, "ps3/s26/57/tnit_0170", 128);
@@ -8831,9 +8841,10 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
+	FadeFilm( 0, TRUE ); //end monochrome color
 	//CallScriptSection( "util", "RainOn" );
 	DrawBustshot( 1, "sprite/normal/hnit1a_03_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/hina_bus_01", 400 );
+	DrawScene( "background/hina_bus_01", 400 );
 	PlayVoice(4, "ps3/s26/57/tnit_0190", 128);
 	OutputLine("<color=#6b493e>新田</color> ", "「もうひとつが問題なのです。…梨花さんは生まれつき体が弱く、親虫の寄生に耐えられないんですよ。」",
 		   "<color=#6b493e>Nitta</color> ", "\"Then there's the other problem. ...Rika-san was born with a poor constitution, and she can't stand hosting the queen.\"", Line_Normal);
@@ -8895,7 +8906,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	DrawBustshot( 1, "sprite/normal/hri2a_12_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/hina_douro_03", 400 );
+	DrawScene( "background/hina_douro_03", 400 );
 
 	PlayVoice(4, "ps3/s26/52/trik_1430", 128);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…遊びに行ったでしょう？東京に…！……あなたは運悪く…その時発症してしまったのよ…ッ！」",
@@ -8950,7 +8961,7 @@ void main()
 	DrawScene( "black", 400 );
 	//CallScriptSection( "util", "RainOn" );
 	DrawBustshot( 2, "sprite/normal/hmi2a_09_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_douro_03", 50 );
+	DrawScene( "background/hina_douro_03", 50 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 
 	PlayVoice(4, "ps3/s26/53/tmio_2380", 128);
@@ -9051,7 +9062,7 @@ void main()
 	DrawScene( "white", 100 );
 	ChangeVolumeOfBGM( 0, 0, 2000 );
 	ChangeVolumeOfBGM( 1, 0, 2000 );
-	DrawScene( "bg/hina_title_1", 1000 );
+	DrawScene( "background/hina_title_1", 1000 );
 	Wait( 1000 );
 
 	DrawScene( "black", 400 );
@@ -9059,7 +9070,7 @@ void main()
 	//CallScriptSection( "util", "RainOff" );
 
 	DrawBustshot( 1, "sprite/normal/hri2a_08_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_02", 400 );
+	DrawScene( "background/hina_bus_02", 400 );
 
 	PlayBGM( 0, "bgm1/urameshikodama", 70, 0 );
 
@@ -9134,7 +9145,8 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	DrawScene( "bg/greyscale/juku1_01", 400 );
+	DrawFilm( 2, 0xcc, 0xcc, 0xcc, 256, 0, 0, TRUE ); //monochrome mode
+	DrawScene( "background/juku1_01", 400 );
 
 	//;ld r,rik_D3a,80
 	PlayVoice(4, "ps3/s26/52/trik_1510", 128);
@@ -9162,8 +9174,9 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
+	FadeFilm( 0, TRUE ); //end monochrome color
 	DrawBustshot( 6, "effect/cinema", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/greyscale/mati_ji1", 1000 );
+	DrawScene( "background/greyscale/mati_ji1", 1000 );
 
 	DrawBustshot( 1, "portrait/normal/hri2a_01_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 
@@ -9211,7 +9224,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 1000 );
-	DrawScene( "bg/hina_bus_04", 1000 );
+	DrawScene( "background/hina_bus_04", 1000 );
 	PlayBGM( 1, "me/a5_14446", 70, 0 );
 
 	OutputLine(NULL, "　何が何やら判らなくなって、よろよろと梨花から離れる魅音、舞台中央へ。",
@@ -9230,7 +9243,7 @@ void main()
 
 	DrawScene( "black", 1000 );
 	DrawBustshot( 6, "effect/cinema", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/greyscale/sta_1a", 1000 );
+	DrawScene( "background/greyscale/sta_1a", 1000 );
 
 	DrawBustshot( 1, "portrait/normal/hri2a_10_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 
@@ -9249,7 +9262,7 @@ void main()
 
 
 	DrawBustshot( 6, "effect/cinema", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/greyscale/neki1", 400 );
+	DrawScene( "background/greyscale/neki1", 400 );
 	DrawBustshot( 1, "portrait/normal/hri2a_10_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 	PlayVoice(4, "ps3/s26/52/trik_1580", 128);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…東京ではね。何カ所かの交番にあなたそっくりの子が現れるのよ。…財布を落としたって大騒ぎしてね。」",
@@ -9344,7 +9357,7 @@ void main()
 
 
 	DrawBustshot( 1, "sprite/normal/hnit1a_06_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_01", 50 );
+	DrawScene( "background/hina_bus_01", 50 );
 	PlaySE( 1, "a5_10316", 70, 64 );
 	PlayBGM( 3, "me/rain4_long", 70, 0 );
 
@@ -9400,7 +9413,7 @@ void main()
 
 	DrawSceneWithMask( "black", "effect/right", 0, 0, 300 );
 	DrawBustshot( 1, "sprite/normal/hri2a_06_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawSceneWithMask( "bg/hina_douro_03", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "background/hina_douro_03", "effect/right", 0, 0, 300 );
 
 	PlayVoice(4, "ps3/s26/52/trik_1660", 128);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…魅音ッ！私から離れないで！…症状が進んでしまう！」",
@@ -9426,7 +9439,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	DrawBustshot( 1, "sprite/normal/hmi2a_09_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_01", 50 );
+	DrawScene( "background/hina_bus_01", 50 );
 	ShakeScreen( 0, 6, 100, 2, 50, );
 
 	PlayVoice(4, "ps3/s26/53/tmio_2570", 128);
@@ -9483,7 +9496,7 @@ void main()
 	ShakeScreen( 2, 6, 100, 2, 50, );
 	DrawScene( "black", 400 );
 	DrawBustshot( 2, "sprite/normal/hnit1a_07_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/hina_douro_04", 400 );
+	DrawScene( "background/hina_douro_04", 400 );
 
 	PlayVoice(4, "ps3/s26/57/tnit_0270", 128);
 	OutputLine("<color=#6b493e>新田</color> ", "「園崎さんと梨花さんが友人になったのは、偶然ではない。作為的なものなんだよ。」",
@@ -9539,7 +9552,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	DrawScene( "bg/hina_title_1", 50 );
+	DrawScene( "background/hina_title_1", 50 );
 	PlaySE( 0, "a5_01026", 70, 64 );
 	ShakeScreen( 4, 6, 20, 50, 1, );
 
@@ -9744,7 +9757,7 @@ void main()
 	DrawScene( "black", 400 );
 	StopAllSound();
 
-	DrawScene( "bg/hina_douro_01", 50 );
+	DrawScene( "background/hina_douro_01", 50 );
 	PlayBGM( 1, "me/koware_wind", 85, 0 );
 
 	ShakeScreen( 4, 6, 20, 50, 1, );
@@ -9782,7 +9795,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	DrawBustshot( 2, "sprite/normal/hhos1a_03_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/hina_bus_01", 400 );
+	DrawScene( "background/hina_bus_01", 400 );
 
 	PlayVoice(4, "ps3/s26/58/thos_0490", 128);
 	OutputLine("<color=#ffedab>星野</color> ", "「…もう園崎さんは持ちません。」",
@@ -9805,7 +9818,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	DrawBustshot( 4, "sprite/normal/hri2a_05_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_douro_04", 400 );
+	DrawScene( "background/hina_douro_04", 400 );
 
 	PlayVoice(4, "ps3/s26/52/trik_1870", 128);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…私を撃つつもりッ！？」",
@@ -9851,7 +9864,7 @@ void main()
 
 	Wait( 1500 );
 
-	DrawScene( "bg/hina_douro_04", 400 );
+	DrawScene( "background/hina_douro_04", 400 );
 
 	PlayBGM( 1, "me/ame", 70, 0 );
 	//CallScriptSection( "util", "RainOn" );
@@ -9863,7 +9876,7 @@ void main()
 	PlaySE( 0, "wav/mc071", 100, 64 );
 	DrawScene( "white", 200 );
 	Wait( 500 );
-	DrawScene( "bg/hina_douro_04", 50 );
+	DrawScene( "background/hina_douro_04", 50 );
 	PlayBGM( 1, "me/ame", 70, 0 );
 	PlaySE( 1, "a5_10317", 70, 64 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
@@ -9885,7 +9898,7 @@ void main()
 
 	DrawSceneWithMask( "black", "effect/right", 0, 0, 300 );
 	DrawBustshot( 1, "sprite/normal/hnit1a_04_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawSceneWithMask( "bg/hina_bus_01", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "background/hina_bus_01", "effect/right", 0, 0, 300 );
 	PlayVoice(4, "ps3/s26/57/tnit_0410", 128);
 	OutputLine("<color=#6b493e>新田</color> ", "「捕らえろ。手術は急を要するぞ。」",
 		   "<color=#6b493e>Nitta</color> ", "\"Capture her. We have to conduct the surgery immediately.\"", Line_Normal);
@@ -9921,7 +9934,7 @@ void main()
 
 	ChangeVolumeOfBGM( 1, 70, 2000 );
 
-	DrawScene( "bg/hina_title_1", 400 );
+	DrawScene( "background/hina_title_1", 400 );
 	PlayBGM( 0, "bgm1/tsukisanbika", 100, 0 );
 
 	OutputLine(NULL, "　魅音、すばやく梨花の刃物をひったくり身構える。",
@@ -9935,7 +9948,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	DrawBustshot( 1, "sprite/normal/hnit1a_04_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/hina_bus_01", 50 );
+	DrawScene( "background/hina_bus_01", 50 );
 	PlaySE( 0, "reload_fast", 70, 64 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 
@@ -10131,7 +10144,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 1, "sprite/normal/hhos1a_09_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/hina_douro_04", 400 );
+	DrawScene( "background/hina_douro_04", 400 );
 
 	PlayVoice(4, "ps3/s26/58/thos_0520", 128);
 	OutputLine("<color=#ffedab>星野</color> ", "「…園崎さん！　…落ち着いて！私たちは何もしてないわ！　本当よ！…あなたが…幻覚を見てひとりで暴れてるだけなのよ！…落ち着いてッ！」",
@@ -10174,7 +10187,7 @@ void main()
 	DrawScene( "white", 200 );
 	StopBGM( 0 );
 	DrawBustshot( 1, "sprite/normal/hmi2a_07_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_douro_01", 1000 );
+	DrawScene( "background/hina_douro_01", 1000 );
 
 
 
@@ -10189,7 +10202,7 @@ void main()
 
 
 	DrawScene( "black", 400 );
-	DrawScene( "bg/hina_douro_04", 400 );
+	DrawScene( "background/hina_douro_04", 400 );
 	//;ld c,mio_D7a,22
 	PlayVoice(4, "ps3/s26/53/tmio_2750", 128);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「…梨花さん…。……梨花さん…！…起きて下さいよぅ…！…そろそろ帰りましょうよぅ……。」",
@@ -10311,7 +10324,7 @@ void main()
 	//CallScriptSection( "util", "RainOff" );
 
 	DrawBustshot( 1, "portrait/normal/hri2a_02_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 3000 );
+	DrawScene( "background/hina_bus_03", 3000 );
 
 	PlayVoice(4, "ps3/s26/52/trik_1890", 128);
 	OutputLine("<color=#6972c1>梨花</color> ", "「……起きちゃった…？」",
@@ -10385,7 +10398,7 @@ void main()
 
 	DrawScene( "black", 1000 );
 	DrawBustshot( 1, "sprite/normal/hri2a_01_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/hina_bus_03", 400 );
+	DrawScene( "background/hina_bus_03", 400 );
 
 	//;bgm1 205
 	PlayVoice(4, "ps3/s26/52/trik_1930", 128);
@@ -10486,7 +10499,7 @@ void main()
 	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 	//CallScriptSection( "util", "RainOn" );
-	DrawScene( "bg/hina_title_1", 400 );
+	DrawScene( "background/hina_title_1", 400 );
 
 	//;ld r,mio_D4,80
 	PlayVoice(4, "ps3/s26/53/tmio_2910", 128);

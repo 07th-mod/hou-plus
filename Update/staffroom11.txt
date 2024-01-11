@@ -12,7 +12,7 @@ void main()
 	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
 	SetSpeedOfMessage( FALSE, 0 );
 
-	DrawScene( "bg/jansou", 1000 );
+	DrawScene( "background/jansou", 1000 );
 	PlayBGM( 0, "bgm0/2", 70, 0 );
 
 	//;■スタッフルーム
@@ -284,7 +284,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "bg/jansou", 1000 );
+	DrawScene( "background/jansou", 1000 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -401,7 +401,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 1000 );
-	DrawScene( "bg/jansou", 1000 );
+	DrawScene( "background/jansou", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「竜騎士07さんがえいえんの世界に旅立たれたので、私、八咫桜が代わります。",

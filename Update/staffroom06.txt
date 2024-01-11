@@ -395,7 +395,7 @@ void main()
 	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "white", 1000 );
 	PlayBGM( 0, "bgm0/cafe", 70, 0 );
-	DrawScene( "bg/ke_shiryou1_02", 400 );
+	DrawScene( "background/ke_shiryou1_02", 400 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
@@ -414,7 +414,7 @@ void main()
 	DisableWindow();
 
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 300 );
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/left", 0, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……こんにちは、八咫桜にゃりん。",
@@ -461,7 +461,7 @@ void main()
 	DisableWindow();
 
 	DrawSceneWithMask( "black", "effect/right", 0, 0, 300 );
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/right", 0, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　お陰様で、『ひぐらしのなく頃に』も無事に第７話をお届けすることができました。",

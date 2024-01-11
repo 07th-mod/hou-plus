@@ -11,7 +11,7 @@ void main()
 	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
 	SetSpeedOfMessage( FALSE, 0 );
 
-	DrawScene( "bg/ke_shiryou1_02", 1000 );
+	DrawScene( "background/ke_shiryou1_02", 1000 );
 	PlayBGM( 0, "bgm0/amber", 70, 0 );
 	//;■スタッフルーム
 
@@ -201,7 +201,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	FadeOutBGM( 0, 1000, FALSE );
-	DrawScene( "bg/ke_shiryou1_02", 1000 );
+	DrawScene( "background/ke_shiryou1_02", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あれは…いつの夏コミだったかも思い出せない…。",
@@ -325,7 +325,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "bg/ke_shiryou1_02", 1000 );
+	DrawScene( "background/ke_shiryou1_02", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ぅぅぅぅぅ！",
@@ -513,7 +513,7 @@ void main()
 	PlaySE( 0, "wav/daidageki", 70, 64 );
 	ShakeScreen( 2, 12,  30 , 2, 50, );
 	Wait( 40 );
-	DrawScene( "bg/ke_shiryou1_02", 400 );
+	DrawScene( "background/ke_shiryou1_02", 400 );
 
 	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
 
@@ -560,7 +560,7 @@ void main()
 	PlaySE( 0, "wav/finish", 70, 64 );
 	ShakeScreen( 0, 12, 30, 2, 50, );
 	Wait( 40 );
-	DrawScene( "bg/ke_shiryou1_02", 400 );
+	DrawScene( "background/ke_shiryou1_02", 400 );
 
 	OutputLineAll(NULL, "", Line_Normal);
 
@@ -828,7 +828,7 @@ void main()
 
 	//;■エフェクトよろしくです☆　連打してください☆
 
-	DrawScene( "bg/ke_shiryou1_02", 3000 );
+	DrawScene( "background/ke_shiryou1_02", 3000 );
 	//;setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,640,480
 	SetSpeedOfMessage( FALSE, 0 );
 

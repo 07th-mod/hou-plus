@@ -41,7 +41,7 @@ void main()
 	DisableWindow();
 
 
-	DrawSceneWithMask( "bg/ke_shiryou1_02", "effect/up", 0, 0, 1300 );
+	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/up", 0, 0, 1300 );
 	DrawBustshot( 1, "sprite/normal/oko3_niyari_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -80,7 +80,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "bg/sora", 400 );
+	DrawScene( "background/sora", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……あぁ、大きな変化があった。",
@@ -194,7 +194,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "bg/ke_shiryou1_02", 50 );
+	DrawScene( "background/ke_shiryou1_02", 50 );
 	PlaySE( 0, "wav/boyon", 70, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -226,7 +226,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "bg/ke_shiryou1_02", 400 );
+	DrawScene( "background/ke_shiryou1_02", 400 );
 	DrawBustshotWithFiltering( 1, "sprite/normal/oisi2_10_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -311,7 +311,7 @@ void main()
 	//;dwaveload 13,"WAV\Heri1.wav"
 	//;dwaveplay 13
 
-	DrawSceneWithMask( "bg/heri_gunji_01", "effect/up", 0, 0, 1300 );
+	DrawSceneWithMask( "background/heri_gunji_01", "effect/up", 0, 0, 1300 );
 	DrawBustshotWithFiltering( 1, "sprite/normal/ri4_komaru_a1_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 	SetSpeedOfMessage( FALSE, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -384,7 +384,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "bg/res5", "effect/maskc", 0, 0, 1300 );
+	DrawSceneWithMask( "background/res5", "effect/maskc", 0, 0, 1300 );
 	DrawBustshotWithFiltering( 1, "sprite/normal/ta2_akuwarai_2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -455,7 +455,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "bg/je1", 400 );
+	DrawScene( "background/je1", 400 );
 	DrawBustshotWithFiltering( 1, "sprite/normal/tetu_1_0", "effect/up", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 400, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　なるせ椿だって、ますますに元気が止まらなくなっていく。",
@@ -543,7 +543,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "bg/ryoutei2_01", 400 );
+	DrawScene( "background/ryoutei2_01", 400 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -631,7 +631,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "bg/sora", 50 );
+	DrawScene( "background/sora", 50 );
 	PlaySE( 0, "bb", 70, 64 );
 	ShakeScreen( 2, 15,  100 , 4, 25, );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>全員</color>", NULL, "<color=#f5e6d3>Everyone</color>", NULL, Line_ContinueAfterTyping); }
@@ -646,7 +646,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "bg/fure2", "effect/maskc", 0, 0, 1300 );
+	DrawSceneWithMask( "background/fure2", "effect/maskc", 0, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　修羅場を共にしてくれた戦友諸君に敬礼…！！",

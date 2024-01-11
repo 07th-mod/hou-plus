@@ -39,7 +39,7 @@ void main()
 	//;■ME:セミの声
 	PlayBGM( 1, "me/semi", 70, 0 );
 
-	DrawScene( "bg/saiguden_02", 400 );
+	DrawScene( "background/saiguden_02", 400 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -76,7 +76,7 @@ void main()
 
 	FadeOutBGM( 1, 1000, TRUE );
 	//;■BGM:梨花ちゃん的なコミカル曲
-	DrawScene( "bg/jsa1", 400 );
+	DrawScene( "background/jsa1", 400 );
 	PlayBGM( 0, "bgm1/rika", 70, 0 );
 	PlayBGM( 1, "me/semi", 70, 0 );
 
@@ -272,7 +272,7 @@ void main()
 
 	DisableWindow();
 	StopBGM( 1 );
-	DrawScene( "bg/saiguden_03", 400 );
+	DrawScene( "background/saiguden_03", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　まずは不気味な拷問道具、もとい、祭具に積もった埃をはたきで落として……。",
 		   NULL, "First she'd brush away the dust built up on the creepy torture devices - that is, the ritual tools.", Line_Normal);
@@ -340,22 +340,22 @@ void main()
 	//;■BGM:みんなで元気な感じの曲
 	PlayBGM( 1, "me/semi", 70, 0 );
 	PlayBGM( 0, "bgm0/1", 70, 0 );
-	DrawScene( "bg/mati3", 400 );
+	DrawScene( "background/mati3", 400 );
 
 	Wait( 2000 );
 
-	DrawScene( "bg/cit_4a", 400 );
+	DrawScene( "background/cit_4a", 400 );
 
 	Wait( 2000 );
 
-	DrawScene( "bg/sora", 400 );
+	DrawScene( "background/sora", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　興宮の市民プールは、外まで子供たちの楽しそうな声が溢れている。",
 		   NULL, "The voices of children playing around reached some distance from the Okinomiya Public Pool.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	DrawSceneWithMask( "bg/cit_4a", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/cit_4a", "effect/left", 0, 0, 300 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　部活メンバーたちの自転車が、次々に駐輪場に飛び込んでくる。",
 		   NULL, "The club members' bicycles all flew into the pool's parking lot one after another.", Line_Normal);
@@ -430,7 +430,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	//;【圭一】
-	DrawScene( "bg/sora5", 400 );
+	DrawScene( "background/sora5", 400 );
 	//;ld r,kei_1,24
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/1/keiichi9002", 128);
@@ -478,7 +478,7 @@ void main()
 	DisableWindow();
 	//;【梨花】
 	DrawBustshot( 1, "sprite/normal/ri2_warai_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/p1", 400 );
+	DrawScene( "background/p1", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/5/rika9017", 128);
 	OutputLine(NULL, "「よくわかりませんですが、ここで暴れたら魅音が怒られるということはわかりましたです。",
@@ -701,7 +701,7 @@ void main()
 	DisableWindow();
 	Wait( 1000 );
 	PlayBGM( 1, "me/semi", 70, 0 );
-	DrawSceneWithMask( "bg/kouisitu1", "effect/left", 0, 0, 1300 );
+	DrawSceneWithMask( "background/kouisitu1", "effect/left", 0, 0, 1300 );
 	//;br
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　圭一はトボトボと男子更衣室に入る。",
@@ -808,7 +808,7 @@ void main()
 	PlaySE( 1, "horror", 70, 64 );
 	//;【圭一】
 	DrawBustshot( 2, "sprite/normal/kei7_ikari2_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE );
-	DrawSceneWithMask( "bg/fure1", "effect/maskc", 0, 0, 1300 );
+	DrawSceneWithMask( "background/fure1", "effect/maskc", 0, 0, 1300 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/1/keiichi9016", 128);
 	OutputLine(NULL, "「これは一体、どういうことだよ？！",
@@ -909,7 +909,7 @@ void main()
 		   NULL, "\"Those magic swimsuits are foreign objects that drifted here from a different Fragment.", Line_WaitForInput);
 	DisableWindow();
 	//;【羽入】
-	DrawScene( "bg/fure1", 400 );
+	DrawScene( "background/fure1", 400 );
 	//;ld c,han_1,80
 	PlayVoice(4, "ps3/meha/12/hanyu9027", 128);
 	OutputLine(NULL, "カケラの海を渡ることはとても困難で、ましてや、意思なき物品が漂着することはさらに稀なことなのですが……。",
@@ -952,7 +952,7 @@ void main()
 	//;br
 	//;【羽入】
 	DrawBustshot( 1, "sprite/normal/ha1_muhyou_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/fure1", 400 );
+	DrawScene( "background/fure1", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/12/hanyu9030", 128);
 	OutputLine(NULL, "「あの漂着物は、このカケラとは相容れぬ世界の物質で作られたもの。",
@@ -1042,7 +1042,7 @@ void main()
 	DisableWindow();
 	DrawScene( "black", 400 );
 	DrawScene( "white", 100 );
-	DrawScene( "bg/uchu_space1", 1000 );
+	DrawScene( "background/uchu_space1", 1000 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　眩い世界は次の瞬間、宇宙に変わる。",
 		   NULL, "Keiichi was shown a vision of the planet floating in space.", Line_WaitForInput);
@@ -1051,7 +1051,7 @@ void main()
 	OutputLine(NULL, "大爆発ッ！！！",
 		   NULL, " exploded!!!", Line_ContinueAfterTyping);
 	PlaySE( 0, "bb", 70, 64 );
-	DrawScene( "bg/uchu_space2", 0 );
+	DrawScene( "background/uchu_space2", 0 );
 	ShakeScreen( 2, 18,  100 , 4, 25, );
 	PlaySE( 1, "rena-swing", 70, 64 );
 	DrawScene( "white", 100 );
@@ -1077,7 +1077,7 @@ void main()
 
 	//;【圭一】
 	DrawBustshot( 1, "sprite/normal/kei7_komaru_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/fure1", 400 );
+	DrawScene( "background/fure1", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/1/keiichi9030", 128);
 	OutputLine(NULL, "「ちょっと待て待て！！",
@@ -1168,8 +1168,8 @@ void main()
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 50, TRUE );
 	ShakeScreen( 0, 6, 100, 2, 50, );
 	DrawSceneWithMask( "black", "effect/right", 0, 0, 300 );
-	DrawSceneWithMask( "bg/kouisitu1", "effect/right", 0, 0, 300 );
-	DrawSceneWithMask( "bg/p2", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/kouisitu1", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "background/p2", "effect/left", 0, 0, 300 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　圭一は意気込んで更衣室を飛び出す。",
 		   NULL, "Keiichi leapt out of the changing room with enthusiasm.", GetGlobalFlag(GLinemodeSp));
@@ -1200,7 +1200,7 @@ void main()
 
 	//;【圭一】
 	DrawBustshot( 1, "sprite/normal/kei7_ikari2_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawSceneWithMask( "bg/oki_pool2", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "background/oki_pool2", "effect/right", 0, 0, 300 );
 	PlaySE( 0, "bb", 70, 64 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/1/keiichi9040", 128);
@@ -1234,18 +1234,18 @@ void main()
 	DrawScene( "white", 50 );
 	DrawBustshot( 1, "sprite/normal/me8_wink_a1_1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 2, "sprite/normal/re6_hau_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool1", 1000 );
+	DrawScene( "background/oki_pool1", 1000 );
 
 	Wait( 2000 );
 
 	DrawBustshot( 3, "sprite/normal/sa10_akuwarai_a1_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE );
 	DrawBustshot( 4, "sprite/normal/ri8_def_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/oki_pool2", 1000 );
+	DrawScene( "background/oki_pool2", 1000 );
 
 	Wait( 2000 );
 
 
-	DrawScene( "bg/sora", 400 );
+	DrawScene( "background/sora", 400 );
 	//;【男たち】
 	DrawBustshotWithFiltering( 1, "effect/hton", "effect/right", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Man</color>", NULL, Line_ContinueAfterTyping); }
@@ -1273,7 +1273,7 @@ void main()
 	//;【梨花】
 	//;cl r,0
 	DrawBustshot( 3, "sprite/normal/ri8_def_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool2", 400 );
+	DrawScene( "background/oki_pool2", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/5/rika9029", 128);
 	OutputLine(NULL, "「み～♪",
@@ -1295,7 +1295,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "bg/sora", 400 );
+	DrawScene( "background/sora", 400 );
 	PlaySE( 0, "kassai1", 70, 64 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 
@@ -1319,7 +1319,7 @@ void main()
 	DisableWindow();
 	//;【沙都子】
 	DrawBustshot( 1, "sprite/normal/sa10_def_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawSceneWithMask( "bg/oki_pool3", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "background/oki_pool3", "effect/right", 0, 0, 300 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/4/satoko9012", 128);
 	OutputLine(NULL, "「あぁら、梨花だけが視線を独り占めなんて許せませんでしてよ？",
@@ -1352,7 +1352,7 @@ void main()
 	//;【レナ】
 	DrawBustshot( 4, "sprite/normal/re6_def_a1_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE );
 	DrawBustshot( 5, "sprite/normal/me8_akuwarai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawSceneWithMask( "bg/oki_pool1", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/oki_pool1", "effect/left", 0, 0, 300 );
 	ChangeBustshot( 4, "sprite/normal/re6_warai_a1_2", 200, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/2/rena9009", 128);
@@ -1373,7 +1373,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	//;【男たち】
-	DrawScene( "bg/sora", 400 );
+	DrawScene( "background/sora", 400 );
 	DrawBustshot( 1, "effect/hton", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 50, FALSE );
 	DrawBustshot( 2, "effect/hara", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 50, TRUE );
 	PlaySE( 0, "bb", 70, 64 );
@@ -1397,7 +1397,7 @@ void main()
 
 	DrawBustshot( 3, "sprite/normal/re6_warai_a1_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE );
 	DrawBustshot( 4, "sprite/normal/me8_akuwarai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/oki_pool2", 400 );
+	DrawScene( "background/oki_pool2", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナと魅音が二人で、モデルみたいなポーズをとって決めると、男たちは悶絶して歓喜していた……。",
 		   NULL, "Rena and Mion were both posing like models, leaving the men writhing and shouting with joy...", GetGlobalFlag(GLinemodeSp));
@@ -1419,7 +1419,7 @@ void main()
 
 	//;【圭一】
 	DrawBustshot( 5, "sprite/normal/kei7_warai_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool1", 400 );
+	DrawScene( "background/oki_pool1", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/1/keiichi9042", 128);
 	OutputLine(NULL, "「ふぉおおおおぉおんぬをぉおおおぉぉおおぉ、",
@@ -1482,7 +1482,7 @@ void main()
 	DrawBustshot( 1, "sprite/normal/me8_wink_a1_1", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawBustshot( 2, "sprite/normal/re6_warai_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 6, 0, FALSE );
 	DrawBustshot( 3, "sprite/normal/sa10_akuwarai_a1_2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 7, 0, FALSE );
-	DrawSceneWithMask( "bg/oki_pool1", "effect/up", 0, 0, 300 );
+	DrawSceneWithMask( "background/oki_pool1", "effect/up", 0, 0, 300 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　抗えぬ男たちは、今や、セクシーな魅力にメロメロ大名行列となって、部活女子たちに従えられている。",
 		   NULL, "The overpowered men were currently an enthralled procession following around the sexy charm of the club members.", GetGlobalFlag(GLinemodeSp));
@@ -1555,7 +1555,7 @@ void main()
 	//;【梨花】
 	//csp -1
 	DrawBustshot( 8, "sprite/normal/ri8_def_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawSceneWithMask( "bg/oki_pool2", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "background/oki_pool2", "effect/right", 0, 0, 300 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/5/rika9031", 128);
 	OutputLine(NULL, "「おや、圭一なのです♪",
@@ -1578,7 +1578,7 @@ void main()
 	//;■SE:ドゴーン！@
 	PlaySE( 0, "bb", 70, 64 );
 	DrawScene( "white", 50 );
-	DrawScene( "bg/uchu_space2", 400 );
+	DrawScene( "background/uchu_space2", 400 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅力の波動が視覚化できたなら、それはまるで直径１０ｋｍを超える巨大隕石が目の前に衝突して炸裂する衝撃波の如し！",
@@ -1604,7 +1604,7 @@ void main()
 
 	//;【圭一】
 	DrawBustshot( 1, "sprite/normal/kei7_ikari2_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool1", 400 );
+	DrawScene( "background/oki_pool1", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/1/keiichi9048", 128);
 	OutputLine(NULL, "「ちょちょ、ちょっと待ってくれ……。",
@@ -1641,7 +1641,7 @@ void main()
 	DrawBustshot( 1, "sprite/normal/kei7_nayamu_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 2, "effect/hara", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
 	DrawBustshot( 3, "effect/hton", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/sora", 50 );
+	DrawScene( "background/sora", 50 );
 	ShakeScreen( 2, 18,  100 , 6, 16, );
 	//;【男たち】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一と男たち</color>", NULL, "<color=#f5e6d3>Keiichi and the men</color>", NULL, Line_ContinueAfterTyping); }
@@ -1661,7 +1661,7 @@ void main()
 	DisableWindow();
 	//;【レナ】
 	DrawBustshot( 4, "sprite/normal/re6_komaru_a1_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE );
-	DrawSceneWithMask( "bg/oki_pool2", "effect/up", 0, 0, 300 );
+	DrawSceneWithMask( "background/oki_pool2", "effect/up", 0, 0, 300 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/2/rena9011", 128);
 	OutputLine(NULL, "「魅ぃちゃん、よしなよ。",
@@ -1775,7 +1775,7 @@ void main()
 	PlayBGM( 1, "me/semi", 70, 0 );
 	//;【圭一】
 	DrawBustshot( 1, "sprite/normal/kei7_ikari2_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/oki_pool3", 400 );
+	DrawScene( "background/oki_pool3", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/1/keiichi9060", 128);
 	OutputLine(NULL, "「ちょっとタンマ、タンマ！！",
@@ -1808,7 +1808,7 @@ void main()
 
 	//;■SE:ドゴーン！@
 	PlaySE( 0, "bb", 70, 64 );
-	DrawScene( "bg/sora", 50 );
+	DrawScene( "background/sora", 50 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 	//;【男たち】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男たち</color>", NULL, "<color=#f5e6d3>Men</color>", NULL, Line_ContinueAfterTyping); }
@@ -1821,7 +1821,7 @@ void main()
 	DisableWindow();
 	//;【梨花】
 	DrawBustshot( 1, "sprite/normal/ri8_niko_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawSceneWithMask( "bg/oki_pool1", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "background/oki_pool1", "effect/right", 0, 0, 300 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/5/rika9035", 128);
 	OutputLine(NULL, "「この水着が地球を滅ぼす……？",
@@ -1856,7 +1856,7 @@ void main()
 	//;【レナ】
 	//;ld r,mio_1,0
 	DrawBustshot( 4, "sprite/normal/re6_nande_a1_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE );
-	DrawSceneWithMask( "bg/oki_pool2", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/oki_pool2", "effect/left", 0, 0, 300 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/2/rena9013", 128);
 	OutputLine(NULL, "「一体、どういうことなんだろ？",
@@ -1912,7 +1912,7 @@ void main()
 
 	//;【圭一】
 	DrawBustshot( 1, "sprite/normal/kei7_ikari1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool2", 400 );
+	DrawScene( "background/oki_pool2", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/1/keiichi9065", 128);
 	OutputLine(NULL, "「クソッ、すっかり浮かれてて話が通じないッ。",
@@ -1931,7 +1931,7 @@ void main()
 	PlaySE( 0, "a5_10315", 70, 64 );
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 50, TRUE );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
-	DrawSceneWithMask( "bg/sora", "effect/up", 0, 0, 400 );
+	DrawSceneWithMask( "background/sora", "effect/up", 0, 0, 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　果敢に飛び掛かる圭一！",
 		   NULL, "Keiichi boldly leapt at them!", GetGlobalFlag(GLinemodeSp));
@@ -1978,7 +1978,7 @@ void main()
 
 	//;■ME:蝉の声
 	PlayBGM( 1, "me/semi", 70, 0 );
-	DrawSceneWithMask( "bg/sora", "effect/up", 0, 0, 1300 );
+	DrawSceneWithMask( "background/sora", "effect/up", 0, 0, 1300 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……結果は火を見るより明らかだ。",
 		   NULL, "...The outcome was plain as day.", GetGlobalFlag(GLinemodeSp));
@@ -1996,7 +1996,7 @@ void main()
 	DisableWindow();
 
 	//;【圭一】
-	DrawScene( "bg/oki_pool1", 400 );
+	DrawScene( "background/oki_pool1", 400 );
 	DrawBustshotWithFiltering( 1, "sprite/normal/kei7_komaru_0", "effect/up", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 1300, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/1/keiichi9068", 128);
@@ -2033,7 +2033,7 @@ void main()
 	PlayBGM( 0, "bgm0/4", 70, 0 );
 	//;【圭一】
 	DrawBustshot( 1, "sprite/normal/kei7_nayamu_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool3", 400 );
+	DrawScene( "background/oki_pool3", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/1/keiichi9070", 128);
 	OutputLine(NULL, "「正面から馬鹿正直に挑んで、勝算がある訳がない。",
@@ -2073,8 +2073,9 @@ void main()
 	DrawScene( "black", 400 );
 	//;mldで水着絵が意図した場所に表示されないのでlspを使用
 	//print 22
-	DrawBustshot( 1, "sprite/greyscale/re6_hau_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/greyscale/chika_shisetsu", 400 );
+	DrawFilm( 2, 0xcc, 0xcc, 0xcc, 256, 0, 0, TRUE ); //monochrome mode
+	DrawBustshot( 1, "sprite/normal/re6_hau_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
+	DrawScene( "background/chika_shisetsu", 400 );
 	//;mld c,ren_3,22
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　一般客の訪れない、関係者通路の倉庫室のようなところにレナだけをおびき寄せる……。",
@@ -2084,7 +2085,7 @@ void main()
 	DisableWindow();
 	//;mld c,ren_2,80
 	//print 80
-	ChangeBustshot( 1, "sprite/greyscale/re6_nande_a1_2", 200,  TRUE);
+	ChangeBustshot( 1, "sprite/normal/re6_nande_a1_2", 200,  TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　プールの賑やかな声が聞こえてくるのに、誰の姿もない寂しい場所に呼び出され、困惑してキョロキョロとするレナ。",
 		   NULL, "We'll still hear the cheery voices from the pool, but Rena will be confused by the desolate space devoid of others.", GetGlobalFlag(GLinemodeSp));
@@ -2094,7 +2095,7 @@ void main()
 	PlaySE( 0, "a5_10317", 70, 64 );
 	DrawBustshot( 2, "effect/kei", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 100, TRUE );
 	ShakeScreen( 0, 6, 100, 2, 50, );
-	ChangeBustshot( 2, "sprite/greyscale/kei7_ikari1_0", 200,  TRUE);
+	ChangeBustshot( 2, "sprite/normal/kei7_ikari1_0", 200,  TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その時、物陰からレナの背後に飛び掛かる圭一の影！",
 		   NULL, "Then I'll leap from the shadows and assault Rena from behind!", Line_Normal);
@@ -2104,7 +2105,7 @@ void main()
 	//;【レナ】
 	//;mld c,ren_7,80
 	//print 80
-	ChangeBustshot( 1, "sprite/greyscale/re6_bikkuri_a1_1", 200,  TRUE);
+	ChangeBustshot( 1, "sprite/normal/re6_bikkuri_a1_1", 200,  TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/2/rena9015", 128);
 	OutputLine(NULL, "「きゃああぁああぁああぁあ？！？！",
@@ -2116,7 +2117,7 @@ void main()
 
 	DisableWindow();
 	//;【圭一】
-	ChangeBustshot( 2, "sprite/greyscale/kei7_def1_0", 200, TRUE );
+	ChangeBustshot( 2, "sprite/normal/kei7_def1_0", 200, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/1/keiichi9077", 128);
 	OutputLine(NULL, "「おおっと、レナ。",
@@ -2133,7 +2134,7 @@ void main()
 	//csp 701+1
 	//print 25
 	PlaySE( 0, "down3", 70, 64 );
-	DrawSceneWithMask( "bg/greyscale/chika_shisetsu", "effect/down", 0, 0, 300 );
+	DrawSceneWithMask( "background/chika_shisetsu", "effect/down", 0, 0, 300 );
 	DrawSceneWithMask( "black", "effect/down", 0, 0, 300 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　床に水着姿のレナを抑えつける圭一。",
@@ -2159,7 +2160,7 @@ void main()
 	StopBGM( 0 );
 	PlayBGM( 1, "me/kaze_fr1", 70, 0 );
 
-	DrawScene( "bg/greyscale/chika_shisetsu", 50 );
+	DrawScene( "background/chika_shisetsu", 50 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 	//;【レナ】
 	//;ld c,ren_1,80
@@ -2182,6 +2183,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
+	FadeFilm( 0, TRUE ); //end monochrome color
 
 	//;■SE:ドゴーン！@
 	//;■ME:蝉の声
@@ -2191,7 +2193,7 @@ void main()
 	PlayBGM( 2, "me/semi", 70, 0 );
 
 	DrawScene( "white", 50 );
-	DrawScene( "bg/sora", 200 );
+	DrawScene( "background/sora", 200 );
 
 	//;【圭一】
 	//;ld c,kei_1,80
@@ -2221,7 +2223,7 @@ void main()
 
 	//;【圭一】
 	DrawBustshot( 1, "sprite/normal/kei7_ikari2_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool2", 1000 );
+	DrawScene( "background/oki_pool2", 1000 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/1/keiichi9083", 128);
 	OutputLine(NULL, "「駄目だ駄目だッ。",
@@ -2273,7 +2275,7 @@ void main()
 
 	DisableWindow();
 	DrawBustshot( 2, "sprite/normal/si6_majime_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE );
-	DrawSceneWithMask( "bg/oki_pool1", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "background/oki_pool1", "effect/right", 0, 0, 300 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは詩音だった。",
 		   NULL, "It was Shion.", GetGlobalFlag(GLinemodeSp));
@@ -2306,7 +2308,7 @@ void main()
 
 	//;【圭一】
 	DrawBustshot( 3, "sprite/normal/kei7_warai_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/oki_pool2", 400 );
+	DrawScene( "background/oki_pool2", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/1/keiichi9088", 128);
 	OutputLine(NULL, "「詩音が味方になってくれれば心強いな！",
@@ -2328,7 +2330,7 @@ void main()
 	Wait( 1000 );
 	//;【詩音】
 	DrawBustshot( 4, "sprite/normal/si6_tohoho_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool2", 400 );
+	DrawScene( "background/oki_pool2", 400 );
 	PlayBGM( 0, "bgm1/rika", 70, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/6/shion9000", 128);
@@ -2397,7 +2399,7 @@ void main()
 
 	//;【詩音】
 	DrawBustshot( 1, "sprite/normal/si6_majime_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool3", 400 );
+	DrawScene( "background/oki_pool3", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/6/shion9006", 128);
 	OutputLine(NULL, "「なるほどっ。",
@@ -2503,7 +2505,7 @@ void main()
 	StopBGM( 2 );
 	PlaySE( 0, "wav/finish", 70, 64 );
 	DrawScene( "white", 50 );
-	DrawScene( "bg/sora", 1000 );
+	DrawScene( "background/sora", 1000 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その時。",
 		   NULL, "In the next moment...", Line_WaitForInput);
@@ -2537,7 +2539,7 @@ void main()
 
 	DrawBustshot( 1, "sprite/normal/kei7_ikari2_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 2, "sprite/normal/si6_odoroki_a1_2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/oki_pool1", 50 );
+	DrawScene( "background/oki_pool1", 50 );
 
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 
@@ -2615,7 +2617,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 1, "sprite/normal/sa10_def_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool1", 400 );
+	DrawScene( "background/oki_pool1", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　最初はモテモテを満喫していた沙都子だったが、さすがにそろそろウザったくなり、今はむしろ、人目を避けて、デッキチェアで休んでいるところだった。",
 		   NULL, "Satoko was enjoying her popularity at first, but she was finally starting to grow annoyed by it, so now she was trying to avoid attention and rest on a deck chair.", GetGlobalFlag(GLinemodeSp));
@@ -2717,7 +2719,7 @@ void main()
 	//;【圭一】
 	DrawBustshot( 1, "sprite/normal/si6_def_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 2, "sprite/normal/kei7_komaru_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/oki_pool2", 400 );
+	DrawScene( "background/oki_pool2", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/1/keiichi9107", 128);
 	OutputLine(NULL, "「……しかしなぁ。",
@@ -2784,7 +2786,7 @@ void main()
 
 	//;【沙都子】
 	DrawBustshot( 1, "sprite/normal/sa10_odoroki_a1_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/oki_pool3", 400 );
+	DrawScene( "background/oki_pool3", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/4/satoko9025", 128);
 	OutputLine(NULL, "「えぇ？！",
@@ -2936,7 +2938,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 1, "sprite/normal/sa10_muhyou_a2_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/oki_pool1", 400 );
+	DrawScene( "background/oki_pool1", 400 );
 	//;【詩音】
 	DrawBustshotWithFiltering( 2, "sprite/normal/si6_def_a1_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -3023,7 +3025,7 @@ void main()
 		   NULL, "Rustle, rustle.", Line_WaitForInput);
 	PlaySE( 0, "se_2105", 70, 64 );
 	DrawScene( "white", 50 );
-	DrawSceneWithMask( "bg/sora", "effect/up", 0, 0, 300 );
+	DrawSceneWithMask( "background/sora", "effect/up", 0, 0, 300 );
 	OutputLine(NULL, "スポーン！",
 		   NULL, " Shhpop!", Line_Normal);
 	ClearMessage();
@@ -3049,13 +3051,13 @@ void main()
 	DisableWindow();
 
 	PlaySE( 0, "a5_10315", 70, 64 );
-	DrawSceneWithMask( "bg/oki_pool1", "effect/left", 0, 0, 300 );
-	DrawSceneWithMask( "bg/oki_pool2", "effect/left", 0, 0, 300 );
-	DrawSceneWithMask( "bg/p2", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "background/oki_pool1", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/oki_pool2", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/p2", "effect/right", 0, 0, 300 );
 	Wait( 500 );
 	DrawSceneWithMask( "black", "effect/right", 0, 0, 300 );
 	Wait( 1000 );
-	DrawScene( "bg/gomibako", 400 );
+	DrawScene( "background/gomibako", 400 );
 	Wait( 1000 );
 	PlaySE( 0, "a5_10315", 70, 64 );
 	DrawScene( "white", 50 );
@@ -3069,7 +3071,7 @@ void main()
 	DisableWindow();
 	PlaySE( 1, "ju-", 70, 64 );
 	DrawSceneWithMask( "white", "effect/up", 0, 0, 1300 );
-	DrawScene( "bg/heaven_tengoku", 400 );
+	DrawScene( "background/heaven_tengoku", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　すると、キラキラと細かな輝きに分解され、まるで天に帰っていくかのように消えていく。",
 		   NULL, "Then it shimmered with light as it disintegrated, almost as if it was returning to heaven.", Line_Normal);
@@ -3089,7 +3091,7 @@ void main()
 
 	//;【詩音】
 	DrawBustshot( 1, "sprite/normal/si6_def_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/p2", 400 );
+	DrawScene( "background/p2", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/6/shion9031", 128);
 	OutputLine(NULL, "「これでようやく１人クリアですね。",
@@ -3148,7 +3150,7 @@ void main()
 
 	//;【詩音】
 	DrawBustshot( 1, "sprite/normal/si6_huteki_a1_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/p2", 400 );
+	DrawScene( "background/p2", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/6/shion9035", 128);
 	OutputLine(NULL, "「了解です。",
@@ -3200,9 +3202,9 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "bg/p1", 400 );
+	DrawScene( "background/p1", 400 );
 	Wait( 2000 );
-	DrawScene( "bg/toi_1a", 400 );
+	DrawScene( "background/toi_1a", 400 );
 	//;ld c,mio_1,22
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音もまた、モテモテを満喫し、そろそろ少し、ひとりになりたいと思い始めていた。",
@@ -3233,7 +3235,7 @@ void main()
 
 	//;【魅音】
 	DrawBustshot( 1, "sprite/normal/me8_akuwarai_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawSceneWithMask( "bg/toire2", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "background/toire2", "effect/right", 0, 0, 300 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/3/mion9020", 128);
 	OutputLine(NULL, "「女は見られて美しくなるーって言うけど。",
@@ -3341,6 +3343,7 @@ void main()
 		   NULL, " Ufu, mfufufufu...!!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	DrawFilm( 2, 0xcc, 0xcc, 0xcc, 256, 0, 0, TRUE ); //monochrome mode
 	DrawScene( "black", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だらしなく弛み切った笑み。",
@@ -3350,7 +3353,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshot( 1, "sprite/greyscale/kei7_ikari1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
+	DrawBustshot( 1, "sprite/normal/kei7_ikari1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　トイレのすぐ外には圭一が待機している。",
 		   NULL, "Keiichi was standing by just outside the bathroom.", Line_WaitForInput);
@@ -3359,9 +3362,10 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 400 );
+	FadeFilm( 0, TRUE ); //end monochrome color
 	//;【詩音】
 	DrawBustshot( 1, "sprite/normal/si6_akuwarai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawSceneWithMask( "bg/toire2", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "background/toire2", "effect/right", 0, 0, 300 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/6/shion9041", 128);
 	OutputLine(NULL, "「まったく。",
@@ -3448,7 +3452,7 @@ void main()
 	//Unhandled print: print 0
 	DrawBustshot( 1, "sprite/normal/si6_odoroki_a1_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
 	DrawBustshot( 2, "sprite/normal/me8_huteki_a1_1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/toire2", 400 );
+	DrawScene( "background/toire2", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/3/mion9041", 128);
 	OutputLine(NULL, "「えー、何ー？",
@@ -3522,7 +3526,7 @@ void main()
 	ChangeVolumeOfBGM( 1, 0, 1000 );
 	Wait( 1000 );
 
-	DrawScene( "bg/toi_1a", 1000 );
+	DrawScene( "background/toi_1a", 1000 );
 	//;【魅音】
 	//;ld r,mio_6,22
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -3538,7 +3542,7 @@ void main()
 	//;【詩音】
 	DrawBustshot( 1, "sprite/normal/me8_huteki_a1_1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 2, "sprite/normal/si6_akuwarai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/toire2", 400 );
+	DrawScene( "background/toire2", 400 );
 	ChangeBustshot( 2, "sprite/normal/si6_warai_a1_2", 200, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/6/shion9046", 128);
@@ -3568,10 +3572,10 @@ void main()
 	//;■BGM:日常曲
 	PlayBGM( 0, "bgm0/1", 70, 0 );
 	//;【詩音】
-	DrawScene( "bg/sora", 400 );
+	DrawScene( "background/sora", 400 );
 	Wait( 2000 );
 	DrawBustshot( 1, "sprite/normal/si6_tohoho_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/oki_pool1", 400 );
+	DrawScene( "background/oki_pool1", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/6/shion9048", 128);
 	OutputLine(NULL, "「クウウゥウウウゥウ！！！",
@@ -3651,7 +3655,7 @@ void main()
 	DisableWindow();
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DrawScene( "bg/sora", 400 );
+	DrawScene( "background/sora", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　詩音に秘策を授けられる圭一。",
 		   NULL, "I'll teach you my secret plan, Keiichi.", GetGlobalFlag(GLinemodeSp));
@@ -3671,7 +3675,7 @@ void main()
 	Wait( 2000 );
 
 	DrawBustshot( 1, "sprite/normal/kei7_def1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/oki_pool2", 400 );
+	DrawScene( "background/oki_pool2", 400 );
 	Wait( 1000 );
 	//;【魅音】
 	DrawBustshotWithFiltering( 2, "sprite/normal/me8_wink_a1_1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
@@ -3827,8 +3831,9 @@ void main()
 	//;bg sora_d,22
 
 	DrawScene( "black", 400 );
+	DrawFilm( 2, 0xcc, 0xcc, 0xcc, 256, 0, 0, TRUE ); //monochrome mode
 	DrawBustshot( 1, "sprite/normal/me2_warai_a1_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/greyscale/mati_o6", 400 );
+	DrawScene( "background/mati_o6", 400 );
 
 	//;bg pool2,22
 	//;【圭一】
@@ -3844,8 +3849,9 @@ void main()
 	DisableWindow();
 	//;【圭一】
 	DrawScene( "black", 400 );
+	FadeFilm( 0, TRUE ); //end monochrome color
 	DrawBustshot( 1, "sprite/normal/kei7_nayamu_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/oki_pool3", 400 );
+	DrawScene( "background/oki_pool3", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/1/keiichi9142", 128);
 	OutputLine(NULL, "「俺だけがそれに気付いてることが、今までは誇らしかったけど。",
@@ -3939,7 +3945,8 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawScene( "black", 400 );
-	DrawBustshot( 1, "sprite/greyscale/si6_wink_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
+	DrawFilm( 2, 0xcc, 0xcc, 0xcc, 256, 0, 0, TRUE ); //monochrome mode
+	DrawBustshot( 1, "sprite/normal/si6_wink_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは詩音に渡された、水着の入った紙袋だ。",
 		   NULL, "Keiichi handed her a paper bag with the swimsuit that Shion had provided him with.", GetGlobalFlag(GLinemodeSp));
@@ -3951,9 +3958,10 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 400 );
+	FadeFilm( 0, TRUE ); //end monochrome color
 
 	DrawBustshot( 1, "sprite/normal/me8_yowaki_a1_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool3", 400 );
+	DrawScene( "background/oki_pool3", 400 );
 	//;【魅音】
 	ChangeBustshot( 1, "sprite/normal/me8_hau_a1_1", 200, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -4036,7 +4044,7 @@ void main()
 
 	//;【詩音】
 	DrawBustshot( 6, "sprite/normal/si6_wink_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawSceneWithMask( "bg/oki_pool1", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/oki_pool1", "effect/left", 0, 0, 300 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/6/shion9056", 128);
 	OutputLine(NULL, "「圭ちゃん、ＯＫです！",
@@ -4107,7 +4115,7 @@ void main()
 
 	//;■BGM１秒でフェードアウト
 	//;fedexx 0,0,0,0,0,0,1000
-	DrawScene( "bg/sora", 400 );
+	DrawScene( "background/sora", 400 );
 	//;【魅音】
 	//;ld c,mio_1,22
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -4167,7 +4175,7 @@ void main()
 	DisableWindow();
 	//;エンジェルモート服（詩音立ち絵だけど、魅音として扱うイメージ）
 	DrawBustshot( 1, "sprite/normal/si2_yowaki_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool1", 400 );
+	DrawScene( "background/oki_pool1", 400 );
 	//;魅音
 	//;水着＋エプロン
 	DrawBustshot( 2, "sprite/normal/si6_warai_a1_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
@@ -4269,7 +4277,7 @@ void main()
 	DisableWindow();
 	//;【魅音】
 	//;ld c,mio_1,80
-	DrawScene( "bg/sora", 1000 );
+	DrawScene( "background/sora", 1000 );
 	ShakeScreen( 2, 6,  100 , 3, 33, );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/3/mion9088", 128);
@@ -4289,7 +4297,7 @@ void main()
 	//;【詩音】
 	//;cl l,0
 	DrawBustshot( 1, "sprite/normal/si6_wink_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool1", 400 );
+	DrawScene( "background/oki_pool1", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/6/shion9067", 128);
 	OutputLine(NULL, "「はい。",
@@ -4337,14 +4345,14 @@ void main()
 	PlaySE( 0, "wav/lf226", 70, 64 );
 	PlaySE( 1, "bb", 70, 64 );
 
-	DrawScene( "bg/sora", 50 );
+	DrawScene( "background/sora", 50 );
 	ShakeScreen( 2, 12,  100 , 4, 25, );
 
 	Wait( 2000 );
 
 	DrawBustshot( 1, "sprite/normal/kei7_komaru_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 2, "sprite/normal/si6_majime_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawSceneWithMask( "bg/oki_pool1", "effect/down", 0, 0, 300 );
+	DrawSceneWithMask( "background/oki_pool1", "effect/down", 0, 0, 300 );
 	Wait( 500 );
 	ChangeBustshot( 1, "sprite/normal/kei7_nayamu_2", 200, FALSE );
 	ChangeBustshot( 2, "sprite/normal/si6_odoroki_a1_2", 200, TRUE );
@@ -4433,18 +4441,20 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshot( 6, "sprite/greyscale/ha1_def_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE );
 	DrawScene( "black", 400 );
+	DrawFilm( 2, 0xcc, 0xcc, 0xcc, 256, 0, 0, TRUE ); //monochrome mode
+	DrawBustshot( 6, "sprite/normal/ha1_def_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 400, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　神様パワーのお陰で、みんな、疑うことなく素直に状況を理解してくれるのだ。",
 		   NULL, "Thanks to her divine power, everyone could understand the situation without any confusion.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 400 );
+	FadeFilm( 0, TRUE ); //end monochrome color
 
 	//;【沙都子】
 	DrawBustshot( 1, "sprite/normal/sa11_akireru_a1_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/oki_pool1", 400 );
+	DrawScene( "background/oki_pool1", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/4/satoko9039", 128);
 	OutputLine(NULL, "「モテモテは満喫できて楽しかったですけれど、それと引き換えに銀河が滅ぶのはさすがにマズイですわよ。",
@@ -4540,7 +4550,7 @@ void main()
 	DrawBustshot( 4, "effect/hton", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE );
 	DrawBustshot( 5, "effect/hara", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawBustshot( 6, "sprite/normal/ri8_komaru_a2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 6, 0, FALSE );
-	DrawScene( "bg/oki_pool2", 400 );
+	DrawScene( "background/oki_pool2", 400 );
 	ChangeBustshot( 6, "sprite/normal/ri8_komaru_a1_0", 200, TRUE );
 	Wait( 500 );
 	ChangeBustshot( 6, "sprite/normal/ri8_warai_a1_2", 200, TRUE );
@@ -4567,6 +4577,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 400 );
+	DrawFilm( 2, 0xcc, 0xcc, 0xcc, 256, 0, 0, TRUE ); //monochrome mode
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　つまるところ、これまでで一番、難攻不落のターゲットということだ。",
 		   NULL, "In other words, she would be the most impregnable target of them all.", GetGlobalFlag(GLinemodeSp));
@@ -4584,14 +4595,14 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshot( 1, "sprite/greyscale/sa11_warai_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
+	DrawBustshot( 1, "sprite/normal/sa11_warai_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　トラップマスターの沙都子が味方に加わったのは大きい。",
 		   NULL, "Having the trap master Satoko on their side was a big deal.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshot( 2, "sprite/greyscale/si6_def_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
+	DrawBustshot( 2, "sprite/normal/si6_def_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、頼もしい詩音が、魅音を身代わりにしたことで、バイトの拘束から解放されているのも助かる。",
 		   NULL, "Plus, having Mion take her place meant the reliable Shion was freed from the bonds of hourly wage labor.", GetGlobalFlag(GLinemodeSp));
@@ -4604,6 +4615,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "black", 400 );
+	FadeFilm( 0, TRUE ); //end monochrome color
 	FadeOutBGM( 0, 1000, TRUE );
 	Wait( 1000 );
 	//;■BGM:部活曲
@@ -4611,7 +4623,7 @@ void main()
 
 	//;【圭一】
 	DrawBustshot( 1, "sprite/normal/kei7_nayamu_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool2", 400 );
+	DrawScene( "background/oki_pool2", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/1/keiichi9172", 128);
 	OutputLine(NULL, "「時間がないな……。",
@@ -4669,26 +4681,27 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 400 );
+	DrawFilm( 2, 0xcc, 0xcc, 0xcc, 256, 0, 0, TRUE ); //monochrome mode
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　作戦はこうだ。",
 		   NULL, "This was their strategy.", Line_WaitForInput);
 	DisableWindow();
-	DrawBustshot( 1, "sprite/greyscale/sa11_warai_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
+	DrawBustshot( 1, "sprite/normal/sa11_warai_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 	OutputLine(NULL, "事前に沙都子によって、強力なトラップを設置したキルゾーンを準備しておく。",
 		   NULL, " Satoko would move in ahead of time and set up a kill zone of powerful traps.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshot( 2, "sprite/greyscale/kei7_ikari1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, FALSE );
+	DrawBustshot( 2, "sprite/normal/kei7_ikari1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, FALSE );
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 400, FALSE );
-	DrawBustshot( 3, "sprite/greyscale/si6_ikari_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
+	DrawBustshot( 3, "sprite/normal/si6_ikari_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　圭一と詩音は奇襲をかけ、沙都子が退路を塞ぎ、キルゾーンに追い込み、仕留めるっ。",
 		   NULL, "Then Keiichi and Shion would launch their attack while Satoko blocked off the escape paths. Together, they'd drive Rika's followers into the kill zone, putting a stop to them.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 4, "effect/greyscale/hton", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE );
-	DrawBustshot( 5, "effect/greyscale/hara", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
+	DrawBustshot( 4, "effect/hton", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE );
+	DrawBustshot( 5, "effect/hara", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawScene( "black", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それとは別に、親衛隊を撹乱するトラップも必要になる。",
@@ -4708,6 +4721,7 @@ void main()
 	//;ld r,sat_2,80
 	//Show eyepic display
 	DrawScene( "black", 400 );
+	FadeFilm( 0, TRUE ); //end monochrome color
 	DrawBustshot(4, "effect/eye_sa", 320, -120, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 50, TRUE );
 	MoveBustshot( 4, NULL, 0, -120, 0, 4, 400, TRUE );
 
@@ -4722,7 +4736,7 @@ void main()
 	DrawBustshot( 6, "sprite/normal/si6_majime_a1_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 7, "sprite/normal/kei7_nayamu_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
 	DrawBustshot( 8, "sprite/normal/sa11_odoroki_a1_2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/oki_pool3", 400 );
+	DrawScene( "background/oki_pool3", 400 );
 
 	//;【圭一】
 	ChangeBustshot( 7, "sprite/normal/kei7_ikari2_2", 200, TRUE );
@@ -4746,7 +4760,7 @@ void main()
 	DrawBustshot( 1, "sprite/normal/si6_ikari_a1_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 2, "sprite/normal/kei7_nayamu_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
 	DrawBustshot( 3, "sprite/normal/sa9_warai_a1_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/oki_pool3", 200 );
+	DrawScene( "background/oki_pool3", 200 );
 	PlaySE( 0, "bb", 70, 64 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>詩音・沙都子</color>", NULL, "<color=#f5e6d3>Shion & Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -4766,7 +4780,7 @@ void main()
 	DrawBustshot( 4, "effect/hnit", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 5, "effect/hoda", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
 	DrawBustshot( 3, "sprite/normal/ri8_niyari_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawScene( "bg/oki_pool1", 400 );
+	DrawScene( "background/oki_pool1", 400 );
 
 	//;【親衛隊】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>親衛隊</color>", NULL, "<color=#f5e6d3>Bodyguards</color>", NULL, Line_ContinueAfterTyping); }
@@ -4804,7 +4818,7 @@ void main()
 
 	//;【梨花】
 	//;mld c,rik_5,80
-	DrawScene( "bg/sora", 400 );
+	DrawScene( "background/sora", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/5/rika9038", 128);
 	OutputLine(NULL, "「み～～♪",
@@ -4830,7 +4844,7 @@ void main()
 	//End eyepic display
 	//csp -1
 	DrawBustshot( 1, "sprite/normal/ri8_def_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool2", 400 );
+	DrawScene( "background/oki_pool2", 400 );
 
 	Wait( 500 );
 
@@ -4878,7 +4892,7 @@ void main()
 	DisableWindow();
 
 	DrawBustshot( 1, "effect/hoda", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool2", 400 );
+	DrawScene( "background/oki_pool2", 400 );
 	//;【親衛隊】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>親衛隊</color>", NULL, "<color=#f5e6d3>Bodyguards</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/0/mob079001", 128);
@@ -4906,7 +4920,7 @@ void main()
 
 	DisableWindow();
 	//;【イケメンたち】
-	DrawScene( "bg/oki_pool2", 100 );
+	DrawScene( "background/oki_pool2", 100 );
 	PlaySE( 0, "a5_10315", 70, 64 );
 	DrawBustshot( 2, "effect/hyos", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 6, 50, TRUE );
 	ShakeScreen( 0, 3, 100, 1, 50, );
@@ -4938,7 +4952,7 @@ void main()
 	//;【圭一】
 	DrawBustshot( 1, "sprite/normal/si5_huteki_a1_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 2, "sprite/normal/kei7_ikari2_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/oki_pool2", 400 );
+	DrawScene( "background/oki_pool2", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/1/keiichi9179", 128);
 	OutputLine(NULL, "「行くぜ、詩音！！",
@@ -4969,7 +4983,7 @@ void main()
 	//;【親衛隊】
 	DrawBustshot( 3, "effect/hara", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 4, "effect/hyos", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawSceneWithMask( "bg/oki_pool3", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/oki_pool3", "effect/left", 0, 0, 300 );
 
 	PlaySE( 0, "a5_10315", 70, 64 );
 	DrawBustshot( 1, "sprite/normal/kei7_ikari1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 50, TRUE );
@@ -5028,7 +5042,7 @@ void main()
 
 	DrawBustshot( 5, "sprite/normal/ri8_majime_a1_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 6, "effect/hton", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawSceneWithMask( "bg/oki_pool3", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/oki_pool3", "effect/left", 0, 0, 300 );
 
 	//;【沙都子】
 	PlaySE( 0, "a5_10315", 70, 64 );
@@ -5069,7 +5083,7 @@ void main()
 
 	//;【梨花】
 	DrawBustshot( 1, "sprite/normal/ri8_komaru_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool1", 400 );
+	DrawScene( "background/oki_pool1", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/5/rika9044", 128);
 	OutputLine(NULL, "「沙都子、何を怒っているのですか？",
@@ -5112,18 +5126,18 @@ void main()
 
 	DisableWindow();
 	PlaySE( 0, "a5_10315", 70, 64 );
-	DrawSceneWithMask( "bg/oki_pool1", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "background/oki_pool1", "effect/right", 0, 0, 300 );
 	PlaySE( 0, "a5_10315", 70, 64 );
-	DrawSceneWithMask( "bg/oki_pool2", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/oki_pool2", "effect/left", 0, 0, 300 );
 	PlaySE( 0, "a5_10315", 70, 64 );
-	DrawSceneWithMask( "bg/oki_pool3", "effect/up", 0, 0, 300 );
+	DrawSceneWithMask( "background/oki_pool3", "effect/up", 0, 0, 300 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　クルクルと逃げ回っているように見えて、巧みに沙都子のトラップゾーンを予見してかわしている。",
 		   NULL, "She looked like she was spinning about as she ran, but she was cleverly predicting Satoko's trap zones and evading them.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "bg/sora", 400 );
+	DrawScene( "background/sora", 400 );
 	//;【沙都子】
 	//;ld r,sat_1,0
 	//;ld l,rik_1,22
@@ -5155,7 +5169,7 @@ void main()
 
 	//;【詩音】
 	DrawBustshot( 1, "sprite/normal/si5_odoroki_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool2", 400 );
+	DrawScene( "background/oki_pool2", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/6/shion9083", 128);
 	OutputLine(NULL, "「マズイですね……。",
@@ -5268,7 +5282,7 @@ void main()
 	DisableWindow();
 	//csp -1
 	//Unhandled print: print 0
-	DrawScene( "bg/sora", 400 );
+	DrawScene( "background/sora", 400 );
 	//;【沙都子】
 	//;ld c,sat_1,80
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -5298,7 +5312,7 @@ void main()
 	//Unhandled print: print 0
 	//;【梨花】
 	DrawBustshot( 1, "sprite/normal/ri8_niyari_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool1", 400 );
+	DrawScene( "background/oki_pool1", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/5/rika9049", 128);
 	OutputLine(NULL, "「………？",
@@ -5342,7 +5356,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawScene( "bg/sora", 400 );
+	DrawScene( "background/sora", 400 );
 	//;【沙都子】
 	//;ld ,sat_1,80
 	//;lsp 701+2,":a;bmp2\tati\satoko\eye\sa_eyexa2.bmp",-150,300,0
@@ -5405,7 +5419,7 @@ void main()
 	StopBGM( 1 );
 	PlayBGM( 1, "me/semi", 70, 0 );
 	DrawBustshot( 1, "sprite/normal/ri8_majime_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool2", 400 );
+	DrawScene( "background/oki_pool2", 400 );
 	PlaySE( 0, "a5_10317", 70, 64 );
 	DrawBustshotWithFiltering( 2, "sprite/normal/sa9_odoroki_a1_2", "effect/down", 0, -240, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, FALSE );
 	DrawBustshotWithFiltering( 3, "sprite/normal/si5_majime_a1_0", "effect/down", 0, 240, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
@@ -5475,7 +5489,7 @@ void main()
 	DrawScene( "white", 50 );
 	//;【梨花】
 	DrawBustshot( 1, "sprite/normal/ri8_majime_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool1", 400 );
+	DrawScene( "background/oki_pool1", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/5/rika9053", 128);
 	OutputLine(NULL, "「そんなッ！！",
@@ -5572,7 +5586,7 @@ void main()
 		   NULL, "To use as a trump card one day when facing Rika, the person closest to her, who knew everything about her traps...!!!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg/sora", 400 );
+	DrawScene( "background/sora", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、沙都子も詩音も、梨花に組みついていた為、自分たちもまともにトラップを食らってしまった。",
 		   NULL, "However, since both Shion and Satoko had grappled Rika, they had both taken the full brunt of the trap.", GetGlobalFlag(GLinemodeSp));
@@ -5588,7 +5602,7 @@ void main()
 	PlayBGM( 2, "me/semi", 70, 0 );
 	//;【圭一】
 	DrawBustshot( 1, "sprite/normal/kei7_komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool2", 400 );
+	DrawScene( "background/oki_pool2", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/1/keiichi9190", 128);
 	OutputLine(NULL, "「す、すげぇな……。",
@@ -5737,7 +5751,7 @@ void main()
 	StopBGM( 1 );
 	//;【レナ】
 	DrawBustshot( 1, "sprite/normal/re6_def_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool3", 400 );
+	DrawScene( "background/oki_pool3", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/2/rena9018", 128);
 	OutputLine(NULL, "「レナが脱がせるね。",
@@ -5820,7 +5834,7 @@ void main()
 	ChangeVolumeOfBGM( 1, 0, 1000 );
 	Wait( 1000 );
 
-	DrawScene( "bg/sora", 400 );
+	DrawScene( "background/sora", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　てっきり、レナが一番、浮かれていると思っていたが、実際は逆だった。",
 		   NULL, "He thought Rena would be the most elated about it all, but the truth was the exact opposite.", GetGlobalFlag(GLinemodeSp));
@@ -5840,7 +5854,7 @@ void main()
 	//;【圭一】
 	DrawBustshot( 1, "sprite/normal/re6_def_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 2, "sprite/normal/kei7_komaru_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/oki_pool1", 400 );
+	DrawScene( "background/oki_pool1", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/1/keiichi9202", 128);
 	OutputLine(NULL, "「え？！",
@@ -5927,7 +5941,7 @@ void main()
 	DisableWindow();
 	//;【レナ】
 	DrawBustshot( 4, "sprite/normal/re6_warai_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE );
-	DrawScene( "bg/oki_pool1", 400 );
+	DrawScene( "background/oki_pool1", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/2/rena9029", 128);
 	OutputLine(NULL, "「うん、わかったっ。",
@@ -5953,7 +5967,7 @@ void main()
 	PlaySE( 1, "bb", 70, 64 );
 	DrawScene( "white", 50 );
 	DrawSceneWithMask( "black", "effect/down", 0, 0, 300 );
-	DrawScene( "bg/sora", 50 );
+	DrawScene( "background/sora", 50 );
 	ShakeScreen( 2, 9,  100 , 4, 25, );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -5979,7 +5993,7 @@ void main()
 	//;fedexx 0,70,0,0,0,0,1000
 	//;【圭一】
 	DrawBustshot( 1, "sprite/normal/kei7_komaru_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool1", 400 );
+	DrawScene( "background/oki_pool1", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/1/keiichi9208", 128);
 	OutputLine(NULL, "「レ、レナ……、だ、大丈夫か……ッ？！？！」",
@@ -6059,12 +6073,12 @@ void main()
 	//;ざわざわ入れたい
 	PlayBGM( 1, "me/gaya0", 70, 0 );
 	//;エンジェルモート服（詩音立ち絵だけど、魅音として扱うイメージ）
-	DrawScene( "bg/sora", 400 );
+	DrawScene( "background/sora", 400 );
 	Wait( 2000 );
 	//;【魅音】
 	//;ld c,mio_1,80
 	DrawBustshot( 1, "sprite/normal/si2_odoroki_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawSceneWithMask( "bg/oki_pool2", "effect/down", 0, 0, 300 );
+	DrawSceneWithMask( "background/oki_pool2", "effect/down", 0, 0, 300 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/3/mion9089", 128);
 	OutputLine(NULL, "「えーッ、こちらは最後尾ではありませぇん！",
@@ -6137,7 +6151,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 2, "effect/down", 0, FALSE, 0, 0, 300, TRUE );
-	DrawScene( "bg/sora", 50 );
+	DrawScene( "background/sora", 50 );
 	PlaySE( 0, "a5_10317", 70, 64 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 	//;【女の子たち】
@@ -6174,7 +6188,7 @@ void main()
 	PlayBGM( 0, "bgm0/meditation1", 70, 0 );
 	//;【圭一】
 	DrawBustshot( 1, "sprite/normal/kei7_nayamu_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool1", 400 );
+	DrawScene( "background/oki_pool1", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/1/keiichi9214", 128);
 	OutputLine(NULL, "「いやいやいやッ！！",
@@ -6410,7 +6424,7 @@ void main()
 	DisableWindow();
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DrawSceneWithMask( "bg/sinryou_sinsatu2", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/sinryou_sinsatu2", "effect/left", 0, 0, 300 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　まず、医務室に向かう。",
 		   NULL, "First he headed to the first aid station.", GetGlobalFlag(GLinemodeSp));
@@ -6441,7 +6455,7 @@ void main()
 
 	DisableWindow();
 	PlaySE( 0, "a6_24636", 70, 64 );
-	DrawScene( "bg/kouisitu1", 400 );
+	DrawScene( "background/kouisitu1", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　カギのプレートに記されたロッカーを開くと、そこには入江の荷物があった。",
 		   NULL, "He opened the locker listed on the key's tag and found there Irie's belongings.", Line_Normal);
@@ -6530,12 +6544,12 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawSceneWithMask( "bg/p1", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/p1", "effect/left", 0, 0, 300 );
 	Wait( 1000 );
-	DrawSceneWithMask( "bg/p2", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/p2", "effect/left", 0, 0, 300 );
 	Wait( 1000 );
 	PlaySE( 0, "a5_01023", 70, 64 );
-	DrawSceneWithMask( "bg/kouisitu2", "effect/left", 0, 0, 1300 );
+	DrawSceneWithMask( "background/kouisitu2", "effect/left", 0, 0, 1300 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　女子更衣室に、おずおずと足を踏み入れる、英国式メイド風水着の“少女”の姿があった……。",
 		   NULL, "A \"girl\" in an English maid style swimsuit was timidly entering the women's changing room...", Line_Normal);
@@ -6594,7 +6608,7 @@ void main()
 	DisableWindow();
 	//;■BGM:梨花ちゃん曲
 	PlayBGM( 0, "bgm1/rika", 70, 0 );
-	DrawSceneWithMask( "bg/heaven_tengoku", "effect/maskc", 0, 0, 1300 );
+	DrawSceneWithMask( "background/heaven_tengoku", "effect/maskc", 0, 0, 1300 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ふ、……ふぉああぁぁあぁぁぁ…………。",
 		   NULL, "Fh... Fhaaaaaaaah...!", GetGlobalFlag(GLinemodeSp));
@@ -6621,10 +6635,10 @@ void main()
 
 	//;■ME:壊れたひぐらしの声、を重ねる
 	PlayBGM( 2, "me/semi_r", 70, 0 );
-	DrawScene( "bg/kouisitu2", 400 );
+	DrawScene( "background/kouisitu2", 400 );
 	Wait( 1000 );
 	PlaySE( 0, "heavy1", 70, 64 );
-	DrawScene( "bg/tikan_gekitai", 50 );
+	DrawScene( "background/tikan_gekitai", 50 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "『痴漢に注意！",
@@ -6667,7 +6681,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	PlaySE( 1, "wav/taitoru", 70, 64 );
-	DrawScene( "bg/heaven_tengoku", 50 );
+	DrawScene( "background/heaven_tengoku", 50 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　たゆんたゆん。",
@@ -6718,7 +6732,7 @@ void main()
 	StopBGM( 0 );
 	//;【羽入】
 	DrawBustshot( 1, "sprite/normal/ha1_odoroki_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/kouisitu2", 400 );
+	DrawScene( "background/kouisitu2", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/12/hanyu9063", 128);
 	OutputLine(NULL, "「圭一ぃ！",
@@ -6770,7 +6784,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawSceneWithMask( "bg/mizugi", "effect/down", 0, 0, 300 );
+	DrawSceneWithMask( "background/mizugi", "effect/down", 0, 0, 300 );
 	//;いらすとやの水着画像
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それを引っ張り出した時、妙に小さいサイズの、フリルや小さなリボンのついた“ハンカチ”が落ちる。",
@@ -6800,7 +6814,7 @@ void main()
 	DrawScene( "black", 400 );
 	//;【羽入】
 	DrawBustshot( 1, "sprite/normal/ha1_muhyou_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/kouisitu2", 400 );
+	DrawScene( "background/kouisitu2", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/12/hanyu9066", 128);
 	OutputLine(NULL, "「圭一ぃいいいぃい！！",
@@ -6819,7 +6833,7 @@ void main()
 	//;下着を投げ捨てた音
 	DrawScene( "white", 50 );
 	DrawBustshot( 1, "sprite/normal/kei8_ikari2_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawSceneWithMask( "bg/kouisitu2", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/kouisitu2", "effect/left", 0, 0, 300 );
 	ShakeScreen( 0, 6, 100, 2, 50, );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/1/keiichi9252", 128);
@@ -6835,9 +6849,9 @@ void main()
 	PlaySE( 0, "a5_10315", 70, 64 );
 	ShakeScreen( 0, 6, 100, 2, 50, );
 	DrawSceneWithMask( "black", "effect/right", 0, 0, 300 );
-	DrawSceneWithMask( "bg/kouisitu1", "effect/right", 0, 0, 300 );
-	DrawSceneWithMask( "bg/p2", "effect/left", 0, 0, 300 );
-	DrawSceneWithMask( "bg/p1", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/kouisitu1", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "background/p2", "effect/left", 0, 0, 300 );
+	DrawSceneWithMask( "background/p1", "effect/left", 0, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あとほんの数十秒！！",
@@ -6849,7 +6863,7 @@ void main()
 	PlaySE( 0, "a5_10315", 70, 64 );
 	DrawScene( "white", 50 );
 	DrawSceneWithMask( "black", "effect/up", 0, 0, 300 );
-	DrawScene( "bg/gomibako", 400 );
+	DrawScene( "background/gomibako", 400 );
 	OutputLine(NULL, "　入ってくれえええぇえええええぇえッ！！！",
 		   NULL, "Please, go iiiiiiin!!!", Line_Normal);
 	ClearMessage();
@@ -6884,7 +6898,7 @@ void main()
 	//;■SE:０７ｔｈ　Ｅｘｐａｎｓｉｏｎと表示される時の音（シャラリラリラリラリ～ン♪）
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DrawSceneWithMask( "bg/heaven_tengoku", "effect/up", 0, 0, 1300 );
+	DrawSceneWithMask( "background/heaven_tengoku", "effect/up", 0, 0, 1300 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　や、やった……！！",
 		   NULL, "H-He did it...!!!", Line_WaitForInput);
@@ -6910,7 +6924,7 @@ void main()
 	//;【羽入】
 	//;bg fure3,0
 	DrawBustshot( 1, "sprite/normal/ha1_shinken_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/p1", 400 );
+	DrawScene( "background/p1", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/12/hanyu9070", 128);
 	OutputLine(NULL, "「……圭一。",
@@ -6975,7 +6989,7 @@ void main()
 
 	StopBGM( 0 );
 	PlayBGM( 1, "me/semi", 70, 0 );
-	DrawSceneWithMask( "bg/p2", "effect/left", 0, 0, 1300 );
+	DrawSceneWithMask( "background/p2", "effect/left", 0, 0, 1300 );
 
 	PlaySE( 0, "a5_10317", 70, 64 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
@@ -6983,7 +6997,7 @@ void main()
 	DrawBustshotWithFiltering( 1, "sprite/normal/mo3_01_0", "effect/right", 0, -240, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
 	//;【不良たち】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/meha/0/mob129000", 128);
+	PlayVoice(4, "ps3/meha/93/mob129000", 128);
 	OutputLine(NULL, "「おーう、待たんかい、ねーちゃん」",
 		   NULL, "\"Hey, hold up, lady.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -7006,10 +7020,10 @@ void main()
 	DrawBustshotWithFiltering( 2, "sprite/normal/mo1_01_0", "effect/right", 0, 240, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 	//;【不良たち】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/meha/0/mob139000", 128);
+	PlayVoice(4, "ps3/meha/91/mob139000", 128);
 	OutputLine(NULL, "「兄貴の肩の骨が折れちまったぞー！！",
 		   NULL, "\"Ya broke my bro's collarbone!!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/meha/0/mob139001", 128);
+	PlayVoice(4, "ps3/meha/91/mob139001", 128);
 	OutputLine(NULL, "　どないしてくれるんねー！！」",
 		   NULL, " Whatcha gunna do for us now?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -7020,10 +7034,10 @@ void main()
 
 	//;【不良たち】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/meha/0/mob149000", 128);
+	PlayVoice(4, "ps3/meha/92/mob149000", 128);
 	OutputLine(NULL, "「痛ぇよぉ痛ぇよぉ！！",
 		   NULL, "\"It hurts! It hurts!!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/meha/0/mob149001", 128);
+	PlayVoice(4, "ps3/meha/92/mob149001", 128);
 	OutputLine(NULL, "　こりゃー、姉ちゃんと茶ぁシバかんと、治らんわぁー！！」",
 		   NULL, " This ain't gunna heal 'less y'have a drink wi' me!!!\"", Line_Normal);
 	ClearMessage();
@@ -7061,7 +7075,7 @@ void main()
 	PlayBGM( 0, "bgm0/4", 70, 0 );
 
 	//;【声】
-	DrawScene( "bg/p1", 50 );
+	DrawScene( "background/p1", 50 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/23/kameda9000", 128);
 	OutputLine(NULL, "「おい、待てよ。",
@@ -7075,7 +7089,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawBustshot( 2, "sprite/normal/kei8_komaru_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawSceneWithMask( "bg/p2", "effect/right", 0, 0, 300 );
+	DrawSceneWithMask( "background/p2", "effect/right", 0, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　え？",
@@ -7090,10 +7104,10 @@ void main()
 	ShakeScreen( 0, 6, 100, 2, 50, );
 	//;【不良たち】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/meha/0/mob139002", 128);
+	PlayVoice(4, "ps3/meha/91/mob139002", 128);
 	OutputLine(NULL, "「な、なんじゃコラぁ！！",
 		   NULL, "\"W-What the hell!!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/meha/0/mob139003", 128);
+	PlayVoice(4, "ps3/meha/91/mob139003", 128);
 	OutputLine(NULL, "　す、すっこんどれッ！！」",
 		   NULL, " B-Buzz off!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -7133,7 +7147,7 @@ void main()
 	//;【亀田】
 	//;亀田君衣装命令。想定外対応。
 	DrawBustshot( 4, "sprite/normal/kameda1a_shinken_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE );
-	DrawScene( "bg/sora", 50 );
+	DrawScene( "background/sora", 50 );
 	//;亀田君。表情は4種類。内訳は↓の通りです。
 	//;kam_1　→デフォ
 	//;kam_2　→真面目
@@ -7201,14 +7215,14 @@ void main()
 	ChangeVolumeOfBGM( 0, 0, 2000 );
 	Wait( 2000 );
 	PlayBGM( 1, "me/semi", 70, 0 );
-	DrawScene( "bg/sora", 400 );
+	DrawScene( "background/sora", 400 );
 
 	Wait( 2000 );
 
 	//;【梨花】
 	DrawBustshot( 1, "sprite/normal/sa9_akireru_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawBustshot( 2, "sprite/normal/ri6_komaru_a2_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawScene( "bg/oki_pool1", 400 );
+	DrawScene( "background/oki_pool1", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/5/rika9055", 128);
 	OutputLine(NULL, "「みー。",
@@ -7366,7 +7380,7 @@ void main()
 	//csp2 4
 	//csp2 3
 	DrawBustshot( 1, "sprite/normal/ri6_def_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawScene( "bg/oki_pool2", 400 );
+	DrawScene( "background/oki_pool2", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……あ、……梨花ちゃんと目が合った。",
 		   NULL, "...Ah... Rika just looked over here.", GetGlobalFlag(GLinemodeSp));
@@ -7433,7 +7447,7 @@ void main()
 	FadeFilm( 1200, FALSE ); //end negative color
 	DrawScene( "black", 1000 );
 	DrawBustshot( 1, "sprite/normal/kei8_ikari2_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawScene( "bg/oki_pool2", 400 );
+	DrawScene( "background/oki_pool2", 400 );
 	//;【入江】
 	Wait( 500 );
 	PlaySE( 0, "boyon", 70, 64 );
@@ -7527,7 +7541,7 @@ void main()
 	PlaySE( 1, "a5_10315", 70, 64 );
 	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 50, TRUE );
 	ShakeScreen( 2, 3,  100 , 1, 50, );
-	DrawScene( "bg/sora", 200 );
+	DrawScene( "background/sora", 200 );
 	//print 1
 	DrawBustshot( 2, "portrait/normal/kameda1b_odoroki_2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
 	//;csp2 1
@@ -7580,7 +7594,7 @@ void main()
 	//csp2 3
 	PlaySE( 0, "bb", 70, 64 );
 	DrawScene( "white", 50 );
-	DrawScene( "bg/sora", 400 );
+	DrawScene( "background/sora", 400 );
 	PlaySE( 0, "a5_10315", 70, 64 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5a5e5e>亀田</color>", NULL, "<color=#5a5e5e>Kameda</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/23/kameda9015", 128);
@@ -7614,7 +7628,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 1, "sprite/normal/kei8_komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	DrawSceneWithMask( "bg/oki_pool2", "effect/up", 0, 0, 300 );
+	DrawSceneWithMask( "background/oki_pool2", "effect/up", 0, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　プールサイドのパラソル付きテーブルにて、ツインテールのウィッグを被った水着美少女は、",
@@ -7648,7 +7662,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawScene( "bg/uchu_space", 1000 );
+	DrawScene( "background/uchu_space", 1000 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この銀河に無数の星あれど。",
 		   NULL, "The galaxy might be filled with countless stars,", GetGlobalFlag(GLinemodeSp));
