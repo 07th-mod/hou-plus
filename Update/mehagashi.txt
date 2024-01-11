@@ -4826,7 +4826,7 @@ void main()
 	PlayVoice(4, "ps3/meha/5/rika9039", 128);
 	OutputLine(NULL, "　とっても快適で、まるで女王様になった気分なのですよ～。",
 		   NULL, " I feel very comfortable. It's like I've become a queen~", Line_WaitForInput);
-	PlayVoice(4, "ps3/meha/5/rika9038", 128);
+	PlayVoice(4, "ps3/meha/5/rika9040", 128);
 	OutputLine(NULL, "にぱ～♪」",
 		   NULL, " Nipah~♪\"", Line_Normal);
 	ClearMessage();
@@ -5156,7 +5156,7 @@ void main()
 	PlayVoice(4, "ps3/meha/5/rika9047", 128);
 	OutputLine(NULL, "「沙都子の寝相も欠伸も、クセも好みも、ボクは何でもお見通しなのですよ。",
 		   NULL, "\"I know everything about you, down to how you sleep, how you yawn, your habits, and your tastes.", Line_WaitForInput);
-	PlayVoice(4, "ps3/meha/5/rika9046", 128);
+	PlayVoice(4, "ps3/meha/5/rika9048", 128);
 	OutputLine(NULL, "にぱ～♪」",
 		   NULL, " Nipah~♪\"", Line_Normal);
 	ClearMessage();

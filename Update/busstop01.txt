@@ -494,7 +494,7 @@ void main()
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 	PlaySE( 0, "a5_10316", 70, 64 );
 
-	PlayVoice(4, "ps3/s26/53/tmio_0230", 128);
+	PlayVoice(4, "ps3/s26/53/tmio_0220", 128);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「雨ですからーッ！」",
 		   "<color=#5ec69a>Mion</color> ", "\"And because of the rain!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
@@ -976,7 +976,7 @@ void main()
 
 	ChangeBustshot( 2, "sprite/normal/hara1a_08_0", 200, TRUE );
 
-	PlaySE(4, "ps3/s26/55/tara_0100", 128, 64);
+	PlayVoice(4, "ps3/s26/55/tara_0100", 128);
 	OutputLine("<color=#5f5248>荒川</color> ", "「…これは手厳しい。」（荒川、手を引っ込める）",
 		   "<color=#5f5248>Arakawa</color> ", "\"...That's harsh.\" (Drawing his hand back)", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
@@ -1121,7 +1121,7 @@ void main()
 
 	ChangeBustshot( 3, "sprite/normal/hri2a_09_0", 200, TRUE );
 
-	PlayVoice(4, "ps3/s26/52/trik_0360", 128);
+	PlayVoice(4, "ps3/s26/52/trik_0350", 128);
 	OutputLine("<color=#6972c1>梨花</color> ", "「それで？」",
 		   "<color=#6972c1>Rika</color> ", "\"So?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
@@ -1145,7 +1145,7 @@ void main()
 
 	ChangeBustshot( 3, "sprite/normal/hri2a_03_2", 200, TRUE );
 
-	PlayVoice(4, "ps3/s26/52/trik_0370", 128);
+	PlayVoice(4, "ps3/s26/52/trik_0360", 128);
 	OutputLine("<color=#6972c1>梨花</color> ", "「それで？」",
 		   "<color=#6972c1>Rika</color> ", "\"So?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
@@ -1169,7 +1169,7 @@ void main()
 
 	ChangeBustshot( 3, "sprite/normal/hri2a_12_0", 200, TRUE );
 
-	PlayVoice(4, "ps3/s26/52/trik_0380", 128);
+	PlayVoice(4, "ps3/s26/52/trik_0370", 128);
 	OutputLine("<color=#6972c1>梨花</color> ", "「それで？」",
 		   "<color=#6972c1>Rika</color> ", "\"So?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
@@ -3531,6 +3531,7 @@ void main()
 		   "<color=#5f5248>Arakawa</color> ", "\"Ha! ...Hahahaha! ...Numa-san, please stop that! ...Is it showing up at your place too?! The you know what.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	PlayVoice(4, "ps3/s26/00/tkak_0020", 128);
 	OutputLine("<color=#f5e6d3>柿沼の声</color> ", "「……………荒ちゃんは何も感じないかい。…夜とか。」",
 		   "<size=32><color=#f5e6d3>Kakinuma's Voice</color></size> ", "\"...............You don't sense anything, Ara-chan? ...At night?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
