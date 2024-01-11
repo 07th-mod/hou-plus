@@ -34,13 +34,13 @@ void EyeCatch2()
 	DisableWindow();
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	//SetValidityOfInput( FALSE );
-	DrawBustshotWithFiltering( 6, "effect/cinema", "effect/x", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 62, 1300, TRUE );
-	DrawBustshot( 7, "effect/title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 63, 3000, TRUE );
+	DrawBustshotWithFiltering( 16, "effect/cinema", "effect/x", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 62, 1300, TRUE );
+	DrawBustshot( 17, "effect/title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 63, 3000, TRUE );
 	Wait( 2000 );
-	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 61, 3000, TRUE );
-	FadeBustshotWithFiltering( 7, "effect/x", 0, FALSE, 0, 0, 1300, TRUE );
-	EndLayerPersistence(5);
-	EndLayerPersistence(6);
+	DrawBustshot( 15, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 61, 3000, TRUE );
+	FadeBustshotWithFiltering( 17, "effect/x", 0, FALSE, 0, 0, 1300, TRUE );
+	EndLayerPersistence(15);
+	EndLayerPersistence(16);
 	FadeOutBGM( 0, 3000, FALSE );
 	FadeOutBGM( 1, 3000, FALSE );
 	FadeOutBGM( 2, 3000, FALSE );
@@ -142,14 +142,10 @@ void HanyuuDance()
 
 	PlaySE( 1, "horror", 50, 64 );
 
-	ModSetLayerFilter(25, 179, "none");
-	ModDrawCharacter(25, 12, "sprite/ha1_warai_", "2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
-	ModSetLayerFilter(25, 256, "none");
-	ModDrawCharacter(25, 12, "sprite/ha1_warai_", "2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
-	ModSetLayerFilter(25, 179, "none");
-	ModDrawCharacter(25, 12, "sprite/ha1_warai_", "2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
-	ModSetLayerFilter(25, 256, "none");
-	ModDrawCharacter(25, 12, "sprite/ha1_warai_", "2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
+	MoveSprite( 25, x, y, 0, 0, 77, 0, 0, 600, TRUE ); //fade out
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 600, TRUE ); //fade in
+	MoveSprite( 25, x, y, 0, 0, 77, 0, 0, 600, TRUE ); //fade out
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 600, TRUE ); //fade in
 
 	Wait( 500 );
 	PlaySE( 1, "a1_16258", 50, 64 );

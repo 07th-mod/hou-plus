@@ -1328,6 +1328,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
+	ModSetLayerFilter(2, 179, "night");
 	ModDrawCharacter(2, 12, "sprite/ha1_yowaki_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
 	//;【羽入】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
@@ -2824,7 +2825,7 @@ void main()
 
 	Wait( 2000 );
 
-	ModSetLayerFilter(3, 179, "none");
+	ModSetLayerFilter(3, 179, "night");
 	ModDrawCharacter(3, 12, "sprite/ha1_yowaki_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, FALSE );
 	ModSetLayerFilter(2, 256, "night");
 	ModDrawCharacter(2, 5, "sprite/ri2_majime_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
@@ -3141,7 +3142,7 @@ void main()
 	DisableWindow();
 
 
-	ModSetLayerFilter(4, 179, "none");
+	ModSetLayerFilter(4, 179, "night");
 	ModDrawCharacter(4, 12, "sprite/ha1_muhyou_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
 	//;【羽入】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
@@ -3843,7 +3844,7 @@ void main()
 	StopBGM( 1 );
 
 
-	ModSetLayerFilter(2, 179, "none");
+	ModSetLayerFilter(2, 179, "night");
 	ModDrawCharacter(2, 12, "sprite/ha1_au_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawScene( "background/kamik_sinryou_rouka1", 400 );
 	PlayBGM( 1, "me/tokeil4", 70, 0 );
@@ -8719,7 +8720,7 @@ void main()
 
 	DisableWindow();
 
-	ModSetLayerFilter(2, 179, "none");
+	ModSetLayerFilter(2, 179, "night");
 	ModDrawCharacter(2, 12, "sprite/ha1_muhyou_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 	//;【羽入】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
@@ -11073,10 +11074,10 @@ void main()
 	DrawScene( "white", 100 );
 	DrawScene( "black", 200 );
 	Wait( 100 );
-	DrawBustshot(4, "effect/eye_base_b", 0, -120, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );
+	DrawBustshot(14, "effect/eye_base_b", 0, -120, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );
 	Wait( 250 );
-	DrawBustshot(3, "effect/eye_kas", 800, -120, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, TRUE );
-	MoveBustshot( 3, NULL, 0, -120, 0, 20, 500, TRUE );
+	DrawBustshot(13, "effect/eye_kas", 800, -120, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, TRUE );
+	MoveBustshot( 13, NULL, 0, -120, 0, 20, 500, TRUE );
 	Wait( 100 );
 
 	//;葛西目のカットイン左から右、止める
@@ -12220,22 +12221,22 @@ void main()
 	DrawScene( "white", 100 );
 	DrawScene( "black", 200 );
 	Wait( 100 );
-	DrawBustshot(4, "effect/eye_base_r", 0, -120, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, FALSE );
+	DrawBustshot(14, "effect/eye_base_r", 0, -120, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, FALSE );
 	DrawBustshot(5, "effect/eye_base_b", 0, 60, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
 	Wait( 250 );
-	DrawBustshot(3, "effect/eye_re", 800, -120, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	DrawBustshot(2, "effect/eye_kei", -800, 60, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	MoveBustshot( 2, NULL, 0, 60, 0, 10, 500, FALSE );
-	MoveBustshot( 3, NULL, 0, -120, 0, 20, 500, TRUE );
+	DrawBustshot(13, "effect/eye_re", 800, -120, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot(12, "effect/eye_kei", -800, 60, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	MoveBustshot( 12, NULL, 0, 60, 0, 10, 500, FALSE );
+	MoveBustshot( 13, NULL, 0, -120, 0, 20, 500, TRUE );
 	Wait( 1300 );
 	PlaySE( 0, "kira", 50, 64 );
-	DrawBustshot(6, "white", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 100, TRUE );
-	MoveBustshot( 2, NULL, -30, 60, 0, 10, 200, FALSE );
-	MoveBustshot( 3, NULL, 30, -120, 0, 20, 200, FALSE );
-	FadeBustshot( 6, FALSE, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot(11, "white", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 100, TRUE );
+	MoveBustshot( 12, NULL, -30, 60, 0, 10, 200, FALSE );
+	MoveBustshot( 13, NULL, 30, -120, 0, 20, 200, FALSE );
+	FadeBustshot( 11, FALSE, 0, 0, 0, 0, 200, TRUE );
 
-	MoveBustshot( 2, NULL, 800, 60, 0, 10, 500, FALSE );
-	MoveBustshot( 3, NULL, -800, -120, 0, 20, 500, FALSE );
+	MoveBustshot( 12, NULL, 800, 60, 0, 10, 500, FALSE );
+	MoveBustshot( 13, NULL, -800, -120, 0, 20, 500, FALSE );
 	DrawBustshot(7, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 500, TRUE );
 	DrawScene( "black", 0 );
 	Wait( 100 );

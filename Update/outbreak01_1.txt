@@ -6538,7 +6538,7 @@ void main()
 	Wait( 500 );
 
 	PlaySE( 0, "telepo", 70, 64 );
-	ModSetLayerFilter(2, 179, "none");
+	ModSetLayerFilter(2, 179, "night");
 	ModDrawCharacter(2, 12, "sprite/ha1_muhyou_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
 	Wait( 500 );
 
