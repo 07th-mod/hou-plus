@@ -61,7 +61,8 @@ void HanyuuDance()
 
 	x = x - 20;
 	y = y + 30;
-	DrawBustshot( 25, "sprite/normal/ha1_warai_2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 400, TRUE );
+	ModSetLayerFilter(25, 256, "none");
+	ModDrawCharacter(25, 12, "sprite/ha1_warai_", "2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 400, TRUE );
 
 	PlaySE( 0, "a1_16258", 50, 64 );
 
@@ -141,10 +142,14 @@ void HanyuuDance()
 
 	PlaySE( 1, "horror", 50, 64 );
 
-	DrawBustshot( 25, "sprite/normal-70/ha1_warai_2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
-	DrawBustshot( 25, "sprite/normal/ha1_warai_2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
-	DrawBustshot( 25, "sprite/normal-70/ha1_warai_2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
-	DrawBustshot( 25, "sprite/normal/ha1_warai_2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
+	ModSetLayerFilter(25, 179, "none");
+	ModDrawCharacter(25, 12, "sprite/ha1_warai_", "2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
+	ModSetLayerFilter(25, 256, "none");
+	ModDrawCharacter(25, 12, "sprite/ha1_warai_", "2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
+	ModSetLayerFilter(25, 179, "none");
+	ModDrawCharacter(25, 12, "sprite/ha1_warai_", "2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
+	ModSetLayerFilter(25, 256, "none");
+	ModDrawCharacter(25, 12, "sprite/ha1_warai_", "2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
 
 	Wait( 500 );
 	PlaySE( 1, "a1_16258", 50, 64 );
@@ -157,7 +162,7 @@ void RenaMove1()
 {
 	//lsp 890,":b;bmp2\TATI\rena\sifuku\re_kaiib1.png",710,0
 
-	DrawBustshot( 25, "sprite/normal/re2b_kaii_b1_2", 480, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 0, TRUE );
+	ModDrawCharacter(25, 2, "sprite/re2b_kaii_b1_", "2", 480, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 0, TRUE );
 	MoveBustshot( 25, NULL, 150, 0, 0, 25, 200, TRUE );
 
 	PlaySE( 0, "b1", 50, 64 );
@@ -173,7 +178,7 @@ void RenaMove1()
 
 void RenaMove2()
 {
-	DrawBustshot( 25, "sprite/normal/re2a_kaii_a1_2", 150, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 400, TRUE );
+	ModDrawCharacter(25, 2, "sprite/re2a_kaii_a1_", "2", 150, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 400, TRUE );
 	Wait( 500 );
 	MoveBustshot( 25, NULL, 150-351, 0, 0, 25, 180, TRUE );
 }

@@ -42,7 +42,8 @@ void main()
 
 
 	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/up", 0, 0, 1300 );
-	DrawBustshot( 1, "sprite/normal/oko3_niyari_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
+	ModSetLayerFilter(1, 256, "none");
+	ModDrawCharacter(1, 14, "sprite/oko3_niyari_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　前日まで風邪で寝込んでいた竜騎士07は、病み上がりにも関わらず、シナリオを熱演。",
@@ -89,7 +90,7 @@ void main()
 	DisableWindow();
 
 	PlaySE( 0, "wav/hikaru", 70, 64 );
-	DrawBustshotWithFiltering( 1, "sprite/normal/oko3_niyari_2", "effect/right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 14, "sprite/oko3_niyari_", "2", "effect/right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　竜騎士07が、夏になったらプールに行きたいと言い出したのだ。",
@@ -227,7 +228,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "background/ke_shiryou1_02", 400 );
-	DrawBustshotWithFiltering( 1, "sprite/normal/oisi2_10_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 11, "sprite/oisi2_10_", "2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　八咫桜は、コミケが終わったら積みゲー消化のため、ゲームに専念するように誓わされているらしい。",
@@ -248,7 +249,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprite/normal/oisi2_7_2", 200, TRUE );
+	ModDrawCharacter(1, 11, "sprite/oisi2_7_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もっとも、稀代の名将（何のだよｗ）、八咫桜がまさか積みゲーに埋もれて死亡なんてことはあるまい。",
@@ -312,7 +313,7 @@ void main()
 	//;dwaveplay 13
 
 	DrawSceneWithMask( "background/heri_gunji_01", "effect/up", 0, 0, 1300 );
-	DrawBustshotWithFiltering( 1, "sprite/normal/ri4_komaru_a1_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 5, "sprite/ri4_komaru_a1_", "0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 	SetSpeedOfMessage( FALSE, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ＢＴは、今後もどうか我がサークルＨＰの管理人をと打診されているという。",
@@ -385,7 +386,7 @@ void main()
 
 	DrawScene( "black", 400 );
 	DrawSceneWithMask( "background/res5", "effect/maskc", 0, 0, 1300 );
-	DrawBustshotWithFiltering( 1, "sprite/normal/ta2_akuwarai_2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 9, "sprite/ta2_akuwarai_", "2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ｄａｉさんもまた、ますます元気になっていく。",
@@ -422,7 +423,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprite/normal/ta2_iradachi_2", 200, TRUE );
+	ModDrawCharacter(1, 9, "sprite/ta2_iradachi_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　監禁生活は長期にわたり、自分はこのまま誘拐されたことになって郷里の両親に捜索願を出されてしまうのではと、戦々恐々としながら過ごしているという。",
@@ -456,7 +457,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "background/je1", 400 );
-	DrawBustshotWithFiltering( 1, "sprite/normal/tetu_1_0", "effect/up", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 400, TRUE );
+	ModDrawCharacterWithFiltering(1, 21, "sprite/tetu_1_", "0", "effect/up", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 400, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　なるせ椿だって、ますますに元気が止まらなくなっていく。",
 		   NULL, "Naruse Tsubaki was also growing more and more full of life.", Line_Normal);
@@ -553,7 +554,7 @@ void main()
 	DisableWindow();
 
 
-	DrawBustshotWithFiltering( 1, "sprite/normal/oko3_def_0", "effect/right", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 14, "sprite/oko3_def_", "0", "effect/right", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
 
 	PlaySE( 0, "wav/nageru", 70, 64 );
 	Wait( 200 );
@@ -579,7 +580,7 @@ void main()
 	DisableWindow();
 
 	PlaySE( 0, "wav/hikaru", 70, 64 );
-	ChangeBustshot( 1, "sprite/normal/oko3_niyari_2", 200, TRUE );
+	ModDrawCharacter(1, 14, "sprite/oko3_niyari_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
 
 	OutputLine(NULL, "へっへっへ、",
 		   NULL, " Hehehe.", Line_ContinueAfterTyping);
