@@ -4763,7 +4763,7 @@ void main()
 	DrawScene( "background/oki_pool3", 200 );
 	PlaySE( 0, "bb", 70, 64 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>詩音・沙都子</color>", NULL, "<color=#f5e6d3>Shion & Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>・<color=#fcdb77>沙都子</color>", NULL, "<color=#5ec69a>Shion</color> & <color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/meha/6/shion9079", 128);
 	PlayVoice(5, "ps3/meha/4/satoko9049", 128);
 	OutputLine(NULL, "「「おおッ！！」」",
