@@ -4771,7 +4771,7 @@ void main()
 	DrawScene( "background/oki_pool3", 200 );
 	PlaySE( 0, "bb", 70, 64 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>詩音・沙都子</color>", NULL, "<color=#f5e6d3>Shion & Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>・<color=#fcdb77>沙都子</color>", NULL, "<color=#5ec69a>Shion</color> & <color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/meha/6/shion9079", 128, TRUE);
 	ModPlayVoiceLS(5, 4, "ps3/meha/4/satoko9049", 128, TRUE);
 	OutputLine(NULL, "「「おおッ！！」」",
@@ -4834,7 +4834,7 @@ void main()
 	ModPlayVoiceLS(4, 5, "ps3/meha/5/rika9039", 128, TRUE);
 	OutputLine(NULL, "　とっても快適で、まるで女王様になった気分なのですよ～。",
 		   NULL, " I feel very comfortable. It's like I've become a queen~", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/meha/5/rika9038", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/meha/5/rika9040", 128, TRUE);
 	OutputLine(NULL, "にぱ～♪」",
 		   NULL, " Nipah~♪\"", Line_Normal);
 	ClearMessage();
@@ -5164,7 +5164,7 @@ void main()
 	ModPlayVoiceLS(4, 5, "ps3/meha/5/rika9047", 128, TRUE);
 	OutputLine(NULL, "「沙都子の寝相も欠伸も、クセも好みも、ボクは何でもお見通しなのですよ。",
 		   NULL, "\"I know everything about you, down to how you sleep, how you yawn, your habits, and your tastes.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/meha/5/rika9046", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/meha/5/rika9048", 128, TRUE);
 	OutputLine(NULL, "にぱ～♪」",
 		   NULL, " Nipah~♪\"", Line_Normal);
 	ClearMessage();
