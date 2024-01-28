@@ -696,7 +696,7 @@ void main()
 	DrawScene( "black", 50 );
 	PlaySE( 0, "wav/boyon", 70, 64 );
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 2, 7 ); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07・八咫桜</color>", NULL, "<color=#f5e6d3>Ryukishi07 & Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>・<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Ryukishi07</color> & <color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「「Ｆａｔｅ／ｓ■ａｙ　ｎｉｇｈｔ」」",
 		   NULL, "\"\"Fate/s*ay night!\"\"", Line_Normal);
 	ClearMessage();
@@ -705,7 +705,7 @@ void main()
 	DrawScene( "background/sora5", 200 );
 
 	SetSpeedOfMessage( TRUE, 128 );
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07・八咫桜</color>", NULL, "<color=#f5e6d3>Ryukishi07 & Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>・<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Ryukishi07</color> & <color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「「あああああああああああーーッ？！」」",
 		   NULL, "\"\"Aaaaaaaaaaaaaaaaah?!\"\"", Line_ContinueAfterTyping);
 
