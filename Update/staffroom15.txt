@@ -892,7 +892,7 @@ void main()
 	DisableWindow();
 	//;【詩音】
 
-	PlayBGM( 0, "bgm2/thanks-sotugyo-", 70, 0 );
+	PlayBGM( 0, "bgm2/Thanks-sotugyo-", 70, 0 );
 	//;thanksアレンジ曲
 	ChangeVolumeOfBGM( 0, 100, 100 );
 	//;音が小さいので…；

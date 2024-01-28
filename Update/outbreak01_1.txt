@@ -140,7 +140,7 @@ void main()
 
 	DrawScene( "background/ma3", 400 );
 
-	PlayBGM( 2, "se/heri2", 85, 0 );
+	PlayBGM( 2, "me/heri2", 85, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>災害対策本部</color>", NULL, "<color=#f5e6d3>Disaster Prevention Center</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s24/00/nsai_0000", 128, TRUE);
@@ -698,7 +698,7 @@ void main()
 
 
 	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 1, "se/heri1", 30, 0 );
+	PlayBGM( 1, "me/heri1", 30, 0 );
 	DrawScene( "background/hi1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -6412,7 +6412,7 @@ void main()
 	PlaySE( 2, "wav/dageki", 35, 64 );
 	ShakeScreen( 0, 15, 100, 3, 33, );
 
-	DrawScene( "effect/blood1b", 50 );
+	DrawScene( "effect/blood_1b", 50 );
 	PlaySE( 0, "raihuru3d", 100, 64 );
 	PlaySE( 1, "thisikuki", 100, 64 );
 	ShakeScreen( 4, 15, 20, 50, 1, );

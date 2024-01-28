@@ -10656,10 +10656,10 @@ void main()
 
 	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "white", 50 );
-	PlaySE( 0, "sys_se/zs1", 80, 64 );
+	PlaySE( 0, "sys_se/ZS1", 80, 64 );
 
 	ShakeScreen( 0, 12, 100, 10, 10, );
-	PlaySE( 1, "sys_se/zs1", 20, 64 );
+	PlaySE( 1, "sys_se/ZS1", 20, 64 );
 
 
 	DrawScene( "background/ke5", 400 );
@@ -11501,10 +11501,10 @@ void main()
 	DisableWindow();
 
 
-	DrawSceneWithMask("black", "effect/maskleft", 0, 0, 300 );
+	DrawSceneWithMask("black", "effect/left", 0, 0, 300 );
 	ModSetLayerFilter(1, 179, "none");
 	ModDrawCharacter(1, 12, "sprite/ha1_sakebi_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawSceneWithMask("background/bui_r1e", "effect/maskleft", 0, 0, 300 );
+	DrawSceneWithMask("background/bui_r1e", "effect/left", 0, 0, 300 );
 	//;【羽入】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s25/12/nhan_0700", 128, TRUE);
