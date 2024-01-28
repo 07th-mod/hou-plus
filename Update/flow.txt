@@ -496,14 +496,15 @@ void RikaAnim1()
 {
 	SetValidityOfInput(FALSE);
 
-	DrawBustshot( 12, "sprite/normal/ri4_niko_a1_2", -20+220, 190+240, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 200, TRUE );
+	ModSetLayerFilter(12, 256, "none");
+	ModDrawCharacter(12, 5, "sprite/ri4_niko_a1_", "2", -20+220, 190+240, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 200, TRUE );
 	MoveBustshot( 12, NULL, -98+220, 70+240, 0, 12, 300, TRUE );
 	Wait(800);
 	MoveBustshot( 12, NULL, -27+220, -123+240, 0, 12, 500, TRUE );
 	Wait(500);
 	MoveBustshot( 12, NULL, -58+220, -240+240, 0, 12, 800, TRUE );
 	Wait(500);
-	ChangeBustshot(12, "sprite/normal/ri4_warai_a1_2", 500, TRUE);
+	ModDrawCharacter(12, 5, "sprite/ri4_warai_a1_", "2", -58+220, -240+240, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 500, TRUE);
 
 	SetValidityOfInput(TRUE);
 }
@@ -512,8 +513,9 @@ void RikaAnim2()
 {
 	SetValidityOfInput(FALSE);
 
-	//DrawBustshot( 12, "sprite/normal/ri4_warai_a1_2", -318+220, -240+240, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 200, TRUE );
-	DrawBustshot( 13, "sprite/normal/re2b_kaii_b1_2", 188+280, 92+240, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 13, 200, TRUE );
+	//DrawBustshot( 12, "sprite/normal/ri4_warai_a1_2", -58+220, -240+240, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 200, TRUE );
+	ModSetLayerFilter(13, 256, "none");
+	ModDrawCharacter(13, 2, "sprite/re2b_kaii_b1_", "2", 188+280, 92+240, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 13, 200, TRUE );
 	MoveBustshot( 13, NULL, 122+280, -42+240, 0, 13, 2200, TRUE );
 	Wait(400);
 	MoveBustshot( 13, NULL, 188+280, 92+240, 0, 13, 2200, TRUE );
@@ -521,10 +523,11 @@ void RikaAnim2()
 	ChangeBustshot(12, "title/rik_alt", 500, TRUE);
 	Wait(400);
 	FadeBustshot(13, FALSE, 0, 0, 0, 0, 200, FALSE);
-	ChangeBustshot(12, "sprite/normal/ri4_warai_a1_2", 500, TRUE);
+	ModDrawCharacter(12, 5, "sprite/ri4_warai_a1_", "2", -58+220, -240+240, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 500, TRUE);
 	Wait(1500);
 
-	DrawBustshot( 11, "sprite/normal/re2b_kaii_b1_2", 300+280, -240+240, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 11, 200, TRUE );
+	ModSetLayerFilter(11, 256, "none");
+	ModDrawCharacter(11, 2, "sprite/re2b_kaii_b1_", "2", 300+280, -240+240, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 11, 200, TRUE );
 	MoveBustshot( 11, NULL, 165+280, -240+240, 0, 11, 1500, TRUE );
 	Wait(500);
 	MoveBustshot( 11, NULL, -16+280, -240+240, 0, 11, 1500, TRUE );
@@ -542,7 +545,7 @@ void HanyuuAnim1()
 {
 	SetValidityOfInput(FALSE);
 
-	DrawBustshot( 12, "sprite/normal/ha5_shinken_0", 10+280, 238+240, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 200, TRUE );
+	ModDrawCharacter(12, 12, "sprite/ha5_shinken_", "0", 10+280, 238+240, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 200, TRUE );
 	MoveBustshot( 12, NULL, -94+280, 60+240, 0, 12, 400, TRUE );
 	ShakeScreen( 1, 6, 30, 12, 0, );
 	MoveBustshot( 12, NULL, -34+280, -138+240, 0, 12, 400, TRUE );
@@ -557,7 +560,7 @@ void HanyuuAnim2()
 {
 	SetValidityOfInput(FALSE);
 
-	DrawBustshot( 12, "sprite/normal/ha5_shinken_0", -71+280, -240+240, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 0, TRUE );
+	ModDrawCharacter(12, 12, "sprite/ha5_shinken_", "0", -71+280, -240+240, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 0, TRUE );
 	MoveBustshot( 12, NULL, -126+280, -37+240, 0, 12, 400, TRUE );
 	ShakeScreen( 1, 6, 30, 12, 0, );
 	MoveBustshot( 12, NULL, -69+280, 163+240, 0, 12, 400, TRUE );
@@ -574,7 +577,7 @@ void HanyuuAnim2()
 		FadeBustshot(5, FALSE, 0, 0, 0, 0, 400, TRUE); //fade out the sword
 	else
 		Wait(400);
-
+	Wait(300);
 	FadeBustshot(12, FALSE, 0, 0, 0, 0, 300, TRUE);
 
 	SetValidityOfInput(TRUE);

@@ -34,13 +34,13 @@ void EyeCatch2()
 	DisableWindow();
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	//SetValidityOfInput( FALSE );
-	DrawBustshotWithFiltering( 6, "effect/cinema", "effect/x", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 62, 1300, TRUE );
-	DrawBustshot( 7, "effect/title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 63, 3000, TRUE );
+	DrawBustshotWithFiltering( 16, "effect/cinema", "effect/x", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 62, 1300, TRUE );
+	DrawBustshot( 17, "effect/title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 63, 3000, TRUE );
 	Wait( 2000 );
-	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 61, 3000, TRUE );
-	FadeBustshotWithFiltering( 7, "effect/x", 0, FALSE, 0, 0, 1300, TRUE );
-	EndLayerPersistence(5);
-	EndLayerPersistence(6);
+	DrawBustshot( 15, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 61, 3000, TRUE );
+	FadeBustshotWithFiltering( 17, "effect/x", 0, FALSE, 0, 0, 1300, TRUE );
+	EndLayerPersistence(15);
+	EndLayerPersistence(16);
 	FadeOutBGM( 0, 3000, FALSE );
 	FadeOutBGM( 1, 3000, FALSE );
 	FadeOutBGM( 2, 3000, FALSE );
@@ -61,7 +61,8 @@ void HanyuuDance()
 
 	x = x - 20;
 	y = y + 30;
-	DrawBustshot( 25, "sprite/normal/ha1_warai_2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 400, TRUE );
+	ModSetLayerFilter(25, 256, "none");
+	ModDrawCharacter(25, 12, "sprite/ha1_warai_", "2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 400, TRUE );
 
 	PlaySE( 0, "a1_16258", 50, 64 );
 
@@ -141,10 +142,10 @@ void HanyuuDance()
 
 	PlaySE( 1, "horror", 50, 64 );
 
-	DrawBustshot( 25, "sprite/normal-70/ha1_warai_2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
-	DrawBustshot( 25, "sprite/normal/ha1_warai_2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
-	DrawBustshot( 25, "sprite/normal-70/ha1_warai_2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
-	DrawBustshot( 25, "sprite/normal/ha1_warai_2", x, y, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 600, TRUE );
+	MoveSprite( 25, x, y, 0, 0, 77, 0, 0, 600, TRUE ); //fade out
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 600, TRUE ); //fade in
+	MoveSprite( 25, x, y, 0, 0, 77, 0, 0, 600, TRUE ); //fade out
+	MoveSprite( 25, x, y, 0, 0, 0, 0, 0, 600, TRUE ); //fade in
 
 	Wait( 500 );
 	PlaySE( 1, "a1_16258", 50, 64 );
@@ -157,7 +158,7 @@ void RenaMove1()
 {
 	//lsp 890,":b;bmp2\TATI\rena\sifuku\re_kaiib1.png",710,0
 
-	DrawBustshot( 25, "sprite/normal/re2b_kaii_b1_2", 480, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 0, TRUE );
+	ModDrawCharacter(25, 2, "sprite/re2b_kaii_b1_", "2", 480, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 0, TRUE );
 	MoveBustshot( 25, NULL, 150, 0, 0, 25, 200, TRUE );
 
 	PlaySE( 0, "b1", 50, 64 );
@@ -173,7 +174,7 @@ void RenaMove1()
 
 void RenaMove2()
 {
-	DrawBustshot( 25, "sprite/normal/re2a_kaii_a1_2", 150, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 400, TRUE );
+	ModDrawCharacter(25, 2, "sprite/re2a_kaii_a1_", "2", 150, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 400, TRUE );
 	Wait( 500 );
 	MoveBustshot( 25, NULL, 150-351, 0, 0, 25, 180, TRUE );
 }

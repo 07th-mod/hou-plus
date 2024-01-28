@@ -16,7 +16,8 @@ void main()
 	DrawScene( "background/ke_shiryou1_02", 1000 );
 	PlayBGM( 0, "bgm1/rika", 120, 0 );
 	PlaySE( 0, "boyon", 128, 64 );
-	DrawBustshotWithFiltering( 1, "sprite/normal/oko3_def_0", "effect/up", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModSetLayerFilter(1, 256, "none");
+	ModDrawCharacterWithFiltering(1, 14, "sprite/oko3_def_", "0", "effect/up", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 	//Unhandled: rmode ON
 
 
@@ -37,7 +38,7 @@ void main()
 	DisableWindow();
 
 	PlaySE( 0, "boyon", 128, 64 );
-	ChangeBustshot( 1, "sprite/normal/oko3_niyari_2", 300, TRUE );
+	ModDrawCharacter(1, 14, "sprite/oko3_niyari_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "いやー、このところ、長編ばかりだったんで、たまには短編もいいもんですねー！」",
@@ -45,7 +46,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprite/normal/oisi2_10_2", "effect/left", 0, -240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacterWithFiltering(2, 11, "sprite/oisi2_10_", "2", "effect/left", 0, -240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「素直に、作業が楽でよかったと白状するにゃり。",
@@ -53,7 +55,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	ChangeBustshot( 2, "sprite/normal/oisi2_7_2", 300, TRUE );
+	ModDrawCharacter(2, 11, "sprite/oisi2_7_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -62,7 +64,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/right", 0, 0, 500 );
-	DrawBustshotWithFiltering( 1, "sprite/normal/oko3_niyari_2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 14, "sprite/oko3_niyari_", "2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
@@ -91,7 +93,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprite/normal/ri4_def_a1_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 5, "sprite/ri4_def_a1_", "0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
@@ -103,7 +105,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	ChangeBustshot( 2, "sprite/normal/ri4_warai_a1_2", 300, TRUE );
+	ModDrawCharacter(2, 5, "sprite/ri4_warai_a1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
@@ -115,7 +117,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprite/normal/oko3_def_0", 300, TRUE );
+	ModDrawCharacter(1, 14, "sprite/oko3_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
@@ -154,7 +156,8 @@ void main()
 	DisableWindow();
 
 	FadeBustshotWithFiltering( 2, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "sprite/normal/oisi2_9_1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacterWithFiltering(3, 11, "sprite/oisi2_9_", "1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -166,7 +169,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprite/normal/oko3_sakebi_1", 300, TRUE );
+	ModDrawCharacter(1, 14, "sprite/oko3_sakebi_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
@@ -224,7 +227,8 @@ void main()
 	DisableWindow();
 
 	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/left", 0, 0, 300 );
-	DrawBustshot( 4, "sprite/normal/ri4_komaru_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 300, TRUE );
+	ModSetLayerFilter(4, 256, "none");
+	ModDrawCharacter(4, 5, "sprite/ri4_komaru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
@@ -237,7 +241,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 1, "sprite/normal/oisi2_10_2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 11, "sprite/oisi2_10_", "2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -270,9 +274,9 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshot( 3, "sprite/normal/oko3_odoroki_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(3, 14, "sprite/oko3_odoroki_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/right", 0, 0, 500 );
-	ChangeBustshot( 3, "sprite/normal/oko3_kumon_2", 300, TRUE );
+	ModDrawCharacter(3, 14, "sprite/oko3_kumon_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
@@ -292,7 +296,7 @@ void main()
 	PlaySE( 0, "wav/nageru", 128, 64 );
 	Wait( 200 );
 	PlaySE( 0, "wav/nageru", 128, 64 );
-	ChangeBustshot( 3, "sprite/normal/oko3_niyari_2", 300, TRUE );
+	ModDrawCharacter(3, 14, "sprite/oko3_niyari_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 	PlaySE( 0, "wav/kyupirn", 128, 64 );
 
 
@@ -302,7 +306,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshot( 1, "sprite/normal/oisi2_9_1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(1, 11, "sprite/oisi2_9_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/left", 0, 0, 500 );
 
 
@@ -319,7 +323,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprite/normal/ri4_komaru_a1_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 5, "sprite/ri4_komaru_a1_", "0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
@@ -332,7 +336,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshotWithFiltering( 1, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "sprite/normal/oko3_kumon_2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 14, "sprite/oko3_kumon_", "2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そうだろうか？",
@@ -345,7 +349,7 @@ void main()
 
 	PlaySE( 0, "wav/kyupirn", 128, 64 );
 	DrawScene( "white", 200 );
-	DrawBustshot( 1, "sprite/normal/oko3_niyari_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(1, 14, "sprite/oko3_niyari_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "background/ke_shiryou1_02", 500 );
 
 
@@ -393,7 +397,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprite/normal/oisi2_6_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 11, "sprite/oisi2_6_", "0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -406,7 +410,7 @@ void main()
 	DisableWindow();
 
 	FadeOutBGM( 0, 300, TRUE );
-	ChangeBustshot( 1, "sprite/normal/oko3_def_0", 300, TRUE );
+	ModDrawCharacter(1, 14, "sprite/oko3_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 	PlayBGM( 0, "bgm0/4", 120, 0 );
 
 
@@ -433,7 +437,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/left", 0, 0, 500 );
-	DrawBustshotWithFiltering( 1, "sprite/normal/ri4_niko_a1_2", "effect/right", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 5, "sprite/ri4_niko_a1_", "2", "effect/right", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
@@ -445,7 +449,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprite/normal/ri4_warai_a1_2", 300, TRUE );
+	ModDrawCharacter(1, 5, "sprite/ri4_warai_a1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
@@ -460,7 +464,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprite/normal/oisi2_7_2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 11, "sprite/oisi2_7_", "2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -473,7 +477,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshotWithFiltering( 1, "effect/right", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "sprite/normal/oko3_niyari_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 14, "sprite/oko3_niyari_", "2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
@@ -516,7 +520,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshotWithFiltering( 2, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 4, "sprite/normal/ri4_def_a1_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
+	ModDrawCharacterWithFiltering(4, 5, "sprite/ri4_def_a1_", "0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
@@ -528,7 +532,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/right", 0, 0, 500 );
-	DrawBustshot( 1, "sprite/normal/oisi2_7_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, TRUE );
+	ModDrawCharacter(1, 11, "sprite/oisi2_7_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -615,7 +619,7 @@ void main()
 		   NULL, "Thanks to the golden work called F_te, it has proven its unchanging attractiveness even in the 21st century!!\"", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 1, "sprite/normal/ri4_komaru_a1_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(1, 5, "sprite/ri4_komaru_a1_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/up", 0, 0, 500 );
 
 
@@ -626,7 +630,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprite/normal/oisi2_10_2", "effect/left", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 11, "sprite/oisi2_10_", "2", "effect/left", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	PlaySE( 0, "wav/kyupirn", 128, 64 );
 
 	SetSpeedOfMessage( TRUE, 128 );
@@ -657,7 +661,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 3, "sprite/normal/oko3_niyari_2", "effect/left", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 14, "sprite/oko3_niyari_", "2", "effect/left", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
@@ -1019,7 +1023,7 @@ void main()
 	FadeOutBGM( 0, 1000, FALSE );
 	Wait( 1000 );
 	SetSpeedOfMessage( TRUE, 128 );
-	DrawBustshot( 1, "sprite/normal/oko3_niyari_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(1, 14, "sprite/oko3_niyari_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "background/ke_shiryou1_02", 50 );
 	PlaySE( 0, "wav/daidageki", 128, 64 );
 	PlayBGM( 0, "bgm1/rika", 120, 0 );
@@ -1036,7 +1040,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/left", 0, 0, 500 );
-	DrawBustshotWithFiltering( 1, "sprite/normal/ri4_komaru_a1_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 5, "sprite/ri4_komaru_a1_", "0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
@@ -1049,7 +1053,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprite/normal/oisi2_6_0", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 11, "sprite/oisi2_6_", "0", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -1059,7 +1063,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshotWithFiltering( 1, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "sprite/normal/oko3_kumon_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 14, "sprite/oko3_kumon_", "2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
@@ -1071,7 +1075,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	ChangeBustshot( 3, "sprite/normal/oko3_sakebi_1", 300, TRUE );
+	ModDrawCharacter(3, 14, "sprite/oko3_sakebi_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
@@ -1095,7 +1099,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshotWithFiltering( 2, "effect/right", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 4, "sprite/normal/ri4_warai_a1_2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
+	ModDrawCharacterWithFiltering(4, 5, "sprite/ri4_warai_a1_", "2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
@@ -1114,7 +1118,7 @@ void main()
 	DisableWindow();
 	FadeOutBGM( 0, 300, FALSE );
 	FadeBustshotWithFiltering( 3, "effect/left", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 1, "sprite/normal/oisi2_7_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 11, "sprite/oisi2_7_", "2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 	PlayBGM( 0, "bgm0/4", 120, 0 );
 
 
@@ -1127,7 +1131,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/left", 0, 0, 500 );
-	DrawBustshot( 1, "sprite/normal/oko3_niyari_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacter(1, 14, "sprite/oko3_niyari_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
@@ -1199,7 +1203,7 @@ void main()
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 1, "sprite/normal/oisi2_7_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(1, 11, "sprite/oisi2_7_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/up", 0, 0, 500 );
 
 
@@ -1211,7 +1215,7 @@ void main()
 	DisableWindow();
 
 	PlayBGM( 0, "me/semi", 120, 0 );
-	DrawBustshotWithFiltering( 2, "sprite/normal/ri4_komaru_a1_0", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 5, "sprite/ri4_komaru_a1_", "0", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
@@ -1227,7 +1231,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshotWithFiltering( 1, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "sprite/normal/oko3_def_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 14, "sprite/oko3_def_", "0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
@@ -1237,7 +1241,7 @@ void main()
 	DisableWindow();
 
 	PlaySE( 0, "wav/kyupirn", 128, 64 );
-	ChangeBustshot( 3, "sprite/normal/oko3_niyari_2", 300, TRUE );
+	ModDrawCharacter(3, 14, "sprite/oko3_niyari_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
@@ -1269,7 +1273,7 @@ void main()
 	DrawScene( "black", 600 );
 
 	DrawScene( "background/ke_shiryou1_02", 600 );
-	DrawBustshotWithFiltering( 1, "sprite/normal/oisi2_6_0", "effect/left", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 11, "sprite/oisi2_6_", "0", "effect/left", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -1282,7 +1286,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprite/normal/ri4_warai_a1_2", "effect/right", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 5, "sprite/ri4_warai_a1_", "2", "effect/right", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
@@ -1300,7 +1304,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 3, "sprite/normal/oko3_def_0", "effect/right", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 14, "sprite/oko3_def_", "0", "effect/right", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 	PlayBGM( 0, "bgm1/rika", 120, 0 );
 
 
@@ -1318,7 +1322,7 @@ void main()
 
 	PlaySE( 0, "wav/kyupirn", 128, 64 );
 	DrawScene( "white", 50 );
-	DrawBustshot( 1, "sprite/normal/oko3_niyari_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(1, 14, "sprite/oko3_niyari_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "background/ke_shiryou1_02", 500 );
 
 	SetSpeedOfMessage( TRUE, 128 );
@@ -1414,7 +1418,7 @@ void main()
 	ShakeScreen( 2, 21,  100 , 7, 14, );
 	DrawScene( "black", 600 );
 
-	DrawBustshot( 1, "sprite/normal/ri4_komaru_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(1, 5, "sprite/ri4_komaru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/up", 0, 0, 500 );
 
 
@@ -1431,7 +1435,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprite/normal/oisi2_7_2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 11, "sprite/oisi2_7_", "2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -1460,7 +1464,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "sprite/normal/oko3_niyari_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 14, "sprite/oko3_niyari_", "2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	SetSpeedOfMessage( TRUE, 128 );
 
@@ -1478,7 +1482,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshotWithFiltering( 2, "effect/right", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 4, "sprite/normal/ri4_komaru_a1_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
+	ModDrawCharacterWithFiltering(4, 5, "sprite/ri4_komaru_a1_", "0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
@@ -1490,7 +1494,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	ChangeBustshot( 4, "sprite/normal/ri4_niko_a1_2", 300, TRUE );
+	ModDrawCharacter(4, 5, "sprite/ri4_niko_a1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
@@ -1839,7 +1843,7 @@ void main()
 	Wait( 1000 );
 	PlayBGM( 0, "bgm1/rika", 120, 0 );
 	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/up", 0, 0, 500 );
-	DrawBustshotWithFiltering( 1, "sprite/normal/oisi2_10_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 11, "sprite/oisi2_10_", "2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 	PlaySE( 0, "boyon", 128, 64 );
 
 
@@ -1851,7 +1855,7 @@ void main()
 	DisableWindow();
 
 	PlaySE( 0, "boyon", 128, 64 );
-	DrawBustshotWithFiltering( 2, "sprite/normal/oko3_niyari_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 14, "sprite/oko3_niyari_", "2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「くっくっく〜〜！",
@@ -1862,7 +1866,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshot( 3, "sprite/normal/ri4_komaru_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(3, 5, "sprite/ri4_komaru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/right", 0, 0, 500 );
 
 
@@ -1876,7 +1880,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 4, "sprite/normal/oisi2_9_1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
+	ModDrawCharacterWithFiltering(4, 11, "sprite/oisi2_9_", "1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -1885,7 +1889,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 3, "sprite/normal/ri4_warai_a1_2", 300, TRUE );
+	ModDrawCharacter(3, 5, "sprite/ri4_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……なのですよ、にぱ〜☆",
@@ -1893,7 +1897,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	ChangeBustshot( 3, "sprite/normal/ri4_niko_a1_2", 300, TRUE );
+	ModDrawCharacter(3, 5, "sprite/ri4_niko_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
@@ -1903,7 +1907,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 4, "sprite/normal/oisi2_7_2", 300, TRUE );
+	ModDrawCharacter(4, 11, "sprite/oisi2_7_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -1916,7 +1920,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 3, "sprite/normal/ri4_warai_a1_2", 300, TRUE );
+	ModDrawCharacter(3, 5, "sprite/ri4_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
@@ -1926,7 +1930,7 @@ void main()
 	DisableWindow();
 
 	PlaySE( 0, "boyon", 128, 64 );
-	ChangeBustshot( 4, "sprite/normal/oisi2_6_0", 300, TRUE );
+	ModDrawCharacter(4, 11, "sprite/oisi2_6_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -1939,7 +1943,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 3, "sprite/normal/ri4_def_a1_0", 300, TRUE );
+	ModDrawCharacter(3, 5, "sprite/ri4_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
@@ -1951,7 +1955,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 4, "sprite/normal/oisi2_7_2", 300, TRUE );
+	ModDrawCharacter(4, 11, "sprite/oisi2_7_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -1962,8 +1966,8 @@ void main()
 
 	PlaySE( 0, "wav/taitoru", 128, 64 );
 	DrawScene( "white", 3000 );
-	DrawBustshot( 1, "sprite/normal/ta2_def_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawBustshot( 2, "sprite/normal/oisi2_7_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(1, 9, "sprite/ta2_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(2, 11, "sprite/oisi2_7_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene( "background/ke_shiryou1_02", 600 );
 
 
@@ -1973,7 +1977,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprite/normal/ta2_warai_2", 300, TRUE );
+	ModDrawCharacter(1, 9, "sprite/ta2_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ｄａｉ</color>", NULL, "<color=#f5e6d3>dai</color>", NULL, Line_ContinueAfterTyping); }
@@ -1987,7 +1991,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshotWithFiltering( 2, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "sprite/normal/ri4_niko_a1_2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 5, "sprite/ri4_niko_a1_", "2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
@@ -1999,7 +2003,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprite/normal/ta2_def_0", 300, TRUE );
+	ModDrawCharacter(1, 9, "sprite/ta2_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ｄａｉ</color>", NULL, "<color=#f5e6d3>dai</color>", NULL, Line_ContinueAfterTyping); }
@@ -2011,7 +2015,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprite/normal/ta2_warai_2", 300, TRUE );
+	ModDrawCharacter(1, 9, "sprite/ta2_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ｄａｉ</color>", NULL, "<color=#f5e6d3>dai</color>", NULL, Line_ContinueAfterTyping); }
@@ -2020,7 +2024,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshot( 4, "sprite/normal/oko3_niyari_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
+	ModDrawCharacter(4, 14, "sprite/oko3_niyari_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawSceneWithMask( "background/ke_shiryou1_02", "effect/right", 0, 0, 500 );
 
 
@@ -2153,7 +2157,7 @@ void main()
 	//;gosub *G_sys:ld c,$normal/oko3_niyari_2,22
 	//;!w1000
 	DrawScene( "background/ke_shiryou1_02", 600 );
-	DrawBustshotWithFiltering( 1, "sprite/normal/ta2_iradachi_2", "effect/right", 0, 240, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 9, "sprite/ta2_iradachi_", "2", "effect/right", 0, 240, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ｄａｉ</color>", NULL, "<color=#f5e6d3>dai</color>", NULL, Line_ContinueAfterTyping); }
@@ -2163,7 +2167,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprite/normal/ri4_komaru_a1_0", "effect/left", 0, -240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 5, "sprite/ri4_komaru_a1_", "0", "effect/left", 0, -240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
@@ -2177,7 +2181,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprite/normal/ta2_human_0", 300, TRUE );
+	ModDrawCharacter(1, 9, "sprite/ta2_human_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ｄａｉ</color>", NULL, "<color=#f5e6d3>dai</color>", NULL, Line_ContinueAfterTyping); }
@@ -2192,7 +2196,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshot( 3, "sprite/normal/oisi2_7_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 600, TRUE );
+	ModDrawCharacter(3, 11, "sprite/oisi2_7_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 600, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -2202,8 +2206,8 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 2, "sprite/normal/ri4_warai_a1_2", 500, FALSE );
-	ChangeBustshot( 1, "sprite/normal/ta2_warai_2", 300, TRUE );
+	ModDrawCharacter(2, 5, "sprite/ri4_warai_a1_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 500, FALSE );
+	ModDrawCharacter(1, 9, "sprite/ta2_warai_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ＢＴ</color>", NULL, "<color=#f5e6d3>BT</color>", NULL, Line_ContinueAfterTyping); }
