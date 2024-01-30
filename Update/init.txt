@@ -140,25 +140,21 @@ void main()
 //	ModAddArtset("Original", "オリジナル", "OGBackgrounds:OGSprites:CG");
 
 	// GAltBGM controls which of these are selected
-	ModAddBGMset("New BGM", "Placeholder", "ExtraBGM:BGM");
-//	ModAddBGMset("GIN's BGM", "Placeholder", "OGBGM:ExtraBGM:BGM");
+	ModAddBGMset("New BGM", "Placeholder", "BGM");
+	ModAddBGMset("Original BGM", "Placeholder", "OGBGM:BGM");
 
 	// GAltSE controls which of these are selected
-	ModAddSEset("New SE", "Placeholder", "ExtraSE:SE");
-//	ModAddSEset("GIN's SE", "Placeholder", "OGSE:ExtraSE:SE");
+	ModAddSEset("New SE", "Placeholder", "SE");
+//	ModAddSEset("Original SE", "Placeholder", "OGSE:SE");
 
 	// Audio presets the user can select, consisting of a combination of the BGM and SE flags
 	ModAddAudioset(
 		"New BGM/SE",
 		"Use the BGM/SE that came with the MangaGamer version of Higurashi Hou+ (2023), played with the Console timings.
 
-		NOTE: We haven't analysed Hou yet for possible april update BGM/SE changes.
-
 		Please see the BGM/SE FAQ for more info.",
 		"JP: New BGM/SE",
 		"JP: Use the BGM/SE that came with the MangaGamer version of Higurashi Hou+ (2023), played with the Console timings.
-
-		NOTE: We haven't analysed Hou yet for possible april update BGM/SE changes.
 
 		Please see the BGM/SE FAQ for more info.",
 		0, // GAltBGM
@@ -167,21 +163,24 @@ void main()
 		0  // GAltSEFlow
 	);
 
+	ModAddAudioset(
+		"Original (Non-plus) BGM",
+		"This option restores the BGM files to the same as the Hou (Non-plus) version. However for now, the SE are unchanged.
 
-//	ModAddAudioset(
-//		"GIN's BGM/SE",
-//		"This option uses GIN's Background Music (BGM) and Sound Effects (SE), which bring the BGM/SE closer to the original Japanese release.
-//
-//		Please click on the 'Open BGM/SE FAQ' button to view the 07th-mod wiki for more details.",
-//		"JP: GIN's BGM/SE",
-//		"JP: This option uses GIN's Background Music (BGM) and Sound Effects (SE), which bring the BGM/SE closer to the original Japanese release.
-//
-//		Please click on the 'Open BGM/SE FAQ' button to view the 07th-mod wiki for more details.",
-//		1, // GAltBGM
-//		1, // GAltBGMFlow
-//		1, // GAltSE
-//		1  // GAltSEFlow
-//	);
+		This is purely a file replacement - no attempt has been made to check if the timings are different(when BGM starts/stops playing).
+
+		Please click on the 'Open BGM/SE FAQ' button to view the 07th-mod wiki for more details.",
+		"JP: Original (Hou non-plus) BGM",
+		"JP: This option restores the BGM files to the same as the Hou (Non-plus) version. However for now, the SE are unchanged.
+
+		This is purely a file replacement - no attempt has been made to check if the timings are different(when BGM starts/stops playing).
+
+		Please click on the 'Open BGM/SE FAQ' button to view the 07th-mod wiki for more details.",
+		1, // GAltBGM
+		1, // GAltBGMFlow
+		0, // GAltSE
+		0  // GAltSEFlow
+	);
 
 	ModGenericCall("LipSyncSettings", ".3, .7, true");
 	SetNameHistoryFormat("{0}\n");//history seems to have broken nametags without it
