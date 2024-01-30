@@ -3,6 +3,9 @@ void main()
 {
 	//if(IsUnityEditor() == 0) {
 	SetValidityOfSaving( FALSE );
+
+	ModGenericCall("ShowSetupMenuIfRequired", "");
+
 	CallSection("BrandLogo");
 	//} else {
 	//	CallScript( "test" );
