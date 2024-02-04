@@ -149,8 +149,7 @@ void main()
 	SetGUIPosition(170, 0);
 	ModSetConfigFontSize(15);
 
-//	TODO: Commented out for now until we add custom fonts
-//	ModSetMainFontOutlineWidth(10);
+	ModSetMainFontOutlineWidth(30);
 
 	ModAddArtset("Console", "ゲーム機", "CG");
 //	ModAddArtset("Remake", "リメーク", "CGAlt:CG");
