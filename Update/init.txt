@@ -89,7 +89,7 @@ void main()
 		1, //FontID
 		0, //CharSpacing
 		0, //LineSpacing - Rei: Adjust to 0 (was 8)
-		28 //FontSize - Rei: Adjust to 28 (was 30)
+		24, //FontSize - Hou: Adjust to 24 for new font (was 28)
 	);
 
 	ModNVLModeSettingLoad(
@@ -105,7 +105,7 @@ void main()
 		1, //FontID
 		0, //CharSpacing
 		0, //LineSpacing - Rei: Adjust to 0 (was 8)
-		34 //FontSize
+		29 //FontSize - Hou: Adjust to 29 for new font (was 34)
 	);
 
 	ModNVLADVModeSettingLoad(
@@ -121,7 +121,7 @@ void main()
 		1, //FontID
 		0, //CharSpacing
 		0, //LineSpacing - Rei: Adjust to 0 (was 8)
-		34 //FontSize
+		29 //FontSize - Hou: Adjust to 29 for new font (was 34)
 	);
 
 	// For Hou+, you can also specify the window fade in and out time
