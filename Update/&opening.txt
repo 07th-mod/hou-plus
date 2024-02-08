@@ -43,13 +43,11 @@ void OpeningStory()
 
 void PlayOriginMovie()
 {
-	if (GetGlobalFlag(GVideoOpening) >= 2) {
-		if (GetGlobalFlag(GArtStyle) == 2) {
-			// Play OG video if using OG artstyle
-			PlayVideo("video/mv13-pc.mp4", 1920, 1080);
-		} else {
-			// Otherwise play console art style
-			PlayVideo("video/mv13-cs.mp4", 1920, 1080);
-		}
+	if (GetGlobalFlag(GArtStyle) == 2) {
+		// Play OG video if using OG artstyle
+		PlayVideo("video/mv13-pc.mp4", 1920, 1080);
+	} else {
+		// Otherwise play console art style
+		PlayVideo("video/mv13-cs.mp4", 1920, 1080);
 	}
 }

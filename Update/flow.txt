@@ -95,8 +95,6 @@ void BrandLogo()
 
 	SetGlobalFlag(GFlag_FirstPlay, 1);
 
-	ModCallScriptSection("&opening", "OpeningQuestion");
-
 	DrawScene( "title/07thlogo", 1000 );
 	Wait( 2000 );
 	DrawSceneWithMask( "title/mangagamer", "effect/logomask", 0, 0, 1000 );
@@ -105,7 +103,7 @@ void BrandLogo()
 	Wait( 2000 );
 	DrawSceneWithMask( "black", "effect/logomask", 0, 0, 1000 );
 
-	// For now, just always play the opening movie
+	// Always play the opening movie
 	ModCallScriptSection("&opening", "PlayOriginMovie");
 }
 
