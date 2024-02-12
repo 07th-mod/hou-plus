@@ -104,7 +104,7 @@ void BrandLogo()
 	DrawSceneWithMask( "black", "effect/logomask", 0, 0, 1000 );
 
 	// Always play the opening movie
-	ModCallScriptSection("&opening", "PlayOriginMovie");
+	ModCallScriptSection("&opening", "PlayAnoHiEMovie");
 }
 
 void Title()
@@ -359,6 +359,8 @@ void EnterKamikashimashi()
 	DrawScene( "black", 1000 );
 	CallSection("ResetScene");
 
+	PlayVideo("video/mv10.mp4", 0, 0);
+
 	JumpSection("Kamikashimashi");
 }
 
@@ -398,6 +400,8 @@ void EnterMehagashi()
 	Wait(500);
 	DrawScene( "black", 1000 );
 	CallSection("ResetScene");
+	
+	ModCallScriptSection("&opening", "PlayOriginMovie");
 
 	JumpSection("Mehagashi");
 }
