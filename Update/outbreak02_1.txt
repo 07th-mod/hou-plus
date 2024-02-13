@@ -2355,7 +2355,7 @@ void main()
 	OutputLine(NULL, "　少女は、その梯子はここに置いていっていいと仕草で伝えると、",
 		   NULL, "The young girl gestured to say it was okay to leave the ladder here,", Line_Continue);
 	OutputLine(NULL, "ひさしから、２階の窓の中に入る。",
-		   NULL, " before passing through the second floor window via the eaves.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " before passing through the second-floor window via the eaves.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2651,7 +2651,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ここで息を潜めていれば、安全だったろうに。",
-		   NULL, "If she stayed quiet she would be safe here.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "If she stayed quiet, she would be safe here.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -6889,7 +6889,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いつの間にか対岸の歩道の向こうに、３人ほどの自警団の姿があった。",
-		   NULL, "But at some point three men from the watch had taken up posts on the opposite shore.", Line_Normal);
+		   NULL, "But at some point, three men from the watch had taken up posts on the opposite shore.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -7054,7 +7054,7 @@ void main()
 	DrawScene( "background/kamik_mati_301y", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自警団の男たちは、魅音の潜むトラックの荷台によじ登っていく。",
-		   NULL, "The men from the watch climbed up into the bed of the truck Mion had hid under.", Line_Normal);
+		   NULL, "The men from the watch climbed up into the bed of the truck Mion had hidden under.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -8906,7 +8906,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s25/06/nshi_0070", 128, TRUE);
 	OutputLine(NULL, "「船頭多くして何とやら。リーダーシップを巡ってのトラブルから、殺し合いの騒ぎに発展したそうで。……恐ろしいことです。」",
-		   NULL, "\"You know what they say about too many cooks. What started as just fighting over leadership lead to murder. .....It's terrifying.\"", Line_Normal);
+		   NULL, "\"You know what they say about too many cooks. What started as just fighting over leadership lead to murder. ......It's terrifying.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -10585,7 +10585,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s25/12/nhan_0690", 128, TRUE);
 	OutputLine(NULL, "「それを言ったら、こちらこそっ。そなたの嫌がらせの数々、僕であっても千年の怒りが収まらないのですっ。」",
-		   NULL, "\"I could say the same to you! I haven't lost any of my anger either, for all of your harrassment!\"", Line_Normal);
+		   NULL, "\"I could say the same to you! I haven't lost any of my anger either, for all of your harassment!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -10594,7 +10594,7 @@ void main()
 	OutputLine(NULL, "　二人にどんな因縁があるのかはわからないが、",
 		   NULL, "I didn't know what kind of history those two shared,", Line_Continue);
 	OutputLine(NULL, "千年経っても恨みが忘れられないとは、……対立の根は深い様子だ。",
-		   NULL, " but if they held onto their grudges for a millenium...... then the cause of their antagonism ran deep.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " but if they held onto their grudges for a millennium...... then the cause of their antagonism ran deep.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -11333,7 +11333,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　電撃は、怪力だろうと非力だろうと食らえば堪えられるものではない。",
-		   NULL, "No matter how strong you are, no body can withstand electric jolts.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "No matter how strong you are, nobody can withstand electric jolts.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -14398,7 +14398,7 @@ void main()
 	ModPlayVoiceLS(4, 51, "ps3/s25/51/ntam_0300", 128, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "「吾輩の民もほとんどは討ち取られ……、あやつがどこにいるのかもわからぬ……。鹿骨に閉じ込められている内に討ち取ることが出来れば……。この不浄シュークリームのせいで！」",
-		   NULL, "\"Nearly all of my people have been taken captive..... I have no idea where she is at present...... If only I could've taken her down while she was trapped in Shishibone...... But thanks to this tainted cream puff!\"", Line_Normal);
+		   NULL, "\"Nearly all of my people have been taken captive...... I have no idea where she is at present...... If only I could've taken her down while she was trapped in Shishibone...... But thanks to this tainted cream puff!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 

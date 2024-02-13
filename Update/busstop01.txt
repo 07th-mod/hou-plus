@@ -345,7 +345,7 @@ void main()
 
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_0150", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「来週の水曜日学校をさぼらない？」",
-		   "<color=#5ec69a>Mion</color> ", "'Want to skip school next wednesday?'", Line_Continue);
+		   "<color=#5ec69a>Mion</color> ", "'Want to skip school next Wednesday?'", Line_Continue);
 	OutputLine(NULL, "なんて言われた日にゃもー、休むしか！",
 		   NULL, " Well, when that day came, I just had to skip!", Line_Continue);
 	OutputLine(NULL, "ってカンジでー！」",
@@ -1258,7 +1258,7 @@ void main()
 
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_0380", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「お、温泉行ったら背中の流しっこしましょーねーッ！んで出たら浴衣で卓球ー！」",
-		   "<color=#5ec69a>Mion</color> ", "\"W-When we go to the hot springs, we can wash each other's backs! Then when we're done we can play ping pong in yukata!\"", Line_Normal);
+		   "<color=#5ec69a>Mion</color> ", "\"W-When we go to the hot springs, we can wash each other's backs! Then when we're done, we can play ping pong in yukata!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
@@ -1274,7 +1274,7 @@ void main()
 
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_0390", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「その後は窓から河原の花火大会を眺めてー！いい雰囲気に盛り上がって来た所でふと絡みつく私の指ー！梨花さんは恥じらいつつも身を委ねーッ…！」",
-		   "<color=#5ec69a>Mion</color> ", "\"Then afterward, we'll gaze at the fireworks show by the river through our window! Then once we've gotten into a nice mood, our fingers will suddenly entwine! And while it embarasses you, you'll lean into me...!\"", Line_Normal);
+		   "<color=#5ec69a>Mion</color> ", "\"Then afterward, we'll gaze at the fireworks show by the river through our window! Then once we've gotten into a nice mood, our fingers will suddenly entwine! And while it embarrasses you, you'll lean into me...!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
@@ -1773,7 +1773,7 @@ void main()
 
 	ModPlayVoiceLS(4, 56, "ps3/s26/56/tton_0270", 128, TRUE);
 	OutputLine("<color=#ccaa95>利根川</color> ", "「休み明けから体調が悪くてね。…急に苦しくなるらしいんだよ。」",
-		   "<color=#ccaa95>Tonegawa</color> ", "\"He's been feeling poorly since the weekend ended. ...Apparently he keeps feeling pain all of a sudden.\"", Line_Normal);
+		   "<color=#ccaa95>Tonegawa</color> ", "\"He's been feeling poorly since the weekend ended. ...Apparently, he keeps feeling pain all of a sudden.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
@@ -2766,7 +2766,7 @@ void main()
 
 	ModPlayVoiceLS(4, 56, "ps3/s26/56/tton_0400", 128, TRUE);
 	OutputLine("<color=#ccaa95>利根川</color> ", "「……去年の暮れの……近藤さんの事かい…？」",
-		   "<color=#ccaa95>Tonegawa</color> ", "\"......Are you refering to Kondou-san...... at the end of last year...?\"", Line_Normal);
+		   "<color=#ccaa95>Tonegawa</color> ", "\"......Are you referring to Kondou-san...... at the end of last year...?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
@@ -2793,7 +2793,7 @@ void main()
 
 	ModPlayVoiceLS(4, 54, "ps3/s26/54/tyos_0330", 128, TRUE);
 	OutputLine("<color=#715348>吉村</color> ", "「…男の名は近藤　義幸。…建設省河川局開発課の職員です。」",
-		   "<color=#715348>Yoshimura</color> ", "\"...The man's name was Kondou Yoshiyuki. ...He was a member of the Ministry of Contrustion's River Bureau, Development Division.\"", Line_Normal);
+		   "<color=#715348>Yoshimura</color> ", "\"...The man's name was Kondou Yoshiyuki. ...He was a member of the Ministry of Construction's River Bureau, Development Division.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
@@ -2943,7 +2943,7 @@ void main()
 
 	ModPlayVoiceLS(4, 54, "ps3/s26/54/tyos_0390", 128, TRUE);
 	OutputLine("<color=#715348>吉村</color> ", "「その噂は事件の前から囁かれていましたが、少なくとも事件が起きるまではただのお伽話に過ぎませんでした。」",
-		   "<color=#715348>Yoshimura</color> ", "\"The rumors were whispered well before that incident, but at the very least, they were treated as just fairy tales up until it occured.\"", Line_Normal);
+		   "<color=#715348>Yoshimura</color> ", "\"The rumors were whispered well before that incident, but at the very least, they were treated as just fairy tales up until it occurred.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
@@ -3002,7 +3002,7 @@ void main()
 
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_0720", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…昔々、…貧しい老夫婦と３人の息子たちが住んでたわ。」",
-		   "<color=#6972c1>Rika</color> ", "\"...Long, long ago... there lived a poor eldery couple with three sons.\"", Line_Normal);
+		   "<color=#6972c1>Rika</color> ", "\"...Long, long ago... there lived a poor elderly couple with three sons.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
@@ -3856,7 +3856,7 @@ void main()
 
 	ModPlayVoiceLS(4, 54, "ps3/s26/54/tyos_0620", 128, TRUE);
 	OutputLine("<color=#715348>吉村</color> ", "「…さすがに、森さんの時は４人目でしたからね。「特殊」な事情について事前に警察の上層部と話がついていたようで、現場検証等も全て秘密で行われました。」",
-		   "<color=#715348>Yoshimura</color> ", "\"...Because by then, Mori-san was the fourth. Apparently the upper management and the police had already come to an agreement beforehand regarding 'special circumstances', so everything, even inspection of the scene, was carried out in secret.\"", Line_Normal);
+		   "<color=#715348>Yoshimura</color> ", "\"...Because by then, Mori-san was the fourth. Apparently, the upper management and the police had already come to an agreement beforehand regarding 'special circumstances', so everything, even inspection of the scene, was carried out in secret.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
 	ModPlayVoiceLS(4, 54, "ps3/s26/54/tyos_0630", 128, TRUE);
@@ -7122,7 +7122,7 @@ void main()
 	ModDrawCharacter(1, 54, "sprite/hyos1a_13_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
 	ModPlayVoiceLS(4, 54, "ps3/s26/54/tyos_1970", 128, TRUE);
 	OutputLine("<color=#715348>吉村</color> ", "「…あなたには、…雛見沢の人間には…容赦しませんよ。」",
-		   "<color=#715348>Yoshimura</color> ", "\"...But you... a villager of Hinamizawa... you will recieve no mercy.\"", Line_Normal);
+		   "<color=#715348>Yoshimura</color> ", "\"...But you... a villager of Hinamizawa... you will receive no mercy.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 

@@ -340,7 +340,7 @@ void main()
 	OutputLine(NULL, "　我が身に危険が及ばない無責任な視聴者にとって、",
 		   NULL, "The people out of this danger's reach were being irresponsible", Line_WaitForInput);
 	OutputLine(NULL, "謎の危険なウィルスがどんな害をもたらすのか映像を見たいというのは、率直な野次馬感情だろう。",
-		   NULL, " in sastisfying their urge to spectate, watching this footage of the harm dealt by this mysterious, heretofore unknown virus.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " in satisfying their urge to spectate, watching this footage of the harm dealt by this mysterious, heretofore unknown virus.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -785,7 +785,7 @@ void main()
 		   NULL, " So we couldn't keep using a flush toilet without water forever. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "それに問題のウィルスの潜伏期間が一ヶ月以上もあることを考えれば、雛見沢の隔離がそれ以上に続くだろうことは容易に想像がつく。",
-		   NULL, "To make matters worse, since the virus involved here has a one month incubation period, it wasn't hard to imagine the quarantine around Hinamizawa would last even longer than that.", Line_Normal);
+		   NULL, "To make matters worse, since the virus involved here has a one-month incubation period, it wasn't hard to imagine the quarantine around Hinamizawa would last even longer than that.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -2811,7 +2811,7 @@ void main()
 	OutputLine(NULL, "　丙種の存在を世界で最初に発見したのは、ナチス政権化のドイツ人医師で、",
 		   NULL, "The first to uncover the existence of this virus was a German doctor within the Nazi administration,", Line_Continue);
 	OutputLine(NULL, "この発見を元に特定の人種への虐殺が主導されたと言われています。",
-		   NULL, " and it is theorized that this discovery lead to the administration's massacre of particular peoples.", Line_Normal);
+		   NULL, " and it is theorized that this discovery led to the administration's massacre of particular peoples.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -5448,7 +5448,7 @@ void main()
 	ModPlayVoiceLS(4, 3, "ps3/s24/03/nmio_0660", 128, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "「町会役員たちが音頭を取って、神社部と青年部、防犯部がさらに村の有志も加えて１００人以上に膨れ上がってるらしい！！　防犯部には猟友会も合流してて少なくとも２０丁以上のショットガン、ライフルで武装してる！」",
-		   NULL, "\"The council's officials took the lead and after they added the Shrine group, the youth group, the neighbourhood watch, and other volunteers from the village, their numbers swelled past a hundred people!! The watch is close with the hunting club too, so they're armed with at least 20 shotguns and rifles!\"", Line_Normal);
+		   NULL, "\"The council's officials took the lead and after they added the Shrine group, the youth group, the neighborhood watch, and other volunteers from the village, their numbers swelled past a hundred people!! The watch is close with the hunting club too, so they're armed with at least 20 shotguns and rifles!\"", Line_Normal);
 	ClearMessage();
 
 	//;ld r,mio_9b,80
@@ -5983,7 +5983,7 @@ void main()
 	OutputLine(NULL, "そして二人は制服も着ていなかったが、",
 		   NULL, " They weren't wearing their uniforms either.", Line_Continue);
 	OutputLine(NULL, "……いや、制服は充分かもしれない。",
-		   NULL, " ..No, what they wore was enough of a uniform. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...No, what they wore was enough of a uniform. ", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
 
 	DrawScene( "white", 200 );

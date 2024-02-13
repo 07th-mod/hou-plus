@@ -32,7 +32,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…いや～…、よく同人誌のあとがきなんかにありますけど、これをタイプしてる今現在、ぜ～んぜん、終わってないんですよね☆",
-		   NULL, "\"...Man~ ...You often see afterwords in doujinshi, but we're not done at a~ll while I'm tryping this out☆", Line_WaitForInput);
+		   NULL, "\"...Man~ ...You often see afterwords in doujinshi, but we're not done at a~ll while I'm typing this out☆", Line_WaitForInput);
 	OutputLine(NULL, "　作業。」",
 		   NULL, " There's still work left.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

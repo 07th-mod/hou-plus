@@ -490,7 +490,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　んで発売直前とは言え、イラストが公開されていたＦＦⅦからはティナたんとエアリスたんの衣装をチョイス！！",
-		   NULL, "And even though it was yet to be released, they'd publicized illustrations already, so I chose to use Tifa and Aerith's oufits from FF7!!", Line_WaitForInput);
+		   NULL, "And even though it was yet to be released, they'd publicized illustrations already, so I chose to use Tifa and Aerith's outfits from FF7!!", Line_WaitForInput);
 	OutputLine(NULL, "　どうですよ？！",
 		   NULL, " What do you think?!", Line_WaitForInput);
 
@@ -696,7 +696,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今日まで皆さんからいただいた、様々な形のご恩に報いることのできる作品に仕上がっていたなら、竜騎士07、八咫桜、これほどの喜びはありません。",
-		   NULL, "It would truly bring us both great joy if this title we've finished up has managed to repay some of the kindness we've recieved from all of you thus far.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "It would truly bring us both great joy if this title we've finished up has managed to repay some of the kindness we've received from all of you thus far.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

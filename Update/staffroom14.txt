@@ -512,7 +512,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　年１回のコミケ発表という形も難しいかもしれません。",
-		   NULL, "It might prove difficult even doing even one comiket release per year.", Line_Normal);
+		   NULL, "It might prove difficult even doing even one Comiket release per year.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -638,7 +638,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これまでの竜騎士07は、皆さんの応援で後押ししていただいた竜騎士07。",
-		   NULL, "Up until today, the support I've recieved from you all has kept me moving forward.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Up until today, the support I've received from you all has kept me moving forward.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
