@@ -5930,7 +5930,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, TRUE );
-	ModDrawCharacter(1, 52, "sprite/hri2a_02_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
+	ModDrawCharacter(1, 52, "sprite/hmi2a_02_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_1300", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「あ！こっち来たよこっち来たよ！野グソマーン！」",
 		   "<color=#5ec69a>Mion</color> ", "\"Ah! He's coming over here, he's coming over here! It's Shitman!\"", Line_Normal);
