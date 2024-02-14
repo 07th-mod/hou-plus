@@ -5930,7 +5930,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, TRUE );
-	ModDrawCharacter(1, 52, "sprite/hmi2a_02_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
+	ModDrawCharacter(1, 53, "sprite/hmi2a_02_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_1300", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「あ！こっち来たよこっち来たよ！野グソマーン！」",
 		   "<color=#5ec69a>Mion</color> ", "\"Ah! He's coming over here, he's coming over here! It's Shitman!\"", Line_Normal);
@@ -5938,8 +5938,8 @@ void main()
 
 	DisableWindow();
 
-	ModDrawCharacter(1, 58, "sprite/hhos1a_06_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, FALSE );
-	ModDrawCharacter(3, 53, "sprite/hmi2a_03_", "1", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 200, TRUE );
+	ModDrawCharacter(3, 58, "sprite/hhos1a_06_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 200, FALSE );
+	ModDrawCharacter(1, 53, "sprite/hmi2a_03_", "1", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
 	PlayBGM( 1, "me/lgsk_warai", 30, 0 );
 
 	OutputLine(NULL, "　吉村・荒川以外は大笑い。",
