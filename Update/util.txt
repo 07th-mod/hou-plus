@@ -16,10 +16,7 @@ void PlayIntro()
 	DisableWindow();
 	ClearMessage();
 	SetValidityOfSkipping(FALSE);
-	if(GetGlobalFlag(GLanguage) == 0)
-		PlayVideo("video/higurashi_hou.mp4", 640, 480);
-	else
-		PlayVideo("video/higurashi_hou_sub.mp4", 640, 480);
+	ModCallScriptSection("&opening", "PlayAnoHiEMovie");
 	SetValidityOfSkipping(TRUE);
 }
 

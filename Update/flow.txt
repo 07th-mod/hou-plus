@@ -596,7 +596,7 @@ void HanyuuAnim2()
 void MusicRoomMovie()
 {
 	DrawScene("black", 400);
-	CallScriptSection("util", "PlayIntro");
+	ModCallScriptSection("&opening", "PlayAnoHiEMovie");
 	JumpSection("OmakeSubSection");
 }
 

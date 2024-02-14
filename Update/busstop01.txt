@@ -5021,7 +5021,7 @@ void main()
 	ModDrawCharacter(3, 59, "sprite/hoka1a_04_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
 	ModPlayVoiceLS(4, 59, "ps3/s26/59/toka_0090", 128, TRUE);
 	OutputLine("<color=#574f58>岡野</color> ", "「…目撃が曖昧なので女性の可能性も否定できません。…ま、…建設省のお二人は身元が確かなので問題ないでしょう。アリバイも調べやすい。」",
-		   "<color=#574f58>Okano</color> ", "\"...Witness accounts were vague, so we can't rule out the possibility it was done by a woman. ...Well... these two from the Ministry certainly are who say they are, so there's no problems there. It'll be easy to confirm their alibis too.\"", Line_Normal);
+		   "<color=#574f58>Okano</color> ", "\"...Witness accounts were vague, so we can't rule out the possibility it was done by a woman. ...Well... these two from the Ministry certainly are who they say they are, so there's no problems there. It'll be easy to confirm their alibis too.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 	//;（建設省の２人、肩をなで下ろす。）@
@@ -7407,7 +7407,6 @@ void main()
 
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 400, TRUE );
 
-	ModDrawCharacter(4, 53, "sprite/hmi2a_04_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_1740", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「おおおぉおおおぉおおッ！」",
 		   "<color=#5ec69a>Mion</color> ", "\"Ooooooohhhh!\"", Line_Normal);
@@ -8784,7 +8783,7 @@ void main()
 
 	ModPlayVoiceLS(4, 58, "ps3/s26/58/thos_0370", 128, TRUE);
 	OutputLine("<color=#ffedab>星野</color> ", "「…もしも！…梨花さんに何かがあって、親虫が死んでしまったら。…どうなると思います？」",
-		   "<color=#ffedab>Hoshino</color> ", "\"...So if! ...If something were to happen to Rika-san, and the queen were to die... what do you believe would happen?\"", Line_Normal);
+		   "<color=#ffedab>Hoshino</color> ", "\"...So, if! ...If something were to happen to Rika-san, and the queen were to die... what do you believe would happen?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 

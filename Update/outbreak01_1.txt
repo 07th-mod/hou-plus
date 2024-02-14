@@ -205,10 +205,10 @@ void main()
 	OutputLine(NULL, "　だが、低空を飛びまわりスピーカーで怒鳴り続けるヘリコプターと、",
 		   NULL, "Yet, the helicopters flying at low altitudes with their speakers blaring,", Line_WaitForInput);
 	OutputLine(NULL, "町への幹線道路が封鎖され渋滞している光景を見て、",
-		   NULL, " and the sight of traffic backed up at a blockade on the main road into the city ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " and the sight of traffic backed up at a blockade on the main road into the city, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "人々は今朝がこれまでの朝とはあまりに異質であることを知るのだった。",
-		   NULL, "was enough to let everyone know that this morning was anything but normal.", Line_Normal);
+		   NULL, "were enough to let everyone know that this morning was anything but normal.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -236,7 +236,7 @@ void main()
 	DrawScene( "background/ma_s1", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　俺はそのニュースを、いつものようにもそもそと寝床を抜け出して、食堂に下りてきた時、",
-		   NULL, "I stirred restlessly in my bed like I usually did before eventually crawling out, and once I came down to our dining room ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "I stirred restlessly in my bed like I usually did before eventually crawling out, and when I came down to our dining room, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "テレビに釘付けになる両親の肩越しに見て知った。",
 		   NULL, "I found my parents glued to the television, which is where I learned the news, peeking over their shoulders.", GetGlobalFlag(GLinemodeSp));
@@ -1054,7 +1054,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s24/01/nkei_0070", 128, TRUE);
 	OutputLine(NULL, "「俺のセリフだぜ！！　お前も無事でよかった！」",
-		   NULL, "\"That's my line!! I'm glad to see you safe too!\"", Line_Normal);
+		   NULL, "\"That's my line!! I'm glad to see you're safe too!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -1119,7 +1119,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s24/03/nmio_0020", 128, TRUE);
 	OutputLine(NULL, "「雛見沢地区の全員がシロであることが確認できたら、段階的に隔離は解除になるんじゃないかって楽観論も出てるよ。」",
-		   NULL, "\"Once they can confirm everyone in Hinamizawa is clean, then they're hopeful that they can start lifting the quarantine in stages.\"", Line_Normal);
+		   NULL, "\"Once they can confirm everyone in Hinamizawa is clean, they're hopeful that they can start lifting the quarantine in stages.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -1214,7 +1214,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s24/03/nmio_0080", 128, TRUE);
 	OutputLine(NULL, "「あとは、……ここだけの話なんだけど。………このウィルス、テレビで言ってるアフリカの殺人ウィルスってのとは別物らしいって噂もあるんだよ。」",
-		   NULL, "\"Also...... this is just between us, but. .........There's talk that this one might be different from the African killer virus they mentioned on TV.\"", Line_Normal);
+		   NULL, "\"Also...... this is just between us, but......... there's talk that this one might be different from the African killer virus they mentioned on TV.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -2030,7 +2030,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s24/01/nkei_0220", 128, TRUE);
 	OutputLine(NULL, "「………魅音の表情を見る限り、…どうも冗談で済まそうって話にはなってないらしいな…。」",
-		   NULL, "\"......Judging from your expression, Mion... you're not going to tell us this was some joke all along, right...\"", Line_Normal);
+		   NULL, "\"......Judging from your expression, Mion... you're not going to tell us this was some joke all along, right...?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -2073,7 +2073,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s24/02/nren_0140", 128, TRUE);
 	OutputLine(NULL, "「そうだね。沙都子ちゃん１人じゃできることに限界もあると思う。…私たちのところに匿う方がいいんじゃないかな、かな。」",
-		   NULL, "\"True. There's only so much Satoko-chan can do by herself. ...Wouldn't it better to shelter her in our area? Wouldn't it?\"", Line_Normal);
+		   NULL, "\"True. There's only so much Satoko-chan can do by herself. ...Wouldn't it be better to shelter her in our area? Wouldn't it?\"", Line_Normal);
 	ClearMessage();
 
 
@@ -2484,13 +2484,13 @@ void main()
 	OutputLine(NULL, "　　　　　　　　　　　　58本総一エ−３４号",
 		   NULL, "Showa 58 HQ, General Affairs Division, Section 1, E-34", Line_ContinueAfterTyping);
 	Wait( 500 );
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll(NULL, "", Line_Normal); ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　　　　　　　　　　　　昭和５８年７月７日",
 		   NULL, "　　　　　　　　　　　　        July 7th, 1983", Line_ContinueAfterTyping);
 	Wait( 800 );
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll(NULL, "", Line_Normal); ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -2580,13 +2580,13 @@ void main()
 	OutputLine(NULL, "　　　　　　　　　　　　58本総一エ−３５号",
 		   NULL, "Showa 58 HQ, General Affairs Division, Section 1, E-35", Line_ContinueAfterTyping);
 	Wait( 500 );
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll(NULL, "", Line_Normal); ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　　　　　　　　　　　　昭和５８年７月７日",
 		   NULL, "　　　　　　　　　　　　        July 7th, 1983", Line_ContinueAfterTyping);
 	Wait( 1000 );
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll(NULL, "", Line_Normal); ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -2683,14 +2683,14 @@ void main()
 	OutputLine(NULL, "　　　　　　　　　　　　　昭和５８年７月６日",
 		   NULL, "　　　　　　　　　　　　July 6th, 1983", Line_ContinueAfterTyping);
 	Wait( 500 );
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll(NULL, "", Line_Normal); ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "アルファベットプロジェクト理事会",
 		   NULL, "Alphabet Project Board of Directors", Line_ContinueAfterTyping);
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll(NULL, "", Line_Normal); ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "雛見沢地区生物災害対策本部長",
@@ -2776,7 +2776,7 @@ void main()
 		   NULL, " and another shocking fact was uncovered as well: ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "宗教分布図と一致するという驚愕すべき事実を判明させました。",
-		   NULL, "the distribution map of these strains, oddly enough, matches up with present-day national borders and religious distributions.", Line_Normal);
+		   NULL, "The distribution map of these strains, oddly enough, matches up with present-day national borders and religious distributions.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -2974,7 +2974,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　　　　　　　　　　　　　国立感染症研究所",
 		   NULL, "<align=right>National Institute of Infectious Diseases</align>", Line_ContinueAfterTyping);
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll(NULL, "", Line_Normal); ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　　　　　　　　　　　　　第13室　担当：鰯",
