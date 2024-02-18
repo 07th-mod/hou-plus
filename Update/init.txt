@@ -161,7 +161,7 @@ void main()
 
 	// GAltSE controls which of these are selected
 	ModAddSEset("New SE", "Placeholder", "SE");
-//	ModAddSEset("Original SE", "Placeholder", "OGSE:SE");
+	ModAddSEset("Original SE", "Placeholder", "OGSE:SE");
 
 	// Audio presets the user can select, consisting of a combination of the BGM and SE flags
 	ModAddAudioset(
@@ -180,22 +180,26 @@ void main()
 	);
 
 	ModAddAudioset(
-		"Original (Non-plus) BGM",
-		"This option restores the BGM files to the same as the Hou (Non-plus) version. However for now, the SE are unchanged.
+		"Mostly Original (Non-plus) BGM/SE",
+		"This option restores the BGM/SE files to the same as the Hou (Non-plus) version, where they exist.
 
-		This is purely a file replacement - no attempt has been made to check if the timings are different(when BGM starts/stops playing).
+		However if a BGM or SE only exists in Hou+, the Hou+ version will be used.
+
+		Note: Currently this is purely a file replacement - no attempt has been made to check if the timings are different(when BGM/SE starts/stops playing).
 
 		Please click on the 'Open BGM/SE FAQ' button to view the 07th-mod wiki for more details.",
-		"JP: Original (Hou non-plus) BGM",
-		"JP: This option restores the BGM files to the same as the Hou (Non-plus) version. However for now, the SE are unchanged.
+		"JP: Mostly Original (Hou non-plus) BGM/SE",
+		"JP: This option restores the BGM/SE files to the same as the Hou (Non-plus) version, where they exist.
 
-		This is purely a file replacement - no attempt has been made to check if the timings are different(when BGM starts/stops playing).
+		However if a BGM or SE only exists in Hou+, the Hou+ version will be used.
+
+		Note: Currently this is purely a file replacement - no attempt has been made to check if the timings are different(when BGM/SE starts/stops playing).
 
 		Please click on the 'Open BGM/SE FAQ' button to view the 07th-mod wiki for more details.",
 		1, // GAltBGM
 		1, // GAltBGMFlow
-		0, // GAltSE
-		0  // GAltSEFlow
+		1, // GAltSE
+		1  // GAltSEFlow
 	);
 
 	ModGenericCall("LipSyncSettings", ".3, .7, true");
