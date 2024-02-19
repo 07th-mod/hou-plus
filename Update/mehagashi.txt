@@ -59,7 +59,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　当然、その内部には、古手家の人間か、特別な祭事に際し人手が必要な時のみ、御三家の一部の人間しか立ち入ることは出来ない。",
-		   NULL, "So naturally, only members of the Furude family were allowed inside, or if extra hands were needed for a special ritual, then members of the three families were allowed as well.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "So naturally, only members of the Furude family were allowed inside, or if extra hands were needed for a special ritual, then members of the Three Families were allowed as well.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -794,7 +794,7 @@ void main()
 		   NULL, "\"...Listen, child of man.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 12, "ps3/meha/12/hanyu9017", 128, TRUE);
 	OutputLine(NULL, "前原圭一よ……」",
-		   NULL, " Maebara Keiichi...\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Keiichi Maebara...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -888,7 +888,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/meha/12/hanyu9024", 128, TRUE);
 	OutputLine(NULL, "「前原圭一。",
-		   NULL, "\"Maebara Keiichi.", Line_WaitForInput);
+		   NULL, "\"Keiichi Maebara.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 12, "ps3/meha/12/hanyu9025", 128, TRUE);
 	OutputLine(NULL, "そなたには、この星を救う救世主になって欲しいのです」",
 		   NULL, " I want you to become the savior who will rescue this planet.\"", Line_Normal);
@@ -922,7 +922,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/meha/12/hanyu9028", 128, TRUE);
 	OutputLine(NULL, "あの水着は、百億の奇跡と偶然に恵まれ、このカケラに流れ着いてしまったのです」",
-		   NULL, "Yet those swimsuits were blessed with a billion miracles and good fortune to make their way here to this fragment.\"", Line_Normal);
+		   NULL, "Yet those swimsuits were blessed with a billion miracles and good fortune to make their way here to this Fragment.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	//;【圭一】
@@ -1112,7 +1112,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/meha/1/keiichi9033", 128, TRUE);
 	OutputLine(NULL, "「そういうのは俺にじゃなくて、梨花ちゃんに直接、言った方がいいんじゃないのか？",
-		   NULL, "\"Shouldn't you be telling Rika-chan directly instead of me?", Line_WaitForInput);
+		   NULL, "\"Shouldn't you be telling that to Rika-chan directly instead of me?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/meha/1/keiichi9034", 128, TRUE);
 	OutputLine(NULL, "　というか、今すぐ言って、着るのをやめさせるべきじゃないのかッ？！」",
 		   NULL, " I mean, shouldn't you be telling her right now to stop them from wearing the suits?!\"", Line_Normal);
@@ -1445,7 +1445,7 @@ void main()
 		   NULL, "\"Huh?!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/meha/1/keiichi9045", 128, TRUE);
 	OutputLine(NULL, "　ク、クールになれ、前原圭一ッ。",
-		   NULL, " S-Stay cool, Maebara Keiichi!", Line_WaitForInput);
+		   NULL, " S-Stay cool, Keiichi Maebara!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/meha/1/keiichi9046", 128, TRUE);
 	OutputLine(NULL, "……これは確かに、すごい魔力だぜッ。",
 		   NULL, " ...That truly is incredible magic!", Line_WaitForInput);
@@ -1774,7 +1774,7 @@ void main()
 	OutputLine(NULL, "　もう５分も経ってしまった！",
 		   NULL, " But five whole minutes had already passed!", Line_WaitForInput);
 	OutputLine(NULL, "　あと５５分でこの銀河が丸ごと爆発するんだぞッ！",
-		   NULL, " There was only 55 minutes left before the whole galaxy exploded!", Line_Normal);
+		   NULL, " There were only 55 minutes left before the whole galaxy exploded!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -2022,7 +2022,7 @@ void main()
 	DrawScene( "black", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　どうする、前原圭一……！",
-		   NULL, "What will you do, Maebara Keiichi...?!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "What will you do, Keiichi Maebara...?!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2528,7 +2528,7 @@ void main()
 	OutputLine(NULL, "　白衣をなびかせながら天空より降り立つ男！",
 		   NULL, " A man with a lab coat fluttering behind him landed before the pair!", Line_WaitForInput);
 	OutputLine(NULL, "　入江京介ッ！！",
-		   NULL, " It was Irie Kyousuke!!!", Line_Normal);
+		   NULL, " It was Kyousuke Irie!!!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -2558,7 +2558,7 @@ void main()
 		   NULL, "\"Hey.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/meha/10/irie9001", 128, TRUE);
 	OutputLine(NULL, "話は聞かせてもらいましたよ？　銀河を守るためならば、この入江京介！",
-		   NULL, " I heard what's going on. If it's to protect the galaxy, then I, Irie Kyousuke!", Line_WaitForInput);
+		   NULL, " I heard what's going on. If it's to protect the galaxy, then I, Kyousuke Irie!", Line_WaitForInput);
 	DisableWindow();
 	ModDrawCharacter(3, 10, "sprite/iri2_majime2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
 	ModPlayVoiceLS(4, 10, "ps3/meha/10/irie9002", 128, TRUE);
@@ -2678,7 +2678,7 @@ void main()
 		   NULL, "\"So long as the sun shines,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/meha/10/irie9006", 128, TRUE);
 	OutputLine(NULL, "　この入江京介、いつであっても沙都子ちゃんのピンチには、太陽の中より現れますッ」",
-		   NULL, " whenever you're in a crisis, Satoko-chan, I, Irie Kyousuke, will always appear!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " whenever you're in a crisis, Satoko-chan, I, Kyousuke Irie, will always appear!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -3571,7 +3571,7 @@ void main()
 		   NULL, "\"Work hard~♪", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/meha/3/mion9051", 128, TRUE);
 	OutputLine(NULL, "　義郎おじさんによろしくね～♪」",
-		   NULL, " Give Uncle Yoshiro my regards~♪\"", Line_Normal);
+		   NULL, " Give Uncle Yoshiroh my regards~♪\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -4182,7 +4182,7 @@ void main()
 
 	DisableWindow();
 	//;エンジェルモート服（詩音立ち絵だけど、魅音として扱うイメージ）
-	ModDrawCharacter(1, 6, "sprite/si2_yowaki_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
+	ModDrawCharacter(1, 3, "sprite/si2_yowaki_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
 	DrawScene( "background/oki_pool1", 400 );
 	//;魅音
 	//;水着＋エプロン
@@ -4198,7 +4198,7 @@ void main()
 	//;【魅音】
 	//;ld c,mio_1,80
 	//;エンジェルモート服（詩音立ち絵だけど、魅音として扱うイメージ）
-	ModDrawCharacter(1, 6, "sprite/si2_odoroki_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+	ModDrawCharacter(1, 3, "sprite/si2_odoroki_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/meha/3/mion9083", 128, TRUE);
 	OutputLine(NULL, "「ど、どういうこと……？？？」",
@@ -4209,14 +4209,14 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その時、詩音ちゃ～ん、どこー？！",
-		   NULL, "That was when they heard Uncle Yoshiro's voice.", Line_WaitForInput);
+		   NULL, "That was when they heard Uncle Yoshiroh's voice.", Line_WaitForInput);
 	OutputLine(NULL, "　という、義郎おじさんの声が。",
 		   NULL, " He was calling for Shion-chan.", Line_Normal);
 	ClearMessage();
 	//;bg sora_d,22
 
 	//;【義郎】
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiro</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/meha/0/yoshirou9000", 128, TRUE);
 	OutputLine(NULL, "「あー、いたいた！",
 		   NULL, "\"Ahh, there you are!", Line_WaitForInput);
@@ -4237,7 +4237,7 @@ void main()
 	//;水着＋エプロン
 	//;エンジェルモート服（詩音立ち絵だけど、魅音として扱うイメージ）
 	ModDrawCharacter(2, 6, "sprite/si6_akuwarai_a1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, FALSE );
-	ModDrawCharacter(1, 6, "sprite/si2_tohoho_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+	ModDrawCharacter(1, 3, "sprite/si2_tohoho_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/meha/3/mion9084", 128, TRUE);
 	OutputLine(NULL, "「え？！",
@@ -4253,7 +4253,7 @@ void main()
 		   NULL, " I'm Mion! Mion!!!\"", Line_Normal);
 	ClearMessage();
 	//;【義郎】
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiro</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/meha/0/yoshirou9004", 128, TRUE);
 	OutputLine(NULL, "「どっちでもいいよ！",
 		   NULL, "\"Either works for me!", Line_WaitForInput);
@@ -6085,7 +6085,7 @@ void main()
 	Wait( 2000 );
 	//;【魅音】
 	//;ld c,mio_1,80
-	ModDrawCharacter(1, 6, "sprite/si2_odoroki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
+	ModDrawCharacter(1, 3, "sprite/si2_odoroki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
 	DrawSceneWithMask( "background/oki_pool2", "effect/down", 0, 0, 300 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/meha/3/mion9089", 128, TRUE);
@@ -6102,7 +6102,7 @@ void main()
 	//;【魅音】
 	//;ld c,mio_1,80
 	FadeBustshotWithFiltering( 1, "effect/left", 0, FALSE, 0, 0, 200, TRUE );
-	ModDrawCharacterWithFiltering(2, 6, "sprite/si2_warai_a1_", "2", "effect/left", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 200, TRUE );
+	ModDrawCharacterWithFiltering(2, 3, "sprite/si2_warai_a1_", "2", "effect/left", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 200, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/meha/3/mion9092", 128, TRUE);
 	OutputLine(NULL, "「皆さん、お釣りが出ないように、予め準備をお願いしますぅ！",
@@ -6129,7 +6129,7 @@ void main()
 	DisableWindow();
 	//;【魅音】
 	//;ld c,mio_1,80
-	ModDrawCharacter(2, 6, "sprite/si2_tohoho_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/si2_tohoho_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/meha/3/mion9095", 128, TRUE);
 	OutputLine(NULL, "「サクちゃん、列整理変わってー！！",
@@ -6147,7 +6147,7 @@ void main()
 	DisableWindow();
 	//;【魅音】
 	//;ld c,mio_1,80
-	ModDrawCharacter(2, 6, "sprite/si2_odoroki_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/si2_odoroki_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/meha/3/mion9099", 128, TRUE);
 	OutputLine(NULL, "「ヒナちゃんとリンちゃん、レジ入ってぇぇ！！",
@@ -6173,7 +6173,7 @@ void main()
 	DrawScene( "black", 400 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　エンジェルモート、興宮市民プール支店は、凄まじい大盛況だった。",
-		   NULL, "The Okinomiya Public Pool Branch of Angel Morte was doing tremendously great business.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "The Okinomiya Public Pool Branch of Angel Mort was doing tremendously great business.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -6216,7 +6216,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　残された時間は５分ない。",
-		   NULL, "There was only five minutes left.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "There were only five minutes left.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -6399,9 +6399,9 @@ void main()
 	OutputLine(NULL, "　とは言ったものの！！",
 		   NULL, "Though that being said!!!", Line_WaitForInput);
 	OutputLine(NULL, "　どうする、前原圭一！",
-		   NULL, " What now, Maebara Keiichi?!", Line_WaitForInput);
+		   NULL, " What now, Keiichi Maebara?!", Line_WaitForInput);
 	OutputLine(NULL, "　クールになれ、前原圭一！！",
-		   NULL, " Be cool, Maebara Keiichi!!!", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Be cool, Keiichi Maebara!!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -6548,7 +6548,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　残り時間、１２０秒を切る……。",
-		   NULL, "There was only 120 seconds left...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "There were only 120 seconds left...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -6573,7 +6573,7 @@ void main()
 	ModDrawCharacter(1, 1, "sprite/kei8_ikari2_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……落ち着け、落ち着くんだ、前原圭一……！！",
-		   NULL, "...Calm down. Be cool, Maebara Keiichi...!!!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...Calm down. Be cool, Keiichi Maebara...!!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -6631,7 +6631,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　赤面するな、キョドるな、前原圭一ッ！！",
-		   NULL, "Don't blush, and don't panic, Maebara Keiichi!!!", Line_WaitForInput);
+		   NULL, "Don't blush, and don't panic, Keiichi Maebara!!!", Line_WaitForInput);
 	OutputLine(NULL, "　大丈夫、今の自分は女装している！",
 		   NULL, " It's alright! You're currently crossdressing!", Line_WaitForInput);
 	OutputLine(NULL, "　不審がられなければ怪しまれないッ。",
@@ -6732,7 +6732,7 @@ void main()
 	OutputLine(NULL, "　滅却しろ、頭も心も！！",
 		   NULL, " Empty your mind and heart!!!", Line_WaitForInput);
 	OutputLine(NULL, "　男、前原圭一、ぎ、銀河を守る為ならば色香などに惑いはしないぃいいぃ！！",
-		   NULL, " Maebara Keiichi, you must not be tempted by their allure, so that you can save the galaxy!!!", Line_Normal);
+		   NULL, " Keiichi Maebara, you must not be tempted by their allure, so that you can save the galaxy!!!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -6807,7 +6807,7 @@ void main()
 	OutputLine(NULL, "これは“ハンカチ”だ。",
 		   NULL, " It's only a handkerchief.", Line_WaitForInput);
 	OutputLine(NULL, "疑うな前原圭一ッ！！",
-		   NULL, " Don't question it, Maebara Keiichi!!!", Line_WaitForInput);
+		   NULL, " Don't question it, Keiichi Maebara!!!", Line_WaitForInput);
 	OutputLine(NULL, "　レ、レナはさすが女の子だな、ハンカチまでこんなに軽くて小さいのに、可愛いんだなぁああぁぁああぁ！！",
 		   NULL, " R-Rena's such a girly girl. Even her handkerchiefs are so small, so light, and so cute!!!", Line_Normal);
 	ClearMessage();
@@ -7002,7 +7002,7 @@ void main()
 	PlaySE( 0, "a5_10317", 70, 64 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 
-	ModDrawCharacterWithFiltering(1, 0, "sprite/mo3_01_", "0", "effect/right", 0, -240, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 93, "sprite/mo3_01_", "0", "effect/right", 0, -240, 0, FALSE, 0, 0, 0, 0, 0, 2, 300, TRUE );
 	//;【不良たち】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 93, "ps3/meha/93/mob129000", 128, TRUE);
@@ -7025,7 +7025,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ModDrawCharacterWithFiltering(2, 0, "sprite/mo1_01_", "0", "effect/right", 0, 240, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 91, "sprite/mo1_01_", "0", "effect/right", 0, 240, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 	//;【不良たち】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 91, "ps3/meha/91/mob139000", 128, TRUE);
@@ -7038,7 +7038,7 @@ void main()
 
 	DisableWindow();
 
-	ModDrawCharacterWithFiltering(3, 0, "sprite/mo2_01_", "0", "effect/left", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 92, "sprite/mo2_01_", "0", "effect/left", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
 
 	//;【不良たち】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
@@ -7066,7 +7066,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　不良は追い払えても、周りの一般客に、前原圭一が女装をしていて女子更衣室から出てきたとバレてしまう！！",
-		   NULL, "Doing so might get rid of the delinquents, but then the normal guests would find out that Maebara Keiichi came out of the women's changing room dressed like a girl!!!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Doing so might get rid of the delinquents, but then the normal guests would find out that Keiichi Maebara came out of the women's changing room dressed like a girl!!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -7108,7 +7108,7 @@ void main()
 	DisableWindow();
 
 	PlaySE( 0, "a1_07131", 70, 64 );
-	ModDrawCharacter(3, 0, "sprite/mo1_01_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 50, TRUE );
+	ModDrawCharacter(3, 91, "sprite/mo1_01_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 50, TRUE );
 	ShakeScreen( 0, 6, 100, 2, 50, );
 	//;【不良たち】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
