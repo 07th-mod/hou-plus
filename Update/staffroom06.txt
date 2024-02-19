@@ -70,6 +70,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "問．竜騎士07が突然、奇声を上げ、「知っているのか雷電！」",
 		   NULL, "Question: If Ryukishi07 screams out and shouts, \"Did you know, Raiden?!\"", Line_ContinueAfterTyping);
@@ -300,7 +301,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "いや、天誅系の中では一番面白いよコレ。",
-		   NULL, "<size=-4>Man, that was one of the most fun ninja games I've played. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Man, that was one of the most fun ninja games I've played. ", GetGlobalFlag(GLinemodeSp));
 
 	PlaySE( 0, "wav/tataku", 70, 64 );
 
@@ -313,7 +314,8 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いや、重要書類運搬の行列を、後から全員サイレントキルで決めるのも凄まじいものが！",
-		   NULL, "Man, silent killing everyone from behind for a whole procession in charge of delivering important papers was intense!", Line_WaitForInput);
+		   NULL, "Man, silent killing everyone from behind for a whole procession in charge of delivering important papers was intense!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); }
 
 	PlaySE( 0, "wav/kyupirn", 70, 64 );
 	Wait( 200 );
@@ -323,6 +325,7 @@ void main()
 	Wait( 200 );
 	PlaySE( 0, "wav/kyupirn", 70, 64 );
 
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　護衛含めて７人が、誰にも気付かれずわずか１０秒足らずで全員沈黙っすよ？！",
 		   NULL, " I had to silence all seven in under ten seconds without anyone noticing, including the guards!", Line_ContinueAfterTyping);
 

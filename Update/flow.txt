@@ -152,16 +152,33 @@ void Title()
 
 	if(titleMode == 1)
 	{
-		DrawScene("title/title3", 500);
-		Wait(500):
+		if (GetGlobalFlag(GArtStyle) == 2) {
+			DrawScene("title/title3", 500);
+		}
+		else {
+			DrawBustshot( 5, "white", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );
+			DrawSprite( 3, "title/title3scroll", NULL, -426, -900, -133, 0, 0, 0, FALSE, FALSE, 0, 0, 3, 50, TRUE );
+			MoveSprite( 3, -426, -600, -133, 0, 0, 0, 0, 8000, FALSE );
+			FadeBustshot( 5, FALSE, 0, 0, 0, 0, 4000, FALSE );
+		}
 
+		Wait(500):
 		PlayBGM( 2, "bgm1/maturi_01_Ver2", 128, 0 );
 	}
 
 	if(titleMode == 2)
 	{
-		DrawSprite(5, "title/ken", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 5, 0, FALSE);
-		DrawScene("title/title3", 500);
+		if (GetGlobalFlag(GArtStyle) == 2) {
+			DrawSprite(5, "title/ken", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 5, 0, FALSE);
+			DrawScene("title/title3", 500);
+		}
+		else {
+			DrawBustshot( 5, "white", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );
+			DrawSprite( 3, "title/title3scroll", NULL, -426, -550, -133, 0, 0, 0, FALSE, FALSE, 0, 0, 3, 50, TRUE );
+			MoveSprite( 3, -426, -250, -133, 0, 0, 0, 0, 8000, FALSE );
+			FadeBustshot( 5, FALSE, 0, 0, 0, 0, 4000, FALSE );
+		}
+
 		Wait(500):
 
 		int rnd;

@@ -758,27 +758,36 @@ void main()
 	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 100, TRUE );
 	ModDrawCharacterWithFiltering(3, 1, "sprite/kei2_nayamu_", "2", "effect/left", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 100, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "「まず結婚の定義をはっきりさせよう。婚姻届けを出して受理されれば結婚なのか？　だとしたら結婚など血の通っていないお役所の行政用語だってことになっちまう！　それでいいのか？",
-		   NULL, "\"First, let's start by defining marriage. Are two people married after submitting their marriage registration? If so, then marriage is reduced to an administrative term used by cold-blooded officials! Is that acceptable?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"First, let's start by defining marriage. Are two people married after submitting their marriage registration? If so, then marriage is reduced to an administrative term used by cold-blooded officials! Is that acceptable? ", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
 	ModDrawCharacter(3, 1, "sprite/kei2_hig2_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
-	OutputLine(NULL, "　いいや違うッ！！　結婚ってのは、魂と魂が惹かれ合って、共に生涯を添い遂げようという話のはずなんだッ。愛が全て、愛がなければ始まらないッ！！　だが結婚は、愛し合う二人の全てに門戸が開かれているのかッ？！　いいや、開かれてはいない！！　愛が全てなら、国籍も年齢も宗教も、果てには性別さえも不問にするべきだろう？！",
-		   NULL, " No, it is not!!! Marriage should be defined as when two souls are drawn to each other and vow to spend their lives together! Love is everything! Without love, there can be no marriage!!! Yet are the gates of marriage open to any two people who love each other?! No, it is not open to all!!! If love is everything, then age, nationality, religion, and even gender should mean nothing in the end!", Line_Normal);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　いいや違うッ！！　結婚ってのは、魂と魂が惹かれ合って、共に生涯を添い遂げようという話のはずなんだッ。愛が全て、愛がなければ始まらないッ！！　だが結婚は、愛し合う二人の全てに門戸が開かれているのかッ？！",
+		   NULL, "No, it is not!!! Marriage should be defined as when two souls are drawn to each other and vow to spend their lives together! Love is everything! Without love, there can be no marriage!!! Yet are the gates of marriage open to any two people who love each other?! ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　いいや、開かれてはいない！！　愛が全てなら、国籍も年齢も宗教も、果てには性別さえも不問にするべきだろう？！",
+		   NULL, "No, it is not open to all!!! If love is everything, then age, nationality, religion, and even gender should mean nothing in the end!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(3, 1, "sprite/kei2_nayamu_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
-	OutputLine(NULL, "　それを許さない時点で、俺は日本語のいう結婚という言葉を、俺自身が信じる結婚という言葉とは別のものであると断言するのであるッ！！　いやいや、究極的には互いが人間であるかさえ問うことは愚かしいッ！　人間と動物だって、果てには、人間と無機物だって結婚できていいはずなんだ！　当人たちが愛し合い、それを確信しているというのなら、もうそれで二人の絆は永遠なんだ！！　それが結婚じゃないのか？！　違うのかッ？！　ではここで当初の疑問に立ち返ろう！！　俺、前原圭一が『結婚するならどんな人がいい？』ッ？！　この時点ですでに勘違いッ、ミステイクッ、オーマイガー！！",
-		   NULL, "Since Japan does not allow that, then I can firmly declare that the Japanese definition of marriage is not the same marriage I believe in!!! No, in fact, even asking both parties to be human is foolish! Humans and animals, or even humans and inorganic creatures should be able to marry! If both parties love each other and they're certain of that, then the bond between those two is already eternal!!! How is that not marriage?! How is it not?! Now, to return to the question at hand!!! 'What kind of person would I, Maebara Keiichi, want to marry?' The very question itself is flawed! It's mistaken! Oh my god!!!", Line_Normal);
+	OutputLine(NULL, "　それを許さない時点で、俺は日本語のいう結婚という言葉を、俺自身が信じる結婚という言葉とは別のものであると断言するのであるッ！！　いやいや、究極的には互いが人間であるかさえ問うことは愚かしいッ！　人間と動物だって、果てには、人間と無機物だって結婚できていいはずなんだ！",
+		   NULL, "Since Japan does not allow that, then I can firmly declare that the Japanese definition of marriage is not the same marriage I believe in!!! No, in fact, even asking both parties to be human is foolish! Humans and animals, or even humans and inorganic creatures should be able to marry! ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　当人たちが愛し合い、それを確信しているというのなら、もうそれで二人の絆は永遠なんだ！！　それが結婚じゃないのか？！　違うのかッ？！",
+		   NULL, "If both parties love each other and they're certain of that, then the bond between those two is already eternal!!! How is that not marriage?! How is it not?! ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ではここで当初の疑問に立ち返ろう！！　俺、前原圭一が『結婚するならどんな人がいい？』ッ？！　この時点ですでに勘違いッ、ミステイクッ、オーマイガー！！",
+		   NULL, "Now, to return to the question at hand!!! 'What kind of person would I, Keiichi Maebara, want to marry?' The very question itself is flawed! It's mistaken! Oh my god!!!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(3, 1, "sprite/kei2_hig2_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "　人に限定する時点で視野が狭いッ、わかってないッ！！　つまり現時点で、前原圭一にはすでに、百をゆうに超える嫁たちがいるッ！！　もちろん、それらは人ではないッ、生物でさえないッ！！　まず、俺が最初に嫁にしたのはシリコーン製のボギャッ？！？！」",
-		   NULL, "You're already being too narrow-minded by limiting it to people! You don't get it!!! At this point, Maebara Keiichi has already married over a hundred wives!!! Of course, they are not people, nor are they animals!!! The one that I first married was a silicone bgyaah?!\"", Line_Normal);
+		   NULL, "You're already being too narrow-minded by limiting it to people! You don't get it!!! At this point, Keiichi Maebara has already married over a hundred wives!!! Of course, they are not people, nor are they animals!!! The one that I first married was a silicone bgyaah?!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	StopAllSound();

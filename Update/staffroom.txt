@@ -710,7 +710,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　やがてそこにア■スゲームの開催が一方的に告げられるのだー！！」",
-		   NULL, "Eventually, he'll announce the a_s game out of nowhere!!\"", Line_Continue);
+		   NULL, "Eventually, he'll announce the Al__e game out of nowhere!!\"", Line_Continue);
 
 	PlaySE( 0, "wav/daidageki", 128, 64 );
 	ShakeScreen( 2, 15,  100 , 5, 20, );

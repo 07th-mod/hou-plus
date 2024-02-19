@@ -977,7 +977,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　　　　　　　　　　　　平成１６年７月３０日",
 		   NULL, "　　　　　　　　　　　　July 30th, 2004", Line_ContinueAfterTyping);
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll(NULL, "", Line_Normal); ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　　　　　　　　　　　　　竜騎士07・八咫桜",
@@ -993,7 +993,7 @@ void main()
 	PlaySE( 0, "wav/kyupirn", 70, 64 );
 
 	OutputLine(NULL, "　竜宮レナって言う小悪魔帽かぶったＢＳがエルニウムを私より１Ｋも安く売ってやがったんです！！",
-		   NULL, " There was a Blacksmith in a Deviruchi Hat named Ryuugu Rena selling Elunium 1K cheaper than I was!!", Line_WaitForInput);
+		   NULL, " There was a Blacksmith in a Deviruchi Hat named Rena Ryuugu selling Elunium 1K cheaper than I was!!", Line_WaitForInput);
 
 	PlaySE( 0, "wav/furu", 70, 64 );
 

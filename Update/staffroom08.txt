@@ -149,12 +149,14 @@ void main()
 	OutputLine(NULL, "夏休み中はオールナイト麻雀大会をやろうとか、",
 		   NULL, " \"Let's have an all-night mahjong tournament this summer break,\"", Line_ContinueAfterTyping);
 	Wait( 800 );
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Normal); }
 
 	PlaySE( 0, "wav/nageru", 70, 64 );
 	Wait( 200 );
 	PlaySE( 0, "wav/nageru", 70, 64 );
 	Wait( 200 );
 
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "おのれ奈■さん、次回こそは07thの総力を挙げて叩き潰す、",
 		   NULL, " \"Curse you, Na**-san! Next time I'll crush you with all of 07th!\"", Line_ContinueAfterTyping);
 
