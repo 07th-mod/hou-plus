@@ -397,7 +397,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ModDrawCharacterWithFiltering(2, 11, "sprite/oisi2_6_", "0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 11, "sprite/oisi2_6_", "0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 300, TRUE ); //ERROR_EXISTING: Priority 1 on layer 2 used here. Conflict is 13 lines away (line 413)
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>八咫桜</color>", NULL, "<color=#f5e6d3>Yatazakura</color>", NULL, Line_ContinueAfterTyping); }
@@ -410,7 +410,7 @@ void main()
 	DisableWindow();
 
 	FadeOutBGM( 0, 300, TRUE );
-	ModDrawCharacter(1, 14, "sprite/oko3_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacter(1, 14, "sprite/oko3_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 300, TRUE ); //ERROR: Priority 1 already in use 13 lines ago (line 400). Existing Layer: 2 Conflicting Layer: 1 Suggested Priority: 2
 	PlayBGM( 0, "bgm0/4", 120, 0 );
 
 

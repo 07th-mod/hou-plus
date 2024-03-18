@@ -5276,7 +5276,7 @@ void main()
 
 	DisableWindow();
 
-	ModDrawCharacter(1, 2, "sprite/re2a_hig_muhyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
+	ModDrawCharacter(1, 2, "sprite/re2a_hig_muhyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE ); //ERROR_EXISTING: Priority 3 on layer 1 used here. Conflict is 11 lines away (line 5290)
 	PlayBGM( 1, "me/a5_14446", 70, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -5287,7 +5287,7 @@ void main()
 
 	DisableWindow();
 
-	ModDrawCharacter(3, 1, "sprite/kei2_ikari2_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
+	ModDrawCharacter(3, 1, "sprite/kei2_ikari2_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 400, TRUE ); //ERROR: Priority 3 already in use 11 lines ago (line 5279). Existing Layer: 1 Conflicting Layer: 3 Suggested Priority: 4ERROR_EXISTING: Priority 3 on layer 3 used here. Conflict is 29 lines away (line 5319)
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s24/01/nkei_0400", 128, TRUE);
 	OutputLine(NULL, "「……そ、そうだ！　それは俺も思ってた！！　沙都子はどうしたんだよ魅音！　状況的には俺やレナよりもずっとまずいんだろ？！　沙都子だけ置いてなんかいけないぞ！！」",
@@ -5316,7 +5316,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ModDrawCharacter(1, 2, "sprite/re2a_okoru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
+	ModDrawCharacter(1, 2, "sprite/re2a_okoru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE ); //ERROR: Priority 3 already in use 29 lines ago (line 5290). Existing Layer: 3 Conflicting Layer: 1 Suggested Priority: 5
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }

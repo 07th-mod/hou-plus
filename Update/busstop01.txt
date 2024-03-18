@@ -5816,7 +5816,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ModDrawCharacter(6, 54, "sprite/hyos1a_13_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+	ModDrawCharacter(6, 54, "sprite/hyos1a_13_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE ); //ERROR_EXISTING: Priority 2 on layer 6 used here. Conflict is 14 lines away (line 5833)
 	ModPlayVoiceLS(4, 54, "ps3/s26/54/tyos_1400", 128, TRUE);
 	OutputLine("<color=#715348>吉村</color> ", "「……あれ、…ひょっとして失禁しました…？……恥ずかしいなぁ…。」",
 		   "<color=#715348>Yoshimura</color> ", "\"......Huh? ...Did you wet yourself, by chance...? ......How embarrassing...\"", Line_Normal);
@@ -5830,7 +5830,7 @@ void main()
 	PlaySE( 1, "searchlight", 70, 64 );
 
 	ModDrawCharacter(1, 56, "sprite/hton1a_05_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, FALSE );
-	ModDrawCharacter(2, 53, "sprite/hmi2a_06_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, FALSE );
+	ModDrawCharacter(2, 53, "sprite/hmi2a_06_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 400, FALSE ); //ERROR: Priority 2 already in use 14 lines ago (line 5819). Existing Layer: 6 Conflicting Layer: 2 Suggested Priority: 4
 	ModDrawCharacter(3, 52, "sprite/hri2a_01_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 	Wait( 1000 );
 
@@ -9095,56 +9095,56 @@ void main()
 	DisableWindow();
 
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, FALSE );
-	ModDrawCharacter(1, 52, "sprite/hri2a_12_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+	ModDrawCharacter(1, 52, "sprite/hri2a_12_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE ); //ERROR_EXISTING: Priority 2 on layer 1 used here. Conflict is 7 lines away (line 9105)
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_1470", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「耳を貸しちゃ駄目。…………よく思い出して。…今日、私と一緒に学校をさぼって遊びに行ったでしょ？…あなた、その事を誰かに言った？」",
 		   "<color=#6972c1>Rika</color> ", "\"Don't listen to them. ............Think back. ...You skipped school with me today to come play around, right? ...Did you say anything about that to anyone else?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	ModDrawCharacter(3, 53, "sprite/hmi2a_08_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
+	ModDrawCharacter(3, 53, "sprite/hmi2a_08_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 400, TRUE ); //ERROR: Priority 2 already in use 7 lines ago (line 9098). Existing Layer: 1 Conflicting Layer: 3 Suggested Priority: 4ERROR_EXISTING: Priority 2 on layer 3 used here. Conflict is 7 lines away (line 9112)
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_2430", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「……学校さぼるってわざわざ公言する訳、ないじゃないですか。」",
 		   "<color=#5ec69a>Mion</color> ", "\"......Why would I ever make a point of publicly declaring that I was skipping school?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	ModDrawCharacter(1, 52, "sprite/hri2a_09_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+	ModDrawCharacter(1, 52, "sprite/hri2a_09_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE ); //ERROR: Priority 2 already in use 7 lines ago (line 9105). Existing Layer: 3 Conflicting Layer: 1 Suggested Priority: 5ERROR_EXISTING: Priority 2 on layer 1 used here. Conflict is 7 lines away (line 9119)
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_1480", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…つまり、…今日のあなたの動向を知る者はひとりもいない、って事よね。」",
 		   "<color=#6972c1>Rika</color> ", "\"...Which means... that no one knows what you've been doing today, right?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	ModDrawCharacter(3, 53, "sprite/hmi2a_09_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+	ModDrawCharacter(3, 53, "sprite/hmi2a_09_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 6, 200, TRUE ); //ERROR: Priority 2 already in use 7 lines ago (line 9112). Existing Layer: 1 Conflicting Layer: 3 Suggested Priority: 6ERROR_EXISTING: Priority 2 on layer 3 used here. Conflict is 7 lines away (line 9126)
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_2440", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「……そりゃそうですよ。…誰にも言ってないんですから。」",
 		   "<color=#5ec69a>Mion</color> ", "\"......Well, sure. ...I didn't tell anyone, after all.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	ModDrawCharacter(1, 52, "sprite/hri2a_10_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+	ModDrawCharacter(1, 52, "sprite/hri2a_10_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 7, 200, TRUE ); //ERROR: Priority 2 already in use 7 lines ago (line 9119). Existing Layer: 3 Conflicting Layer: 1 Suggested Priority: 7ERROR_EXISTING: Priority 2 on layer 1 used here. Conflict is 7 lines away (line 9133)
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_1490", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「……今日、あなたが着てきてくれたその服。…私がリクエストしたのよね。」",
 		   "<color=#6972c1>Rika</color> ", "\"......Those clothes you're wearing today. ...I asked you to wear them, right?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	ModDrawCharacter(3, 53, "sprite/hmi2a_01_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+	ModDrawCharacter(3, 53, "sprite/hmi2a_01_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE ); //ERROR: Priority 2 already in use 7 lines ago (line 9126). Existing Layer: 1 Conflicting Layer: 3 Suggested Priority: 8ERROR_EXISTING: Priority 2 on layer 3 used here. Conflict is 7 lines away (line 9140)
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_2450", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「…梨花さんがこの服が一番可愛いって言ってくれたから、わざわざ着てきたんじゃないですか。」",
 		   "<color=#5ec69a>Mion</color> ", "\"...You told me I looked cutest in this outfit, so I made a point of wearing it for you.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	ModDrawCharacter(1, 52, "sprite/hri2a_12_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+	ModDrawCharacter(1, 52, "sprite/hri2a_12_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE ); //ERROR: Priority 2 already in use 7 lines ago (line 9133). Existing Layer: 3 Conflicting Layer: 1 Suggested Priority: 9ERROR_EXISTING: Priority 2 on layer 1 used here. Conflict is 7 lines away (line 9147)
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_1500", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…つまり、…今日のあなたの服装は事前に把握されていた、って事よね。」",
 		   "<color=#6972c1>Rika</color> ", "\"...Which means... the outfit you'd be wearing today was known beforehand, right?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	ModDrawCharacter(3, 53, "sprite/hmi2a_08_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+	ModDrawCharacter(3, 53, "sprite/hmi2a_08_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE ); //ERROR: Priority 2 already in use 7 lines ago (line 9140). Existing Layer: 1 Conflicting Layer: 3 Suggested Priority: 10
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_2460", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「……そりゃそうですよ。…梨花さんのリクエストなんですから。」",
 		   "<color=#5ec69a>Mion</color> ", "\"......Well, sure. ...You asked me to wear it.\"", Line_Normal);
@@ -9353,7 +9353,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ModDrawCharacter(2, 52, "sprite/hri2a_05_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+	ModDrawCharacter(2, 52, "sprite/hri2a_05_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE ); //ERROR_EXISTING: Priority 2 on layer 2 used here. Conflict is 10 lines away (line 9366)
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_1650", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…こいつらは厚生省なんて名乗ってるけど、実際の所属は違う。…こいつらは国家、」",
 		   "<color=#6972c1>Rika</color> ", "\"...These people claim they're from the Ministry of Health, but they're actually with a different organization! ...These people are from the National P-\"", Line_Normal);
@@ -9363,7 +9363,7 @@ void main()
 
 
 
-	ModDrawCharacter(1, 57, "sprite/hnit1a_06_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
+	ModDrawCharacter(1, 57, "sprite/hnit1a_06_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE ); //ERROR: Priority 2 already in use 10 lines ago (line 9356). Existing Layer: 2 Conflicting Layer: 1 Suggested Priority: 3
 	DrawScene( "background/hina_bus_01", 50 );
 	PlaySE( 1, "a5_10316", 70, 64 );
 	PlayBGM( 3, "me/rain4_long", 70, 0 );
