@@ -11305,7 +11305,7 @@ void main()
 	DisableWindow();
 
 	PlaySE( 0, "wav/down3", 25, 64 );
-	ModDrawCharacter(1, 6, "sprite/si1a_ikari_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE ); //ERROR_EXISTING: Priority 2 on layer 1 used here. Conflict is 41 lines away (line 11349)
+	ModDrawCharacter(1, 6, "sprite/si1a_ikari_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
 	PlaySE( 0, "a5_10316", 70, 64 );
 	ShakeScreen( 0, 9, 100, 5, 20, );
 
@@ -11346,7 +11346,7 @@ void main()
 	DisableWindow();
 
 
-	ModDrawCharacter(2, 9, "sprite/ta3_warai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 6, 400, TRUE ); //ERROR: Priority 2 already in use 41 lines ago (line 11308). Existing Layer: 1 Conflicting Layer: 2 Suggested Priority: 6
+	ModDrawCharacter(2, 9, "sprite/ta3_warai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 	//;【鷹野】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s25/09/ntak_0280", 128, TRUE);
@@ -11366,7 +11366,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ModDrawCharacter(2, 9, "sprite/ta3_akuwarai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/ta3_akuwarai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
 	//;【鷹野】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s25/09/ntak_0290", 128, TRUE);
@@ -15544,7 +15544,7 @@ void main()
 	ModDrawCharacter(3, 51, "sprite/tamura1a_11_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, FALSE );
 	ModDrawCharacter(2, 12, "sprite/ha1_shinken_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
 	Wait( 500 );
-	ModDrawCharacter(1, 4, "sprite/sa1a_odoroki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, FALSE ); //ERROR_EXISTING: Priority 2 on layer 1 used here. Conflict is 39 lines away (line 15586)
+	ModDrawCharacter(1, 4, "sprite/sa1a_odoroki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, FALSE );
 	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 400, FALSE );
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 400, TRUE );
 
@@ -15583,7 +15583,7 @@ void main()
 	Wait( 100 );
 
 
-	ModDrawCharacter(2, 50, "sprite/une1b_09_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE ); //ERROR: Priority 2 already in use 39 lines ago (line 15547). Existing Layer: 1 Conflicting Layer: 2 Suggested Priority: 4
+	ModDrawCharacter(2, 50, "sprite/une1b_09_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE );
 	DrawScene( "background/gk3", 50 );
 	PlaySE( 0, "tataku", 70, 64 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
@@ -15625,7 +15625,7 @@ void main()
 	DisableWindow();
 
 
-	ModDrawCharacter(2, 50, "sprite/une1a_11_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+	ModDrawCharacter(2, 50, "sprite/une1a_11_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 200, TRUE );
 	//;【ウネ】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#85e6e0>ウネ</color>", NULL, "<color=#85e6e0>UNE</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 50, "ps3/s25/50/nune_1000", 128, TRUE);
@@ -16480,7 +16480,7 @@ void main()
 
 	//;se1v 56,50
 	DrawSceneWithMask("white", "effect/maskc", 0, 0, 3000 );
-	ModDrawCharacter(1, 12, "sprite/ha6_au_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE ); //ERROR_EXISTING: Priority 2 on layer 1 used here. Conflict is 16 lines away (line 16499)
+	ModDrawCharacter(1, 12, "sprite/ha6_au_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );
 	Wait( 300 );
 
 	//;wait 500
@@ -16496,7 +16496,7 @@ void main()
 	//;■羽入、マヌケな罰ゲーム衣装で嘆く
 
 
-	ModDrawCharacter(4, 12, "sprite/ha5_muhyou_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE ); //ERROR: Priority 2 already in use 16 lines ago (line 16483). Existing Layer: 1 Conflicting Layer: 4 Suggested Priority: 3
+	ModDrawCharacter(4, 12, "sprite/ha5_muhyou_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
 	DrawScene( "background/gk3", 50 );
 	PlaySE( 0, "b1", 20, 64 );
 
