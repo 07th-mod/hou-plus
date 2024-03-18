@@ -1396,7 +1396,7 @@ void main()
 	DisableWindow();
 	//;■以下の梨花の「え？」@には、＠や￥は不要で、そのまま次のレナのセリフが続きます。
 	//;【梨花】
-	ModDrawCharacter(20, 5, "sprite/ri2_majime_a1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE ); //ERROR_EXISTING: Priority 1 on layer 20 used here. Conflict is 15 lines away (line 1414)
+	ModDrawCharacter(20, 5, "sprite/ri2_majime_a1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「え？」",
 		   NULL, "\"Huh?\"", GetGlobalFlag(GLinemodeSp));
@@ -1411,7 +1411,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	//;【圭一】
-	ModDrawCharacter(2, 1, "sprite/kei2_warai_", "2", -320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 400, TRUE ); //ERROR: Priority 1 already in use 15 lines ago (line 1399). Existing Layer: 20 Conflicting Layer: 2 Suggested Priority: 5
+	ModDrawCharacter(2, 1, "sprite/kei2_warai_", "2", -320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 400, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「なるほどなぁ。",
 		   NULL, "\"I see.", Line_WaitForInput);
@@ -1420,7 +1420,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	//;【圭一】
-	ModDrawCharacter(2, 1, "sprite/kei2_def1_", "0", -320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );
+	ModDrawCharacter(2, 1, "sprite/kei2_def1_", "0", -320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「俺はてっきり、原作者ってのは、全部全部、知り尽くしていて、アニメ放映時には目を瞑っていてもシーンがわかるのかと思っていたぜ」",
 		   NULL, "\"I always thought the authors knew everything about the production process, and could tell which scene was which with their eyes closed by the time it ended up on TV.\"", Line_Normal);
