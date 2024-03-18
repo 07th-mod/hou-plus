@@ -5830,7 +5830,7 @@ void main()
 	PlaySE( 1, "searchlight", 70, 64 );
 
 	ModDrawCharacter(1, 56, "sprite/hton1a_05_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, FALSE );
-	ModDrawCharacter(2, 53, "sprite/hmi2a_06_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, FALSE );
+	ModDrawCharacter(2, 53, "sprite/hmi2a_06_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 400, FALSE );
 	ModDrawCharacter(3, 52, "sprite/hri2a_01_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 	Wait( 1000 );
 
@@ -9076,7 +9076,7 @@ void main()
 	StopAllSound();
 	//CallScriptSection( "util", "RainOff" );
 
-	ModDrawCharacter(1, 52, "sprite/hri2a_08_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
+	ModDrawCharacter(1, 52, "sprite/hri2a_08_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawScene( "background/hina_bus_02", 400 );
 
 	PlayBGM( 0, "bgm1/urameshikodama", 70, 0 );
@@ -9095,56 +9095,56 @@ void main()
 	DisableWindow();
 
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, FALSE );
-	ModDrawCharacter(1, 52, "sprite/hri2a_12_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+	ModDrawCharacter(1, 52, "sprite/hri2a_12_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_1470", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「耳を貸しちゃ駄目。…………よく思い出して。…今日、私と一緒に学校をさぼって遊びに行ったでしょ？…あなた、その事を誰かに言った？」",
 		   "<color=#6972c1>Rika</color> ", "\"Don't listen to them. ............Think back. ...You skipped school with me today to come play around, right? ...Did you say anything about that to anyone else?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	ModDrawCharacter(3, 53, "sprite/hmi2a_08_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );
+	ModDrawCharacter(3, 53, "sprite/hmi2a_08_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_2430", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「……学校さぼるってわざわざ公言する訳、ないじゃないですか。」",
 		   "<color=#5ec69a>Mion</color> ", "\"......Why would I ever make a point of publicly declaring that I was skipping school?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	ModDrawCharacter(1, 52, "sprite/hri2a_09_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+	ModDrawCharacter(1, 52, "sprite/hri2a_09_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_1480", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…つまり、…今日のあなたの動向を知る者はひとりもいない、って事よね。」",
 		   "<color=#6972c1>Rika</color> ", "\"...Which means... that no one knows what you've been doing today, right?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	ModDrawCharacter(3, 53, "sprite/hmi2a_09_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+	ModDrawCharacter(3, 53, "sprite/hmi2a_09_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_2440", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「……そりゃそうですよ。…誰にも言ってないんですから。」",
 		   "<color=#5ec69a>Mion</color> ", "\"......Well, sure. ...I didn't tell anyone, after all.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	ModDrawCharacter(1, 52, "sprite/hri2a_10_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+	ModDrawCharacter(1, 52, "sprite/hri2a_10_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_1490", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「……今日、あなたが着てきてくれたその服。…私がリクエストしたのよね。」",
 		   "<color=#6972c1>Rika</color> ", "\"......Those clothes you're wearing today. ...I asked you to wear them, right?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	ModDrawCharacter(3, 53, "sprite/hmi2a_01_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+	ModDrawCharacter(3, 53, "sprite/hmi2a_01_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_2450", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「…梨花さんがこの服が一番可愛いって言ってくれたから、わざわざ着てきたんじゃないですか。」",
 		   "<color=#5ec69a>Mion</color> ", "\"...You told me I looked cutest in this outfit, so I made a point of wearing it for you.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	ModDrawCharacter(1, 52, "sprite/hri2a_12_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+	ModDrawCharacter(1, 52, "sprite/hri2a_12_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_1500", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…つまり、…今日のあなたの服装は事前に把握されていた、って事よね。」",
 		   "<color=#6972c1>Rika</color> ", "\"...Which means... the outfit you'd be wearing today was known beforehand, right?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	ModDrawCharacter(3, 53, "sprite/hmi2a_08_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+	ModDrawCharacter(3, 53, "sprite/hmi2a_08_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_2460", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「……そりゃそうですよ。…梨花さんのリクエストなんですから。」",
 		   "<color=#5ec69a>Mion</color> ", "\"......Well, sure. ...You asked me to wear it.\"", Line_Normal);
@@ -9363,7 +9363,7 @@ void main()
 
 
 
-	ModDrawCharacter(1, 57, "sprite/hnit1a_06_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
+	ModDrawCharacter(1, 57, "sprite/hnit1a_06_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE );
 	DrawScene( "background/hina_bus_01", 50 );
 	PlaySE( 1, "a5_10316", 70, 64 );
 	PlayBGM( 3, "me/rain4_long", 70, 0 );
@@ -9382,7 +9382,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ModDrawCharacter(1, 57, "sprite/hnit1a_07_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );
+	ModDrawCharacter(1, 57, "sprite/hnit1a_07_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 200, TRUE );
 
 	PlayBGM( 0, "bgm1/out2", 70, 0 );
 

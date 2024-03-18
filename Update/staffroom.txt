@@ -349,7 +349,7 @@ void main()
 
 	PlaySE( 0, "wav/kyupirn", 128, 64 );
 	DrawScene( "white", 200 );
-	ModDrawCharacter(1, 14, "sprite/oko3_niyari_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(1, 14, "sprite/oko3_niyari_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawScene( "background/ke_shiryou1_02", 500 );
 
 
@@ -410,7 +410,7 @@ void main()
 	DisableWindow();
 
 	FadeOutBGM( 0, 300, TRUE );
-	ModDrawCharacter(1, 14, "sprite/oko3_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacter(1, 14, "sprite/oko3_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 300, TRUE );
 	PlayBGM( 0, "bgm0/4", 120, 0 );
 
 
