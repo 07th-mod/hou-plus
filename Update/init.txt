@@ -157,11 +157,11 @@ void main()
 
 	// GAltBGM controls which of these are selected
 	ModAddBGMset("New BGM", "Placeholder", "BGM");
-	ModAddBGMset("Original BGM", "Placeholder", "OGBGM:BGM");
+	ModAddBGMset("GIN's BGM", "Placeholder", "OGBGM:BGM");
 
 	// GAltSE controls which of these are selected
 	ModAddSEset("New SE", "Placeholder", "SE");
-	ModAddSEset("Original SE", "Placeholder", "OGSE:SE");
+	ModAddSEset("GIN's SE", "Placeholder", "OGSE:SE");
 
 	// Audio presets the user can select, consisting of a combination of the BGM and SE flags
 	ModAddAudioset(
@@ -180,20 +180,12 @@ void main()
 	);
 
 	ModAddAudioset(
-		"Mostly Original (Non-plus) BGM/SE",
-		"This option restores the BGM/SE files to the same as the Hou (Non-plus) version, where they exist.
-
-		However if a BGM or SE only exists in Hou+, the Hou+ version will be used.
-
-		Note: Currently this is purely a file replacement - no attempt has been made to check if the timings are different(when BGM/SE starts/stops playing).
+		"GIN's BGM/SE",
+		"This option uses GIN's Background Music (BGM) and Sound Effects (SE), which bring the BGM/SE closer to the original Japanese release.
 
 		Please click on the 'Open BGM/SE FAQ' button to view the 07th-mod wiki for more details.",
-		"JP: Mostly Original (Hou non-plus) BGM/SE",
-		"JP: This option restores the BGM/SE files to the same as the Hou (Non-plus) version, where they exist.
-
-		However if a BGM or SE only exists in Hou+, the Hou+ version will be used.
-
-		Note: Currently this is purely a file replacement - no attempt has been made to check if the timings are different(when BGM/SE starts/stops playing).
+		"JP: GIN's BGM/SE",
+		"JP: This option uses GIN's Background Music (BGM) and Sound Effects (SE), which bring the BGM/SE closer to the original Japanese release.
 
 		Please click on the 'Open BGM/SE FAQ' button to view the 07th-mod wiki for more details.",
 		1, // GAltBGM
