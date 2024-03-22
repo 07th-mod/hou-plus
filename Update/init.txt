@@ -181,11 +181,15 @@ void main()
 
 	ModAddAudioset(
 		"GIN's BGM/SE",
-		"This option uses GIN's Background Music (BGM) and Sound Effects (SE), which bring the BGM/SE closer to the original Japanese release.
+		"This option uses GIN's Background Music (BGM) and Sound Effects (SE), which brings the BGM/SE closer to the original Hou (non-plus) Japanese release.
+
+		If you were previously using GIN's BGM/SE, you should pick this option.
 
 		Please click on the 'Open BGM/SE FAQ' button to view the 07th-mod wiki for more details.",
 		"JP: GIN's BGM/SE",
-		"JP: This option uses GIN's Background Music (BGM) and Sound Effects (SE), which bring the BGM/SE closer to the original Japanese release.
+		"JP: This option uses GIN's Background Music (BGM) and Sound Effects (SE), which brings the BGM/SE closer to the original Hou (non-plus) Japanese release.
+
+		If you were previously using GIN's BGM/SE, you should pick this option.
 
 		Please click on the 'Open BGM/SE FAQ' button to view the 07th-mod wiki for more details.",
 		1, // GAltBGM
