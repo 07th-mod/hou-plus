@@ -5516,7 +5516,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s24/03/nmio_0705", 128, TRUE);
 	OutputLine(NULL, "……そして村人を次々、鬼に変えていって、",
-		   NULL, "making the villagers become demons one after another.", Line_Continue);
+		   NULL, " making the villagers become demons one after another.", Line_Continue);
 	OutputLine(NULL, "……オヤシロさま伝説をもう一度なぞり直すんだよ…！」",
 		   NULL, " ...Just try retracing the legend of Oyashiro-sama once more...!\"", Line_Normal);
 	ClearMessage();
@@ -5539,7 +5539,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s24/03/nmio_0715", 128, TRUE);
 	OutputLine(NULL, "　それにそもそもオヤシロさまは神さまなんだよ？",
-		   NULL, "Besides, Oyashiro-sama was a god anyway, right?", Line_Continue);
+		   NULL, " Besides, Oyashiro-sama was a god anyway, right?", Line_Continue);
 	OutputLine(NULL, "　人間じゃないんだよ？！",
 		   NULL, " They weren't human, were they?!", Line_Continue);
 	OutputLine(NULL, "　私たち人間には何もできないんだよ、",
