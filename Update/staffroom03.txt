@@ -492,7 +492,7 @@ void main()
 	OutputLine(NULL, "　そうだ八咫桜、こういうのはどうだ！！",
 		   NULL, " I've got it, Yatazakura! How about this?!!", Line_WaitForInput);
 	OutputLine(NULL, "　今時のナウな世代の大好きな横文字に置き換えてしまうのだ！！",
-		   NULL, " We'll use the english characters people in this modern generation love!!", Line_WaitForInput);
+		   NULL, " We'll use the English characters people in this modern generation love!!", Line_WaitForInput);
 
 	PlayBGM( 0, "bgm0/3", 70, 0 );
 	PlaySE( 0, "wav/dageki", 70, 64 );

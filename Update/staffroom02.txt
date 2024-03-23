@@ -69,7 +69,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あのリングオブレッドも、",
-		   NULL, "When I was playing Ring of Red,", Line_ContinueAfterTyping);
+		   NULL, " When I was playing Ring of Red,", Line_ContinueAfterTyping);
 
 	Wait( 300 );
 	PlaySE( 0, "wav/boyon", 70, 64 );
