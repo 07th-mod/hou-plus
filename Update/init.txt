@@ -89,7 +89,7 @@ void main()
 		1, //FontID
 		0, //CharSpacing
 		0, //LineSpacing - Rei: Adjust to 0 (was 8)
-		32 //FontSize
+		26 //FontSize
 	);
 
 	ModNVLModeSettingLoad(
@@ -149,7 +149,7 @@ void main()
 	SetGUIPosition(170, 0);
 	ModSetConfigFontSize(15);
 
-	ModSetMainFontOutlineWidth(30);
+	ModSetMainFontOutlineWidth(15);
 
 	ModAddArtset("Console", "ゲーム機", "CG");
 	ModAddArtset("Remake", "リメーク", "CGAlt:CG");
