@@ -156,8 +156,10 @@ void main()
 //	ModAddArtset("Original", "オリジナル", "OGBackgrounds:OGSprites:CG");
 
 	// GAltBGM controls which of these are selected
-	ModAddBGMset("New BGM", "Placeholder", "BGM");
+	ModAddBGMset("New Mangagamer", "Placeholder", "April2019BGM:BGM");
 	ModAddBGMset("GIN's BGM", "Placeholder", "OGBGM:BGM");
+	ModAddBGMset("Hou+ Demo", "Placeholder", "HouPlusDemoBGM:BGM");
+	ModAddBGMset("Hou+ BGM", "Placeholder", "BGM");
 
 	// GAltSE controls which of these are selected
 	ModAddSEset("New SE", "Placeholder", "SE");
@@ -165,26 +167,14 @@ void main()
 
 	// Audio presets the user can select, consisting of a combination of the BGM and SE flags
 	ModAddAudioset(
-		"Hou+ BGM/SE",
-		"Use the Hou+ compilation BGM/SE (that comes with the unmodded game), played with the Console timings.
+		"New Mangagamer (2019)",
+		"Use the new Background Music (BGM) and Sound Effects (SE) introduced by MangaGamer in the April 2019 update
 
-		Unlike the other chapters, the BGM/SE that came with the MangaGamer version of Higurashi Hou+ (2023) has not been altered (it is the same as the original Hou+ (2022) release).
+		It uses the conversions of nerve's tracks that made their debut in the original Japanese release of Hou Compilation (2014), but all of the AI-D-IA tracks were replaced. Most of the replacements are from the soundtracks of Kai and Rei, but there are also some new tracks whose composer is unknown.",
+		"New Mangagamer (2019)",
+		"Use the new Background Music (BGM) and Sound Effects (SE) introduced by MangaGamer in the April 2019 update
 
-		This means that even between Mangagamer's Question Arcs (known as 'New BGM' in our mod) and MangaGamer's Hou+ release (this option), the BGM is inconsistent.
-
-		This is the reason why some BGM may sound different between the Question Arcs (using the 'New BGM' option) and Hou+ (using this option). Currently we don't have a BGM option to fix this.
-
-		Please click on the 'Open BGM/SE FAQ' button to view the 07th-mod wiki for more details.",
-		"JP: Hou+ BGM/SE",
-		"JP: Use the Hou+ compilation BGM/SE (that comes with the unmodded game), played with the Console timings.
-
-		Unlike the other chapters, the BGM/SE that came with the MangaGamer version of Higurashi Hou+ (2023) has not been altered (it is the same as the original Hou+ (2022) release).
-
-		This means that even between Mangagamer's Question Arcs (known as 'New BGM' in our mod) and MangaGamer's Hou+ release (this option), the BGM is inconsistent.
-
-		This is the reason why some BGM may sound different between the Question Arcs (using the 'New BGM' option) and Hou+ (using this option). Currently we don't have a BGM option to fix this.
-
-		Please click on the 'Open BGM/SE FAQ' button to view the 07th-mod wiki for more details.",
+		It uses the conversions of nerve's tracks that made their debut in the original Japanese release of Hou Compilation (2014), but all of the AI-D-IA tracks were replaced. Most of the replacements are from the soundtracks of Kai and Rei, but there are also some new tracks whose composer is unknown.",
 		0, // GAltBGM
 		0, // GAltBGMFlow
 		0, // GAltSE
@@ -192,31 +182,105 @@ void main()
 	);
 
 	ModAddAudioset(
-		"GIN's BGM/SE",
-		"This option restores the BGM/SE files to the same as the Hou compilation (2014), if a replacement exists.
+		"GIN / Hou BGM (2014)",
+		"This option uses GIN's Background Music (BGM) and Sound Effects (SE), which is virtually identical to what was included in the original Japanese release of Hou Compilation (2014) in terms of BGM.
 
-		If you were previously using GIN's BGM/SE, you should pick this option.
+		Please click on the 'Open BGM/SE FAQ' button to view the 07th-mod wiki for more details.
+
+		All of the tracks that make their debut in Onikakushi and the character themes are by AI-D-IA and were taken from the original Japanese release of Himatsubushi. Most of the remaining tracks are based on MIDIs from nerve.
+
+		However, because the original conversions of those were extremely poor, this pack instead uses the same conversions as the New MangaGamer BGM.
+
+		This option uses GIN's SE, which should be similar to the Pre-April Update SE.
+
+		This option was previously known as 'Original BGM/SE' or 'BGM/SE fix'.
 
 		Note 1: If a BGM or SE only exists in Hou+ (2023), the Hou+ version will be used.
 
 		Note 2: This is purely a file replacement - no attempt has been made to check if the timings are different(when BGM/SE starts/stops playing).
-
-		Please click on the 'Open BGM/SE FAQ' button to view the 07th-mod wiki for more details.
 
 		Credits: Hou BGM/SE files provided by Overg",
-		"JP: GIN's BGM/SE",
-		"JP: This option restores the BGM/SE files to the same as the Hou compilation (2014), if a replacement exists.
+		"GIN / Hou BGM (2014)",
+		"This option uses GIN's Background Music (BGM) and Sound Effects (SE), which is virtually identical to what was included in the original Japanese release of Hou Compilation (2014) in terms of BGM.
 
-		If you were previously using GIN's BGM/SE, you should pick this option.
+		Please click on the 'Open BGM/SE FAQ' button to view the 07th-mod wiki for more details.
+
+		All of the tracks that make their debut in Onikakushi and the character themes are by AI-D-IA and were taken from the original Japanese release of Himatsubushi. Most of the remaining tracks are based on MIDIs from nerve.
+
+		However, because the original conversions of those were extremely poor, this pack instead uses the same conversions as the New MangaGamer BGM.
+
+		This option uses GIN's SE, which should be similar to the Pre-April Update SE.
+
+		This option was previously known as 'Original BGM/SE' or 'BGM/SE fix'.
 
 		Note 1: If a BGM or SE only exists in Hou+ (2023), the Hou+ version will be used.
 
 		Note 2: This is purely a file replacement - no attempt has been made to check if the timings are different(when BGM/SE starts/stops playing).
-
-		Please click on the 'Open BGM/SE FAQ' button to view the 07th-mod wiki for more details.
 
 		Credits: Hou BGM/SE files provided by Overg",
 		1, // GAltBGM
+		1, // GAltBGMFlow
+		1, // GAltSE
+		1  // GAltSEFlow
+	);
+
+	ModAddAudioset(
+		"Hou+ Demo (2020)",
+		"This option replaces 16 BGM with BGM from the Higurashi Hou+ demo (2020). It uses the same conversions of nerve's tracks as the New MangaGamer BGM, but the replacements for the AI-D-IA tracks are different.
+
+		Those by U2 Akiyama have been rearranged (except for one that's virtually unchanged), while the rest were replaced with new compositions by xaki.
+
+		This option is not available for Chapters 5-8 and Rei because most of their music isn't in the Hou+ demo.
+
+		All other tracks will use the New Mangagamer BGM and GIN's/Original SE.
+
+		This option uses GIN's SE, which should be similar to the Pre-April Update SE.
+
+		Credits: Provided by Kilicool64",
+		"Hou+ Demo (2020)",
+		"This option replaces 16 BGM with BGM from the Higurashi Hou+ demo (2020). It uses the same conversions of nerve's tracks as the New MangaGamer BGM, but the replacements for the AI-D-IA tracks are different.
+
+		Those by U2 Akiyama have been rearranged (except for one that's virtually unchanged), while the rest were replaced with new compositions by xaki.
+
+		This option is not available for Chapters 5-8 and Rei because most of their music isn't in the Hou+ demo.
+
+		All other tracks will use the New Mangagamer BGM and GIN's/Original SE.
+
+		This option uses GIN's SE, which should be similar to the Pre-April Update SE.
+
+		Credits: Provided by Kilicool64",
+		2, // GAltBGM
+		1, // GAltBGMFlow
+		1, // GAltSE
+		1  // GAltSEFlow
+	);
+
+	ModAddAudioset(
+		"Hou+ BGM (2022)",
+		"This option uses the BGM found in the unmodded game, which should be the same as the full version of the Japanese release of Hou+ (2022).
+
+		Unlike the other chapters, the BGM/SE that came with the MangaGamer version of Mangagamer's Higurashi Hou+ (2023) has not been altered (it is the same as the original Hou+ (2022) release).
+
+		This means that even between Mangagamer's Question Arcs (known as 'New Mangagamer (2019)' in our mod) and MangaGamer's Hou+ release (this option), the BGM is inconsistent.
+
+		To keep your BGM consistent, choose the same BGM option you chose in the question arcs.
+
+		Compared to the Hou+ demo (2020), the xaki track MIND THE GAP has been sped up, while the nerve tracks Fascism and Lie lies-lies lie were newly converted. Everything else is unchanged.
+
+		This option uses GIN's SE, which should be similar to the Pre-April Update SE.",
+		"Hou+ BGM (2022)",
+		"This option uses the BGM found in the unmodded game, which should be the same as the full version of the Japanese release of Hou+ (2022).
+
+		Unlike the other chapters, the BGM/SE that came with the MangaGamer version of Mangagamer's Higurashi Hou+ (2023) has not been altered (it is the same as the original Hou+ (2022) release).
+
+		This means that even between Mangagamer's Question Arcs (known as 'New Mangagamer (2019)' in our mod) and MangaGamer's Hou+ release (this option), the BGM is inconsistent.
+
+		To keep your BGM consistent, choose the same BGM option you chose in the question arcs.
+
+		Compared to the Hou+ demo (2020), the xaki track MIND THE GAP has been sped up, while the nerve tracks Fascism and Lie lies-lies lie were newly converted. Everything else is unchanged.
+
+		This option uses GIN's SE, which should be similar to the Pre-April Update SE.",
+		3, // GAltBGM
 		1, // GAltBGMFlow
 		1, // GAltSE
 		1  // GAltSEFlow
