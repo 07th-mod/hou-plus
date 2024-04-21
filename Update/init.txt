@@ -162,7 +162,7 @@ void main()
 	ModAddBGMset("Hou+ BGM", "Placeholder", "BGM");
 
 	// GAltSE controls which of these are selected
-	ModAddSEset("New SE", "Placeholder", "SE");
+	ModAddSEset("Mangagamer Hou+ (2023) SE", "Placeholder", "SE");
 	ModAddSEset("GIN's SE", "Placeholder", "OGSE:SE");
 
 	// Audio presets the user can select, consisting of a combination of the BGM and SE flags
