@@ -1967,30 +1967,40 @@ void main()
 
 	DrawScene( "white", 1000 );
 
-	ModDrawCharacter(1, 15, "sprite/kasa_1_", "0", -390, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	ModDrawCharacter(2, 14, "sprite/oko3_niyari_", "2", 390, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
-	ModDrawCharacter(3, 21, "sprite/tetu_5_", "0", -275, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	ModDrawCharacter(4, 13, "sprite/aks1_warai_", "2", 275, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE );
-	ModDrawCharacter(5, 10, "sprite/iri1_warai_", "2", -165, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	ModDrawCharacter(6, 11, "sprite/oisi1_2_", "2", 165, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 6, 0, FALSE );
-	ModSetLayerFilter(7, 256, "none");
-	ModDrawCharacter(7, 8, "sprite/tomi1_warai_", "2", -55, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 7, 0, FALSE );
-	ModSetLayerFilter(8, 256, "none");
-	ModDrawCharacter(8, 9, "sprite/ta1_warai_", "2", 55, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawScene( "background/res5", 1000 );
+	if (GetGlobalFlag(GArtStyle) == 2) {
+		// OG mode displays a pre-made image instead of individual sprites
+		DrawScene( "bg/2021_add/thanks_for_all_0", 1000 );
+	} else {
+		ModDrawCharacter(1, 15, "sprite/kasa_1_", "0", -390, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
+		ModDrawCharacter(2, 14, "sprite/oko3_niyari_", "2", 390, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );
+		ModDrawCharacter(3, 21, "sprite/tetu_5_", "0", -275, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
+		ModDrawCharacter(4, 13, "sprite/aks1_warai_", "2", 275, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE );
+		ModDrawCharacter(5, 10, "sprite/iri1_warai_", "2", -165, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
+		ModDrawCharacter(6, 11, "sprite/oisi1_2_", "2", 165, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 6, 0, FALSE );
+		ModSetLayerFilter(7, 256, "none");
+		ModDrawCharacter(7, 8, "sprite/tomi1_warai_", "2", -55, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 7, 0, FALSE );
+		ModSetLayerFilter(8, 256, "none");
+		ModDrawCharacter(8, 9, "sprite/ta1_warai_", "2", 55, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+		DrawScene( "background/res5", 1000 );
+	}
 	//;全員集合1
 
 	Wait( 4000 );
 
-	ModDrawCharacter(11, 7, "sprite/sato1_warai_", "1", -375, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 11, 0, FALSE );
-	ModDrawCharacter(12, 12, "sprite/ha1_warai_", "2", 375, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 0, FALSE );
-	ModDrawCharacter(13, 6, "sprite/si1a_warai_a1_", "2", -225, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 13, 0, FALSE );
-	ModDrawCharacter(14, 3, "sprite/me2_warai_a1_", "2", 225, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 14, 0, FALSE );
-	ModDrawCharacter(15, 4, "sprite/sa2a_warai_a1_", "0", -375, 95, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 15, 0, FALSE );
-	ModDrawCharacter(16, 2, "sprite/re2a_warai_a1_", "2", 75, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 16, 0, FALSE );
-	ModDrawCharacter(17, 5, "sprite/ri2_warai_a1_", "2", -225, 95, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 17, 0, FALSE );
-	ModDrawCharacter(18, 1, "sprite/kei2_warai_", "2", -75, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 0, FALSE );
-	DrawScene( "background/res1", 1000 );
+	if (GetGlobalFlag(GArtStyle) == 2) {
+		// OG mode displays a pre-made image instead of individual sprites
+		DrawScene( "bg/2021_add/thanks_for_all_1", 1000 );
+	} else {
+		ModDrawCharacter(11, 7, "sprite/sato1_warai_", "1", -375, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 11, 0, FALSE );
+		ModDrawCharacter(12, 12, "sprite/ha1_warai_", "2", 375, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 0, FALSE );
+		ModDrawCharacter(13, 6, "sprite/si1a_warai_a1_", "2", -225, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 13, 0, FALSE );
+		ModDrawCharacter(14, 3, "sprite/me2_warai_a1_", "2", 225, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 14, 0, FALSE );
+		ModDrawCharacter(15, 4, "sprite/sa2a_warai_a1_", "0", -375, 95, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 15, 0, FALSE );
+		ModDrawCharacter(16, 2, "sprite/re2a_warai_a1_", "2", 75, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 16, 0, FALSE );
+		ModDrawCharacter(17, 5, "sprite/ri2_warai_a1_", "2", -225, 95, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 17, 0, FALSE );
+		ModDrawCharacter(18, 1, "sprite/kei2_warai_", "2", -75, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 0, FALSE );
+		DrawScene( "background/res1", 1000 );
+	}
 	//;全員集合2
 
 	Wait( 4000 );
