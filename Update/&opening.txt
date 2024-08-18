@@ -45,10 +45,10 @@ void PlayOriginMovie()
 {
 	if (GetGlobalFlag(GArtStyle) == 2) {
 		// Play OG video if using OG artstyle
-		PlayVideo("video/mv13-pc.mp4", 1920, 1080);
+		PlayVideo("mv13-pc", 1920, 1080);
 	} else {
 		// Otherwise play console art style
-		PlayVideo("video/mv13-cs.mp4", 1920, 1080);
+		PlayVideo("mv13-cs", 1920, 1080);
 	}
 }
 
@@ -58,11 +58,11 @@ void PlayAnoHiEMovie()
 		// Play OG video if using OG artstyle
 		// Use subtitled version if playing in English
 		if(GetGlobalFlag(GLanguage) == 0)
-			PlayVideo("video/higurashi_hou.mp4", 0, 0);
+			PlayVideo("higurashi_hou", 0, 0);
 		else
-			PlayVideo("video/higurashi_hou_sub.mp4", 0, 0);
+			PlayVideo("higurashi_hou_sub", 0, 0);
 	} else {
 		// Otherwise play console art style
-		PlayVideo("video/mv07.mp4", 0, 0);
+		PlayVideo("mv07", 0, 0);
 	}
 }

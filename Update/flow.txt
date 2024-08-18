@@ -376,7 +376,7 @@ void EnterKamikashimashi()
 	DrawScene( "black", 1000 );
 	CallSection("ResetScene");
 
-	PlayVideo("video/mv10.mp4", 0, 0);
+	PlayVideo("mv10", 0, 0);
 
 	JumpSection("Kamikashimashi");
 }
