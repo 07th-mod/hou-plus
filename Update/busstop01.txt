@@ -402,26 +402,41 @@ void main()
 	ChangeVolumeOfBGM( 2, 30, 100 );
 	PlayBGM( 0, "rika", 70, 0 );
 	DrawScene( "scene/612", 1000 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(5, 52, "sprite/hri2a_13_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/hina_bus_03", 1000 );}
 
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_0110", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「……越えなくて結構よ。……結構だったら。」",
 		   "<color=#6972c1>Rika</color> ", "\"......We don't need to overcome anything. ......I'm fine as is.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(4, 53, "sprite/hmi2a_12_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );}
+
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_0180", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「…こんな辺鄙な所ですからねぇ…。次のバスは１時間も先ですよねぇ…？」",
 		   "<color=#5ec69a>Mion</color> ", "\"...Since we live in such a remote place... the next bus won't be here for another hour, you know...?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {FadeBustshot( 5, FALSE, 0, 0, 0, 0, 200, TRUE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(5, 52, "sprite/hri2a_03_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_0120", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…しかも今日は雨だからね…。」",
 		   "<color=#6972c1>Rika</color> ", "\"...Not to mention, it's also raining today...\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(4, 53, "sprite/hmi2a_08_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_0190", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「…しかもこの停留所、滅多に人の来ない寂しーい所なんですよねぇ。」",
 		   "<color=#5ec69a>Mion</color> ", "\"...Plus, this bus stop is the sort of place people rarely ever visit.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(5, 52, "sprite/hri2a_01_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_0130", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…しかも今日は雨だからね…。」",
@@ -429,7 +444,9 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
+	if (GetGlobalFlag(GHideCG)) {FadeBustshot( 4, FALSE, 0, 0, 0, 0, 200, TRUE );}
 	PlaySE( 2, "down", 70, 64 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(4, 53, "sprite/hmi2a_03_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
 	ShakeScreen( 4, 9, 20, 15, 3, );
 
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_0200", 128, TRUE);
@@ -437,10 +454,18 @@ void main()
 		   "<color=#5ec69a>Mion</color> ", "\"...Which means... we have at least an hour! ...Where no one will come by to disturb us.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(5, 52, "sprite/hri2a_07_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_0140", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…しかも今日は雨だからね…。」",
 		   "<color=#6972c1>Rika</color> ", "\"...Not to mention, it's also raining today...\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {FadeBustshot( 4, FALSE, 0, 0, 0, 0, 200, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {FadeBustshot( 5, FALSE, 0, 0, 0, 0, 200, TRUE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(4, 53, "sprite/hmi2a_04_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_0210", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「…雨ですからぁ…ッ！」",
@@ -1636,6 +1661,9 @@ void main()
 	PlayBGM( 1, "me/ame2", 50, 0 );
 	//CallScriptSection( "util", "RainOn" );
 	DrawScene( "scene/613", 100 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_09_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/hina_bus_03", 100 );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_07_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
 	PlaySE( 1, "down3", 70, 64 );
 	ShakeScreen( 0, 3, 100, 1, 50, );
 
@@ -1644,15 +1672,24 @@ void main()
 		   "<color=#5ec69a>Mion</color> ", "\"So what if I'm a wannabe! Just think about it! ...Do you know what the tallest building is here in Hinamizawa?! ...It's the three-story fire department!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_04_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_0520", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「雛見沢にエスカレーターのある建物なんてありますー！？ないでしょッ！ちなみにエレベーターはあるんですよねぇ！小学校の給食運搬用のエレベーター。」",
 		   "<color=#5ec69a>Mion</color> ", "\"Are there any buildings with an escalator here in Hinamizawa?! There aren't! There is an elevator, by the way! The elevator used to transport food for the elementary school.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_05_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_0530", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「…そんなのイヤですッ！」",
 		   "<color=#5ec69a>Mion</color> ", "\"...I'm sick of all that!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 52, "sprite/hri2a_07_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );}
 
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_0510", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「生まれ故郷より街の生活の方がいいって言うのね。…ご先祖さまも泣いてるわよ。」",
@@ -1662,6 +1699,7 @@ void main()
 
 	PlaySE( 0, "a5_10316", 70, 64 );
 	DrawBustshot(5, "white", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 200, TRUE );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_04_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );}
 	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 50, TRUE );
 	ShakeScreen( 2, 3,  100 , 1, 50, );
 
@@ -1670,25 +1708,40 @@ void main()
 		   "<color=#5ec69a>Mion</color> ", "\"I absolutely refuse to let my life end here, in some backwater mountains! I want to live a normal life like a normal girl in a normal city surrounded by normal things!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 52, "sprite/hri2a_06_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );}
+
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_0520", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「雛見沢の人間が街で生活なんかできると思う！？」",
 		   "<color=#6972c1>Rika</color> ", "\"Do you think the people in Hinamizawa are capable of living in a city?!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_14_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_0550", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「余計なお世話ですよッ！そんなにここが好きなら勝手に住んでればいいじゃないですか！私を巻き込まないで下さいよッ！」",
 		   "<color=#5ec69a>Mion</color> ", "\"That's their problem! If they like this place so much, then they can stay here! Don't drag me into it!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_04_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_0560", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「…ウチは貧乏だから引っ越しなんかできなかったけど！立ち退き料のおかげでやっと街へ引っ越せるお金が出来たんです！」",
 		   "<color=#5ec69a>Mion</color> ", "\"...My family's poor, so we couldn't move even if we wanted to! But thanks to the compensation money, we'll finally have enough to move into the city!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_13_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_0570", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「…ダム計画が中止になっちゃったらどうなるんですか！？」",
 		   "<color=#5ec69a>Mion</color> ", "\"...What do you think will happen to us if the dam project's cancelled?!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_14_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_0580", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「…もう私をこんな山奥に縛りつけないでッ！」",
@@ -4262,6 +4315,9 @@ void main()
 	//;（以下のシーンが進行すると共に頭痛も辛くなっていく）
 
 	DrawScene( "scene/614a", 400 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/hina_bus_02", 400 );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_13_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_08_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );}
 	PlayBGM( 0, "iru", 70, 0 );
 
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_1040", 128, TRUE);
@@ -4269,10 +4325,16 @@ void main()
 		   "<color=#5ec69a>Mion</color> ", "\"......Faaaah~... ......I'm starting to feel kind of sleepy... My head kind of hurts too. ...Maybe I have a cold...\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 54, "sprite/hyos1a_04_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );}
+
 	ModPlayVoiceLS(4, 54, "ps3/s26/54/tyos_0720", 128, TRUE);
 	OutputLine("<color=#715348>吉村</color> ", "「…先日、東京観光に行ってね。…もっとも観光っていってもねずみーランドに遊びに行っただけなんだけど。」",
 		   "<color=#715348>Yoshimura</color> ", "\"...I was sightseeing in Tokyo the other day. ...Though it was less sightseeing, and more like I went there to enjoy Mouse Land.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_03_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_1050", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「え！？…あ、そーなんですかぁ！？」",
@@ -4281,10 +4343,15 @@ void main()
 	DisableWindow();
 
 	DrawScene( "scene/614b", 400 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_02_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_1060", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「…私も行ったんですよ東京観光ッ！ねずみーランド行きましたハイ！…って言っても私もそこしか行ってないんですけどねぇ！」",
 		   "<color=#5ec69a>Mion</color> ", "\"...I've been sightseeing in Tokyo too! I went to Mouse Land too, yeah! ...Though that's really the only place I went as well!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 54, "sprite/hyos1a_01_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 54, "ps3/s26/54/tyos_0730", 128, TRUE);
 	OutputLine("<color=#715348>吉村</color> ", "「ホテルシーサイド江戸海って所に泊まったんだよ。",
@@ -4295,12 +4362,16 @@ void main()
 	DisableWindow();
 
 	DrawScene( "scene/614d", 400 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_15_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_1070", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「え！？え！？えーッ！？ウチもですよ！ウチもそこに泊まったんですよーッ！すっごい偶然ーッ！」",
 		   "<color=#5ec69a>Mion</color> ", "\"Huh?! Huh?! Huuh?! Me too! That's where I stayed too! What a coincidence!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 54, "sprite/hyos1a_03_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 54, "ps3/s26/54/tyos_0740", 128, TRUE);
 	OutputLine("<color=#715348>吉村</color> ", "「夜、公園の周りを散歩したんだが、すごいね。アベックの聖域だよ。独り者には肩身が狭いね。」",
@@ -4309,6 +4380,8 @@ void main()
 	DisableWindow();
 
 	DrawScene( "scene/614b", 400 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_12_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_1080", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「あっはははははは！同感同感ー！私も思いましたー！」",
 		   "<color=#5ec69a>Mion</color> ", "\"Ahahahahahaha! Same, same! I thought so too!\"", Line_Normal);
@@ -4369,16 +4442,24 @@ void main()
 	DrawScene( "white", 100 );
 	PlaySE( 0, "enrai2", 70, 64 );
 	DrawScene( "scene/614d", 200 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/hina_bus_03", 200 );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 54, "sprite/hyos1a_04_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 54, "ps3/s26/54/tyos_0800", 128, TRUE);
 	OutputLine("<color=#715348>吉村</color> ", "「翌朝。お父さんに借りた携帯をポケットに入れたままトイレで用を足そうとしたら、うっかり便器に落としてしまって大変だ。」",
 		   "<color=#715348>Yoshimura</color> ", "\"The next morning I had the cell phone I borrowed from my father with me in my pocket when I went to do my business, and, well, I accidentally dropped it in the toilet.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 54, "sprite/hyos1a_05_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 54, "ps3/s26/54/tyos_0810", 128, TRUE);
 	OutputLine("<color=#715348>吉村</color> ", "「汚いのも構わず慌てて取ってドライヤーで乾かしたんだよな。」",
 		   "<color=#715348>Yoshimura</color> ", "\"I panicked and pulled it out without regard for how filthy it was, and then I tried drying it off with the hair dryer.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 54, "sprite/hyos1a_02_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 54, "ps3/s26/54/tyos_0820", 128, TRUE);
 	OutputLine("<color=#715348>吉村</color> ", "「…お父さんには電池が切れたみたいだよって言って誤魔化したけど。駄目だったんだよね。」",
@@ -4387,20 +4468,31 @@ void main()
 	DisableWindow();
 
 	DrawScene( "scene/614b", 400 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_02_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_1110", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「あはははは！吉村さんもですかー？私もなん、」",
 		   "<color=#5ec69a>Mion</color> ", "\"Ahahahahaha! You too, Yoshimura-san? I did that t--!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 54, "sprite/hyos1a_01_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 54, "ps3/s26/54/tyos_0830", 128, TRUE);
 	OutputLine("<color=#715348>吉村</color> ", "「ねずみーランドではとにかく色々なものに乗ったね。大はしゃぎだったよ。笑えるのはカリフの海賊ってヤツだ。」",
 		   "<color=#715348>Yoshimura</color> ", "\"I rode all kinds of rides at Mouse Land. I had a great time. I laughed the most on the pirate one.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 54, "sprite/hyos1a_10_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 54, "ps3/s26/54/tyos_0840", 128, TRUE);
 	OutputLine("<color=#715348>吉村</color> ", "「宝の山があったんでゴンドラから身を乗りだして触ろうとしたら放送で怒られただろ。遊園地の人ってちゃんと見てるもんなんだよなぁ。」",
 		   "<color=#715348>Yoshimura</color> ", "\"There was a mountain of treasure along the ride, so I leaned out of the gondola to try and touch it, but they yelled at me through the loudspeaker. The people working those theme parks sure watch carefully, don't they?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_03_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_1120", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「あはははは！吉村さんも…、」",
@@ -4431,6 +4523,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "scene/614c", 400 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/hina_bus_04", 400 );}
 	PlayBGM( 0, "bgm1/urameshikodama", 70, 0 );
 
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_1130", 128, TRUE);
@@ -6310,6 +6403,8 @@ void main()
 	DrawScene( "white", 100 );
 	PlaySE( 1, "a5_10317", 70, 64 );
 	DrawScene( "scene/615", 50 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 55, "sprite/hara1a_11_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("black", 50 );}
 	ShakeScreen( 0, 6, 100, 2, 50, );
 
 	ModPlayVoiceLS(4, 55, "ps3/s26/55/tara_1230", 128, TRUE);
@@ -6317,25 +6412,40 @@ void main()
 		   "<color=#5f5248>Arakawa</color> ", "\"Bring their ass to me. ...I'll kill everyone who makes fun of me! ...Screw the curse! So what about this Oyashiro-sama crap?!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 55, "sprite/hara1a_07_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 55, "ps3/s26/55/tara_1240", 128, TRUE);
 	OutputLine("<color=#5f5248>荒川</color> ", "「あっはっはっはっはっ！会ってやろうじゃねえかッ！…みんなみんなぶっ殺してやるッ！」",
 		   "<color=#5f5248>Arakawa</color> ", "\"Hahahahahaha! I'll go ahead and meet them, then! ...And I'll kill every last one of them!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 54, "sprite/hyos1a_08_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("effect/different_spiral_1a", 400 );}
 
 	ModPlayVoiceLS(4, 54, "ps3/s26/54/tyos_1580", 128, TRUE);
 	OutputLine("<color=#715348>吉村</color> ", "「会いたい？……会いたい。……会いたい！？」",
 		   "<color=#715348>Yoshimura</color> ", "\"You want to meet them? ......You want to meet them. ......You want to meet them?!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 54, "sprite/hyos1a_13_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 54, "ps3/s26/54/tyos_1590", 128, TRUE);
 	OutputLine("<color=#715348>吉村</color> ", "「……っはっはっはっは！あーっはっはっはっはっはっはッ！」",
 		   "<color=#715348>Yoshimura</color> ", "\"......Hahahaha! Ahhhahahahahaha!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 54, "sprite/hyos1a_08_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 54, "ps3/s26/54/tyos_1600", 128, TRUE);
 	OutputLine("<color=#715348>吉村</color> ", "「…言いましたねぇ？…会いたい？…はっはっはっはっはっは！」",
 		   "<color=#715348>Yoshimura</color> ", "\"...You said it, didn't you? ...You want to meet them? ...Hahahahahaha!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 54, "sprite/hyos1a_09_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 54, "ps3/s26/54/tyos_1610", 128, TRUE);
 	OutputLine("<color=#715348>吉村</color> ", "「会わせてあげましょうとも。……オヤシロさまに……ッ！」",
@@ -6347,6 +6457,8 @@ void main()
 	PlaySE( 0, "rakurai3", 100, 64 );
 	DrawScene( "white", 100 );
 	DrawScene( "scene/615", 50 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 54, "sprite/hyos1a_13_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("effect/different_spiral_1b", 50 );}
 	ShakeScreen( 0, 6, 100, 2, 50, );
 
 	CallScriptSection( "util", "EyeCatch2" );
@@ -7439,6 +7551,7 @@ void main()
 	//CallScriptSection( "util", "RainOff" );
 
 	DrawSprite( 3, "scene/616", NULL, -426, -600, -133, 0, 0, 0, FALSE, FALSE, 0, 0, 3, 50, TRUE );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("effect/blood_1b", 400 );}
 	PlayBGM( 3, "me/flangefemale", 70, 0 );
 	MoveSprite( 3, -426, -300, -133, 0, 0, 0, 0, 3000, FALSE );
 	ShakeScreen( 0, 6, 100, 2, 50, );
@@ -7470,6 +7583,7 @@ void main()
 	Wait( 50 );
 	PlaySE( 0, "wav/thisikuki", 70, 64 );
 	ShakeScreen( 4, 9, 20, 15, 3, );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("effect/blood_1a", 400 );}
 
 	//;ld c,yos_D5,80
 	ModPlayVoiceLS(4, 54, "ps3/s26/54/tyos_2170", 128, TRUE);
@@ -7488,6 +7602,7 @@ void main()
 
 	PlaySE( 0, "rakurai3", 100, 64 );
 	DrawBustshot( 5, "white", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 50, TRUE );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("effect/blood_1ar", 400 );}
 	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 400, TRUE );
 
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_1770", 128, TRUE);
@@ -9621,7 +9736,10 @@ void main()
 	Wait( 100 );
 	PlaySE( 1, "reload_late", 70, 64 );
 	DrawScene( "scene/617a", 50 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_09_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/hina_douro_04", 50 );}
 	ShakeScreen( 2, 6,  100 , 2, 50, );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_13_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
 
 
 	StopAllSound();
@@ -9631,45 +9749,72 @@ void main()
 		   "<color=#5ec69a>Mion</color> ", "\"...Rika...san...?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 52, "sprite/hri2a_06_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );}
+
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_1720", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「私たちを解放してッ！……さもないと魅音を殺すわよッ！」",
 		   "<color=#6972c1>Rika</color> ", "\"Let us go! ......If you don't, then I'll kill Mion!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 57, "sprite/hnit1a_09_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );}
 
 	ModPlayVoiceLS(4, 57, "ps3/s26/57/tnit_0310", 128, TRUE);
 	OutputLine("<color=#6b493e>新田</color> ", "「なッ、馬鹿な真似はやめろッ！」",
 		   "<color=#6b493e>Nitta</color> ", "\"D-Don't do anything foolish!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 52, "sprite/hri2a_09_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_1730", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「そう。…私は馬鹿だった。」",
 		   "<color=#6972c1>Rika</color> ", "\"Yes. ...I was a fool.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 52, "sprite/hri2a_10_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_1740", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…毎晩、嫌な夢にうなされ、…衰弱していく自分。…プライバシーもなく…こいつらの研究材料として弄ばれる日々。」",
 		   "<color=#6972c1>Rika</color> ", "\"...Every night I was haunted by bad dreams... feeling myself grow more and more debilitated. ...I spent every day without privacy... used as a guinea pig by these people.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 52, "sprite/hri2a_08_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_1750", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…嫌だった。…抜け出したかったの。」",
 		   "<color=#6972c1>Rika</color> ", "\"...I hated it. ...I wanted out.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 52, "sprite/hri2a_01_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_1760", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…適合者が見つかった時、…これで苦しみから解放されると思った。…私はその時、あなたをこいつらの生贄に差し出す事に同意した。」",
 		   "<color=#6972c1>Rika</color> ", "\"...When they found someone compatible... I thought I could finally be free of this suffering. ...That was when I agreed to hand you over as a sacrifice.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 52, "sprite/hri2a_12_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_1770", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「……でも間違ってた…！……魅音は適合者なんかじゃない！生贄なんかじゃない！……私のたったひとりの……親友なんだもん…ッ！」",
 		   "<color=#6972c1>Rika</color> ", "\"......But I was wrong...! ......You weren't just someone compatible! You weren't some sacrifice! ......You were my one and only...... my very best friend...!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_05_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_2620", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「………梨花さ…ん……。」",
 		   "<color=#5ec69a>Mion</color> ", "\"......Rika-sa... n......\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 52, "sprite/hri2a_11_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_1780", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…あなたの事を親友なんて呼ぶ資格は……あなたに会った時からなかったの！…ごめんッ！…ごめんねッ！」",
@@ -9678,6 +9823,8 @@ void main()
 	DisableWindow();
 
 	DrawScene( "scene/617b", 400 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_06_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_2630", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「……そんなこと……ないよ……、……梨花さんは…親友だよ…。」",
 		   "<color=#5ec69a>Mion</color> ", "\"......That's not...... true...... ......Rika-san... you really are my best friend...\"", Line_Normal);
@@ -9685,30 +9832,47 @@ void main()
 	DisableWindow();
 
 	DrawScene( "scene/617c", 400 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 52, "sprite/hri2a_13_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_1790", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「魅音…ッ！」",
 		   "<color=#6972c1>Rika</color> ", "\"Mion...!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 57, "sprite/hnit1a_08_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 57, "ps3/s26/57/tnit_0320", 128, TRUE);
 	OutputLine("<color=#6b493e>新田</color> ", "「園崎さん！冷静になって考えて下さい！あなたが梨花さんと心中すれば雛見沢一帯の数万人も道連れになるのですッ！」",
 		   "<color=#6b493e>Nitta</color> ", "\"Sonozaki-san! Please think about this logically! If you and Rika-san commit suicide together, then you're dragging the tens of thousands of people living in Hinamizawa down with you!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 57, "sprite/hnit1a_10_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 57, "ps3/s26/57/tnit_0330", 128, TRUE);
 	OutputLine("<color=#6b493e>新田</color> ", "「……手術を受け入れれば！…あなたたちが助かるだけじゃない！…その数万人も助かるのですッ！」",
 		   "<color=#6b493e>Nitta</color> ", "\"......You have to have the surgery! ...The surgery won't just save you two! ...It'll save tens of thousands of lives!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_05_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_2640", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「……いいじゃないですか…手術…。…梨花さんだって助かるんですよ…？」",
 		   "<color=#5ec69a>Mion</color> ", "\"......I'll have the surgery... then... ...That'll save Rika-san too, right...?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 52, "sprite/hri2a_08_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_1800", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…魅音。あいつらの言う事に騙されては駄目。……よく考えて。…あいつらはどうしてオヤシロさまに寄生されないの？」",
 		   "<color=#6972c1>Rika</color> ", "\"...Mion. Don't let them fool you. ......Think about it. ...Why aren't they hosts to Oyashiro-sama?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 52, "sprite/hri2a_12_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_1810", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…あいつらはね、…とっくに…治療薬を開発してるのよ。……なのにどうして研究したがると思う？」",
@@ -9717,6 +9881,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "scene/617a", 50 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 52, "sprite/hri2a_06_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 50, TRUE );}
 	PlaySE( 1, "a5_10316", 70, 64 );
 	ShakeScreen( 0, 6, 100, 2, 50, );
 
@@ -9725,26 +9890,41 @@ void main()
 		   "<color=#6972c1>Rika</color> ", "\"......Those people...... they're conducting their research to develop more than just a cure......!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 57, "sprite/hnit1a_04_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
+
 	//;ld c,nit_d3,80
 	ModPlayVoiceLS(4, 57, "ps3/s26/57/tnit_0340", 128, TRUE);
 	OutputLine("<color=#6b493e>新田</color> ", "「…滅多な事は言わないでもらいましょう。」",
 		   "<color=#6b493e>Nitta</color> ", "\"...Could you not speak such slander?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 57, "sprite/hnit1a_03_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 57, "ps3/s26/57/tnit_0350", 128, TRUE);
 	OutputLine("<color=#6b493e>新田</color> ", "「…梨花さんの言っておられる行為は国際法でいかなる研究も開発も禁じられています。」",
 		   "<color=#6b493e>Nitta</color> ", "\"...The kinds of research and development that you're suggesting are banned under international law.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 57, "sprite/hnit1a_05_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 57, "ps3/s26/57/tnit_0360", 128, TRUE);
 	OutputLine("<color=#6b493e>新田</color> ", "「…我が国は国連加盟の法治国家ですよ。…そんな真似はしません。」",
 		   "<color=#6b493e>Nitta</color> ", "\"...Our nation is a constitutional state and a member of the UN. ...We would never do such a thing.\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 52, "sprite/hri2a_08_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );}
+
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_1830", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…親虫は私が飼うわ！…私が死ぬまでの２～３年間で、寄生されてる人みんなを治療できるはずよ！」",
 		   "<color=#6972c1>Rika</color> ", "\"...I'll keep hosting the queen! ...You should be able to cure everyone hosting this bug in the two or three years left before I die!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 57, "sprite/hnit1a_03_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 57, "ps3/s26/57/tnit_0370", 128, TRUE);
 	OutputLine("<color=#6b493e>新田</color> ", "「…ですから治療薬はないんですよ。」",
@@ -9752,6 +9932,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 52, "sprite/hri2a_06_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 50, TRUE );}
 	PlaySE( 1, "a5_10317", 70, 64 );
 	ShakeScreen( 0, 6, 100, 2, 50, );
 
@@ -10024,6 +10205,7 @@ void main()
 	DrawSceneWithMask( "black", "effect/up", 0, 0, 300 );
 	PlaySE( 0, "rakurai3", 100, 64 );
 	DrawScene( "scene/618a", 50 );
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask("background/hina_douro_01", "effect/up", 0, 0, 50 );}
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 
 
@@ -10036,6 +10218,11 @@ void main()
 
 	//CallScriptSection( "util", "RainOff" );
 	DrawScene( "scene/618b", 50 );
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask("black", "effect/left", 0, 0, 50 );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 60, "sprite/hoda1a_04_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask("background/hina_bus_03", "effect/left", 0, 0, 50 );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_11_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 300, TRUE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 60, "sprite/hoda1a_07_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );}
 	PlaySE( 0, "thisikuki", 70, 64 );
 	ShakeScreen( 0, 6, 100, 2, 50, );
 
@@ -10044,6 +10231,15 @@ void main()
 	OutputLine(NULL, "織田はその場にうずくまる。",
 		   NULL, " Oda falls and curls up on the spot.", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {FadeBustshotWithFiltering( 1, "effect/down", 0, FALSE, 0, 0, 300, TRUE );}
+	if (GetGlobalFlag(GHideCG)) {PlaySE( 0, "a5_10317", 70, 64 );}
+	if (GetGlobalFlag(GHideCG)) {Wait( 500 );}
+	if (GetGlobalFlag(GHideCG)) {FadeBustshot( 3, FALSE, 0, 0, 0, 0, 200, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 53, "sprite/hmi2a_10_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 59, "sprite/hoka1a_07_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );}
+	if (GetGlobalFlag(GHideCG)) {ShakeScreen( 2, 6,  100 , 2, 50, );}
 
 	ModPlayVoiceLS(4, 59, "ps3/s26/59/toka_0230", 128, TRUE);
 	OutputLine("<color=#574f58>岡野</color> ", "「き、…貴様…ッ！」",
@@ -10057,6 +10253,8 @@ void main()
 	PlaySE( 0, "a5_10315", 70, 64 );
 	ShakeScreen( 0, 6, 100, 2, 50, );
 	PlaySE( 1, "thisikuki", 70, 64 );
+	if (GetGlobalFlag(GHideCG)) {FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 53, "sprite/hmi2a_11_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_2720", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「殺してやるぞ殺してやるぞッ！",
@@ -10066,6 +10264,11 @@ void main()
 	OutputLine(NULL, "…おおおぉぉおおおおおッ！」",
 		   NULL, " ...Hoooooooooooooooh!\"", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 57, "sprite/hnit1a_09_", "2", 120, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
+	if (GetGlobalFlag(GHideCG)) {ShakeScreen( 2, 6,  100 , 2, 50, );}
 
 	ModPlayVoiceLS(4, 57, "ps3/s26/57/tnit_0440", 128, TRUE);
 	OutputLine("<color=#6b493e>新田</color> ", "「落ち着け！",
@@ -10080,8 +10283,11 @@ void main()
 	DisableWindow();
 
 	DrawScene( "scene/618b", 50 );
+	if (GetGlobalFlag(GHideCG)) {FadeBustshot( 3, FALSE, 0, 0, 0, 0, 100, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(4, 53, "sprite/hmi2a_11_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 100, TRUE );}
 	PlaySE( 0, "thisikuki", 70, 64 );
 	ShakeScreen( 0, 6, 100, 2, 50, );
+	if (GetGlobalFlag(GHideCG)) {FadeBustshotWithFiltering( 2, "effect/down", 0, FALSE, 0, 0, 300, TRUE );}
 
 	//;cl l,0
 	//;ld c,mio_D14,23
@@ -10095,6 +10301,10 @@ void main()
 		   NULL, "Mion leaps forward and stabs him.", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 59, "sprite/hoka1a_07_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );}
+	if (GetGlobalFlag(GHideCG)) {ShakeScreen( 2, 6,  100 , 2, 50, );}
+
 	ModPlayVoiceLS(4, 59, "ps3/s26/59/toka_0240", 128, TRUE);
 	OutputLine("<color=#574f58>岡野</color> ", "「この野郎ッ！」",
 		   "<color=#574f58>Okano</color> ", "\"You bitch!\"", Line_Normal);
@@ -10102,6 +10312,8 @@ void main()
 	DisableWindow();
 
 	DrawScene( "scene/618a", 50 );
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask("black", "effect/left", 0, 0, 50 );}
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask("background/hina_bus_04", "effect/left", 0, 0, 50 );}
 	PlaySE( 0, "a5_10315", 70, 64 );
 	ShakeScreen( 2, 6, 100, 2, 50, );
 	DrawScene( "scene/618b", 50 );
@@ -10116,6 +10328,12 @@ void main()
 		   NULL, " Okano falls back, clutching his throat.", Line_Normal);
 	ClearMessage();
 	//CallScriptSection( "util", "RainOn" );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("black", 300 );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 61, "sprite/hhot1a_05_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask("background/hina_bus_01", "effect/left", 0, 0, 300 );}
+	if (GetGlobalFlag(GHideCG)) {FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 61, "sprite/hhot1a_05_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );}
+	if (GetGlobalFlag(GHideCG)) {FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, TRUE );}
 
 	OutputLine(NULL, "　保土田は悲鳴をあげて逃げようとする。",
 		   NULL, "Hotoda screams and tries to flee.", Line_WaitForInput);
@@ -10125,6 +10343,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "scene/618a", 50 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("black", 300 );}
 	PlaySE( 0, "a5_10315", 70, 64 );
 	ShakeScreen( 2, 6, 100, 2, 50, );
 	PlaySE( 0, "a5_10315", 70, 64 );
@@ -10160,6 +10379,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "scene/618a", 50 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(4, 53, "sprite/hmi2a_11_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 50, TRUE );}
 	PlaySE( 0, "a5_10315", 70, 64 );
 	ShakeScreen( 2, 6, 100, 2, 50, );
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_2740", 128, TRUE);
@@ -10374,6 +10594,9 @@ void main()
 		   "<color=#5ec69a>Mion</color> ", "\"Rika-san... ......Rika-san! ......Rika-san!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 52, "portrait/hri2a_05_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 52, "portrait/hri2a_03_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
 
 	OutputLine(NULL, "　梨花に抱きつく魅音。",
 		   NULL, "Mion clings to Rika.", Line_WaitForInput);
@@ -10385,6 +10608,9 @@ void main()
 	OutputLine("<color=#5ec69a>魅音</color> ", "「本当に梨花さんなんですよね！…梨花さんなんですよね！？…わぁあぁあああああッ！」",
 		   "<color=#5ec69a>Mion</color> ", "\"It's really you, right?! ...You're Rika-san, right?! ...Waaaaaaaaaah!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 52, "portrait/hri2a_02_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_1920", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「……私はここよ。…ここにいるわ。…悲しい夢を見たの…？」",
@@ -10526,17 +10752,24 @@ void main()
 	DrawScene( "white", 1000 );
 	DrawSprite( 3, "scene/620b", NULL, -426, -600, -133, 0, 0, 0, FALSE, FALSE, 0, 0, 3, 50, TRUE );
 	MoveSprite( 3, -426, -300, -133, 0, 0, 0, 0, 10000, FALSE );
-
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 52, "sprite/hri2a_12_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/hina_bus_03", 400 );}
 
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_2000", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「…私がずっと側に居てあげるから。…離れないでね。」",
 		   "<color=#6972c1>Rika</color> ", "\"...I'll stay with you forever. ...So don't leave me, okay?\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(4, 53, "sprite/hmi2a_15_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 400, TRUE );}
+
 	ModPlayVoiceLS(4, 53, "ps3/s26/53/tmio_2920", 128, TRUE);
 	OutputLine("<color=#5ec69a>魅音</color> ", "「あぁん！離れないどころか密着してたいですわーん！」",
 		   "<color=#5ec69a>Mion</color> ", "\"Ahhn! I'd never leave you! I'd rather cling to you instead!\"", Line_Normal);
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 52, "sprite/hri2a_02_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );}
 
 	ModPlayVoiceLS(4, 52, "ps3/s26/52/trik_2010", 128, TRUE);
 	OutputLine("<color=#6972c1>梨花</color> ", "「……うん。…それでいいわ。……行きましょ。」",
@@ -10548,6 +10781,7 @@ void main()
 	//;fedexx 0,0,0,0,0,0,3000
 
 	DrawScene( "scene/620a", 400 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/hina_douro_01", 400 );}
 
 	//;ld c,mio_D9a,0
 	//;mld r,rik_D10,22

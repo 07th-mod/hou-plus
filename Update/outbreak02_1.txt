@@ -1562,12 +1562,18 @@ void main()
 
 	DrawScene( "black", 400 );
 	DrawScene( "scene/605a", 400 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/kamik_mati_102", 400 );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 1, "sprite/kei2_ikari1_", "0", -120, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );}
+
 	//;【圭一】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s25/01/nkei_0870", 128, TRUE);
 	OutputLine(NULL, "「あんなのに見つかったら……、本当にヤバいな……。」",
 		   NULL, "\"If those people find us... then we're really in trouble......\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/re2a_okoru_a1_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );}
 
 	//;【レナ】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -1576,12 +1582,18 @@ void main()
 		   NULL, "\"Were they college students? ......I guess this won't be as easy as facing Hinamizawa's elderly.\"", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 4, "sprite/sa2b_def_b1_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );}
+
 	//;【沙都子】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s25/04/nsat_0200", 128, TRUE);
 	OutputLine(NULL, "「大丈夫。見つかってはいませんわ。」",
 		   NULL, "\"We are fine, I think. They haven't found us.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(4, 3, "sprite/me7_tohoho_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 400, TRUE );}
 
 	//;【魅音】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1634,12 +1646,18 @@ void main()
 	DisableWindow();
 
 	DrawScene( "scene/605a", 400 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/kamik_mati16", 400 );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/re2a_okoru_a1_", "0", -120, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );}
+
 	//;【レナ】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s25/02/nren_0760", 128, TRUE);
 	OutputLine(NULL, "「事務所って遠いの？」",
 		   NULL, "\"Is the office far from here?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(4, 3, "sprite/me7_majime_a1_", "0", 120, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 400, TRUE );}
 
 	//;【魅音】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1648,12 +1666,18 @@ void main()
 		   NULL, "\"......In terms of distance, no, but if we're trying to avoid the main street, then it's surprisingly hard to get to......\"", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 1, "sprite/kei2_ikari1_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );}
+
 	//;【圭一】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s25/01/nkei_0880", 128, TRUE);
 	OutputLine(NULL, "「大通りは、どこもかしこもイカレた連中が走り回ってるか殺し合ってるかのどちらかだからな。」",
 		   NULL, "\"The main street is full of crazies either running around everywhere or killing each other.\"", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 4, "sprite/sa2a_odoroki_a1_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );}
 
 	//;【沙都子】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -2115,6 +2139,7 @@ void main()
 	PlaySE( 0, "door", 50, 64 );
 	Wait( 500 );
 	DrawScene( "scene/606", 50 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/kamik_mati_504", 50 );}
 	PlaySE( 0, "down3", 50, 64 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -4510,6 +4535,8 @@ void main()
 	DrawSceneWithMask( "white", "effect/maskc", 0, 0, 1300 );
 	PlayBGM( 0, "bgm1/hushigigatari", 70, 0 );
 	DrawScene( "scene/607", 3000 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 51, "sprite/tamura1a_05_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask( "background/fure1", "effect/maskc", 0, 0, 1300 );}
 	Wait( 700 );
 	//;【田村】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ec7bb8>田村</color>", NULL, "<color=#ec7bb8>Tamura</color>", NULL, Line_ContinueAfterTyping); }
@@ -4518,12 +4545,18 @@ void main()
 		   NULL, "\"Leader of the horned people, Hanyuu...... I have had no desire to meet with you once more.\"", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 12, "sprite/ha1_sakebi_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );}
+
 	//;【羽入】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s25/12/nhan_0290", 128, TRUE);
 	OutputLine(NULL, "「その言葉、そのままお返しします。……あなたに、なぜに再びこうして会わねばならぬのか……。」",
 		   NULL, "\"I could return those exact same words. ......Why must I see you like this again......?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(8, 5, "sprite/ri2_komaru_a2_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );}
 
 	//;【梨花】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -4532,6 +4565,9 @@ void main()
 		   NULL, "\"......You aren't usually so hostile.\"", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 12, "sprite/ha1_yowaki_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
+
 	//;【羽入】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s25/12/nhan_0300", 128, TRUE);
@@ -4539,12 +4575,18 @@ void main()
 		   NULL, "\"We are enemies, who refuse to accept one another. You must not trust her.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(8, 5, "sprite/ri2_niyari_a1_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
+
 	//;【梨花】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s25/05/nrik_0520", 128, TRUE);
 	OutputLine(NULL, "「バケモノ仲間の同族嫌悪ってわけね。」",
 		   NULL, "\"I guess you monsters hate your own kind.\"", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 51, "sprite/tamura1a_03_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );}
 
 	//;【田村】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ec7bb8>田村</color>", NULL, "<color=#ec7bb8>Tamura</color>", NULL, Line_ContinueAfterTyping); }
@@ -4599,6 +4641,9 @@ void main()
 	DisableWindow();
 
 	DrawScene( "scene/607", 400 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/fure2", 400 );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 51, "sprite/tamura1a_04_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 51, "sprite/tamura1a_01_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );}
 	//;【田村】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ec7bb8>田村</color>", NULL, "<color=#ec7bb8>Tamura</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 51, "ps3/s25/51/ntam_0020", 128, TRUE);
@@ -4606,12 +4651,18 @@ void main()
 		   NULL, "\"Hanyuu. ......Do you understand why I have appeared before you?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 12, "sprite/ha1_muhyou_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
+
 	//;【羽入】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s25/12/nhan_0310", 128, TRUE);
 	OutputLine(NULL, "「………………………。」",
 		   NULL, "\"...........................\"", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 51, "sprite/tamura1a_03_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );}
 
 	//;【田村】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ec7bb8>田村</color>", NULL, "<color=#ec7bb8>Tamura</color>", NULL, Line_ContinueAfterTyping); }
@@ -7021,6 +7072,9 @@ void main()
 	DrawScene( "black", 1300 );
 	PlayBGM( 0, "bgm1/primal-beat-of-horrow_t", 70, 0 );
 	DrawScene( "scene/605b", 1300 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 1, "sprite/kei2_ikari2_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/kamik_mati_001", 1300 );}
+
 
 
 	//;【圭一】
@@ -7030,6 +7084,9 @@ void main()
 		   NULL, "\"D-Did they find her...?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(4, 50, "sprite/une1b_09_", "2", -120, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 400, TRUE );}
+
 	//;【采】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#85e6e0>采</color>", NULL, "<color=#85e6e0>Une</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 50, "ps3/s25/50/nune_0240", 128, TRUE);
@@ -7037,12 +7094,18 @@ void main()
 		   NULL, "\"......We're, we're done for.........\"", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/re2a_okoru_a1_", "0", 120, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );}
+
 	//;【レナ】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s25/02/nren_1100", 128, TRUE);
 	OutputLine(NULL, "「落ち付いて。……ちょっと雰囲気が違う。」",
 		   NULL, "\"Calm down. ......They're not acting like they have.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 4, "sprite/sa2a_odoroki_a1_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );}
 
 	//;【沙都子】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -7126,12 +7189,18 @@ void main()
 
 	DrawScene( "black", 400 );
 	DrawScene( "scene/605b", 400 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(4, 50, "sprite/une1a_11_", "1", -120, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/kamik_mati_203", 400 );}
+
 	//;【采】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#85e6e0>采</color>", NULL, "<color=#85e6e0>Une</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 50, "ps3/s25/50/nune_0250", 128, TRUE);
 	OutputLine(NULL, "「ど、どうすればいいのかわかる……、わけないのです……。」",
 		   NULL, "\"I-It's not like I know, what to do......\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 4, "sprite/sa2a_odoroki_a1_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );}
 
 	//;【沙都子】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -7140,6 +7209,9 @@ void main()
 		   NULL, "\"Is it finally time for our secret weapon?!\"", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 1, "sprite/kei2_ikari2_", "2", 120, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );}
+
 	//;【圭一】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s25/01/nkei_1180", 128, TRUE);
@@ -7147,12 +7219,17 @@ void main()
 		   NULL, "\"Only as a last resort. We could save Mion, but that would cause way too much noise...!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/re2a_okoru_a1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );}
+
 	//;【レナ】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s25/02/nren_1110", 128, TRUE);
 	OutputLine(NULL, "「でも準備はしておいて。」",
 		   NULL, "\"Still, get it ready.\"", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/kamik_mati_203", 400 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子は頷き、ラジコンカーを歩道にセットし、空き缶を括り付ける。",
@@ -7166,12 +7243,18 @@ void main()
 		   NULL, "Once we let it loose, it was sure to draw their attention.", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 1, "sprite/kei2_majime2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );}
+
 	//;【圭一】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s25/01/nkei_1190", 128, TRUE);
 	OutputLine(NULL, "「何れにせよ、作戦は失敗だな。何とか魅音が脱出できる隙を作って、今回は出直した方がいい。」",
 		   NULL, "\"Either way, the operation's failed. We need to create an opening for Mion to make her escape. It'll be better to try again later.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/re2b_okoru_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );}
 
 	//;【レナ】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -8537,12 +8620,18 @@ void main()
 	Wait( 400 );
 	DrawScene( "black", 1000 );
 	DrawScene( "scene/608", 1000 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 6, "sprite/si1a_huteki_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 15, "sprite/kasa_3_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/kamik_mati_204", 400 );}
+
 	//;【魅音】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s25/03/nmio_1400", 128, TRUE);
 	OutputLine(NULL, "「詩音！」",
 		   NULL, "\"Shion!\"", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DrawScene("black", 400 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　バリケードの向こうには、詩音と葛西、そして数人の黒服たちがいた。",
@@ -8561,12 +8650,18 @@ void main()
 		   NULL, "Seems the Sonozaki Group had retained their sanity and focused on holing up inside.", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/kamik_mati_204", 400 );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 6, "sprite/si1b_tokui_b1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );}
+
 	//;【詩音】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s25/06/nshi_0010", 128, TRUE);
 	OutputLine(NULL, "「勘弁して下さいよね。イカレた連中と関わり合いになりたくないんですから。」",
 		   NULL, "\"Please, give us a break, will you? We don't want to get involved with those crazies.\"", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/re2b_nande_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask( "background/kamik_mati_206", "effect/left", 0, 0, 400 );}
 
 	//;【レナ】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -8575,12 +8670,18 @@ void main()
 		   NULL, "\"We're sorry for causing such a stir.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 4, "sprite/sa2a_warai_a1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );}
+
 	//;【沙都子】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s25/04/nsat_0580", 128, TRUE);
 	OutputLine(NULL, "「詩音さんも無事なら、もう何も怖いことはありませんでしてよ。」",
 		   NULL, "\"If you're safe, Shion-san, then we have nothing to fear anymore.\"", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 6, "sprite/si1a_wink_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask( "background/kamik_mati_204", "effect/right", 0, 0, 400 );}
 
 	//;【詩音】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -8590,6 +8691,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 15, "sprite/kasa_2_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );}
 	PlaySE( 0, "kagitaba2", 50, 64 );
 	Wait( 500 );
 	PlaySE( 1, "a6_24636", 80, 64 );
@@ -10969,6 +11071,7 @@ void main()
 	//;mcbg 22
 	DrawScene( "white", 200 );
 	DrawScene( "scene/609", 50 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/bui_r1e", 50 );}
 	PlaySE( 0, "a5_13391", 50, 64 );
 	ShakeScreen( 4, 12, 20, 25, 2, );
 	Wait( 500 );
@@ -10998,6 +11101,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 6, "sprite/si1b_odoroki_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 15, "sprite/kasa_3_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　詩音も葛西も男たちも、絶句して目を見開き、",
@@ -13622,6 +13729,9 @@ void main()
 
 	DrawScene( "black", 400 );
 	DrawScene( "scene/610", 400 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("effect/kamik_inf_1", 400 );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 50, "sprite/une3a_14_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );}
+
 	PlayBGM( 2, "me/koware_wind", 70, 0 );
 	//;【ウネ】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#85e6e0>ウネ</color>", NULL, "<color=#85e6e0>UNE</color>", NULL, Line_ContinueAfterTyping); }
@@ -13629,6 +13739,9 @@ void main()
 	OutputLine(NULL, "「くっふふふふふふふふ……。もうチョー手遅れなのですよ、愚かなる民たちよ。この星は我らがチョー食い尽くすのです。」",
 		   NULL, "\"Kfufufufufufufufu...... It's super too late now, you idiots! We're totally consuming this whole planet!\"", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 50, "sprite/une3a_13_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#85e6e0>ウネ</color>", NULL, "<color=#85e6e0>UNE</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 50, "ps3/s25/50/nune_0700", 128, TRUE);
@@ -13644,6 +13757,7 @@ void main()
 	FadeOutBGM( 1, 3000, FALSE );
 	FadeOutBGM( 2, 3000, FALSE );
 	PlayBGM( 0, "bgm1/chants90-ahh", 70, 0 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("effect/kamik_inf_1", 3000 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ウネが羽ばたくように両手を広げ、……全世界に散ったウネの子らにそれを命ずる。",

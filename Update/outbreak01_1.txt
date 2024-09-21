@@ -1164,6 +1164,8 @@ void main()
 		   NULL, "\".........But I don't think we can be that optimistic, actually. I'm able to use a radio myself, you know. I modified mine to pick up transmissions from the police and the SDF. ...From what I'm hearing there, this isn't that simple.\"", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/hi1", 400 );}
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s24/03/nmio_0040", 128, TRUE);
 	OutputLine(NULL, "「何しろ、雛見沢は山間部の寒村で陸の孤島。どういう経路で海外からこの村へウィルスが伝播したのか経路がさっぱりなんだよ。」",
@@ -1178,6 +1180,13 @@ void main()
 		   NULL, "\"...So far, none of the infected people the government has discovered have any history of traveling out of the country. So now they're investigating the travel history of everyone in the village, wondering if there might be another carrier.\"", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DrawScene("black", 400 );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 2, "sprite/re2a_okoru_a1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 3, "sprite/me2_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 1, "sprite/kei2_nayamu_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/gr3", 400 );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 1, "sprite/kei2_komaru_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s24/01/nkei_0090", 128, TRUE);
 	OutputLine(NULL, "「つまり、誰かが海外で感染してこの村へ持ち込んだ、ってわけか…。」",
@@ -1191,11 +1200,17 @@ void main()
 		   NULL, "\"Yeah. Apparently there's some leeway in its incubation period. They can't rule out the chance that whoever brought it here is still incubating the disease. Also, there's no guarantee that the person ever traveled abroad at all. There's still a chance they got infected when they came into contact with a carrier from outside the village...\"", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 3, "sprite/me2_ikari_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s24/03/nmio_0070", 128, TRUE);
 	OutputLine(NULL, "「……おじさんの睨んだところじゃ、隔離地区は雛見沢だけに収まらない。下手をすれば県内、あるいは地方レベルにまでも及びかねないね…。」",
 		   NULL, "\"......By my guess, the quarantined zones won't be limited to just Hinamizawa. Worst case is, the quarantine could extend to the prefecture, or even to this whole part of the country...\"", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 1, "sprite/kei2_nayamu_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s24/01/nkei_0100", 128, TRUE);
@@ -1680,12 +1695,16 @@ void main()
 	DisableWindow();
 
 	DrawScene( "scene/601", 1000 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/re2a_nande_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 300, TRUE );}
 	PlayBGM( 0, "bgm1/toosenakiya", 70, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s24/02/nren_0080", 128, TRUE);
 	OutputLine(NULL, "「…何？　どうしたの魅ぃちゃん。」",
 		   NULL, "\"...What? What is it, Mii-chan?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 1, "sprite/kei2_ikari1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 300, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s24/01/nkei_0160", 128, TRUE);
@@ -1735,6 +1754,11 @@ void main()
 	DrawScene( "black", 400 );
 	FadeFilm( 0, TRUE ); //end monochrome color
 	DrawScene( "scene/601", 1000 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 3, "sprite/me2_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/re2a_nande_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 1, "sprite/kei2_ikari1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/gr3", 400 );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 1, "sprite/kei2_nayamu_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s24/01/nkei_0170", 128, TRUE);
 	OutputLine(NULL, "「何しろ、未だ電話が回復しないからな。こういう時、本当に無線は貴重だぜ。…それで、何がわかったんだ？」",
@@ -4235,17 +4259,22 @@ void main()
 	StopBGM( 0 );
 	DrawScene( "white", 100 );
 	DrawScene( "scene/602", 50 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/ma_g2", 50 );}
 	PlaySE( 0, "wav/down", 50, 64 );
 	ShakeScreen( 0, 9, 100, 5, 20, );
 	Wait( 500 );
 
 	PlayBGM( 1, "me/koware_wind", 70, 0 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 1, "sprite/kei2_ikari2_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s24/01/nkei_0310", 128, TRUE);
 	OutputLine(NULL, "「ぅ、うわ？！　み、魅音？！　大丈夫かッ？！」",
 		   NULL, "\"W-Wha?! M-Mion?! Are you all right?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 2, "sprite/re2a_okoru_a1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s24/02/nren_0190", 128, TRUE);
@@ -4263,12 +4292,17 @@ void main()
 		   NULL, " not even a social courtesy.", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );}
+
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナはそれを一喝すると、魅音を玄関に運び込んで床に寝かせる。",
 		   NULL, "After that cry from Rena, we carried Mion in past our door and laid her down on the floor.", Line_WaitForInput);
 	OutputLine(NULL, "魅音は左肩に大怪我をしていて服を血で真っ赤に染めていた。",
 		   NULL, " Mion's left shoulder was badly injured and her clothes were stained red with blood.", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/blood_1b", 50 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…その服の色は本当は黄色だった。",
@@ -4294,6 +4328,8 @@ void main()
 	OutputLine(NULL, "　その黄色が、真っ赤に染まって塗り潰されている。",
 		   NULL, "was now completely stained a purest red.", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/ma_g2", 400 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s24/01/nkei_0320", 128, TRUE);
@@ -6153,6 +6189,9 @@ void main()
 		   NULL, "\"That much is strange. I wonder why too.\"", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DrawFilm( 2, 0xcc, 0xcc, 0xcc, 256, 0, 0, TRUE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/mo1", 400 );}
+
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もしも夢や白昼夢の世界が実在するならば。",
 		   NULL, "If there was a world of dreams and daydreams,", Line_Continue);
@@ -6169,11 +6208,19 @@ void main()
 		   NULL, "So it didn't feel like we were going to lose to people like this!", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DrawScene("black", 400 );}
+	if (GetGlobalFlag(GHideCG)) {FadeFilm( 0, TRUE );;}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/ma2", 400 );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/renasen2_warai_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );}
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s24/02/nren_0500", 128, TRUE);
 	OutputLine(NULL, "「ねぇ、圭一くん。さっき魅ぃちゃんの話を聞いてさ。圭一くんも朗報だって言ってくれたけどさ。私は他の意味でも朗報だ、って思ったよ。」",
 		   NULL, "\"Hey, Keiichi-kun. When Mii-chan was talking to us earlier? When you said you thought that was good news too, I thought it was good news for a different reason.\"", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 1, "sprite/kei5_def1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s24/01/nkei_0590", 128, TRUE);
@@ -6184,6 +6231,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/moon", 400 );}
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今、俺が浮かべている表情を、",
 		   NULL, "Right now Rena was wearing the same expression as me,", Line_Continue);
@@ -6220,6 +6268,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
+	if (GetGlobalFlag(GHideCG)) {DrawScene("black", 400 );}
 	PlaySE( 0, "wav/daidageki", 100, 64 );
 	ShakeScreen( 4, 15, 20, 50, 1, );
 
@@ -6235,6 +6284,8 @@ void main()
 	StopBGM( 0 );
 
 	PlayBGM( 0, "bgm1/moon_bow_eq", 70, 0 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/ma5", 400 );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/renasen2_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
 	PlaySE( 0, "a5_10316", 70, 64 );
 	ShakeScreen( 2, 6,  100 , 2, 50, );
 
@@ -6244,11 +6295,17 @@ void main()
 		   NULL, "\"There's not enough of them to go around!!\"", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 1, "sprite/kei5_ikari1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );}
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s24/01/nkei_0640", 128, TRUE);
 	OutputLine(NULL, "「俺ぁ、てっきり村全部が敵でよ、雛見沢２０００人を丸々ぶっ潰すつもりだったから、あんまりの少なさに拍子抜けしちまってたところだぜッ！！」",
 		   NULL, "\"I was convinced the whole village was our enemy. I was ready to crush all 2,000 people in Hinamizawa, so I was almost disappointed to hear there were so few!!\"", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/renasen2_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s24/02/nren_0530", 128, TRUE);
@@ -6256,11 +6313,18 @@ void main()
 		   NULL, "\"A hundred people in 72 hours? And there's only twenty here.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 1, "sprite/kei5_ikari2_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );}
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s24/01/nkei_0650", 128, TRUE);
 	OutputLine(NULL, "「馬鹿にしてやがるぜ、まったくにもって馬鹿にしてやがるぜ！　本気の俺とレナを相手に、１００人を７２時間でだって？！」",
 		   NULL, "\"They're underestimating us. They're absolutely underestimating us! Taking down a hundred foes in 72 hours when Rena and I are both serious?!\"", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {FadeBustshot(2, FALSE, 0, 0, 0, 0, 100, TRUE);}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/renasen2_warai_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s24/02/nren_0540", 128, TRUE);
@@ -6268,17 +6332,26 @@ void main()
 		   NULL, "\"Think we'll have time to spare?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 1, "sprite/kei5_nayamu_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );}
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s24/01/nkei_0660", 128, TRUE);
 	OutputLine(NULL, "「むしろ足りないね。」",
 		   NULL, "\"Nah, there won't be enough.\"", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/renasen2_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s24/02/nren_0550", 128, TRUE);
 	OutputLine(NULL, "「やっぱりてこずる？」",
 		   NULL, "\"You think they'll give us trouble?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 1, "sprite/kei5_def2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s24/01/nkei_0670", 128, TRUE);
@@ -6287,6 +6360,8 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 1, "sprite/kei5_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 2, "sprite/renasen2_warai_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
 	DrawScene( "black", 1000 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　くすくす。",
@@ -6903,6 +6978,10 @@ void main()
 	PlayBGM( 0, "bgm1/otonasi", 70, 0 );
 	DrawScene( "white", 1000 );
 	DrawScene( "scene/604a", 1000 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/outb_jt1", 1000 );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 5, "sprite/ri2_komaru_a2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );}
+	if (GetGlobalFlag(GHideCG)) {Wait( 200 );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 5, "sprite/ri2_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );}
 
 	//;【梨花】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -6911,12 +6990,19 @@ void main()
 		   NULL, "\"I'll stay here.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 4, "sprite/sa2a_odoroki_a1_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 400, TRUE );}
+
 	//;【沙都子】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s24/04/nsat_0040", 128, TRUE);
 	OutputLine(NULL, "「……梨花っ……。」",
 		   NULL, "\"......Rika......\"", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {FadeBustshot(1, FALSE, 0, 0, 0, 0, 200, TRUE);}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 5, "sprite/ri2_niko_a1_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
 
 	//;ld l,rik_2,80
 	//;【梨花】
@@ -6939,6 +7025,9 @@ void main()
 		   NULL, "But I could understand she said she'd remain in the village by herself.", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 4, "sprite/sa2a_hannbeso_a1_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
+
 	//;【沙都子】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s24/04/nsat_0050", 128, TRUE);
@@ -6948,6 +7037,8 @@ void main()
 	DisableWindow();
 
 	DrawScene( "scene/604b", 1000 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 5, "sprite/ri2_warai_a1_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, TRUE );}
+
 	//;【梨花】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s24/05/nrik_0030", 128, TRUE);
@@ -6964,12 +7055,18 @@ void main()
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 4, "sprite/sa2a_hannbeso_a3_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );}
+
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　親友の沙都子だからこそ、",
 		   NULL, "Because Satoko was her best friend...", Line_WaitForInput);
 	OutputLine(NULL, "……こんな目を見せる梨花は、絶対に説得できないと理解する……。",
 		   NULL, " ...She understood there was no convincing Rika once she gave us that look...", Line_Normal);
 	ClearMessage();
+
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 1, "sprite/kei2_nayamu_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 400, TRUE );}
 
 	//;【圭一】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -6987,6 +7084,7 @@ void main()
 	DisableWindow();
 
 	DrawScene( "scene/604c", 1000 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/outb_jt1", 1000 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花はそれを伝えると、",
@@ -7013,6 +7111,10 @@ void main()
 	DisableWindow();
 
 	DrawScene( "scene/604d", 1000 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 5, "sprite/ri2_niko_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );}
+	if (GetGlobalFlag(GHideCG)) {Wait( 1000 );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 5, "sprite/ri2_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 400, TRUE );}
+
 	//;【梨花】
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s24/05/nrik_0050", 128, TRUE);
