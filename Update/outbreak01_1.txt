@@ -1965,7 +1965,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s24/03/nmio_0240", 128, TRUE);
 	OutputLine(NULL, "「…うん。",
-		   NULL, "\"...Yeah.", Line_WaitForInput);
+		   NULL, "\"...Yeah.", Line_Continue);
 	OutputLine(NULL, "…………ほら、沙都子の両親がダムの誘致派だったのは知ってるでしょ？",
 		   NULL, " .........So, you know how Satoko's parents were in favor of the dam being built, right?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s24/03/nmio_0250", 128, TRUE);
