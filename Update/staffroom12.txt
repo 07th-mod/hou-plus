@@ -475,7 +475,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>竜騎士07</color>", NULL, "<color=#f5e6d3>Ryukishi07</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ＦＦⅣはローザの衣装で、ＦＦⅤはモンクの衣装に赤魔導師に竜騎士にすっぴんに！",
-		   NULL, "There was Rosa's outfit from FF4, then there were the Monk, Red Mage, and Dragoon outfits from FF5 with no makeup!", Line_Normal);
+		   NULL, "There was Rosa's outfit from FF4, then there were the Monk, Red Mage, Dragoon, and Freelancer outfits from FF5!", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 0, "wav/boyon", 70, 64 );
