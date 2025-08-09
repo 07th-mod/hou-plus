@@ -1,0 +1,6178 @@
+{
+	"comment_lookup": "To lookup, first check the voice database. Then check the script fallback. Then check the global fallback.",
+	"comment_paths": "Note: when looking up paths, paths starting with '<' like <SPECIAL_TEXT_EFFECT>  are special cases. And if a match is 'null' then it means this sprite was never matched.",
+	"global_fallback": {
+		"background/blood_1b": "bg/efe/blood_1b",
+		"background/bui_r1e": "bg/keisatu/ke_ky4",
+		"background/chika_shisetsu": "bg/tokyo/ko1",
+		"background/cit_1a": "bg/mati2/mati_101",
+		"background/cit_1ar": "bg/mati2/mati_101y",
+		"background/cit_3a": "bg/mati2/mati_002",
+		"background/cit_4a": "bg/mati/mati10a",
+		"background/damu2": "bg/mizube/y_damu2",
+		"background/damu4": "bg/hina/damu1m",
+		"background/file": "bg/sonota/file",
+		"background/fure1": "bg/sonota/fure1",
+		"background/fure2": "bg/sonota/fure2",
+		"background/g1": "bg/gakkou/g1",
+		"background/gk1": "bg/gakkou/gk1",
+		"background/gk3": "bg/gakkou/gk3",
+		"background/gomibako": "bg/2021_add/gomibako",
+		"background/gr3": "bg/gakkou/gr3",
+		"background/greyscale/gk1": "bg/gakkou/gk1",
+		"background/greyscale/gk3": "bg/gakkou/gk3",
+		"background/greyscale/hi1": "bg/mura/hi1",
+		"background/greyscale/hina_bus_03": "bg/hina/bus_03",
+		"background/greyscale/hoteru": "bg/sion/si_h1",
+		"background/greyscale/kawa4": "bg/hina/damu1m",
+		"background/greyscale/kimi_ten1": "bg/sion/si_h6",
+		"background/greyscale/mati_ji1": "bg/mati/mati_ji1",
+		"background/greyscale/moon": "bg/mura/moon",
+		"background/greyscale/neki1": "bg/mati/mati9",
+		"background/greyscale/ng_kyo": "bg/tokyo/ko3",
+		"background/greyscale/sta_1a": "bg/mati/eki2",
+		"background/greyscale/susuki": "bg/mori/kusa",
+		"background/greyscale/toi_1a": "bg/mati/wc1",
+		"background/hasi3": "bg/mori/hasi3",
+		"background/heaven_tengoku": "bg/2021_add/heaven_tengoku",
+		"background/heri_gunji_01": "bg/sonota/heri1",
+		"background/hi1": "bg/mura/hi1",
+		"background/hi3": "bg/mura/hi3",
+		"background/hi4": "bg/mura/hi4",
+		"background/hi5": "bg/mura/hi5",
+		"background/hi9": "bg/mura/hi9",
+		"background/hi_scroll": "bg/mura/m_hi4",
+		"background/hina_ari": "bg/hina/ari",
+		"background/hina_bus_01": "bg/hina/bus_01",
+		"background/hina_bus_02": "bg/hina/bus_02",
+		"background/hina_bus_03": "bg/hina/bus_03",
+		"background/hina_bus_04": "bg/hina/bus_04",
+		"background/hina_douro_01": "bg/hina/douro_01",
+		"background/hina_douro_03": "bg/hina/douro_02",
+		"background/hina_douro_04": "bg/hina/douro_04",
+		"background/hina_ryouri": "bg/mati/ryouri",
+		"background/hina_simen1": "bg/sonota/simen1",
+		"background/hina_title_1": "bg/hina/bus_05",
+		"background/hu2": "bg/hurude/hu2",
+		"background/hu_ima": "bg/hurude/hu_r1",
+		"background/ie1": "bg/mura/ie1",
+		"background/jansou": "bg/mati/jansou",
+		"background/je1": "bg/tokyo/ho3",
+		"background/ji1": "bg/jinja/ji1",
+		"background/ji2": "bg/jinja/ji2",
+		"background/js3_01": "bg/jinja/jsa7",
+		"background/jsa1": "bg/jinja/jsa1",
+		"background/jt1": "bg/jinja/jt1",
+		"background/jt2": "bg/jinja/jt2",
+		"background/juku1_01": "bg/mati/juku2",
+		"background/jy2": "bg/jinja/jy2",
+		"background/k_kouen1": "bg/mati/kouen",
+		"background/ka4": "bg/sinryoujo/sinryou_sinsatu4",
+		"background/kamik_etc_1": "bg/etc/etc_1",
+		"background/kamik_ke_ky1": "bg/keisatu/ke_ky1",
+		"background/kamik_mati1": "bg/mati/mati1",
+		"background/kamik_mati16": "bg/mati/mati16",
+		"background/kamik_mati2": "bg/mati/mati2",
+		"background/kamik_mati3": "bg/mati/mati3",
+		"background/kamik_mati4": "bg/mati/mati17",
+		"background/kamik_mati_001": "bg/mati2/mati_206",
+		"background/kamik_mati_005": "bg/mati2/mati_101y",
+		"background/kamik_mati_102": "bg/mati/mati16",
+		"background/kamik_mati_203": "bg/mati2/mati_001",
+		"background/kamik_mati_204": "bg/mati2/mati_204",
+		"background/kamik_mati_206": "bg/mati2/mati_206",
+		"background/kamik_mati_301y": "bg/mati2/mati_102y",
+		"background/kamik_mati_302y": "bg/mati2/mati_204",
+		"background/kamik_mati_401": "bg/mati2/mati_401",
+		"background/kamik_mati_403": "bg/mati2/mati_403",
+		"background/kamik_mati_403y": "bg/mati2/mati_403y",
+		"background/kamik_mati_502": "bg/mati2/mati_502",
+		"background/kamik_mati_503": "bg/mati2/mati_503",
+		"background/kamik_mati_504": "bg/mati2/mati_504",
+		"background/kamik_sinryou_matiai1": "bg/sinryoujo/sinryou_rouka2",
+		"background/kamik_sinryou_matiai2": "bg/keisatu/ke5",
+		"background/kamik_sinryou_rouka1": "bg/sinryoujo/sinryou_rouka1",
+		"background/kamik_sinryou_rouka2": "bg/sinryoujo/sinryou_rouka2",
+		"background/kamik_sinryou_soto1": "bg/sinryoujo/sinryou_soto1",
+		"background/kamik_sinryou_soto4": "bg/sinryoujo/sinryou_soto4",
+		"background/kamik_sono_005": "bg/sonozakigumi/sono_005",
+		"background/kaw_r1an": "bg/mati/ryou1",
+		"background/kaw_r1cn": "bg/mati/ryou2",
+		"background/ke2": "bg/keisatu/ke2",
+		"background/ke5": "bg/keisatu/ke5",
+		"background/ke_shiryou1_02": "img/dsc00039",
+		"background/koudou": "bg/mati/mati7",
+		"background/koudou_02": "bg/mati2/mati_005",
+		"background/kouisitu1": "bg/2021_add/kouisitu1",
+		"background/kouisitu2": "bg/sinryoujo/sinryou_sinsatu4",
+		"background/kuruma2": "bg/kuruma/kuruma2",
+		"background/kuruma3_01": "bg/kuruma/kuruma3",
+		"background/kuruma5": "bg/kuruma/kuruma5",
+		"background/kuruma5_01": "bg/hina/car_1",
+		"background/kuruma6": "bg/kuruma/kuruma6",
+		"background/m_hi1": "bg/mura/m_hi1",
+		"background/m_hi3": "bg/mura/m_hi3",
+		"background/m_hi4": "bg/mura/m_hi4",
+		"background/m_hi5_01": "bg/mura/m_hi7",
+		"background/m_hi6": "bg/mura/m_hi6",
+		"background/m_hi8": "bg/mura/m_hi13",
+		"background/m_y4": "bg/mura/y_ie2",
+		"background/ma1": "bg/maebara/ma1",
+		"background/ma2": "bg/maebara/ma2",
+		"background/ma3": "bg/maebara/ma3",
+		"background/ma5": "bg/maebara/ma5",
+		"background/ma_g1": "bg/maebara/ma_g1",
+		"background/ma_g2": "bg/maebara/ma_g2",
+		"background/ma_g3": "bg/maebara/ma_g3",
+		"background/ma_j3": "bg/maebara/ma_j3",
+		"background/ma_s1": "bg/maebara/ma_s1",
+		"background/mati12": "bg/mati/mati12",
+		"background/mati3": "bg/mati/mati3",
+		"background/mati4": "bg/mati/mati4",
+		"background/mati7": "bg/mati/mati7",
+		"background/mati_o1": "bg/mati/mati_o1",
+		"background/mati_o6": "bg/mati/mati_o6",
+		"background/mboi_1c": "bg/sinryoujo/sinryou_sinsatu4",
+		"background/mizugi": "bg/2021_add/mizugi",
+		"background/mo1": "bg/mori/mo1",
+		"background/mo2": "bg/mori/mo2",
+		"background/mo4": "bg/mori/mo4",
+		"background/moon": "bg/mura/moon",
+		"background/nort": "bg/sonota/nort",
+		"background/oki_pool1": "bg/2021_add/pool1",
+		"background/oki_pool2": "bg/2021_add/pool2",
+		"background/oki_pool3": "bg/2021_add/pool3",
+		"background/oni1": "bg/jinja/jsa1",
+		"background/outb_g1": "bg/gakkou/g1",
+		"background/outb_gr1": "bg/gakkou/gr1",
+		"background/outb_gr2": "bg/gakkou/gr2",
+		"background/outb_jiei_003": "bg/jiei/jiei_003",
+		"background/outb_jt1": "bg/mura2/mura_002",
+		"background/outb_jyt1": "bg/mura2/mura_003",
+		"background/outb_koya1y": "bg/mori/koya1y",
+		"background/outb_shikenkan": "bg/etc/shikenkan",
+		"background/p1": "bg/2021_add/p1",
+		"background/p2": "bg/2021_add/p2",
+		"background/par_1ay": "bg/mati2/mati_103y",
+		"background/re_s4_01": "bg/rena/ren_s3",
+		"background/res1": "bg/resut/re1",
+		"background/res2": "bg/resut/re2",
+		"background/res4": "bg/resut/re4",
+		"background/res5": "bg/resut/re3",
+		"background/ryoutei2_01": "bg/sonozaki/ryoutei2",
+		"background/saiguden_02": "bg/jinja/jsa2",
+		"background/saiguden_03": "bg/jinja/jsa4",
+		"background/sinryou_sinsatu2": "bg/sinryoujo/sinryou_sinsatu2",
+		"background/sinryou_soto1": "bg/sinryoujo/sinryou_soto1",
+		"background/sky_4b": "bg/mati/mati1",
+		"background/so1": "bg/sonozaki/so1",
+		"background/so_k1": "bg/sonozaki/so_k1",
+		"background/sora": "bg/mura/sora",
+		"background/sora2": "bg/mura/sora2",
+		"background/sora5": "bg/mura/sora5",
+		"background/susuki": "bg/mori/kusa",
+		"background/ta2": "bg/mura/tab2",
+		"background/tennai1": "bg/mati/tennai1",
+		"background/tikan_gekitai": "bg/2021_add/tikan_gekitai",
+		"background/toi_1a": "bg/resut/toire1",
+		"background/toire2": "bg/resut/toire2",
+		"background/torakku1": "bg/kuruma/torakku1",
+		"background/torakku2": "bg/kuruma/torakku2",
+		"background/uchu_space": "bg/2021_add/uchu_space",
+		"background/uchu_space1": "bg/2021_add/uchu_space1",
+		"background/uchu_space2": "bg/2021_add/uchu_space2",
+		"background/y_damu2": "bg/mizube/y_damu2",
+		"background/y_ie1": "bg/mori/koya2y",
+		"black": "black",
+		"chapter/back": "chapter/back",
+		"chapter/center2": "chapter/center2",
+		"chapter/center_low2": "chapter/center_low2",
+		"chapter/left2": "chapter/left2",
+		"chapter/right2": "chapter/right2",
+		"chapter/tuika_1": "chapter/tuika_1",
+		"chapter/tuika_2": "chapter/tuika_2",
+		"chapter/tuika_3": "chapter/tuika_3",
+		"chapter/tuika_4": "chapter/tuika_4",
+		"credits/hou_cast1": "credits/hou_cast1",
+		"credits/hou_cast2": "credits/hou_cast2",
+		"credits/hou_staff1": "credits/hou_staff1",
+		"credits/hou_staff2": "credits/hou_staff2",
+		"credits/hou_staff_2a": "credits/hou_staff_2a",
+		"credits/hou_staff_2a_jp": "credits/hou_staff_2a_jp",
+		"credits/hou_staff_2b": "credits/hou_staff_2b",
+		"credits/hou_staff_2b_jp": "credits/hou_staff_2b_jp",
+		"credits/hou_staff_2c": "credits/hou_staff_2c",
+		"credits/hou_staff_2c_jp": "credits/hou_staff_2c_jp",
+		"credits/tei_cast1": "credits/tei_cast1",
+		"credits/tei_cast2": "credits/tei_cast2",
+		"effect/aka1": "effect/aka1",
+		"effect/aka2": "effect/aka2",
+		"effect/bg0": "effect/bg0",
+		"effect/bite": "bg/efe/bite",
+		"effect/blade1w": "bg/efe/blade1w",
+		"effect/blade2w": "bg/efe/blade2w",
+		"effect/blade8_1w": "bg/efe/blade8_1w",
+		"effect/blood_1a": "bg/efe/blood_1a",
+		"effect/blood_1ar": "bg/efe/blood_1ar",
+		"effect/blood_1b": "bg/efe/blood_1b",
+		"effect/blood_2a": "bg/efe/blood_2a",
+		"effect/blood_2b": "bg/efe/blood_2b",
+		"effect/blood_2c": "bg/efe/blood_2c",
+		"effect/blood_2d": "bg/efe/blood_2d",
+		"effect/blood_2e": "bg/efe/blood_2e",
+		"effect/bullet_1a": "effect/bullet_1a",
+		"effect/bullet_1b": "effect/bullet_1b",
+		"effect/bullet_1c": "effect/bullet_1c",
+		"effect/bullet_1d": "effect/bullet_1d",
+		"effect/cinema": "effect/cinema",
+		"effect/day_1": "bg/etc/day_1",
+		"effect/day_10": "bg/etc/day_10",
+		"effect/day_11": "bg/etc/day_11",
+		"effect/day_2": "bg/etc/day_2",
+		"effect/different_spiral_1a": "bg/efe/different_spiral_1a",
+		"effect/different_spiral_1b": "bg/efe/different_spiral_1b",
+		"effect/down": "effect/down",
+		"effect/eye": "bg/sonota/eye",
+		"effect/eye_base_b": "<USE_MOD_VERSION>",
+		"effect/eye_base_r": "<USE_MOD_VERSION>",
+		"effect/furiker_a": "furiker_a",
+		"effect/furiker_b": "furiker_b",
+		"effect/furiker_c": "effect/f_c",
+		"effect/hara": "<SPRITE_MATCH>",
+		"effect/hnit": "<SPRITE_MATCH>",
+		"effect/hoda": "<SPRITE_MATCH>",
+		"effect/hton": "<SPRITE_MATCH>",
+		"effect/hyos": "<SPRITE_MATCH>",
+		"effect/kamik_inf_1": "bg/etc/inf_1",
+		"effect/kamik_inf_2": "bg/etc/inf_2",
+		"effect/kamik_inf_3": "bg/etc/inf_3",
+		"effect/kamik_inf_4": "bg/etc/inf_4",
+		"effect/kamik_inf_5": "bg/etc/inf_5",
+		"effect/kei": "<SPRITE_MATCH>",
+		"effect/left": "effect/left",
+		"effect/logomask": "effect/logomask",
+		"effect/m1": "effect/m1",
+		"effect/mask1": "effect/1",
+		"effect/mask2": "effect/mask2",
+		"effect/mask4": "effect/mask4",
+		"effect/maskaa": "effect/aa",
+		"effect/maskc": "effect/maskc",
+		"effect/omo1_1": "bg/etc/omo1_1",
+		"effect/omo1_2": "bg/etc/omo1_2",
+		"effect/omo1_3": "bg/etc/omo1_3",
+		"effect/omo1_4": "bg/etc/omo1_4",
+		"effect/omo1_5": "bg/etc/omo1_5",
+		"effect/omo2_1": "bg/etc/omo2_1",
+		"effect/omo2_2": "bg/etc/omo2_2",
+		"effect/oyasiro": "<SPRITE_MATCH>",
+		"effect/right": "effect/right",
+		"effect/ryuuketu1": "effect/ryuuketu1",
+		"effect/title02": "effect/title02",
+		"effect/tyuui": "img/tyuui",
+		"effect/up": "effect/up",
+		"effect/v_hurricane": "<USE_MOD_VERSION>",
+		"effect/wagabu": "<SPECIAL_TEXT_EFFECT>",
+		"effect/x": "effect/x",
+		"omake/lock_bg": "omake/lock_bg",
+		"omake/music": "omake/music",
+		"omake/s_roll_last_1": "bg/2021_add/s_roll_last_1",
+		"omake/s_roll_last_2": "bg/2021_add/s_roll_last_2",
+		"omake/stuff_only": "img/stuff_only",
+		"omake/tyuit": "omake/tyuit",
+		"red": "red",
+		"scene/601": "<SPECIAL_SCENE>",
+		"scene/602": "<SPECIAL_SCENE>",
+		"scene/603": "<SPECIAL_SCENE>",
+		"scene/604a": "<SPECIAL_SCENE>",
+		"scene/604b": "<SPECIAL_SCENE>",
+		"scene/604c": "<SPECIAL_SCENE>",
+		"scene/604d": "<SPECIAL_SCENE>",
+		"scene/605a": "<SPECIAL_SCENE>",
+		"scene/605b": "<SPECIAL_SCENE>",
+		"scene/606": "<SPECIAL_SCENE>",
+		"scene/607": "<SPECIAL_SCENE>",
+		"scene/608": "<SPECIAL_SCENE>",
+		"scene/609": "<SPECIAL_SCENE>",
+		"scene/610": "<SPECIAL_SCENE>",
+		"scene/611a": "<SPECIAL_SCENE>",
+		"scene/611b": "<SPECIAL_SCENE>",
+		"scene/611c": "<SPECIAL_SCENE>",
+		"scene/612": "<SPECIAL_SCENE>",
+		"scene/613": "<SPECIAL_SCENE>",
+		"scene/614a": "<SPECIAL_SCENE>",
+		"scene/614b": "<SPECIAL_SCENE>",
+		"scene/614c": "<SPECIAL_SCENE>",
+		"scene/614d": "<SPECIAL_SCENE>",
+		"scene/615": "<SPECIAL_SCENE>",
+		"scene/616": "<SPECIAL_SCENE>",
+		"scene/617a": "<SPECIAL_SCENE>",
+		"scene/617b": "<SPECIAL_SCENE>",
+		"scene/617c": "<SPECIAL_SCENE>",
+		"scene/618a": "<SPECIAL_SCENE>",
+		"scene/618b": "<SPECIAL_SCENE>",
+		"scene/619": "<SPECIAL_SCENE>",
+		"scene/620a": "<SPECIAL_SCENE>",
+		"scene/620b": "<SPECIAL_SCENE>",
+		"title/07th-mod": "<USE_MOD_VERSION>",
+		"title/07thlogo": "title/07thlogo",
+		"title/akairo": "title/akairo",
+		"title/ken": "title/ken",
+		"title/logo": "title/logo",
+		"title/mangagamer": "title/mangagamer",
+		"title/rik_alt": "title/rik_3f",
+		"title/title": "title/title",
+		"title/title3": "title/title3",
+		"title/title3scroll": "<USE_MOD_VERSION>",
+		"white": "white"
+	},
+	"script_fallback": {
+		"&endroll": {},
+		"&opening": {},
+		"busstop01": {
+			"background/damu2": "bg/mizube/y_damu2",
+			"background/damu4": "bg/hina/damu1m",
+			"background/hina_bus_01": "bg/hina/bus_01",
+			"background/hina_bus_02": "bg/hina/bus_02",
+			"background/hina_bus_03": "bg/hina/bus_03",
+			"background/hina_bus_04": "bg/hina/bus_04",
+			"background/hina_douro_01": "bg/hina/douro_01",
+			"background/hina_douro_04": "bg/hina/douro_04",
+			"background/hina_title_1": "bg/hina/bus_05",
+			"effect/furiker_c": "effect/f_c",
+			"effect/maskaa": "effect/aa",
+			"red": "red"
+		},
+		"dummy": {},
+		"flow": {
+			"title/07th-mod": "<USE_MOD_VERSION>",
+			"title/rik_alt": "title/rik_3f",
+			"title/title3scroll": "<USE_MOD_VERSION>"
+		},
+		"init": {},
+		"mehagashi": {
+			"background/oki_pool2": "bg/2021_add/pool2",
+			"effect/mask1": "effect/1",
+			"red": "red"
+		},
+		"outbreak01_1": {
+			"background/outb_gr2": "bg/gakkou/gr2",
+			"background/outb_jt1": "bg/mura2/mura_002",
+			"effect/maskaa": "effect/aa"
+		},
+		"outbreak02_1": {
+			"background/bui_r1e": "bg/keisatu/ke_ky4",
+			"background/kamik_ke_ky1": "bg/keisatu/ke_ky1",
+			"background/kamik_mati16": "bg/mati/mati16",
+			"background/kamik_mati3": "bg/mati/mati3",
+			"background/kamik_mati_001": "bg/mati2/mati_206",
+			"background/kamik_mati_102": "bg/mati/mati16",
+			"background/kamik_mati_203": "bg/mati2/mati_001",
+			"background/kamik_mati_204": "bg/mati2/mati_204",
+			"background/kamik_mati_206": "bg/mati2/mati_206",
+			"background/kamik_mati_401": "bg/mati2/mati_401",
+			"background/kamik_mati_502": "bg/mati2/mati_502",
+			"background/kamik_mati_504": "bg/mati2/mati_504",
+			"background/kamik_sinryou_rouka1": "bg/sinryoujo/sinryou_rouka1",
+			"background/kaw_r1an": "bg/mati/ryou1",
+			"background/kaw_r1cn": "bg/mati/ryou2",
+			"background/mboi_1c": "bg/sinryoujo/sinryou_sinsatu4",
+			"effect/eye_base_b": "<USE_MOD_VERSION>",
+			"effect/eye_base_r": "<USE_MOD_VERSION>",
+			"effect/furiker_c": "effect/f_c",
+			"effect/kamik_inf_1": "bg/etc/inf_1",
+			"effect/mask1": "effect/1",
+			"effect/maskaa": "effect/aa",
+			"effect/v_hurricane": "<USE_MOD_VERSION>",
+			"red": "red"
+		},
+		"staffroom": {
+			"effect/furiker_c": "effect/f_c"
+		},
+		"staffroom02": {
+			"effect/mask1": "effect/1"
+		},
+		"staffroom03": {
+			"effect/mask1": "effect/1",
+			"effect/v_hurricane": "<USE_MOD_VERSION>"
+		},
+		"staffroom06": {},
+		"staffroom08": {},
+		"staffroom11": {},
+		"staffroom12": {
+			"effect/furiker_c": "effect/f_c"
+		},
+		"staffroom13": {
+			"effect/furiker_c": "effect/f_c",
+			"effect/mask1": "effect/1"
+		},
+		"staffroom14": {},
+		"staffroom15": {
+			"effect/furiker_c": "effect/f_c"
+		},
+		"util": {}
+	},
+	"voice_database": {
+		"&endroll": {
+			"": {
+				"black": "black",
+				"credits/hou_cast1": "credits/hou_cast1",
+				"credits/hou_cast2": "credits/hou_cast2",
+				"credits/hou_staff1": "credits/hou_staff1",
+				"credits/hou_staff2": "credits/hou_staff2",
+				"credits/hou_staff_2a": "credits/hou_staff_2a",
+				"credits/hou_staff_2a_jp": "credits/hou_staff_2a_jp",
+				"credits/hou_staff_2b": "credits/hou_staff_2b",
+				"credits/hou_staff_2b_jp": "credits/hou_staff_2b_jp",
+				"credits/hou_staff_2c": "credits/hou_staff_2c",
+				"credits/hou_staff_2c_jp": "credits/hou_staff_2c_jp",
+				"credits/tei_cast1": "credits/tei_cast1",
+				"credits/tei_cast2": "credits/tei_cast2",
+				"omake/s_roll_last_1": "bg/2021_add/s_roll_last_1",
+				"omake/s_roll_last_2": "bg/2021_add/s_roll_last_2"
+			}
+		},
+		"&opening": {},
+		"busstop01": {
+			"": {
+				"background/hina_bus_01": "bg/hina/bus_01",
+				"background/hina_bus_03": "bg/hina/bus_02",
+				"background/hina_douro_01": "bg/hina/douro_01",
+				"background/hina_title_1": "bg/hina/title_1",
+				"black": "black",
+				"effect/tyuui": "img/tyuui"
+			},
+			"ps3/s26/00/tkak_0000": {
+				"background/hina_bus_03": "bg/hina/bus_02",
+				"black": "black"
+			},
+			"ps3/s26/00/tkak_0010": {},
+			"ps3/s26/00/tkak_0020": {},
+			"ps3/s26/00/tkak_0030": {},
+			"ps3/s26/00/tkak_0040": {},
+			"ps3/s26/00/tkak_0050": {},
+			"ps3/s26/00/tkak_0060": {},
+			"ps3/s26/00/tkak_0070": {},
+			"ps3/s26/00/tkak_0080": {},
+			"ps3/s26/00/tkak_0090": {},
+			"ps3/s26/00/tkak_0100": {
+				"black": "black"
+			},
+			"ps3/s26/00/tkak_0110": {
+				"background/hina_bus_03": "bg/hina/bus_03",
+				"black": "black"
+			},
+			"ps3/s26/00/tkak_0120": {},
+			"ps3/s26/00/tkak_0130": {},
+			"ps3/s26/00/tkak_0140": {
+				"white": "white"
+			},
+			"ps3/s26/00/tkat_0000": {},
+			"ps3/s26/00/tkat_0010": {},
+			"ps3/s26/00/tkat_0020": {},
+			"ps3/s26/00/tkat_0030": {},
+			"ps3/s26/00/tkat_0040": {},
+			"ps3/s26/00/tkon_0000": {},
+			"ps3/s26/00/tkon_0010": {},
+			"ps3/s26/00/tkon_0020": {},
+			"ps3/s26/00/toya_0000": {},
+			"ps3/s26/00/toya_0010": {},
+			"ps3/s26/00/toya_0020": {},
+			"ps3/s26/00/toya_0030": {},
+			"ps3/s26/00/toya_0040": {},
+			"ps3/s26/52/trik_0000": {},
+			"ps3/s26/52/trik_0010": {},
+			"ps3/s26/52/trik_0020": {},
+			"ps3/s26/52/trik_0030": {},
+			"ps3/s26/52/trik_0040": {},
+			"ps3/s26/52/trik_0050": {},
+			"ps3/s26/52/trik_0060": {},
+			"ps3/s26/52/trik_0070": {},
+			"ps3/s26/52/trik_0080": {},
+			"ps3/s26/52/trik_0090": {},
+			"ps3/s26/52/trik_0100": {},
+			"ps3/s26/52/trik_0110": {},
+			"ps3/s26/52/trik_0120": {},
+			"ps3/s26/52/trik_0130": {},
+			"ps3/s26/52/trik_0140": {},
+			"ps3/s26/52/trik_0150": {
+				"effect/right": "effect/right"
+			},
+			"ps3/s26/52/trik_0160": {
+				"background/hina_bus_03": "bg/hina/bus_03",
+				"effect/left": "effect/left",
+				"effect/right": "effect/right"
+			},
+			"ps3/s26/52/trik_0170": {},
+			"ps3/s26/52/trik_0180": {},
+			"ps3/s26/52/trik_0190": {},
+			"ps3/s26/52/trik_0200": {
+				"background/hina_bus_02": "bg/hina/douro_04",
+				"black": "black",
+				"effect/left": "effect/left",
+				"effect/up": "effect/up"
+			},
+			"ps3/s26/52/trik_0210": {},
+			"ps3/s26/52/trik_0220": {},
+			"ps3/s26/52/trik_0230": {},
+			"ps3/s26/52/trik_0240": {},
+			"ps3/s26/52/trik_0250": {},
+			"ps3/s26/52/trik_0260": {
+				"background/hina_bus_03": "<NO_MATCH>",
+				"black": "black"
+			},
+			"ps3/s26/52/trik_0270": {},
+			"ps3/s26/52/trik_0280": {},
+			"ps3/s26/52/trik_0290": {
+				"background/oni1": "bg/hina/kawa5m",
+				"black": "black"
+			},
+			"ps3/s26/52/trik_0300": {
+				"background/damu4": "<NO_MATCH>"
+			},
+			"ps3/s26/52/trik_0310": {
+				"background/damu2": "<NO_MATCH>"
+			},
+			"ps3/s26/52/trik_0320": {
+				"background/hina_bus_03": "bg/hina/bus_02",
+				"background/hina_bus_04": "<NO_MATCH>",
+				"black": "black"
+			},
+			"ps3/s26/52/trik_0330": {
+				"background/hina_bus_03": "bg/hina/bus_03",
+				"black": "black"
+			},
+			"ps3/s26/52/trik_0340": {},
+			"ps3/s26/52/trik_0350": {},
+			"ps3/s26/52/trik_0360": {},
+			"ps3/s26/52/trik_0370": {},
+			"ps3/s26/52/trik_0380": {},
+			"ps3/s26/52/trik_0390": {},
+			"ps3/s26/52/trik_0400": {},
+			"ps3/s26/52/trik_0410": {},
+			"ps3/s26/52/trik_0420": {},
+			"ps3/s26/52/trik_0430": {},
+			"ps3/s26/52/trik_0440": {},
+			"ps3/s26/52/trik_0450": {},
+			"ps3/s26/52/trik_0460": {},
+			"ps3/s26/52/trik_0470": {},
+			"ps3/s26/52/trik_0480": {},
+			"ps3/s26/52/trik_0490": {
+				"background/greyscale/neki1": "bg/hina/mati10m",
+				"effect/cinema": "effect/cinema"
+			},
+			"ps3/s26/52/trik_0500": {
+				"background/hina_bus_03": "<NO_MATCH>",
+				"black": "black",
+				"scene/613": "<SPECIAL_SCENE>"
+			},
+			"ps3/s26/52/trik_0510": {
+				"white": "white"
+			},
+			"ps3/s26/52/trik_0520": {},
+			"ps3/s26/52/trik_0530": {
+				"effect/right": "effect/right"
+			},
+			"ps3/s26/52/trik_0540": {},
+			"ps3/s26/52/trik_0550": {},
+			"ps3/s26/52/trik_0560": {},
+			"ps3/s26/52/trik_0570": {},
+			"ps3/s26/52/trik_0580": {},
+			"ps3/s26/52/trik_0590": {},
+			"ps3/s26/52/trik_0600": {},
+			"ps3/s26/52/trik_0610": {},
+			"ps3/s26/52/trik_0620": {},
+			"ps3/s26/52/trik_0630": {
+				"background/hina_bus_03": "<NO_MATCH>"
+			},
+			"ps3/s26/52/trik_0640": {},
+			"ps3/s26/52/trik_0650": {
+				"black": "black"
+			},
+			"ps3/s26/52/trik_0660": {},
+			"ps3/s26/52/trik_0670": {},
+			"ps3/s26/52/trik_0680": {
+				"background/hina_bus_03": "bg/hina/douro_02"
+			},
+			"ps3/s26/52/trik_0690": {},
+			"ps3/s26/52/trik_0700": {},
+			"ps3/s26/52/trik_0710": {
+				"background/hina_bus_03": "bg/hina/bus_rain",
+				"black": "black"
+			},
+			"ps3/s26/52/trik_0720": {},
+			"ps3/s26/52/trik_0730": {},
+			"ps3/s26/52/trik_0740": {},
+			"ps3/s26/52/trik_0750": {},
+			"ps3/s26/52/trik_0760": {},
+			"ps3/s26/52/trik_0770": {
+				"background/hina_bus_04": "<NO_MATCH>"
+			},
+			"ps3/s26/52/trik_0780": {},
+			"ps3/s26/52/trik_0790": {
+				"background/hina_bus_03": "<NO_MATCH>"
+			},
+			"ps3/s26/52/trik_0800": {
+				"background/hina_bus_03": "<NO_MATCH>",
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/s26/52/trik_0810": {
+				"background/hina_bus_04": "<NO_MATCH>",
+				"black": "black"
+			},
+			"ps3/s26/52/trik_0820": {
+				"effect/m1": "effect/m1",
+				"white": "white"
+			},
+			"ps3/s26/52/trik_0830": {},
+			"ps3/s26/52/trik_0840": {},
+			"ps3/s26/52/trik_0850": {},
+			"ps3/s26/52/trik_0860": {},
+			"ps3/s26/52/trik_0870": {},
+			"ps3/s26/52/trik_0880": {},
+			"ps3/s26/52/trik_0890": {},
+			"ps3/s26/52/trik_0900": {},
+			"ps3/s26/52/trik_0910": {
+				"background/hina_title_1": "bg/hina/bus_05",
+				"black": "black"
+			},
+			"ps3/s26/52/trik_0920": {
+				"background/hina_bus_01": "bg/hina/bus_01",
+				"black": "black"
+			},
+			"ps3/s26/52/trik_0930": {},
+			"ps3/s26/52/trik_0940": {
+				"background/greyscale/gk3": "bg/gakkou/gk3",
+				"black": "black",
+				"effect/cinema": "effect/cinema",
+				"effect/left": "effect/left"
+			},
+			"ps3/s26/52/trik_0950": {},
+			"ps3/s26/52/trik_0960": {},
+			"ps3/s26/52/trik_0970": {},
+			"ps3/s26/52/trik_0980": {},
+			"ps3/s26/52/trik_0990": {},
+			"ps3/s26/52/trik_1000": {},
+			"ps3/s26/52/trik_1010": {},
+			"ps3/s26/52/trik_1020": {},
+			"ps3/s26/52/trik_1030": {},
+			"ps3/s26/52/trik_1040": {},
+			"ps3/s26/52/trik_1050": {
+				"background/hina_bus_01": "bg/hina/bus_01",
+				"background/hina_title_1": "bg/hina/bus_05",
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/s26/52/trik_1060": {
+				"background/hina_bus_01": "<NO_MATCH>",
+				"background/hina_bus_03": "bg/hina/bus_03",
+				"black": "black"
+			},
+			"ps3/s26/52/trik_1070": {
+				"effect/left": "effect/left"
+			},
+			"ps3/s26/52/trik_1080": {},
+			"ps3/s26/52/trik_1090": {},
+			"ps3/s26/52/trik_1100": {},
+			"ps3/s26/52/trik_1110": {},
+			"ps3/s26/52/trik_1120": {},
+			"ps3/s26/52/trik_1130": {},
+			"ps3/s26/52/trik_1140": {},
+			"ps3/s26/52/trik_1150": {},
+			"ps3/s26/52/trik_1160": {},
+			"ps3/s26/52/trik_1170": {},
+			"ps3/s26/52/trik_1180": {},
+			"ps3/s26/52/trik_1190": {},
+			"ps3/s26/52/trik_1200": {},
+			"ps3/s26/52/trik_1210": {},
+			"ps3/s26/52/trik_1220": {},
+			"ps3/s26/52/trik_1230": {},
+			"ps3/s26/52/trik_1240": {},
+			"ps3/s26/52/trik_1250": {},
+			"ps3/s26/52/trik_1260": {},
+			"ps3/s26/52/trik_1270": {},
+			"ps3/s26/52/trik_1280": {
+				"background/hina_bus_03": "bg/hina/bus_03",
+				"black": "black"
+			},
+			"ps3/s26/52/trik_1290": {},
+			"ps3/s26/52/trik_1300": {},
+			"ps3/s26/52/trik_1310": {
+				"effect/right": "effect/right"
+			},
+			"ps3/s26/52/trik_1320": {},
+			"ps3/s26/52/trik_1330": {},
+			"ps3/s26/52/trik_1340": {},
+			"ps3/s26/52/trik_1350": {},
+			"ps3/s26/52/trik_1360": {},
+			"ps3/s26/52/trik_1370": {
+				"effect/left": "effect/left"
+			},
+			"ps3/s26/52/trik_1380": {
+				"background/hina_bus_01": "<NO_MATCH>",
+				"background/hina_douro_03": "bg/hina/douro_02",
+				"black": "black",
+				"effect/left": "effect/left",
+				"white": "white"
+			},
+			"ps3/s26/52/trik_1390": {},
+			"ps3/s26/52/trik_1400": {},
+			"ps3/s26/52/trik_1410": {},
+			"ps3/s26/52/trik_1420": {},
+			"ps3/s26/52/trik_1430": {},
+			"ps3/s26/52/trik_1440": {},
+			"ps3/s26/52/trik_1450": {},
+			"ps3/s26/52/trik_1460": {},
+			"ps3/s26/52/trik_1470": {},
+			"ps3/s26/52/trik_1480": {},
+			"ps3/s26/52/trik_1490": {},
+			"ps3/s26/52/trik_1500": {},
+			"ps3/s26/52/trik_1510": {},
+			"ps3/s26/52/trik_1520": {},
+			"ps3/s26/52/trik_1530": {},
+			"ps3/s26/52/trik_1540": {},
+			"ps3/s26/52/trik_1550": {
+				"background/hina_bus_04": "bg/hina/bus_04",
+				"black": "black"
+			},
+			"ps3/s26/52/trik_1560": {},
+			"ps3/s26/52/trik_1570": {
+				"background/greyscale/neki1": "bg/mati/mati9",
+				"effect/cinema": "effect/cinema"
+			},
+			"ps3/s26/52/trik_1580": {},
+			"ps3/s26/52/trik_1590": {},
+			"ps3/s26/52/trik_1600": {},
+			"ps3/s26/52/trik_1610": {},
+			"ps3/s26/52/trik_1620": {},
+			"ps3/s26/52/trik_1630": {},
+			"ps3/s26/52/trik_1640": {},
+			"ps3/s26/52/trik_1650": {
+				"background/hina_bus_01": "bg/hina/bus_rain"
+			},
+			"ps3/s26/52/trik_1660": {},
+			"ps3/s26/52/trik_1670": {},
+			"ps3/s26/52/trik_1680": {},
+			"ps3/s26/52/trik_1690": {},
+			"ps3/s26/52/trik_1700": {
+				"background/hina_title_1": "bg/hina/bus_05",
+				"black": "black"
+			},
+			"ps3/s26/52/trik_1710": {
+				"background/hina_douro_04": "<NO_MATCH>",
+				"black": "black",
+				"scene/617a": "<SPECIAL_SCENE>",
+				"white": "white"
+			},
+			"ps3/s26/52/trik_1720": {},
+			"ps3/s26/52/trik_1730": {},
+			"ps3/s26/52/trik_1740": {},
+			"ps3/s26/52/trik_1750": {},
+			"ps3/s26/52/trik_1760": {},
+			"ps3/s26/52/trik_1770": {},
+			"ps3/s26/52/trik_1780": {
+				"scene/617b": "<SPECIAL_SCENE>"
+			},
+			"ps3/s26/52/trik_1790": {},
+			"ps3/s26/52/trik_1800": {},
+			"ps3/s26/52/trik_1810": {
+				"scene/617a": "<SPECIAL_SCENE>"
+			},
+			"ps3/s26/52/trik_1820": {},
+			"ps3/s26/52/trik_1830": {},
+			"ps3/s26/52/trik_1840": {
+				"background/hina_douro_01": "bg/hina/douro_01",
+				"black": "black"
+			},
+			"ps3/s26/52/trik_1850": {},
+			"ps3/s26/52/trik_1860": {
+				"background/hina_bus_01": "bg/hina/bus_01",
+				"black": "black"
+			},
+			"ps3/s26/52/trik_1870": {},
+			"ps3/s26/52/trik_1880": {
+				"background/hina_douro_04": "<NO_MATCH>",
+				"red": "bg/hina/red1",
+				"white": "white"
+			},
+			"ps3/s26/52/trik_1890": {},
+			"ps3/s26/52/trik_1900": {},
+			"ps3/s26/52/trik_1910": {
+				"scene/619": "<SPECIAL_SCENE>"
+			},
+			"ps3/s26/52/trik_1920": {},
+			"ps3/s26/52/trik_1930": {},
+			"ps3/s26/52/trik_1940": {},
+			"ps3/s26/52/trik_1950": {},
+			"ps3/s26/52/trik_1960": {},
+			"ps3/s26/52/trik_1970": {},
+			"ps3/s26/52/trik_1980": {},
+			"ps3/s26/52/trik_1990": {
+				"background/hina_title_1": "bg/hina/bus_05",
+				"black": "black"
+			},
+			"ps3/s26/52/trik_2000": {},
+			"ps3/s26/52/trik_2010": {
+				"background/hina_douro_01": "<NO_MATCH>",
+				"scene/620a": "<SPECIAL_SCENE>"
+			},
+			"ps3/s26/52/trik_2020": {
+				"black": "black"
+			},
+			"ps3/s26/53/tmio_0000": {
+				"effect/right": "effect/right"
+			},
+			"ps3/s26/53/tmio_0010": {},
+			"ps3/s26/53/tmio_0020": {},
+			"ps3/s26/53/tmio_0030": {},
+			"ps3/s26/53/tmio_0040": {
+				"effect/right": "effect/right"
+			},
+			"ps3/s26/53/tmio_0050": {
+				"effect/left": "effect/left"
+			},
+			"ps3/s26/53/tmio_0060": {},
+			"ps3/s26/53/tmio_0070": {},
+			"ps3/s26/53/tmio_0080": {},
+			"ps3/s26/53/tmio_0090": {},
+			"ps3/s26/53/tmio_0100": {},
+			"ps3/s26/53/tmio_0110": {},
+			"ps3/s26/53/tmio_0120": {},
+			"ps3/s26/53/tmio_0130": {},
+			"ps3/s26/53/tmio_0140": {},
+			"ps3/s26/53/tmio_0150": {},
+			"ps3/s26/53/tmio_0160": {},
+			"ps3/s26/53/tmio_0170": {
+				"background/hina_bus_03": "<NO_MATCH>",
+				"black": "black",
+				"effect/right": "effect/right",
+				"scene/612": "<SPECIAL_SCENE>"
+			},
+			"ps3/s26/53/tmio_0180": {},
+			"ps3/s26/53/tmio_0190": {},
+			"ps3/s26/53/tmio_0200": {},
+			"ps3/s26/53/tmio_0210": {
+				"background/hina_bus_03": "<NO_MATCH>",
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/s26/53/tmio_0220": {},
+			"ps3/s26/53/tmio_0230": {},
+			"ps3/s26/53/tmio_0240": {},
+			"ps3/s26/53/tmio_0250": {
+				"effect/left": "effect/left"
+			},
+			"ps3/s26/53/tmio_0260": {},
+			"ps3/s26/53/tmio_0270": {},
+			"ps3/s26/53/tmio_0280": {},
+			"ps3/s26/53/tmio_0290": {
+				"effect/left": "effect/left"
+			},
+			"ps3/s26/53/tmio_0300": {
+				"background/hina_bus_03": "<NO_MATCH>",
+				"black": "black",
+				"effect/right": "effect/right"
+			},
+			"ps3/s26/53/tmio_0310": {},
+			"ps3/s26/53/tmio_0311": {
+				"effect/down": "effect/down"
+			},
+			"ps3/s26/53/tmio_0320": {
+				"white": "white"
+			},
+			"ps3/s26/53/tmio_0330": {
+				"background/hina_bus_04": "bg/hina/bus_04",
+				"black": "black"
+			},
+			"ps3/s26/53/tmio_0340": {},
+			"ps3/s26/53/tmio_0350": {
+				"background/hina_bus_03": "bg/hina/bus_02",
+				"black": "black",
+				"effect/right": "effect/right"
+			},
+			"ps3/s26/53/tmio_0360": {},
+			"ps3/s26/53/tmio_0370": {},
+			"ps3/s26/53/tmio_0380": {},
+			"ps3/s26/53/tmio_0390": {
+				"effect/right": "effect/right"
+			},
+			"ps3/s26/53/tmio_0400": {},
+			"ps3/s26/53/tmio_0410": {},
+			"ps3/s26/53/tmio_0420": {
+				"background/greyscale/kawa4": "bg/hina/damu1m",
+				"black": "black",
+				"effect/cinema": "effect/cinema"
+			},
+			"ps3/s26/53/tmio_0430": {},
+			"ps3/s26/53/tmio_0440": {},
+			"ps3/s26/53/tmio_0450": {},
+			"ps3/s26/53/tmio_0460": {},
+			"ps3/s26/53/tmio_0470": {},
+			"ps3/s26/53/tmio_0480": {},
+			"ps3/s26/53/tmio_0490": {},
+			"ps3/s26/53/tmio_0500": {},
+			"ps3/s26/53/tmio_0510": {},
+			"ps3/s26/53/tmio_0520": {},
+			"ps3/s26/53/tmio_0530": {},
+			"ps3/s26/53/tmio_0540": {},
+			"ps3/s26/53/tmio_0550": {},
+			"ps3/s26/53/tmio_0560": {},
+			"ps3/s26/53/tmio_0570": {},
+			"ps3/s26/53/tmio_0580": {
+				"background/hina_bus_03": "<NO_MATCH>",
+				"black": "black"
+			},
+			"ps3/s26/53/tmio_0590": {
+				"effect/down": "effect/down",
+				"effect/right": "effect/right"
+			},
+			"ps3/s26/53/tmio_0600": {},
+			"ps3/s26/53/tmio_0610": {},
+			"ps3/s26/53/tmio_0620": {},
+			"ps3/s26/53/tmio_0630": {
+				"black": "black"
+			},
+			"ps3/s26/53/tmio_0640": {
+				"effect/left": "effect/left"
+			},
+			"ps3/s26/53/tmio_0650": {},
+			"ps3/s26/53/tmio_0660": {},
+			"ps3/s26/53/tmio_0670": {},
+			"ps3/s26/53/tmio_0680": {},
+			"ps3/s26/53/tmio_0690": {},
+			"ps3/s26/53/tmio_0700": {},
+			"ps3/s26/53/tmio_0710": {},
+			"ps3/s26/53/tmio_0720": {},
+			"ps3/s26/53/tmio_0730": {},
+			"ps3/s26/53/tmio_0740": {},
+			"ps3/s26/53/tmio_0750": {},
+			"ps3/s26/53/tmio_0760": {
+				"background/hina_bus_03": "bg/hina/bus_03",
+				"black": "black",
+				"effect/right": "effect/right"
+			},
+			"ps3/s26/53/tmio_0770": {},
+			"ps3/s26/53/tmio_0780": {},
+			"ps3/s26/53/tmio_0790": {},
+			"ps3/s26/53/tmio_0800": {},
+			"ps3/s26/53/tmio_0810": {},
+			"ps3/s26/53/tmio_0820": {
+				"background/hina_bus_03": "bg/hina/bus_02"
+			},
+			"ps3/s26/53/tmio_0830": {
+				"background/hina_douro_01": "<NO_MATCH>",
+				"black": "black",
+				"effect/eye": "bg/sonota/eye",
+				"white": "white"
+			},
+			"ps3/s26/53/tmio_0840": {},
+			"ps3/s26/53/tmio_0850": {},
+			"ps3/s26/53/tmio_0860": {},
+			"ps3/s26/53/tmio_0870": {},
+			"ps3/s26/53/tmio_0880": {},
+			"ps3/s26/53/tmio_0890": {},
+			"ps3/s26/53/tmio_0900": {},
+			"ps3/s26/53/tmio_0910": {
+				"background/hina_bus_03": "bg/hina/bus_02",
+				"black": "black"
+			},
+			"ps3/s26/53/tmio_0920": {},
+			"ps3/s26/53/tmio_0930": {},
+			"ps3/s26/53/tmio_0940": {},
+			"ps3/s26/53/tmio_0950": {
+				"background/hina_bus_03": "<NO_MATCH>"
+			},
+			"ps3/s26/53/tmio_0980": {},
+			"ps3/s26/53/tmio_0990": {},
+			"ps3/s26/53/tmio_1000": {
+				"black": "black"
+			},
+			"ps3/s26/53/tmio_1010": {},
+			"ps3/s26/53/tmio_1020": {},
+			"ps3/s26/53/tmio_1021": {},
+			"ps3/s26/53/tmio_1030": {
+				"background/hina_bus_02": "<NO_MATCH>",
+				"black": "black",
+				"scene/614a": "<SPECIAL_SCENE>"
+			},
+			"ps3/s26/53/tmio_1040": {},
+			"ps3/s26/53/tmio_1050": {
+				"scene/614b": "<SPECIAL_SCENE>"
+			},
+			"ps3/s26/53/tmio_1060": {},
+			"ps3/s26/53/tmio_1070": {},
+			"ps3/s26/53/tmio_1080": {
+				"background/hina_ryouri": "bg/mati/ryouri"
+			},
+			"ps3/s26/53/tmio_1090": {
+				"background/koudou_02": "bg/mati2/mati_005"
+			},
+			"ps3/s26/53/tmio_1100": {
+				"background/hina_bus_03": "<NO_MATCH>",
+				"black": "black",
+				"scene/614d": "<SPECIAL_SCENE>",
+				"white": "white"
+			},
+			"ps3/s26/53/tmio_1110": {},
+			"ps3/s26/53/tmio_1120": {
+				"black": "black"
+			},
+			"ps3/s26/53/tmio_1130": {},
+			"ps3/s26/53/tmio_1140": {
+				"background/hina_bus_01": "bg/hina/bus_rain",
+				"background/hina_bus_03": "<NO_MATCH>",
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/s26/53/tmio_1150": {},
+			"ps3/s26/53/tmio_1160": {},
+			"ps3/s26/53/tmio_1170": {
+				"background/hina_bus_02": "<NO_MATCH>"
+			},
+			"ps3/s26/53/tmio_1180": {},
+			"ps3/s26/53/tmio_1190": {},
+			"ps3/s26/53/tmio_1200": {
+				"background/hina_bus_04": "bg/hina/bus_04",
+				"black": "black"
+			},
+			"ps3/s26/53/tmio_1210": {},
+			"ps3/s26/53/tmio_1220": {},
+			"ps3/s26/53/tmio_1230": {},
+			"ps3/s26/53/tmio_1240": {
+				"background/hina_bus_03": "bg/hina/bus_02"
+			},
+			"ps3/s26/53/tmio_1250": {},
+			"ps3/s26/53/tmio_1260": {},
+			"ps3/s26/53/tmio_1270": {},
+			"ps3/s26/53/tmio_1280": {
+				"background/hina_bus_04": "bg/hina/bus_04",
+				"black": "black"
+			},
+			"ps3/s26/53/tmio_1290": {
+				"background/hina_bus_03": "<NO_MATCH>",
+				"black": "black"
+			},
+			"ps3/s26/53/tmio_1300": {
+				"black": "black"
+			},
+			"ps3/s26/53/tmio_1310": {},
+			"ps3/s26/53/tmio_1320": {},
+			"ps3/s26/53/tmio_1330": {},
+			"ps3/s26/53/tmio_1340": {},
+			"ps3/s26/53/tmio_1350": {},
+			"ps3/s26/53/tmio_1360": {},
+			"ps3/s26/53/tmio_1370": {},
+			"ps3/s26/53/tmio_1380": {},
+			"ps3/s26/53/tmio_1390": {},
+			"ps3/s26/53/tmio_1400": {},
+			"ps3/s26/53/tmio_1410": {},
+			"ps3/s26/53/tmio_1420": {},
+			"ps3/s26/53/tmio_1430": {},
+			"ps3/s26/53/tmio_1440": {},
+			"ps3/s26/53/tmio_1450": {
+				"white": "white"
+			},
+			"ps3/s26/53/tmio_1460": {},
+			"ps3/s26/53/tmio_1470": {
+				"effect/up": "effect/up"
+			},
+			"ps3/s26/53/tmio_1480": {},
+			"ps3/s26/53/tmio_1490": {
+				"effect/left": "effect/left"
+			},
+			"ps3/s26/53/tmio_1500": {},
+			"ps3/s26/53/tmio_1510": {},
+			"ps3/s26/53/tmio_1520": {},
+			"ps3/s26/53/tmio_1530": {},
+			"ps3/s26/53/tmio_1540": {},
+			"ps3/s26/53/tmio_1550": {
+				"effect/down": "effect/down"
+			},
+			"ps3/s26/53/tmio_1560": {},
+			"ps3/s26/53/tmio_1570": {},
+			"ps3/s26/53/tmio_1580": {
+				"background/hina_douro_03": "bg/hina/douro_02",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s26/53/tmio_1590": {},
+			"ps3/s26/53/tmio_1600": {},
+			"ps3/s26/53/tmio_1610": {},
+			"ps3/s26/53/tmio_1620": {},
+			"ps3/s26/53/tmio_1630": {},
+			"ps3/s26/53/tmio_1640": {},
+			"ps3/s26/53/tmio_1650": {},
+			"ps3/s26/53/tmio_1660": {},
+			"ps3/s26/53/tmio_1670": {},
+			"ps3/s26/53/tmio_1680": {},
+			"ps3/s26/53/tmio_1690": {},
+			"ps3/s26/53/tmio_1700": {
+				"background/hina_bus_01": "bg/hina/bus_rain",
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/s26/53/tmio_1710": {},
+			"ps3/s26/53/tmio_1720": {},
+			"ps3/s26/53/tmio_1730": {},
+			"ps3/s26/53/tmio_1740": {
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/s26/53/tmio_1750": {},
+			"ps3/s26/53/tmio_1760": {
+				"effect/blood_1a": "bg/efe/blood_1a"
+			},
+			"ps3/s26/53/tmio_1770": {
+				"background/hina_bus_01": "bg/hina/bus_01"
+			},
+			"ps3/s26/53/tmio_1780": {},
+			"ps3/s26/53/tmio_1790": {},
+			"ps3/s26/53/tmio_1800": {
+				"background/hina_title_1": "bg/hina/bus_05",
+				"black": "black",
+				"effect/down": "effect/down"
+			},
+			"ps3/s26/53/tmio_1810": {
+				"black": "black"
+			},
+			"ps3/s26/53/tmio_1820": {},
+			"ps3/s26/53/tmio_1830": {},
+			"ps3/s26/53/tmio_1840": {},
+			"ps3/s26/53/tmio_1850": {},
+			"ps3/s26/53/tmio_1860": {},
+			"ps3/s26/53/tmio_1870": {},
+			"ps3/s26/53/tmio_1880": {},
+			"ps3/s26/53/tmio_1890": {},
+			"ps3/s26/53/tmio_1900": {},
+			"ps3/s26/53/tmio_1910": {
+				"background/hina_bus_03": "bg/hina/bus_03",
+				"background/hina_bus_04": "bg/hina/bus_04",
+				"black": "black"
+			},
+			"ps3/s26/53/tmio_1920": {},
+			"ps3/s26/53/tmio_1930": {},
+			"ps3/s26/53/tmio_1940": {},
+			"ps3/s26/53/tmio_1950": {},
+			"ps3/s26/53/tmio_1960": {},
+			"ps3/s26/53/tmio_1970": {},
+			"ps3/s26/53/tmio_1980": {},
+			"ps3/s26/53/tmio_1990": {},
+			"ps3/s26/53/tmio_2000": {
+				"background/juku1_01": "bg/mati/juku1",
+				"black": "black"
+			},
+			"ps3/s26/53/tmio_2010": {},
+			"ps3/s26/53/tmio_2020": {},
+			"ps3/s26/53/tmio_2030": {},
+			"ps3/s26/53/tmio_2040": {},
+			"ps3/s26/53/tmio_2050": {},
+			"ps3/s26/53/tmio_2060": {},
+			"ps3/s26/53/tmio_2070": {},
+			"ps3/s26/53/tmio_2080": {},
+			"ps3/s26/53/tmio_2090": {},
+			"ps3/s26/53/tmio_2100": {},
+			"ps3/s26/53/tmio_2110": {},
+			"ps3/s26/53/tmio_2120": {},
+			"ps3/s26/53/tmio_2130": {},
+			"ps3/s26/53/tmio_2140": {},
+			"ps3/s26/53/tmio_2150": {
+				"background/hina_bus_01": "bg/hina/bus_rain",
+				"black": "black"
+			},
+			"ps3/s26/53/tmio_2160": {},
+			"ps3/s26/53/tmio_2170": {
+				"background/hina_bus_01": "bg/hina/bus_01",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s26/53/tmio_2180": {},
+			"ps3/s26/53/tmio_2190": {},
+			"ps3/s26/53/tmio_2200": {},
+			"ps3/s26/53/tmio_2210": {},
+			"ps3/s26/53/tmio_2211": {},
+			"ps3/s26/53/tmio_2220": {},
+			"ps3/s26/53/tmio_2230": {},
+			"ps3/s26/53/tmio_2240": {},
+			"ps3/s26/53/tmio_2250": {},
+			"ps3/s26/53/tmio_2260": {},
+			"ps3/s26/53/tmio_2270": {},
+			"ps3/s26/53/tmio_2280": {
+				"background/hina_ari": "bg/hina/ari",
+				"black": "black"
+			},
+			"ps3/s26/53/tmio_2290": {},
+			"ps3/s26/53/tmio_2300": {},
+			"ps3/s26/53/tmio_2310": {},
+			"ps3/s26/53/tmio_2320": {},
+			"ps3/s26/53/tmio_2330": {},
+			"ps3/s26/53/tmio_2340": {
+				"background/jt1": "bg/jinja/jt1",
+				"black": "black"
+			},
+			"ps3/s26/53/tmio_2350": {},
+			"ps3/s26/53/tmio_2360": {
+				"background/hina_douro_03": "bg/hina/douro_03",
+				"black": "black"
+			},
+			"ps3/s26/53/tmio_2370": {
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/s26/53/tmio_2380": {},
+			"ps3/s26/53/tmio_2390": {},
+			"ps3/s26/53/tmio_2400": {},
+			"ps3/s26/53/tmio_2410": {},
+			"ps3/s26/53/tmio_2420": {
+				"background/hina_bus_02": "bg/hina/bus_02",
+				"background/hina_title_1": "<NO_MATCH>",
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/s26/53/tmio_2430": {},
+			"ps3/s26/53/tmio_2440": {},
+			"ps3/s26/53/tmio_2450": {},
+			"ps3/s26/53/tmio_2460": {
+				"background/juku1_01": "bg/mati/juku2",
+				"black": "black"
+			},
+			"ps3/s26/53/tmio_2470": {},
+			"ps3/s26/53/tmio_2480": {
+				"background/greyscale/mati_ji1": "bg/mati/mati_ji1",
+				"black": "black",
+				"effect/cinema": "effect/cinema"
+			},
+			"ps3/s26/53/tmio_2490": {},
+			"ps3/s26/53/tmio_2500": {},
+			"ps3/s26/53/tmio_2510": {
+				"background/greyscale/sta_1a": "bg/mati/eki2",
+				"black": "black",
+				"effect/cinema": "effect/cinema"
+			},
+			"ps3/s26/53/tmio_2520": {},
+			"ps3/s26/53/tmio_2530": {
+				"black": "black",
+				"effect/different_spiral_1a": "bg/efe/different_spiral_1a"
+			},
+			"ps3/s26/53/tmio_2540": {},
+			"ps3/s26/53/tmio_2550": {},
+			"ps3/s26/53/tmio_2560": {
+				"background/hina_douro_03": "bg/hina/douro_02",
+				"black": "black",
+				"effect/right": "effect/right"
+			},
+			"ps3/s26/53/tmio_2570": {},
+			"ps3/s26/53/tmio_2580": {
+				"background/hina_douro_04": "<NO_MATCH>",
+				"black": "black",
+				"effect/down": "effect/down"
+			},
+			"ps3/s26/53/tmio_2590": {},
+			"ps3/s26/53/tmio_2600": {},
+			"ps3/s26/53/tmio_2610": {},
+			"ps3/s26/53/tmio_2620": {},
+			"ps3/s26/53/tmio_2630": {
+				"scene/617c": "<SPECIAL_SCENE>"
+			},
+			"ps3/s26/53/tmio_2640": {},
+			"ps3/s26/53/tmio_2650": {},
+			"ps3/s26/53/tmio_2660": {},
+			"ps3/s26/53/tmio_2670": {
+				"background/hina_bus_01": "bg/hina/bus_01",
+				"black": "black",
+				"effect/right": "effect/right"
+			},
+			"ps3/s26/53/tmio_2680": {},
+			"ps3/s26/53/tmio_2690": {},
+			"ps3/s26/53/tmio_2700": {},
+			"ps3/s26/53/tmio_2710": {
+				"background/hina_bus_03": "<NO_MATCH>",
+				"black": "black",
+				"effect/down": "effect/down",
+				"effect/left": "effect/left",
+				"scene/618b": "<SPECIAL_SCENE>"
+			},
+			"ps3/s26/53/tmio_2720": {},
+			"ps3/s26/53/tmio_2730": {
+				"background/hina_douro_04": "<NO_MATCH>"
+			},
+			"ps3/s26/53/tmio_2740": {
+				"background/hina_douro_01": "<NO_MATCH>",
+				"background/hina_douro_04": "bg/hina/douro_04",
+				"black": "black",
+				"effect/blood_1a": "bg/efe/blood_1a",
+				"scene/618b": "<SPECIAL_SCENE>",
+				"white": "white"
+			},
+			"ps3/s26/53/tmio_2750": {},
+			"ps3/s26/53/tmio_2760": {
+				"black": "black",
+				"red": "bg/hina/red1"
+			},
+			"ps3/s26/53/tmio_2770": {},
+			"ps3/s26/53/tmio_2780": {},
+			"ps3/s26/53/tmio_2790": {
+				"background/hina_bus_03": "bg/hina/bus_03",
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/s26/53/tmio_2800": {},
+			"ps3/s26/53/tmio_2810": {},
+			"ps3/s26/53/tmio_2820": {},
+			"ps3/s26/53/tmio_2830": {},
+			"ps3/s26/53/tmio_2840": {
+				"background/hina_bus_03": "bg/hina/bus_02",
+				"black": "black"
+			},
+			"ps3/s26/53/tmio_2850": {},
+			"ps3/s26/53/tmio_2860": {},
+			"ps3/s26/53/tmio_2870": {},
+			"ps3/s26/53/tmio_2880": {},
+			"ps3/s26/53/tmio_2890": {},
+			"ps3/s26/53/tmio_2900": {},
+			"ps3/s26/53/tmio_2910": {
+				"background/hina_bus_03": "<NO_MATCH>",
+				"black": "black",
+				"scene/620b": "<SPECIAL_SCENE>",
+				"white": "white"
+			},
+			"ps3/s26/53/tmio_2920": {},
+			"ps3/s26/53/tmio_2930": {},
+			"ps3/s26/54/tyos_0000": {},
+			"ps3/s26/54/tyos_0010": {
+				"effect/left": "effect/left"
+			},
+			"ps3/s26/54/tyos_0020": {
+				"effect/right": "effect/right"
+			},
+			"ps3/s26/54/tyos_0030": {},
+			"ps3/s26/54/tyos_0040": {},
+			"ps3/s26/54/tyos_0050": {},
+			"ps3/s26/54/tyos_0060": {},
+			"ps3/s26/54/tyos_0070": {},
+			"ps3/s26/54/tyos_0080": {},
+			"ps3/s26/54/tyos_0090": {},
+			"ps3/s26/54/tyos_0100": {},
+			"ps3/s26/54/tyos_0110": {
+				"white": "white"
+			},
+			"ps3/s26/54/tyos_0120": {},
+			"ps3/s26/54/tyos_0130": {},
+			"ps3/s26/54/tyos_0140": {},
+			"ps3/s26/54/tyos_0150": {},
+			"ps3/s26/54/tyos_0160": {
+				"white": "white"
+			},
+			"ps3/s26/54/tyos_0170": {
+				"black": "black",
+				"effect/furiker_c": "<NO_MATCH>",
+				"white": "white"
+			},
+			"ps3/s26/54/tyos_0180": {},
+			"ps3/s26/54/tyos_0190": {},
+			"ps3/s26/54/tyos_0200": {},
+			"ps3/s26/54/tyos_0210": {},
+			"ps3/s26/54/tyos_0220": {},
+			"ps3/s26/54/tyos_0230": {
+				"background/hina_bus_04": "bg/hina/bus_02",
+				"black": "black"
+			},
+			"ps3/s26/54/tyos_0240": {
+				"background/hina_bus_03": "bg/hina/bus_03"
+			},
+			"ps3/s26/54/tyos_0250": {},
+			"ps3/s26/54/tyos_0260": {
+				"background/hina_bus_03": "<NO_MATCH>"
+			},
+			"ps3/s26/54/tyos_0270": {},
+			"ps3/s26/54/tyos_0280": {
+				"background/hina_bus_03": "<NO_MATCH>"
+			},
+			"ps3/s26/54/tyos_0290": {},
+			"ps3/s26/54/tyos_0300": {},
+			"ps3/s26/54/tyos_0310": {},
+			"ps3/s26/54/tyos_0320": {},
+			"ps3/s26/54/tyos_0330": {
+				"background/greyscale/kawa4": "bg/hina/damu1m",
+				"effect/cinema": "effect/cinema"
+			},
+			"ps3/s26/54/tyos_0340": {},
+			"ps3/s26/54/tyos_0350": {},
+			"ps3/s26/54/tyos_0360": {
+				"background/hina_bus_03": "<NO_MATCH>",
+				"black": "black"
+			},
+			"ps3/s26/54/tyos_0370": {},
+			"ps3/s26/54/tyos_0380": {},
+			"ps3/s26/54/tyos_0390": {},
+			"ps3/s26/54/tyos_0400": {
+				"background/greyscale/moon": "bg/mura/moon",
+				"effect/cinema": "effect/cinema"
+			},
+			"ps3/s26/54/tyos_0410": {},
+			"ps3/s26/54/tyos_0420": {},
+			"ps3/s26/54/tyos_0430": {},
+			"ps3/s26/54/tyos_0440": {},
+			"ps3/s26/54/tyos_0450": {
+				"background/hina_bus_03": "bg/hina/bus_01",
+				"background/hina_bus_04": "bg/hina/bus_05",
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/s26/54/tyos_0460": {},
+			"ps3/s26/54/tyos_0470": {},
+			"ps3/s26/54/tyos_0480": {},
+			"ps3/s26/54/tyos_0490": {},
+			"ps3/s26/54/tyos_0500": {},
+			"ps3/s26/54/tyos_0510": {},
+			"ps3/s26/54/tyos_0520": {},
+			"ps3/s26/54/tyos_0530": {},
+			"ps3/s26/54/tyos_0540": {},
+			"ps3/s26/54/tyos_0550": {},
+			"ps3/s26/54/tyos_0560": {
+				"background/hina_bus_03": "<NO_MATCH>"
+			},
+			"ps3/s26/54/tyos_0570": {},
+			"ps3/s26/54/tyos_0580": {},
+			"ps3/s26/54/tyos_0590": {},
+			"ps3/s26/54/tyos_0600": {},
+			"ps3/s26/54/tyos_0610": {},
+			"ps3/s26/54/tyos_0620": {},
+			"ps3/s26/54/tyos_0630": {},
+			"ps3/s26/54/tyos_0640": {
+				"background/hina_bus_03": "bg/hina/bus_02"
+			},
+			"ps3/s26/54/tyos_0650": {
+				"background/hina_bus_03": "<NO_MATCH>",
+				"black": "black"
+			},
+			"ps3/s26/54/tyos_0660": {},
+			"ps3/s26/54/tyos_0670": {},
+			"ps3/s26/54/tyos_0680": {},
+			"ps3/s26/54/tyos_0690": {},
+			"ps3/s26/54/tyos_0700": {},
+			"ps3/s26/54/tyos_0710": {},
+			"ps3/s26/54/tyos_0720": {},
+			"ps3/s26/54/tyos_0730": {
+				"scene/614d": "<SPECIAL_SCENE>"
+			},
+			"ps3/s26/54/tyos_0740": {
+				"scene/614b": "<SPECIAL_SCENE>"
+			},
+			"ps3/s26/54/tyos_0750": {},
+			"ps3/s26/54/tyos_0760": {},
+			"ps3/s26/54/tyos_0770": {},
+			"ps3/s26/54/tyos_0780": {},
+			"ps3/s26/54/tyos_0790": {},
+			"ps3/s26/54/tyos_0800": {},
+			"ps3/s26/54/tyos_0810": {},
+			"ps3/s26/54/tyos_0820": {
+				"scene/614b": "<SPECIAL_SCENE>"
+			},
+			"ps3/s26/54/tyos_0830": {},
+			"ps3/s26/54/tyos_0840": {},
+			"ps3/s26/54/tyos_0850": {},
+			"ps3/s26/54/tyos_0860": {},
+			"ps3/s26/54/tyos_0870": {
+				"background/hina_bus_04": "<NO_MATCH>",
+				"scene/614c": "<SPECIAL_SCENE>"
+			},
+			"ps3/s26/54/tyos_0880": {},
+			"ps3/s26/54/tyos_0890": {},
+			"ps3/s26/54/tyos_0900": {},
+			"ps3/s26/54/tyos_0910": {},
+			"ps3/s26/54/tyos_0920": {},
+			"ps3/s26/54/tyos_0930": {},
+			"ps3/s26/54/tyos_0940": {},
+			"ps3/s26/54/tyos_0950": {},
+			"ps3/s26/54/tyos_0960": {},
+			"ps3/s26/54/tyos_0970": {},
+			"ps3/s26/54/tyos_0980": {},
+			"ps3/s26/54/tyos_0990": {},
+			"ps3/s26/54/tyos_1000": {},
+			"ps3/s26/54/tyos_1010": {
+				"background/hina_douro_03": "bg/hina/douro_03",
+				"black": "black"
+			},
+			"ps3/s26/54/tyos_1020": {},
+			"ps3/s26/54/tyos_1030": {},
+			"ps3/s26/54/tyos_1040": {
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/s26/54/tyos_1050": {},
+			"ps3/s26/54/tyos_1060": {
+				"background/hina_bus_03": "bg/hina/bus_03"
+			},
+			"ps3/s26/54/tyos_1070": {},
+			"ps3/s26/54/tyos_1080": {},
+			"ps3/s26/54/tyos_1090": {},
+			"ps3/s26/54/tyos_1100": {},
+			"ps3/s26/54/tyos_1110": {},
+			"ps3/s26/54/tyos_1120": {},
+			"ps3/s26/54/tyos_1130": {},
+			"ps3/s26/54/tyos_1140": {},
+			"ps3/s26/54/tyos_1150": {},
+			"ps3/s26/54/tyos_1160": {},
+			"ps3/s26/54/tyos_1170": {},
+			"ps3/s26/54/tyos_1180": {},
+			"ps3/s26/54/tyos_1190": {},
+			"ps3/s26/54/tyos_1200": {},
+			"ps3/s26/54/tyos_1210": {},
+			"ps3/s26/54/tyos_1220": {},
+			"ps3/s26/54/tyos_1230": {},
+			"ps3/s26/54/tyos_1240": {
+				"background/greyscale/kimi_ten1": "bg/sion/si_h6",
+				"black": "black",
+				"effect/cinema": "effect/cinema"
+			},
+			"ps3/s26/54/tyos_1250": {},
+			"ps3/s26/54/tyos_1260": {},
+			"ps3/s26/54/tyos_1270": {},
+			"ps3/s26/54/tyos_1280": {},
+			"ps3/s26/54/tyos_1290": {},
+			"ps3/s26/54/tyos_1300": {},
+			"ps3/s26/54/tyos_1310": {},
+			"ps3/s26/54/tyos_1320": {},
+			"ps3/s26/54/tyos_1330": {},
+			"ps3/s26/54/tyos_1340": {},
+			"ps3/s26/54/tyos_1350": {},
+			"ps3/s26/54/tyos_1360": {},
+			"ps3/s26/54/tyos_1370": {},
+			"ps3/s26/54/tyos_1380": {},
+			"ps3/s26/54/tyos_1390": {},
+			"ps3/s26/54/tyos_1400": {
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/s26/54/tyos_1410": {},
+			"ps3/s26/54/tyos_1420": {
+				"background/greyscale/susuki": "bg/mori/kusa",
+				"black": "black",
+				"effect/cinema": "effect/cinema"
+			},
+			"ps3/s26/54/tyos_1430": {},
+			"ps3/s26/54/tyos_1440": {},
+			"ps3/s26/54/tyos_1450": {},
+			"ps3/s26/54/tyos_1460": {
+				"background/greyscale/gk1": "bg/gakkou/gk1",
+				"effect/cinema": "effect/cinema"
+			},
+			"ps3/s26/54/tyos_1470": {
+				"background/greyscale/ng_kyo": "bg/tokyo/ko3",
+				"effect/cinema": "effect/cinema"
+			},
+			"ps3/s26/54/tyos_1480": {},
+			"ps3/s26/54/tyos_1490": {
+				"background/greyscale/toi_1a": "bg/mati/wc1",
+				"effect/cinema": "effect/cinema"
+			},
+			"ps3/s26/54/tyos_1500": {
+				"background/greyscale/hina_bus_03": "bg/hina/bus_03",
+				"effect/cinema": "effect/cinema"
+			},
+			"ps3/s26/54/tyos_1510": {},
+			"ps3/s26/54/tyos_1520": {},
+			"ps3/s26/54/tyos_1530": {},
+			"ps3/s26/54/tyos_1540": {},
+			"ps3/s26/54/tyos_1550": {},
+			"ps3/s26/54/tyos_1560": {},
+			"ps3/s26/54/tyos_1570": {
+				"black": "black",
+				"scene/615": "<SPECIAL_SCENE>",
+				"white": "white"
+			},
+			"ps3/s26/54/tyos_1580": {},
+			"ps3/s26/54/tyos_1590": {},
+			"ps3/s26/54/tyos_1600": {},
+			"ps3/s26/54/tyos_1610": {
+				"black": "black",
+				"effect/bite": "bg/efe/bite",
+				"effect/different_spiral_1b": "bg/efe/different_spiral_1b",
+				"effect/oyasiro": "<SPRITE_MATCH>",
+				"scene/615": "<SPECIAL_SCENE>",
+				"white": "white"
+			},
+			"ps3/s26/54/tyos_1620": {},
+			"ps3/s26/54/tyos_1630": {
+				"black": "black",
+				"effect/blood_1ar": "bg/efe/blood_1ar"
+			},
+			"ps3/s26/54/tyos_1640": {},
+			"ps3/s26/54/tyos_1650": {},
+			"ps3/s26/54/tyos_1660": {},
+			"ps3/s26/54/tyos_1670": {},
+			"ps3/s26/54/tyos_1680": {},
+			"ps3/s26/54/tyos_1690": {},
+			"ps3/s26/54/tyos_1700": {},
+			"ps3/s26/54/tyos_1710": {},
+			"ps3/s26/54/tyos_1720": {},
+			"ps3/s26/54/tyos_1730": {},
+			"ps3/s26/54/tyos_1740": {},
+			"ps3/s26/54/tyos_1750": {},
+			"ps3/s26/54/tyos_1760": {
+				"background/hina_bus_04": "<NO_MATCH>",
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/s26/54/tyos_1770": {
+				"background/hina_bus_03": "bg/hina/bus_02",
+				"black": "black"
+			},
+			"ps3/s26/54/tyos_1780": {},
+			"ps3/s26/54/tyos_1790": {},
+			"ps3/s26/54/tyos_1800": {},
+			"ps3/s26/54/tyos_1810": {
+				"effect/down": "effect/down"
+			},
+			"ps3/s26/54/tyos_1820": {},
+			"ps3/s26/54/tyos_1830": {},
+			"ps3/s26/54/tyos_1840": {},
+			"ps3/s26/54/tyos_1850": {},
+			"ps3/s26/54/tyos_1860": {
+				"background/hina_bus_01": "bg/hina/bus_rain",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s26/54/tyos_1870": {},
+			"ps3/s26/54/tyos_1880": {},
+			"ps3/s26/54/tyos_1890": {},
+			"ps3/s26/54/tyos_1900": {},
+			"ps3/s26/54/tyos_1910": {},
+			"ps3/s26/54/tyos_1920": {},
+			"ps3/s26/54/tyos_1930": {},
+			"ps3/s26/54/tyos_1940": {
+				"background/hina_douro_01": "bg/hina/douro_01",
+				"black": "black"
+			},
+			"ps3/s26/54/tyos_1950": {},
+			"ps3/s26/54/tyos_1960": {},
+			"ps3/s26/54/tyos_1970": {},
+			"ps3/s26/54/tyos_1980": {},
+			"ps3/s26/54/tyos_1990": {},
+			"ps3/s26/54/tyos_2000": {},
+			"ps3/s26/54/tyos_2010": {},
+			"ps3/s26/54/tyos_2020": {},
+			"ps3/s26/54/tyos_2030": {},
+			"ps3/s26/54/tyos_2040": {},
+			"ps3/s26/54/tyos_2050": {},
+			"ps3/s26/54/tyos_2060": {},
+			"ps3/s26/54/tyos_2070": {},
+			"ps3/s26/54/tyos_2080": {},
+			"ps3/s26/54/tyos_2090": {
+				"background/hina_douro_04": "bg/hina/douro_04"
+			},
+			"ps3/s26/54/tyos_2100": {},
+			"ps3/s26/54/tyos_2110": {},
+			"ps3/s26/54/tyos_2120": {},
+			"ps3/s26/54/tyos_2130": {},
+			"ps3/s26/54/tyos_2140": {},
+			"ps3/s26/54/tyos_2150": {
+				"black": "black",
+				"effect/blood_1b": "bg/efe/blood_1b",
+				"scene/616": "<SPECIAL_SCENE>"
+			},
+			"ps3/s26/54/tyos_2160": {},
+			"ps3/s26/54/tyos_2170": {
+				"effect/blood_1ar": "bg/efe/blood_1ar",
+				"white": "white"
+			},
+			"ps3/s26/54/tyos_2180": {
+				"background/hina_bus_01": "<NO_MATCH>"
+			},
+			"ps3/s26/54/tyos_2190": {
+				"background/hina_bus_03": "bg/hina/bus_02",
+				"black": "black"
+			},
+			"ps3/s26/55/tara_0000": {},
+			"ps3/s26/55/tara_0010": {},
+			"ps3/s26/55/tara_0020": {},
+			"ps3/s26/55/tara_0030": {},
+			"ps3/s26/55/tara_0040": {},
+			"ps3/s26/55/tara_0050": {},
+			"ps3/s26/55/tara_0060": {},
+			"ps3/s26/55/tara_0070": {},
+			"ps3/s26/55/tara_0080": {},
+			"ps3/s26/55/tara_0090": {},
+			"ps3/s26/55/tara_0100": {},
+			"ps3/s26/55/tara_0110": {},
+			"ps3/s26/55/tara_0120": {},
+			"ps3/s26/55/tara_0130": {},
+			"ps3/s26/55/tara_0140": {},
+			"ps3/s26/55/tara_0150": {},
+			"ps3/s26/55/tara_0160": {
+				"background/hina_bus_04": "bg/hina/bus_04"
+			},
+			"ps3/s26/55/tara_0170": {
+				"background/hina_bus_03": "<NO_MATCH>",
+				"background/hina_bus_04": "bg/hina/bus_04",
+				"effect/up": "effect/up"
+			},
+			"ps3/s26/55/tara_0180": {},
+			"ps3/s26/55/tara_0190": {
+				"background/hina_bus_03": "<NO_MATCH>",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s26/55/tara_0200": {},
+			"ps3/s26/55/tara_0210": {},
+			"ps3/s26/55/tara_0220": {},
+			"ps3/s26/55/tara_0230": {},
+			"ps3/s26/55/tara_0240": {
+				"background/hina_bus_04": "bg/hina/bus_05",
+				"black": "black"
+			},
+			"ps3/s26/55/tara_0250": {},
+			"ps3/s26/55/tara_0260": {},
+			"ps3/s26/55/tara_0270": {},
+			"ps3/s26/55/tara_0280": {
+				"black": "black"
+			},
+			"ps3/s26/55/tara_0290": {},
+			"ps3/s26/55/tara_0300": {},
+			"ps3/s26/55/tara_0310": {},
+			"ps3/s26/55/tara_0320": {},
+			"ps3/s26/55/tara_0330": {},
+			"ps3/s26/55/tara_0340": {},
+			"ps3/s26/55/tara_0350": {
+				"background/hina_simen1": "bg/sonota/simen1",
+				"black": "black"
+			},
+			"ps3/s26/55/tara_0360": {},
+			"ps3/s26/55/tara_0370": {},
+			"ps3/s26/55/tara_0380": {
+				"background/greyscale/hi1": "bg/mura/hi1",
+				"black": "black",
+				"effect/cinema": "effect/cinema",
+				"effect/maskc": "effect/maskc"
+			},
+			"ps3/s26/55/tara_0390": {},
+			"ps3/s26/55/tara_0400": {},
+			"ps3/s26/55/tara_0410": {},
+			"ps3/s26/55/tara_0420": {},
+			"ps3/s26/55/tara_0430": {},
+			"ps3/s26/55/tara_0440": {},
+			"ps3/s26/55/tara_0450": {},
+			"ps3/s26/55/tara_0460": {},
+			"ps3/s26/55/tara_0470": {
+				"black": "black",
+				"effect/eye": "bg/sonota/eye"
+			},
+			"ps3/s26/55/tara_0480": {
+				"background/hina_bus_03": "bg/hina/bus_02",
+				"black": "black"
+			},
+			"ps3/s26/55/tara_0490": {},
+			"ps3/s26/55/tara_0500": {},
+			"ps3/s26/55/tara_0510": {
+				"background/hina_bus_03": "<NO_MATCH>"
+			},
+			"ps3/s26/55/tara_0520": {
+				"background/hina_bus_03": "bg/hina/bus_03",
+				"black": "black"
+			},
+			"ps3/s26/55/tara_0530": {},
+			"ps3/s26/55/tara_0540": {},
+			"ps3/s26/55/tara_0550": {},
+			"ps3/s26/55/tara_0560": {},
+			"ps3/s26/55/tara_0570": {},
+			"ps3/s26/55/tara_0580": {
+				"background/kuruma5_01": "bg/hina/car_1",
+				"black": "black"
+			},
+			"ps3/s26/55/tara_0590": {},
+			"ps3/s26/55/tara_0600": {},
+			"ps3/s26/55/tara_0610": {
+				"background/kuruma5": "bg/kuruma/kuruma5",
+				"background/mati7": "bg/mati/mati7",
+				"background/y_damu2": "bg/mizube/y_damu2",
+				"black": "black",
+				"effect/left": "effect/left",
+				"effect/m1": "effect/m1",
+				"white": "white"
+			},
+			"ps3/s26/55/tara_0620": {},
+			"ps3/s26/55/tara_0630": {},
+			"ps3/s26/55/tara_0640": {},
+			"ps3/s26/55/tara_0650": {},
+			"ps3/s26/55/tara_0660": {},
+			"ps3/s26/55/tara_0670": {},
+			"ps3/s26/55/tara_0680": {},
+			"ps3/s26/55/tara_0690": {},
+			"ps3/s26/55/tara_0700": {},
+			"ps3/s26/55/tara_0710": {},
+			"ps3/s26/55/tara_0720": {},
+			"ps3/s26/55/tara_0730": {},
+			"ps3/s26/55/tara_0740": {},
+			"ps3/s26/55/tara_0750": {
+				"black": "black",
+				"effect/m1": "effect/m1",
+				"white": "white"
+			},
+			"ps3/s26/55/tara_0760": {},
+			"ps3/s26/55/tara_0770": {},
+			"ps3/s26/55/tara_0780": {
+				"background/hina_bus_03": "bg/hina/bus_01",
+				"black": "black",
+				"effect/bullet_1a": "effect/bullet_1a",
+				"white": "white"
+			},
+			"ps3/s26/55/tara_0790": {},
+			"ps3/s26/55/tara_0800": {},
+			"ps3/s26/55/tara_0810": {},
+			"ps3/s26/55/tara_0820": {},
+			"ps3/s26/55/tara_0830": {},
+			"ps3/s26/55/tara_0840": {
+				"background/hina_bus_04": "<NO_MATCH>",
+				"black": "black"
+			},
+			"ps3/s26/55/tara_0850": {},
+			"ps3/s26/55/tara_0860": {
+				"background/hina_bus_03": "<NO_MATCH>"
+			},
+			"ps3/s26/55/tara_0870": {},
+			"ps3/s26/55/tara_0880": {},
+			"ps3/s26/55/tara_0890": {},
+			"ps3/s26/55/tara_0900": {
+				"background/greyscale/hoteru": "bg/sion/si_h1",
+				"effect/cinema": "effect/cinema"
+			},
+			"ps3/s26/55/tara_0910": {},
+			"ps3/s26/55/tara_0920": {},
+			"ps3/s26/55/tara_0930": {},
+			"ps3/s26/55/tara_0940": {},
+			"ps3/s26/55/tara_0950": {},
+			"ps3/s26/55/tara_0960": {},
+			"ps3/s26/55/tara_0970": {
+				"black": "black",
+				"red": "bg/hina/red1"
+			},
+			"ps3/s26/55/tara_0980": {},
+			"ps3/s26/55/tara_0990": {},
+			"ps3/s26/55/tara_1000": {},
+			"ps3/s26/55/tara_1010": {
+				"red": "<NO_MATCH>"
+			},
+			"ps3/s26/55/tara_1020": {},
+			"ps3/s26/55/tara_1030": {},
+			"ps3/s26/55/tara_1040": {
+				"background/hina_bus_01": "bg/hina/bus_rain",
+				"black": "black",
+				"effect/maskaa": "<NO_MATCH>",
+				"effect/ryuuketu1": "effect/ryuuketu1",
+				"white": "white"
+			},
+			"ps3/s26/55/tara_1050": {},
+			"ps3/s26/55/tara_1060": {},
+			"ps3/s26/55/tara_1070": {},
+			"ps3/s26/55/tara_1080": {},
+			"ps3/s26/55/tara_1090": {
+				"effect/left": "effect/left"
+			},
+			"ps3/s26/55/tara_1100": {},
+			"ps3/s26/55/tara_1110": {},
+			"ps3/s26/55/tara_1120": {},
+			"ps3/s26/55/tara_1130": {
+				"black": "black"
+			},
+			"ps3/s26/55/tara_1140": {
+				"black": "black"
+			},
+			"ps3/s26/55/tara_1150": {
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/s26/55/tara_1160": {},
+			"ps3/s26/55/tara_1170": {},
+			"ps3/s26/55/tara_1180": {},
+			"ps3/s26/55/tara_1190": {
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/s26/55/tara_1200": {},
+			"ps3/s26/55/tara_1210": {},
+			"ps3/s26/55/tara_1220": {},
+			"ps3/s26/55/tara_1230": {},
+			"ps3/s26/55/tara_1240": {
+				"effect/different_spiral_1a": "bg/efe/different_spiral_1a"
+			},
+			"ps3/s26/56/tton_0000": {},
+			"ps3/s26/56/tton_0010": {},
+			"ps3/s26/56/tton_0020": {
+				"background/hina_bus_03": "bg/hina/bus_02",
+				"effect/left": "effect/left"
+			},
+			"ps3/s26/56/tton_0030": {
+				"effect/left": "effect/left"
+			},
+			"ps3/s26/56/tton_0040": {},
+			"ps3/s26/56/tton_0050": {
+				"effect/down": "effect/down"
+			},
+			"ps3/s26/56/tton_0060": {},
+			"ps3/s26/56/tton_0070": {
+				"effect/left": "effect/left"
+			},
+			"ps3/s26/56/tton_0080": {},
+			"ps3/s26/56/tton_0090": {},
+			"ps3/s26/56/tton_0100": {},
+			"ps3/s26/56/tton_0110": {},
+			"ps3/s26/56/tton_0120": {},
+			"ps3/s26/56/tton_0130": {},
+			"ps3/s26/56/tton_0140": {},
+			"ps3/s26/56/tton_0150": {},
+			"ps3/s26/56/tton_0160": {},
+			"ps3/s26/56/tton_0170": {},
+			"ps3/s26/56/tton_0180": {},
+			"ps3/s26/56/tton_0190": {},
+			"ps3/s26/56/tton_0200": {},
+			"ps3/s26/56/tton_0210": {},
+			"ps3/s26/56/tton_0220": {},
+			"ps3/s26/56/tton_0230": {},
+			"ps3/s26/56/tton_0240": {},
+			"ps3/s26/56/tton_0250": {},
+			"ps3/s26/56/tton_0260": {},
+			"ps3/s26/56/tton_0270": {},
+			"ps3/s26/56/tton_0280": {
+				"effect/up": "effect/up"
+			},
+			"ps3/s26/56/tton_0290": {},
+			"ps3/s26/56/tton_0300": {},
+			"ps3/s26/56/tton_0310": {},
+			"ps3/s26/56/tton_0320": {},
+			"ps3/s26/56/tton_0330": {},
+			"ps3/s26/56/tton_0340": {},
+			"ps3/s26/56/tton_0350": {},
+			"ps3/s26/56/tton_0360": {},
+			"ps3/s26/56/tton_0370": {},
+			"ps3/s26/56/tton_0380": {},
+			"ps3/s26/56/tton_0390": {
+				"background/hina_bus_04": "bg/hina/bus_04",
+				"black": "black"
+			},
+			"ps3/s26/56/tton_0400": {},
+			"ps3/s26/56/tton_0410": {},
+			"ps3/s26/56/tton_0420": {},
+			"ps3/s26/56/tton_0430": {},
+			"ps3/s26/56/tton_0440": {
+				"background/hina_bus_03": "bg/hina/bus_03"
+			},
+			"ps3/s26/56/tton_0450": {
+				"background/hina_bus_04": "bg/hina/damu1m",
+				"black": "black"
+			},
+			"ps3/s26/56/tton_0460": {},
+			"ps3/s26/56/tton_0470": {},
+			"ps3/s26/56/tton_0480": {},
+			"ps3/s26/56/tton_0490": {},
+			"ps3/s26/56/tton_0500": {},
+			"ps3/s26/56/tton_0510": {},
+			"ps3/s26/56/tton_0520": {
+				"background/hina_bus_03": "bg/hina/bus_02"
+			},
+			"ps3/s26/56/tton_0530": {},
+			"ps3/s26/56/tton_0540": {
+				"background/hina_bus_03": "<NO_MATCH>"
+			},
+			"ps3/s26/56/tton_0550": {},
+			"ps3/s26/56/tton_0560": {},
+			"ps3/s26/56/tton_0570": {},
+			"ps3/s26/56/tton_0580": {},
+			"ps3/s26/56/tton_0590": {},
+			"ps3/s26/56/tton_0600": {
+				"background/hina_bus_03": "bg/hina/bus_03",
+				"background/hina_bus_04": "bg/hina/bus_04",
+				"black": "black"
+			},
+			"ps3/s26/56/tton_0610": {},
+			"ps3/s26/56/tton_0620": {},
+			"ps3/s26/56/tton_0630": {},
+			"ps3/s26/56/tton_0640": {},
+			"ps3/s26/56/tton_0650": {},
+			"ps3/s26/56/tton_0660": {},
+			"ps3/s26/56/tton_0670": {},
+			"ps3/s26/56/tton_0680": {},
+			"ps3/s26/56/tton_0690": {
+				"effect/down": "effect/down"
+			},
+			"ps3/s26/56/tton_0700": {
+				"background/hina_douro_03": "bg/hina/douro_02",
+				"black": "black"
+			},
+			"ps3/s26/57/tnit_0000": {
+				"background/hina_bus_03": "bg/hina/bus_02",
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/s26/57/tnit_0010": {
+				"background/hina_bus_01": "bg/hina/bus_rain",
+				"white": "white"
+			},
+			"ps3/s26/57/tnit_0020": {},
+			"ps3/s26/57/tnit_0030": {},
+			"ps3/s26/57/tnit_0040": {},
+			"ps3/s26/57/tnit_0050": {
+				"background/hina_bus_02": "bg/hina/bus_02",
+				"black": "black"
+			},
+			"ps3/s26/57/tnit_0060": {},
+			"ps3/s26/57/tnit_0070": {},
+			"ps3/s26/57/tnit_0080": {},
+			"ps3/s26/57/tnit_0090": {},
+			"ps3/s26/57/tnit_0100": {},
+			"ps3/s26/57/tnit_0110": {},
+			"ps3/s26/57/tnit_0120": {},
+			"ps3/s26/57/tnit_0130": {},
+			"ps3/s26/57/tnit_0140": {},
+			"ps3/s26/57/tnit_0150": {
+				"background/hina_bus_02": "bg/hina/bus_02",
+				"black": "black"
+			},
+			"ps3/s26/57/tnit_0160": {
+				"background/hina_bus_02": "<NO_MATCH>"
+			},
+			"ps3/s26/57/tnit_0170": {},
+			"ps3/s26/57/tnit_0180": {
+				"background/hina_bus_01": "bg/hina/bus_rain",
+				"black": "black"
+			},
+			"ps3/s26/57/tnit_0190": {},
+			"ps3/s26/57/tnit_0200": {},
+			"ps3/s26/57/tnit_0210": {},
+			"ps3/s26/57/tnit_0220": {},
+			"ps3/s26/57/tnit_0230": {},
+			"ps3/s26/57/tnit_0240": {},
+			"ps3/s26/57/tnit_0250": {},
+			"ps3/s26/57/tnit_0260": {},
+			"ps3/s26/57/tnit_0270": {},
+			"ps3/s26/57/tnit_0280": {},
+			"ps3/s26/57/tnit_0290": {},
+			"ps3/s26/57/tnit_0300": {},
+			"ps3/s26/57/tnit_0310": {},
+			"ps3/s26/57/tnit_0320": {},
+			"ps3/s26/57/tnit_0330": {},
+			"ps3/s26/57/tnit_0340": {},
+			"ps3/s26/57/tnit_0350": {},
+			"ps3/s26/57/tnit_0360": {},
+			"ps3/s26/57/tnit_0370": {},
+			"ps3/s26/57/tnit_0380": {},
+			"ps3/s26/57/tnit_0390": {},
+			"ps3/s26/57/tnit_0391": {
+				"background/hina_douro_04": "<NO_MATCH>",
+				"black": "black"
+			},
+			"ps3/s26/57/tnit_0400": {},
+			"ps3/s26/57/tnit_0410": {
+				"background/hina_bus_01": "bg/hina/bus_01",
+				"background/hina_title_1": "bg/hina/bus_05",
+				"black": "black",
+				"effect/bite": "bg/efe/bite",
+				"white": "white"
+			},
+			"ps3/s26/57/tnit_0420": {},
+			"ps3/s26/57/tnit_0430": {
+				"background/hina_douro_01": "<NO_MATCH>",
+				"black": "black",
+				"effect/up": "effect/up",
+				"scene/618a": "<SPECIAL_SCENE>"
+			},
+			"ps3/s26/57/tnit_0440": {
+				"effect/down": "effect/down",
+				"scene/618b": "<SPECIAL_SCENE>"
+			},
+			"ps3/s26/57/tnit_0450": {},
+			"ps3/s26/58/thos_0000": {
+				"background/hina_bus_02": "bg/hina/bus_02",
+				"black": "black"
+			},
+			"ps3/s26/58/thos_0010": {},
+			"ps3/s26/58/thos_0020": {},
+			"ps3/s26/58/thos_0030": {},
+			"ps3/s26/58/thos_0040": {
+				"background/hina_bus_03": "bg/hina/bus_03"
+			},
+			"ps3/s26/58/thos_0050": {},
+			"ps3/s26/58/thos_0060": {},
+			"ps3/s26/58/thos_0070": {},
+			"ps3/s26/58/thos_0080": {},
+			"ps3/s26/58/thos_0090": {},
+			"ps3/s26/58/thos_0100": {},
+			"ps3/s26/58/thos_0110": {},
+			"ps3/s26/58/thos_0120": {},
+			"ps3/s26/58/thos_0130": {},
+			"ps3/s26/58/thos_0140": {},
+			"ps3/s26/58/thos_0150": {},
+			"ps3/s26/58/thos_0160": {},
+			"ps3/s26/58/thos_0170": {},
+			"ps3/s26/58/thos_0180": {},
+			"ps3/s26/58/thos_0190": {},
+			"ps3/s26/58/thos_0200": {},
+			"ps3/s26/58/thos_0210": {},
+			"ps3/s26/58/thos_0220": {},
+			"ps3/s26/58/thos_0230": {},
+			"ps3/s26/58/thos_0240": {},
+			"ps3/s26/58/thos_0250": {},
+			"ps3/s26/58/thos_0260": {},
+			"ps3/s26/58/thos_0270": {},
+			"ps3/s26/58/thos_0280": {
+				"background/hina_bus_02": "<NO_MATCH>",
+				"black": "black"
+			},
+			"ps3/s26/58/thos_0290": {},
+			"ps3/s26/58/thos_0300": {},
+			"ps3/s26/58/thos_0310": {},
+			"ps3/s26/58/thos_0320": {},
+			"ps3/s26/58/thos_0330": {},
+			"ps3/s26/58/thos_0340": {},
+			"ps3/s26/58/thos_0350": {},
+			"ps3/s26/58/thos_0360": {},
+			"ps3/s26/58/thos_0370": {},
+			"ps3/s26/58/thos_0380": {},
+			"ps3/s26/58/thos_0390": {},
+			"ps3/s26/58/thos_0400": {},
+			"ps3/s26/58/thos_0410": {},
+			"ps3/s26/58/thos_0420": {},
+			"ps3/s26/58/thos_0430": {},
+			"ps3/s26/58/thos_0440": {
+				"black": "black"
+			},
+			"ps3/s26/58/thos_0450": {},
+			"ps3/s26/58/thos_0460": {},
+			"ps3/s26/58/thos_0470": {},
+			"ps3/s26/58/thos_0480": {},
+			"ps3/s26/58/thos_0490": {},
+			"ps3/s26/58/thos_0500": {},
+			"ps3/s26/58/thos_0510": {},
+			"ps3/s26/58/thos_0520": {
+				"scene/618a": "<SPECIAL_SCENE>"
+			},
+			"ps3/s26/59/toka_0000": {},
+			"ps3/s26/59/toka_0010": {},
+			"ps3/s26/59/toka_0020": {},
+			"ps3/s26/59/toka_0030": {},
+			"ps3/s26/59/toka_0040": {},
+			"ps3/s26/59/toka_0050": {
+				"background/hina_bus_01": "bg/hina/bus_02",
+				"black": "black"
+			},
+			"ps3/s26/59/toka_0060": {
+				"background/hina_bus_03": "bg/hina/bus_03",
+				"black": "black"
+			},
+			"ps3/s26/59/toka_0070": {},
+			"ps3/s26/59/toka_0080": {},
+			"ps3/s26/59/toka_0090": {},
+			"ps3/s26/59/toka_0100": {},
+			"ps3/s26/59/toka_0110": {},
+			"ps3/s26/59/toka_0120": {},
+			"ps3/s26/59/toka_0130": {},
+			"ps3/s26/59/toka_0140": {},
+			"ps3/s26/59/toka_0150": {},
+			"ps3/s26/59/toka_0160": {},
+			"ps3/s26/59/toka_0170": {},
+			"ps3/s26/59/toka_0180": {},
+			"ps3/s26/59/toka_0190": {},
+			"ps3/s26/59/toka_0200": {},
+			"ps3/s26/59/toka_0210": {},
+			"ps3/s26/59/toka_0220": {},
+			"ps3/s26/59/toka_0230": {
+				"scene/618a": "<SPECIAL_SCENE>"
+			},
+			"ps3/s26/59/toka_0240": {
+				"background/hina_bus_01": "<NO_MATCH>",
+				"background/hina_bus_04": "<NO_MATCH>",
+				"black": "black",
+				"effect/left": "effect/left",
+				"scene/618a": "<SPECIAL_SCENE>",
+				"scene/618b": "<SPECIAL_SCENE>"
+			},
+			"ps3/s26/59/toka_0250": {},
+			"ps3/s26/60/toda_0000": {
+				"background/hina_bus_03": "bg/hina/bus_01",
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/s26/60/toda_0010": {},
+			"ps3/s26/60/toda_0020": {
+				"background/hina_bus_03": "<NO_MATCH>",
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/s26/60/toda_0030": {},
+			"ps3/s26/60/toda_0040": {},
+			"ps3/s26/60/toda_0050": {},
+			"ps3/s26/60/toda_0060": {
+				"background/hina_bus_01": "<NO_MATCH>",
+				"black": "black"
+			},
+			"ps3/s26/60/toda_0070": {},
+			"ps3/s26/60/toda_0080": {},
+			"ps3/s26/61/thot_0000": {
+				"background/hina_bus_03": "bg/hina/bus_03",
+				"effect/up": "effect/up"
+			},
+			"ps3/s26/61/thot_0010": {
+				"background/hina_bus_03": "bg/hina/bus_03"
+			},
+			"ps3/s26/61/thot_0020": {},
+			"ps3/s26/61/thot_0030": {},
+			"ps3/s26/61/thot_0040": {},
+			"ps3/s26/61/thot_0050": {
+				"black": "black",
+				"effect/bite": "bg/efe/bite"
+			},
+			"ps3/s26/61/thot_0060": {},
+			"ps3/s26/61/thot_0070": {
+				"background/hina_douro_03": "bg/hina/douro_02",
+				"black": "black"
+			},
+			"ps3/s26/61/thot_0080": {},
+			"ps3/s26/61/thot_0090": {},
+			"ps3/s26/61/thot_0100": {},
+			"ps3/s26/61/thot_0110": {},
+			"ps3/s26/61/thot_0120": {},
+			"ps3/s26/61/thot_0130": {}
+		},
+		"dummy": {},
+		"flow": {
+			"": {
+				"black": "black",
+				"chapter/back": "chapter/back",
+				"chapter/center2": "chapter/center2",
+				"chapter/center_low2": "chapter/center_low2",
+				"chapter/left2": "chapter/left2",
+				"chapter/right2": "chapter/right2",
+				"chapter/tuika_1": "chapter/tuika_1",
+				"chapter/tuika_2": "chapter/tuika_2",
+				"chapter/tuika_3": "chapter/tuika_3",
+				"chapter/tuika_4": "chapter/tuika_4",
+				"effect/down": "effect/down",
+				"effect/logomask": "effect/logomask",
+				"effect/mask2": "effect/mask2",
+				"effect/mask4": "effect/mask4",
+				"effect/maskc": "effect/maskc",
+				"omake/lock_bg": "omake/lock_bg",
+				"omake/music": "omake/music",
+				"omake/tyuit": "omake/tyuit",
+				"title/07th-mod": "<NO_MATCH>",
+				"title/07thlogo": "title/07thlogo",
+				"title/akairo": "title/akairo",
+				"title/ken": "title/ken",
+				"title/logo": "title/logo",
+				"title/mangagamer": "title/mangagamer",
+				"title/rik_alt": "<NO_MATCH>",
+				"title/title": "title/title",
+				"title/title3": "title/title3",
+				"title/title3scroll": "<NO_MATCH>",
+				"white": "white"
+			}
+		},
+		"init": {},
+		"mehagashi": {
+			"": {
+				"background/jsa1": "bg/jinja/jsa1",
+				"background/saiguden_02": "bg/jinja/jsa2",
+				"black": "black",
+				"effect/left": "effect/left",
+				"effect/tyuui": "img/tyuui"
+			},
+			"ps3/meha/0/keiichi9051": {},
+			"ps3/meha/0/keiichi9052": {},
+			"ps3/meha/0/mob019000": {},
+			"ps3/meha/0/mob019001": {
+				"background/oki_pool2": "bg/2021_add/pool2",
+				"black": "black"
+			},
+			"ps3/meha/0/mob029000": {},
+			"ps3/meha/0/mob039000": {},
+			"ps3/meha/0/mob039001": {
+				"background/sora": "bg/mura/sora"
+			},
+			"ps3/meha/0/mob049000": {},
+			"ps3/meha/0/mob059000": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"black": "black"
+			},
+			"ps3/meha/0/mob069000": {},
+			"ps3/meha/0/mob069001": {
+				"background/oki_pool2": "bg/2021_add/pool2",
+				"black": "black",
+				"effect/maskc": "effect/maskc",
+				"white": "white"
+			},
+			"ps3/meha/0/mob069002": {},
+			"ps3/meha/0/mob069003": {},
+			"ps3/meha/0/mob079000": {},
+			"ps3/meha/0/mob079001": {},
+			"ps3/meha/0/mob079002": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/0/mob079003": {},
+			"ps3/meha/0/mob079004": {},
+			"ps3/meha/0/mob089000": {},
+			"ps3/meha/0/mob089001": {},
+			"ps3/meha/0/mob089002": {},
+			"ps3/meha/0/mob089003": {},
+			"ps3/meha/0/mob099000": {},
+			"ps3/meha/0/mob099001": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/0/mob099002": {},
+			"ps3/meha/0/mob099003": {},
+			"ps3/meha/0/mob099004": {},
+			"ps3/meha/0/mob099005": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/0/mob099006": {},
+			"ps3/meha/0/mob099007": {},
+			"ps3/meha/0/mob099008": {},
+			"ps3/meha/0/mob099009": {},
+			"ps3/meha/0/mob099010": {},
+			"ps3/meha/0/mob099011": {},
+			"ps3/meha/0/mob109000": {
+				"background/oki_pool2": "bg/2021_add/pool2"
+			},
+			"ps3/meha/0/mob109001": {},
+			"ps3/meha/0/mob109002": {},
+			"ps3/meha/0/mob109003": {},
+			"ps3/meha/0/mob109004": {},
+			"ps3/meha/0/mob109005": {},
+			"ps3/meha/0/mob109006": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"background/oki_pool2": "bg/2021_add/pool2"
+			},
+			"ps3/meha/0/mob109007": {},
+			"ps3/meha/0/mob109008": {},
+			"ps3/meha/0/mob109009": {},
+			"ps3/meha/0/mob109010": {},
+			"ps3/meha/0/mob109011": {},
+			"ps3/meha/0/mob109012": {},
+			"ps3/meha/0/mob119000": {},
+			"ps3/meha/0/mob119001": {
+				"background/oki_pool3": "bg/2021_add/pool3",
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/0/mob119002": {},
+			"ps3/meha/0/mob119003": {
+				"background/oki_pool2": "bg/2021_add/pool2",
+				"effect/up": "effect/up"
+			},
+			"ps3/meha/0/mob119004": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/0/mob119005": {
+				"background/oki_pool2": "bg/2021_add/pool2",
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/0/mob119006": {},
+			"ps3/meha/0/mob119007": {
+				"background/oki_pool2": "bg/2021_add/pool2",
+				"black": "black"
+			},
+			"ps3/meha/0/yoshirou9000": {},
+			"ps3/meha/0/yoshirou9001": {},
+			"ps3/meha/0/yoshirou9002": {},
+			"ps3/meha/0/yoshirou9003": {},
+			"ps3/meha/0/yoshirou9004": {},
+			"ps3/meha/0/yoshirou9005": {},
+			"ps3/meha/0/yoshirou9006": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/1/keiichi9000": {},
+			"ps3/meha/1/keiichi9001": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/1/keiichi9002": {},
+			"ps3/meha/1/keiichi9003": {},
+			"ps3/meha/1/keiichi9004": {},
+			"ps3/meha/1/keiichi9005": {},
+			"ps3/meha/1/keiichi9006": {},
+			"ps3/meha/1/keiichi9007": {},
+			"ps3/meha/1/keiichi9008": {},
+			"ps3/meha/1/keiichi9009": {},
+			"ps3/meha/1/keiichi9010": {},
+			"ps3/meha/1/keiichi9011": {},
+			"ps3/meha/1/keiichi9012": {},
+			"ps3/meha/1/keiichi9013": {},
+			"ps3/meha/1/keiichi9014": {
+				"effect/maskc": "effect/maskc",
+				"white": "white"
+			},
+			"ps3/meha/1/keiichi9015": {},
+			"ps3/meha/1/keiichi9016": {},
+			"ps3/meha/1/keiichi9017": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/1/keiichi9018": {},
+			"ps3/meha/1/keiichi9019": {},
+			"ps3/meha/1/keiichi9020": {},
+			"ps3/meha/1/keiichi9021": {},
+			"ps3/meha/1/keiichi9022": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/1/keiichi9023": {},
+			"ps3/meha/1/keiichi9024": {
+				"black": "black"
+			},
+			"ps3/meha/1/keiichi9025": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/1/keiichi9026": {},
+			"ps3/meha/1/keiichi9027": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/1/keiichi9028": {},
+			"ps3/meha/1/keiichi9029": {
+				"background/fure1": "bg/sonota/fure1",
+				"background/uchu_space1": "bg/2021_add/uchu_space1",
+				"background/uchu_space2": "bg/2021_add/uchu_space2",
+				"black": "black",
+				"effect/maskc": "effect/maskc",
+				"white": "white"
+			},
+			"ps3/meha/1/keiichi9030": {},
+			"ps3/meha/1/keiichi9031": {},
+			"ps3/meha/1/keiichi9032": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/1/keiichi9033": {},
+			"ps3/meha/1/keiichi9034": {},
+			"ps3/meha/1/keiichi9035": {},
+			"ps3/meha/1/keiichi9036": {},
+			"ps3/meha/1/keiichi9037": {},
+			"ps3/meha/1/keiichi9038": {},
+			"ps3/meha/1/keiichi9039": {
+				"background/kouisitu1": "bg/2021_add/kouisitu1",
+				"background/oki_pool2": "bg/2021_add/pool2",
+				"background/p2": "bg/2021_add/p2",
+				"black": "black",
+				"effect/left": "effect/left",
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/1/keiichi9040": {},
+			"ps3/meha/1/keiichi9041": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"background/oki_pool2": "bg/2021_add/pool2",
+				"background/sora": "bg/mura/sora",
+				"black": "black",
+				"effect/right": "effect/right",
+				"white": "white"
+			},
+			"ps3/meha/1/keiichi9042": {},
+			"ps3/meha/1/keiichi9043": {},
+			"ps3/meha/1/keiichi9044": {},
+			"ps3/meha/1/keiichi9045": {},
+			"ps3/meha/1/keiichi9046": {},
+			"ps3/meha/1/keiichi9047": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"black": "black",
+				"effect/aka1": "effect/aka1",
+				"effect/up": "effect/up"
+			},
+			"ps3/meha/1/keiichi9048": {},
+			"ps3/meha/1/keiichi9049": {},
+			"ps3/meha/1/keiichi9050": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/1/keiichi9053": {},
+			"ps3/meha/1/keiichi9054": {},
+			"ps3/meha/1/keiichi9055": {},
+			"ps3/meha/1/keiichi9056": {},
+			"ps3/meha/1/keiichi9057": {},
+			"ps3/meha/1/keiichi9058": {},
+			"ps3/meha/1/keiichi9059": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/1/keiichi9060": {},
+			"ps3/meha/1/keiichi9061": {},
+			"ps3/meha/1/keiichi9062": {},
+			"ps3/meha/1/keiichi9063": {},
+			"ps3/meha/1/keiichi9064": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/1/keiichi9065": {},
+			"ps3/meha/1/keiichi9066": {},
+			"ps3/meha/1/keiichi9067": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"background/sora": "bg/mura/sora",
+				"black": "black",
+				"effect/down": "effect/down",
+				"effect/up": "effect/up",
+				"white": "white"
+			},
+			"ps3/meha/1/keiichi9068": {},
+			"ps3/meha/1/keiichi9069": {
+				"background/oki_pool3": "bg/2021_add/pool3",
+				"black": "black"
+			},
+			"ps3/meha/1/keiichi9070": {},
+			"ps3/meha/1/keiichi9071": {},
+			"ps3/meha/1/keiichi9072": {},
+			"ps3/meha/1/keiichi9073": {},
+			"ps3/meha/1/keiichi9074": {},
+			"ps3/meha/1/keiichi9075": {},
+			"ps3/meha/1/keiichi9076": {
+				"background/chika_shisetsu": "bg/tokyo/ko1",
+				"black": "black",
+				"effect/kei": "<SPRITE_MATCH>"
+			},
+			"ps3/meha/1/keiichi9077": {},
+			"ps3/meha/1/keiichi9078": {
+				"background/chika_shisetsu": "bg/tokyo/ko1",
+				"black": "black",
+				"effect/down": "effect/down",
+				"effect/up": "effect/up",
+				"white": "white"
+			},
+			"ps3/meha/1/keiichi9079": {},
+			"ps3/meha/1/keiichi9080": {
+				"background/sora": "bg/mura/sora",
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/meha/1/keiichi9081": {},
+			"ps3/meha/1/keiichi9082": {
+				"background/oki_pool2": "bg/2021_add/pool2"
+			},
+			"ps3/meha/1/keiichi9083": {},
+			"ps3/meha/1/keiichi9084": {},
+			"ps3/meha/1/keiichi9085": {},
+			"ps3/meha/1/keiichi9086": {},
+			"ps3/meha/1/keiichi9087": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"background/oki_pool2": "bg/2021_add/pool2",
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/1/keiichi9088": {},
+			"ps3/meha/1/keiichi9089": {},
+			"ps3/meha/1/keiichi9090": {
+				"background/oki_pool2": "bg/2021_add/pool2",
+				"black": "black"
+			},
+			"ps3/meha/1/keiichi9091": {},
+			"ps3/meha/1/keiichi9092": {},
+			"ps3/meha/1/keiichi9093": {},
+			"ps3/meha/1/keiichi9094": {},
+			"ps3/meha/1/keiichi9095": {
+				"background/oki_pool3": "bg/2021_add/pool3",
+				"black": "black"
+			},
+			"ps3/meha/1/keiichi9096": {},
+			"ps3/meha/1/keiichi9097": {},
+			"ps3/meha/1/keiichi9098": {},
+			"ps3/meha/1/keiichi9099": {},
+			"ps3/meha/1/keiichi9100": {},
+			"ps3/meha/1/keiichi9101": {},
+			"ps3/meha/1/keiichi9102": {},
+			"ps3/meha/1/keiichi9103": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"background/sora": "bg/mura/sora",
+				"black": "black",
+				"effect/down": "effect/down",
+				"effect/up": "effect/up",
+				"white": "white"
+			},
+			"ps3/meha/1/keiichi9104": {},
+			"ps3/meha/1/keiichi9105": {},
+			"ps3/meha/1/keiichi9106": {},
+			"ps3/meha/1/keiichi9107": {},
+			"ps3/meha/1/keiichi9108": {},
+			"ps3/meha/1/keiichi9109": {},
+			"ps3/meha/1/keiichi9110": {},
+			"ps3/meha/1/keiichi9111": {},
+			"ps3/meha/1/keiichi9112": {
+				"background/oki_pool3": "bg/2021_add/pool3",
+				"black": "black"
+			},
+			"ps3/meha/1/keiichi9113": {},
+			"ps3/meha/1/keiichi9114": {},
+			"ps3/meha/1/keiichi9115": {},
+			"ps3/meha/1/keiichi9116": {
+				"background/gomibako": "bg/2021_add/gomibako",
+				"background/heaven_tengoku": "bg/2021_add/heaven_tengoku",
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"background/oki_pool2": "bg/2021_add/pool2",
+				"background/p2": "bg/2021_add/p2",
+				"black": "black",
+				"effect/down": "effect/down",
+				"effect/left": "effect/left",
+				"effect/right": "effect/right",
+				"effect/up": "effect/up",
+				"white": "white"
+			},
+			"ps3/meha/1/keiichi9117": {},
+			"ps3/meha/1/keiichi9118": {},
+			"ps3/meha/1/keiichi9119": {
+				"background/p2": "bg/2021_add/p2",
+				"black": "black"
+			},
+			"ps3/meha/1/keiichi9120": {},
+			"ps3/meha/1/keiichi9121": {},
+			"ps3/meha/1/keiichi9122": {
+				"background/p1": "bg/2021_add/p1",
+				"background/toi_1a": "bg/resut/toire1",
+				"background/toire2": "bg/resut/toire2",
+				"black": "black",
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/1/keiichi9123": {},
+			"ps3/meha/1/keiichi9124": {},
+			"ps3/meha/1/keiichi9125": {},
+			"ps3/meha/1/keiichi9126": {},
+			"ps3/meha/1/keiichi9127": {},
+			"ps3/meha/1/keiichi9128": {},
+			"ps3/meha/1/keiichi9129": {},
+			"ps3/meha/1/keiichi9130": {},
+			"ps3/meha/1/keiichi9131": {},
+			"ps3/meha/1/keiichi9132": {},
+			"ps3/meha/1/keiichi9133": {},
+			"ps3/meha/1/keiichi9134": {},
+			"ps3/meha/1/keiichi9135": {},
+			"ps3/meha/1/keiichi9136": {},
+			"ps3/meha/1/keiichi9137": {},
+			"ps3/meha/1/keiichi9138": {},
+			"ps3/meha/1/keiichi9139": {},
+			"ps3/meha/1/keiichi9140": {},
+			"ps3/meha/1/keiichi9141": {
+				"background/oki_pool3": "bg/2021_add/pool3",
+				"black": "black"
+			},
+			"ps3/meha/1/keiichi9142": {},
+			"ps3/meha/1/keiichi9143": {},
+			"ps3/meha/1/keiichi9144": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/1/keiichi9145": {},
+			"ps3/meha/1/keiichi9146": {
+				"background/oki_pool3": "bg/2021_add/pool3",
+				"black": "black"
+			},
+			"ps3/meha/1/keiichi9147": {},
+			"ps3/meha/1/keiichi9148": {},
+			"ps3/meha/1/keiichi9149": {},
+			"ps3/meha/1/keiichi9150": {},
+			"ps3/meha/1/keiichi9151": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"effect/left": "effect/left",
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/1/keiichi9152": {},
+			"ps3/meha/1/keiichi9153": {},
+			"ps3/meha/1/keiichi9154": {},
+			"ps3/meha/1/keiichi9155": {},
+			"ps3/meha/1/keiichi9156": {},
+			"ps3/meha/1/keiichi9157": {},
+			"ps3/meha/1/keiichi9158": {},
+			"ps3/meha/1/keiichi9159": {},
+			"ps3/meha/1/keiichi9160": {},
+			"ps3/meha/1/keiichi9161": {},
+			"ps3/meha/1/keiichi9162": {},
+			"ps3/meha/1/keiichi9163": {},
+			"ps3/meha/1/keiichi9164": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/1/keiichi9165": {},
+			"ps3/meha/1/keiichi9166": {},
+			"ps3/meha/1/keiichi9167": {},
+			"ps3/meha/1/keiichi9168": {},
+			"ps3/meha/1/keiichi9169": {},
+			"ps3/meha/1/keiichi9170": {},
+			"ps3/meha/1/keiichi9171": {},
+			"ps3/meha/1/keiichi9172": {},
+			"ps3/meha/1/keiichi9173": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/1/keiichi9174": {},
+			"ps3/meha/1/keiichi9175": {},
+			"ps3/meha/1/keiichi9176": {},
+			"ps3/meha/1/keiichi9177": {},
+			"ps3/meha/1/keiichi9178": {
+				"background/oki_pool3": "bg/2021_add/pool3",
+				"white": "white"
+			},
+			"ps3/meha/1/keiichi9179": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/1/keiichi9180": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/1/keiichi9181": {},
+			"ps3/meha/1/keiichi9182": {
+				"black": "black",
+				"effect/down": "effect/down"
+			},
+			"ps3/meha/1/keiichi9183": {
+				"effect/aka1": "effect/aka1",
+				"effect/up": "effect/up"
+			},
+			"ps3/meha/1/keiichi9184": {},
+			"ps3/meha/1/keiichi9185": {},
+			"ps3/meha/1/keiichi9186": {},
+			"ps3/meha/1/keiichi9187": {
+				"background/sora": "bg/mura/sora",
+				"black": "black"
+			},
+			"ps3/meha/1/keiichi9188": {},
+			"ps3/meha/1/keiichi9189": {},
+			"ps3/meha/1/keiichi9190": {},
+			"ps3/meha/1/keiichi9191": {},
+			"ps3/meha/1/keiichi9192": {},
+			"ps3/meha/1/keiichi9193": {
+				"effect/aka1": "effect/aka1"
+			},
+			"ps3/meha/1/keiichi9194": {},
+			"ps3/meha/1/keiichi9195": {
+				"effect/aka2": "effect/aka2"
+			},
+			"ps3/meha/1/keiichi9196": {},
+			"ps3/meha/1/keiichi9197": {
+				"black": "black",
+				"effect/aka1": "effect/aka1",
+				"effect/aka2": "effect/aka2"
+			},
+			"ps3/meha/1/keiichi9198": {},
+			"ps3/meha/1/keiichi9199": {
+				"background/oki_pool3": "bg/2021_add/pool3"
+			},
+			"ps3/meha/1/keiichi9200": {
+				"effect/down": "effect/down",
+				"effect/up": "effect/up"
+			},
+			"ps3/meha/1/keiichi9201": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"background/sora": "bg/mura/sora"
+			},
+			"ps3/meha/1/keiichi9202": {},
+			"ps3/meha/1/keiichi9203": {},
+			"ps3/meha/1/keiichi9204": {},
+			"ps3/meha/1/keiichi9205": {},
+			"ps3/meha/1/keiichi9206": {
+				"background/oki_pool1": "bg/2021_add/pool1"
+			},
+			"ps3/meha/1/keiichi9207": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"background/sora": "bg/mura/sora",
+				"black": "black",
+				"effect/down": "effect/down",
+				"white": "white"
+			},
+			"ps3/meha/1/keiichi9208": {
+				"effect/up": "effect/up"
+			},
+			"ps3/meha/1/keiichi9209": {},
+			"ps3/meha/1/keiichi9210": {},
+			"ps3/meha/1/keiichi9211": {
+				"background/oki_pool2": "bg/2021_add/pool2",
+				"background/sora": "bg/mura/sora",
+				"black": "black",
+				"effect/down": "effect/down"
+			},
+			"ps3/meha/1/keiichi9212": {},
+			"ps3/meha/1/keiichi9213": {},
+			"ps3/meha/1/keiichi9214": {},
+			"ps3/meha/1/keiichi9215": {},
+			"ps3/meha/1/keiichi9216": {},
+			"ps3/meha/1/keiichi9217": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/1/keiichi9218": {},
+			"ps3/meha/1/keiichi9219": {},
+			"ps3/meha/1/keiichi9220": {},
+			"ps3/meha/1/keiichi9221": {},
+			"ps3/meha/1/keiichi9222": {},
+			"ps3/meha/1/keiichi9223": {},
+			"ps3/meha/1/keiichi9224": {},
+			"ps3/meha/1/keiichi9225": {},
+			"ps3/meha/1/keiichi9226": {},
+			"ps3/meha/1/keiichi9227": {},
+			"ps3/meha/1/keiichi9228": {},
+			"ps3/meha/1/keiichi9229": {},
+			"ps3/meha/1/keiichi9230": {},
+			"ps3/meha/1/keiichi9231": {
+				"black": "black"
+			},
+			"ps3/meha/1/keiichi9232": {
+				"background/kouisitu1": "bg/2021_add/kouisitu1",
+				"background/sinryou_sinsatu2": "bg/sinryoujo/sinryou_sinsatu2",
+				"black": "black",
+				"effect/left": "effect/left",
+				"effect/up": "effect/up",
+				"white": "white"
+			},
+			"ps3/meha/1/keiichi9233": {},
+			"ps3/meha/1/keiichi9234": {},
+			"ps3/meha/1/keiichi9235": {},
+			"ps3/meha/1/keiichi9236": {},
+			"ps3/meha/1/keiichi9237": {},
+			"ps3/meha/1/keiichi9238": {},
+			"ps3/meha/1/keiichi9239": {},
+			"ps3/meha/1/keiichi9240": {},
+			"ps3/meha/1/keiichi9241": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/1/keiichi9242": {},
+			"ps3/meha/1/keiichi9243": {},
+			"ps3/meha/1/keiichi9244": {},
+			"ps3/meha/1/keiichi9245": {
+				"background/kouisitu2": "bg/sinryoujo/sinryou_sinsatu4",
+				"background/p1": "bg/2021_add/p1",
+				"background/p2": "bg/2021_add/p2",
+				"black": "black",
+				"effect/left": "effect/left",
+				"effect/up": "effect/up"
+			},
+			"ps3/meha/1/keiichi9246": {},
+			"ps3/meha/1/keiichi9247": {},
+			"ps3/meha/1/keiichi9248": {},
+			"ps3/meha/1/keiichi9249": {},
+			"ps3/meha/1/keiichi9250": {
+				"background/heaven_tengoku": "bg/2021_add/heaven_tengoku",
+				"background/kouisitu2": "bg/sinryoujo/sinryou_sinsatu4",
+				"background/tikan_gekitai": "bg/2021_add/tikan_gekitai",
+				"black": "black",
+				"effect/aka1": "effect/aka1",
+				"effect/maskc": "effect/maskc"
+			},
+			"ps3/meha/1/keiichi9251": {
+				"background/kouisitu2": "bg/sinryoujo/sinryou_sinsatu4",
+				"background/mizugi": "bg/2021_add/mizugi",
+				"black": "black",
+				"effect/down": "effect/down",
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/1/keiichi9252": {
+				"background/gomibako": "bg/2021_add/gomibako",
+				"background/kouisitu1": "bg/2021_add/kouisitu1",
+				"background/p1": "bg/2021_add/p1",
+				"background/p2": "bg/2021_add/p2",
+				"black": "black",
+				"effect/left": "effect/left",
+				"effect/right": "effect/right",
+				"effect/up": "effect/up",
+				"white": "white"
+			},
+			"ps3/meha/1/keiichi9253": {},
+			"ps3/meha/1/keiichi9254": {
+				"background/p2": "bg/2021_add/p2",
+				"effect/left": "effect/left",
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/1/keiichi9255": {},
+			"ps3/meha/1/keiichi9256": {
+				"background/uchu_space": "bg/2021_add/uchu_space",
+				"black": "black",
+				"effect/mask1": "<NO_MATCH>"
+			},
+			"ps3/meha/10/irie9000": {},
+			"ps3/meha/10/irie9001": {},
+			"ps3/meha/10/irie9002": {},
+			"ps3/meha/10/irie9003": {},
+			"ps3/meha/10/irie9004": {
+				"effect/down": "effect/down"
+			},
+			"ps3/meha/10/irie9005": {},
+			"ps3/meha/10/irie9006": {},
+			"ps3/meha/10/irie9007": {},
+			"ps3/meha/10/irie9008": {},
+			"ps3/meha/10/irie9009": {},
+			"ps3/meha/10/irie9010": {},
+			"ps3/meha/10/irie9011": {},
+			"ps3/meha/10/irie9012": {},
+			"ps3/meha/10/irie9013": {},
+			"ps3/meha/10/irie9014": {},
+			"ps3/meha/10/irie9015": {},
+			"ps3/meha/10/irie9016": {},
+			"ps3/meha/10/irie9017": {},
+			"ps3/meha/10/irie9018": {},
+			"ps3/meha/10/irie9019": {},
+			"ps3/meha/10/irie9020": {},
+			"ps3/meha/10/irie9021": {},
+			"ps3/meha/10/irie9022": {},
+			"ps3/meha/10/irie9023": {},
+			"ps3/meha/10/irie9024": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"black": "black",
+				"effect/aka1": "effect/aka1",
+				"effect/right": "effect/right",
+				"white": "white"
+			},
+			"ps3/meha/10/irie9025": {},
+			"ps3/meha/10/irie9026": {},
+			"ps3/meha/10/irie9027": {},
+			"ps3/meha/10/irie9028": {},
+			"ps3/meha/10/irie9029": {},
+			"ps3/meha/10/irie9030": {},
+			"ps3/meha/10/irie9031": {},
+			"ps3/meha/10/irie9032": {},
+			"ps3/meha/10/irie9033": {
+				"background/sora": "bg/mura/sora"
+			},
+			"ps3/meha/10/irie9034": {
+				"background/sora": "bg/mura/sora",
+				"white": "white"
+			},
+			"ps3/meha/10/irie9035": {
+				"background/oki_pool2": "bg/2021_add/pool2",
+				"effect/up": "effect/up"
+			},
+			"ps3/meha/12/hanyu9000": {},
+			"ps3/meha/12/hanyu9001": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/12/hanyu9002": {},
+			"ps3/meha/12/hanyu9003": {},
+			"ps3/meha/12/hanyu9004": {},
+			"ps3/meha/12/hanyu9005": {},
+			"ps3/meha/12/hanyu9006": {},
+			"ps3/meha/12/hanyu9007": {},
+			"ps3/meha/12/hanyu9008": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/12/hanyu9009": {},
+			"ps3/meha/12/hanyu9010": {},
+			"ps3/meha/12/hanyu9011": {},
+			"ps3/meha/12/hanyu9012": {},
+			"ps3/meha/12/hanyu9013": {},
+			"ps3/meha/12/hanyu9014": {},
+			"ps3/meha/12/hanyu9015": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/12/hanyu9016": {},
+			"ps3/meha/12/hanyu9017": {
+				"background/fure1": "bg/sonota/fure1",
+				"effect/maskc": "effect/maskc"
+			},
+			"ps3/meha/12/hanyu9018": {},
+			"ps3/meha/12/hanyu9019": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/12/hanyu9020": {},
+			"ps3/meha/12/hanyu9021": {},
+			"ps3/meha/12/hanyu9022": {},
+			"ps3/meha/12/hanyu9023": {},
+			"ps3/meha/12/hanyu9024": {},
+			"ps3/meha/12/hanyu9025": {},
+			"ps3/meha/12/hanyu9026": {
+				"background/fure1": "bg/sonota/fure1"
+			},
+			"ps3/meha/12/hanyu9027": {},
+			"ps3/meha/12/hanyu9028": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/12/hanyu9029": {
+				"background/fure1": "bg/sonota/fure1",
+				"black": "black"
+			},
+			"ps3/meha/12/hanyu9030": {},
+			"ps3/meha/12/hanyu9031": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/12/hanyu9032": {},
+			"ps3/meha/12/hanyu9033": {},
+			"ps3/meha/12/hanyu9034": {},
+			"ps3/meha/12/hanyu9035": {
+				"effect/aka1": "effect/aka1"
+			},
+			"ps3/meha/12/hanyu9036": {},
+			"ps3/meha/12/hanyu9037": {},
+			"ps3/meha/12/hanyu9038": {},
+			"ps3/meha/12/hanyu9039": {},
+			"ps3/meha/12/hanyu9040": {},
+			"ps3/meha/12/hanyu9041": {},
+			"ps3/meha/12/hanyu9042": {},
+			"ps3/meha/12/hanyu9043": {},
+			"ps3/meha/12/hanyu9044": {},
+			"ps3/meha/12/hanyu9045": {},
+			"ps3/meha/12/hanyu9046": {},
+			"ps3/meha/12/hanyu9047": {},
+			"ps3/meha/12/hanyu9048": {},
+			"ps3/meha/12/hanyu9049": {},
+			"ps3/meha/12/hanyu9050": {},
+			"ps3/meha/12/hanyu9051": {},
+			"ps3/meha/12/hanyu9052": {},
+			"ps3/meha/12/hanyu9053": {},
+			"ps3/meha/12/hanyu9054": {},
+			"ps3/meha/12/hanyu9055": {},
+			"ps3/meha/12/hanyu9056": {},
+			"ps3/meha/12/hanyu9057": {},
+			"ps3/meha/12/hanyu9058": {},
+			"ps3/meha/12/hanyu9059": {},
+			"ps3/meha/12/hanyu9060": {
+				"black": "black"
+			},
+			"ps3/meha/12/hanyu9061": {},
+			"ps3/meha/12/hanyu9062": {},
+			"ps3/meha/12/hanyu9063": {},
+			"ps3/meha/12/hanyu9064": {},
+			"ps3/meha/12/hanyu9065": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/12/hanyu9066": {},
+			"ps3/meha/12/hanyu9067": {},
+			"ps3/meha/12/hanyu9068": {
+				"background/kouisitu2": "bg/sinryoujo/sinryou_sinsatu4",
+				"effect/left": "effect/left",
+				"white": "white"
+			},
+			"ps3/meha/12/hanyu9069": {
+				"background/heaven_tengoku": "bg/2021_add/heaven_tengoku",
+				"background/p1": "bg/2021_add/p1",
+				"black": "black",
+				"effect/down": "effect/down",
+				"effect/up": "effect/up",
+				"white": "white"
+			},
+			"ps3/meha/12/hanyu9070": {},
+			"ps3/meha/12/hanyu9071": {},
+			"ps3/meha/12/hanyu9072": {},
+			"ps3/meha/12/hanyu9073": {},
+			"ps3/meha/12/hanyu9074": {},
+			"ps3/meha/12/hanyu9075": {},
+			"ps3/meha/2/rena9000": {
+				"background/sora5": "bg/mura/sora5"
+			},
+			"ps3/meha/2/rena9001": {},
+			"ps3/meha/2/rena9002": {},
+			"ps3/meha/2/rena9003": {},
+			"ps3/meha/2/rena9004": {},
+			"ps3/meha/2/rena9005": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/2/rena9006": {},
+			"ps3/meha/2/rena9007": {},
+			"ps3/meha/2/rena9008": {},
+			"ps3/meha/2/rena9009": {},
+			"ps3/meha/2/rena9010": {},
+			"ps3/meha/2/rena9011": {},
+			"ps3/meha/2/rena9012": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/2/rena9013": {},
+			"ps3/meha/2/rena9014": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/2/rena9015": {},
+			"ps3/meha/2/rena9016": {},
+			"ps3/meha/2/rena9017": {},
+			"ps3/meha/2/rena9018": {},
+			"ps3/meha/2/rena9019": {
+				"effect/up": "effect/up"
+			},
+			"ps3/meha/2/rena9020": {},
+			"ps3/meha/2/rena9021": {},
+			"ps3/meha/2/rena9022": {},
+			"ps3/meha/2/rena9023": {},
+			"ps3/meha/2/rena9024": {},
+			"ps3/meha/2/rena9025": {},
+			"ps3/meha/2/rena9026": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/2/rena9027": {},
+			"ps3/meha/2/rena9028": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/2/rena9029": {},
+			"ps3/meha/2/rena9030": {},
+			"ps3/meha/2/rena9031": {
+				"effect/aka1": "effect/aka1",
+				"effect/down": "effect/down"
+			},
+			"ps3/meha/2/rena9032": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/2/rena9033": {
+				"black": "black"
+			},
+			"ps3/meha/23/kameda9000": {},
+			"ps3/meha/23/kameda9001": {
+				"background/p2": "bg/2021_add/p2",
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/23/kameda9002": {},
+			"ps3/meha/23/kameda9003": {},
+			"ps3/meha/23/kameda9004": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"background/sora": "bg/mura/sora",
+				"black": "black",
+				"effect/bg0": "effect/bg0",
+				"effect/furiker_a": "furiker_a",
+				"effect/furiker_b": "furiker_b",
+				"effect/mask1": "<NO_MATCH>"
+			},
+			"ps3/meha/23/kameda9005": {},
+			"ps3/meha/23/kameda9006": {},
+			"ps3/meha/23/kameda9007": {
+				"background/oki_pool2": "bg/2021_add/pool2",
+				"effect/aka1": "effect/aka1"
+			},
+			"ps3/meha/23/kameda9008": {},
+			"ps3/meha/23/kameda9009": {},
+			"ps3/meha/23/kameda9010": {},
+			"ps3/meha/23/kameda9011": {},
+			"ps3/meha/23/kameda9012": {},
+			"ps3/meha/23/kameda9013": {},
+			"ps3/meha/23/kameda9014": {
+				"white": "white"
+			},
+			"ps3/meha/23/kameda9015": {},
+			"ps3/meha/3/mion9000": {},
+			"ps3/meha/3/mion9001": {},
+			"ps3/meha/3/mion9002": {},
+			"ps3/meha/3/mion9003": {},
+			"ps3/meha/3/mion9004": {},
+			"ps3/meha/3/mion9005": {},
+			"ps3/meha/3/mion9006": {
+				"background/p1": "bg/2021_add/p1"
+			},
+			"ps3/meha/3/mion9007": {},
+			"ps3/meha/3/mion9008": {},
+			"ps3/meha/3/mion9009": {},
+			"ps3/meha/3/mion9010": {},
+			"ps3/meha/3/mion9011": {},
+			"ps3/meha/3/mion9012": {
+				"background/sora": "bg/mura/sora"
+			},
+			"ps3/meha/3/mion9013": {},
+			"ps3/meha/3/mion9014": {},
+			"ps3/meha/3/mion9015": {},
+			"ps3/meha/3/mion9016": {},
+			"ps3/meha/3/mion9017": {
+				"background/sora": "bg/mura/sora",
+				"white": "white"
+			},
+			"ps3/meha/3/mion9018": {},
+			"ps3/meha/3/mion9019": {},
+			"ps3/meha/3/mion9020": {},
+			"ps3/meha/3/mion9021": {},
+			"ps3/meha/3/mion9022": {},
+			"ps3/meha/3/mion9023": {},
+			"ps3/meha/3/mion9024": {},
+			"ps3/meha/3/mion9025": {},
+			"ps3/meha/3/mion9026": {},
+			"ps3/meha/3/mion9027": {},
+			"ps3/meha/3/mion9028": {},
+			"ps3/meha/3/mion9029": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/3/mion9030": {},
+			"ps3/meha/3/mion9031": {},
+			"ps3/meha/3/mion9032": {},
+			"ps3/meha/3/mion9033": {},
+			"ps3/meha/3/mion9034": {},
+			"ps3/meha/3/mion9035": {},
+			"ps3/meha/3/mion9036": {},
+			"ps3/meha/3/mion9037": {},
+			"ps3/meha/3/mion9038": {
+				"background/toire2": "bg/resut/toire2",
+				"black": "black",
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/3/mion9039": {},
+			"ps3/meha/3/mion9040": {
+				"background/toire2": "bg/resut/toire2",
+				"black": "black",
+				"effect/right": "effect/right",
+				"white": "white"
+			},
+			"ps3/meha/3/mion9041": {},
+			"ps3/meha/3/mion9042": {},
+			"ps3/meha/3/mion9043": {},
+			"ps3/meha/3/mion9044": {},
+			"ps3/meha/3/mion9045": {},
+			"ps3/meha/3/mion9046": {},
+			"ps3/meha/3/mion9047": {},
+			"ps3/meha/3/mion9048": {},
+			"ps3/meha/3/mion9049": {
+				"background/toire2": "bg/resut/toire2"
+			},
+			"ps3/meha/3/mion9050": {},
+			"ps3/meha/3/mion9051": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"background/sora": "bg/mura/sora",
+				"black": "black"
+			},
+			"ps3/meha/3/mion9052": {},
+			"ps3/meha/3/mion9053": {},
+			"ps3/meha/3/mion9054": {},
+			"ps3/meha/3/mion9055": {},
+			"ps3/meha/3/mion9056": {},
+			"ps3/meha/3/mion9057": {},
+			"ps3/meha/3/mion9058": {},
+			"ps3/meha/3/mion9059": {},
+			"ps3/meha/3/mion9060": {},
+			"ps3/meha/3/mion9061": {},
+			"ps3/meha/3/mion9062": {},
+			"ps3/meha/3/mion9063": {
+				"background/mati_o6": "bg/mati/mati_o6",
+				"black": "black"
+			},
+			"ps3/meha/3/mion9064": {},
+			"ps3/meha/3/mion9065": {},
+			"ps3/meha/3/mion9066": {},
+			"ps3/meha/3/mion9067": {},
+			"ps3/meha/3/mion9068": {},
+			"ps3/meha/3/mion9069": {},
+			"ps3/meha/3/mion9070": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/3/mion9071": {},
+			"ps3/meha/3/mion9072": {},
+			"ps3/meha/3/mion9073": {},
+			"ps3/meha/3/mion9074": {},
+			"ps3/meha/3/mion9075": {},
+			"ps3/meha/3/mion9076": {},
+			"ps3/meha/3/mion9077": {},
+			"ps3/meha/3/mion9078": {},
+			"ps3/meha/3/mion9079": {},
+			"ps3/meha/3/mion9080": {},
+			"ps3/meha/3/mion9081": {},
+			"ps3/meha/3/mion9082": {},
+			"ps3/meha/3/mion9083": {},
+			"ps3/meha/3/mion9084": {},
+			"ps3/meha/3/mion9085": {},
+			"ps3/meha/3/mion9086": {},
+			"ps3/meha/3/mion9087": {},
+			"ps3/meha/3/mion9088": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"black": "black"
+			},
+			"ps3/meha/3/mion9089": {},
+			"ps3/meha/3/mion9090": {},
+			"ps3/meha/3/mion9091": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/3/mion9092": {},
+			"ps3/meha/3/mion9093": {},
+			"ps3/meha/3/mion9094": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/3/mion9095": {},
+			"ps3/meha/3/mion9096": {},
+			"ps3/meha/3/mion9097": {},
+			"ps3/meha/3/mion9098": {},
+			"ps3/meha/3/mion9099": {},
+			"ps3/meha/3/mion9100": {
+				"background/sora": "bg/mura/sora",
+				"effect/down": "effect/down"
+			},
+			"ps3/meha/3/mion9101": {},
+			"ps3/meha/3/mion9102": {},
+			"ps3/meha/3/mion9103": {},
+			"ps3/meha/4/satoko9000": {},
+			"ps3/meha/4/satoko9001": {},
+			"ps3/meha/4/satoko9002": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/4/satoko9003": {},
+			"ps3/meha/4/satoko9004": {},
+			"ps3/meha/4/satoko9005": {},
+			"ps3/meha/4/satoko9006": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/4/satoko9007": {},
+			"ps3/meha/4/satoko9008": {},
+			"ps3/meha/4/satoko9009": {},
+			"ps3/meha/4/satoko9010": {},
+			"ps3/meha/4/satoko9011": {},
+			"ps3/meha/4/satoko9012": {},
+			"ps3/meha/4/satoko9013": {},
+			"ps3/meha/4/satoko9014": {},
+			"ps3/meha/4/satoko9015": {
+				"background/oki_pool2": "bg/2021_add/pool2",
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/4/satoko9016": {},
+			"ps3/meha/4/satoko9017": {
+				"background/sora": "bg/mura/sora"
+			},
+			"ps3/meha/4/satoko9018": {},
+			"ps3/meha/4/satoko9019": {},
+			"ps3/meha/4/satoko9020": {},
+			"ps3/meha/4/satoko9021": {},
+			"ps3/meha/4/satoko9022": {},
+			"ps3/meha/4/satoko9023": {},
+			"ps3/meha/4/satoko9024": {
+				"background/oki_pool2": "bg/2021_add/pool2",
+				"black": "black"
+			},
+			"ps3/meha/4/satoko9025": {},
+			"ps3/meha/4/satoko9026": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/4/satoko9027": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/4/satoko9028": {},
+			"ps3/meha/4/satoko9029": {},
+			"ps3/meha/4/satoko9030": {},
+			"ps3/meha/4/satoko9031": {},
+			"ps3/meha/4/satoko9032": {},
+			"ps3/meha/4/satoko9033": {
+				"effect/down": "effect/down",
+				"effect/left": "effect/left",
+				"white": "white"
+			},
+			"ps3/meha/4/satoko9034": {},
+			"ps3/meha/4/satoko9035": {},
+			"ps3/meha/4/satoko9036": {},
+			"ps3/meha/4/satoko9037": {},
+			"ps3/meha/4/satoko9038": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"black": "black"
+			},
+			"ps3/meha/4/satoko9039": {},
+			"ps3/meha/4/satoko9040": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/4/satoko9041": {},
+			"ps3/meha/4/satoko9042": {},
+			"ps3/meha/4/satoko9043": {},
+			"ps3/meha/4/satoko9044": {
+				"background/oki_pool2": "bg/2021_add/pool2",
+				"black": "black"
+			},
+			"ps3/meha/4/satoko9045": {},
+			"ps3/meha/4/satoko9046": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/4/satoko9047": {},
+			"ps3/meha/4/satoko9048": {
+				"background/oki_pool3": "bg/2021_add/pool3",
+				"black": "black",
+				"effect/hara": "<SPRITE_MATCH>",
+				"effect/hton": "<SPRITE_MATCH>"
+			},
+			"ps3/meha/4/satoko9049": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"black": "black",
+				"effect/hnit": "<SPRITE_MATCH>",
+				"effect/hoda": "<SPRITE_MATCH>"
+			},
+			"ps3/meha/4/satoko9050": {},
+			"ps3/meha/4/satoko9051": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"black": "black"
+			},
+			"ps3/meha/4/satoko9052": {},
+			"ps3/meha/4/satoko9053": {},
+			"ps3/meha/4/satoko9054": {},
+			"ps3/meha/4/satoko9055": {},
+			"ps3/meha/4/satoko9056": {},
+			"ps3/meha/4/satoko9057": {},
+			"ps3/meha/4/satoko9058": {},
+			"ps3/meha/4/satoko9059": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"white": "white"
+			},
+			"ps3/meha/4/satoko9060": {},
+			"ps3/meha/4/satoko9061": {},
+			"ps3/meha/4/satoko9062": {},
+			"ps3/meha/4/satoko9063": {},
+			"ps3/meha/4/satoko9064": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/5/rika9000": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/5/rika9001": {},
+			"ps3/meha/5/rika9002": {},
+			"ps3/meha/5/rika9003": {},
+			"ps3/meha/5/rika9004": {},
+			"ps3/meha/5/rika9005": {},
+			"ps3/meha/5/rika9006": {},
+			"ps3/meha/5/rika9007": {},
+			"ps3/meha/5/rika9008": {},
+			"ps3/meha/5/rika9009": {},
+			"ps3/meha/5/rika9010": {},
+			"ps3/meha/5/rika9011": {
+				"background/saiguden_03": "bg/jinja/jsa4",
+				"black": "black"
+			},
+			"ps3/meha/5/rika9012": {},
+			"ps3/meha/5/rika9013": {},
+			"ps3/meha/5/rika9014": {
+				"background/cit_4a": "bg/mati/mati10a",
+				"background/mati3": "bg/mati/mati3",
+				"background/sora": "bg/mura/sora",
+				"black": "black",
+				"effect/left": "effect/left",
+				"effect/up": "effect/up",
+				"white": "white"
+			},
+			"ps3/meha/5/rika9015": {},
+			"ps3/meha/5/rika9016": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/5/rika9017": {},
+			"ps3/meha/5/rika9018": {},
+			"ps3/meha/5/rika9019": {},
+			"ps3/meha/5/rika9020": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/5/rika9021": {},
+			"ps3/meha/5/rika9022": {},
+			"ps3/meha/5/rika9023": {},
+			"ps3/meha/5/rika9024": {},
+			"ps3/meha/5/rika9025": {},
+			"ps3/meha/5/rika9026": {},
+			"ps3/meha/5/rika9027": {},
+			"ps3/meha/5/rika9028": {
+				"background/kouisitu1": "bg/2021_add/kouisitu1",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/5/rika9029": {},
+			"ps3/meha/5/rika9030": {
+				"background/sora": "bg/mura/sora"
+			},
+			"ps3/meha/5/rika9031": {},
+			"ps3/meha/5/rika9032": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"background/uchu_space2": "bg/2021_add/uchu_space2",
+				"white": "white"
+			},
+			"ps3/meha/5/rika9033": {},
+			"ps3/meha/5/rika9034": {
+				"background/oki_pool3": "bg/2021_add/pool3",
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/meha/5/rika9035": {},
+			"ps3/meha/5/rika9036": {},
+			"ps3/meha/5/rika9037": {},
+			"ps3/meha/5/rika9038": {},
+			"ps3/meha/5/rika9039": {},
+			"ps3/meha/5/rika9040": {
+				"background/oki_pool2": "bg/2021_add/pool2",
+				"black": "black"
+			},
+			"ps3/meha/5/rika9041": {},
+			"ps3/meha/5/rika9042": {},
+			"ps3/meha/5/rika9043": {
+				"background/oki_pool2": "<NO_MATCH>",
+				"effect/hton": "<SPRITE_MATCH>"
+			},
+			"ps3/meha/5/rika9044": {},
+			"ps3/meha/5/rika9045": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/5/rika9046": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"background/oki_pool2": "bg/2021_add/pool2",
+				"background/oki_pool3": "bg/2021_add/pool3",
+				"background/sora": "bg/mura/sora",
+				"black": "black",
+				"effect/left": "effect/left",
+				"effect/right": "effect/right",
+				"effect/up": "effect/up"
+			},
+			"ps3/meha/5/rika9047": {},
+			"ps3/meha/5/rika9048": {
+				"background/oki_pool2": "bg/2021_add/pool2"
+			},
+			"ps3/meha/5/rika9049": {},
+			"ps3/meha/5/rika9050": {},
+			"ps3/meha/5/rika9051": {
+				"background/sora": "bg/mura/sora",
+				"black": "black"
+			},
+			"ps3/meha/5/rika9052": {},
+			"ps3/meha/5/rika9053": {},
+			"ps3/meha/5/rika9054": {},
+			"ps3/meha/5/rika9055": {},
+			"ps3/meha/5/rika9056": {},
+			"ps3/meha/5/rika9057": {},
+			"ps3/meha/5/rika9058": {},
+			"ps3/meha/5/rika9059": {},
+			"ps3/meha/5/rika9060": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/5/rika9061": {},
+			"ps3/meha/5/rika9062": {
+				"background/oki_pool2": "bg/2021_add/pool2",
+				"black": "black"
+			},
+			"ps3/meha/6/shion9000": {},
+			"ps3/meha/6/shion9001": {},
+			"ps3/meha/6/shion9002": {},
+			"ps3/meha/6/shion9003": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/6/shion9004": {},
+			"ps3/meha/6/shion9005": {},
+			"ps3/meha/6/shion9006": {},
+			"ps3/meha/6/shion9007": {},
+			"ps3/meha/6/shion9008": {},
+			"ps3/meha/6/shion9009": {},
+			"ps3/meha/6/shion9010": {},
+			"ps3/meha/6/shion9011": {},
+			"ps3/meha/6/shion9012": {},
+			"ps3/meha/6/shion9013": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/6/shion9014": {},
+			"ps3/meha/6/shion9015": {},
+			"ps3/meha/6/shion9016": {},
+			"ps3/meha/6/shion9017": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"black": "black"
+			},
+			"ps3/meha/6/shion9018": {},
+			"ps3/meha/6/shion9019": {},
+			"ps3/meha/6/shion9020": {},
+			"ps3/meha/6/shion9021": {},
+			"ps3/meha/6/shion9022": {},
+			"ps3/meha/6/shion9023": {},
+			"ps3/meha/6/shion9024": {},
+			"ps3/meha/6/shion9025": {},
+			"ps3/meha/6/shion9026": {},
+			"ps3/meha/6/shion9027": {},
+			"ps3/meha/6/shion9028": {
+				"background/sora": "bg/mura/sora",
+				"black": "black",
+				"effect/right": "effect/right",
+				"effect/up": "effect/up",
+				"white": "white"
+			},
+			"ps3/meha/6/shion9029": {},
+			"ps3/meha/6/shion9030": {},
+			"ps3/meha/6/shion9031": {},
+			"ps3/meha/6/shion9032": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/6/shion9033": {},
+			"ps3/meha/6/shion9034": {},
+			"ps3/meha/6/shion9035": {},
+			"ps3/meha/6/shion9036": {},
+			"ps3/meha/6/shion9037": {},
+			"ps3/meha/6/shion9038": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/6/shion9039": {},
+			"ps3/meha/6/shion9040": {},
+			"ps3/meha/6/shion9041": {},
+			"ps3/meha/6/shion9042": {},
+			"ps3/meha/6/shion9043": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/6/shion9044": {},
+			"ps3/meha/6/shion9045": {
+				"background/toi_1a": "bg/resut/toire1"
+			},
+			"ps3/meha/6/shion9046": {},
+			"ps3/meha/6/shion9047": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/6/shion9048": {},
+			"ps3/meha/6/shion9049": {},
+			"ps3/meha/6/shion9050": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/6/shion9051": {},
+			"ps3/meha/6/shion9052": {},
+			"ps3/meha/6/shion9053": {},
+			"ps3/meha/6/shion9054": {},
+			"ps3/meha/6/shion9055": {
+				"background/oki_pool2": "bg/2021_add/pool2",
+				"background/sora": "bg/mura/sora",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/6/shion9056": {},
+			"ps3/meha/6/shion9057": {
+				"effect/right": "effect/right"
+			},
+			"ps3/meha/6/shion9058": {},
+			"ps3/meha/6/shion9059": {},
+			"ps3/meha/6/shion9060": {},
+			"ps3/meha/6/shion9061": {},
+			"ps3/meha/6/shion9062": {
+				"background/sora": "bg/mura/sora"
+			},
+			"ps3/meha/6/shion9063": {},
+			"ps3/meha/6/shion9064": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"black": "black",
+				"effect/up": "effect/up",
+				"white": "white"
+			},
+			"ps3/meha/6/shion9065": {},
+			"ps3/meha/6/shion9066": {
+				"background/sora": "bg/mura/sora"
+			},
+			"ps3/meha/6/shion9067": {},
+			"ps3/meha/6/shion9068": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/6/shion9069": {
+				"background/oki_pool1": "bg/2021_add/pool1",
+				"background/sora": "bg/mura/sora",
+				"effect/down": "effect/down",
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/6/shion9070": {},
+			"ps3/meha/6/shion9071": {},
+			"ps3/meha/6/shion9072": {
+				"effect/up": "effect/up"
+			},
+			"ps3/meha/6/shion9073": {},
+			"ps3/meha/6/shion9074": {},
+			"ps3/meha/6/shion9075": {},
+			"ps3/meha/6/shion9076": {},
+			"ps3/meha/6/shion9077": {
+				"background/oki_pool2": "bg/2021_add/pool2"
+			},
+			"ps3/meha/6/shion9078": {},
+			"ps3/meha/6/shion9079": {},
+			"ps3/meha/6/shion9080": {},
+			"ps3/meha/6/shion9081": {
+				"background/oki_pool3": "bg/2021_add/pool3",
+				"effect/hyos": "<SPRITE_MATCH>",
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/6/shion9082": {
+				"background/oki_pool3": "bg/2021_add/pool3",
+				"effect/down": "effect/down",
+				"effect/hton": "<SPRITE_MATCH>",
+				"effect/left": "effect/left",
+				"effect/up": "effect/up",
+				"white": "white"
+			},
+			"ps3/meha/6/shion9083": {},
+			"ps3/meha/6/shion9084": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/6/shion9085": {},
+			"ps3/meha/6/shion9086": {},
+			"ps3/meha/6/shion9087": {},
+			"ps3/meha/6/shion9088": {},
+			"ps3/meha/6/shion9089": {
+				"background/oki_pool1": "bg/2021_add/pool1"
+			},
+			"ps3/meha/6/shion9090": {
+				"background/oki_pool2": "bg/2021_add/pool2",
+				"black": "black",
+				"effect/aka1": "effect/aka1",
+				"effect/down": "effect/down",
+				"white": "white"
+			},
+			"ps3/meha/6/shion9091": {
+				"background/oki_pool2": "bg/2021_add/pool2",
+				"background/sora": "bg/mura/sora",
+				"black": "black",
+				"effect/maskc": "effect/maskc",
+				"red": "<NO_MATCH>",
+				"white": "white"
+			},
+			"ps3/meha/6/shion9092": {},
+			"ps3/meha/6/shion9093": {},
+			"ps3/meha/91/mob139000": {},
+			"ps3/meha/91/mob139001": {
+				"effect/left": "effect/left"
+			},
+			"ps3/meha/91/mob139002": {},
+			"ps3/meha/91/mob139003": {
+				"background/sora": "bg/mura/sora"
+			},
+			"ps3/meha/92/mob149000": {},
+			"ps3/meha/92/mob149001": {
+				"background/p1": "bg/2021_add/p1",
+				"black": "black"
+			},
+			"ps3/meha/93/mob129000": {
+				"effect/right": "effect/right"
+			}
+		},
+		"outbreak01_1": {
+			"": {
+				"background/ma1": "bg/maebara/ma1",
+				"black": "black",
+				"effect/day_1": "bg/etc/day_1",
+				"effect/m1": "effect/m1",
+				"effect/tyuui": "img/tyuui",
+				"white": "white"
+			},
+			"ps3/s24/00/nana_0000": {},
+			"ps3/s24/00/nana_0010": {},
+			"ps3/s24/00/nana_0020": {
+				"background/ma_j3": "bg/maebara/ma_j3"
+			},
+			"ps3/s24/00/nanb_0000": {},
+			"ps3/s24/00/nanc_0000": {},
+			"ps3/s24/00/nand_0000": {
+				"background/ma3": "bg/maebara/ma3"
+			},
+			"ps3/s24/00/njie_0000": {},
+			"ps3/s24/00/njie_0010": {},
+			"ps3/s24/00/njie_0020": {
+				"black": "black"
+			},
+			"ps3/s24/00/njie_0030": {},
+			"ps3/s24/00/njie_0040": {
+				"background/hi1": "bg/mura/hi1",
+				"background/hi4": "bg/mura/hi4",
+				"background/ma_s1": "bg/maebara/ma_s1",
+				"black": "black"
+			},
+			"ps3/s24/00/njie_0050": {
+				"background/hi1": "bg/mura/hi1",
+				"background/hi4": "bg/mura/hi4",
+				"background/ie1": "bg/mura/ie1",
+				"background/m_hi5_01": "bg/mura/m_hi7",
+				"background/m_hi6": "bg/mura/m_hi6",
+				"background/ma2": "bg/maebara/ma2",
+				"background/ma_j3": "bg/maebara/ma_j3",
+				"background/moon": "bg/mura/moon",
+				"background/outb_jiei_003": "bg/jiei/jiei_003",
+				"background/sora2": "bg/mura/sora2",
+				"background/ta2": "bg/mura/tab2",
+				"background/tennai1": "bg/mati/tennai1",
+				"black": "black",
+				"effect/bullet_1a": "effect/bullet_1a",
+				"effect/different_spiral_1a": "bg/efe/different_spiral_1a",
+				"effect/different_spiral_1b": "bg/efe/different_spiral_1b",
+				"effect/left": "effect/left",
+				"white": "white"
+			},
+			"ps3/s24/00/nkfa_0000": {},
+			"ps3/s24/00/nkfa_0010": {},
+			"ps3/s24/00/nkfa_0020": {
+				"background/ma_s1": "bg/maebara/ma_s1",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s24/00/nkfa_0030": {},
+			"ps3/s24/00/nkfa_0040": {},
+			"ps3/s24/00/nkfa_0050": {
+				"background/hi1": "bg/mura/hi1",
+				"background/hi4": "bg/mura/hi4",
+				"background/m_hi3": "bg/mura/m_hi3",
+				"background/m_hi8": "bg/mura/hi7",
+				"background/ma3": "bg/maebara/ma3",
+				"background/ma_g1": "bg/maebara/ma_g1",
+				"background/ma_g3": "bg/maebara/ma_g3",
+				"background/ma_j3": "bg/maebara/ma_j3",
+				"background/ma_s1": "bg/maebara/ma_s1",
+				"background/outb_g1": "bg/gakkou/g1",
+				"background/outb_gr2": "bg/gakkou/gr2",
+				"black": "black",
+				"effect/day_2": "bg/etc/day_2"
+			},
+			"ps3/s24/00/nkfa_0060": {},
+			"ps3/s24/00/nkfa_0070": {
+				"background/ma_g2": "bg/maebara/ma_g2",
+				"effect/bullet_1a": "effect/bullet_1a",
+				"effect/bullet_1b": "effect/bullet_1b",
+				"effect/bullet_1c": "effect/bullet_1c",
+				"effect/bullet_1d": "effect/bullet_1d"
+			},
+			"ps3/s24/00/nkfa_0080": {
+				"background/ma2": "bg/maebara/ma2",
+				"effect/left": "effect/left"
+			},
+			"ps3/s24/00/nkfa_0090": {},
+			"ps3/s24/00/nkfa_0100": {
+				"black": "black"
+			},
+			"ps3/s24/00/nkfa_0110": {},
+			"ps3/s24/00/nkfa_0120": {},
+			"ps3/s24/00/nkmo_0000": {},
+			"ps3/s24/00/nkmo_0010": {},
+			"ps3/s24/00/nkmo_0020": {},
+			"ps3/s24/00/nkmo_0030": {},
+			"ps3/s24/00/nkmo_0040": {
+				"background/ma2": "bg/maebara/ma2",
+				"background/ma_g3": "bg/maebara/ma_g3",
+				"black": "black"
+			},
+			"ps3/s24/00/nkmo_0050": {},
+			"ps3/s24/00/nkmo_0060": {},
+			"ps3/s24/00/nsai_0000": {},
+			"ps3/s24/01/nkei_0000": {},
+			"ps3/s24/01/nkei_0010": {},
+			"ps3/s24/01/nkei_0020": {
+				"background/ma_g3": "bg/maebara/ma_g3",
+				"background/ma_s1": "bg/maebara/ma_s1",
+				"black": "black",
+				"effect/aka1": "effect/aka1",
+				"effect/left": "effect/left",
+				"white": "white"
+			},
+			"ps3/s24/01/nkei_0030": {},
+			"ps3/s24/01/nkei_0040": {},
+			"ps3/s24/01/nkei_0050": {},
+			"ps3/s24/01/nkei_0060": {
+				"background/outb_gr1": "bg/gakkou/gr1"
+			},
+			"ps3/s24/01/nkei_0070": {
+				"background/outb_gr2": "bg/gakkou/gr2",
+				"background/so1": "bg/sonozaki/so1",
+				"black": "black"
+			},
+			"ps3/s24/01/nkei_0080": {},
+			"ps3/s24/01/nkei_0090": {},
+			"ps3/s24/01/nkei_0100": {
+				"background/outb_gr2": "<NO_MATCH>",
+				"black": "black"
+			},
+			"ps3/s24/01/nkei_0110": {},
+			"ps3/s24/01/nkei_0120": {},
+			"ps3/s24/01/nkei_0130": {},
+			"ps3/s24/01/nkei_0140": {
+				"background/hi9": "bg/mura/hi9",
+				"background/ji1": "bg/jinja/ji1",
+				"background/m_hi1": "bg/mura/m_hi1",
+				"background/m_hi8": "bg/mura/m_hi13",
+				"background/ma1": "bg/maebara/ma1",
+				"background/ma3": "bg/maebara/ma3",
+				"background/ma_j3": "bg/maebara/ma_j3",
+				"background/ma_s1": "bg/maebara/ma_s1",
+				"background/mati4": "bg/mati/mati4",
+				"background/outb_g1": "bg/gakkou/g1",
+				"black": "black",
+				"effect/day_10": "bg/etc/day_10"
+			},
+			"ps3/s24/01/nkei_0150": {},
+			"ps3/s24/01/nkei_0160": {
+				"background/gr3": "bg/gakkou/gr3",
+				"background/hi4": "bg/mura/hi4",
+				"black": "black",
+				"scene/601": "<SPECIAL_SCENE>"
+			},
+			"ps3/s24/01/nkei_0170": {},
+			"ps3/s24/01/nkei_0180": {},
+			"ps3/s24/01/nkei_0190": {},
+			"ps3/s24/01/nkei_0200": {
+				"background/hi1": "bg/mura/hi1",
+				"black": "black"
+			},
+			"ps3/s24/01/nkei_0210": {},
+			"ps3/s24/01/nkei_0220": {},
+			"ps3/s24/01/nkei_0230": {},
+			"ps3/s24/01/nkei_0240": {},
+			"ps3/s24/01/nkei_0250": {},
+			"ps3/s24/01/nkei_0260": {},
+			"ps3/s24/01/nkei_0270": {},
+			"ps3/s24/01/nkei_0280": {
+				"background/ma_j3": "bg/maebara/ma_j3",
+				"black": "black"
+			},
+			"ps3/s24/01/nkei_0290": {
+				"background/hu2": "bg/hurude/hu2",
+				"background/ma2": "bg/maebara/ma2",
+				"background/ma5": "bg/maebara/ma5",
+				"background/ma_g3": "bg/maebara/ma_g3",
+				"background/ma_j3": "bg/maebara/ma_j3",
+				"background/ma_s1": "bg/maebara/ma_s1",
+				"black": "black",
+				"effect/blood_2a": "bg/efe/blood_2a",
+				"effect/different_spiral_1a": "bg/efe/different_spiral_1a",
+				"effect/left": "effect/left",
+				"white": "white"
+			},
+			"ps3/s24/01/nkei_0300": {
+				"background/ma_g2": "bg/maebara/ma_g2",
+				"black": "black",
+				"effect/left": "effect/left",
+				"scene/602": "<SPECIAL_SCENE>",
+				"white": "white"
+			},
+			"ps3/s24/01/nkei_0310": {},
+			"ps3/s24/01/nkei_0320": {
+				"background/ma_g2": "bg/maebara/ma_g2",
+				"effect/blood_2a": "bg/efe/blood_2a",
+				"effect/blood_2b": "bg/efe/blood_2b",
+				"effect/blood_2e": "bg/efe/blood_2e"
+			},
+			"ps3/s24/01/nkei_0330": {
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s24/01/nkei_0340": {
+				"background/ma2": "bg/maebara/ma2",
+				"background/ma5": "bg/maebara/ma5",
+				"black": "black",
+				"effect/blood_1a": "bg/efe/blood_1a",
+				"effect/blood_1ar": "bg/efe/blood_1ar",
+				"effect/blood_2c": "bg/efe/blood_2c",
+				"effect/blood_2e": "bg/efe/blood_2e",
+				"effect/left": "effect/left",
+				"effect/maskaa": "<NO_MATCH>",
+				"effect/right": "effect/right",
+				"effect/ryuuketu1": "effect/ryuuketu1",
+				"white": "white"
+			},
+			"ps3/s24/01/nkei_0350": {},
+			"ps3/s24/01/nkei_0360": {},
+			"ps3/s24/01/nkei_0370": {},
+			"ps3/s24/01/nkei_0380": {
+				"background/ma2": "bg/maebara/ma2"
+			},
+			"ps3/s24/01/nkei_0390": {},
+			"ps3/s24/01/nkei_0400": {},
+			"ps3/s24/01/nkei_0410": {},
+			"ps3/s24/01/nkei_0420": {
+				"background/ryoutei2_01": "bg/sonozaki/ryoutei1",
+				"black": "black"
+			},
+			"ps3/s24/01/nkei_0430": {
+				"background/ma_g3": "bg/maebara/ma_g3",
+				"black": "black"
+			},
+			"ps3/s24/01/nkei_0440": {},
+			"ps3/s24/01/nkei_0450": {},
+			"ps3/s24/01/nkei_0460": {},
+			"ps3/s24/01/nkei_0470": {},
+			"ps3/s24/01/nkei_0480": {
+				"black": "black"
+			},
+			"ps3/s24/01/nkei_0490": {},
+			"ps3/s24/01/nkei_0500": {},
+			"ps3/s24/01/nkei_0510": {
+				"background/ma5": "bg/maebara/ma5",
+				"background/ma_g2": "bg/maebara/ma_g2",
+				"black": "black",
+				"effect/left": "effect/left",
+				"white": "white"
+			},
+			"ps3/s24/01/nkei_0520": {},
+			"ps3/s24/01/nkei_0530": {},
+			"ps3/s24/01/nkei_0540": {},
+			"ps3/s24/01/nkei_0550": {
+				"effect/wagabu": "<SPECIAL_TEXT_EFFECT>",
+				"white": "white"
+			},
+			"ps3/s24/01/nkei_0560": {
+				"background/ma5": "bg/maebara/ma5"
+			},
+			"ps3/s24/01/nkei_0570": {
+				"black": "black",
+				"scene/603": "<SPECIAL_SCENE>"
+			},
+			"ps3/s24/01/nkei_0580": {
+				"background/ma2": "bg/maebara/ma2",
+				"background/mo1": "bg/mori/mo1",
+				"black": "black"
+			},
+			"ps3/s24/01/nkei_0590": {
+				"background/moon": "bg/mura/moon"
+			},
+			"ps3/s24/01/nkei_0600": {},
+			"ps3/s24/01/nkei_0610": {
+				"black": "black"
+			},
+			"ps3/s24/01/nkei_0620": {
+				"background/ma5": "bg/maebara/ma5"
+			},
+			"ps3/s24/01/nkei_0630": {},
+			"ps3/s24/01/nkei_0640": {},
+			"ps3/s24/01/nkei_0650": {},
+			"ps3/s24/01/nkei_0660": {},
+			"ps3/s24/01/nkei_0670": {
+				"background/ma5": "bg/maebara/ma5",
+				"black": "black"
+			},
+			"ps3/s24/01/nkei_0680": {},
+			"ps3/s24/01/nkei_0690": {},
+			"ps3/s24/01/nkei_0700": {},
+			"ps3/s24/01/nkei_0710": {},
+			"ps3/s24/01/nkei_0720": {},
+			"ps3/s24/02/nren_0000": {
+				"background/outb_gr2": "<NO_MATCH>"
+			},
+			"ps3/s24/02/nren_0010": {},
+			"ps3/s24/02/nren_0020": {},
+			"ps3/s24/02/nren_0030": {},
+			"ps3/s24/02/nren_0040": {
+				"black": "black",
+				"scene/601": "<SPECIAL_SCENE>"
+			},
+			"ps3/s24/02/nren_0050": {},
+			"ps3/s24/02/nren_0060": {},
+			"ps3/s24/02/nren_0070": {
+				"background/sora": "bg/mura/sora"
+			},
+			"ps3/s24/02/nren_0080": {},
+			"ps3/s24/02/nren_0090": {},
+			"ps3/s24/02/nren_0100": {},
+			"ps3/s24/02/nren_0110": {},
+			"ps3/s24/02/nren_0120": {
+				"background/gr3": "bg/gakkou/gr3",
+				"black": "black"
+			},
+			"ps3/s24/02/nren_0130": {},
+			"ps3/s24/02/nren_0140": {
+				"background/gr3": "bg/gakkou/gr3",
+				"background/hu2": "bg/hurude/hu2",
+				"background/ma1": "bg/maebara/ma1",
+				"background/so1": "bg/sonozaki/so1",
+				"black": "black"
+			},
+			"ps3/s24/02/nren_0150": {},
+			"ps3/s24/02/nren_0160": {
+				"background/outb_gr1": "bg/gakkou/gr1",
+				"black": "black"
+			},
+			"ps3/s24/02/nren_0170": {},
+			"ps3/s24/02/nren_0180": {
+				"effect/up": "effect/up"
+			},
+			"ps3/s24/02/nren_0190": {
+				"background/blood_1b": "bg/efe/blood_1b",
+				"background/ma_g2": "bg/maebara/ma_g2"
+			},
+			"ps3/s24/02/nren_0200": {},
+			"ps3/s24/02/nren_0215": {},
+			"ps3/s24/02/nren_0220": {
+				"background/ma2": "bg/maebara/ma2",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s24/02/nren_0230": {
+				"background/ma2": "bg/maebara/ma2",
+				"effect/blood_1a": "bg/efe/blood_1a"
+			},
+			"ps3/s24/02/nren_0240": {},
+			"ps3/s24/02/nren_0250": {},
+			"ps3/s24/02/nren_0260": {
+				"black": "black"
+			},
+			"ps3/s24/02/nren_0270": {
+				"background/re_s4_01": "bg/rena/ren_s3",
+				"black": "black",
+				"effect/left": "effect/left",
+				"white": "white"
+			},
+			"ps3/s24/02/nren_0280": {
+				"background/ma2": "bg/maebara/ma2",
+				"black": "black"
+			},
+			"ps3/s24/02/nren_0290": {
+				"background/ma_g3": "bg/maebara/ma_g3",
+				"black": "black"
+			},
+			"ps3/s24/02/nren_0300": {},
+			"ps3/s24/02/nren_0310": {},
+			"ps3/s24/02/nren_0320": {},
+			"ps3/s24/02/nren_0330": {},
+			"ps3/s24/02/nren_0340": {},
+			"ps3/s24/02/nren_0350": {},
+			"ps3/s24/02/nren_0360": {},
+			"ps3/s24/02/nren_0370": {},
+			"ps3/s24/02/nren_0380": {
+				"background/ma_g3": "bg/maebara/ma_g3",
+				"black": "black",
+				"effect/different_spiral_1a": "bg/efe/different_spiral_1a"
+			},
+			"ps3/s24/02/nren_0390": {},
+			"ps3/s24/02/nren_0400": {
+				"effect/different_spiral_1a": "bg/efe/different_spiral_1a"
+			},
+			"ps3/s24/02/nren_0410": {},
+			"ps3/s24/02/nren_0420": {},
+			"ps3/s24/02/nren_0430": {},
+			"ps3/s24/02/nren_0440": {},
+			"ps3/s24/02/nren_0450": {
+				"background/ma5": "bg/maebara/ma5",
+				"background/ma_g2": "bg/maebara/ma_g2",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s24/02/nren_0460": {},
+			"ps3/s24/02/nren_0470": {},
+			"ps3/s24/02/nren_0480": {},
+			"ps3/s24/02/nren_0490": {},
+			"ps3/s24/02/nren_0500": {},
+			"ps3/s24/02/nren_0510": {},
+			"ps3/s24/02/nren_0520": {},
+			"ps3/s24/02/nren_0530": {},
+			"ps3/s24/02/nren_0540": {},
+			"ps3/s24/02/nren_0550": {},
+			"ps3/s24/02/nren_0560": {
+				"background/js3_01": "bg/jinja/jsa7",
+				"background/jt2": "bg/jinja/jt2",
+				"background/m_y4": "bg/mura/y_ie2",
+				"background/ma2": "bg/maebara/ma2",
+				"background/moon": "bg/mura/moon",
+				"background/outb_jt1": "bg/mura2/mura_002",
+				"background/outb_jyt1": "bg/mura2/mura_003",
+				"background/outb_koya1y": "bg/mori/koya1y",
+				"background/torakku1": "bg/kuruma/torakku1",
+				"background/torakku2": "bg/kuruma/torakku2",
+				"background/y_ie1": "bg/mori/koya2y",
+				"black": "black",
+				"effect/blade1w": "bg/efe/blade1w",
+				"effect/blade2w": "bg/efe/blade2w",
+				"effect/blade8_1w": "bg/efe/blade8_1w",
+				"effect/blood_1b": "bg/efe/blood_1b",
+				"effect/left": "effect/left",
+				"effect/right": "effect/right",
+				"effect/up": "effect/up",
+				"white": "white"
+			},
+			"ps3/s24/02/nren_0570": {},
+			"ps3/s24/02/nren_0580": {},
+			"ps3/s24/02/nren_0590": {},
+			"ps3/s24/03/nmio_0000": {},
+			"ps3/s24/03/nmio_0010": {},
+			"ps3/s24/03/nmio_0020": {},
+			"ps3/s24/03/nmio_0030": {
+				"background/hi1": "bg/mura/hi1"
+			},
+			"ps3/s24/03/nmio_0040": {},
+			"ps3/s24/03/nmio_0050": {
+				"background/gr3": "bg/gakkou/gr3",
+				"black": "black"
+			},
+			"ps3/s24/03/nmio_0060": {},
+			"ps3/s24/03/nmio_0070": {},
+			"ps3/s24/03/nmio_0080": {},
+			"ps3/s24/03/nmio_0090": {},
+			"ps3/s24/03/nmio_0100": {},
+			"ps3/s24/03/nmio_0110": {},
+			"ps3/s24/03/nmio_0120": {},
+			"ps3/s24/03/nmio_0130": {},
+			"ps3/s24/03/nmio_0140": {},
+			"ps3/s24/03/nmio_0150": {},
+			"ps3/s24/03/nmio_0160": {
+				"background/gr3": "bg/gakkou/gr3",
+				"black": "black"
+			},
+			"ps3/s24/03/nmio_0170": {
+				"scene/601": "<SPECIAL_SCENE>"
+			},
+			"ps3/s24/03/nmio_0180": {
+				"background/gr3": "bg/gakkou/gr3",
+				"background/ji2": "bg/jinja/ji2",
+				"black": "black",
+				"effect/different_spiral_1a": "bg/efe/different_spiral_1a"
+			},
+			"ps3/s24/03/nmio_0190": {},
+			"ps3/s24/03/nmio_0200": {},
+			"ps3/s24/03/nmio_0210": {},
+			"ps3/s24/03/nmio_0220": {},
+			"ps3/s24/03/nmio_0230": {},
+			"ps3/s24/03/nmio_0240": {},
+			"ps3/s24/03/nmio_0250": {},
+			"ps3/s24/03/nmio_0260": {},
+			"ps3/s24/03/nmio_0270": {},
+			"ps3/s24/03/nmio_0280": {},
+			"ps3/s24/03/nmio_0290": {},
+			"ps3/s24/03/nmio_0300": {},
+			"ps3/s24/03/nmio_0310": {
+				"background/hi4": "bg/mura/hi4",
+				"black": "black"
+			},
+			"ps3/s24/03/nmio_0320": {},
+			"ps3/s24/03/nmio_0330": {},
+			"ps3/s24/03/nmio_0340": {},
+			"ps3/s24/03/nmio_0350": {},
+			"ps3/s24/03/nmio_0360": {},
+			"ps3/s24/03/nmio_0370": {},
+			"ps3/s24/03/nmio_0380": {},
+			"ps3/s24/03/nmio_0390": {},
+			"ps3/s24/03/nmio_0400": {
+				"background/outb_gr1": "bg/gakkou/gr1",
+				"background/outb_gr2": "bg/gakkou/gr2",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s24/03/nmio_0410": {},
+			"ps3/s24/03/nmio_0420": {
+				"background/file": "bg/sonota/file",
+				"background/hi5": "bg/mura/hi5",
+				"background/ma1": "bg/maebara/ma1",
+				"background/mati12": "bg/mati/mati12",
+				"background/nort": "bg/sonota/nort",
+				"background/outb_gr2": "bg/gakkou/gr2",
+				"background/outb_jiei_003": "bg/jiei/jiei_003",
+				"background/outb_shikenkan": "bg/etc/shikenkan",
+				"black": "black",
+				"effect/aka1": "effect/aka1",
+				"effect/aka2": "effect/aka2",
+				"effect/day_11": "bg/etc/day_11",
+				"effect/different_spiral_1a": "bg/efe/different_spiral_1a",
+				"effect/left": "effect/left",
+				"white": "white"
+			},
+			"ps3/s24/03/nmio_0430": {},
+			"ps3/s24/03/nmio_0440": {},
+			"ps3/s24/03/nmio_0450": {},
+			"ps3/s24/03/nmio_0460": {},
+			"ps3/s24/03/nmio_0470": {},
+			"ps3/s24/03/nmio_0480": {
+				"background/ma_j3": "bg/maebara/ma_j3",
+				"black": "black"
+			},
+			"ps3/s24/03/nmio_0490": {
+				"background/so_k1": "bg/sonozaki/so_k1"
+			},
+			"ps3/s24/03/nmio_0500": {
+				"black": "black"
+			},
+			"ps3/s24/03/nmio_0510": {
+				"background/hi1": "bg/mura/hi1",
+				"black": "black"
+			},
+			"ps3/s24/03/nmio_0520": {
+				"background/ji2": "bg/jinja/ji2"
+			},
+			"ps3/s24/03/nmio_0530": {
+				"black": "black",
+				"effect/blood_2a": "bg/efe/blood_2a",
+				"effect/blood_2b": "bg/efe/blood_2b",
+				"effect/blood_2c": "bg/efe/blood_2c",
+				"effect/blood_2d": "bg/efe/blood_2d",
+				"effect/blood_2e": "bg/efe/blood_2e"
+			},
+			"ps3/s24/03/nmio_0535": {
+				"black": "black"
+			},
+			"ps3/s24/03/nmio_0540": {},
+			"ps3/s24/03/nmio_0550": {},
+			"ps3/s24/03/nmio_0560": {},
+			"ps3/s24/03/nmio_0570": {},
+			"ps3/s24/03/nmio_0580": {
+				"background/ma_j3": "bg/maebara/ma_j3",
+				"black": "black"
+			},
+			"ps3/s24/03/nmio_0590": {},
+			"ps3/s24/03/nmio_0600": {
+				"background/ma_g3": "bg/maebara/ma_g3",
+				"black": "black"
+			},
+			"ps3/s24/03/nmio_0610": {},
+			"ps3/s24/03/nmio_0620": {},
+			"ps3/s24/03/nmio_0630": {},
+			"ps3/s24/03/nmio_0640": {},
+			"ps3/s24/03/nmio_0650": {
+				"background/jy2": "bg/jinja/jy2",
+				"black": "black"
+			},
+			"ps3/s24/03/nmio_0660": {},
+			"ps3/s24/03/nmio_0670": {},
+			"ps3/s24/03/nmio_0680": {
+				"background/hi4": "bg/mura/hi4",
+				"black": "black"
+			},
+			"ps3/s24/03/nmio_0690": {},
+			"ps3/s24/03/nmio_0700": {},
+			"ps3/s24/03/nmio_0705": {
+				"background/ma_g3": "bg/maebara/ma_g3",
+				"black": "black"
+			},
+			"ps3/s24/03/nmio_0710": {},
+			"ps3/s24/03/nmio_0715": {},
+			"ps3/s24/03/nmio_0720": {
+				"background/ma_g3": "bg/maebara/ma_g3",
+				"background/moon": "bg/mura/moon",
+				"black": "black"
+			},
+			"ps3/s24/03/nmio_0730": {},
+			"ps3/s24/03/nmio_0740": {},
+			"ps3/s24/03/nmio_0750": {},
+			"ps3/s24/03/nmio_0760": {},
+			"ps3/s24/04/nsat_0000": {},
+			"ps3/s24/04/nsat_0010": {},
+			"ps3/s24/04/nsat_0020": {},
+			"ps3/s24/04/nsat_0030": {
+				"background/outb_jt1": "<NO_MATCH>",
+				"scene/604a": "<SPECIAL_SCENE>",
+				"white": "white"
+			},
+			"ps3/s24/04/nsat_0040": {},
+			"ps3/s24/04/nsat_0050": {
+				"scene/604b": "<SPECIAL_SCENE>"
+			},
+			"ps3/s24/05/nrik_0000": {},
+			"ps3/s24/05/nrik_0010": {},
+			"ps3/s24/05/nrik_0020": {},
+			"ps3/s24/05/nrik_0030": {},
+			"ps3/s24/05/nrik_0040": {
+				"background/outb_jt1": "<NO_MATCH>",
+				"scene/604c": "<SPECIAL_SCENE>",
+				"scene/604d": "<SPECIAL_SCENE>"
+			},
+			"ps3/s24/05/nrik_0050": {
+				"black": "black",
+				"white": "white"
+			}
+		},
+		"outbreak02_1": {
+			"": {
+				"background/mo2": "bg/mori/mo2",
+				"background/outb_jt1": "bg/mura/hi2",
+				"background/sora": "bg/mura/sora",
+				"black": "black",
+				"effect/tyuui": "img/tyuui"
+			},
+			"ps3/s25/00/nkua_0000": {
+				"black": "black",
+				"effect/blood_2c": "bg/efe/blood_2c",
+				"scene/609": "<SPECIAL_SCENE>"
+			},
+			"ps3/s25/00/nkub_0000": {
+				"background/bui_r1e": "<NO_MATCH>",
+				"background/ke2": "bg/keisatu/ke2",
+				"black": "black",
+				"effect/right": "effect/right",
+				"scene/609": "<SPECIAL_SCENE>",
+				"white": "white"
+			},
+			"ps3/s25/01/nkei_0730": {},
+			"ps3/s25/01/nkei_0740": {},
+			"ps3/s25/01/nkei_0750": {},
+			"ps3/s25/01/nkei_0760": {},
+			"ps3/s25/01/nkei_0770": {},
+			"ps3/s25/01/nkei_0780": {
+				"background/kamik_mati4": "bg/mati/mati4",
+				"black": "black"
+			},
+			"ps3/s25/01/nkei_0790": {},
+			"ps3/s25/01/nkei_0800": {},
+			"ps3/s25/01/nkei_0810": {},
+			"ps3/s25/01/nkei_0820": {},
+			"ps3/s25/01/nkei_0830": {},
+			"ps3/s25/01/nkei_0840": {},
+			"ps3/s25/01/nkei_0850": {},
+			"ps3/s25/01/nkei_0860": {
+				"background/kamik_sinryou_matiai1": "bg/sinryoujo/sinryou_matiai1",
+				"white": "white"
+			},
+			"ps3/s25/01/nkei_0870": {},
+			"ps3/s25/01/nkei_0880": {},
+			"ps3/s25/01/nkei_0890": {},
+			"ps3/s25/01/nkei_0900": {
+				"background/kamik_mati16": "bg/mati/mati4",
+				"black": "black"
+			},
+			"ps3/s25/01/nkei_0910": {},
+			"ps3/s25/01/nkei_0920": {},
+			"ps3/s25/01/nkei_0930": {},
+			"ps3/s25/01/nkei_0940": {
+				"background/kamik_mati16": "<NO_MATCH>"
+			},
+			"ps3/s25/01/nkei_0950": {},
+			"ps3/s25/01/nkei_0960": {},
+			"ps3/s25/01/nkei_0970": {},
+			"ps3/s25/01/nkei_0980": {},
+			"ps3/s25/01/nkei_0990": {},
+			"ps3/s25/01/nkei_1000": {},
+			"ps3/s25/01/nkei_1010": {},
+			"ps3/s25/01/nkei_1020": {},
+			"ps3/s25/01/nkei_1030": {},
+			"ps3/s25/01/nkei_1040": {},
+			"ps3/s25/01/nkei_1050": {
+				"background/kaw_r1an": "bg/mati/ryou1",
+				"black": "black"
+			},
+			"ps3/s25/01/nkei_1060": {},
+			"ps3/s25/01/nkei_1070": {},
+			"ps3/s25/01/nkei_1080": {},
+			"ps3/s25/01/nkei_1090": {},
+			"ps3/s25/01/nkei_1100": {},
+			"ps3/s25/01/nkei_1110": {},
+			"ps3/s25/01/nkei_1120": {},
+			"ps3/s25/01/nkei_1130": {},
+			"ps3/s25/01/nkei_1140": {},
+			"ps3/s25/01/nkei_1150": {},
+			"ps3/s25/01/nkei_1160": {},
+			"ps3/s25/01/nkei_1170": {},
+			"ps3/s25/01/nkei_1180": {},
+			"ps3/s25/01/nkei_1190": {},
+			"ps3/s25/01/nkei_1200": {},
+			"ps3/s25/01/nkei_1210": {},
+			"ps3/s25/01/nkei_1220": {
+				"effect/up": "effect/up"
+			},
+			"ps3/s25/01/nkei_1230": {},
+			"ps3/s25/01/nkei_1240": {},
+			"ps3/s25/01/nkei_1250": {
+				"background/cit_1ar": "bg/mati2/mati_101y",
+				"background/par_1ay": "bg/mati2/mati_103y",
+				"black": "black",
+				"effect/left": "effect/left",
+				"effect/right": "effect/right"
+			},
+			"ps3/s25/01/nkei_1260": {},
+			"ps3/s25/01/nkei_1270": {
+				"background/kamik_mati_203": "bg/mati2/mati_001",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/01/nkei_1280": {},
+			"ps3/s25/01/nkei_1290": {
+				"background/kamik_mati_203": "bg/mati2/mati_001",
+				"black": "black",
+				"effect/right": "effect/right"
+			},
+			"ps3/s25/01/nkei_1300": {},
+			"ps3/s25/01/nkei_1310": {},
+			"ps3/s25/01/nkei_1320": {},
+			"ps3/s25/01/nkei_1330": {},
+			"ps3/s25/01/nkei_1340": {
+				"background/kamik_mati_204": "<NO_MATCH>",
+				"background/kamik_mati_302y": "bg/mati2/mati_204",
+				"background/kamik_mati_401": "bg/mati2/mati_401",
+				"black": "black"
+			},
+			"ps3/s25/01/nkei_1350": {},
+			"ps3/s25/01/nkei_1360": {},
+			"ps3/s25/01/nkei_1370": {
+				"background/kamik_mati_001": "bg/mati2/mati_206"
+			},
+			"ps3/s25/01/nkei_1380": {},
+			"ps3/s25/01/nkei_1390": {},
+			"ps3/s25/01/nkei_1400": {},
+			"ps3/s25/01/nkei_1410": {},
+			"ps3/s25/01/nkei_1420": {},
+			"ps3/s25/01/nkei_1430": {},
+			"ps3/s25/01/nkei_1440": {},
+			"ps3/s25/01/nkei_1450": {},
+			"ps3/s25/01/nkei_1460": {},
+			"ps3/s25/01/nkei_1470": {},
+			"ps3/s25/01/nkei_1480": {
+				"background/gk1": "bg/gakkou/gk1",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/01/nkei_1490": {},
+			"ps3/s25/01/nkei_1500": {},
+			"ps3/s25/01/nkei_1510": {},
+			"ps3/s25/01/nkei_1520": {
+				"background/gk1": "bg/gakkou/gk1",
+				"white": "white"
+			},
+			"ps3/s25/01/nkei_1530": {},
+			"ps3/s25/01/nkei_1540": {},
+			"ps3/s25/02/nren_0600": {
+				"background/mo1": "bg/mori/mo1",
+				"black": "black",
+				"effect/left": "effect/left",
+				"effect/right": "effect/right"
+			},
+			"ps3/s25/02/nren_0610": {},
+			"ps3/s25/02/nren_0620": {},
+			"ps3/s25/02/nren_0630": {},
+			"ps3/s25/02/nren_0640": {},
+			"ps3/s25/02/nren_0650": {},
+			"ps3/s25/02/nren_0660": {},
+			"ps3/s25/02/nren_0670": {},
+			"ps3/s25/02/nren_0680": {},
+			"ps3/s25/02/nren_0690": {},
+			"ps3/s25/02/nren_0700": {},
+			"ps3/s25/02/nren_0710": {},
+			"ps3/s25/02/nren_0720": {},
+			"ps3/s25/02/nren_0730": {},
+			"ps3/s25/02/nren_0740": {},
+			"ps3/s25/02/nren_0750": {},
+			"ps3/s25/02/nren_0760": {},
+			"ps3/s25/02/nren_0770": {},
+			"ps3/s25/02/nren_0780": {},
+			"ps3/s25/02/nren_0790": {},
+			"ps3/s25/02/nren_0800": {
+				"background/kamik_mati16": "bg/mati/mati16",
+				"background/kamik_mati_504": "bg/mati2/mati_504",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/02/nren_0810": {},
+			"ps3/s25/02/nren_0820": {},
+			"ps3/s25/02/nren_0830": {
+				"background/kamik_mati_502": "bg/mati2/mati_502",
+				"black": "black"
+			},
+			"ps3/s25/02/nren_0840": {
+				"background/kamik_mati_502": "bg/mati2/mati_502",
+				"black": "black",
+				"effect/blade1w": "bg/efe/blade1w",
+				"effect/blade2w": "bg/efe/blade2w",
+				"white": "white"
+			},
+			"ps3/s25/02/nren_0850": {},
+			"ps3/s25/02/nren_0860": {},
+			"ps3/s25/02/nren_0870": {
+				"background/kaw_r1an": "bg/mati/ryou2",
+				"background/kaw_r1cn": "<NO_MATCH>",
+				"black": "black"
+			},
+			"ps3/s25/02/nren_0880": {},
+			"ps3/s25/02/nren_0890": {},
+			"ps3/s25/02/nren_0900": {},
+			"ps3/s25/02/nren_0910": {},
+			"ps3/s25/02/nren_0920": {},
+			"ps3/s25/02/nren_0930": {},
+			"ps3/s25/02/nren_0940": {},
+			"ps3/s25/02/nren_0950": {},
+			"ps3/s25/02/nren_0960": {},
+			"ps3/s25/02/nren_0970": {},
+			"ps3/s25/02/nren_0980": {},
+			"ps3/s25/02/nren_0990": {},
+			"ps3/s25/02/nren_1000": {},
+			"ps3/s25/02/nren_1010": {},
+			"ps3/s25/02/nren_1020": {},
+			"ps3/s25/02/nren_1030": {},
+			"ps3/s25/02/nren_1040": {},
+			"ps3/s25/02/nren_1050": {
+				"background/kaw_r1an": "<NO_MATCH>"
+			},
+			"ps3/s25/02/nren_1060": {},
+			"ps3/s25/02/nren_1070": {},
+			"ps3/s25/02/nren_1080": {},
+			"ps3/s25/02/nren_1090": {
+				"background/cit_1ar": "bg/mati2/mati_101y",
+				"background/kamik_mati_203": "bg/mati2/mati_005",
+				"black": "black"
+			},
+			"ps3/s25/02/nren_1100": {},
+			"ps3/s25/02/nren_1110": {
+				"background/kamik_mati_203": "<NO_MATCH>"
+			},
+			"ps3/s25/02/nren_1120": {
+				"background/cit_1ar": "bg/mati2/mati_101y",
+				"background/kamik_mati_203": "bg/mati2/mati_001",
+				"black": "black"
+			},
+			"ps3/s25/02/nren_1130": {},
+			"ps3/s25/02/nren_1140": {},
+			"ps3/s25/02/nren_1150": {
+				"background/kamik_mati_005": "bg/mati2/mati_005",
+				"background/kamik_mati_203": "bg/mati2/mati_001",
+				"black": "black"
+			},
+			"ps3/s25/02/nren_1160": {},
+			"ps3/s25/02/nren_1170": {
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/02/nren_1180": {
+				"background/par_1ay": "bg/mati2/mati_103y",
+				"black": "black"
+			},
+			"ps3/s25/02/nren_1190": {},
+			"ps3/s25/02/nren_1200": {},
+			"ps3/s25/02/nren_1210": {},
+			"ps3/s25/02/nren_1220": {
+				"background/kamik_mati_206": "bg/mati2/mati_206",
+				"black": "black"
+			},
+			"ps3/s25/02/nren_1230": {},
+			"ps3/s25/02/nren_1240": {},
+			"ps3/s25/02/nren_1250": {},
+			"ps3/s25/02/nren_1260": {
+				"background/bui_r1e": "bg/mati/mati_ji4",
+				"black": "black"
+			},
+			"ps3/s25/02/nren_1270": {},
+			"ps3/s25/02/nren_1280": {},
+			"ps3/s25/02/nren_1290": {},
+			"ps3/s25/02/nren_1295": {
+				"background/bui_r1e": "bg/keisatu/ke_ky4",
+				"background/ke2": "bg/keisatu/ke2",
+				"black": "black",
+				"effect/eye_base_b": "<NO_MATCH>",
+				"effect/eye_base_r": "<NO_MATCH>",
+				"effect/furiker_a": "furiker_a",
+				"effect/furiker_b": "furiker_b",
+				"effect/furiker_c": "<NO_MATCH>",
+				"effect/omo1_1": "bg/etc/omo1_1",
+				"effect/omo1_2": "bg/etc/omo1_2",
+				"effect/omo1_3": "bg/etc/omo1_3",
+				"effect/omo1_4": "bg/etc/omo1_4",
+				"effect/omo1_5": "bg/etc/omo1_5",
+				"effect/omo2_1": "bg/etc/omo2_1",
+				"effect/omo2_2": "bg/etc/omo2_2",
+				"white": "white"
+			},
+			"ps3/s25/02/nren_1300": {},
+			"ps3/s25/02/nren_1310": {},
+			"ps3/s25/02/nren_1320": {},
+			"ps3/s25/02/nren_1330": {},
+			"ps3/s25/02/nren_1340": {},
+			"ps3/s25/02/nren_1350": {},
+			"ps3/s25/02/nren_1360": {},
+			"ps3/s25/02/nren_1370": {},
+			"ps3/s25/02/nren_1380": {},
+			"ps3/s25/02/nren_1390": {},
+			"ps3/s25/02/nren_1400": {},
+			"ps3/s25/02/nren_1410": {},
+			"ps3/s25/02/nren_1420": {
+				"effect/up": "effect/up"
+			},
+			"ps3/s25/02/nren_1430": {},
+			"ps3/s25/03/nmio_0770": {},
+			"ps3/s25/03/nmio_0780": {},
+			"ps3/s25/03/nmio_0790": {},
+			"ps3/s25/03/nmio_0800": {},
+			"ps3/s25/03/nmio_0810": {
+				"background/hi3": "bg/mura/hi3",
+				"background/m_hi1": "bg/mura/m_hi1",
+				"background/m_hi4": "bg/mura/m_hi4",
+				"black": "black"
+			},
+			"ps3/s25/03/nmio_0820": {},
+			"ps3/s25/03/nmio_0830": {},
+			"ps3/s25/03/nmio_0840": {
+				"background/kamik_mati3": "bg/mati/mati3"
+			},
+			"ps3/s25/03/nmio_0850": {},
+			"ps3/s25/03/nmio_0860": {
+				"background/kamik_mati2": "bg/mati/mati16"
+			},
+			"ps3/s25/03/nmio_0870": {},
+			"ps3/s25/03/nmio_0880": {
+				"background/kamik_mati2": "bg/mati/mati2",
+				"background/ryoutei2_01": "bg/sonozaki/ryoutei2",
+				"black": "black"
+			},
+			"ps3/s25/03/nmio_0890": {},
+			"ps3/s25/03/nmio_0900": {},
+			"ps3/s25/03/nmio_0910": {
+				"background/oni1": "bg/jinja/jsa1",
+				"black": "black"
+			},
+			"ps3/s25/03/nmio_0920": {
+				"background/kamik_mati2": "bg/mati/mati16",
+				"black": "black"
+			},
+			"ps3/s25/03/nmio_0930": {},
+			"ps3/s25/03/nmio_0940": {},
+			"ps3/s25/03/nmio_0950": {
+				"background/kamik_mati16": "<NO_MATCH>",
+				"background/kamik_mati_102": "bg/mati2/mati_102",
+				"effect/blood_2a": "bg/efe/blood_2a",
+				"effect/blood_2b": "bg/efe/blood_2b",
+				"scene/605a": "<SPECIAL_SCENE>"
+			},
+			"ps3/s25/03/nmio_0960": {},
+			"ps3/s25/03/nmio_0970": {},
+			"ps3/s25/03/nmio_0980": {
+				"background/kamik_mati_102": "bg/mati/mati16",
+				"effect/bullet_1a": "effect/bullet_1a"
+			},
+			"ps3/s25/03/nmio_0990": {
+				"background/kamik_mati1": "bg/mati/mati1",
+				"black": "black",
+				"effect/right": "effect/right"
+			},
+			"ps3/s25/03/nmio_1000": {},
+			"ps3/s25/03/nmio_1010": {
+				"background/kamik_mati_504": "<NO_MATCH>",
+				"black": "black",
+				"scene/606": "<SPECIAL_SCENE>"
+			},
+			"ps3/s25/03/nmio_1020": {},
+			"ps3/s25/03/nmio_1030": {
+				"background/kamik_mati16": "<NO_MATCH>"
+			},
+			"ps3/s25/03/nmio_1040": {},
+			"ps3/s25/03/nmio_1050": {},
+			"ps3/s25/03/nmio_1060": {},
+			"ps3/s25/03/nmio_1070": {},
+			"ps3/s25/03/nmio_1080": {},
+			"ps3/s25/03/nmio_1090": {},
+			"ps3/s25/03/nmio_1100": {},
+			"ps3/s25/03/nmio_1110": {},
+			"ps3/s25/03/nmio_1120": {
+				"background/cit_1a": "bg/mati2/mati_101",
+				"black": "black"
+			},
+			"ps3/s25/03/nmio_1130": {
+				"background/kamik_mati_401": "<NO_MATCH>",
+				"black": "black"
+			},
+			"ps3/s25/03/nmio_1140": {},
+			"ps3/s25/03/nmio_1141": {},
+			"ps3/s25/03/nmio_1150": {},
+			"ps3/s25/03/nmio_1160": {},
+			"ps3/s25/03/nmio_1170": {},
+			"ps3/s25/03/nmio_1180": {},
+			"ps3/s25/03/nmio_1190": {},
+			"ps3/s25/03/nmio_1200": {},
+			"ps3/s25/03/nmio_1210": {},
+			"ps3/s25/03/nmio_1220": {
+				"background/kaw_r1cn": "bg/mati/ryou2",
+				"background/moon": "bg/mura/moon",
+				"black": "black"
+			},
+			"ps3/s25/03/nmio_1230": {},
+			"ps3/s25/03/nmio_1240": {},
+			"ps3/s25/03/nmio_1250": {
+				"background/kaw_r1an": "bg/mati2/mati_302y",
+				"black": "black",
+				"effect/blood_2a": "bg/efe/blood_2a"
+			},
+			"ps3/s25/03/nmio_1260": {},
+			"ps3/s25/03/nmio_1270": {
+				"background/kamik_mati_203": "<NO_MATCH>",
+				"effect/left": "effect/left",
+				"white": "white"
+			},
+			"ps3/s25/03/nmio_1280": {},
+			"ps3/s25/03/nmio_1290": {
+				"background/cit_1ar": "bg/mati2/mati_101y",
+				"background/kamik_mati_005": "bg/mati2/mati_005",
+				"black": "black",
+				"effect/right": "effect/right"
+			},
+			"ps3/s25/03/nmio_1300": {
+				"background/cit_1ar": "bg/mati2/mati_101y",
+				"background/par_1ay": "bg/mati2/mati_103y",
+				"black": "black",
+				"effect/different_spiral_1a": "bg/efe/different_spiral_1a"
+			},
+			"ps3/s25/03/nmio_1310": {
+				"background/kamik_mati_203": "<NO_MATCH>",
+				"black": "black",
+				"scene/605b": "<SPECIAL_SCENE>"
+			},
+			"ps3/s25/03/nmio_1320": {},
+			"ps3/s25/03/nmio_1330": {},
+			"ps3/s25/03/nmio_1340": {},
+			"ps3/s25/03/nmio_1350": {},
+			"ps3/s25/03/nmio_1360": {},
+			"ps3/s25/03/nmio_1361": {
+				"background/kamik_mati_302y": "bg/mati2/mati_204",
+				"black": "black"
+			},
+			"ps3/s25/03/nmio_1370": {},
+			"ps3/s25/03/nmio_1380": {
+				"background/kamik_mati_206": "bg/mati2/mati_206",
+				"effect/m1": "effect/m1",
+				"white": "white"
+			},
+			"ps3/s25/03/nmio_1390": {},
+			"ps3/s25/03/nmio_1400": {
+				"background/kamik_mati_204": "<NO_MATCH>",
+				"black": "black"
+			},
+			"ps3/s25/03/nmio_1410": {
+				"background/ke2": "bg/keisatu/ke2",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/03/nmio_1420": {},
+			"ps3/s25/03/nmio_1430": {},
+			"ps3/s25/03/nmio_1440": {},
+			"ps3/s25/03/nmio_1450": {},
+			"ps3/s25/03/nmio_1460": {},
+			"ps3/s25/03/nmio_1470": {},
+			"ps3/s25/03/nmio_1480": {},
+			"ps3/s25/03/nmio_1490": {},
+			"ps3/s25/03/nmio_1500": {},
+			"ps3/s25/03/nmio_1510": {},
+			"ps3/s25/03/nmio_1520": {},
+			"ps3/s25/03/nmio_1530": {
+				"white": "white"
+			},
+			"ps3/s25/03/nmio_1540": {},
+			"ps3/s25/03/nmio_1550": {
+				"background/gk3": "bg/gakkou/gk3",
+				"black": "black"
+			},
+			"ps3/s25/03/nmio_1560": {},
+			"ps3/s25/03/nmio_1570": {},
+			"ps3/s25/03/nmio_1580": {
+				"background/gk3": "bg/gakkou/gk3",
+				"white": "white"
+			},
+			"ps3/s25/03/nmio_1590": {},
+			"ps3/s25/03/nmio_1600": {},
+			"ps3/s25/04/nsat_0060": {
+				"background/mo4": "bg/mori/mo4",
+				"black": "black"
+			},
+			"ps3/s25/04/nsat_0070": {},
+			"ps3/s25/04/nsat_0080": {},
+			"ps3/s25/04/nsat_0090": {},
+			"ps3/s25/04/nsat_0100": {},
+			"ps3/s25/04/nsat_0110": {},
+			"ps3/s25/04/nsat_0120": {},
+			"ps3/s25/04/nsat_0130": {},
+			"ps3/s25/04/nsat_0140": {},
+			"ps3/s25/04/nsat_0150": {
+				"background/hu_ima": "bg/hurude/hu_r2",
+				"black": "black"
+			},
+			"ps3/s25/04/nsat_0160": {},
+			"ps3/s25/04/nsat_0170": {
+				"background/kamik_mati2": "bg/mati/mati2",
+				"black": "black"
+			},
+			"ps3/s25/04/nsat_0180": {},
+			"ps3/s25/04/nsat_0190": {},
+			"ps3/s25/04/nsat_0200": {},
+			"ps3/s25/04/nsat_0210": {
+				"background/kamik_mati4": "bg/mati/mati4",
+				"background/kamik_mati_102": "bg/mati/mati16",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/04/nsat_0220": {
+				"background/kamik_mati4": "bg/mati/mati17",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/04/nsat_0230": {},
+			"ps3/s25/04/nsat_0240": {},
+			"ps3/s25/04/nsat_0250": {},
+			"ps3/s25/04/nsat_0260": {},
+			"ps3/s25/04/nsat_0270": {},
+			"ps3/s25/04/nsat_0280": {
+				"background/hu_ima": "bg/hurude/hu_r1",
+				"background/kamik_mati_502": "<NO_MATCH>",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/04/nsat_0290": {
+				"background/kaw_r1an": "<NO_MATCH>"
+			},
+			"ps3/s25/04/nsat_0300": {},
+			"ps3/s25/04/nsat_0310": {},
+			"ps3/s25/04/nsat_0320": {},
+			"ps3/s25/04/nsat_0330": {},
+			"ps3/s25/04/nsat_0340": {
+				"background/kamik_mati_403": "bg/mati2/mati_403",
+				"black": "black"
+			},
+			"ps3/s25/04/nsat_0350": {},
+			"ps3/s25/04/nsat_0360": {},
+			"ps3/s25/04/nsat_0370": {},
+			"ps3/s25/04/nsat_0380": {},
+			"ps3/s25/04/nsat_0390": {},
+			"ps3/s25/04/nsat_0400": {},
+			"ps3/s25/04/nsat_0410": {},
+			"ps3/s25/04/nsat_0420": {},
+			"ps3/s25/04/nsat_0430": {
+				"background/moon": "bg/mura/moon",
+				"black": "black"
+			},
+			"ps3/s25/04/nsat_0440": {
+				"background/cit_1ar": "bg/mati2/mati_101y",
+				"background/cit_3a": "bg/mati2/mati_002",
+				"background/kaw_r1an": "bg/mati/ryou2",
+				"black": "black"
+			},
+			"ps3/s25/04/nsat_0450": {},
+			"ps3/s25/04/nsat_0460": {
+				"background/kaw_r1an": "bg/mati2/mati_302y",
+				"black": "black"
+			},
+			"ps3/s25/04/nsat_0470": {},
+			"ps3/s25/04/nsat_0480": {
+				"background/kamik_mati_301y": "bg/mati2/mati_101y",
+				"black": "black",
+				"effect/down": "effect/down"
+			},
+			"ps3/s25/04/nsat_0490": {},
+			"ps3/s25/04/nsat_0500": {},
+			"ps3/s25/04/nsat_0510": {
+				"background/par_1ay": "bg/mati2/mati_103y",
+				"black": "black",
+				"effect/right": "effect/right"
+			},
+			"ps3/s25/04/nsat_0520": {},
+			"ps3/s25/04/nsat_0530": {
+				"background/cit_1ar": "bg/mati2/mati_101y",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/04/nsat_0540": {
+				"background/kamik_mati_203": "bg/mati2/mati_101y",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/04/nsat_0550": {},
+			"ps3/s25/04/nsat_0560": {},
+			"ps3/s25/04/nsat_0570": {},
+			"ps3/s25/04/nsat_0580": {
+				"background/kamik_mati_204": "<NO_MATCH>",
+				"effect/right": "effect/right"
+			},
+			"ps3/s25/04/nsat_0590": {},
+			"ps3/s25/04/nsat_0600": {},
+			"ps3/s25/04/nsat_0610": {},
+			"ps3/s25/04/nsat_0620": {},
+			"ps3/s25/04/nsat_0630": {
+				"background/bui_r1e": "bg/keisatu/ke_ky4",
+				"black": "black"
+			},
+			"ps3/s25/04/nsat_0640": {
+				"background/bui_r1e": "bg/keisatu/ke_ky4",
+				"black": "black",
+				"effect/up": "effect/up",
+				"white": "white"
+			},
+			"ps3/s25/04/nsat_0650": {
+				"effect/up": "effect/up"
+			},
+			"ps3/s25/04/nsat_0660": {},
+			"ps3/s25/04/nsat_0670": {},
+			"ps3/s25/04/nsat_0680": {
+				"background/mati_o1": "bg/mati/mati_o1"
+			},
+			"ps3/s25/04/nsat_0690": {
+				"background/gk3": "bg/gakkou/gk3"
+			},
+			"ps3/s25/04/nsat_0700": {},
+			"ps3/s25/04/nsat_0710": {},
+			"ps3/s25/04/nsat_0720": {},
+			"ps3/s25/04/nsat_0730": {},
+			"ps3/s25/04/nsat_0740": {},
+			"ps3/s25/04/nsat_0750": {},
+			"ps3/s25/04/nsat_0760": {},
+			"ps3/s25/04/nsat_0770": {},
+			"ps3/s25/04/nsat_0780": {},
+			"ps3/s25/05/nrik_0060": {},
+			"ps3/s25/05/nrik_0070": {},
+			"ps3/s25/05/nrik_0080": {},
+			"ps3/s25/05/nrik_0090": {},
+			"ps3/s25/05/nrik_0100": {
+				"background/hi9": "bg/mura/hi9",
+				"background/sinryou_soto1": "bg/sinryoujo/sinryou_soto1",
+				"black": "black"
+			},
+			"ps3/s25/05/nrik_0110": {},
+			"ps3/s25/05/nrik_0120": {
+				"background/hi3": "bg/mura/hi3",
+				"background/kamik_mati3": "<NO_MATCH>",
+				"background/mo1": "bg/mori/mo1",
+				"background/mo2": "bg/mori/mo2",
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/s25/05/nrik_0130": {},
+			"ps3/s25/05/nrik_0140": {},
+			"ps3/s25/05/nrik_0150": {},
+			"ps3/s25/05/nrik_0160": {},
+			"ps3/s25/05/nrik_0170": {},
+			"ps3/s25/05/nrik_0180": {},
+			"ps3/s25/05/nrik_0190": {},
+			"ps3/s25/05/nrik_0200": {
+				"background/kamik_mati_102": "<NO_MATCH>",
+				"black": "black"
+			},
+			"ps3/s25/05/nrik_0210": {},
+			"ps3/s25/05/nrik_0220": {},
+			"ps3/s25/05/nrik_0230": {},
+			"ps3/s25/05/nrik_0240": {},
+			"ps3/s25/05/nrik_0250": {},
+			"ps3/s25/05/nrik_0260": {},
+			"ps3/s25/05/nrik_0270": {
+				"background/mboi_1c": "bg/sinryoujo/sinryou_sinsatu4",
+				"black": "black",
+				"effect/mask1": "<NO_MATCH>",
+				"effect/up": "effect/up",
+				"white": "white"
+			},
+			"ps3/s25/05/nrik_0280": {},
+			"ps3/s25/05/nrik_0290": {},
+			"ps3/s25/05/nrik_0300": {
+				"background/kamik_sinryou_rouka1": "bg/sinryoujo/sinryou_sinsatu4",
+				"black": "black",
+				"effect/blood_2c": "bg/efe/blood_2c"
+			},
+			"ps3/s25/05/nrik_0310": {},
+			"ps3/s25/05/nrik_0320": {},
+			"ps3/s25/05/nrik_0330": {},
+			"ps3/s25/05/nrik_0340": {},
+			"ps3/s25/05/nrik_0350": {},
+			"ps3/s25/05/nrik_0360": {},
+			"ps3/s25/05/nrik_0370": {},
+			"ps3/s25/05/nrik_0380": {},
+			"ps3/s25/05/nrik_0390": {},
+			"ps3/s25/05/nrik_0400": {},
+			"ps3/s25/05/nrik_0410": {},
+			"ps3/s25/05/nrik_0420": {},
+			"ps3/s25/05/nrik_0430": {
+				"background/kamik_sinryou_matiai1": "bg/sinryoujo/sinryou_rouka2",
+				"black": "black"
+			},
+			"ps3/s25/05/nrik_0440": {},
+			"ps3/s25/05/nrik_0450": {},
+			"ps3/s25/05/nrik_0460": {},
+			"ps3/s25/05/nrik_0470": {
+				"white": "white"
+			},
+			"ps3/s25/05/nrik_0480": {},
+			"ps3/s25/05/nrik_0490": {
+				"background/fure1": "bg/sonota/fure1",
+				"background/fure2": "bg/sonota/fure2",
+				"black": "black",
+				"effect/left": "effect/left",
+				"effect/maskc": "effect/maskc",
+				"white": "white"
+			},
+			"ps3/s25/05/nrik_0500": {},
+			"ps3/s25/05/nrik_0510": {},
+			"ps3/s25/05/nrik_0520": {},
+			"ps3/s25/05/nrik_0530": {},
+			"ps3/s25/05/nrik_0540": {},
+			"ps3/s25/05/nrik_0550": {},
+			"ps3/s25/05/nrik_0560": {
+				"black": "black",
+				"effect/kamik_inf_1": "bg/etc/inf_1"
+			},
+			"ps3/s25/05/nrik_0570": {
+				"background/fure2": "bg/sonota/fure2",
+				"background/hi1": "bg/mura/hi1",
+				"background/kuruma6": "bg/kuruma/kuruma6",
+				"background/outb_shikenkan": "bg/etc/shikenkan",
+				"black": "black"
+			},
+			"ps3/s25/05/nrik_0580": {},
+			"ps3/s25/05/nrik_0590": {},
+			"ps3/s25/05/nrik_0600": {},
+			"ps3/s25/05/nrik_0610": {
+				"background/koudou": "bg/mati/mati7",
+				"black": "black"
+			},
+			"ps3/s25/05/nrik_0620": {},
+			"ps3/s25/05/nrik_0630": {},
+			"ps3/s25/05/nrik_0640": {},
+			"ps3/s25/05/nrik_0650": {},
+			"ps3/s25/05/nrik_0660": {
+				"background/cit_1a": "bg/mati2/mati_101",
+				"background/kamik_mati_102": "bg/mati2/mati_102",
+				"background/kamik_mati_401": "bg/mati2/mati_401",
+				"black": "black"
+			},
+			"ps3/s25/05/nrik_0670": {
+				"black": "black",
+				"effect/maskc": "effect/maskc"
+			},
+			"ps3/s25/05/nrik_0680": {},
+			"ps3/s25/05/nrik_0690": {},
+			"ps3/s25/05/nrik_0700": {},
+			"ps3/s25/05/nrik_0710": {},
+			"ps3/s25/05/nrik_0720": {},
+			"ps3/s25/05/nrik_0730": {
+				"black": "black"
+			},
+			"ps3/s25/05/nrik_0740": {},
+			"ps3/s25/05/nrik_0750": {
+				"background/susuki": "bg/mori/kusa"
+			},
+			"ps3/s25/05/nrik_0760": {},
+			"ps3/s25/05/nrik_0770": {},
+			"ps3/s25/05/nrik_0780": {
+				"black": "black",
+				"effect/kamik_inf_1": "bg/etc/inf_1"
+			},
+			"ps3/s25/05/nrik_0790": {
+				"background/fure2": "bg/sonota/fure2",
+				"black": "black"
+			},
+			"ps3/s25/05/nrik_0800": {},
+			"ps3/s25/05/nrik_0810": {},
+			"ps3/s25/05/nrik_0820": {},
+			"ps3/s25/05/nrik_0830": {},
+			"ps3/s25/05/nrik_0840": {},
+			"ps3/s25/05/nrik_0850": {},
+			"ps3/s25/05/nrik_0860": {
+				"effect/up": "effect/up"
+			},
+			"ps3/s25/05/nrik_0870": {},
+			"ps3/s25/05/nrik_0880": {},
+			"ps3/s25/05/nrik_0890": {
+				"background/fure2": "bg/sonota/fure2",
+				"black": "black",
+				"effect/kamik_inf_1": "bg/etc/inf_1",
+				"white": "white"
+			},
+			"ps3/s25/05/nrik_0900": {},
+			"ps3/s25/05/nrik_0910": {},
+			"ps3/s25/05/nrik_0920": {
+				"background/bui_r1e": "bg/keisatu/ke_ky4",
+				"effect/maskc": "effect/maskc",
+				"white": "white"
+			},
+			"ps3/s25/05/nrik_0930": {},
+			"ps3/s25/05/nrik_0940": {
+				"background/bui_r1e": "bg/keisatu/ke4",
+				"black": "black"
+			},
+			"ps3/s25/05/nrik_0950": {},
+			"ps3/s25/05/nrik_0960": {},
+			"ps3/s25/05/nrik_0970": {},
+			"ps3/s25/05/nrik_0980": {},
+			"ps3/s25/05/nrik_0990": {},
+			"ps3/s25/05/nrik_1000": {},
+			"ps3/s25/05/nrik_1010": {},
+			"ps3/s25/05/nrik_1020": {},
+			"ps3/s25/05/nrik_1030": {},
+			"ps3/s25/05/nrik_1040": {},
+			"ps3/s25/05/nrik_1050": {},
+			"ps3/s25/05/nrik_1060": {
+				"background/bui_r1e": "<NO_MATCH>",
+				"black": "black"
+			},
+			"ps3/s25/05/nrik_1070": {},
+			"ps3/s25/05/nrik_1080": {},
+			"ps3/s25/05/nrik_1090": {},
+			"ps3/s25/05/nrik_1100": {},
+			"ps3/s25/05/nrik_1110": {},
+			"ps3/s25/05/nrik_1120": {
+				"background/fure1": "bg/sonota/fure1",
+				"black": "black"
+			},
+			"ps3/s25/05/nrik_1130": {},
+			"ps3/s25/05/nrik_1140": {
+				"background/fure2": "bg/sonota/fure2",
+				"black": "black"
+			},
+			"ps3/s25/05/nrik_1150": {},
+			"ps3/s25/05/nrik_1160": {},
+			"ps3/s25/05/nrik_1170": {},
+			"ps3/s25/05/nrik_1180": {},
+			"ps3/s25/05/nrik_1190": {},
+			"ps3/s25/05/nrik_1200": {},
+			"ps3/s25/05/nrik_1210": {},
+			"ps3/s25/05/nrik_1220": {},
+			"ps3/s25/05/nrik_1230": {
+				"background/fure1": "bg/sonota/fure1",
+				"black": "black",
+				"effect/kamik_inf_1": "bg/etc/inf_1",
+				"effect/kamik_inf_2": "bg/etc/inf_2"
+			},
+			"ps3/s25/05/nrik_1240": {},
+			"ps3/s25/05/nrik_1250": {},
+			"ps3/s25/05/nrik_1260": {},
+			"ps3/s25/05/nrik_1270": {},
+			"ps3/s25/05/nrik_1280": {},
+			"ps3/s25/05/nrik_1290": {},
+			"ps3/s25/05/nrik_1300": {
+				"background/fure1": "bg/sonota/fure1",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/05/nrik_1310": {},
+			"ps3/s25/05/nrik_1320": {},
+			"ps3/s25/05/nrik_1330": {},
+			"ps3/s25/05/nrik_1340": {
+				"background/fure1": "bg/sonota/fure1",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/05/nrik_1350": {},
+			"ps3/s25/05/nrik_1360": {},
+			"ps3/s25/05/nrik_1370": {},
+			"ps3/s25/05/nrik_1380": {},
+			"ps3/s25/05/nrik_1390": {},
+			"ps3/s25/05/nrik_1400": {
+				"background/cit_4a": "bg/mati/mati10a",
+				"background/mati_o1": "bg/mati/mati_o1",
+				"black": "black",
+				"effect/kamik_inf_1": "bg/etc/inf_1",
+				"effect/maskaa": "<NO_MATCH>",
+				"effect/maskc": "effect/maskc",
+				"effect/ryuuketu1": "effect/ryuuketu1",
+				"red": "<NO_MATCH>",
+				"white": "white"
+			},
+			"ps3/s25/05/nrik_1410": {},
+			"ps3/s25/05/nrik_1420": {},
+			"ps3/s25/05/nrik_1430": {
+				"effect/furiker_c": "<NO_MATCH>"
+			},
+			"ps3/s25/05/nrik_1440": {
+				"scene/611a": "<SPECIAL_SCENE>",
+				"white": "white"
+			},
+			"ps3/s25/05/nrik_1450": {},
+			"ps3/s25/05/nrik_1460": {},
+			"ps3/s25/05/nrik_1461": {
+				"background/mati_o1": "bg/mati/mati_o1",
+				"effect/furiker_c": "<NO_MATCH>",
+				"scene/611b": "<SPECIAL_SCENE>",
+				"white": "white"
+			},
+			"ps3/s25/05/nrik_1470": {},
+			"ps3/s25/05/nrik_1480": {},
+			"ps3/s25/05/nrik_1481": {
+				"background/mati_o1": "bg/mati/mati_o1",
+				"effect/furiker_c": "<NO_MATCH>",
+				"scene/611c": "<SPECIAL_SCENE>",
+				"white": "white"
+			},
+			"ps3/s25/05/nrik_1490": {
+				"background/gk3": "bg/gakkou/gk3",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/05/nrik_1500": {},
+			"ps3/s25/05/nrik_1510": {},
+			"ps3/s25/05/nrik_1520": {
+				"background/gk3": "bg/gakkou/gk3",
+				"black": "black"
+			},
+			"ps3/s25/05/nrik_1530": {},
+			"ps3/s25/05/nrik_1540": {},
+			"ps3/s25/05/nrik_1550": {
+				"black": "black",
+				"effect/different_spiral_1b": "bg/efe/different_spiral_1b"
+			},
+			"ps3/s25/06/nshi_0000": {
+				"background/kamik_mati_204": "<NO_MATCH>",
+				"black": "black",
+				"scene/608": "<SPECIAL_SCENE>"
+			},
+			"ps3/s25/06/nshi_0010": {
+				"background/kamik_mati_206": "<NO_MATCH>",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/06/nshi_0020": {},
+			"ps3/s25/06/nshi_0030": {},
+			"ps3/s25/06/nshi_0040": {},
+			"ps3/s25/06/nshi_0050": {},
+			"ps3/s25/06/nshi_0060": {},
+			"ps3/s25/06/nshi_0070": {},
+			"ps3/s25/06/nshi_0080": {},
+			"ps3/s25/06/nshi_0090": {
+				"background/ke5": "bg/keisatu/ke5",
+				"black": "black",
+				"effect/eye_base_b": "<NO_MATCH>",
+				"white": "white"
+			},
+			"ps3/s25/06/nshi_0100": {},
+			"ps3/s25/06/nshi_0110": {},
+			"ps3/s25/06/nshi_0120": {
+				"white": "white"
+			},
+			"ps3/s25/06/nshi_0130": {},
+			"ps3/s25/06/nshi_0140": {},
+			"ps3/s25/06/nshi_0150": {},
+			"ps3/s25/06/nshi_0160": {},
+			"ps3/s25/06/nshi_0170": {},
+			"ps3/s25/08/ntom_0000": {},
+			"ps3/s25/08/ntom_0010": {},
+			"ps3/s25/08/ntom_0020": {},
+			"ps3/s25/08/ntom_0030": {},
+			"ps3/s25/08/ntom_0040": {},
+			"ps3/s25/08/ntom_0050": {
+				"background/mboi_1c": "<NO_MATCH>",
+				"black": "black"
+			},
+			"ps3/s25/08/ntom_0060": {},
+			"ps3/s25/08/ntom_0070": {},
+			"ps3/s25/08/ntom_0080": {},
+			"ps3/s25/08/ntom_0090": {},
+			"ps3/s25/08/ntom_0100": {},
+			"ps3/s25/08/ntom_0110": {},
+			"ps3/s25/08/ntom_0120": {},
+			"ps3/s25/08/ntom_0130": {},
+			"ps3/s25/08/ntom_0140": {},
+			"ps3/s25/08/ntom_0150": {},
+			"ps3/s25/08/ntom_0160": {
+				"background/hi1": "bg/mura/hi1",
+				"background/mboi_1c": "bg/sinryoujo/sinryou_sinsatu4",
+				"black": "black"
+			},
+			"ps3/s25/08/ntom_0170": {},
+			"ps3/s25/08/ntom_0180": {},
+			"ps3/s25/08/ntom_0190": {},
+			"ps3/s25/08/ntom_0200": {},
+			"ps3/s25/08/ntom_0210": {
+				"background/kamik_sinryou_matiai1": "bg/sinryoujo/sinryou_matiai1",
+				"background/kamik_sinryou_matiai2": "bg/keisatu/ke5",
+				"background/kamik_sinryou_rouka1": "bg/sinryoujo/sinryou_rouka1",
+				"black": "black"
+			},
+			"ps3/s25/08/ntom_0220": {},
+			"ps3/s25/08/ntom_0230": {},
+			"ps3/s25/08/ntom_0240": {
+				"background/kamik_sinryou_matiai1": "bg/sinryoujo/sinryou_rouka2",
+				"black": "black"
+			},
+			"ps3/s25/08/ntom_0250": {},
+			"ps3/s25/08/ntom_0260": {},
+			"ps3/s25/08/ntom_0270": {},
+			"ps3/s25/08/ntom_0280": {},
+			"ps3/s25/08/ntom_0290": {},
+			"ps3/s25/08/ntom_0300": {},
+			"ps3/s25/08/ntom_0310": {},
+			"ps3/s25/08/ntom_0320": {
+				"background/kamik_sinryou_soto1": "bg/sinryoujo/sinryou_soto1",
+				"background/kamik_sinryou_soto4": "bg/sinryoujo/sinryou_soto4",
+				"background/kuruma3_01": "bg/kuruma/kuruma3",
+				"background/kuruma6": "bg/kuruma/kuruma6",
+				"black": "black",
+				"effect/left": "effect/left",
+				"white": "white"
+			},
+			"ps3/s25/08/ntom_0330": {},
+			"ps3/s25/08/ntom_0340": {},
+			"ps3/s25/08/ntom_0350": {},
+			"ps3/s25/08/ntom_0360": {
+				"background/kuruma6": "bg/kuruma/kuruma6",
+				"black": "black"
+			},
+			"ps3/s25/08/ntom_0370": {
+				"background/kuruma6": "bg/kuruma/kuruma6",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/08/ntom_0380": {},
+			"ps3/s25/08/ntom_0390": {},
+			"ps3/s25/08/ntom_0400": {},
+			"ps3/s25/08/ntom_0410": {},
+			"ps3/s25/08/ntom_0420": {},
+			"ps3/s25/08/ntom_0430": {},
+			"ps3/s25/08/ntom_0440": {},
+			"ps3/s25/08/ntom_0450": {},
+			"ps3/s25/08/ntom_0460": {},
+			"ps3/s25/08/ntom_0470": {
+				"background/ke2": "bg/keisatu/ke2",
+				"effect/left": "effect/left",
+				"white": "white"
+			},
+			"ps3/s25/08/ntom_0480": {},
+			"ps3/s25/08/ntom_0490": {
+				"background/bui_r1e": "bg/keisatu/ke_ky4",
+				"black": "black",
+				"effect/right": "effect/right"
+			},
+			"ps3/s25/08/ntom_0500": {},
+			"ps3/s25/08/ntom_0510": {
+				"background/kamik_ke_ky1": "<NO_MATCH>",
+				"black": "black"
+			},
+			"ps3/s25/08/ntom_0520": {},
+			"ps3/s25/08/ntom_0530": {
+				"background/bui_r1e": "bg/keisatu/ke_ky3",
+				"background/outb_shikenkan": "bg/etc/shikenkan",
+				"black": "black"
+			},
+			"ps3/s25/08/ntom_0540": {
+				"background/bui_r1e": "bg/keisatu/ke_ky2"
+			},
+			"ps3/s25/08/ntom_0550": {},
+			"ps3/s25/09/ntak_0000": {},
+			"ps3/s25/09/ntak_0010": {},
+			"ps3/s25/09/ntak_0020": {},
+			"ps3/s25/09/ntak_0030": {},
+			"ps3/s25/09/ntak_0040": {},
+			"ps3/s25/09/ntak_0050": {},
+			"ps3/s25/09/ntak_0060": {},
+			"ps3/s25/09/ntak_0070": {},
+			"ps3/s25/09/ntak_0080": {},
+			"ps3/s25/09/ntak_0090": {
+				"background/outb_shikenkan": "bg/etc/shikenkan"
+			},
+			"ps3/s25/09/ntak_0100": {},
+			"ps3/s25/09/ntak_0110": {},
+			"ps3/s25/09/ntak_0120": {},
+			"ps3/s25/09/ntak_0130": {},
+			"ps3/s25/09/ntak_0140": {},
+			"ps3/s25/09/ntak_0150": {},
+			"ps3/s25/09/ntak_0160": {},
+			"ps3/s25/09/ntak_0170": {
+				"background/kamik_sinryou_rouka1": "bg/keisatu/ka1",
+				"black": "black",
+				"effect/mask1": "<NO_MATCH>"
+			},
+			"ps3/s25/09/ntak_0180": {
+				"background/ke2": "bg/keisatu/ke2"
+			},
+			"ps3/s25/09/ntak_0190": {
+				"background/ke2": "bg/keisatu/ke2",
+				"black": "black",
+				"effect/kamik_inf_4": "bg/etc/inf_4"
+			},
+			"ps3/s25/09/ntak_0200": {},
+			"ps3/s25/09/ntak_0210": {},
+			"ps3/s25/09/ntak_0220": {
+				"background/ke2": "bg/keisatu/ke2"
+			},
+			"ps3/s25/09/ntak_0230": {
+				"black": "black",
+				"effect/blood_2a": "bg/efe/blood_2a",
+				"effect/left": "effect/left",
+				"scene/609": "<SPECIAL_SCENE>"
+			},
+			"ps3/s25/09/ntak_0240": {},
+			"ps3/s25/09/ntak_0250": {},
+			"ps3/s25/09/ntak_0260": {
+				"black": "black"
+			},
+			"ps3/s25/09/ntak_0270": {},
+			"ps3/s25/09/ntak_0280": {},
+			"ps3/s25/09/ntak_0290": {},
+			"ps3/s25/09/ntak_0300": {
+				"background/ke2": "bg/keisatu/ke2",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/09/ntak_0310": {
+				"background/bui_r1e": "bg/keisatu/ke_ky4",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/09/ntak_0320": {},
+			"ps3/s25/09/ntak_0330": {},
+			"ps3/s25/09/ntak_0340": {},
+			"ps3/s25/09/ntak_0350": {},
+			"ps3/s25/09/ntak_0360": {},
+			"ps3/s25/09/ntak_0370": {
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/12/nhan_0000": {},
+			"ps3/s25/12/nhan_0010": {},
+			"ps3/s25/12/nhan_0020": {
+				"background/hi5": "bg/mura/hi5"
+			},
+			"ps3/s25/12/nhan_0030": {},
+			"ps3/s25/12/nhan_0040": {},
+			"ps3/s25/12/nhan_0050": {},
+			"ps3/s25/12/nhan_0060": {},
+			"ps3/s25/12/nhan_0070": {
+				"background/kamik_sinryou_matiai2": "bg/sinryoujo/sinryou_sinsatu4",
+				"background/kamik_sinryou_rouka2": "bg/sinryoujo/sinryou_rouka2",
+				"black": "black"
+			},
+			"ps3/s25/12/nhan_0080": {
+				"background/kamik_sinryou_matiai2": "bg/sinryoujo/sinryou_sinsatu4",
+				"background/kamik_sinryou_rouka1": "bg/sinryoujo/sinryou_rouka1",
+				"black": "black"
+			},
+			"ps3/s25/12/nhan_0090": {},
+			"ps3/s25/12/nhan_0100": {},
+			"ps3/s25/12/nhan_0110": {},
+			"ps3/s25/12/nhan_0120": {},
+			"ps3/s25/12/nhan_0130": {},
+			"ps3/s25/12/nhan_0140": {},
+			"ps3/s25/12/nhan_0150": {},
+			"ps3/s25/12/nhan_0160": {},
+			"ps3/s25/12/nhan_0170": {
+				"background/kamik_sinryou_rouka1": "<NO_MATCH>"
+			},
+			"ps3/s25/12/nhan_0180": {},
+			"ps3/s25/12/nhan_0190": {},
+			"ps3/s25/12/nhan_0200": {},
+			"ps3/s25/12/nhan_0210": {},
+			"ps3/s25/12/nhan_0220": {},
+			"ps3/s25/12/nhan_0230": {},
+			"ps3/s25/12/nhan_0240": {},
+			"ps3/s25/12/nhan_0250": {},
+			"ps3/s25/12/nhan_0260": {},
+			"ps3/s25/12/nhan_0270": {},
+			"ps3/s25/12/nhan_0280": {
+				"background/fure1": "bg/sonota/fure1",
+				"effect/maskc": "effect/maskc",
+				"scene/607": "<SPECIAL_SCENE>",
+				"white": "white"
+			},
+			"ps3/s25/12/nhan_0290": {},
+			"ps3/s25/12/nhan_0300": {},
+			"ps3/s25/12/nhan_0310": {},
+			"ps3/s25/12/nhan_0320": {},
+			"ps3/s25/12/nhan_0330": {},
+			"ps3/s25/12/nhan_0340": {},
+			"ps3/s25/12/nhan_0350": {},
+			"ps3/s25/12/nhan_0360": {
+				"background/fure1": "bg/sonota/fure1",
+				"black": "black"
+			},
+			"ps3/s25/12/nhan_0370": {},
+			"ps3/s25/12/nhan_0380": {},
+			"ps3/s25/12/nhan_0390": {
+				"background/kuruma2": "bg/kuruma/kuruma2",
+				"black": "black",
+				"effect/different_spiral_1a": "bg/efe/different_spiral_1a",
+				"effect/v_hurricane": "<NO_MATCH>"
+			},
+			"ps3/s25/12/nhan_0400": {
+				"background/kuruma2": "bg/kuruma/kuruma2",
+				"black": "black",
+				"effect/right": "effect/right"
+			},
+			"ps3/s25/12/nhan_0410": {},
+			"ps3/s25/12/nhan_0420": {},
+			"ps3/s25/12/nhan_0430": {
+				"background/kamik_mati_204": "bg/mati2/mati_204",
+				"background/kamik_mati_206": "<NO_MATCH>",
+				"effect/maskc": "effect/maskc",
+				"white": "white"
+			},
+			"ps3/s25/12/nhan_0440": {},
+			"ps3/s25/12/nhan_0450": {
+				"background/kamik_mati_403y": "bg/mati2/mati_403y",
+				"background/kamik_sono_005": "bg/sonozakigumi/sono_005",
+				"black": "black"
+			},
+			"ps3/s25/12/nhan_0460": {},
+			"ps3/s25/12/nhan_0470": {},
+			"ps3/s25/12/nhan_0480": {},
+			"ps3/s25/12/nhan_0490": {},
+			"ps3/s25/12/nhan_0500": {},
+			"ps3/s25/12/nhan_0510": {
+				"black": "black"
+			},
+			"ps3/s25/12/nhan_0520": {
+				"background/fure1": "bg/sonota/fure1",
+				"background/hi1": "bg/mura/hi1",
+				"black": "black",
+				"effect/kamik_inf_1": "bg/etc/inf_1"
+			},
+			"ps3/s25/12/nhan_0530": {},
+			"ps3/s25/12/nhan_0540": {},
+			"ps3/s25/12/nhan_0550": {},
+			"ps3/s25/12/nhan_0560": {},
+			"ps3/s25/12/nhan_0570": {},
+			"ps3/s25/12/nhan_0580": {},
+			"ps3/s25/12/nhan_0590": {},
+			"ps3/s25/12/nhan_0600": {},
+			"ps3/s25/12/nhan_0610": {},
+			"ps3/s25/12/nhan_0620": {},
+			"ps3/s25/12/nhan_0630": {
+				"background/fure2": "bg/sonota/fure2",
+				"black": "black",
+				"effect/kamik_inf_2": "bg/etc/inf_2",
+				"effect/kamik_inf_4": "bg/etc/inf_4"
+			},
+			"ps3/s25/12/nhan_0640": {},
+			"ps3/s25/12/nhan_0650": {},
+			"ps3/s25/12/nhan_0660": {
+				"background/fure2": "bg/sonota/fure2",
+				"effect/maskc": "effect/maskc",
+				"white": "white"
+			},
+			"ps3/s25/12/nhan_0670": {},
+			"ps3/s25/12/nhan_0680": {},
+			"ps3/s25/12/nhan_0690": {
+				"background/fure1": "bg/sonota/fure1",
+				"black": "black"
+			},
+			"ps3/s25/12/nhan_0700": {},
+			"ps3/s25/12/nhan_0710": {},
+			"ps3/s25/12/nhan_0720": {},
+			"ps3/s25/12/nhan_0730": {
+				"background/bui_r1e": "bg/keisatu/ke_ky4",
+				"white": "white"
+			},
+			"ps3/s25/12/nhan_0740": {},
+			"ps3/s25/12/nhan_0750": {},
+			"ps3/s25/12/nhan_0760": {
+				"background/bui_r1e": "bg/keisatu/ka3",
+				"effect/furiker_c": "<NO_MATCH>",
+				"white": "white"
+			},
+			"ps3/s25/12/nhan_0770": {},
+			"ps3/s25/12/nhan_0780": {},
+			"ps3/s25/12/nhan_0790": {},
+			"ps3/s25/12/nhan_0800": {},
+			"ps3/s25/12/nhan_0810": {},
+			"ps3/s25/12/nhan_0820": {
+				"background/ka4": "bg/sinryoujo/sinryou_sinsatu4",
+				"black": "black"
+			},
+			"ps3/s25/12/nhan_0830": {},
+			"ps3/s25/12/nhan_0840": {},
+			"ps3/s25/12/nhan_0850": {},
+			"ps3/s25/12/nhan_0860": {},
+			"ps3/s25/12/nhan_0870": {},
+			"ps3/s25/12/nhan_0880": {
+				"background/fure2": "bg/sonota/fure2"
+			},
+			"ps3/s25/12/nhan_0890": {},
+			"ps3/s25/12/nhan_0900": {},
+			"ps3/s25/12/nhan_0910": {},
+			"ps3/s25/12/nhan_0920": {
+				"background/fure1": "bg/sonota/fure1"
+			},
+			"ps3/s25/12/nhan_0930": {},
+			"ps3/s25/12/nhan_0940": {
+				"background/fure1": "bg/sonota/fure1",
+				"black": "black",
+				"effect/right": "effect/right"
+			},
+			"ps3/s25/12/nhan_0950": {},
+			"ps3/s25/12/nhan_0960": {},
+			"ps3/s25/12/nhan_0970": {},
+			"ps3/s25/12/nhan_0980": {
+				"background/mati_o1": "bg/mati/mati_o1"
+			},
+			"ps3/s25/12/nhan_0990": {},
+			"ps3/s25/12/nhan_1000": {},
+			"ps3/s25/12/nhan_1010": {},
+			"ps3/s25/12/nhan_1020": {
+				"background/g1": "bg/gakkou/g1",
+				"background/gk1": "bg/gakkou/gk1",
+				"background/sora": "bg/mura/sora",
+				"black": "black"
+			},
+			"ps3/s25/12/nhan_1030": {},
+			"ps3/s25/12/nhan_1040": {},
+			"ps3/s25/12/nhan_1050": {
+				"background/gk3": "bg/gakkou/gk3"
+			},
+			"ps3/s25/12/nhan_1060": {},
+			"ps3/s25/12/nhan_1070": {},
+			"ps3/s25/12/nhan_1080": {
+				"background/gk1": "bg/gakkou/gk1",
+				"black": "black"
+			},
+			"ps3/s25/12/nhan_1090": {},
+			"ps3/s25/12/nhan_1100": {
+				"background/gk1": "bg/gakkou/gk1",
+				"black": "black"
+			},
+			"ps3/s25/12/nhan_1110": {
+				"background/gk3": "bg/gakkou/gk3"
+			},
+			"ps3/s25/12/nhan_1120": {
+				"background/gk3": "bg/gakkou/gk3",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/12/nhan_1130": {},
+			"ps3/s25/12/nhan_1140": {
+				"effect/maskc": "effect/maskc",
+				"white": "white"
+			},
+			"ps3/s25/12/nhan_1150": {
+				"background/gk3": "bg/gakkou/gk3"
+			},
+			"ps3/s25/12/nhan_1160": {},
+			"ps3/s25/12/nhan_1170": {},
+			"ps3/s25/12/nhan_1180": {
+				"background/gk3": "bg/gakkou/gk3",
+				"black": "black"
+			},
+			"ps3/s25/15/nkas_0000": {
+				"background/kamik_mati_001": "bg/mati2/mati_206",
+				"black": "black"
+			},
+			"ps3/s25/15/nkas_0010": {
+				"background/ke2": "bg/keisatu/ke2",
+				"black": "black"
+			},
+			"ps3/s25/15/nkas_0020": {},
+			"ps3/s25/15/nkas_0030": {
+				"background/ke2": "bg/keisatu/ke2"
+			},
+			"ps3/s25/15/nkas_0040": {},
+			"ps3/s25/15/nkas_0050": {
+				"black": "black"
+			},
+			"ps3/s25/15/nkas_0060": {
+				"background/ke2": "bg/keisatu/ke2"
+			},
+			"ps3/s25/15/nkas_0070": {},
+			"ps3/s25/15/nkas_0080": {
+				"background/ke2": "bg/keisatu/ke2"
+			},
+			"ps3/s25/15/nkas_0090": {},
+			"ps3/s25/15/nkas_0100": {
+				"background/k_kouen1": "bg/mati/kouen",
+				"background/kamik_mati2": "bg/mati/mati2"
+			},
+			"ps3/s25/50/nune_0000": {
+				"background/kamik_mati16": "bg/mati/mati16",
+				"black": "black",
+				"effect/up": "effect/up"
+			},
+			"ps3/s25/50/nune_0010": {},
+			"ps3/s25/50/nune_0020": {
+				"background/kamik_mati_502": "bg/mati2/mati_502",
+				"background/kamik_mati_503": "bg/mati2/mati_503",
+				"background/kaw_r1an": "bg/mati/ryou1",
+				"black": "black",
+				"effect/left": "effect/left",
+				"white": "white"
+			},
+			"ps3/s25/50/nune_0030": {},
+			"ps3/s25/50/nune_0040": {},
+			"ps3/s25/50/nune_0050": {},
+			"ps3/s25/50/nune_0060": {},
+			"ps3/s25/50/nune_0070": {
+				"background/kaw_r1an": "<NO_MATCH>",
+				"black": "black"
+			},
+			"ps3/s25/50/nune_0080": {},
+			"ps3/s25/50/nune_0090": {
+				"background/kamik_sinryou_rouka1": "bg/sinryoujo/sinryou_rouka2"
+			},
+			"ps3/s25/50/nune_0100": {},
+			"ps3/s25/50/nune_0110": {},
+			"ps3/s25/50/nune_0120": {},
+			"ps3/s25/50/nune_0130": {},
+			"ps3/s25/50/nune_0140": {},
+			"ps3/s25/50/nune_0150": {},
+			"ps3/s25/50/nune_0160": {},
+			"ps3/s25/50/nune_0170": {},
+			"ps3/s25/50/nune_0180": {
+				"background/hi_scroll": "bg/mura/m_hi4",
+				"background/kaw_r1an": "bg/mati/ryou1",
+				"black": "black"
+			},
+			"ps3/s25/50/nune_0190": {},
+			"ps3/s25/50/nune_0200": {},
+			"ps3/s25/50/nune_0210": {},
+			"ps3/s25/50/nune_0220": {},
+			"ps3/s25/50/nune_0230": {},
+			"ps3/s25/50/nune_0240": {},
+			"ps3/s25/50/nune_0250": {},
+			"ps3/s25/50/nune_0260": {
+				"background/kamik_mati_005": "bg/mati2/mati_102y",
+				"black": "black"
+			},
+			"ps3/s25/50/nune_0270": {},
+			"ps3/s25/50/nune_0280": {
+				"background/kamik_mati_005": "bg/mati2/mati_102y",
+				"black": "black"
+			},
+			"ps3/s25/50/nune_0290": {},
+			"ps3/s25/50/nune_0300": {},
+			"ps3/s25/50/nune_0310": {
+				"background/kamik_mati_203": "bg/mati2/mati_001",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/50/nune_0320": {
+				"background/kamik_mati_301y": "bg/mati2/mati_102y",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/50/nune_0330": {},
+			"ps3/s25/50/nune_0340": {},
+			"ps3/s25/50/nune_0350": {},
+			"ps3/s25/50/nune_0360": {},
+			"ps3/s25/50/nune_0370": {},
+			"ps3/s25/50/nune_0380": {},
+			"ps3/s25/50/nune_0390": {
+				"background/fure2": "bg/sonota/fure2",
+				"white": "white"
+			},
+			"ps3/s25/50/nune_0400": {},
+			"ps3/s25/50/nune_0410": {
+				"background/fure2": "bg/sonota/fure2",
+				"effect/kamik_inf_1": "bg/etc/inf_1",
+				"white": "white"
+			},
+			"ps3/s25/50/nune_0420": {
+				"background/fure1": "bg/sonota/fure1",
+				"background/fure2": "bg/sonota/fure2",
+				"background/hi1": "bg/mura/hi1",
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/s25/50/nune_0430": {},
+			"ps3/s25/50/nune_0440": {},
+			"ps3/s25/50/nune_0450": {},
+			"ps3/s25/50/nune_0460": {},
+			"ps3/s25/50/nune_0470": {
+				"background/fure1": "bg/sonota/fure1",
+				"black": "black"
+			},
+			"ps3/s25/50/nune_0480": {},
+			"ps3/s25/50/nune_0490": {},
+			"ps3/s25/50/nune_0500": {},
+			"ps3/s25/50/nune_0510": {},
+			"ps3/s25/50/nune_0520": {},
+			"ps3/s25/50/nune_0530": {
+				"background/bui_r1e": "bg/keisatu/ke2",
+				"black": "black"
+			},
+			"ps3/s25/50/nune_0540": {},
+			"ps3/s25/50/nune_0550": {},
+			"ps3/s25/50/nune_0560": {
+				"background/bui_r1e": "bg/keisatu/ke_ky4"
+			},
+			"ps3/s25/50/nune_0570": {},
+			"ps3/s25/50/nune_0580": {
+				"background/bui_r1e": "<NO_MATCH>",
+				"background/ke2": "bg/keisatu/ke2",
+				"black": "black"
+			},
+			"ps3/s25/50/nune_0590": {},
+			"ps3/s25/50/nune_0600": {},
+			"ps3/s25/50/nune_0610": {
+				"background/k_kouen1": "bg/mati/kouen",
+				"background/sora5": "bg/mura/sora5",
+				"black": "black"
+			},
+			"ps3/s25/50/nune_0620": {},
+			"ps3/s25/50/nune_0630": {},
+			"ps3/s25/50/nune_0640": {
+				"background/k_kouen1": "bg/mati/kouen",
+				"background/outb_shikenkan": "bg/etc/shikenkan",
+				"black": "black",
+				"effect/kamik_inf_1": "bg/etc/inf_1",
+				"effect/kamik_inf_2": "bg/etc/inf_2",
+				"effect/kamik_inf_3": "bg/etc/inf_3",
+				"effect/kamik_inf_4": "bg/etc/inf_4",
+				"effect/kamik_inf_5": "bg/etc/inf_5"
+			},
+			"ps3/s25/50/nune_0650": {
+				"background/fure1": "bg/sonota/fure1",
+				"black": "black",
+				"effect/maskc": "effect/maskc",
+				"white": "white"
+			},
+			"ps3/s25/50/nune_0660": {},
+			"ps3/s25/50/nune_0670": {},
+			"ps3/s25/50/nune_0680": {
+				"background/fure1": "bg/sonota/fure1"
+			},
+			"ps3/s25/50/nune_0690": {},
+			"ps3/s25/50/nune_0700": {
+				"background/fure2": "bg/sonota/fure2",
+				"background/kamik_etc_1": "bg/etc/etc_1",
+				"background/mati12": "bg/mati/mati12",
+				"background/outb_shikenkan": "bg/etc/shikenkan",
+				"black": "black",
+				"effect/bite": "bg/efe/bite",
+				"effect/kamik_inf_1": "<NO_MATCH>",
+				"effect/kamik_inf_5": "bg/etc/inf_5"
+			},
+			"ps3/s25/50/nune_0710": {},
+			"ps3/s25/50/nune_0720": {},
+			"ps3/s25/50/nune_0730": {},
+			"ps3/s25/50/nune_0740": {},
+			"ps3/s25/50/nune_0750": {},
+			"ps3/s25/50/nune_0760": {},
+			"ps3/s25/50/nune_0770": {},
+			"ps3/s25/50/nune_0780": {},
+			"ps3/s25/50/nune_0790": {
+				"background/fure2": "bg/sonota/fure2",
+				"black": "black"
+			},
+			"ps3/s25/50/nune_0800": {
+				"white": "white"
+			},
+			"ps3/s25/50/nune_0810": {},
+			"ps3/s25/50/nune_0820": {
+				"background/fure1": "bg/sonota/fure1",
+				"background/moon": "bg/mura/moon",
+				"black": "black"
+			},
+			"ps3/s25/50/nune_0830": {},
+			"ps3/s25/50/nune_0840": {},
+			"ps3/s25/50/nune_0850": {},
+			"ps3/s25/50/nune_0860": {},
+			"ps3/s25/50/nune_0870": {},
+			"ps3/s25/50/nune_0880": {},
+			"ps3/s25/50/nune_0890": {},
+			"ps3/s25/50/nune_0891": {
+				"background/mati_o1": "bg/mati/mati_o1"
+			},
+			"ps3/s25/50/nune_0900": {},
+			"ps3/s25/50/nune_0910": {},
+			"ps3/s25/50/nune_0920": {},
+			"ps3/s25/50/nune_0930": {
+				"background/mati_o1": "bg/mati/mati_o1"
+			},
+			"ps3/s25/50/nune_0940": {
+				"background/gk1": "bg/gakkou/gk1",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/50/nune_0950": {},
+			"ps3/s25/50/nune_0960": {},
+			"ps3/s25/50/nune_0970": {
+				"background/gk3": "bg/gakkou/gk3",
+				"black": "black",
+				"effect/right": "effect/right"
+			},
+			"ps3/s25/50/nune_0980": {
+				"background/gk1": "bg/gakkou/gk1",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/50/nune_0990": {},
+			"ps3/s25/50/nune_1000": {},
+			"ps3/s25/50/nune_1010": {},
+			"ps3/s25/50/nune_1020": {},
+			"ps3/s25/50/nune_1030": {
+				"background/gk3": "bg/gakkou/gk3"
+			},
+			"ps3/s25/50/nune_1040": {},
+			"ps3/s25/50/nune_1050": {},
+			"ps3/s25/51/ntam_0000": {},
+			"ps3/s25/51/ntam_0010": {
+				"background/fure1": "bg/sonota/fure1",
+				"background/fure2": "bg/sonota/fure2",
+				"black": "black",
+				"effect/maskc": "effect/maskc",
+				"scene/607": "<SPECIAL_SCENE>",
+				"white": "white"
+			},
+			"ps3/s25/51/ntam_0020": {},
+			"ps3/s25/51/ntam_0030": {
+				"background/fure1": "bg/sonota/fure1",
+				"background/sky_4b": "bg/mati/mati1",
+				"black": "black",
+				"effect/blood_2a": "bg/efe/blood_2a",
+				"effect/blood_2b": "bg/efe/blood_2b",
+				"effect/blood_2d": "bg/efe/blood_2d",
+				"effect/maskc": "effect/maskc",
+				"white": "white"
+			},
+			"ps3/s25/51/ntam_0040": {},
+			"ps3/s25/51/ntam_0050": {},
+			"ps3/s25/51/ntam_0060": {
+				"white": "white"
+			},
+			"ps3/s25/51/ntam_0070": {
+				"background/fure1": "bg/sonota/fure1",
+				"background/kuruma2": "bg/kuruma/kuruma2",
+				"background/kuruma6": "bg/kuruma/kuruma6",
+				"black": "black",
+				"effect/maskc": "effect/maskc",
+				"white": "white"
+			},
+			"ps3/s25/51/ntam_0080": {},
+			"ps3/s25/51/ntam_0090": {},
+			"ps3/s25/51/ntam_0100": {
+				"white": "white"
+			},
+			"ps3/s25/51/ntam_0110": {},
+			"ps3/s25/51/ntam_0120": {},
+			"ps3/s25/51/ntam_0130": {
+				"background/bui_r1e": "bg/keisatu/ke4",
+				"background/ke2": "bg/keisatu/ke2",
+				"background/ke5": "bg/keisatu/ke5",
+				"black": "black",
+				"effect/left": "effect/left",
+				"white": "white"
+			},
+			"ps3/s25/51/ntam_0140": {},
+			"ps3/s25/51/ntam_0150": {},
+			"ps3/s25/51/ntam_0160": {
+				"background/ke2": "bg/keisatu/ke2",
+				"black": "black",
+				"effect/left": "effect/left"
+			},
+			"ps3/s25/51/ntam_0170": {},
+			"ps3/s25/51/ntam_0180": {
+				"background/ke2": "bg/keisatu/ke2",
+				"black": "black",
+				"effect/maskc": "effect/maskc"
+			},
+			"ps3/s25/51/ntam_0190": {},
+			"ps3/s25/51/ntam_0200": {},
+			"ps3/s25/51/ntam_0210": {},
+			"ps3/s25/51/ntam_0220": {
+				"background/fure1": "bg/sonota/fure1",
+				"white": "white"
+			},
+			"ps3/s25/51/ntam_0230": {},
+			"ps3/s25/51/ntam_0240": {},
+			"ps3/s25/51/ntam_0250": {
+				"black": "black",
+				"effect/kamik_inf_1": "<NO_MATCH>",
+				"scene/610": "<SPECIAL_SCENE>"
+			},
+			"ps3/s25/51/ntam_0260": {},
+			"ps3/s25/51/ntam_0270": {},
+			"ps3/s25/51/ntam_0280": {},
+			"ps3/s25/51/ntam_0290": {},
+			"ps3/s25/51/ntam_0300": {},
+			"ps3/s25/51/ntam_0310": {},
+			"ps3/s25/51/ntam_0320": {},
+			"ps3/s25/51/ntam_0330": {},
+			"ps3/s25/51/ntam_0340": {},
+			"ps3/s25/51/ntam_0350": {},
+			"ps3/s25/51/ntam_0360": {},
+			"ps3/s25/51/ntam_0370": {
+				"background/mati_o1": "bg/mati/mati_o1"
+			},
+			"ps3/s25/51/ntam_0380": {},
+			"ps3/s25/51/ntam_0390": {
+				"background/gk3": "bg/gakkou/gk3"
+			},
+			"ps3/s25/51/ntam_0400": {
+				"background/gk3": "bg/gakkou/gk3",
+				"black": "black",
+				"effect/right": "effect/right"
+			},
+			"ps3/s25/51/ntam_0410": {
+				"background/gk3": "bg/gakkou/gk3"
+			},
+			"ps3/s25/51/ntam_0420": {},
+			"ps3/s25/51/ntam_0430": {},
+			"ps3/s25/51/ntam_0440": {},
+			"ps3/s25/51/ntam_0450": {},
+			"ps3/s25/51/ntam_0460": {},
+			"ps3/s25/51/ntam_0470": {
+				"effect/down": "effect/down"
+			},
+			"ps3/s25/51/ntam_0480": {},
+			"ps3/s25/51/ntam_0490": {},
+			"ps3/s25/91/nboa_0000": {},
+			"ps3/s25/91/nboa_0010": {
+				"background/kamik_mati_102": "bg/mati/mati16",
+				"black": "black",
+				"effect/left": "effect/left",
+				"effect/right": "effect/right"
+			},
+			"ps3/s25/91/nboa_0020": {},
+			"ps3/s25/91/nboa_0030": {},
+			"ps3/s25/91/nboa_0040": {
+				"effect/up": "effect/up"
+			},
+			"ps3/s25/91/nboa_0050": {},
+			"ps3/s25/92/nbob_0000": {},
+			"ps3/s25/92/nbob_0010": {
+				"background/kamik_mati16": "<NO_MATCH>"
+			},
+			"ps3/s25/92/nbob_0020": {
+				"background/kamik_mati_001": "<NO_MATCH>",
+				"black": "black",
+				"scene/605b": "<SPECIAL_SCENE>"
+			},
+			"ps3/s25/92/nbob_0030": {
+				"background/kamik_mati_005": "bg/mati2/mati_101y",
+				"black": "black",
+				"effect/right": "effect/right",
+				"effect/up": "effect/up"
+			},
+			"ps3/s25/92/nbob_0040": {
+				"background/kamik_mati_204": "bg/mati2/mati_204",
+				"background/kamik_mati_206": "bg/mati2/mati_205",
+				"black": "black",
+				"white": "white"
+			},
+			"ps3/s25/93/nboc_0000": {
+				"background/kamik_mati_102": "<NO_MATCH>",
+				"black": "black",
+				"scene/605a": "<SPECIAL_SCENE>"
+			}
+		},
+		"staffroom": {
+			"": {
+				"background/file": "bg/sonota/file",
+				"background/hasi3": "bg/mori/hasi3",
+				"background/ke_shiryou1_02": "img/dsc00038",
+				"black": "black",
+				"effect/furiker_a": "furiker_a",
+				"effect/furiker_b": "furiker_b",
+				"effect/furiker_c": "<NO_MATCH>",
+				"effect/left": "effect/left",
+				"effect/maskc": "effect/maskc",
+				"effect/right": "effect/right",
+				"effect/up": "effect/up",
+				"white": "white"
+			}
+		},
+		"staffroom02": {
+			"": {
+				"background/ke_shiryou1_02": "img/dsc000103",
+				"black": "black",
+				"effect/furiker_a": "furiker_a",
+				"effect/furiker_b": "furiker_b",
+				"effect/mask1": "<NO_MATCH>",
+				"white": "white"
+			}
+		},
+		"staffroom03": {
+			"": {
+				"background/ke_shiryou1_02": "img/dsc00039",
+				"background/sora5": "bg/mura/sora5",
+				"black": "black",
+				"effect/furiker_a": "furiker_a",
+				"effect/furiker_b": "furiker_b",
+				"effect/left": "effect/left",
+				"effect/m1": "effect/m1",
+				"effect/mask1": "<NO_MATCH>",
+				"effect/right": "effect/right",
+				"effect/up": "effect/up",
+				"effect/v_hurricane": "<NO_MATCH>",
+				"white": "white"
+			}
+		},
+		"staffroom06": {
+			"": {
+				"background/ke_shiryou1_02": "img/dsc00039",
+				"black": "black",
+				"effect/furiker_a": "furiker_a",
+				"effect/furiker_b": "furiker_b",
+				"effect/left": "effect/left",
+				"effect/right": "effect/right",
+				"white": "white"
+			}
+		},
+		"staffroom08": {
+			"": {
+				"background/fure2": "bg/sonota/fure2",
+				"background/heri_gunji_01": "bg/sonota/heri1",
+				"background/je1": "bg/tokyo/ho3",
+				"background/ke_shiryou1_02": "img/dsc000103",
+				"background/res5": "bg/resut/re5",
+				"background/ryoutei2_01": "bg/sonozaki/ryoutei2",
+				"background/sora": "bg/mura/sora",
+				"black": "black",
+				"effect/down": "effect/down",
+				"effect/left": "effect/left",
+				"effect/maskc": "effect/maskc",
+				"effect/right": "effect/right",
+				"effect/ryuuketu1": "effect/ryuuketu1",
+				"effect/up": "effect/up",
+				"white": "white"
+			}
+		},
+		"staffroom11": {
+			"": {
+				"background/jansou": "bg/mati/jansou",
+				"black": "black",
+				"omake/stuff_only": "img/stuff_only"
+			}
+		},
+		"staffroom12": {
+			"": {
+				"background/ke_shiryou1_02": "img/dsc000102",
+				"black": "black",
+				"effect/furiker_a": "furiker_a",
+				"effect/furiker_b": "furiker_b",
+				"effect/furiker_c": "<NO_MATCH>",
+				"white": "white"
+			}
+		},
+		"staffroom13": {
+			"": {
+				"background/ke_shiryou1_02": "img/dsc000103",
+				"black": "black",
+				"effect/eye": "bg/sonota/eye",
+				"effect/furiker_a": "furiker_a",
+				"effect/furiker_b": "furiker_b",
+				"effect/furiker_c": "<NO_MATCH>",
+				"effect/left": "effect/left",
+				"effect/mask1": "<NO_MATCH>",
+				"effect/right": "effect/right",
+				"white": "white"
+			}
+		},
+		"staffroom14": {
+			"": {
+				"background/jt1": "bg/jinja/jt1",
+				"background/ke_shiryou1_02": "img/dsc00039",
+				"black": "black"
+			}
+		},
+		"staffroom15": {
+			"": {
+				"background/res1": "bg/resut/re1",
+				"background/res2": "bg/resut/re2",
+				"background/res4": "bg/resut/re4",
+				"background/res5": "bg/resut/re3",
+				"black": "black",
+				"effect/down": "effect/down",
+				"effect/furiker_a": "furiker_a",
+				"effect/furiker_b": "furiker_b",
+				"effect/furiker_c": "<NO_MATCH>",
+				"effect/left": "effect/left",
+				"effect/right": "effect/right",
+				"effect/up": "effect/up",
+				"white": "white"
+			}
+		},
+		"util": {
+			"": {
+				"black": "black",
+				"effect/cinema": "effect/cinema",
+				"effect/title02": "effect/title02",
+				"effect/x": "effect/x"
+			}
+		}
+	}
+}
