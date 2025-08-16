@@ -153,7 +153,7 @@ void main()
 
 	ModAddArtset("Console", "ゲーム機", "CG");
 	ModAddArtset("Remake", "リメーク", "CGAlt:CG");
-//	ModAddArtset("Original", "オリジナル", "OGBackgrounds:OGSprites:CG");
+	ModAddArtset("Original", "オリジナル", "OGBackgrounds:OGSprites:CG");
 
 	// GAltBGM controls which of these are selected
 	ModAddBGMset("New Mangagamer", "Placeholder", "April2019BGM:BGM");
